@@ -8,9 +8,9 @@ export function RegisterForm() {
   const { step } = useRegisterForm()
 
   return (
-    <section className='pt-5'>
+    <section className='py-5'>
       <Stepper />
-      <form className='mx-auto md:w-4/6'>
+      <form className='mx-auto'>
         {step === 0 && <StepOne />}
         {step === 1 && <StepTwo />}
         {step === 2 && <StepThree />}

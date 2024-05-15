@@ -42,7 +42,7 @@ export function Stepper() {
               <span className='me-2'>2</span>
             )}
             Información{' '}
-            <span className='hidden sm:inline-flex sm:ms-2'>Empresarial</span>
+            <span className='hidden sm:inline-flex sm:ms-2'>adicional</span>
           </span>
         </li>
         <li

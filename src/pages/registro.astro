@@ -4,8 +4,11 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title='ITM | Registro 2024'>
-  <main class='h-screen grid w-full content-center container mx-auto px-4'>
+  <main class='py-10 grid w-full content-center container mx-auto px-4'>
     <h1 class='text-center font-extrabold text-4xl'>REGISTRATE</h1>
+    <p class='text-center text-2xl font-bold'>
+      Por favor revisa que tu información sea correcta
+    </p>
     <RegisterForm client:only />
   </main>
 </Layout>
