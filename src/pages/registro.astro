@@ -1,0 +1,17 @@
+---
+import { RegisterForm } from '../components/register/RegisterForm.jsx'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title='ITM | Registro 2024'>
+  <main class='h-screen grid w-full content-center container mx-auto px-4'>
+    <h1 class='text-center font-extrabold text-4xl'>REGISTRATE</h1>
+    <RegisterForm client:only />
+  </main>
+</Layout>
+<style>
+  body {
+    background-color: #101010;
+    color: white;
+  }
+</style>
