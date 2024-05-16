@@ -58,7 +58,7 @@ const useRegisterForm = create(
             setProductInterest: (productInterest) => set({ productInterest }),
             setLevelInfluence: (levelInfluence) => set({ levelInfluence }),
             setWannaBeExhibitor: (wannaBeExhibitor) => set({ wannaBeExhibitor }),
-            
+
             setCompleteRegister: (complete_register) => set({ complete_register }),
 
             incrementStep: () => set((state) => ({ 
@@ -67,6 +67,36 @@ const useRegisterForm = create(
             decrementStep: () => set((state) => ({ 
                 step: state.step - 1 
             })),
+
+            clear: () => set({ 
+                step: 0,            
+                name: "",
+                paternSurname: "",
+                maternSurname: "",
+                email: "",
+                phone: "",
+                typeRegister: "",
+                genre: "",
+                age: "",
+                linkedin: "",
+
+                company: "",
+                industry: "",
+                position: "",
+                country: "",
+                city: "",
+                address: "",
+                colonia: "",
+                postalCode: "",
+                webPage: "",
+                phoneCompany: "",
+
+                eventKnowledge: "",
+                productInterest: "",
+                levelInfluence: "",
+                wannaBeExhibitor: "",
+                
+            })
         }), 
         { name: "register-form" }
     )

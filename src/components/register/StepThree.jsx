@@ -11,8 +11,8 @@ export function StepThree() {
     setProductInterest,
     setLevelInfluence,
     setWannaBeExhibitor,
-    incrementStep,
-    decrementStep,
+    setCompleteRegister,
+    clear,
   } = useRegisterForm()
 
   const {
@@ -21,6 +21,11 @@ export function StepThree() {
     formState: { errors },
   } = useForm({})
 
+  const onSubmit = () => {
+    setCompleteRegister(true)
+    clear()
+    window.location.href = '/gracias-por-registrarte'
+  }
   return (
     <>
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
@@ -150,7 +155,7 @@ export function StepThree() {
       <div className='flex justify-center'>
         <button
           className='px-10 py-4 bg-[#D70105] rounded-lg text-white  mt-5 text-xl font-semibold'
-          onClick={handleSubmit(incrementStep)}
+          onClick={handleSubmit(onSubmit)}
         >
           Finalizar
         </button>
