@@ -1,0 +1,54 @@
+---
+import { t } from 'i18next'
+import { exhibitors_1, exhibitors_2 } from '../../data/constans_logos'
+import Marquee from '../shared/Marquee.astro'
+---
+
+<section
+  class='container mx-auto px-4 py-10 text-center text-[#6C757D] font-bold text-3xl uppercase'
+>
+  <p>
+    {t('home.title-sponsors')}
+  </p>
+  <div class='grid grid-cols-2 place-items-center sm:flex justify-center'>
+    <a
+      href='https://mx.mitsubishielectric.com/fa/en/'
+      target='_blank'
+      rel='noreferrer'
+    >
+      <img
+        src='/img/mitsubishi.webp'
+        class='img-fluid'
+        loading='lazy'
+        width='200'
+        alt='patrocinador ITM Mitsubishi'
+      />
+    </a>
+    <a href='https://www.se.com/ww/en/' target='_blank' rel='noreferrer'>
+      <img
+        src='/img/misumi.webp'
+        width='200'
+        alt='patrocinador ITM MISUMI'
+        loading='lazy'
+      />
+    </a>
+    <a
+      href='http://www.misumimex.com/'
+      target='_blank'
+      rel='noreferrer'
+      class='col-span-2'
+    >
+      <img
+        src='/img/logoSchneider.webp'
+        width='200'
+        alt='patrocinador ITM schneider electric'
+        loading='lazy'
+      />
+    </a>
+  </div>
+  <p class='mt-5'>
+    {t('menu.exhibitors_2_1')}
+  </p>
+  <Marquee partners={exhibitors_1} isLeftToRight={true} />
+  <Marquee partners={exhibitors_2} isLeftToRight={false} />
+</section>

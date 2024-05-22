@@ -1,6 +1,9 @@
 ---
-import { RegisterForm } from '../components/register/RegisterForm.jsx'
-import Layout from '../layouts/Layout.astro'
+import { changeLanguage } from "i18next";
+import { RegisterForm } from "../components/register/RegisterForm.jsx";
+import Layout from "../layouts/Layout.astro";
+
+changeLanguage("es");
 ---
 
 <Layout title='ITM | Registro 2024'>
@@ -9,7 +12,7 @@ import Layout from '../layouts/Layout.astro'
     <p class='text-center text-2xl font-bold'>
       Por favor revisa que tu información sea correcta
     </p>
-    <RegisterForm client:only />
+    <RegisterForm client:only='react' />
   </main>
 </Layout>
 <style>

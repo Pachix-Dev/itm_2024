@@ -1,4 +1,9 @@
 ---
+import { ViewTransitions } from 'astro:transitions'
+import { HeadHrefLangs } from 'astro-i18next/components'
+import i18next, { t } from 'i18next'
+
+import Menu from '../components/shared/Menu.astro'
 interface Props {
   title: string
 }
@@ -7,7 +12,7 @@ const { title } = Astro.props
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang={i18next.language}>
   <head>
     <meta charset='UTF-8' />
     <meta name='description' content='Astro description' />
@@ -15,9 +20,24 @@ const { title } = Astro.props
     <link rel='icon' type='image/png' href='/img/favicon.png' />
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
+    <ViewTransitions />
+    <HeadHrefLangs />
   </head>
   <body>
+    <Menu />
     <slot />
+    <style is:global>
+      ::-webkit-scrollbar {
+        height: 5px;
+        width: 5px;
+        background-color: #f5f5f5;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: black;
+      }
+      ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+    </style>
   </body>
 </html>
-<style is:global></style>

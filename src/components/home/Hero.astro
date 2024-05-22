@@ -1,5 +1,47 @@
-<section>
-  <video autoplay muted loop class='absolute object-cover w-full h-full'>
+---
+import i18next, { t } from 'i18next'
+import { CounterDown } from './CounterDown.jsx'
+
+const lang = i18next.language
+const base = i18next.language === 'es' ? '' : `/${lang}`
+---
+
+<section
+  class='relative h-full py-16 md:h-screen w-full grid place-items-center'
+>
+  <video autoplay muted loop class='absolute z-[-1] object-cover w-full h-full'>
     <source src='/videos/BG-ITM-2024.mp4' type='video/mp4' />
   </video>
+  <div class='container mx-auto px-2 grid md:grid-cols-2 gap-6'>
+    {
+      i18next.language === 'en' ? (
+        <img
+          src='/img/ITMTEXTENGACFEBv2.webp'
+          alt="let's build the industry of tomorrow #ITM24"
+          class='mx-auto'
+        />
+      ) : (
+        <img
+          src='/img/ITMKVTEXTOESPv1.webp'
+          alt='construyamos la industria del mañana #ITM24'
+          class='mx-auto'
+        />
+      )
+    }
+    <div class='grid place-content-center place-items-center'>
+      <CounterDown
+        client:only='react'
+        dias={t('home.days')}
+        horas={t('home.hours')}
+        minutos={t('home.minutes')}
+        segundos={t('home.seconds')}
+      />
+      <a
+        href={`${base}/registro`}
+        class='mt-5 bg-[#E42128] rounded-2xl px-4 py-2 font-extrabold text-xl text-white hover:bg-[#CF3B49] hover:cursor-pointer'
+      >
+        {t('home.free_register')}
+      </a>
+    </div>
+  </div>
 </section>

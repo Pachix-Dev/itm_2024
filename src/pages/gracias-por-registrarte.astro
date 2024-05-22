@@ -1,7 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import Confettti from '../components/shared/Confetti'
-import { Redirect } from '../components/shared/Redirect.jsx'
+import { changeLanguage } from "i18next";
+import Layout from "../layouts/Layout.astro";
+import Confettti from "../components/shared/Confetti";
+import { Redirect } from "../components/shared/Redirect.jsx";
+
+changeLanguage("es");
 ---
 
 <Layout title='ITM  | Gracias por contactarnos'>

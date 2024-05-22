@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form'
 import { useRegisterForm } from '../../store/register-form'
-import { countries } from '../data/list_countries.js'
+import { countries } from '../../data/list_countries.js'
 export function StepTwo() {
   const {
     company,

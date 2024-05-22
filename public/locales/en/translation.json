@@ -1,0 +1,487 @@
+{
+    "menu": {
+        "banner": "become an exhibitor",
+        "about_us": "about us",
+        "about_1": "about itm",
+        "about_2": "background",
+        "exhibitors": "Exhibitors",
+        "exhibitors_1": "contact",
+        "exhibitors_2": "why exhibit",
+        "exhibitors_2_1": "Confirmed exhibitors",
+        "exhibitors_3": "exhibitor profile",
+        "exhibitors_4": "factsheet ITM 2024",
+        "exhibitors_4_1": "Manual Exhibitor ITM 2023",
+        "exhibitors_5": "Floorplan ITM 2024",
+        "exhibitors_6": "Contract ITM 2024",
+        "exhibitors_7": "Sponsorships 2024",
+        "exhibitors_7_1": "Sponsorship packages",
+        "exhibitors_7_2": "Sponsorship Sponsorship Conferences",
+        "exhibitors_7_3": "Sponsorship Commercial Presentation",
+        "exhibitors_7_4": "Industrial Night Sponsorships",
+        "exhibitors_8": "What type of audience will attend?",
+        "exhibitors_9": "products category",
+        "exhibitors_10": "toolkit 2023",
+        "exhibitors_11": "I'm an exhibitor",
+        "exhibitors_12": "German Pavilion",
+        "visitors": "visitors",
+        "visitors_0": "Passport",
+        "visitors_1": "why visit",
+        "visitors_2": "visitor profile",
+        "visitors_2_1": "Activities within ITM 2023",
+        "visitors_3": "special hotel rates",
+        "visitors_4": "united airlines agreement",
+        "past_events": "past events",
+        "itm2023": "itm 2023",        
+        "itm2023_1": "exhibitors directory 2023",
+        "itm2023_2": "Passport ITM 2023",
+        "itm2023_3": "after show report 2023",
+        "itm2022": "itm 2022",
+        "itm2022_1": "after show report 2022",
+        "itm2022_2": "exhibitors directory 2022",
+        "itm2022_3": "Passport ITM 2022",
+        "itm2021": "itm 2021",
+        "itm2021_1": "after show report 2021",
+        "itm2021_2": "exhibitors directory 2021",
+        "itm2021_3": "Passport ITM 2021",
+        "itm2020": "itm 2020",
+        "itm2020_1": "exhibitors directory  2020",
+        "itm2020_2": "passport itm 2020",
+        "itm2020_3": "after show report 2020",
+        "itm2019": "itm 2019",
+        "itm2019_1": "exhibitors directory 2019",
+        "itm2019_2": "passport itm 2019",
+        "itm2019_3": "after show report 2019",
+        "media_hub": "media hub",
+        "media_hub_1": "cuatro cero",
+        "media_hub_2": "Gallery",
+        "media_hub_3": "download logos",
+        "title_exhibitors": "Exhibitors Confirmed"
+    },
+    "contactForm": {
+        "title": "Leave us a message",
+        "subject": "Subject",
+        "message": "Message",
+        "send": "Send"
+    },
+    "seo": {
+        "home": {
+            "description": "Industrial Transformation MEXICO consists of a tradeshow, conference and educational program tied together by the overarching themes of smart manufacturing and digital transformation in Mexico."
+        },
+        "about_us": {
+            "description": "Industrial Transformation MEXICO consists of a tradeshow, conference and educational program tied together by the overarching themes of smart manufacturing and digital transformation in Mexico."
+        }
+    },
+    "home": {
+        "days": "days",
+        "hours": "hours",
+        "minutes": "minutes",
+        "seconds": "seconds",
+        "titleITM": "LET'S CREATE THE INDUSTRY OF TOMORROW",
+        "titleCounter": "4 - 6 October 2023",
+        "button": "TIC & ITZAMNÁ Awards",
+        "leyend": "<strong>ADMISSION</strong> cost from September 30 onwards $300 MXN",
+        "registro_itm_2023": "Register",
+        "dateEvent": "Wednesday, Thursday and Friday | Hours from 9:00 am to 6:00 pm",
+        "highlights_ITM2022": "Industrial Transformation Mexico 2023",
+        "description": "<strong>Industrial Transformation Mexico</strong> celebrated its sixth edition as the leading trade show for digital transformation in Latin America, successfully reaffirming our conviction to help Mexico move towards the adoption of the digital and technological agenda, as well as the generation of 4.0 knowledge to move towards more efficient, flexible and sustainable production models.<br /><br /> Once again this year, ITM served as a platform to open diverse spaces for collaboration between the leading exponents of <strong>4.0 technologies</strong> and key players in the global industry.",
+        "bullet_1": "Professional buyers",
+        "bullet_2": "Students",
+        "bullet_3": "Millions of pesos of on-site business",
+        "bullet_4": "Millions of pesos in media coverage value",
+        "bullet_5": "Exhibitor floor space",
+        "galleryhome":"'Highlights ITM 2023",
+        "directory": "Directory",
+        "title-sponsors":"SPONSORS ITM 2024",
+        "sponsors": "Platinum sponsors",
+        "digital": "Digital Opening Experience Sponsor",
+        "gold_sponsors": "Gold sponsors",
+        "silver_sponsor": "Silver sponsor",
+        "content_partners": "Content Partners",
+        "industry_partners": "Industry Partners",
+        "strategic_allies": "Strategic Allies",
+        "broadcasting": "Broadcasting Media Partners",
+        "platinum_media": "Platinum Media Partners",
+        "gold_media_partners": "Gold Media Partners",
+        "silver_media_partners": "Silver Media Partners",
+        "galery2022": "GALLERY 2022",
+        "learn_more": "EXPLORE MORE",
+        "contact_mexico_latam": "Contact Mexico & Latin America",
+        "contact_international": "Contact International",
+        "sales_contact": "Sales Contact",
+        "privacy_policy": "Privacy Policy",
+        "contact": "Contact",
+        "name": "Name",
+        "email": "Email",
+        "subscription": "SUBSCRIBE",
+        "want-exhibitor":"I want to be an exhibitor",
+        "free_register": "Free Registration"
+    },
+    "aboutPage": {
+        "title": "ABOUT US ITM",
+        "description_1": "Technological advances are redefining manufacturing processes, production and design facilities, distribution systems, and global supply chains. Companies in the region acknowledge that current business models are no longer sustainable, prompting them to embrace, enhance, and maintain the adoption of Industry 4.0 processes and solutions. INDUSTRIAL TRANSFORMATION MEXICO comprises an exhibition area, conferences, and a comprehensive educational program, all interconnected by the overarching themes of digital transformation in Mexico and smart manufacturing. The exhibition area features eight main categories: Research Institutes, Automation and Robotics, Smart Factory, Additive Manufacturing, Intelligent Logistics, Energy Solutions, Machinery and Tools, and Government, along with spaces for live demonstrations and individual consultations.",
+        "description_2": "“<strong>HANNOVER MESSE</strong> is the world’s biggest showcase for industrial technology and the leading platform for Industry 4.0. During the past decade, we have strategically introduced the brand to growing markets around the world. Mexico impressed the global industry as Partner Country at <strong>Hannover Messe 2018</strong>. Now is the time to bring to Mexico a <strong>Hannover Messe</strong> event that is custom-made for Mexico’s booming industrial sector”, said Jochen Köckler, CEO of Deutsche Messe AG.</br></br> <strong>Industrial Transformation Mexico</strong> packages the leading industrial technologies and solutions with a top-notch education and networking program. Visitors from Mexico and neighboring countries now have a single event that provides all the tools and information they need to digitalize their factories and plants. Industrial Transformation Mexico will be an engaging and inclusive event where stakeholders and targeted audience groups convene for networking and knowledge transfer opportunities for business success."
+    },
+    "background": {
+        "title": "Mexico - Partner Country at HANNOVER MESSE 2018",
+        "description_1": "With over 172 exhibitors and over 3,400 net sqm Mexico´s participation as Partner Country at HANNOVER MESSE 2018 was an overwhelming success and laid the groundwork for new business opportunities. Satellite pavilions in segments as Research & Technology, Industrial Supply, Digital Factory, Industrial Automation, Motion & Drive as well as CeMAT were proof of the enormous Industry 4.0 potential that is currently developing in Mexico.",
+        "stadistic_1": "Over <br /><strong>172</strong><br />exhibitors",
+        "stadistic_2": "<strong>3,445</strong><br />m<sup>2</sup> of exhibition area",
+        "stadistic_3": "High Rank <br>Delegation",
+        "stadistic_3_1": "The President of the United Mexican States, 4 Federal Secretaries, 11 Governors and directors of leading Mexican companies, chambers and associations.",
+        "stadistic_4": "<strong>2,500</strong><br />visitors from Mexico"
+    },
+    "exhibitorReasons": {
+        "newDesc": "Be part of Industrial Transformation Mexico, the benchmark Industry 4.0 technology fair in Mexico and Latin America. Take the opportunity to purchase a booth or become a sponsor at the sixth edition of the business meeting on the transformation towards intelligent, sustainable and digital production.<br><br>The opportunity to contribute to the future 4.0 with ITM is closer than ever.",
+        "title": "Why Exhibit?",
+        "description_1": "Generate business with a specialized network of suppliers and leading Industry 4.0 companies from more than 10 countries.",
+        "description_2": "Be part of the most relevant B2B business meeting of Industry 4.0 in Mexico and Latin America.",
+        "description_3": "Learn about the latest trends, launches and innovations in Industry 4.0 globally.",
+        "description_4": "Be part of the best international program of conferences and workshops focused on Industry 4.0 in the country.",
+        "description_5": "Connect with the most relevant network of professionals specialized in the sector in the country.",
+        "become_exhibitor": "If you want to be an exhibitor contact:",
+        "title-exhibitor": "Information for confirmed exhibitors"
+    },
+    "profile": {        
+        "subtitle": "Become an Exhibitor",
+        "description": "As the platform for Industry 4.0 in Latin America, ITM is the showcase for industrial transformation year after year, with innovations, technological breakthroughs and groundbreaking products. From development to production, logistics, energy supply and services: INDUSTRIAL TRANSFORMATION MEXICO showcases cross-sector solutions and interface technologies for the entire industrial ecosystem.<br /><br />ITM is an event of Hannover Messe, the world's leading industrial trade fair.",
+        "why-exhibit":{
+            "title":"WHY EXHIBIT?",
+            "description-1":"PROFESSIONAL BUYERS",
+            "description-2":"FROM MORE THAN 30 COUNTRIES",
+            "description-3":"PARTICIPATE IN THE PURCHASING PROCESS"
+        },
+        "segments":{
+            "title":"SEGMENTS OF INTEREST 2024",
+            "item-1":"Automation and Robotization ",
+            "item-2":"Smart Logistics",
+            "item-3":"Energy Solutions",
+            "item-4":"Digital Manufacturing and ICT",
+            "item-5":"Aerospace Industry ",
+            "item-6":"Machines & Tools ",
+            "item-7":"Smart Factory",
+            "item-8":"Research Institutions ",
+            "item-9":"Additive Manufacturing",
+            "item-10":"Government"
+        },
+        "btn-interested":"I'M INTERESTED",
+        "btn-exhibitor-info":"EXHIBITOR INFORMATION",
+        "btn-exhibitor":"I AM AN EXHIBITOR",
+        "btn-sent-message":"Sent Message",
+        "rates":{
+            "title":"ITM 2024 PARTICIPATION FEES",
+            "stand-1":{
+                "title":"Raw Space <br/> (no set up)",
+                "type":"Regular price sqm",
+                "price":"USD 378 + VAT",
+                "description":"Includes exhibitor badges (3 per 9 sqm), unlimited visitor pre-registration code for your company and mention in the directory. Does NOT include carpet, construction, furniture, or services."
+            },
+            "stand-2":{
+                "title":"Equipped Booth (Basic Option)",
+                "type":"Regular price sqm",
+                "price":"USD 452 + VAT",
+                "description":"Includes standard carpet, dividing partitions, vinyl sign, standard furniture (counter, table and 2 chairs), 1 110v electrical contact, exhibitor badges (3 per 9 sqm), unlimited visitor pre-registration code for your company and mention in the directory."
+            },
+            "stand-3":{
+                "title":"Comfort Plus",
+                "type":"Regular price sqm",
+                "price":"USD 4,655 + VAT(Price per 9 sqm)",
+                "description":"Includes construction with predetermined design with space for brand positioning, furniture, 1 110v electrical contact per 9 sqm, and 40\" screen, exhibitor badges (3 per 9 sqm), unlimited visitor pre-registration code for your company and mention in the directory."
+            }
+        }
+    },
+    "audience": {
+        "title": "WHAT TYPE OF AUDIENCE WILL ATTEND?",
+        "description": "Industrial Transformation MEXICO takes advantage of  network synergies to bring together stakeholders and audience groups from every point along the industrial value chain. This provides opportunities for intensive networking, global knowledge transfer and new business."
+    },
+    "productsCategory": {
+        "title": "PRODUCT CATEGORIES:",
+        "machine": {
+            "machine_title": "METALWORKING",
+            "machine_1": "Sheet metal processing",
+            "machine_2": "Forming and separation technology",
+            "machine_3": "Advanced welding, joining, and fastening technology",
+            "machine_4": "Welding automation systems",
+            "machine_5": "3D Printing / additive manufacturing",
+            "machine_6": "Laser technology and application",
+            "machine_7": "Lightweight construction",
+            "machine_8": "Machine-tools",
+            "machine_9": "Clamping devices",
+            "machine_10": "Cutting devices",
+            "machine_11": "Measurement equipment",
+            "machine_12": "Automation",
+            "machine_13": "Peripheral equipment"
+        },
+        "robotization": {
+            "robotization_title": "AUTOMATION, ROBOTATION AND MOTION",
+            "robotization_1": "Assembly and handling systems",
+            "robotization_2": "Electrical power transmission",
+            "robotization_3": "Fieldbus system",
+            "robotization_4": "Industrial image processing",
+            "robotization_5": "Linear drives",
+            "robotization_6": "Micro-technology",
+            "robotization_7": "Motion controls",
+            "robotization_8": "Process automation",
+            "robotization_9": "Pneumatic automation technology",
+            "robotization_10": "Robotics & system integration",
+            "robotization_11": "Security components & systems",
+            "robotization_12": "Sensors and actuators",
+            "robotization_13": "Measurement, process & quality control"
+        },
+        "manufacture": {
+            "manufacture_title": "DIGITAL FACTORY / ICT",
+            "manufacture_1": "Asset management systems",
+            "manufacture_2": "Big data management",
+            "manufacture_3": "Cloud computing",
+            "manufacture_4": "Design & product development",
+            "manufacture_5": "Industry 4.0 / IoT",
+            "manufacture_6": "Enterprise resource planning (ERP)",
+            "manufacture_7": "Machine learning",
+            "manufacture_8": "Manufacturing execution systems (MES)",
+            "manufacture_9": "Product life cycle management (PCM)",
+            "manufacture_10": "Security technology",
+            "manufacture_11": "Virtual & augmented reality",
+            "manufacture_12": "Smart Manufacturing"
+        },
+        "logistics": {
+            "logistics_title": "SMART LOGISTICS",
+            "logistics_1": "Automated Guided Vehicles (AGV’s)",
+            "logistics_2": "Conveying systems",
+            "logistics_3": "Labeling & identification systems",
+            "logistics_4": "Lifting platforms",
+            "logistics_5": "Logistics IT",
+            "logistics_6": "Packaging systems",
+            "logistics_7": "Racking systems",
+            "logistics_8": "Robots & handling systems",
+            "logistics_9": "Shelf storage & retrieval equipments",
+            "logistics_10": "Supply chain management systems",
+            "logistics_11": "Turnkey systems for logistics",
+            "logistics_12": "Warehouse management systems"
+        },
+        "research": {
+            "research_title": "RESEARCH INSTITUTIONS",
+            "research_1": "Universities",
+            "research_2": "R&D Institutions",
+            "research_3": "Clusters"
+        },
+        "government": {
+            "government_title": "GOVERNMENT",
+            "government_1": "Federal government",
+            "government_2": "State government",
+            "government_3": "Local government"
+        },
+        "energySolutions": {
+            "energySolutions_title": "POWER SOLUTIONS",
+            "energySolutions_1": "Energy-efficient lightings",
+            "energySolutions_2": "Energy management solutions",
+            "energySolutions_3": "Heat recovery systems",
+            "energySolutions_4": "Heating, ventilation, air-conditioning equipmento",
+            "energySolutions_5": "Meter boards, distribution systems for electrical building installation",
+            "energySolutions_6": "Positioners and actuators for building engineering",
+            "energySolutions_7": "Power generation services",
+            "energySolutions_8": "Power-saving production technologies",
+            "energySolutions_9": "Renewable resources",
+            "energySolutions_10": "Research & development",
+            "energySolutions_11": "Safety switches",
+            "energySolutions_12": "Training & education"
+        },
+        "additive": {
+            "additive_title": "ADDITIVE MANUFACTURING",
+            "additive_1": "3D printing",
+            "additive_2": "Manufacturing solutions",
+            "additive_3": "Materials & components",
+            "additive_4": "Quality management & metrology",
+            "additive_5": "Rapid prototyping",
+            "additive_6": "Research & development",
+            "additive_7": "Solutions for additive manufacturing",
+            "additive_8": "Training & education"
+        }
+    },
+    "toolkit": {
+        "title": "DOWNLOADABLE ADVERTISING MATERIAL",
+        "toolkit_1": "banner 780 x 90 ITM",
+        "toolkit_2": "Banner Linkedin ITM",
+        "toolkit_3": "Banner Twitter ITM",
+        "toolkit_4": "Banner Facebook ITM",
+        "toolkit_5": "Website Banner ITM",
+        "toolkit_6": "ITM Promotional"
+    },
+    "visitorReasons": {
+        "title_1": "Why visit",
+        "title_2": "Why should you visit Industrial Transformation MEXICO?",
+        "description_1": "ITM is the Leading Industry 4.0 Trade Show in Mexico and Latin America. This great event is a platform where global decision makers showcase, explore and showcase new technologies in automation, smart manufacturing, smart logistics and digital solutions.",
+        "description_2": "Do not miss the opportunity and participate in the best educational programs focused on industrial sectors and their application, in addition to taking advantage of the business exchange space.",
+        "description_4": "Start the digital transformation of your company.",
+        "description_5": "Optimize your processes and results, generate savings and increase your sales.",
+        "description_6": "Increase your competitiveness and operational efficiency.",
+        "description_7": "Expand your business network.",
+        "description_8": "Take the lead in the business of the future.",
+        "description_9": "Visit an international, high quality conference and workshop program."
+    },
+    "visitorProfile": {
+        "industry": {
+            "title": "Participating industries",
+            "item_1": "Aerospace",
+            "item_2": "Automotive",
+            "item_3": "Electrical & electronics",
+            "item_4": "Food & beverage",
+            "item_5": "Healthcare",
+            "item_6": "Infrastructure, facilities, urban solutions",
+            "item_7": "Logistics & supply chain management",
+            "item_8": "Machine tool industry",
+            "item_9": "Mechanical & plant engineering",
+            "item_10": "Packaging",
+            "item_11": "Pharmaceutical & biotechnology",
+            "item_12": "Process industries (steel, petro chemical)",
+            "item_13": "Systems integrators"
+        },
+        "buyers": {
+            "title": "Job levels",
+            "item_1": "Senior management, consultants, decision makers, department heads, engineers, factory planners, procurement managers, system managers, traders.",
+            "item_2": "Regions:",
+            "item_3": "Mexico, Central America, South America."
+        }
+    },
+    "directory": {
+        "title": "Digital Directory ITM 2020",
+        "name": "Name (required)",
+        "position": "Position (required)",
+        "company": "Company (required)",
+        "email": "Email (required)"
+    },
+    "gallery": {
+        "title": "ITM GALLERY",
+        "conferences": "Conferences",
+        "year_1": "2019",
+        "year_2": "2020",
+        "year_3": "2021",
+        "year_4": "2022"
+    },
+    "downloadlogos": "DOWNLOAD LOGOS",
+    "startup": {
+        "description_1": "We invite you to present your solutions at Industrial Transformation Mexico 2023 in our third edition of the Startup Pitch. Participate and be one of the finalists to present to investors and jury members at ITM, which will take place from October 4-6, 2023 at Poliforum León, Guanajuato. To be part of the Startup Pitch @ITM2023 follow the steps below and send your file no later than August 25 of this year.",
+        "linkButton": "Benefits",
+        "element_1": {
+            "title": "Stages of the Competition",
+            "description_1": "Publication of the Notice",
+            "description_2": "Information Sessions",
+            "description_3": "Closing of the Call",
+            "description_4": "Publication of Selected Entrepreneurs",
+            "description_5": "Pitch Preparation and Mentoring",
+            "description_6": "Ensayos on stage @ITM",
+            "description_7": "Startup Pitch – Demo Day"
+        },
+        "element_2": {
+            "title": "Date",
+            "description_1": "June 2023",
+            "description_2": "August 14 and August 17",
+            "description_3": "August 25",
+            "description_4": "September 01",
+            "description_5": "September 5 to 30",
+            "description_6": "October 05",
+            "description_7": "October 06"
+        },
+        "button_1": "DOWNLOAD THE CALL",
+        "button_2": "SEND YOUR FILE",
+        "button_3": "PRIVACY NOTICE",
+        "button_4": "FAQS",
+        "title_1": "Deadline for registration August 25, 2023",
+        "contacto": "¿Do you have any questions about the process? Contact us at ",
+        "titleCategory": "Participate in one of the following categories:",
+        "category_1": {
+            "title": "FOCUS AREAS",
+            "item_1": "1. AI & Machine Learning",
+            "item_2": "2. Circular Economy",
+            "item_3": "3. Logistics  Economy",
+            "item_4": "4. Industry 4.0"
+        },
+        "category_2": {
+            "title": "TYPE OF TECHNOLOGY",
+            "item_1": "1. Data Analytics",
+            "item_2": "2. Cloud Computing",
+            "item_3": "3. Sensors",
+            "item_4": "4. Internet of Things",
+            "item_5": "5. Artificial intelligence",
+            "item_6": "6. Virtual or augmented reality",
+            "item_7": "7. 3D Printing"
+        },
+        "category_3": {
+            "title": "APPLICATION AREAS",
+            "item_1": "1. Digital Factory",
+            "item_2": "2. Automation",
+            "item_3": "3. Additive Manufacturing",
+            "item_4": "3. Software",
+            "item_5": "4. Environmental Automation"
+        },
+        "businessTitle": "Choose to participate in one of the following stages of entrepreneurship:",
+        "stage_1": {
+            "title": "Seed:",
+            "description": "You have a minimum viable product in the market, with customers that are starting to grow (being able to demonstrate your data traction). You have initial sales. Here the main focus is on product iteration and development, user growth and customer retention. Ideally you should have an institutional investor but it is not required."
+        },
+        "stage_2": {
+            "title": "Serie A:",
+            "description": "Have a sales project of between 1 and 2.5 million pesos per year. You have a product that fits in the market, you want to have a commercial scaling. You have a sales team and you are initiating the creation of a customer focused team to increase sales and customer retention."
+        },
+        "requirements": {
+            "title": "Prepare your file with the following requirements:",
+            "item_1": "Description of your project in a maximum of one page in Word or PDF format, clearly indicating the category, areas of application and stage of the venture to which you are applying.",
+            "item_2": "Word or PDF document of the project valuation.",
+            "item_3": "Initial 3-minute pitch in mp4 or mov video format.",
+            "item_4": "Resume or CV of the members of the work team.",
+            "item_5": "Application questionnaire found on our website.",
+            "item_6": "Administrative File."
+        },
+        "physicalPerson": {
+            "title": "Individual:",
+            "item_1": "Identification of the legal representative.",
+            "item_2": "RFC of the legal representative.",
+            "item_3": "Proof of address."
+        },
+        "moralPerson": {
+            "title": "Moral Person:",
+            "item_1": "Articles of Incorporation (if applicable).",
+            "item_2": "Proof of address of the company.",
+            "item_3": "Identification of the legal representative.",
+            "item_4": "RFC of the legal representative."
+        },
+        "conditionText": "Send your file no later than August 25th through the following Google form. Remember that, in order to complete your application to this call for applications, you must make sure that the questionnaire is completely filled out with all the requirements.",
+        "benefits": {
+            "title": "Benefits",
+            "item_1": "Access to Industrial Transformation Mexico 2023.",
+            "item_2": "Pitch presentation preparation mentoring.",
+            "item_3": "The projects selected for the final stage will be able to attend the exclusive Industrial Night event on October 3 during Industrial Transformation Mexico 2023. (In case you are selected, please consider your arrival for this date).",
+            "item_4": "The selected project will be awarded a booth for its participation at Hannover Messe 2024 in Germany in the Young Tech Enterprises area."
+        },
+        "titleDoubt": "Do you have any questions about the process? Contact us at eder.rangel@hfmexico.mx",
+        "fileButton": "SEND FILE",
+        "deadline": "Deadline for registration August 25, 2023"
+    },
+    "program": {
+        "title": "Conferences",
+        "subtitle": "Let's create the industry of tomorrow.",
+        "title_s": "Speakers",
+        "subtitle_s": "Get inspired by our amazing speakers.",
+        "day": "Day",
+        "month": "October",
+        "day_1": "Wednesday",
+        "day_2": "Thursday",
+        "day_3": "Friday",
+        "stages": "Stages",
+        "about": "About",
+        "speech": "Speech"
+    },
+    "footer": {
+        "dateFooter": "9 - 11 October 2024",
+        "suscribe": "Subscribe to our newsletter",
+        "day_1":"Wednesday and Thursday",
+        "day_2":"Friday"
+    },
+    "hotels":{
+        "title": "Special Hotel Rates",
+        "description": "We are pleased to announce that we have secured preferential rates at quality hotels to make your experience even more comfortable and affordable.<br /><br />Strategically located around the event venue, these hotels offer not only comfort, but also the opportunity to fully immerse yourself in the atmosphere of the event. We have negotiated special rates for our attendees, ensuring that your stay will be as unforgettable as the event itself.",
+        "code_reservation": "Reservation code"
+    },
+    "germanPavilion":{
+        "title-exhibitor": "Be part of the German Pavilion at ITM 2024",
+        "agreement" : "Agreement"
+    }
+}
