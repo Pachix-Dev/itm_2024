@@ -1,10 +1,20 @@
 ---
-import { changeLanguage } from "i18next";
+import { changeLanguage, t } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 
 changeLanguage("en");
 ---
 
 <Layout title="ITM 2024 | About Us">
-  <h1>Hello, Astro!</h1>
+  <main class="min-h-screen">
+    <h1 class="text-center text-3xl font-bold text-[#e00d1b] py-8">{t('aboutPage.title')}</h1>
+    <section class="bg-[#f8f8f8] flex"> 
+      <div class="invisible md:visible w-1/2 object-cover bg-fixed bg-center bg-no-repeat bg-[url('/img/bgabout_1.jpg')]"></div>
+      <p class="p-10 lg:p-20 text-justify w-1/2" set:html={t('aboutPage.description_1')}></p>
+    </section>
+    <section class="bg-[#f8f8f8] flex">
+      <p class="p-10 text-justify w-1/2" set:html={t('aboutPage.description_2')}></p>
+      <div class="invisible md:visible w-1/2 object-cover bg-fixed bg-center bg-no-repeat bg-[url('/img/bgabout_2.jpg')]"></div>
+    </section>
+  </main>
 </Layout>
