@@ -1,0 +1,10 @@
+---
+import i18n, { t, changeLanguage } from "i18next";
+import Layout from "../layouts/Layout.astro";
+
+changeLanguage("es");
+---
+
+<Layout title={`ITM 2024 | ${t('menu.visitors_3')}`}>
+  <h1>Hello, Astro!</h1>
+</Layout>
