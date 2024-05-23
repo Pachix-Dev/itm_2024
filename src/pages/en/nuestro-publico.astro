@@ -1,0 +1,17 @@
+---
+import i18next, { t, changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+
+changeLanguage("en");
+---
+
+<Layout title="ITM 2024 | Key Audience Groups">
+    <main class="min-h-screen w-full bg-[url('/img/audienciaBackground.webp')] bg-cover bg-no-repeat bg-center bg-fixed flex flex-col justify-center items-center gap-10 py-5">
+        <h1 class="text-white text-center text-3xl font-bold">{t('audience.title')}</h1>
+        <div class="px-10 md:px-20 lg:px-32 xl:px-44">
+            <p class="text-white text-center">{t('audience.description')}</p>
+            <div class="bg-gray-400 w-2/12 h-1 mt-4 mx-auto"></div>
+        </div>
+        <img class="w-10/12 md:w-8/12 xl:w-4/12" src={i18next.language === 'en' ? '/img/topics_eng.webp' : '/img/topics.webp'} alt="hannover-itm-topics">
+    </main>
+</Layout>
