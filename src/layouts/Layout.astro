@@ -4,6 +4,7 @@ import { HeadHrefLangs } from 'astro-i18next/components'
 import i18next, { t } from 'i18next'
 
 import Menu from '../components/shared/Menu.astro'
+import Footer from '../components/shared/Footer.astro'
 interface Props {
   title: string
 }
@@ -26,6 +27,7 @@ const { title } = Astro.props
   <body>
     <Menu />
     <slot />
+    <Footer />
     <style is:global>
       ::-webkit-scrollbar {
         height: 5px;
