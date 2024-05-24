@@ -1,23 +1,23 @@
 ---
-import { changeLanguage } from "i18next";
-import { RegisterForm } from "../components/register/RegisterForm.jsx";
-import Layout from "../layouts/Layout.astro";
+import { changeLanguage } from 'i18next'
+import { RegisterForm } from '../components/register/RegisterForm.jsx'
+import LayoutRegister from '../layouts/LayoutRegister.astro'
 
-changeLanguage("es");
+changeLanguage('es')
 ---
 
-<Layout title='ITM | Registro 2024'>
+<LayoutRegister title='ITM | Registro 2024'>
   <main class='py-10 grid w-full content-center container mx-auto px-4'>
     <h1 class='text-center font-extrabold text-4xl'>REGISTRATE</h1>
     <p class='text-center text-2xl font-bold'>
       Por favor revisa que tu información sea correcta
     </p>
-    <RegisterForm client:only='react' />
+    <RegisterForm client:only='react' transition:persist />
   </main>
-</Layout>
+</LayoutRegister>
 <style>
   body {
-    background-color: #101010;
+    background-color: #07080b;
     color: white;
   }
 </style>
