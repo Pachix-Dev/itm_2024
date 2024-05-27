@@ -1,10 +1,24 @@
 ---
-import i18n, { t, changeLanguage } from "i18next";
+import { t, changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
+import RedButton from "../../components/shared/RedButton.astro";
 
 changeLanguage("en");
 ---
 
 <Layout title={`ITM 2024 | ${t('menu.exhibitors_11')}`}>
-  <h1>Hello, Astro!</h1>
+  <main class="min-h-screen flex flex-col justify-center items-center gap-12 bg-cover bg-no-repeat bg-center">
+    <h1 class="text-white text-4xl font-bold text-center" >{t('exhibitorReasons.title-exhibitor')}</h1>
+    <div class="flex flex-wrap gap-5 px-5 justify-center">
+      <RedButton href="/tarifas-especiales-para-hoteles" withIcon={false} className="text-2xl font-semibold *:p-5">{t('hotels.title')}</RedButton>
+      <RedButton href="/toolkit-2024" withIcon={false} className="text-2xl font-semibold *:p-5">Toolkit ITM</RedButton>
+      <RedButton href="/files/Floorplan%20ITM_2024_24_05_2024.pdf" withIcon={false} className="text-2xl font-semibold *:p-5">{t('menu.exhibitors_5')}</RedButton>
+    </div>
+  </main>
 </Layout>
+
+<style>
+  main {
+    background-image: repeating-linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/img/exhibitor_info.webp');
+  }
+</style>
