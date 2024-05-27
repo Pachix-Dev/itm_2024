@@ -32,6 +32,8 @@ const useRegisterForm = create(
             wannaBeExhibitor: "",
 
             complete_register: false,
+            invoiceDownToLoad: "",
+            item:{},
             
             setName: (name) => set({ name }),
             setPaternSurname: (paternSurname) => set({ paternSurname }),
@@ -60,12 +62,16 @@ const useRegisterForm = create(
             setWannaBeExhibitor: (wannaBeExhibitor) => set({ wannaBeExhibitor }),
 
             setCompleteRegister: (complete_register) => set({ complete_register }),
-
+            setInvoiceDownToLoad: (invoiceDownToLoad) => set({ invoiceDownToLoad }),
             incrementStep: () => set((state) => ({ 
                 step: state.step + 1 
             })),
             decrementStep: () => set((state) => ({ 
                 step: state.step - 1 
+            })),
+
+            addTocart: (item) => set(() => ({
+                item: {...item}
             })),
 
             clear: () => set({ 
@@ -95,8 +101,10 @@ const useRegisterForm = create(
                 productInterest: "",
                 levelInfluence: "",
                 wannaBeExhibitor: "",
+                item:[],                
                 
             })
+
         }), 
         { name: "register-form" }
     )

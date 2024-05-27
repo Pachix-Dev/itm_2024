@@ -106,9 +106,9 @@ export function StepOne() {
             <option value='MEDIO' className='text-black'>
               MEDIO
             </option>
-            <option value='ESTUDIANTE' className='text-black'>
+            {/*<option value='ESTUDIANTE' className='text-black'>
               ESTUDIANTE
-            </option>
+            </option>*/}
           </select>
           {errors.typeRegister && (
             <p className='text-[#D70205] font-light'>
