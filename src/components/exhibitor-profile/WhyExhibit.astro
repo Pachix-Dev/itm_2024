@@ -1,0 +1,39 @@
+---
+import { t } from "i18next";
+---
+
+<section>
+    <h1 class="text-center font-bold text-4xl text-[rgb(221,0,0)] py-10">
+        {t("profile.why-exhibit.title")}
+    </h1>
+    <div
+        class="flex flex-col md:flex-row items-center justify-center mb-5 mx-5 md:mx-10 lg:mx-20 text-[rgb(221,0,0)]"
+    >
+        <div class="flex-1 flex flex-col items-center xl:max-w-[400px]">
+            <h4 class="text-center font-bold">
+                <span class="text-6xl">15,000</span><br />
+                <span class="text-black text-2xl"
+                    >{t("profile.why-exhibit.description-1")}</span
+                ><br />
+                <span class="text-2xl"
+                    >{t("profile.why-exhibit.description-2")}</span
+                >
+            </h4>
+            <img
+                class="lg:w-60 xl:w-72 pt-5"
+                src="/img/countries.webp"
+                alt="countries"
+            />
+        </div>
+        <div class="flex-1 flex flex-col items-center xl:max-w-[400px]">
+            <h4 class="text-center text-2xl font-bold">
+                <span>{t("profile.why-exhibit.description-3")}</span>
+            </h4>
+            <img
+                class="lg:w-60 xl:w-72"
+                src="/img/attendees.webp"
+                alt="attendees"
+            />
+        </div>
+    </div>
+</section>
