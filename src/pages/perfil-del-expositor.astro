@@ -1,5 +1,7 @@
 ---
 import i18n, { t, changeLanguage } from "i18next";
+// @ts-ignore
+import { localizePath } from "astro-i18next";
 import Layout from "../layouts/Layout.astro";
 import BecomeAnExhibitor from "../components/exhibitor-profile/BecomeAnExhibitor.astro";
 import WhyExhibit from "../components/exhibitor-profile/WhyExhibit.astro";
@@ -21,10 +23,11 @@ changeLanguage("es");
       ? "/files/Factsheet_ITM_ENG_v2_120124.pdf"
       : "/files/Factsheet_ITM_2024_AC_ESP_VF_08-03-2024.pdf"}
        withIcon={false}
-       className="text-2xl text-center font-bold">
+       className="text-2xl text-center font-bold"
+       openInNewTab={true}>
         {t('profile.btn-exhibitor-info')}
       </RedButton>
-      <RedButton href="" withIcon={false} className="text-2xl text-center font-bold">
+      <RedButton href={localizePath("/soy-expositor")} withIcon={false} className="text-2xl text-center font-bold">
         {t('profile.btn-exhibitor')}
       </RedButton>
     </section>

@@ -1,5 +1,7 @@
 ---
 import i18n, { t } from "i18next";
+// @ts-ignore
+import { localizePath } from "astro-i18next";
 
 import RedButton from "../shared/RedButton.astro";
 ---
@@ -12,16 +14,17 @@ import RedButton from "../shared/RedButton.astro";
         <RedButton href={i18n.language === "en"
         ? "/files/Factsheet_ITM_ENG_v2_120124.pdf"
         : "/files/Factsheet_ITM_2024_AC_ESP_VF_08-03-2024.pdf"}
-        withIcon={true}>
+        withIcon={true}
+        openInNewTab={true}>
             Factsheet 2024
         </RedButton>
-        <RedButton href="/files/Floorplan%20ITM%202024_14-05-2024.pdf" withIcon={true}>
+        <RedButton href="/files/Floorplan%20ITM%202024_14-05-2024.pdf" withIcon={true} openInNewTab={true}>
             {t("menu.exhibitors_5")}
         </RedButton>
-        <RedButton href="/files/ITM2024-contract-V2.pdf" withIcon={true}>
+        <RedButton href="/files/ITM2024-contract-V2.pdf" withIcon={true} openInNewTab={true}>
             {t("menu.exhibitors_6")}
         </RedButton>
-        <RedButton href="/patrocinios" withIcon={true}>
+        <RedButton href={localizePath("/patrocinios")} withIcon={true}>
             {t("menu.exhibitors_7")}
         </RedButton>
     </ul>
