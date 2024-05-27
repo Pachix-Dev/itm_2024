@@ -5,7 +5,7 @@ import BecomeAnExhibitor from "../components/exhibitor-profile/BecomeAnExhibitor
 import WhyExhibit from "../components/exhibitor-profile/WhyExhibit.astro";
 import Segments from "../components/exhibitor-profile/Segments.astro";
 import Rates from "../components/exhibitor-profile/Rates.astro";
-import Button from "../components/exhibitor-profile/Button.astro";
+import RedButton from "../components/shared/RedButton.astro";
 
 changeLanguage("es");
 ---
@@ -17,16 +17,16 @@ changeLanguage("es");
     <Segments />
     <Rates /> 
     <section class="bg-gradient-to-r from-[#7f1b2d] to-[#014c83] flex flex-col items-center px-5 py-5 gap-5 md:py-20">
-      <Button href={i18n.language === "en"
+      <RedButton href={i18n.language === "en"
       ? "/files/Factsheet_ITM_ENG_v2_120124.pdf"
       : "/files/Factsheet_ITM_2024_AC_ESP_VF_08-03-2024.pdf"}
        withIcon={false}
        className="text-2xl text-center font-bold">
         {t('profile.btn-exhibitor-info')}
-      </Button>
-      <Button href="" withIcon={false} className="text-2xl text-center font-bold">
+      </RedButton>
+      <RedButton href="" withIcon={false} className="text-2xl text-center font-bold">
         {t('profile.btn-exhibitor')}
-      </Button>
+      </RedButton>
     </section>
     <section class="mb-10">
       <div class="flex flex-col items-center flex-1 pt-10 mx-auto">

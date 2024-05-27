@@ -1,7 +1,7 @@
 ---
 import i18n, { t } from "i18next";
 
-import Button from "./Button.astro";
+import RedButton from "../shared/RedButton.astro";
 ---
 
 <section class="bg-[url('/img/BanderaMexico.webp')] bg-cover bg-center bg-no-repeat bg-fixed text-white px-5 md:px-10 lg:px-20 py-10">
@@ -9,20 +9,20 @@ import Button from "./Button.astro";
     <h2 class="font-bold text-4xl pt-5" >{t("profile.subtitle")}</h2>
     <p class="text-xl pt-2 md:w-8/12" set:html={t("profile.description")} />
     <ul class="flex flex-col md:flex-row flex-wrap gap-5 md:pl-5 pt-10 items-center w-full">
-        <Button href={i18n.language === "en"
+        <RedButton href={i18n.language === "en"
         ? "/files/Factsheet_ITM_ENG_v2_120124.pdf"
         : "/files/Factsheet_ITM_2024_AC_ESP_VF_08-03-2024.pdf"}
         withIcon={true}>
             Factsheet 2024
-        </Button>
-        <Button href="/files/Floorplan%20ITM%202024_14-05-2024.pdf" withIcon={true}>
+        </RedButton>
+        <RedButton href="/files/Floorplan%20ITM%202024_14-05-2024.pdf" withIcon={true}>
             {t("menu.exhibitors_5")}
-        </Button>
-        <Button href="/files/ITM2024-contract-V2.pdf" withIcon={true}>
+        </RedButton>
+        <RedButton href="/files/ITM2024-contract-V2.pdf" withIcon={true}>
             {t("menu.exhibitors_6")}
-        </Button>
-        <Button href="/patrocinios" withIcon={true}>
+        </RedButton>
+        <RedButton href="/patrocinios" withIcon={true}>
             {t("menu.exhibitors_7")}
-        </Button>
+        </RedButton>
     </ul>
 </section>
