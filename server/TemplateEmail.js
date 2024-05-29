@@ -3,7 +3,7 @@ import QRCode from 'qrcode'
 const email_template = async ({uuid, name, paternSurname, maternSurname}) => {  
       
     const qrCodeImage = await QRCode.toDataURL(uuid)
-
+    
     return (
    `<table align="center" width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0" style="max-width: 680px; width: 100%; margin: 0px auto; background-color: #000000;color: #ffffff;">
    <tbody>

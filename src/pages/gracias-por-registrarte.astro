@@ -3,12 +3,13 @@ import { changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import Confettti from "../components/shared/Confetti";
 import { Redirect } from "../components/shared/Redirect.jsx";
+import { DonwloadAccess } from "../components/register/DonwloadAccess";
 
 changeLanguage("es");
 ---
 
 <Layout title='ITM  | Gracias por contactarnos'>
-  <Redirect client:only />
+  <Redirect client:only='react' />
   <div class='w-screen h-screen p-5 lg:p-20 bg-black'>
     <div
       class='rounded-lg px-4 ecomondo-bloq-1 w-full h-full shadow-2xl text-white flex flex-col items-center justify-center relative'
@@ -23,15 +24,10 @@ changeLanguage("es");
         alt='ecomondo feria de sustentabilidad'
       />
       <p class='font-bold text-center'>
-        ¡Fantástico! Su solicitud fue enviada correctamente.
+        ¡Fantástico! te haz registrado correctamente.
       </p>
       <p class='text-center'>¡Pronto recibiras un correo de confirmación!</p>
-      <a
-        href='/'
-        class='mt-10 text-white px-4 py-2 rounded-md font-bold bg-red-600 hover:bg-red-700 transition duration-300 ease-in-out'
-      >
-        Regresar al inicio
-      </a>
+      <DonwloadAccess client:only='react' />
       <div class='mt-5 flex sm:justify-center'>
         <a
           href='https://www.facebook.com/Indtransmex/'

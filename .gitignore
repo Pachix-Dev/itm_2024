@@ -6,7 +6,7 @@ dist/
 
 # dependencies
 node_modules/
-
+invoices
 # logs
 npm-debug.log*
 yarn-debug.log*

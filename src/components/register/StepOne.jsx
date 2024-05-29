@@ -378,13 +378,14 @@ export function StepOne() {
       {errors.age && (
         <p className='text-[#D70205] font-light'>{errors.age.message}</p>
       )}
-
-      <button
-        className='p-5 bg-[#D70105] rounded-lg text-white  mt-5'
-        onClick={handleSubmit(incrementStep)}
-      >
-        Continuar
-      </button>
+      <div className='w-full flex justify-end'>
+        <button
+          className='px-3 py-2 bg-[#E42128] hover:bg-red-700 rounded-2xl text-white font-bold mt-5'
+          onClick={handleSubmit(incrementStep)}
+        >
+          Continuar
+        </button>
+      </div>
     </>
   )
 }

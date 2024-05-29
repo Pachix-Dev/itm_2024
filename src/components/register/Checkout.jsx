@@ -34,6 +34,7 @@ export function Checkout() {
     levelInfluence,
     wannaBeExhibitor,
     setCompleteRegister,
+    setInvoiceDownToLoad,
     clear,
   } = useRegisterForm()
   const [message, setMessage] = useState('')
@@ -69,7 +70,8 @@ export function Checkout() {
       },
       body: JSON.stringify({
         orderID: data.orderID,
-        total: total.toFixed(2),
+        total: item.price.toFixed(2),
+        item,
         name,
         paternSurname,
         maternSurname,
@@ -97,14 +99,16 @@ export function Checkout() {
     })
     const orderData = await response.json()
     if (orderData.status) {
-      dropState()
-      clear()
+      //clear()
       setCompleteRegister(true)
       setInvoiceDownToLoad(orderData?.invoice)
-      window.location.href = '/thanks-for-your-purchase'
+      window.location.href = '/gracias-por-registrarte'
     } else {
       setProcessing(false)
       setMessage(orderData?.message)
+      setTimeout(() => {
+        setMessage('')
+      }, 5000)
     }
   }
 
@@ -115,7 +119,7 @@ export function Checkout() {
       <>
         {showSpinner && isPending && <div className='spinner' />}
         <PayPalButtons
-          className='py-5'
+          className='py-5 text-white'
           style={style}
           disabled={false}
           forceReRender={[style]}
@@ -128,6 +132,7 @@ export function Checkout() {
   }
 
   const handleSubmit = async () => {
+    setProcessing(true)
     const response = await fetch('http://localhost:3005/free-register', {
       method: 'POST',
       headers: {
@@ -161,42 +166,48 @@ export function Checkout() {
     })
     const orderData = await response.json()
     if (orderData.status) {
-      /*dropState()
       clear()
       setCompleteRegister(true)
       setInvoiceDownToLoad(orderData?.invoice)
-      window.location.href = '/thanks-for-your-purchase'*/
+      window.location.href = '/gracias-por-registrarte'
     } else {
+      setProcessing(false)
       setMessage(orderData?.message)
+      setTimeout(() => {
+        setMessage('')
+      }, 5000)
     }
-
-    /*clear()
-    window.location.href = '/gracias-por-registrarte'*/
   }
 
   return (
     <>
-      <div className='grid place-items-center'>
-        {item.id === 2 ? (
-          <div className=' px-7 py-7 mx-auto border rounded-2xl shadow-lg w-full'>
+      {item.id === 2 && (
+        <div className='grid place-items-center w-full '>
+          <div className='mx-auto text-white w-full p-5'>
             <p className='font-bold text-2xl'>Método de pago</p>
             <PayPalScriptProvider options={initialOptions}>
               <ButtonWrapper showSpinner={false} />
             </PayPalScriptProvider>
-            <p className='text-red-600 font-bold text-center'>{message}</p>
           </div>
-        ) : (
+          {message && (
+            <p className='text-red-600 font-bold text-center'>{message}</p>
+          )}
+        </div>
+      )}
+      {item.id === 1 && (
+        <div className='grid place-items-center w-full'>
           <button
-            className='px-10 py-4 bg-[#D70105] rounded-lg text-white  mt-5 text-xl font-semibold'
+            className='px-10 py-4 bg-[#B91C1C] hover:bg-red-600 rounded-lg text-white  mt-5 text-xl font-semibold'
             onClick={handleSubmit}
           >
             Finalizar
           </button>
-        )}
-        {message && (
-          <p className='text-red-600 font-bold text-center'>{message}</p>
-        )}
-      </div>
+          {message && (
+            <p className='text-red-600 font-bold text-center'>{message}</p>
+          )}
+        </div>
+      )}
+
       {processing && (
         <div className='absolute top-0 left-0 bg-gray-400 bg-opacity-85 z-[999] w-full h-screen'>
           <div role='status' className='grid place-items-center w-full h-full'>

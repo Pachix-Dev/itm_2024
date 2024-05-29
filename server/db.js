@@ -11,10 +11,10 @@ const config = {
 
 const hableError = (error) => {
 
-  if (error.sqlState === '23000') {
+  if (error?.sqlState === '23000') {
     return {
       status: false,
-      message: 'Ya existe un usuario con este correo electrónico o teléfono por favor intenta con otro.',      
+      message: 'Ya existe un usuario registrado con este correo electrónico o teléfono por favor regresa a tu información personal e intenta con otro.',      
     }
   }  
   

@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 import {RegisterModel} from './db.js';
 import {email_template} from './TemplateEmail.js';
 import nodemailer from 'nodemailer';
+import { generatePDFInvoice, generatePDF_freePass } from './generatePdf.js';
 
 const { json } = pkg
 const app = express()
@@ -13,7 +14,7 @@ app.use(json())
 app.use(express.urlencoded({extended: true}));
 app.use(cors({
   origin: (origin, callback) => {
-    const ACCEPTED_ORIGINS = ['http://localhost:4321', 'https://industrialtransformation.mx']
+    const ACCEPTED_ORIGINS = process.env.ACCEPTED_ORIGINS.split(',')
 
     if (ACCEPTED_ORIGINS.includes(origin)) {
       return callback(null, true)
@@ -80,9 +81,9 @@ app.post('/complete-order', async (req, res) => {
     const { body } = req;    
     try {
         console.log(body);
-        const user = { 
+        const data = { 
             uuid: uuidv4(), 
-            total: total.toFixed(2),
+            total: body.total,
             name: body.name,
             paternSurname: body.paternSurname,
             maternSurname: body.maternSurname,
@@ -107,18 +108,15 @@ app.post('/complete-order', async (req, res) => {
             levelInfluence: body.levelInfluence,
             wannaBeExhibitor: body.wannaBeExhibitor,
         };
-
         
-        const userResponse = await RegisterModel.create_user({ ...user });
+        const userResponse = await RegisterModel.create_user({ ...data });
         const { insertId } = userResponse;
 
         if(!userResponse.status){
             return  res.status(500).send({
-                status: false,
-                message: 'Error al guardar tus datos, por favor intenta de nuevo.'
+                ...userResponse
             });
         }
-
 
         const access_token = await get_access_token();
         const response = await fetch(endpoint_url + '/v2/checkout/orders/' + req.body.orderID + '/capture', {
@@ -136,12 +134,15 @@ app.post('/complete-order', async (req, res) => {
                 const paypal_id_order = json.id;
                 const paypal_id_transaction = json.purchase_units[0].payments.captures[0].id;                     
                 await RegisterModel.save_order(insertId, paypal_id_order, paypal_id_transaction, body.total);
-                                              
-                res.send({
-                    status: true,
-                    message: 'Order completed',
-                    invoice: `invoice-${paypal_id_transaction}.pdf`
-                });
+
+                const pdfAtch = await generatePDFInvoice(paypal_id_transaction, body, data.uuid);
+
+                const mailResponse = await sendEmail(data, pdfAtch, paypal_id_transaction);   
+        
+                return res.send({
+                    ...mailResponse,
+                    invoice: `${paypal_id_transaction}.pdf`
+                });                
             }
         } else {        
             return res.status(500).send({
@@ -153,7 +154,7 @@ app.post('/complete-order', async (req, res) => {
         console.log(err);
         res.status(500).send({
             status: false,
-            message: 'Order failed to complete'
+            message: 'hubo un error al procesar tu compra, por favor intenta mas tarde...'
         });
     }
 });
@@ -161,8 +162,7 @@ app.post('/complete-order', async (req, res) => {
 app.post('/free-register', async (req, res) => {
     const { body } = req;
 
-    try {
-        console.log(body);
+    try {        
         const data = { 
             uuid: uuidv4(),             
             name: body.name,
@@ -197,23 +197,30 @@ app.post('/free-register', async (req, res) => {
                 ...userResponse
             });
         }
-             
-        const mailResponse = await sendEmail({data});   
         
+        const currentDate = new Date();
+        const timestamp = currentDate.getTime();
+        const registerFile = 'registro-gratis-' + timestamp;
+
+        const pdfAtch = await generatePDF_freePass(body, data.uuid, registerFile);
+
+        const mailResponse = await sendEmail(data, pdfAtch, registerFile);   
+
         return res.send({
-            ...mailResponse
-        });
+            ...mailResponse,
+            invoice: `${registerFile}.pdf`
+        });                
                
     } catch (err) {
         console.log(err);
         res.status(500).send({
             status: false,
-            message: 'Order failed to complete'
+            message: 'hubo un error al procesar tu registro, por favor intenta mas tarde...'
         });
     }
 });
 
-async function sendEmail({data}){    
+async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
         // Nodemailer setup
         const transporter = nodemailer.createTransport({
@@ -230,9 +237,17 @@ async function sendEmail({data}){
 
         const mailOptions = {
             from: process.env.USER_GMAIL,
-            to: user.email,
+            to: data.email,
             subject: 'Confirmación de pre registro ITM 2024',
+            attachDataUrls: true,
             html: emailContent,            
+            attachments: pdfAtch ? [
+                {
+                    filename: `${paypal_id_transaction}.pdf`,
+                    path: pdfAtch,
+                    contentType: 'application/pdf'
+                }
+            ] : []
         };
 
         await transporter.sendMail(mailOptions);
@@ -242,7 +257,8 @@ async function sendEmail({data}){
             message: 'Gracias por registrarte, te hemos enviado un correo de confirmación a tu bandeja de entrada...'
         };
 
-    } catch (err) {  
+    } catch (err) {
+        console.log(err);
         return {
             status: false,
             message: 'No pudimos enviarte el correo de confirmación de tu registro, por favor descarga tu registro en este pagina y presentalo hasta el dia del evento...'

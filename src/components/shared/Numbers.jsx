@@ -5,6 +5,7 @@ export function Numbers({ number, duration }) {
   const formatNumberWithCommas = (value) => {
     return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
   }
+
   useEffect(() => {
     let start = 0
     const end = parseInt(number.substring(0, 3))
@@ -20,5 +21,6 @@ export function Numbers({ number, duration }) {
 
     return () => clearInterval(timer)
   }, [number, duration])
+
   return <div className=''>{formatNumberWithCommas(count)}</div>
 }
