@@ -484,5 +484,9 @@
     "germanPavilion":{
         "title-exhibitor": "Be part of the German Pavilion at ITM 2024",
         "agreement" : "Agreement"
+    },
+    "Sponsorships":{
+        "title": "Sponsorships 2024",
+        "subtitle": "Industrial Transformation Mexico"
     }
 }
