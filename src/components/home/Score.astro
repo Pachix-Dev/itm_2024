@@ -1,4 +1,5 @@
 ---
+import { t } from 'i18next'
 import { Numbers } from '../shared/Numbers'
 ---
 
@@ -12,10 +13,10 @@ import { Numbers } from '../shared/Numbers'
           class='w-full h-full object-cover absolute z-[-1]'
         />
         <div class='info'>
-          <span>
+          <span class='text-[#E20B24] font-bold text-5xl'>
             <Numbers client:only number='15000' duration='5' />
           </span>
-          <p class='text-white'>Categoria 1</p>
+          <p class='text-white'>{t('home.bullet_1')}</p>
         </div>
       </div>
       <div class='relative'>
@@ -25,10 +26,10 @@ import { Numbers } from '../shared/Numbers'
           class='w-full h-full object-cover absolute z-[-1]'
         />
         <div class='info'>
-          <span>
+          <span class='text-[#E20B24] font-bold text-5xl'>
             <Numbers client:only number='5000' duration='5' />
           </span>
-          <p class='text-white'>Categoria 1</p>
+          <p class='text-white'>{t('home.bullet_2')}</p>
         </div>
       </div>
       <div class='relative'>
@@ -38,10 +39,10 @@ import { Numbers } from '../shared/Numbers'
           class='w-full h-full object-cover absolute z-[-1]'
         />
         <div class='info'>
-          <span>
+          <span class='text-[#E20B24] font-bold text-5xl'>
             <Numbers client:only number='1370' duration='5' />
           </span>
-          <p class='text-white'>Categoria 1</p>
+          <p class='text-white'>{t('home.bullet_3')}</p>
         </div>
       </div>
       <div class='relative'>
@@ -51,10 +52,10 @@ import { Numbers } from '../shared/Numbers'
           class='w-full h-full object-cover absolute z-[-1]'
         />
         <div class='info'>
-          <span>
+          <span class='text-[#E20B24] font-bold text-5xl'>
             <Numbers client:only number='260' duration='5' />
           </span>
-          <p class='text-white'>Categoria 1</p>
+          <p class='text-white'>{t('home.bullet_4')}</p>
         </div>
       </div>
       <div class='relative'>
@@ -64,10 +65,10 @@ import { Numbers } from '../shared/Numbers'
           class='w-full h-full object-cover absolute z-[-1]'
         />
         <div class='info'>
-          <span>
+          <span class='text-[#E20B24] font-bold text-5xl'>
             <Numbers client:only number='13700' duration='5' />
           </span>
-          <p class='text-white'>Categoria 1</p>
+          <p class='text-white'>{t('home.bullet_5')}</p>
         </div>
       </div>
     </div>

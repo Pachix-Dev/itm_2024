@@ -1,10 +1,106 @@
 ---
-import i18n, { t, changeLanguage } from "i18next";
+import { changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 
 changeLanguage("en");
 ---
 
 <Layout title={`ITM 2024 | Roadshows`}>
-  <h1>Hello, Astro!</h1>
+  <section class='py-5 container mx-auto px-4'>
+    <h1 class='text-center text-[#E8001E] font-bold text-3xl'>Roadshows</h1>
+    <div class='mt-5 grid md:grid-cols-3 gap-5'>
+      <div>
+        <lite-youtube
+          class='shadow-2xl shadow-white/10 rounded-lg'
+          videoid='XWI7TjUJu34'
+          videotitle='CII IA'
+        >
+        </lite-youtube>
+        <p class='font-bold text-xl'>
+          Roadshow: Manufactura avanzada e Industria 4.0
+        </p>
+      </div>
+      <div>
+        <lite-youtube
+          class='shadow-2xl shadow-white/10 rounded-lg'
+          videoid='-H5lngSiEpQ'
+          videotitle='CII IA'
+        >
+        </lite-youtube>
+        <p class='font-bold text-xl'>
+          Roadshow: Transformación Digital e Industria 4.0
+        </p>
+      </div>
+      <div>
+        <lite-youtube
+          class='shadow-2xl shadow-white/10 rounded-lg'
+          videoid='60GtP0vi2jw'
+          videotitle='CII IA'
+        >
+        </lite-youtube>
+        <p class='font-bold text-xl'>
+          Roadshow: Industria 4.0 Retos y oportunidades
+        </p>
+      </div>
+      <div>
+        <lite-youtube
+          class='shadow-2xl shadow-white/10 rounded-lg'
+          videoid='Mhv2To-QJ5g'
+          videotitle='CII IA'
+        >
+        </lite-youtube>
+        <p class='font-bold text-xl'>
+          Roadshow: Trazando la ruta de la estandarización para la industria 4.0
+          en Alemania
+        </p>
+      </div>
+      <div>
+        <lite-youtube
+          class='shadow-2xl shadow-white/10 rounded-lg'
+          videoid='GxY4GX60Z4Q'
+          videotitle='CII IA'
+        >
+        </lite-youtube>
+        <p class='font-bold text-xl'>
+          Roadshow: Impulsando las Industrias del Futuro
+        </p>
+      </div>
+      <div>
+        <lite-youtube
+          class='shadow-2xl shadow-white/10 rounded-lg'
+          videoid='nMqHwWH-JAY'
+          videotitle='CII IA'
+        >
+        </lite-youtube>
+        <p class='font-bold text-xl'>Roadshow - Factory of the future</p>
+      </div>
+      <div>
+        <lite-youtube
+          class='shadow-2xl shadow-white/10 rounded-lg'
+          videoid='ABArhpxq-EI'
+          videotitle='CII IA'
+        >
+        </lite-youtube>
+        <p class='font-bold text-xl'>
+          Roadshow | Cómputo de Borde y Machine Learning Caso de uso en la
+          industria tequilera | ITM 2023
+        </p>
+      </div>
+      <div>
+        <lite-youtube
+          class='shadow-2xl shadow-white/10 rounded-lg'
+          videoid='aHg0jBXFbRY'
+          videotitle='CII IA'
+        >
+        </lite-youtube>
+        <p class='font-bold text-xl'>
+          Roadshow: Industrial Transformation Mexico 2023 | Infraestructura para
+          la descarbonización industrial
+        </p>
+      </div>
+    </div>
+  </section>
 </Layout>
+<script>
+  import '@justinribeiro/lite-youtube'
+</script>
