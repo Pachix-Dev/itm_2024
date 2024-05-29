@@ -1,0 +1,16 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Gallery from "../../components/shared//Gallery.jsx";
+import { t, changeLanguage } from "i18next";
+import { gallery2019 } from "../../data/constans_gallery_by_year";
+
+changeLanguage("es");
+---
+
+<Layout title={`ITM 2024 | ${t("menu.media_hub_2")} ITM 2019}`}>
+    <Gallery
+        images={gallery2019}
+        galleryID={`gallery-2019`}
+        client:only="react"
+    />
+</Layout>

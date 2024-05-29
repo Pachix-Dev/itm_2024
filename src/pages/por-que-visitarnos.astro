@@ -1,6 +1,7 @@
 ---
 import { t, changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
+import SelectGallery from "../components/shared/SelectGallery.astro";
 
 changeLanguage("es");
 ---
@@ -85,8 +86,11 @@ changeLanguage("es");
         </div>
       </div>
     </section>
-    <section>
-
+    <section class="py-10 px-">
+      <h2 class="font-bold text-[#e8001e] text-4xl text-center pb-10">
+        {t("gallery.title")}
+      </h2>
+      <SelectGallery />
     </section>
     <section>
       <div class="pt-5">
