@@ -1,7 +1,7 @@
 ---
 import { t, changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
-import GallerySelector from "../../components/shared/SelectGallery.astro";
+import SelectGallery from "../../components/shared/SelectGallery.astro";
 
 changeLanguage("en");
 ---
@@ -90,7 +90,7 @@ changeLanguage("en");
       <h2 class="font-bold text-[#e8001e] text-4xl text-center pb-10">
         {t("gallery.title")}
       </h2>
-      <GallerySelector />
+      <SelectGallery />
     </section>
     <section>
       <div class="pt-5">
