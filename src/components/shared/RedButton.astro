@@ -1,0 +1,33 @@
+---
+interface Props {
+  href: string,
+  withIcon: boolean,
+  className?: string,
+  openInNewTab?: boolean
+}
+
+const { href, withIcon, className, openInNewTab = false } = Astro.props;
+---
+
+<li class=`bg-red-600 rounded-3xl relative after:absolute after:bottom-0 after:left-0 after:content-[''] after:w-full after:h-full after:scale-y-[0.05] after:origin-bottom z-10 after:opacity-90 after:transition after:rounded-3xl after:bg-sky-800 hover:after:scale-y-100 hover:after:opacity-100 w-full md:w-fit list-none text-white ${className}`>
+    <a class="flex z-20 relative p-3 justify-center" href={href} target={openInNewTab ? '_blank' : '_self'}>
+        <slot />
+        {
+            withIcon && 
+            <svg
+                class="pl-1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                width="25"
+            ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M7.5 7.5h-.75A2.25 2.25 0 004.5 9.75v7.5a2.25 2.25 0 002.25 2.25h7.5a2.25 2.25 0 002.25-2.25v-7.5a2.25 2.25 0 00-2.25-2.25h-.75m-6 3.75l3 3m0 0l3-3m-3 3V1.5m6 9h.75a2.25 2.25 0 012.25 2.25v7.5a2.25 2.25 0 01-2.25 2.25h-7.5a2.25 2.25 0 01-2.25-2.25v-.75"
+            ></path>
+        </svg>
+        }
+    </a>
+</li>

@@ -1,0 +1,56 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Gallery from "../../components/shared//Gallery.jsx";
+import { t, changeLanguage } from "i18next";
+import { galleryExpositores2023, galleryConferencias2023, galleryFuturistic2023, startupPitch2023, itmujeres2023, mtech2023, cumbre2023, nocheIndustriales2023, octoker2023, } from "../../data/constans_gallery_by_year";
+
+changeLanguage("es");
+---
+
+<Layout title={`ITM 2024 | ${t("menu.media_hub_2")} ITM 2019}`}>
+    <Gallery
+        images={galleryExpositores2023}
+        galleryID={`gallery-expositores-2023`}
+        client:only="react"
+    />
+    <Gallery
+        images={galleryConferencias2023}
+        galleryID={`gallery-conferencias-2023`}
+        client:only="react"
+    />
+    <Gallery
+        images={galleryFuturistic2023}
+        galleryID={`gallery-futuristic-2023`}
+        client:only="react"
+    />
+    <Gallery
+        images={startupPitch2023}
+        galleryID={`startup-pitch-2023`}
+        client:only="react"
+    />
+    <Gallery
+        images={itmujeres2023}
+        galleryID={`itm-mujeres-2023`}
+        client:only="react"
+    />
+    <Gallery
+        images={mtech2023}
+        galleryID={`m-tech-2023`}
+        client:only="react"
+    />
+    <Gallery
+        images={cumbre2023}
+        galleryID={`cumbre-2023`}
+        client:only="react"
+    />
+    <Gallery
+        images={nocheIndustriales2023}
+        galleryID={`noche-industriales-2023`}
+        client:only="react"
+    />
+    <Gallery
+        images={octoker2023}
+        galleryID={`oktober-2023`}
+        client:only="react"
+    />
+</Layout>

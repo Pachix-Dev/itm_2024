@@ -1,10 +1,46 @@
 ---
 import i18n, { t, changeLanguage } from "i18next";
+// @ts-ignore
+import { localizePath } from "astro-i18next";
 import Layout from "../../layouts/Layout.astro";
+import BecomeAnExhibitor from "../../components/exhibitor-profile/BecomeAnExhibitor.astro";
+import WhyExhibit from "../../components/exhibitor-profile/WhyExhibit.astro";
+import Segments from "../../components/exhibitor-profile/Segments.astro";
+import Rates from "../../components/exhibitor-profile/Rates.astro";
+import RedButton from "../../components/shared/RedButton.astro";
 
 changeLanguage("en");
 ---
 
-<Layout title={`ITM 2024 | ${t('menu.exhibitors_3')}`}>
-  <h1>Hello, Astro!</h1>
+<Layout title={`ITM 2024 | ${t("menu.exhibitors_3")}`}>
+  <main>
+    <BecomeAnExhibitor />
+    <WhyExhibit />
+    <Segments />
+    <Rates /> 
+    <section class="bg-gradient-to-r from-[#7f1b2d] to-[#014c83] flex flex-col items-center px-5 py-5 gap-5 md:py-20">
+      <RedButton href={i18n.language === "en"
+      ? "/files/Factsheet_ITM_ENG_v2_120124.pdf"
+      : "/files/Factsheet_ITM_2024_AC_ESP_VF_08-03-2024.pdf"}
+       withIcon={false}
+       className="text-2xl text-center font-bold"
+       openInNewTab={true}>
+        {t('profile.btn-exhibitor-info')}
+      </RedButton>
+      <RedButton href={localizePath("/soy-expositor")} withIcon={false} className="text-2xl text-center font-bold">
+        {t('profile.btn-exhibitor')}
+      </RedButton>
+    </section>
+    <section class="mb-10">
+      <div class="flex flex-col items-center flex-1 pt-10 mx-auto">
+        <h2 class="text-2xl text-center font-medium pb-5 px-5">{t('exhibitorReasons.become_exhibitor')}</h2>
+        <img class="w-auto h-52" src="/img/ederRangel.webp" alt="Eder Rangel">
+        <h3 class="text-black text-xl font-medium pt-5">{t('home.contact_mexico_latam')}</h3>
+        <h4 class="text-black pt-2">Eder Raúl Rangel Déziga</h4>
+        <p class="text-black">Tel. +52 55 7028 3335 ext. 809</p>
+        <a class="text-black pt-5 underline" href="emailto:eder.rangel@igeco.mx">eder.rangel@igeco.mx</a>
+        <a class="mt-4 text-xl text-red-600 p-2 border-[1px] border-red-600 rounded-lg hover:text-white hover:bg-red-600 transition" href="emailto:eder.rangel@igeco.mx">{t('profile.btn-sent-message')}</a>
+      </div>
+    </section>
+  </main>
 </Layout>
