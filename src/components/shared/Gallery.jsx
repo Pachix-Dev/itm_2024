@@ -1,10 +1,17 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
 import 'photoswipe/style.css'
 import '@appnest/masonry-layout'
 
 export default function SimpleGallery(props) {
   const [page, setPage] = useState(0)
+  const masonryRef = useRef(null);
+
+  useEffect(() => {
+    if (masonryRef.current) {
+      masonryRef.current.scheduleLayout();
+    }
+  }, [page]);
 
   useEffect(() => {
     let lightbox = new PhotoSwipeLightbox({
@@ -18,7 +25,7 @@ export default function SimpleGallery(props) {
       lightbox.destroy()
       lightbox = null
     }
-  }, [])
+  }, [page])
 
   const imagesForEachPage = 12
   const imageGroups = []
@@ -29,10 +36,10 @@ export default function SimpleGallery(props) {
   const Pagination = () => (
     <div className='flex justify-end p-5'>
       <nav aria-label='Page navigation example'>
-        <ul className='flex items-center -space-x-px h-8 text-sm'>
+        <ul className='flex items-center -space-x-px h-10 text-sm'>
           <li>
             <button
-              className='flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700'
+              className='flex items-center justify-center px-3 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700'
               onClick={() => setPage(page === 0 ? 0 : page - 1)}
             >
               <span className='sr-only'>Previous</span>
@@ -56,11 +63,10 @@ export default function SimpleGallery(props) {
           {imageGroups.map((_, index) => (
             <li key={index}>
               <button
-                className={`flex items-center justify-center px-3 h-8 leading-tight border border-gray-300 hover:bg-gray-100 hover:text-gray-700 ${
-                  page === index
+                className={`flex items-center justify-center px-3 h-10 leading-tight border border-gray-300 hover:bg-gray-100 hover:text-gray-700 ${page === index
                     ? 'bg-gray-100 text-gray-700'
                     : 'text-gray-500 bg-white'
-                }`}
+                  }`}
                 onClick={() => setPage(index)}
               >
                 {index + 1}
@@ -69,7 +75,7 @@ export default function SimpleGallery(props) {
           ))}
           <li>
             <button
-              className='flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700'
+              className='flex items-center justify-center px-3 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700'
               onClick={() =>
                 setPage(
                   page === imageGroups.length - 1
@@ -105,6 +111,7 @@ export default function SimpleGallery(props) {
     <div className={props.class}>
       {imageGroups.length > 1 && <Pagination />}
       <masonry-layout
+        ref={masonryRef}
         gap='24'
         class='container mx-auto px-4'
         id={props.galleryID}
