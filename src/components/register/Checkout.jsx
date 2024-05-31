@@ -63,40 +63,43 @@ export function Checkout() {
 
   async function onApprove(data) {
     setProcessing(true)
-    const response = await fetch('http://localhost:3005/complete-order', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        orderID: data.orderID,
-        total: item.price.toFixed(2),
-        item,
-        name,
-        paternSurname,
-        maternSurname,
-        email,
-        phone,
-        typeRegister,
-        genre,
-        age,
-        linkedin,
-        company,
-        industry,
-        position,
-        country,
-        city,
-        address,
-        colonia,
-        postalCode,
-        webPage,
-        phoneCompany,
-        eventKnowledge,
-        productInterest,
-        levelInfluence,
-        wannaBeExhibitor,
-      }),
-    })
+    const response = await fetch(
+      'https://demo.industrialtransformation.mx/server/complete-order',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          orderID: data.orderID,
+          total: item.price.toFixed(2),
+          item,
+          name,
+          paternSurname,
+          maternSurname,
+          email,
+          phone,
+          typeRegister,
+          genre,
+          age,
+          linkedin,
+          company,
+          industry,
+          position,
+          country,
+          city,
+          address,
+          colonia,
+          postalCode,
+          webPage,
+          phoneCompany,
+          eventKnowledge,
+          productInterest,
+          levelInfluence,
+          wannaBeExhibitor,
+        }),
+      }
+    )
     const orderData = await response.json()
     if (orderData.status) {
       //clear()
@@ -133,37 +136,40 @@ export function Checkout() {
 
   const handleSubmit = async () => {
     setProcessing(true)
-    const response = await fetch('http://localhost:3005/free-register', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name,
-        paternSurname,
-        maternSurname,
-        email,
-        phone,
-        typeRegister,
-        genre,
-        age,
-        linkedin,
-        company,
-        industry,
-        position,
-        country,
-        city,
-        address,
-        colonia,
-        postalCode,
-        webPage,
-        phoneCompany,
-        eventKnowledge,
-        productInterest,
-        levelInfluence,
-        wannaBeExhibitor,
-      }),
-    })
+    const response = await fetch(
+      'https://demo.industrialtransformation.mx/server/free-register',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          paternSurname,
+          maternSurname,
+          email,
+          phone,
+          typeRegister,
+          genre,
+          age,
+          linkedin,
+          company,
+          industry,
+          position,
+          country,
+          city,
+          address,
+          colonia,
+          postalCode,
+          webPage,
+          phoneCompany,
+          eventKnowledge,
+          productInterest,
+          levelInfluence,
+          wannaBeExhibitor,
+        }),
+      }
+    )
     const orderData = await response.json()
     if (orderData.status) {
       clear()
