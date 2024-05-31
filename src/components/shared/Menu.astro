@@ -38,16 +38,19 @@ const menu: MenuItem[] = [
       { title: t('menu.exhibitors_12'), href: '/pabellon-aleman' },
       {
         title: 'factsheet itm 2024',
-        href: i18next.language === "en" ? "/files/Factsheet_ITM_ENG_v2_120124.pdf" : "/files/Factsheet_ITM_2024_AC_ESP_VF_08-03-2024.pdf",
+        href:
+          i18next.language === 'en'
+            ? '/files/Factsheet_ITM_ENG_v2_120124.pdf'
+            : '/files/Factsheet_ITM_2024_AC_ESP_VF_08-03-2024.pdf',
         target: '_blank',
       },
-      { 
-        title: t('menu.exhibitors_5'), 
+      {
+        title: t('menu.exhibitors_5'),
         href: '/files/Floorplan%20ITM_2024_24_05_2024.pdf',
         target: '_blank',
       },
-      { 
-        title: t('menu.exhibitors_6'), 
+      {
+        title: t('menu.exhibitors_6'),
         href: '/files/ITM2024-contract-V2.pdf',
         target: '_blank',
       },
@@ -59,7 +62,11 @@ const menu: MenuItem[] = [
     items: [
       { title: t('menu.visitors_1'), href: '/por-que-visitarnos' },
       { title: t('menu.visitors_3'), href: '/tarifas-especiales-para-hoteles' },
-      { title: t('menu.visitors_4'), href: '/convenio-united-airlines' },
+      {
+        title: t('menu.visitors_4'),
+        href: '/files/United-Meetings-Agreement-2023-ENG.pdf',
+        target: '_blank',
+      },
     ],
   },
   {
@@ -71,11 +78,17 @@ const menu: MenuItem[] = [
           {
             title: t('menu.itm2023_1'),
             href: '/files/RESULTADOS-ITM-2023.pdf',
+            target: '_blank',
           },
-          { title: t('menu.itm2023_2'), href: '/files/DIRECTORIO-ITM-V4.pdf' },
+          {
+            title: t('menu.itm2023_2'),
+            href: '/files/DIRECTORIO-ITM-V4.pdf',
+            target: '_blank',
+          },
           {
             title: t('menu.itm2023_3'),
             href: '/files/Pasaporte-ITM-2023-ESP.pdf',
+            target: '_blank',
           },
         ],
       },
@@ -85,11 +98,17 @@ const menu: MenuItem[] = [
           {
             title: t('menu.itm2022_1'),
             href: '/files/RESULTADOS-ITM-2023.pdf',
+            target: '_blank',
           },
-          { title: t('menu.itm2022_2'), href: '/files/DIRECTORIO-ITM-V4.pdf' },
+          {
+            title: t('menu.itm2022_2'),
+            href: '/files/DIRECTORIO-ITM-V4.pdf',
+            target: '_blank',
+          },
           {
             title: t('menu.itm2022_3'),
             href: '/files/Pasaporte-ITM-2023-ESP.pdf',
+            target: '_blank',
           },
         ],
       },
@@ -99,11 +118,17 @@ const menu: MenuItem[] = [
           {
             title: t('menu.itm2021_1'),
             href: '/files/RESULTADOS-ITM-2023.pdf',
+            target: '_blank',
           },
-          { title: t('menu.itm2021_2'), href: '/files/DIRECTORIO-ITM-V4.pdf' },
+          {
+            title: t('menu.itm2021_2'),
+            href: '/files/DIRECTORIO-ITM-V4.pdf',
+            target: '_blank',
+          },
           {
             title: t('menu.itm2021_3'),
             href: '/files/Pasaporte-ITM-2023-ESP.pdf',
+            target: '_blank',
           },
         ],
       },
@@ -113,11 +138,17 @@ const menu: MenuItem[] = [
           {
             title: t('menu.itm2020_1'),
             href: '/files/RESULTADOS-ITM-2023.pdf',
+            target: '_blank',
           },
-          { title: t('menu.itm2020_2'), href: '/files/DIRECTORIO-ITM-V4.pdf' },
+          {
+            title: t('menu.itm2020_2'),
+            href: '/files/DIRECTORIO-ITM-V4.pdf',
+            target: '_blank',
+          },
           {
             title: t('menu.itm2020_3'),
             href: '/files/Pasaporte-ITM-2023-ESP.pdf',
+            target: '_blank',
           },
         ],
       },
@@ -127,11 +158,17 @@ const menu: MenuItem[] = [
           {
             title: t('menu.itm2019_1'),
             href: '/files/RESULTADOS-ITM-2023.pdf',
+            target: '_blank',
           },
-          { title: t('menu.itm2019_2'), href: '/files/DIRECTORIO-ITM-V4.pdf' },
+          {
+            title: t('menu.itm2019_2'),
+            href: '/files/DIRECTORIO-ITM-V4.pdf',
+            target: '_blank',
+          },
           {
             title: t('menu.itm2019_3'),
             href: '/files/Pasaporte-ITM-2023-ESP.pdf',
+            target: '_blank',
           },
         ],
       },
@@ -233,8 +270,15 @@ const menu: MenuItem[] = [
                                                   (deepSubItem) => (
                                                     <li>
                                                       <a
-                                                        href={deepSubItem.href}
-                                                        target={subItem.target}
+                                                        href={
+                                                          deepSubItem?.target
+                                                            ? deepSubItem.href
+                                                            : `${base}${deepSubItem.href}`
+                                                        }
+                                                        {...(deepSubItem.target && {
+                                                          target:
+                                                            deepSubItem.target,
+                                                        })}
                                                       >
                                                         {deepSubItem.title}
                                                       </a>
@@ -246,8 +290,14 @@ const menu: MenuItem[] = [
                                           </DropdownSubmenu>
                                         ) : (
                                           <a
-                                            href={nestedSubItem.href}
-                                            target={subItem.target}
+                                            href={
+                                              nestedSubItem?.target
+                                                ? nestedSubItem.href
+                                                : `${base}${nestedSubItem.href}`
+                                            }
+                                            {...(nestedSubItem.target && {
+                                              target: nestedSubItem.target,
+                                            })}
                                           >
                                             {nestedSubItem.title}
                                           </a>
@@ -258,7 +308,16 @@ const menu: MenuItem[] = [
                                 </DropdownItems>
                               </DropdownSubmenu>
                             ) : (
-                              <a href={subItem.href} target={subItem.target}>
+                              <a
+                                href={
+                                  subItem?.target
+                                    ? subItem.href
+                                    : `${base}${subItem.href}`
+                                }
+                                {...(subItem.target && {
+                                  target: subItem.target,
+                                })}
+                              >
                                 {subItem.title}
                               </a>
                             )}
@@ -269,7 +328,14 @@ const menu: MenuItem[] = [
                   </DropdownItems>
                 </Dropdown>
               ) : (
-                <a href={menuItem.href} target={menuItem.target}>
+                <a
+                  href={
+                    menuItem?.target ? menuItem.href : `${base}${menuItem.href}`
+                  }
+                  {...(menuItem.target && {
+                    target: menuItem.target,
+                  })}
+                >
                   {menuItem.title}
                 </a>
               )}
