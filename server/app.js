@@ -27,7 +27,7 @@ app.use(cors({
 }))
 
 
-const PORT = process.env.PORT || 3002
+const PORT = process.env.PORT || 3010
 const environment = process.env.ENVIRONMENT || 'sandbox';
 const client_id = process.env.CLIENT_ID;
 const client_secret = process.env.CLIENT_SECRET;

@@ -48,15 +48,18 @@ export function Checkout() {
   }
 
   async function createOrder() {
-    const response = await fetch('http://localhost:3005/create-order', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        total: item.price.toFixed(2),
-      }),
-    })
+    const response = await fetch(
+      'https://demo.industrialtransformation.mx/server/create-order',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          total: item.price.toFixed(2),
+        }),
+      }
+    )
     const order = await response.json()
     return order.id
   }
