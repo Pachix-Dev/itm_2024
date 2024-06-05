@@ -36,12 +36,20 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
         minutos={t('home.minutes')}
         segundos={t('home.seconds')}
       />
-      <a
+      <div class="flex gap-4">
+        <a
         href={`${base}/registro`}
         class='mt-5 bg-[#E42128] rounded-2xl px-4 py-2 font-extrabold text-xl text-white hover:bg-[#CF3B49] hover:cursor-pointer'
       >
         {t('home.free_register')}
       </a>
+      <a
+        href={`${base}/actualizar-a-vip`}
+        class='mt-5 bg-[#E42128] rounded-2xl px-4 py-2 font-extrabold text-xl text-white hover:bg-[#CF3B49] hover:cursor-pointer'
+      >
+        Pasate a Premium
+      </a>
+      </div>
     </div>
   </div>
 </section>

@@ -135,8 +135,35 @@ app.post('/free-register', async (req, res) => {
     const { body } = req;
 
     try {        
-        const uuid = uuidv4();
-        const userResponse = await RegisterModel.create_user({uuid, ...body });
+        const data = { 
+            uuid: uuidv4(),             
+            name: body.name,
+            paternSurname: body.paternSurname,
+            maternSurname: body.maternSurname,
+            email: body.email,
+            phone: body.phone,
+            typeRegister: body.typeRegister,
+            genre:  body.genre,
+            age: body.age,
+            linkedin: body.linkedin,
+            company: body.company,
+            industry: body.industry,
+            position: body.position,
+            country: body.country,
+            city: body.city,
+            address: body.address,
+            colonia: body.colonia,
+            postalCode: body.postalCode,
+            webPage: body.webPage,
+            phoneCompany: body.phoneCompany,
+            eventKnowledge: body.eventKnowledge,
+            productInterest: body.productInterest,
+            levelInfluence: body.levelInfluence,
+            wannaBeExhibitor: body.wannaBeExhibitor,
+        };
+        
+        const userResponse = await RegisterModel.create_user({ ...data }); 
+
         if(!userResponse.status){
             return  res.status(500).send({
                 ...userResponse
@@ -165,23 +192,69 @@ app.post('/free-register', async (req, res) => {
     }
 });
 
-app.get('/get-postalcode/:cp', async (req, res) => {
-    const { cp } = req.params;
-    const response = await RegisterModel.get_postal_code({cp});
-    if(response.status){
-        return res.send({
-            status: true,
-            records: response.result
-        })
-    }else{
-        return res.status(500).send({
-            status: false,
-            message: 'No se encontraron resultados...'
+app.get('/get-user-by-email', async (req, res) => {
+    const { email } = req.query;
+    const response = await RegisterModel.get_user_by_email(email);
+    if (response.error) {
+        res.status(404).send({
+            message: response.error
         });
-    }    
-})
+    }
+    res.send(response.user);
+});
 
-async function sendEmail(uuid, body, pdfAtch = null, paypal_id_transaction = null){    
+app.post('/upgrade-user', async (req, res) => {
+    const { body } = req;
+    const { user } = await RegisterModel.get_user_by_email(body.email);
+    try {
+        const data = { 
+            total: body.total,
+            item: body.item,
+            ...user
+        };
+
+        console.log(data)
+
+        const access_token = await get_access_token();
+        const response = await fetch(endpoint_url + '/v2/checkout/orders/' + body.orderID + '/capture', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${access_token}`
+            }
+        });
+        const json = await response.json();
+        if (json.id) {
+            if(json.purchase_units[0].payments.captures[0].status === 'COMPLETED' || json.purchase_units[0].payments.captures[0].status === 'PENDING' ){
+                
+                const paypal_id_order = json.id;
+                const paypal_id_transaction = json.purchase_units[0].payments.captures[0].id;                     
+                await RegisterModel.save_order(data.id, paypal_id_order, paypal_id_transaction, body.total);
+
+                const pdfAtch = await generatePDFInvoice(paypal_id_transaction, data, data.uuid);
+
+                const mailResponse = await sendEmail(data, pdfAtch, paypal_id_transaction);   
+        
+                return res.send({
+                    ...mailResponse,
+                    invoice: `${paypal_id_transaction}.pdf`
+                });                
+            }
+        } else {        
+            return res.status(500).send({
+                status: false,
+                message: 'Tu compra no pudo ser procesada, hay un problema con tu metodo de pago por favor intenta mas tarde...'
+            });
+        }       
+    } catch (err) {
+        res.status(500).send({
+            status: false,
+            message: 'hubo un error al procesar tu compra, por favor intenta mas tarde...'
+        });
+    }
+});
+
+async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
         // Nodemailer setup
         const transporter = nodemailer.createTransport({

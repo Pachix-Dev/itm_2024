@@ -19,9 +19,11 @@ export function Checkout() {
     currency: 'MXN',
     intent: 'capture',
   }
+  //const urlbase = 'https://demo.industrialtransformation.mx/server/'
+  const urlbase = 'http://localhost:3010/'
 
   async function createOrder() {
-    const response = await fetch('http://localhost:3010/create-order', {
+    const response = await fetch(urlbase + 'create-order', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -36,7 +38,7 @@ export function Checkout() {
 
   async function onApprove(data) {
     setProcessing(true)
-    const response = await fetch('http://localhost:3010/complete-order', {
+    const response = await fetch(urlbase + 'complete-order', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -45,6 +47,29 @@ export function Checkout() {
         orderID: data.orderID,
         total: item.price.toFixed(2),
         item,
+        name,
+        paternSurname,
+        maternSurname,
+        email,
+        phone,
+        typeRegister,
+        genre,
+        age,
+        linkedin,
+        company,
+        industry,
+        position,
+        country,
+        city,
+        address,
+        colonia,
+        postalCode,
+        webPage,
+        phoneCompany,
+        eventKnowledge,
+        productInterest,
+        levelInfluence,
+        wannaBeExhibitor,
       }),
     })
     const orderData = await response.json()
@@ -81,6 +106,54 @@ export function Checkout() {
     )
   }
 
+  const handleSubmit = async () => {
+    setProcessing(true)
+    const response = await fetch(urlbase + 'free-register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name,
+        paternSurname,
+        maternSurname,
+        email,
+        phone,
+        typeRegister,
+        genre,
+        age,
+        linkedin,
+        company,
+        industry,
+        position,
+        country,
+        city,
+        address,
+        colonia,
+        postalCode,
+        webPage,
+        phoneCompany,
+        eventKnowledge,
+        productInterest,
+        levelInfluence,
+        wannaBeExhibitor,
+      }),
+    })
+    const orderData = await response.json()
+    if (orderData.status) {
+      clear()
+      setCompleteRegister(true)
+      setInvoiceDownToLoad(orderData?.invoice)
+      window.location.href = '/gracias-por-registrarte'
+    } else {
+      setProcessing(false)
+      setMessage(orderData?.message)
+      setTimeout(() => {
+        setMessage('')
+      }, 5000)
+    }
+  }
+
   return (
     <>
       <div className='grid place-items-center w-full bg-white rounded-xl shadow-xl'>
@@ -95,7 +168,7 @@ export function Checkout() {
       </div>
 
       {processing && (
-        <div className='absolute top-0 left-0 bg-gray-400 bg-opacity-85 z-[999] w-full h-screen'>
+        <div className='fixed top-0 left-0 bg-gray-400 bg-opacity-85 z-[999] w-full h-screen'>
           <div role='status' className='grid place-items-center w-full h-full'>
             <p className='text-center flex gap-2'>
               <svg
