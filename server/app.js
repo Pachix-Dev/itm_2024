@@ -36,7 +36,7 @@ const endpoint_url = environment === 'sandbox' ? 'https://api-m.sandbox.paypal.c
 app.post('/create-order', (req, res) => {    
     const { body } = req;
     
-    if(body.total != 7500){
+    if(body.total != 3500){
         return res.status(500).send({
             status: false,
             message: 'Tu compra no pudo ser procesada, la información no es valida...'
@@ -80,36 +80,8 @@ app.post('/create-order', (req, res) => {
 app.post('/complete-order', async (req, res) => {
     const { body } = req;    
     try {
-        console.log(body);
-        const data = { 
-            uuid: uuidv4(), 
-            total: body.total,
-            name: body.name,
-            paternSurname: body.paternSurname,
-            maternSurname: body.maternSurname,
-            email: body.email,
-            phone: body.phone,
-            typeRegister: body.typeRegister,
-            genre:  body.genre,
-            age: body.age,
-            linkedin: body.linkedin,
-            company: body.company,
-            industry: body.industry,
-            position: body.position,
-            country: body.country,
-            city: body.city,
-            address: body.address,
-            colonia: body.colonia,
-            postalCode: body.postalCode,
-            webPage: body.webPage,
-            phoneCompany: body.phoneCompany,
-            eventKnowledge: body.eventKnowledge,
-            productInterest: body.productInterest,
-            levelInfluence: body.levelInfluence,
-            wannaBeExhibitor: body.wannaBeExhibitor,
-        };
-        
-        const userResponse = await RegisterModel.create_user({ ...data });
+        const uuid = uuidv4();                
+        const userResponse = await RegisterModel.create_user({ uuid, ...body });
         const { insertId } = userResponse;
 
         if(!userResponse.status){
@@ -135,9 +107,9 @@ app.post('/complete-order', async (req, res) => {
                 const paypal_id_transaction = json.purchase_units[0].payments.captures[0].id;                     
                 await RegisterModel.save_order(insertId, paypal_id_order, paypal_id_transaction, body.total);
 
-                const pdfAtch = await generatePDFInvoice(paypal_id_transaction, body, data.uuid);
+                const pdfAtch = await generatePDFInvoice(paypal_id_transaction, body, uuid);
 
-                const mailResponse = await sendEmail(data, pdfAtch, paypal_id_transaction);   
+                const mailResponse = await sendEmail(body, pdfAtch, paypal_id_transaction);   
         
                 return res.send({
                     ...mailResponse,
@@ -163,35 +135,8 @@ app.post('/free-register', async (req, res) => {
     const { body } = req;
 
     try {        
-        const data = { 
-            uuid: uuidv4(),             
-            name: body.name,
-            paternSurname: body.paternSurname,
-            maternSurname: body.maternSurname,
-            email: body.email,
-            phone: body.phone,
-            typeRegister: body.typeRegister,
-            genre:  body.genre,
-            age: body.age,
-            linkedin: body.linkedin,
-            company: body.company,
-            industry: body.industry,
-            position: body.position,
-            country: body.country,
-            city: body.city,
-            address: body.address,
-            colonia: body.colonia,
-            postalCode: body.postalCode,
-            webPage: body.webPage,
-            phoneCompany: body.phoneCompany,
-            eventKnowledge: body.eventKnowledge,
-            productInterest: body.productInterest,
-            levelInfluence: body.levelInfluence,
-            wannaBeExhibitor: body.wannaBeExhibitor,
-        };
-        
-        const userResponse = await RegisterModel.create_user({ ...data });       
-
+        const uuid = uuidv4();
+        const userResponse = await RegisterModel.create_user({uuid, ...body });
         if(!userResponse.status){
             return  res.status(500).send({
                 ...userResponse
@@ -202,9 +147,9 @@ app.post('/free-register', async (req, res) => {
         const timestamp = currentDate.getTime();
         const registerFile = 'registro-gratis-' + timestamp;
 
-        const pdfAtch = await generatePDF_freePass(body, data.uuid, registerFile);
+        const pdfAtch = await generatePDF_freePass(body, uuid, registerFile);
 
-        const mailResponse = await sendEmail(data, pdfAtch, registerFile);   
+        const mailResponse = await sendEmail(uuid, body, pdfAtch, registerFile);   
 
         return res.send({
             ...mailResponse,
@@ -220,7 +165,23 @@ app.post('/free-register', async (req, res) => {
     }
 });
 
-async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){    
+app.get('/get-postalcode/:cp', async (req, res) => {
+    const { cp } = req.params;
+    const response = await RegisterModel.get_postal_code({cp});
+    if(response.status){
+        return res.send({
+            status: true,
+            records: response.result
+        })
+    }else{
+        return res.status(500).send({
+            status: false,
+            message: 'No se encontraron resultados...'
+        });
+    }    
+})
+
+async function sendEmail(uuid, body, pdfAtch = null, paypal_id_transaction = null){    
     try{
         // Nodemailer setup
         const transporter = nodemailer.createTransport({
@@ -233,11 +194,11 @@ async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){
             }
         });
 
-        const emailContent = await email_template({ ...data });
+        const emailContent = await email_template({ uuid, ...body });
 
         const mailOptions = {
             from: process.env.USER_GMAIL,
-            to: data.email,
+            to: body.email,
             subject: 'Confirmación de pre registro ITM 2024',
             attachDataUrls: true,
             html: emailContent,            

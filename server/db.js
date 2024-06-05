@@ -42,6 +42,8 @@ export class RegisterModel {
         industry,
         position,
         country,
+        municipality,
+        state,
         city,
         address,
         colonia,
@@ -52,11 +54,13 @@ export class RegisterModel {
         productInterest,
         levelInfluence,
         wannaBeExhibitor,
+        alreadyVisited,
+        nameFair,
       }) {
         const connection = await mysql.createConnection(config)
         try {      
           const [result] = await connection.query(
-            'INSERT INTO users (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, age, linkedin, company, industry, position, country, city, address, colonia, postalCode, webPage, phoneCompany, eventKnowledge, productInterest, levelInfluence, wannaBeExhibitor ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+            'INSERT INTO users (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, age, linkedin, company, industry, position, country, municipality, state, city, address, colonia, postalCode, webPage, phoneCompany, eventKnowledge, productInterest, levelInfluence, wannaBeExhibitor, alreadyVisited, nameFair ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
             [
                 uuid,             
                 name,
@@ -72,6 +76,8 @@ export class RegisterModel {
                 industry,
                 position,
                 country,
+                municipality,
+                state,
                 city,
                 address,
                 colonia,
@@ -81,7 +87,9 @@ export class RegisterModel {
                 eventKnowledge,
                 productInterest,
                 levelInfluence,
-                wannaBeExhibitor,       
+                wannaBeExhibitor,
+                alreadyVisited,
+                nameFair,    
             ]
           )
                                   
@@ -95,7 +103,7 @@ export class RegisterModel {
           return hableError(error)          
         }
         finally {
-          await connection.end() // Close the connection
+          await connection.end()
         }
     }
 
@@ -116,4 +124,31 @@ export class RegisterModel {
         await connection.end() // Close the connection
       }
     }
+
+    static async get_postal_code ({cp}) {
+      const connection = await mysql.createConnection(config)
+      try {      
+        const [result] = await connection.query(
+          'SELECT * FROM postal_code WHERE d_CP = ? OR d_codigo = ?',
+          [
+            cp,
+            cp
+          ]
+        )
+        if (result.length === 0) {
+          return {
+            status: false,
+            message: 'Código postal no encontrado, por favor verifica tu código postal.',    
+          }
+        }else{
+          return {
+            status: true,
+            result
+          }                
+        }
+      } finally {
+        await connection.end() // Close the connection
+      }
+    }
+
 }

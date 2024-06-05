@@ -1,6 +1,8 @@
 import { useForm } from 'react-hook-form'
 import { useRegisterForm } from '../../store/register-form'
-
+import PhoneInputWithCountry from 'react-phone-number-input/react-hook-form'
+import 'react-phone-number-input/style.css'
+import './Form.css'
 export function StepOne() {
   const {
     name,
@@ -24,6 +26,7 @@ export function StepOne() {
 
   const {
     register,
+    control,
     handleSubmit,
     formState: { errors },
   } = useForm({})
@@ -32,7 +35,9 @@ export function StepOne() {
     <>
       <div className='grid md:grid-cols-2 gap-6 mt-10'>
         <div>
-          <p className='mb-4 font-semibold text-white'>Género</p>
+          <p className='mb-4 font-semibold text-white'>
+            Género <span className='text-red-600'>*</span>
+          </p>
           <ul className='items-center w-full text-sm font-medium text-white bg-gray-700 border border-gray-600 rounded-lg sm:flex'>
             <li className='w-full border-b border-gray-200 sm:border-b-0 sm:border-r 0'>
               <div className='flex items-center ps-3'>
@@ -87,7 +92,7 @@ export function StepOne() {
         </div>
         <div>
           <p className='mb-4 font-semibold text-gray-900 dark:text-white'>
-            Tipo de Registro
+            Tipo de Registro <span className='text-red-600'>*</span>
           </p>
           <select
             {...register('typeRegister', {
@@ -120,7 +125,9 @@ export function StepOne() {
 
       <div className='grid grid-cols-3 gap-6'>
         <div>
-          <p className='mt-5'>Nombre</p>
+          <p className='mt-5'>
+            Nombre <span className='text-red-600'>*</span>
+          </p>
           <div className='relative mt-2'>
             <input
               type='text'
@@ -171,7 +178,9 @@ export function StepOne() {
           )}
         </div>
         <div>
-          <p className='mt-5'>Apellido Paterno </p>
+          <p className='mt-5'>
+            Apellido Paterno <span className='text-red-600'>*</span>
+          </p>
           <div className='relative mt-2'>
             <input
               type='text'
@@ -224,7 +233,9 @@ export function StepOne() {
           )}
         </div>
         <div>
-          <p className='mt-5'>Apellido Materno </p>
+          <p className='mt-5'>
+            Apellido Materno <span className='text-red-600'>*</span>
+          </p>
           <div className='relative mt-2'>
             <input
               type='text'
@@ -278,7 +289,9 @@ export function StepOne() {
         </div>
       </div>
 
-      <p className='mt-5'>Email </p>
+      <p className='mt-5'>
+        Email <span className='text-red-600'>*</span>
+      </p>
       <div className='relative mt-2 '>
         <input
           type='email'
@@ -319,48 +332,26 @@ export function StepOne() {
         <p className='text-[#D70205] font-light'>{errors.email.message}</p>
       )}
 
-      <p className='mt-5'>Teléfono </p>
+      <p className='mt-5'>
+        Teléfono <span className='text-red-600'>*</span>
+      </p>
       <div className='relative mt-2'>
-        <input
-          type='tel'
-          {...register('phone', {
-            required: 'El teléfono es requerido',
-            pattern: {
-              value: /^[0-9+]+$/,
-              message:
-                'Teléfono inválido, no se aceptan espacios en blancon ni letras',
-            },
-            onChange: (e) => setPhone(e.target.value),
-          })}
-          defaultValue={phone}
+        <PhoneInputWithCountry
           name='phone'
-          id='phone'
-          className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-          placeholder='Ingresa tu numero de teléfono'
-          autoComplete='phone'
+          control={control}
+          rules={{ required: true }}
+          defaultValue={phone}
+          onChange={(e) => setPhone(e)}
+          className='w-full rounded-lg border border-gray-200 ps-4 text-sm shadow-sm'
         />
-        <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 24 24'
-            strokeWidth={1.5}
-            stroke='currentColor'
-            className='h-4 w-4 text-gray-400'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              d='M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z'
-            />
-          </svg>
-        </span>
       </div>
       {errors.phone && (
         <p className='text-[#D70205] font-light'>{errors.phone.message}</p>
       )}
 
-      <p className='mt-5'>Rango de edad </p>
+      <p className='mt-5'>
+        Rango de edad <span className='text-red-600'>*</span>
+      </p>
       <select
         {...register('age', {
           required: 'Tipo de registro es requerido',

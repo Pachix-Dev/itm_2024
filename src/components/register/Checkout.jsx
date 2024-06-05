@@ -8,35 +8,8 @@ import { useState } from 'react'
 import { useRegisterForm } from '../../store/register-form'
 
 export function Checkout() {
-  const {
-    item,
-    name,
-    paternSurname,
-    maternSurname,
-    email,
-    phone,
-    typeRegister,
-    genre,
-    age,
-    linkedin,
-    company,
-    industry,
-    position,
-    country,
-    city,
-    address,
-    colonia,
-    postalCode,
-    webPage,
-    phoneCompany,
-    eventKnowledge,
-    productInterest,
-    levelInfluence,
-    wannaBeExhibitor,
-    setCompleteRegister,
-    setInvoiceDownToLoad,
-    clear,
-  } = useRegisterForm()
+  const { item, setCompleteRegister, setInvoiceDownToLoad, clear } =
+    useRegisterForm()
   const [message, setMessage] = useState('')
   const [processing, setProcessing] = useState(false)
   const style = { layout: 'vertical' }
@@ -48,61 +21,32 @@ export function Checkout() {
   }
 
   async function createOrder() {
-    const response = await fetch(
-      'https://demo.industrialtransformation.mx/server/create-order',
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          total: item.price.toFixed(2),
-        }),
-      }
-    )
+    const response = await fetch('http://localhost:3010/create-order', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        total: item.price.toFixed(2),
+      }),
+    })
     const order = await response.json()
     return order.id
   }
 
   async function onApprove(data) {
     setProcessing(true)
-    const response = await fetch(
-      'https://demo.industrialtransformation.mx/server/complete-order',
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          orderID: data.orderID,
-          total: item.price.toFixed(2),
-          item,
-          name,
-          paternSurname,
-          maternSurname,
-          email,
-          phone,
-          typeRegister,
-          genre,
-          age,
-          linkedin,
-          company,
-          industry,
-          position,
-          country,
-          city,
-          address,
-          colonia,
-          postalCode,
-          webPage,
-          phoneCompany,
-          eventKnowledge,
-          productInterest,
-          levelInfluence,
-          wannaBeExhibitor,
-        }),
-      }
-    )
+    const response = await fetch('http://localhost:3010/complete-order', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        orderID: data.orderID,
+        total: item.price.toFixed(2),
+        item,
+      }),
+    })
     const orderData = await response.json()
     if (orderData.status) {
       //clear()
@@ -137,85 +81,18 @@ export function Checkout() {
     )
   }
 
-  const handleSubmit = async () => {
-    setProcessing(true)
-    const response = await fetch(
-      'https://demo.industrialtransformation.mx/server/free-register',
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name,
-          paternSurname,
-          maternSurname,
-          email,
-          phone,
-          typeRegister,
-          genre,
-          age,
-          linkedin,
-          company,
-          industry,
-          position,
-          country,
-          city,
-          address,
-          colonia,
-          postalCode,
-          webPage,
-          phoneCompany,
-          eventKnowledge,
-          productInterest,
-          levelInfluence,
-          wannaBeExhibitor,
-        }),
-      }
-    )
-    const orderData = await response.json()
-    if (orderData.status) {
-      clear()
-      setCompleteRegister(true)
-      setInvoiceDownToLoad(orderData?.invoice)
-      window.location.href = '/gracias-por-registrarte'
-    } else {
-      setProcessing(false)
-      setMessage(orderData?.message)
-      setTimeout(() => {
-        setMessage('')
-      }, 5000)
-    }
-  }
-
   return (
     <>
-      {item.id === 2 && (
-        <div className='grid place-items-center w-full '>
-          <div className='mx-auto text-white w-full p-5'>
-            <p className='font-bold text-2xl'>Método de pago</p>
-            <PayPalScriptProvider options={initialOptions}>
-              <ButtonWrapper showSpinner={false} />
-            </PayPalScriptProvider>
-          </div>
-          {message && (
-            <p className='text-red-600 font-bold text-center'>{message}</p>
-          )}
+      <div className='grid place-items-center w-full bg-white rounded-xl shadow-xl'>
+        <div className='mx-auto w-full p-5'>
+          <PayPalScriptProvider options={initialOptions}>
+            <ButtonWrapper showSpinner={false} />
+          </PayPalScriptProvider>
         </div>
-      )}
-      {item.id === 1 && (
-        <div className='grid place-items-center w-full'>
-          <button
-            className='px-10 py-4 bg-[#B91C1C] hover:bg-red-600 rounded-lg text-white  mt-5 text-xl font-semibold'
-            onClick={handleSubmit}
-          >
-            Finalizar
-          </button>
-          {message && (
-            <p className='text-red-600 font-bold text-center'>{message}</p>
-          )}
-        </div>
-      )}
+        {message && (
+          <p className='text-red-600 font-bold text-center'>{message}</p>
+        )}
+      </div>
 
       {processing && (
         <div className='absolute top-0 left-0 bg-gray-400 bg-opacity-85 z-[999] w-full h-screen'>
