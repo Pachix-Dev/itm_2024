@@ -151,7 +151,7 @@ app.post('/free-register', async (req, res) => {
         const timestamp = currentDate.getTime();
         const registerFile = 'registro-gratis-' + timestamp;
 
-        const pdfAtch = await generatePDF_freePass(body, data,uuid, registerFile);
+        const pdfAtch = await generatePDF_freePass(body, data.uuid, registerFile);
 
         const mailResponse = await sendEmail(data, pdfAtch, registerFile);   
 
