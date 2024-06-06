@@ -5,6 +5,7 @@ import {
   usePayPalScriptReducer,
 } from '@paypal/react-paypal-js'
 import { useRegisterForm } from '../../store/register-form'
+import { ProgramVip } from './ProgramVip'
 
 export function Upgrade() {
   const { email, setCompleteRegister, setInvoiceDownToLoad } = useRegisterForm()
@@ -14,29 +15,6 @@ export function Upgrade() {
   const [processing, setProcessing] = useState(false)
 
   const emailRef = useRef()
-
-  const style = { layout: 'vertical' }
-  const initialOptions = {
-    clientId:
-      'ASXsJEVjLguO7vsn4IOGxaFeZp0FzEkMErWxv6Foin2-niMwBWX_0ryUceIDzdiD-WNQy-WvdMx-lIwf',
-    currency: 'MXN',
-    intent: 'capture',
-  }
-
-  const total = 7500.0
-  const item = {
-    id: 2,
-    name: 'Premium',
-    price: 7500,
-    include: [
-      'Acceso a piso de expositor',
-      'Acceso Leaders of tomorrow',
-      'Acceso a la zona de networking',
-      'Acceso Cocktel VIP',
-      'Acceso conferencias VIP',
-      'Paquete de bienvenida',
-    ],
-  }
 
   const urlbase = 'https://demo.industrialtransformation.mx/server/'
   //const urlbase = 'http://localhost:3010/';
@@ -61,68 +39,6 @@ export function Upgrade() {
       setUser(null)
       setMessage(json.message)
     }
-  }
-
-  async function createOrder() {
-    const response = await fetch(urlbase + 'create-order', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        total: total,
-      }),
-    })
-    const order = await response.json()
-    return order.id
-  }
-
-  async function onApprove(data) {
-    setProcessing(true)
-    const response = await fetch(urlbase + 'upgrade-user', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        orderID: data.orderID,
-        total,
-        item,
-        ...user,
-      }),
-    })
-    const orderData = await response.json()
-    if (orderData.status) {
-      clear()
-      setCompleteRegister(true)
-      setInvoiceDownToLoad(orderData?.invoice)
-      window.location.href = '/gracias-por-registrarte'
-    } else {
-      setProcessing(false)
-      setMessage(orderData?.message)
-      setTimeout(() => {
-        setMessage('')
-      }, 5000)
-    }
-  }
-
-  const ButtonWrapper = ({ showSpinner }) => {
-    const [{ isPending }] = usePayPalScriptReducer()
-
-    return (
-      <>
-        {showSpinner && isPending && <div className='spinner' />}
-        <PayPalButtons
-          className='py-5 text-white w-full 2xl:w-10/12 mx-auto 2xl:pt-10'
-          style={style}
-          disabled={false}
-          forceReRender={[style]}
-          fundingSource={undefined}
-          createOrder={createOrder}
-          onApprove={onApprove}
-        />
-      </>
-    )
   }
 
   return (
@@ -161,9 +77,9 @@ export function Upgrade() {
           Verificar
         </button>
         {user && (
-          <PayPalScriptProvider options={initialOptions}>
-            <ButtonWrapper showSpinner={false} />
-          </PayPalScriptProvider>
+          <div className='mt-10'>
+            <ProgramVip />
+          </div>
         )}
         {message && (
           <p className='text-red-600 font-bold text-center pt-5 text-xl'>
@@ -171,6 +87,16 @@ export function Upgrade() {
           </p>
         )}
       </div>
+
+      <p className='mt-5 text-center'>
+        Si aun no te haz registrado ingresa aqui{' -> '}
+        <a
+          href='/registro'
+          className='px-3 py-2 bg-[#E42128] hover:bg-red-700 font-bold rounded-2xl text-white  mt-5  gap-2'
+        >
+          Registrate gratis
+        </a>
+      </p>
       {processing && (
         <div className='fixed top-0 left-0 bg-gray-400 bg-opacity-85 z-[999] w-full h-screen'>
           <div role='status' className='grid place-items-center w-full h-full'>

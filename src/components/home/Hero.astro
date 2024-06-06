@@ -36,20 +36,23 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
         minutos={t('home.minutes')}
         segundos={t('home.seconds')}
       />
-      <div class="flex gap-4">
+      <div class='flex gap-4'>
         <a
-        href={`${base}/registro`}
-        class='mt-5 bg-[#E42128] rounded-2xl px-4 py-2 font-extrabold text-xl text-white hover:bg-[#CF3B49] hover:cursor-pointer'
-      >
-        {t('home.free_register')}
-      </a>
+          href={`${base}/registro`}
+          class='mt-5 bg-[#E42128] rounded-2xl px-4 py-2 font-extrabold text-xl text-white hover:bg-[#CF3B49] hover:cursor-pointer'
+        >
+          {t('home.free_register')}
+        </a>
+      </div>
+      <p class='mt-10 text-center text-white font-bold'>
+        Si ya te registraste y quieres mejorar tu experiencia
+      </p>
       <a
         href={`${base}/actualizar-a-vip`}
         class='mt-5 bg-[#E42128] rounded-2xl px-4 py-2 font-extrabold text-xl text-white hover:bg-[#CF3B49] hover:cursor-pointer'
       >
-        Pasate a Premium
+        Obten programa vip
       </a>
-      </div>
     </div>
   </div>
 </section>

@@ -84,54 +84,6 @@ export function Checkout() {
     )
   }
 
-  const handleSubmit = async () => {
-    setProcessing(true)
-    const response = await fetch(urlbase + 'free-register', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name,
-        paternSurname,
-        maternSurname,
-        email,
-        phone,
-        typeRegister,
-        genre,
-        age,
-        linkedin,
-        company,
-        industry,
-        position,
-        country,
-        city,
-        address,
-        colonia,
-        postalCode,
-        webPage,
-        phoneCompany,
-        eventKnowledge,
-        productInterest,
-        levelInfluence,
-        wannaBeExhibitor,
-      }),
-    })
-    const orderData = await response.json()
-    if (orderData.status) {
-      clear()
-      setCompleteRegister(true)
-      setInvoiceDownToLoad(orderData?.invoice)
-      window.location.href = '/gracias-por-registrarte'
-    } else {
-      setProcessing(false)
-      setMessage(orderData?.message)
-      setTimeout(() => {
-        setMessage('')
-      }, 5000)
-    }
-  }
-
   return (
     <>
       <div className='grid place-items-center w-full bg-white rounded-xl shadow-xl'>
