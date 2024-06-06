@@ -208,7 +208,7 @@ app.post('/upgrade-user', async (req, res) => {
         const data = { 
             total: body.total,
             item: body.item,
-            ...user
+            ...userResponse.user
         };
 
         console.log(data)
