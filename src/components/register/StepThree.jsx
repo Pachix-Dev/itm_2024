@@ -338,6 +338,9 @@ export function StepThree() {
           Finalizar
         </button>
       </div>
+      {message && (
+        <p className='mt-5 text-red-600 font-bold text-center'>{message}</p>
+      )}
       {processing && (
         <div className='absolute top-0 left-0 bg-gray-400 bg-opacity-85 z-[999] w-full h-full px-4'>
           <div role='status' className='grid place-items-center w-full h-full'>
