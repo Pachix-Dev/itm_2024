@@ -50,7 +50,7 @@ app.post('/create-order', (req, res) => {
                 'purchase_units': [{
                     'amount': {
                         'currency_code': 'MXN',
-                        'value': 7500                        
+                        'value': body.total                        
                     },                                             
                     'description': 'Venta de Programa VIP ITM 2024 online',
                 }]
