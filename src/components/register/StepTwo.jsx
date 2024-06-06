@@ -1,4 +1,4 @@
-import { set, useForm } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 import { useRegisterForm } from '../../store/register-form.js'
 import { countries } from '../../data/list_countries'
 import { useEffect } from 'react'
@@ -55,10 +55,11 @@ export function StepTwo() {
     setValue('city', city)
     setValue('colonia', colonia)
   }, [state, municipality, city, colonia, setValue])
-
+  const urlbase = 'https://demo.industrialtransformation.mx/server/'
+  //const urlbase = 'http://localhost:3010/'
   const handlePostalCode = async (e) => {
     if (e.length === 5 && country === 'Mexico') {
-      const res = await fetch(`http://localhost:3010/get-postalcode/${e}`)
+      const res = await fetch(urlbase + `get-postalcode/${e}`)
       const data = await res.json()
       if (data.status) {
         setPostalCode(e)
