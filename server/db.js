@@ -107,24 +107,50 @@ export class RegisterModel {
         }
     }
 
-    static async save_order (user_id, paypal_id_order,paypal_id_transaction, total) {
-      const connection = await mysql.createConnection(config)
-      try {      
-        const [registers] = await connection.query(
-          'INSERT INTO users_vip (user_id, paypal_id_order, paypal_id_transaction, total) VALUES (?,?,?,?)',
-          [
-            user_id,
-            paypal_id_order,
-            paypal_id_transaction,              
-            total
-          ]
-        )
-        return registers
-      } finally {
-        await connection.end() // Close the connection
-      }
+  static async save_order (user_id, paypal_id_order,paypal_id_transaction, total) {
+    const connection = await mysql.createConnection(config)
+    try {      
+      const [registers] = await connection.query(
+        'INSERT INTO users_vip (user_id, paypal_id_order, paypal_id_transaction, total) VALUES (?,?,?,?)',
+        [
+          user_id,
+          paypal_id_order,
+          paypal_id_transaction,              
+          total
+        ]
+      )
+      return registers
+    } finally {
+      await connection.end() // Close the connection
     }
+  }
 
+  static async get_postal_code ({cp}) {
+    const connection = await mysql.createConnection(config)
+    try {      
+      const [result] = await connection.query(
+        'SELECT * FROM postal_code WHERE d_CP = ? OR d_codigo = ?',
+        [
+          cp,
+          cp
+        ]
+      )
+      if (result.length === 0) {
+        return {
+          status: false,
+          message: 'Código postal no encontrado, por favor verifica tu código postal.',    
+        }
+      }else{
+        return {
+          status: true,
+          result
+        }                
+      }
+    } finally {
+      await connection.end() // Close the connection
+    }
+  }
+  
 	static async get_user_by_email(email) {
 		const connection = await mysql.createConnection(config)
 		try {
@@ -134,7 +160,8 @@ export class RegisterModel {
 			)
 			if (users.length === 0) {
 				return {
-				error: 'No se encontró el usuario',
+          status: false,
+				  error: 'No se encontró el usuario',
 				}
 			}
 			const [vipUsers] = await connection.query(
@@ -143,10 +170,12 @@ export class RegisterModel {
 			)
 			if (vipUsers.length > 0) {
 				return {
-				error: 'Ya eres usuario VIP',
+          status: false,
+				  error: 'Ya eres usuario VIP',
 				}
 			}
 			return {
+        status: true,
 				user: users[0],
 			}
 		} finally {

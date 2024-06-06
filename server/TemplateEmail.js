@@ -1,7 +1,6 @@
 import QRCode from 'qrcode'
 
-const email_template = async ({uuid, name, paternSurname, maternSurname}) => {  
-      
+const email_template = async ({uuid, name, paternSurname, maternSurname}) => {      
     const qrCodeImage = await QRCode.toDataURL(uuid)
     
     return (

@@ -1,12 +1,11 @@
 ---
 import { changeLanguage } from "i18next";
-import Layout from "../layouts/Layout.astro";
-import Confettti from "../components/shared/Confetti";
-import { Redirect } from "../components/shared/Redirect.jsx";
-import { DonwloadAccess } from "../components/register/DonwloadAccess";
-import { ProgramVip } from "../components/register/ProgramVip";
+import Layout from "../../layouts/Layout.astro";
+import Confettti from "../../components/shared/Confetti";
+import { Redirect } from "../../components/shared/Redirect.jsx";
+import { DonwloadAccess } from "../../components/register/DonwloadAccess";
 
-changeLanguage("es");
+changeLanguage("en");
 ---
 
 <Layout title='ITM  | Gracias por contactarnos'>
@@ -20,7 +19,7 @@ changeLanguage("es");
       <div class='grid md:flex gap-6 place-items-center w-full justify-center'>
         <div class='grid place-items-center place-content-center w-full'>
           <div class='box text-center lg:text-6xl text-5xl' id='box1'>
-            Gracias por registrarte
+            Gracias por tu compra
           </div>
           <img
             class='mt-10 w-52 z-10'
@@ -28,14 +27,14 @@ changeLanguage("es");
             alt='ecomondo feria de sustentabilidad'
           />
           <p class='font-bold text-center'>
-            ¡Fantástico! te haz registrado correctamente.
+            ¡Fantástico! haz obtenido el programa de conferencias vip
+            correctamente.
           </p>
           <p class='text-center mb-5'>
             ¡Pronto recibiras un correo de confirmación!
           </p>
           <DonwloadAccess client:only='react' />
         </div>
-        <ProgramVip client:only='react' />
       </div>
     </div>
   </div>

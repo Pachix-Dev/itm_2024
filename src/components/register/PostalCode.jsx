@@ -21,6 +21,7 @@ export function PostalCode() {
   } = useRegisterForm()
   const {
     register,
+    handleSubmit,
     formState: { errors },
   } = useForm({})
 

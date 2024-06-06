@@ -53,9 +53,12 @@ export function StepThree() {
     formState: { errors },
   } = useForm({})
 
+  const urlbase = 'https://demo.industrialtransformation.mx/server/'
+  //const urlbase = 'http://localhost:3010/'
+
   const handleRegister = async () => {
     setProcessing(true)
-    const response = await fetch('http://localhost:3010/free-register', {
+    const response = await fetch(urlbase + 'free-register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

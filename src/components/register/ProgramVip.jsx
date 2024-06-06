@@ -18,7 +18,7 @@ export function ProgramVip() {
 
   return (
     <>
-      <div className=' grid justify-center h-[500px] rounded-lg overflow-y-scroll w-full bg-white p-4'>
+      <div className=' grid place-content-center justify-center h-[650px] rounded-lg overflow-y-scroll w-full bg-white p-4'>
         <p className='font-bold text-center text-black uppercase'>
           ¿Te gustaria mejorar tu experiencia <br />
           con el programa de conferencias premium?

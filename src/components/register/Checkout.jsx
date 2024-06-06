@@ -8,7 +8,7 @@ import { useState } from 'react'
 import { useRegisterForm } from '../../store/register-form'
 
 export function Checkout() {
-  const { item, setCompleteRegister, setInvoiceDownToLoad, clear } =
+  const { item, email, setCompleteRegister, setInvoiceDownToLoad, clear } =
     useRegisterForm()
   const [message, setMessage] = useState('')
   const [processing, setProcessing] = useState(false)
@@ -19,8 +19,8 @@ export function Checkout() {
     currency: 'MXN',
     intent: 'capture',
   }
-  //const urlbase = 'https://demo.industrialtransformation.mx/server/'
-  const urlbase = 'http://localhost:3010/'
+  const urlbase = 'https://demo.industrialtransformation.mx/server/'
+  //const urlbase = 'http://localhost:3010/'
 
   async function createOrder() {
     const response = await fetch(urlbase + 'create-order', {
@@ -38,7 +38,7 @@ export function Checkout() {
 
   async function onApprove(data) {
     setProcessing(true)
-    const response = await fetch(urlbase + 'complete-order', {
+    const response = await fetch(urlbase + 'upgrade-user', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -47,37 +47,15 @@ export function Checkout() {
         orderID: data.orderID,
         total: item.price.toFixed(2),
         item,
-        name,
-        paternSurname,
-        maternSurname,
         email,
-        phone,
-        typeRegister,
-        genre,
-        age,
-        linkedin,
-        company,
-        industry,
-        position,
-        country,
-        city,
-        address,
-        colonia,
-        postalCode,
-        webPage,
-        phoneCompany,
-        eventKnowledge,
-        productInterest,
-        levelInfluence,
-        wannaBeExhibitor,
       }),
     })
     const orderData = await response.json()
     if (orderData.status) {
-      //clear()
+      clear()
       setCompleteRegister(true)
       setInvoiceDownToLoad(orderData?.invoice)
-      window.location.href = '/gracias-por-registrarte'
+      window.location.href = '/gracias-por-tu-compra'
     } else {
       setProcessing(false)
       setMessage(orderData?.message)

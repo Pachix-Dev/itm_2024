@@ -1,9 +1,9 @@
 ---
-import { changeLanguage } from 'i18next'
-import { RegisterForm } from '../components/register/RegisterForm.jsx'
-import LayoutRegister from '../layouts/LayoutRegister.astro'
+import { changeLanguage } from "i18next";
+import { RegisterForm } from "../components/register/RegisterForm.jsx";
+import LayoutRegister from "../layouts/LayoutRegister.astro";
 
-changeLanguage('es')
+changeLanguage("es");
 ---
 
 <LayoutRegister title='ITM | Registro 2024'>
@@ -12,7 +12,7 @@ changeLanguage('es')
     <p class='text-center text-2xl font-bold'>
       Por favor revisa que tu información sea correcta
     </p>
-    <RegisterForm client:only='react' transition:persist />
+    <RegisterForm client:only='react' />
   </main>
 </LayoutRegister>
 <style>

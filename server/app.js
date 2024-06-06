@@ -136,32 +136,9 @@ app.post('/free-register', async (req, res) => {
 
     try {        
         const data = { 
-            uuid: uuidv4(),             
-            name: body.name,
-            paternSurname: body.paternSurname,
-            maternSurname: body.maternSurname,
-            email: body.email,
-            phone: body.phone,
-            typeRegister: body.typeRegister,
-            genre:  body.genre,
-            age: body.age,
-            linkedin: body.linkedin,
-            company: body.company,
-            industry: body.industry,
-            position: body.position,
-            country: body.country,
-            city: body.city,
-            address: body.address,
-            colonia: body.colonia,
-            postalCode: body.postalCode,
-            webPage: body.webPage,
-            phoneCompany: body.phoneCompany,
-            eventKnowledge: body.eventKnowledge,
-            productInterest: body.productInterest,
-            levelInfluence: body.levelInfluence,
-            wannaBeExhibitor: body.wannaBeExhibitor,
-        };
-        
+            uuid: uuidv4(),            
+            ...body
+        };          
         const userResponse = await RegisterModel.create_user({ ...data }); 
 
         if(!userResponse.status){
@@ -176,7 +153,7 @@ app.post('/free-register', async (req, res) => {
 
         const pdfAtch = await generatePDF_freePass(body, uuid, registerFile);
 
-        const mailResponse = await sendEmail(uuid, body, pdfAtch, registerFile);   
+        const mailResponse = await sendEmail(data, pdfAtch, registerFile);   
 
         return res.send({
             ...mailResponse,
@@ -192,6 +169,22 @@ app.post('/free-register', async (req, res) => {
     }
 });
 
+app.get('/get-postalcode/:cp', async (req, res) => {
+    const { cp } = req.params;
+    const response = await RegisterModel.get_postal_code({cp});
+    if(response.status){
+        return res.send({
+            status: true,
+            records: response.result
+        })
+    }else{
+        return res.status(500).send({
+            status: false,
+            message: 'No se encontraron resultados...'
+        });
+    }    
+})
+
 app.get('/get-user-by-email', async (req, res) => {
     const { email } = req.query;
     const response = await RegisterModel.get_user_by_email(email);
@@ -205,7 +198,12 @@ app.get('/get-user-by-email', async (req, res) => {
 
 app.post('/upgrade-user', async (req, res) => {
     const { body } = req;
-    const { user } = await RegisterModel.get_user_by_email(body.email);
+    const userResponse = await RegisterModel.get_user_by_email(body.email);
+    if (!userResponse.status) {
+        return res.status(404).send({
+            message: userResponse.error
+        });
+    }
     try {
         const data = { 
             total: body.total,
@@ -247,7 +245,7 @@ app.post('/upgrade-user', async (req, res) => {
             });
         }       
     } catch (err) {
-        res.status(500).send({
+        return res.status(500).send({
             status: false,
             message: 'hubo un error al procesar tu compra, por favor intenta mas tarde...'
         });
@@ -267,11 +265,11 @@ async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){
             }
         });
 
-        const emailContent = await email_template({ uuid, ...body });
+        const emailContent = await email_template({ ...data });
 
         const mailOptions = {
             from: process.env.USER_GMAIL,
-            to: body.email,
+            to: data.email,
             subject: 'Confirmación de pre registro ITM 2024',
             attachDataUrls: true,
             html: emailContent,            
