@@ -1,12 +1,12 @@
 ---
-import { changeLanguage } from "i18next";
-import Layout from "../layouts/Layout.astro";
-import Confettti from "../components/shared/Confetti";
-import { Redirect } from "../components/shared/Redirect.jsx";
-import { DonwloadAccess } from "../components/register/DonwloadAccess";
-import { ProgramVip } from "../components/register/ProgramVip";
+import { changeLanguage, t } from 'i18next'
+import Layout from '../layouts/Layout.astro'
+import Confettti from '../components/shared/Confetti'
+import { Redirect } from '../components/shared/Redirect.jsx'
+import { DonwloadAccess } from '../components/register/DonwloadAccess'
+import { ProgramVip } from '../components/register/ProgramVip'
 
-changeLanguage("es");
+changeLanguage('es')
 ---
 
 <Layout title='ITM  | Gracias por contactarnos'>
@@ -19,21 +19,25 @@ changeLanguage("es");
 
       <div class='grid md:flex gap-6 place-items-center w-full justify-center'>
         <div class='grid place-items-center place-content-center w-full'>
-          <div class='box text-center lg:text-6xl text-5xl' id='box1'>
-            Gracias por registrarte
+          <div
+            class=`box text-center lg:text-6xl text-5xl after:content-['${t('thanks_page.title2')}']`
+            id='box1'
+          >
+            {t('thanks_page.title')}
           </div>
           <img
             class='mt-10 w-52 z-10'
             src='/img/Logo_ITM.webp'
             alt='ecomondo feria de sustentabilidad'
           />
-          <p class='font-bold text-center'>
-            ¡Fantástico! te haz registrado correctamente.
-          </p>
-          <p class='text-center mb-5'>
-            ¡Pronto recibiras un correo de confirmación!
-          </p>
-          <DonwloadAccess client:only='react' />
+          <p
+            class='font-bold text-center'
+            set:html={t('thanks_page.description')}
+          />
+          <DonwloadAccess
+            client:only='react'
+            text={t('thanks_page.download_pass')}
+          />
         </div>
         <ProgramVip client:only='react' />
       </div>
@@ -48,7 +52,6 @@ changeLanguage("es");
   }
 
   #box1::after {
-    content: 'Gracias por registrarte';
     display: flex;
     transform: rotateX(180deg);
     background-image: linear-gradient(

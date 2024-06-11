@@ -19,10 +19,6 @@ export function ProgramVip() {
   return (
     <>
       <div className='grid place-content-center justify-center h-[650px] rounded-lg overflow-y-scroll w-full bg-white p-4'>
-        <p className='font-bold text-center text-black uppercase'>
-          ¿Te gustaria mejorar tu experiencia <br />
-          con el programa de conferencias premium?
-        </p>
         <div className='mt-5 grid justify-center gap-6 w-full'>
           {products.map((product) => (
             <div
@@ -73,7 +69,6 @@ export function ProgramVip() {
                   {product.price}
                 </span>
                 <span className='font-bold'>MXN</span>
-                <span className='ms-1 text-xl font-normal '>/ persona</span>
               </div>
 
               <button

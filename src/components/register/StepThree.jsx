@@ -250,7 +250,7 @@ export function StepThree({ translates }) {
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
           >
             <option value=''>{translates.select_option}</option>
-            <option value=''>Falta lista de ferias</option>
+            <option value='Falta lista de ferias'>Falta lista de ferias</option>
           </select>
           {errors.alreadyVisited && (
             <p className='text-[#ffe200] font-light'>

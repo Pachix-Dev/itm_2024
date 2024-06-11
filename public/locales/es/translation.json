@@ -562,5 +562,19 @@
         "already_visited": "¿Haz visitado esta feria o alguna similar?",
         "yes": "Sí",
         "no": "No"
+    },
+    "thanks_page":{
+        "title": "Gracias por registrarte",
+        "title2": "Gracias_por_registrarte",
+        "description": "Tu registro ha sido exitoso, te hemos enviado un correo con tu gafete de acceso al evento. <br /> <br /> ¡Nos vemos en Industrial Transformation Mexico 2024!",
+        "download_pass": "Descargar tu gafete"        
+    },
+    "program_vip": {
+        "title": "ADQUIERE TU PROGRAMA DE CONFERENCIAS VIP",
+        "description": "DA EL SALTO Y DISFRUTA DE TODAS NUESTRAS VENTAJAS",        
+        "enter_email": "Ingresa el correo con el que te registraste",
+        "verify_button": "Verificar",
+        "register_text": "Si aun no te haz registrado ingresa aqui",
+        "register_button": "Registrate gratis"
     }
 }
