@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form'
 import { useRegisterForm } from '../../store/register-form'
 import { useState } from 'react'
 
-export function StepThree() {
+export function StepThree({ translates }) {
   const {
     name,
     paternSurname,
@@ -112,17 +112,22 @@ export function StepThree() {
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
           <p className='font-semibold text-gray-900 dark:text-white'>
-            ¿Cómo se enteró del evento?
+            {translates.how_find}
           </p>
           <select
             {...register('eventKnowledge', {
-              required: 'este campo es requerido',
+              required: `${translates.requiered}`,
               onChange: (e) => setEventKnowledge(e.target.value),
             })}
             defaultValue={eventKnowledge}
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
           >
-            <option value=''>Selecciona una opción</option>
+            <option value=''>{translates.select_option}</option>
+            <option value='ESPECTACULAR'>ESPECTACULAR</option>
+            <option value='PAGINA WEB'>PAGINA WEB</option>
+            <option value='CORREO ELÉCTRONICO/MAILING'>
+              CORREO ELÉCTRONICO/MAILING
+            </option>
             <option value='FACEBOOK'>FACEBOOK</option>
             <option value='TWITTER'>TWITTER</option>
             <option value='LINKEDIN'>LINKEDIN</option>
@@ -145,17 +150,17 @@ export function StepThree() {
         </div>
         <div>
           <p className='font-semibold text-gray-900 dark:text-white'>
-            Producto de interés
+            {translates.product_interest}
           </p>
           <select
             {...register('productInterest', {
-              required: 'Este campo es requerido',
+              required: `${translates.requiered}`,
               onChange: (e) => setProductInterest(e.target.value),
             })}
             defaultValue={productInterest}
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
           >
-            <option value=''>Selecciona una opción</option>
+            <option value=''>{translates.select_option}</option>
             <option value='AUTOMATIZACIÓN, ROBOTIZACIÓN Y TRANSMISIÓN DE PODER'>
               AUTOMATIZACIÓN, ROBOTIZACIÓN Y TRANSMISIÓN DE PODER
             </option>
@@ -171,7 +176,6 @@ export function StepThree() {
               INSTITUCIONES DE INVESTIGACIÓN
             </option>
             <option value='MANUFACTURA ADITIVA'>MANUFACTURA ADITIVA</option>
-            <option value='E-MOBILITY'>E-MOBILITY</option>
             <option value='DATA & SOFTWARE'>DATA & SOFTWARE</option>
           </select>
           {errors.productInterest && (
@@ -184,21 +188,21 @@ export function StepThree() {
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
           <p className='font-semibold text-gray-900 dark:text-white'>
-            Nivel de influencia
+            {translates.level_influence}
           </p>
           <select
             {...register('levelInfluence', {
-              required: 'este campo es requerido',
+              required: `${translates.requiered}`,
               onChange: (e) => setLevelInfluence(e.target.value),
             })}
             defaultValue={levelInfluence}
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
           >
-            <option value=''>Selecciona una opción</option>
+            <option value=''>{translates.select_option}</option>
+            <option value='APRUEBO COMPRAS'>APRUEBO COMPRAS</option>
             <option value='EVALUO O RECOMIENDO PROVEEDOR'>
               EVALÚO O RECOMIENDO PROVEEDOR
             </option>
-            <option value='APRUEBO COMPRAS'>APRUEBO COMPRAS</option>
             <option value='NO TENGO DECISIÓN EN COMPRAS'>
               NO TENGO DECISIÓN EN COMPRAS
             </option>
@@ -211,19 +215,19 @@ export function StepThree() {
         </div>
         <div>
           <p className='font-semibold text-gray-900 dark:text-white'>
-            ¿Considerarías ser expositor en nuestra feria en próximas ediciones?
+            {translates.wanna_be_exhibitor}
           </p>
           <select
             {...register('wannaBeExhibitor', {
-              required: 'Este campo es requerido',
+              required: `${translates.requiered}`,
               onChange: (e) => setWannaBeExhibitor(e.target.value),
             })}
             defaultValue={wannaBeExhibitor}
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
           >
-            <option value=''>Selecciona una opción</option>
-            <option value='SI'>SI</option>
-            <option value='NO'>NO</option>
+            <option value=''>{translates.select_option}</option>
+            <option value='SI'>{translates.yes}</option>
+            <option value='NO'>{translates.no}</option>
           </select>
           {errors.wannaBeExhibitor && (
             <p className='text-[#ffe200] font-light'>
@@ -235,80 +239,25 @@ export function StepThree() {
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
           <p className='font-semibold text-gray-900 dark:text-white'>
-            ¿Haz visitado esta feria o alguna similar?
+            {translates.already_visited}
           </p>
-          <ul className='mt-3 w-fit items-center text-sm font-medium text-white bg-gray-700 border border-gray-600 rounded-lg sm:flex'>
-            <li className='border-b border-gray-200 sm:border-b-0 sm:border-r 0 px-2'>
-              <div className='flex items-center ps-3'>
-                <input
-                  id='horizontal-list-radio-license'
-                  type='radio'
-                  value='si'
-                  checked={alreadyVisited === 'si'}
-                  className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500'
-                  {...register('radio', {
-                    required: 'Este campo es requerido',
-                    onChange: (e) => {
-                      setAlreadyVisited(e.target.value)
-                    },
-                  })}
-                />
-                <label
-                  htmlFor='horizontal-list-radio-license'
-                  className='w-full py-3 ms-2 text-sm font-medium text-white '
-                >
-                  si
-                </label>
-              </div>
-            </li>
-            <li className='border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600 px-2'>
-              <div className='flex items-center ps-3'>
-                <input
-                  id='horizontal-list-radio-id'
-                  type='radio'
-                  value='no'
-                  checked={alreadyVisited === 'no'}
-                  className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500'
-                  {...register('radio', {
-                    required: 'Este campo es requerido',
-                    onChange: (e) => {
-                      setAlreadyVisited(e.target.value)
-                    },
-                  })}
-                />
-                <label
-                  htmlFor='horizontal-list-radio-id'
-                  className='w-full py-3 ms-2 text-sm font-medium text-white '
-                >
-                  no
-                </label>
-              </div>
-            </li>
-          </ul>
-          {errors.radio && (
-            <p className='text-[#ffe200] font-light'>{errors.radio.message}</p>
+          <select
+            {...register('alreadyVisited', {
+              required: `${translates.requiered}`,
+              onChange: (e) => setAlreadyVisited(e.target.value),
+            })}
+            defaultValue={alreadyVisited}
+            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
+          >
+            <option value=''>{translates.select_option}</option>
+            <option value=''>Falta lista de ferias</option>
+          </select>
+          {errors.alreadyVisited && (
+            <p className='text-[#ffe200] font-light'>
+              {errors.alreadyVisited.message}
+            </p>
           )}
         </div>
-        {alreadyVisited === 'si' && (
-          <div>
-            <p className='font-semibold text-gray-900 dark:text-white'>
-              ¿Cuál es el nombre de la feria que visitaste?
-            </p>
-            <input
-              {...register('nameFair', {
-                required: 'Este campo es requerido',
-                onChange: (e) => setNameFair(e.target.value),
-              })}
-              defaultValue={nameFair}
-              className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
-            />
-            {errors.nameFair && (
-              <p className='text-[#ffe200] font-light'>
-                {errors.nameFair.message}
-              </p>
-            )}
-          </div>
-        )}
       </div>
       <div className='flex justify-between'>
         <button
@@ -329,13 +278,13 @@ export function StepThree() {
               d='M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18'
             />
           </svg>{' '}
-          Regresar
+          {translates.back}
         </button>
         <button
           className='px-3 py-2 bg-[#E42128] hover:bg-red-700 font-bold rounded-2xl text-white  mt-5 flex gap-2'
           onClick={handleSubmit(handleRegister)}
         >
-          Finalizar
+          {translates.finish}
         </button>
       </div>
       {message && (

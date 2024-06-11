@@ -3,24 +3,26 @@ import { useRegisterForm } from '../../store/register-form'
 import PhoneInputWithCountry from 'react-phone-number-input/react-hook-form'
 import 'react-phone-number-input/style.css'
 import './Form.css'
-export function StepOne() {
+export function StepOne({ translates }) {
   const {
     name,
     paternSurname,
     maternSurname,
     email,
+    code_invitation,
     phone,
     typeRegister,
     genre,
-    age,
+    nacionality,
     setName,
     setPaternSurname,
     setMaternSurname,
     setEmail,
+    setCodeInvitation,
     setPhone,
     setTypeRegister,
     setGenre,
-    setAge,
+    setNacionality,
     incrementStep,
   } = useRegisterForm()
 
@@ -36,7 +38,7 @@ export function StepOne() {
       <div className='grid md:grid-cols-2 gap-6 mt-10'>
         <div>
           <p className='mb-4 font-semibold text-white'>
-            Género <span className='text-red-600'>*</span>
+            {translates.genre} <span className='text-red-600'>*</span>
           </p>
           <ul className='items-center w-full text-sm font-medium text-white bg-gray-700 border border-gray-600 rounded-lg sm:flex'>
             <li className='w-full border-b border-gray-200 sm:border-b-0 sm:border-r 0'>
@@ -48,7 +50,7 @@ export function StepOne() {
                   checked={genre === 'Hombre'}
                   className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500'
                   {...register('radio', {
-                    required: 'Género es requerido',
+                    required: `${translates.requiered}`,
                     onChange: (e) => {
                       setGenre(e.target.value)
                     },
@@ -58,7 +60,7 @@ export function StepOne() {
                   htmlFor='horizontal-list-radio-license'
                   className='w-full py-3 ms-2 text-sm font-medium text-white '
                 >
-                  Hombre
+                  {translates.genre_1}
                 </label>
               </div>
             </li>
@@ -71,7 +73,7 @@ export function StepOne() {
                   checked={genre === 'Mujer'}
                   className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500'
                   {...register('radio', {
-                    required: 'Género es requerido',
+                    required: `${translates.requiered}`,
                     onChange: (e) => {
                       setGenre(e.target.value)
                     },
@@ -81,42 +83,62 @@ export function StepOne() {
                   htmlFor='horizontal-list-radio-id'
                   className='w-full py-3 ms-2 text-sm font-medium text-white '
                 >
-                  Mujer
+                  {translates.genre_2}
+                </label>
+              </div>
+            </li>
+            <li className='w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600'>
+              <div className='flex items-center ps-3'>
+                <input
+                  id='horizontal-list-radio-id2'
+                  type='radio'
+                  value='Prefiero no decirlo'
+                  checked={genre === 'Prefiero no decirlo'}
+                  className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500'
+                  {...register('radio', {
+                    required: `${translates.requiered}`,
+                    onChange: (e) => {
+                      setGenre(e.target.value)
+                    },
+                  })}
+                />
+                <label
+                  htmlFor='horizontal-list-radio-id2'
+                  className='w-full py-3 ms-2 text-sm font-medium text-white '
+                >
+                  {translates.genre_3}
                 </label>
               </div>
             </li>
           </ul>
           {errors.radio && (
-            <p className='text-[#D70205] font-light'>{errors.radio.message}</p>
+            <p className='text-[#ffe200] font-light'>{errors.radio.message}</p>
           )}
         </div>
         <div>
           <p className='mb-4 font-semibold text-gray-900 dark:text-white'>
-            Tipo de Registro <span className='text-red-600'>*</span>
+            {translates.type_register} <span className='text-red-600'>*</span>
           </p>
           <select
             {...register('typeRegister', {
-              required: 'Tipo de registro es requerido',
+              required: `${translates.requiered}`,
               onChange: (e) => setTypeRegister(e.target.value),
             })}
             defaultValue={typeRegister}
-            className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm'
+            className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm uppercase'
           >
             <option value='' className='text-black'>
-              Selecciona un tipo de registro
+              {translates.select_option}
             </option>
             <option value='VISITANTE' className='text-black'>
-              VISITANTE
+              {translates.type_register_2}
             </option>
             <option value='MEDIO' className='text-black'>
-              MEDIO
+              {translates.type_register_3}
             </option>
-            {/*<option value='ESTUDIANTE' className='text-black'>
-              ESTUDIANTE
-            </option>*/}
           </select>
           {errors.typeRegister && (
-            <p className='text-[#D70205] font-light'>
+            <p className='text-[#ffe200] font-light'>
               {errors.typeRegister.message}
             </p>
           )}
@@ -126,33 +148,32 @@ export function StepOne() {
       <div className='grid grid-cols-3 gap-6'>
         <div>
           <p className='mt-5'>
-            Nombre <span className='text-red-600'>*</span>
+            {translates.name} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
             <input
               type='text'
               {...register('name', {
-                required: 'Nombre completo  es requerido',
+                required: `${translates.requiered}`,
                 minLength: {
                   value: 3,
-                  message: 'El nombre debe tener al menos 3 caracteres',
+                  message: `${translates.min_char}`,
                 },
                 maxLength: {
-                  value: 20,
-                  message: 'El nombre debe tener máximo 20 caracteres',
+                  value: 15,
+                  message: `${translates.max_char}`,
                 },
-
                 pattern: {
-                  value: /^[A-Za-zÀ-ÖØ-öø-ÿ]+(\s[A-Za-zÀ-ÖØ-öø-ÿ]+)*$/,
-                  message:
-                    'No se aceptan espacios en blanco al inicio o final del nombre, ni simbolos ni números',
+                  value:
+                    /^[a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõÃÕçÇñÑ ]+$/,
+                  message: `${translates.numbers_symbols}`,
                 },
                 onChange: (e) => setName(e.target.value),
               })}
               name='name'
               id='name'
               className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-              placeholder='Ingresa tu nombre'
+              placeholder={translates.placeholder_name}
               autoComplete='name'
               defaultValue={name}
             />
@@ -174,38 +195,37 @@ export function StepOne() {
             </span>
           </div>
           {errors.name && (
-            <p className='text-[#D70205] font-light'>{errors.name.message}</p>
+            <p className='text-[#ffe200] font-light'>{errors.name.message}</p>
           )}
         </div>
         <div>
           <p className='mt-5'>
-            Apellido Paterno <span className='text-red-600'>*</span>
+            {translates.lastname} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
             <input
               type='text'
               {...register('paternSurname', {
-                required: 'Nombre es requerido',
+                required: `${translates.requiered}`,
                 minLength: {
                   value: 3,
-                  message: 'El nombre debe tener al menos 3 caracteres',
+                  message: `${translates.min_char}`,
                 },
                 maxLength: {
                   value: 15,
-                  message: 'El nombre debe tener máximo 15 caracteres',
+                  message: `${translates.max_char}`,
                 },
-
                 pattern: {
-                  value: /^[A-Za-zÀ-ÖØ-öø-ÿ]+(\s[A-Za-zÀ-ÖØ-öø-ÿ]+)*$/,
-                  message:
-                    'No se aceptan espacios en blanco al inicio o final del nombre, ni simbolos ni números',
+                  value:
+                    /^[a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõÃÕçÇñÑ ]+$/,
+                  message: `${translates.numbers_symbols}`,
                 },
                 onChange: (e) => setPaternSurname(e.target.value),
               })}
               name='paternSurname'
               id='paternSurname'
               className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-              placeholder='Apellido paterno'
+              placeholder={translates.placeholder_lastname}
               autoComplete='paternSurname'
               defaultValue={paternSurname}
             />
@@ -227,40 +247,37 @@ export function StepOne() {
             </span>
           </div>
           {errors.paternSurname && (
-            <p className='text-[#D70205] font-light'>
+            <p className='text-[#ffe200] font-light'>
               {errors.paternSurname.message}
             </p>
           )}
         </div>
         <div>
-          <p className='mt-5'>
-            Apellido Materno <span className='text-red-600'>*</span>
-          </p>
+          <p className='mt-5'>{translates.surname}</p>
           <div className='relative mt-2'>
             <input
               type='text'
               {...register('maternSurname', {
-                required: 'Apellido materno  es requerido',
+                required: `${translates.requiered}`,
                 minLength: {
                   value: 3,
-                  message: 'El apellido debe tener al menos 3 caracteres',
+                  message: `${translates.min_char}`,
                 },
                 maxLength: {
                   value: 15,
-                  message: 'El apellido debe tener máximo 15 caracteres',
+                  message: `${translates.max_char}`,
                 },
-
                 pattern: {
-                  value: /^[A-Za-zÀ-ÖØ-öø-ÿ]+(\s[A-Za-zÀ-ÖØ-öø-ÿ]+)*$/,
-                  message:
-                    'No se aceptan espacios en blanco al inicio o final del nombre, ni simbolos ni números',
+                  value:
+                    /^[a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõÃÕçÇñÑ ]+$/,
+                  message: `${translates.numbers_symbols}`,
                 },
                 onChange: (e) => setMaternSurname(e.target.value),
               })}
               name='maternSurname'
               id='maternSurname'
               className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-              placeholder='Apellido Materno'
+              placeholder={translates.placeholder_surname}
               autoComplete='maternSurname'
               defaultValue={maternSurname}
             />
@@ -282,58 +299,95 @@ export function StepOne() {
             </span>
           </div>
           {errors.maternSurname && (
-            <p className='text-[#D70205] font-light'>
+            <p className='text-[#ffe200] font-light'>
               {errors.maternSurname.message}
             </p>
           )}
         </div>
       </div>
 
-      <p className='mt-5'>
-        Email <span className='text-red-600'>*</span>
-      </p>
-      <div className='relative mt-2 '>
-        <input
-          type='email'
-          {...register('email', {
-            required: 'Email es requerido',
-            pattern: {
-              value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-              message: 'Email no válido',
-            },
-            onChange: (e) => setEmail(e.target.value),
-          })}
-          name='email'
-          id='email'
-          className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-          placeholder='Ingresa tu email'
-          autoComplete='email'
-          defaultValue={email}
-        />
-
-        <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
-          <svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='h-4 w-4 text-gray-400'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'
-          >
-            <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
-              strokeWidth='2'
-              d='M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207'
+      <div className='grid grid-cols-2 gap-6'>
+        <div>
+          <p className='mt-5'>
+            {translates.email} <span className='text-red-600'>*</span>
+          </p>
+          <div className='relative mt-2 '>
+            <input
+              type='email'
+              {...register('email', {
+                required: `${translates.requiered}`,
+                pattern: {
+                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                  message: `${translates.no_email_valid}`,
+                },
+                onChange: (e) => setEmail(e.target.value),
+              })}
+              name='email'
+              id='email'
+              className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
+              placeholder={translates.placeholder_email}
+              autoComplete='email'
+              defaultValue={email}
             />
-          </svg>
-        </span>
-      </div>
-      {errors.email && (
-        <p className='text-[#D70205] font-light'>{errors.email.message}</p>
-      )}
 
+            <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                className='h-4 w-4 text-gray-400'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207'
+                />
+              </svg>
+            </span>
+          </div>
+          {errors.email && (
+            <p className='text-[#ffe200] font-light'>{errors.email.message}</p>
+          )}
+        </div>
+        <div>
+          <p className='mt-5'>{translates.code_invitation}</p>
+          <div className='relative mt-2 '>
+            <input
+              type='text'
+              {...register('code_invitation', {
+                onChange: (e) => setCodeInvitation(e.target.value),
+              })}
+              name='code_invitation'
+              id='code_invitation'
+              className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
+              placeholder={translates.placeholder_code_invitation}
+              autoComplete='code_invitation'
+              defaultValue={code_invitation}
+            />
+
+            <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='h-4 w-4 text-gray-400'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5-3.9 19.5m-2.1-19.5-3.9 19.5'
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
       <p className='mt-5'>
-        Teléfono <span className='text-red-600'>*</span>
+        {translates.phone} <span className='text-red-600'>*</span>
       </p>
       <div className='relative mt-2'>
         <PhoneInputWithCountry
@@ -343,38 +397,42 @@ export function StepOne() {
           defaultValue={phone}
           onChange={(e) => setPhone(e)}
           className='w-full rounded-lg border border-gray-200 ps-4 text-sm shadow-sm'
+          placeholder={translates.placeholder_phone}
         />
       </div>
       {errors.phone && (
-        <p className='text-[#D70205] font-light'>{errors.phone.message}</p>
+        <p className='text-[#ffe200] font-light'>{errors.phone.message}</p>
       )}
 
       <p className='mt-5'>
-        Rango de edad <span className='text-red-600'>*</span>
+        {translates.nacionality} <span className='text-red-600'>*</span>
       </p>
       <select
-        {...register('age', {
-          required: 'Tipo de registro es requerido',
-          onChange: (e) => setAge(e.target.value),
+        {...register('nacionality', {
+          required: `${translates.requiered}`,
+          onChange: (e) => setNacionality(e.target.value),
         })}
-        defaultValue={age}
+        defaultValue={nacionality}
         className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm *:text-black'
       >
-        <option value=''>Selecciona un rango de edad</option>
-        <option value='menor a 25 años'>menor a 25 años</option>
-        <option value='entre 25 y 40 años'>entre 25 y 40 años</option>
-        <option value='entre 40 y 60 años'>entre 40 y 60 años</option>
-        <option value='más de 60 años'>más de 60 años</option>
+        <option value=''>{translates.select_option}</option>
+        {translates.countries.map((country, index) => (
+          <option key={index} value={country}>
+            {country}
+          </option>
+        ))}
       </select>
-      {errors.age && (
-        <p className='text-[#D70205] font-light'>{errors.age.message}</p>
+      {errors.nacionality && (
+        <p className='text-[#ffe200] font-light'>
+          {errors.nacionality.message}
+        </p>
       )}
       <div className='w-full flex justify-end'>
         <button
           className='px-3 py-2 bg-[#E42128] hover:bg-red-700 rounded-2xl text-white font-bold mt-5'
           onClick={handleSubmit(incrementStep)}
         >
-          Continuar
+          {translates.continue}
         </button>
       </div>
     </>

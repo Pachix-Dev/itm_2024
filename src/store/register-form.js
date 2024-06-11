@@ -12,8 +12,8 @@ const useRegisterForm = create(
             phone: "",
             typeRegister: "",
             genre: "",
-            age: "",
-            linkedin: "",
+            nacionality: "",            
+            code_invitation: "",
 
             company: "",
             industry: "",
@@ -47,8 +47,8 @@ const useRegisterForm = create(
             setPhone: (phone) => set({ phone }),
             setTypeRegister: (typeRegister) => set({ typeRegister }),
             setGenre: (genre) => set({ genre }),
-            setAge: (age) => set({ age }),
-            setLinkedin: (linkedin) => set({ linkedin }),
+            setNacionality: (nacionality) => set({ nacionality }),
+            setCodeInvitation: (code_invitation) => set({ code_invitation }),
             
             setCompany: (company) => set({ company }),
             setIndustry: (industry) => set({ industry }),
@@ -93,7 +93,7 @@ const useRegisterForm = create(
                 typeRegister: "",
                 genre: "",
                 age: "",
-                linkedin: "",
+                code_invitation: "",
 
                 company: "",
                 industry: "",

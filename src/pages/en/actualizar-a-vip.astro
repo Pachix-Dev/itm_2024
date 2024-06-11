@@ -6,19 +6,22 @@ import { Upgrade } from "../../components/register/Upgrade.jsx";
 changeLanguage("en");
 ---
 
-<LayoutRegister title="Actualizar a VIP">
-    <main class="mt-10 md:mt-20 mx-6">
-        <h1 class="text-center font-bold text-2xl md:text-4xl lg:text-5xl">
-            <span class="text-[#E42128] text-3xl md:text-5xl lg:text-6xl leading-snug">Premium te espera:</span><br />
-            da el salto y disfruta<br />
-            de todas nuestras ventajas
-        </h1>
-        <Upgrade client:only="react" />
-    </main>
+<LayoutRegister title='Actualizar a VIP'>
+  <main class='mt-10 md:mt-20 mx-6 py-10'>
+    <h1
+      class='text-[#E42128] text-3xl md:text-5xl leading-snug font-extrabold text-center uppercase'
+    >
+      Adquiere tu programa de conferencias vip
+    </h1>
+    <p class='text-center font-bold text-lg md:text-2xl uppercase'>
+      da el salto y disfruta de todas nuestras ventajas
+    </p>
+    <Upgrade client:only='react' />
+  </main>
 </LayoutRegister>
 <style>
-    body {
-      background-color: #111827;
-      color: white;
-    }
+  body {
+    background-color: #111827;
+    color: white;
+  }
 </style>

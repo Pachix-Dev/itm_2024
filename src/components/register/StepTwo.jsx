@@ -1,9 +1,9 @@
 import { useForm } from 'react-hook-form'
 import { useRegisterForm } from '../../store/register-form.js'
 import { countries } from '../../data/list_countries'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
-export function StepTwo() {
+export function StepTwo({ translates }) {
   const {
     company,
     industry,
@@ -55,13 +55,16 @@ export function StepTwo() {
     setValue('city', city)
     setValue('colonia', colonia)
   }, [state, municipality, city, colonia, setValue])
+  const [messagePostalCode, setMessagePostalCode] = useState('')
   const urlbase = 'https://demo.industrialtransformation.mx/server/'
   //const urlbase = 'http://localhost:3010/'
   const handlePostalCode = async (e) => {
+    setPostalCode(e)
     if (e.length === 5 && country === 'Mexico') {
       const res = await fetch(urlbase + `get-postalcode/${e}`)
       const data = await res.json()
       if (data.status) {
+        setMessagePostalCode('')
         setPostalCode(e)
         setMunicipality(data.records[0].D_mnpio)
         setState(data.records[0].d_estado)
@@ -73,12 +76,21 @@ export function StepTwo() {
         setColonias(data.records.map((record) => record.d_asenta))
         setColonia('')
       } else {
+        setMessagePostalCode(translates.no_postal_code_valid)
         setMunicipality('')
         setState('')
         setCity('')
         setColonias([])
         setColonia('')
       }
+    }
+    if (e.length > 5 && country === 'Mexico') {
+      setMessagePostalCode(translates.no_postal_code_valid)
+      setMunicipality('')
+      setState('')
+      setCity('')
+      setColonias([])
+      setColonia('')
     }
   }
 
@@ -92,33 +104,19 @@ export function StepTwo() {
       <div className='grid md:grid-cols-2 gap-6 mt-10'>
         <div>
           <p>
-            Nombre de la empresa <span className='text-red-600'>*</span>
+            {translates.company_name} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
             <input
               type='text'
               {...register('company', {
-                required: 'Nombre de la empresa  es requerido',
-                minLength: {
-                  value: 3,
-                  message: 'El nombre debe tener al menos 3 caracteres',
-                },
-                maxLength: {
-                  value: 50,
-                  message: 'El nombre debe tener máximo 50 caracteres',
-                },
-
-                pattern: {
-                  value: /^[A-Za-zÀ-ÖØ-öø-ÿ]+(\s[A-Za-zÀ-ÖØ-öø-ÿ]+)*$/,
-                  message:
-                    'No se aceptan espacios en blanco al inicio o final del nombre, ni simbolos ni números',
-                },
+                required: `${translates.requiered}`,
                 onChange: (e) => setCompany(e.target.value),
               })}
               name='company'
               id='company'
               className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-              placeholder='Ingresa el nombre de la empresa'
+              placeholder={translates.placeholder_company_name}
               autoComplete='company'
               defaultValue={company}
             />
@@ -147,17 +145,17 @@ export function StepTwo() {
         </div>
         <div>
           <p className='font-semibold text-gray-900 dark:text-white'>
-            Industria <span className='text-red-600'>*</span>
+            {translates.industry} <span className='text-red-600'>*</span>
           </p>
           <select
             {...register('industry', {
-              required: 'Tipo de registro es requerido',
+              required: `${translates.requiered}`,
               onChange: (e) => setIndustry(e.target.value),
             })}
             defaultValue={industry}
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm *:text-black'
           >
-            <option value=''>Selecciona una opción</option>
+            <option value=''>{translates.select_option}</option>
             <option value='INGENIERIA'>INGENIERIA</option>
             <option value='SECTOR EDUCATIVO'>SECTOR EDUCATIVO</option>
             <option value='AUTOMOTRIZ'>AUTOMOTRIZ</option>
@@ -203,17 +201,17 @@ export function StepTwo() {
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
           <p className='font-semibold text-gray-900 dark:text-white'>
-            Cargo <span className='text-red-600'>*</span>
+            {translates.position} <span className='text-red-600'>*</span>
           </p>
           <select
             {...register('position', {
-              required: 'Cargo es requerido',
+              required: `${translates.requiered}`,
               onChange: (e) => setPosition(e.target.value),
             })}
             defaultValue={position}
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
           >
-            <option value=''>Selecciona una opción</option>
+            <option value=''>{translates.select_option}</option>
             <option value='CEO / PRESIDENTE'>CEO / PRESIDENTE</option>
             <option value='DIRECTOR / COORDINADOR DE AREA'>
               DIRECTOR / COORDINADOR DE AREA
@@ -231,19 +229,19 @@ export function StepTwo() {
         </div>
         <div>
           <p>
-            Calle y número <span className='text-red-600'>*</span>
+            {translates.adrdress} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
             <input
               type='text'
               {...register('address', {
-                required: 'Ciudad es requerido',
+                required: `${translates.requiered}`,
                 onChange: (e) => setAddress(e.target.value),
               })}
               name='address'
               id='address'
               className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-              placeholder='Ingresa Calle y número'
+              placeholder={translates.placeholder_address}
               autoComplete='address'
               defaultValue={address}
             />
@@ -280,17 +278,17 @@ export function StepTwo() {
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
           <p className='font-semibold text-gray-900 dark:text-white'>
-            País <span className='text-red-600'>*</span>
+            {translates.country} <span className='text-red-600'>*</span>
           </p>
           <select
             {...register('country', {
-              required: 'País es requerido',
+              required: `${translates.requiered}`,
               onChange: (e) => setCountry(e.target.value),
             })}
             defaultValue={country}
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
           >
-            <option value=''>Selecciona una opción</option>
+            <option value=''>{translates.select_option}</option>
             {countries.map((country) => (
               <option key={country.code} value={country.name}>
                 {country.name}
@@ -305,19 +303,19 @@ export function StepTwo() {
         </div>
         <div>
           <p>
-            Código postal <span className='text-red-600'>*</span>
+            {translates.postal_code} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
             <input
               type='text'
               {...register('postalCode', {
-                required: 'Codigo postal es requerido',
+                required: `${translates.requiered}`,
                 onChange: (e) => handlePostalCode(e.target.value),
               })}
               name='postalCode'
               id='postalCode'
               className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-              placeholder='Ingresa código postal'
+              placeholder={translates.placeholder_postal_code}
               autoComplete='postalCode'
               defaultValue={postalCode}
             />
@@ -343,6 +341,9 @@ export function StepTwo() {
               </svg>
             </span>
           </div>
+
+          <p className='text-[#ffe200] font-light'>{messagePostalCode}</p>
+
           {errors.postalCode && (
             <p className='text-[#ffe200] font-light'>
               {errors.postalCode.message}
@@ -354,18 +355,18 @@ export function StepTwo() {
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
           <p>
-            Estado <span className='text-red-600'>*</span>
+            {translates.state} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
             <input
               type='text'
               {...register('state', {
-                required: 'Estado es requerido',
+                required: `${translates.requiered}`,
                 onChange: (e) => setState(e.target.value),
                 value: state,
               })}
               className={isDisabled}
-              placeholder='Ingresa el nombre de la ciudad'
+              placeholder={translates.placeholder_state}
               disabled={country === 'Mexico'}
             />
             <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
@@ -391,19 +392,19 @@ export function StepTwo() {
         </div>
         <div>
           <p>
-            Municipio <span className='text-red-600'>*</span>
+            {translates.municipality} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
             <input
               type='text'
               {...register('municipality', {
-                required: 'Ciudad es requerido',
+                required: `${translates.requiered}`,
                 onChange: (e) => setMunicipality(e.target.value),
               })}
               name='municipality'
               id='municipality'
               className={isDisabled}
-              placeholder='Ingresa el nombre de la ciudad'
+              placeholder={translates.placeholder_municipality}
               autoComplete='municipality'
               disabled={country === 'Mexico'}
             />
@@ -434,18 +435,18 @@ export function StepTwo() {
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
           <p>
-            Colonia <span className='text-red-600'>*</span>
+            {translates.colony} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
             {country === 'Mexico' ? (
               <select
                 {...register('colonia', {
-                  required: 'Colonia es requerido',
+                  required: `${translates.requiered}`,
                   onChange: (e) => setColonia(e.target.value),
                 })}
                 className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
               >
-                <option value=''>Selecciona una opción</option>
+                <option value=''>{translates.select_option}</option>
                 {colonias.length > 0 &&
                   colonias.map((colonia) => (
                     <option key={colonia} value={colonia}>
@@ -457,14 +458,14 @@ export function StepTwo() {
               <input
                 type='text'
                 {...register('colonia', {
-                  required: 'Colonia es requerido',
+                  required: `${translates.requiered}`,
 
                   onChange: (e) => setColonia(e.target.value),
                 })}
                 name='colonia'
                 id='colonia'
                 className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-                placeholder='Ingresa el nombre de la colonia'
+                placeholder={translates.placeholder_colony}
                 autoComplete='colonia'
                 defaultValue={colonia}
               />
@@ -494,19 +495,19 @@ export function StepTwo() {
         </div>
         <div>
           <p>
-            Ciudad <span className='text-red-600'>*</span>
+            {translates.city} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
             <input
               type='text'
               {...register('city', {
-                required: 'Ciudad es requerido',
+                required: `${translates.requiered}`,
                 onChange: (e) => setCity(e.target.value),
               })}
               name='city'
               id='city'
               className={isDisabled}
-              placeholder='Ingresa el nombre de la ciudad'
+              placeholder={translates.placeholder_city}
               autoComplete='city'
               {...(city && { defaultValue: city })}
               disabled={country === 'Mexico'}
@@ -536,7 +537,7 @@ export function StepTwo() {
 
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
-          <p>Página web </p>
+          <p>{translates.website}</p>
           <div className='relative mt-2'>
             <input
               type='text'
@@ -544,7 +545,7 @@ export function StepTwo() {
               name='webPage'
               id='webPage'
               className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-              placeholder='Ingresa la página web de la empresa'
+              placeholder={translates.placeholder_website}
               autoComplete='webPage'
               defaultValue={webPage}
             />
@@ -565,29 +566,23 @@ export function StepTwo() {
               </svg>
             </span>
           </div>
-          {errors.webPage && (
-            <p className='text-[#D70205] font-light'>
-              {errors.webPage.message}
-            </p>
-          )}
         </div>
         <div>
-          <p>Número de teléfono de la empresa </p>
+          <p>{translates.company_phone} </p>
           <div className='relative mt-2'>
             <input
               type='tel'
               {...register('phoneCompany', {
                 pattern: {
                   value: /^[0-9+]+$/,
-                  message:
-                    'Teléfono inválido, no se aceptan espacios en blancon ni letras',
+                  message: `${translates.no_phone_valid}`,
                 },
                 onChange: (e) => setPhoneCompany(e.target.value),
               })}
               name='phoneCompany'
               id='phoneCompany'
               className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-              placeholder='Ingresa número de teléfono de la empresa'
+              placeholder={translates.placeholder_company_phone}
               autoComplete='phoneCompany'
               defaultValue={phoneCompany}
             />
@@ -609,7 +604,7 @@ export function StepTwo() {
             </span>
           </div>
           {errors.phoneCompany && (
-            <p className='text-[#D70205] font-light'>
+            <p className='text-[#ffe200] font-light'>
               {errors.phoneCompany.message}
             </p>
           )}
@@ -635,13 +630,13 @@ export function StepTwo() {
               d='M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18'
             />
           </svg>
-          Regresar
+          {translates.back}
         </button>
         <button
           className='px-3 py-2 bg-[#E42128] hover:bg-red-700 rounded-2xl text-white font-bold mt-5 flex gap-2'
           onClick={handleSubmit(incrementStep)}
         >
-          Continuar
+          {translates.continue}
         </button>
       </div>
     </>
