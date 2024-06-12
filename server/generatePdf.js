@@ -347,7 +347,7 @@ async function generatePDF_freePass( body, uuid, registerFile) {
     .text(body.paternSurname,)
     .fontSize(12)
     .font('Helvetica')
-    .text(body.positon)
+    .text(body.position)
     .moveDown(0.5)
     .text(body.company);
 
