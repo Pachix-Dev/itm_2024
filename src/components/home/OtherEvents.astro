@@ -1,0 +1,98 @@
+---
+import { t } from "i18next";
+
+const otherEvents = [
+	{
+		title: "Futuristics Minds",
+		description: t("otherEvents.futuristics-minds"),
+		image:
+			"https://futuristics-minds.industrialtransformation.mx/img/bg_banner.webp",
+		link: "https://futuristics-minds.industrialtransformation.mx/",
+	},
+	{
+		title: "M-TECH 2024",
+		description: t("otherEvents.mtech"),
+		video: "https://mtech.igeco.mx/videos/bg_mtech_2024.mp4",
+		link: "https://mtech.igeco.mx/",
+	},
+	{
+		title: "Startup Pitch",
+		description: t("otherEvents.startup-pitch"),
+		video: "https://industrialtransformation.mx/STARTUP-PITCH-ESP-FINAL.webm",
+		link: "https://industrialtransformation.mx/startup-pitch",
+	},
+];
+---
+
+<section class="m-10 xl:mx-32">
+	<h2
+		class="text-center font-bold pt-5 text-3xl xl:text-4xl 2xl:text-5xl pb-5 pl-3"
+	>
+		{t("otherEvents.title")}
+	</h2>
+	<!-- <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10"> -->
+	<div class="flex justify-center flex-wrap gap-10">
+		{
+			otherEvents.map((event) => (
+				<article class="relative box-border overflow-hidden rounded-lg shadow transition group bg-black">
+					{event.image ? (
+						<img
+							alt={event.title}
+							src={event.image}
+							class="absolute inset-0 h-full w-full object-cover transform transition-transform ease-out duration-300 group-hover:-translate-y-5 scale-110"
+						/>
+					) : (
+						<video
+							class="absolute inset-0 h-full w-full object-cover transform transition-transform ease-out duration-300 group-hover:-translate-y-5 scale-110"
+							autoplay
+							muted
+							loop
+						>
+							<source
+								src={event.video}
+								type={`video/${event.video && event.video.split(".").pop()}`}
+							/>
+						</video>
+					)}
+
+					<div class="relative h-full bg-gradient-to-t from-gray-900/70 to-gray-900/40 pt-32">
+						<div class="relative h-[266px] p-4 sm:p-6 translate-y-52 md:translate-y-48 xl:translate-y-[180px] transform transition-transform ease-out duration-300 group-hover:translate-y-0">
+							<h3 class="mt-0.5 text-2xl xl:text-3xl 2xl:text-4xl pb-2 text-white font-bold">
+								{event.title}
+							</h3>
+
+							<p class="mt-2 text-sm/relaxed text-white/95">
+								{event.description}
+							</p>
+							<a
+								href={event.link}
+								target="_blank"
+								class="absolute bottom-3 2xl:text-base group mt-4 inline-flex items-center gap-1 text-sm font-medium text-white hover:text-white hover:bg-black rounded-md p-2 transition-all"
+							>
+								{t("otherEvents.btn")}
+								<span
+									aria-hidden="true"
+									class="block ms-0.5 rtl:rotate-180"
+								>
+									&rarr;
+								</span>
+							</a>
+						</div>
+					</div>
+				</article>
+			))
+		}
+	</div>
+</section>
+<style>
+	@media screen and (min-width: 768px){
+		article {
+			width: calc(50% - 2.5rem / 2);
+		}
+	}
+	@media screen and (min-width: 1080px){
+		article {
+			width: calc(100% /3 - 5rem / 2);
+		}
+	}
+</style>

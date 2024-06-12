@@ -599,5 +599,21 @@
         "verify_button": "Verificar",
         "register_text": "Si aun no te haz registrado ingresa aqui",
         "register_button": "Registrate gratis"
+    },
+    "otherEvents": {
+        "title": "Discover other events",
+        "btn": "See more",
+        "futuristics-minds": "Be part of ITM's educational chapter and attend competitions, conferences, workshops, prototype exhibitions and interactive tours.",
+        "mtech": "Challenge the future and show your talent in the third edition of the robotics competition that the Government of the State of Guanajuato and Italian German Exhibition Company Mexico are organizing for you.",
+        "startup-pitch": "We invite you to present your solutions at Industrial Transformation Mexico 2023 in our third edition of the Startup Pitch. Participate and be one of the finalists to present to investors and jury members at ITM."
+    },
+    "checkRegister": {
+        "title": "Verify your registration",
+        "subtitle": "to view the digital directory",
+        "description": "Enter the e-mail address you registered with",
+        "btn": "Verify",
+        "email-example": "youremail@hi.com",
+        "register-now": "If you have not registered yet, click here",
+        "free-register": "Register for free"
     }
 }

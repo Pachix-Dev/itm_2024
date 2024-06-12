@@ -1,0 +1,38 @@
+---
+import { changeLanguage, t } from "i18next";
+// @ts-ignore
+import { localizePath } from "astro-i18next";
+import LayoutRegister from "../layouts/LayoutRegister.astro";
+import { CheckRegister } from "../components/shared/CheckRegister.jsx";
+
+changeLanguage("es");
+
+const translations = {
+    description: t("checkRegister.description"),
+    btn: t("checkRegister.btn"),
+    emailExample: t("checkRegister.email-example"),
+    registerNow: t("checkRegister.register-now"),
+    freeRegister: t("checkRegister.free-register"),
+    programUrl: localizePath("/directorio-digital"),
+};
+---
+
+<LayoutRegister title="ITM | Programa 2024">
+  <main class='pt-10 md:pt-20 mx-6 py-10'>
+    <h1
+      class="text-[#E42128] text-3xl md:text-5xl leading-snug font-extrabold text-center uppercase"
+    >
+      {t('checkRegister.title')}
+    </h1>
+    <p class='text-center font-bold text-lg md:text-2xl uppercase'>
+      {t('checkRegister.subtitle')}
+    </p>
+    <CheckRegister client:only="react" translations={translations} />
+  </main>
+</LayoutRegister>
+<style>
+  body {
+    background-color: #111827;
+    color: white;
+  }
+</style>
