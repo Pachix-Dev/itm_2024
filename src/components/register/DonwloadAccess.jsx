@@ -1,6 +1,6 @@
 import { useRegisterForm } from '../../store/register-form'
 
-export function DonwloadAccess({ text = '' }) {
+export function DonwloadAccess({ text }) {
   const { invoiceDownToLoad } = useRegisterForm()
   return (
     <>
