@@ -116,6 +116,7 @@ const useRegisterForm = create(
                 productInterest: "",
                 levelInfluence: "",
                 wannaBeExhibitor: "",
+                alreadyVisited: "",
                 item:{},                
                 
             })

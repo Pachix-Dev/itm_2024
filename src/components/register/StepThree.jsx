@@ -98,7 +98,7 @@ export function StepThree({ translates }) {
     })
     const orderData = await response.json()
     if (orderData.status) {
-      clear()
+      //clear()
       setCompleteRegister(true)
       setInvoiceDownToLoad(orderData?.invoice)
       window.location.href = '/gracias-por-registrarte'
