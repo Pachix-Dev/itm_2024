@@ -186,14 +186,15 @@ app.get('/get-postalcode/:cp', async (req, res) => {
 })
 
 app.get('/get-user-by-email', async (req, res) => {
-    const { email } = req.query;
-    const response = await RegisterModel.get_user_by_email(email);
+    const { email, requireNonVip = 'true' } = req.query;
+    const response = await RegisterModel.get_user_by_email(email, JSON.parse(requireNonVip));
     if (response.error) {
         res.status(404).send({
             message: response.error
         });
+    } else {
+        res.send(response.user);
     }
-    res.send(response.user);
 });
 
 app.post('/upgrade-user', async (req, res) => {

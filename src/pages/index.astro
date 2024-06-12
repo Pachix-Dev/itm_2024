@@ -4,6 +4,7 @@ import Hero from "../components/home/Hero.astro";
 import Layout from "../layouts/Layout.astro";
 import Sponsors from "../components/home/Sponsors.astro";
 import WhyParticipate from "../components/home/WhyParticipate.astro";
+import OtherEvents from "../components/home/OtherEvents.astro";
 import Gallery from "../components/shared/Gallery";
 import { home } from "../data/constans_gallery.js";
 import Score from "../components/home/Score.astro";
@@ -16,6 +17,7 @@ changeLanguage("es");
 <Layout title='ITM 2024 | Home'>
   <main>
     <Hero />
+    <OtherEvents />
     <Sponsors />
     <WhyParticipate />
     <Score />

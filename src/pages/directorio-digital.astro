@@ -1,0 +1,31 @@
+---
+import { changeLanguage } from "i18next";
+import LayoutRegister from "../layouts/LayoutRegister.astro";
+// @ts-ignore
+import { localizePath } from "astro-i18next";
+
+changeLanguage("es");
+
+const path = localizePath("/consulta-directorio-digital");
+---
+
+<LayoutRegister title="ITM | Registro 2024">
+  <main data-path={path}>
+    <h1 class="text-center text-[#E42128] text-6xl font-extrabold">Directorio Digital</h1>
+  </main>
+</LayoutRegister>
+<style>
+  body {
+    background-color: #111827;
+    color: white;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const path = document.querySelector('main')?.dataset.path;
+    const validate = JSON.parse(sessionStorage.getItem('validate-register') || 'false');
+    if (!validate) {
+      window.location.href = path || '/consulta-directorio-digital';
+    }
+  });
+</script>
