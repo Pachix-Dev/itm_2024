@@ -562,7 +562,29 @@
         "wanna_be_exhibitor": "Would you consider exhibiting at our fair in future editions?",
         "already_visited": "Have you visited this or a similar fair?",
         "yes": "Yes",
-        "no": "No"
+        "no": "No",
+        "list_area": [
+            "Board of management / Excecutive board",
+            "Purchasing",
+            "Finance",
+            "Research and Development",
+            "IT",
+            "Logistics",
+            "Marketing",
+            "Human Resources",
+            "Press",
+            "Production / Engineering",
+            "Sales and Distribution",
+            "Administration",
+            "Secretariat"
+        ],
+        "list_interest_product": [
+            "Automation, robotisation and power transmission",
+            "Digital Factory",
+            "Machines and Tools",
+            "Smart Logistics",
+            "Mobility of the future"
+        ]
     },
     "thanks_page":{
         "title": "Thank you for registering",

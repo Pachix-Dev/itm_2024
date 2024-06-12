@@ -137,34 +137,169 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
     const qrMainUser = await generateQRDataURL(uuid);       
 
     doc.addPage();
-    doc.image(logoVev, 50, 45, { width: 100 });                
+    // Draw a dashed cross in the middle of the document
+    const midX = doc.page.width / 2;
+    const midY = doc.page.height / 2;
+
+    doc.save();
+    doc.lineWidth(2);
+    doc.dash(5, { space: 5 });
+
+    // Vertical dashed line
+    doc.moveTo(midX, 0)
+        .lineTo(midX, doc.page.height)
+        .stroke();
+    // Horizontal dashed line
+    doc.moveTo(0, midY)
+        .lineTo(doc.page.width, midY)
+        .stroke();
+    doc.restore();
+
+
+    doc.image('img/header_ITM.jpg', -20, -15, { width: 325 });
+    // aqui iria el QR con info del usuario
+    doc.image('img/footer_ITM.jpg', 0, 328, { width: 305 });
     doc
-        .fillColor("#444444")    
-        .fontSize(10)
-        .text("Fecha del evento: 9 - 11 de octubre 2024", 10, 50, { align: "right" })
-        .text("Horarios: 9:00 AM - 6:00 PM", 100, 65, { align: "right" })
-        .text("Poliforum León", 100, 80, { align: "right" })
-        .moveDown(5);
+    .font('Helvetica-Bold')
+    .fontSize(17)
+    .text('INSTRUCCIONES PARA TU VISITA', 310, 10, {
+        width: 300,
+        align: 'center'
+    })
+    .moveDown(0.2);
+
+    doc.text(' GUIDELINES FOR YOUR VISIT', {
+        width: 300,
+        align: 'center'
+    }).moveDown(1);
     
-    doc.text('GRACIAS POR FORMAR PARTE DE ITM 2024...', 50);
-                
-    doc.text('Nombre: ' + body.name , 300, 240)
-        .text('Correo: '+ body.email, 300, 260)
-        .text('Teléfono: ' + body.phone, 300, 280);
+    doc.font('Helvetica-Bold')
+    .fontSize(8)
+    .text('1.', 330)
+    .font('Helvetica')
+    .text('Tu gafete es tu pase a la exposición de ITM 2024. Deberás portarlo en todo momento.', 345, 75, {
+        width: 250,
+        align: 'justify'
+    })  
+    doc.text('Your badge is your access pass to ITM 2024 tradeshow. You must wear it at all times.',{
+        width: 250,
+        align: 'justify'
+    })
+    .moveDown(1); 
 
-    doc.image(qrMainUser, 100, 200, { width: 150 });
-    doc.text(uuid, 90, 350);
+    doc.font('Helvetica-Bold')
+    .fontSize(8)
+    .text('2.', 330)
+    .font('Helvetica')
+    .text('El gafete es personal e intransferible. Por motivos de seguridad, podemos solicitarte al ingreso de la exposición una identificación con fotografía.', 345, 120, {
+        width: 250,
+        align: 'justify'
+    })
+    .text('The badge is personal and non-transferable. For security reasons, we may ask for an ID with picture at the entrance of the exhibition.', {
+        width: 250,
+        align: 'justify'
+    })
+    .moveDown(1); 
+    doc.font('Helvetica-Bold')
+    .fontSize(8)
+    .text('3.', 330)
+    .font('Helvetica')
+    .text('Disfruta tu visita y utiliza el hashtag', 345, 175, {
+        width: 250,    
+        continued: true
+    })
+    .fillColor('#1E92D0')
+    .font('Helvetica-Bold')
+    .text(' #ITM2024 ', { continued: true })
+    .fillColor('black')
+    .font('Helvetica')
+    .text(' en tus posteos en redes sociales.')
+    .text('Enjoy your visit and use the hashtag', {
+        width: 250,    
+        continued: true
+    })
+    .fillColor('#1E92D0')
+    .font('Helvetica-Bold')
+    .text(' #ITM2024 ', { continued: true })
+    .fillColor('black')
+    .font('Helvetica')
+    .text(' on your social media posts.')
+    .moveDown(2);
+    
+    doc
+    .font('Helvetica-Bold')
+    .text('HORARIOS / SCHEDULE',{
+        width: 250,    
+        align: 'center'
+    })
+    .moveDown(1)
+    .text('Octubre')
+    .text('October')
+    .text('(9) 11:00 am – 19:00 hrs', 330, 250, {
+        width: 250,    
+        align: 'center'
+    })
+    .text('(10)  11:00 am – 19:00 hrs', 330, 260, {
+        width: 250,    
+        align: 'center'
+    })
+    .text('(11)  11:00 am – 17:00 hrs', 330, 270, {
+        width: 250,    
+        align: 'center'
+    })
+    .moveDown(1)
+    .text('ITALIAN GERMAN EXHIBITION COMPANY MEXICO', {
+        width: 250,    
+        align: 'center'
+    });
 
+    doc.image('img/footer2_ITM.jpg', 307, 328, { width: 306 });
+    
+    doc.save();
+    // Rotate and draw some text
+    doc.rotate(180, {origin: [150, 305]})
+    .fillColor('red')  
+    .fontSize(20)
+    .text('AVISO / DISCLAIMER', 15, -140, {
+        width: 250,
+        align: 'center'
+    
+    })
+    .moveDown(1)
+    .fillColor('black')  
+    .fontSize(12)
+    .text('Agilice su entrada imprimiendo su acreditación o llevando este documento en su teléfono móvil. Speed up your entrance by printing your badge or carrying this document on your cell phone.', {
+        width: 250,
+        align: 'justify'
+    
+    })
+    .moveDown(1)
+    .text('El gafete es personal e intransferible y se imprimirá una sola vez en el módulo de registro digital. The badge is personal and non-transferable and will be printed once at the digital registration module.', {
+        width: 250,
+        align: 'justify'
+    
+    })
+    .moveDown(1)
+    .text('n caso de que pierdas tu gafete y necesites reimprimirlo, se cobrará una cuota de $300 MXN. In case you lose your badge and need to reprint it, a replacement fee of $300 MXN will be charged.', {
+        width: 250,
+        align: 'justify'
+    
+    });
 
-    doc.moveDown(5);
-    doc.text('INSTRUCCIONES PARA TU VISITA:', 50)
-        .text('1.- IMPORTANTE: Es indispensable llevar tu pre-registro impreso o en formato digital para agilizar tu acceso al evento.',50)
-        .text('2.- Recuerda llevar tu credencial oficial de empresa o negocio para verificar tus datos.',50)
-        .text('3.- Tu acceso es único e intransferible y debe estar visible durante toda tu visita.')
-        .text('4.- En caso de perder tu gafete, no habrá reimpresiones en el piso expositor. Por lo cual, se tendrá que generar una compra de boleto para su ingreso con un costo de $300 MXN.')        
+    doc.fontSize(14)
+    .text('BADGE FOLDING / PLEGADO DE GAFETE', -360, -140, {
+        width: 400,
+        align: 'center'
+    });
 
-  doc.end();
-  return pdfSave;
+    doc.rotate(180, {origin: [-170, 50]})
+    .image('img/indicaciones_ITM.jpg', -330, -100, { width: 305 });
+
+    // Restore the previous state to avoid rotating everything else
+    doc.restore();        
+
+    doc.end();
+    return pdfSave;
 }
 
 async function generatePDF_freePass( body, uuid, registerFile) {
@@ -177,39 +312,187 @@ async function generatePDF_freePass( body, uuid, registerFile) {
 
     const doc = new PDFDocument();
     const pdfStream = fs.createWriteStream(pdfSave);            
-    const logoVev = path.resolve(__dirname, 'Logo_ITM.jpg');  
+    //const logoVev = path.resolve(__dirname, 'Logo_ITM.jpg');  
     
     const qrMainUser = await generateQRDataURL(uuid);
 
     doc.pipe(pdfStream);    
-    doc.image(logoVev, 50, 45, { width: 100 });                
-    doc
-        .fillColor("#444444")    
-        .fontSize(10)
-        .text("Fecha del evento: 9 - 11 de octubre 2024", 10, 50, { align: "right" })
-        .text("Horarios: 9:00 AM - 6:00 PM", 100, 65, { align: "right" })
-        .text("Poliforum León", 100, 80, { align: "right" })
-        .moveDown(5);
+     // Draw a dashed cross in the middle of the document
+    const midX = doc.page.width / 2;
+    const midY = doc.page.height / 2;
+
+    doc.save();
+    doc.lineWidth(2);
+    doc.dash(5, { space: 5 });
+
+    // Vertical dashed line
+    doc.moveTo(midX, 0)
+        .lineTo(midX, doc.page.height)
+        .stroke();
+    // Horizontal dashed line
+    doc.moveTo(0, midY)
+        .lineTo(doc.page.width, midY)
+        .stroke();
+    doc.restore();
+
+
+    doc.image('img/header_ITM.jpg', -20, -15, { width: 325 });
+    // aqui iria el QR con info del usuario    
+    doc.image(qrMainUser, 90, 120, { width: 120 });
     
-    doc.text('GRACIAS POR FORMAR PARTE DE ITM 2024...', 50);
-                
-    doc.text('Nombre: ' + body.name , 300, 240)
-        .text('Correo: '+ body.email, 300, 260)
-        .text('Teléfono: ' + body.phone, 300, 280);
+    doc
+    .font('Helvetica-Bold')
+    .fontSize(18)
+    .text(body.name, 30, 240)
+    .text(body.paternSurname,)
+    .fontSize(12)
+    .font('Helvetica')
+    .text(body.positon)
+    .moveDown(0.5)
+    .text(body.company);
 
-    doc.image(qrMainUser, 100, 200, { width: 150 });
-    doc.text(uuid, 90, 350);
+    doc.image('img/footer_ITM.jpg', 0, 328, { width: 305 });
+    doc
+    .font('Helvetica-Bold')
+    .fontSize(17)
+    .text('INSTRUCCIONES PARA TU VISITA', 310, 10, {
+        width: 300,
+        align: 'center'
+    })
+    .moveDown(0.2);
 
+    doc.text(' GUIDELINES FOR YOUR VISIT', {
+        width: 300,
+        align: 'center'
+    }).moveDown(1);
+    
+    doc.font('Helvetica-Bold')
+    .fontSize(8)
+    .text('1.', 330)
+    .font('Helvetica')
+    .text('Tu gafete es tu pase a la exposición de ITM 2024. Deberás portarlo en todo momento.', 345, 75, {
+        width: 250,
+        align: 'justify'
+    })  
+    doc.text('Your badge is your access pass to ITM 2024 tradeshow. You must wear it at all times.',{
+        width: 250,
+        align: 'justify'
+    })
+    .moveDown(1); 
 
-    doc.moveDown(5);
-    doc.text('INSTRUCCIONES PARA TU VISITA:', 50)
-        .text('1.- IMPORTANTE: Es indispensable llevar tu pre-registro impreso o en formato digital para agilizar tu acceso al evento.',50)
-        .text('2.- Recuerda llevar tu credencial oficial de empresa o negocio para verificar tus datos.',50)
-        .text('3.- Tu acceso es único e intransferible y debe estar visible durante toda tu visita.')
-        .text('4.- En caso de perder tu gafete, no habrá reimpresiones en el piso expositor. Por lo cual, se tendrá que generar una compra de boleto para su ingreso con un costo de $300 MXN.')        
+    doc.font('Helvetica-Bold')
+    .fontSize(8)
+    .text('2.', 330)
+    .font('Helvetica')
+    .text('El gafete es personal e intransferible. Por motivos de seguridad, podemos solicitarte al ingreso de la exposición una identificación con fotografía.', 345, 120, {
+        width: 250,
+        align: 'justify'
+    })
+    .text('The badge is personal and non-transferable. For security reasons, we may ask for an ID with picture at the entrance of the exhibition.', {
+        width: 250,
+        align: 'justify'
+    })
+    .moveDown(1); 
+    doc.font('Helvetica-Bold')
+    .fontSize(8)
+    .text('3.', 330)
+    .font('Helvetica')
+    .text('Disfruta tu visita y utiliza el hashtag', 345, 175, {
+        width: 250,    
+        continued: true
+    })
+    .fillColor('#1E92D0')
+    .font('Helvetica-Bold')
+    .text(' #ITM2024 ', { continued: true })
+    .fillColor('black')
+    .font('Helvetica')
+    .text(' en tus posteos en redes sociales.')
+    .text('Enjoy your visit and use the hashtag', {
+        width: 250,    
+        continued: true
+    })
+    .fillColor('#1E92D0')
+    .font('Helvetica-Bold')
+    .text(' #ITM2024 ', { continued: true })
+    .fillColor('black')
+    .font('Helvetica')
+    .text(' on your social media posts.')
+    .moveDown(2);
+    
+    doc
+    .font('Helvetica-Bold')
+    .text('HORARIOS / SCHEDULE',{
+        width: 250,    
+        align: 'center'
+    })
+    .moveDown(1)
+    .text('Octubre')
+    .text('October')
+    .text('(9) 11:00 am – 19:00 hrs', 330, 250, {
+        width: 250,    
+        align: 'center'
+    })
+    .text('(10)  11:00 am – 19:00 hrs', 330, 260, {
+        width: 250,    
+        align: 'center'
+    })
+    .text('(11)  11:00 am – 17:00 hrs', 330, 270, {
+        width: 250,    
+        align: 'center'
+    })
+    .moveDown(1)
+    .text('ITALIAN GERMAN EXHIBITION COMPANY MEXICO', {
+        width: 250,    
+        align: 'center'
+    });
 
-  doc.end();
-  return pdfSave;
+    doc.image('img/footer2_ITM.jpg', 307, 328, { width: 306 });
+    
+    doc.save();
+    // Rotate and draw some text
+    doc.rotate(180, {origin: [150, 305]})
+    .fillColor('red')  
+    .fontSize(20)
+    .text('AVISO / DISCLAIMER', 15, -140, {
+        width: 250,
+        align: 'center'
+    
+    })
+    .moveDown(1)
+    .fillColor('black')  
+    .fontSize(12)
+    .text('Agilice su entrada imprimiendo su acreditación o llevando este documento en su teléfono móvil. Speed up your entrance by printing your badge or carrying this document on your cell phone.', {
+        width: 250,
+        align: 'justify'
+    
+    })
+    .moveDown(1)
+    .text('El gafete es personal e intransferible y se imprimirá una sola vez en el módulo de registro digital. The badge is personal and non-transferable and will be printed once at the digital registration module.', {
+        width: 250,
+        align: 'justify'
+    
+    })
+    .moveDown(1)
+    .text('n caso de que pierdas tu gafete y necesites reimprimirlo, se cobrará una cuota de $300 MXN. In case you lose your badge and need to reprint it, a replacement fee of $300 MXN will be charged.', {
+        width: 250,
+        align: 'justify'
+    
+    });
+
+    doc.fontSize(14)
+    .text('BADGE FOLDING / PLEGADO DE GAFETE', -360, -140, {
+        width: 400,
+        align: 'center'
+    });
+
+    doc.rotate(180, {origin: [-170, 50]})
+    .image('img/indicaciones_ITM.jpg', -330, -100, { width: 305 });
+
+    // Restore the previous state to avoid rotating everything else
+    doc.restore();       
+
+    doc.end();
+    return pdfSave;
 }
 
-export { generatePDFInvoice, generatePDF_freePass };
+export { generatePDFInvoice, generatePDF_freePass, generateQRDataURL };

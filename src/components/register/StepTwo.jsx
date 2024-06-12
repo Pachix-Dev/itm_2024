@@ -8,6 +8,7 @@ export function StepTwo({ translates }) {
     company,
     industry,
     position,
+    area,
     address,
     country,
     state,
@@ -28,6 +29,7 @@ export function StepTwo({ translates }) {
     setColonias,
     setIndustry,
     setPosition,
+    setArea,
     setAddress,
     setWebPage,
     setPhoneCompany,
@@ -228,53 +230,75 @@ export function StepTwo({ translates }) {
           )}
         </div>
         <div>
-          <p>
-            {translates.adrdress} <span className='text-red-600'>*</span>
+          <p className='font-semibold text-gray-900 dark:text-white'>
+            {translates.area} <span className='text-red-600'>*</span>
           </p>
-          <div className='relative mt-2'>
-            <input
-              type='text'
-              {...register('address', {
-                required: `${translates.requiered}`,
-                onChange: (e) => setAddress(e.target.value),
-              })}
-              name='address'
-              id='address'
-              className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-              placeholder={translates.placeholder_address}
-              autoComplete='address'
-              defaultValue={address}
-            />
-            <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                strokeWidth={1.5}
-                stroke='currentColor'
-                className='h-4 w-4 text-gray-400'
-              >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'
-                />
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z'
-                />
-              </svg>
-            </span>
-          </div>
-          {errors.address && (
+          <select
+            {...register('area', {
+              required: `${translates.requiered}`,
+              onChange: (e) => setArea(e.target.value),
+            })}
+            defaultValue={area}
+            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
+          >
+            <option value=''>{translates.select_option}</option>
+            {translates.list_area.map((area, index) => (
+              <option key={index} value={area}>
+                {area}
+              </option>
+            ))}
+          </select>
+          {errors.position && (
             <p className='text-[#ffe200] font-light'>
-              {errors.address.message}
+              {errors.position.message}
             </p>
           )}
         </div>
       </div>
-
+      <div className='mt-3'>
+        <p>
+          {translates.adrdress} <span className='text-red-600'>*</span>
+        </p>
+        <div className='relative mt-2'>
+          <input
+            type='text'
+            {...register('address', {
+              required: `${translates.requiered}`,
+              onChange: (e) => setAddress(e.target.value),
+            })}
+            name='address'
+            id='address'
+            className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
+            placeholder={translates.placeholder_address}
+            autoComplete='address'
+            defaultValue={address}
+          />
+          <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              strokeWidth={1.5}
+              stroke='currentColor'
+              className='h-4 w-4 text-gray-400'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                d='M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'
+              />
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z'
+              />
+            </svg>
+          </span>
+        </div>
+        {errors.address && (
+          <p className='text-[#ffe200] font-light'>{errors.address.message}</p>
+        )}
+      </div>
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
           <p className='font-semibold text-gray-900 dark:text-white'>

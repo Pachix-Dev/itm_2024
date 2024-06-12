@@ -18,6 +18,7 @@ const useRegisterForm = create(
             company: "",
             industry: "",
             position: "",
+            area: "",
             country: "",
             municipality: "",
             state: "",
@@ -34,7 +35,7 @@ const useRegisterForm = create(
             levelInfluence: "",
             wannaBeExhibitor: "",
             alreadyVisited: "",
-            nameFair: "",
+            
 
             complete_register: false,
             invoiceDownToLoad: "",
@@ -53,6 +54,7 @@ const useRegisterForm = create(
             setCompany: (company) => set({ company }),
             setIndustry: (industry) => set({ industry }),
             setPosition: (position) => set({ position }),
+            setArea: (area) => set({ area }),
             setCountry: (country) => set({ country }),
             setMunicipality: (municipality) => set({ municipality }),
             setState: (state) => set({ state }),
@@ -69,7 +71,7 @@ const useRegisterForm = create(
             setLevelInfluence: (levelInfluence) => set({ levelInfluence }),
             setWannaBeExhibitor: (wannaBeExhibitor) => set({ wannaBeExhibitor }),
             setAlreadyVisited: (alreadyVisited) => set({ alreadyVisited }),
-            setNameFair: (nameFair) => set({ nameFair }),
+            
 
             setCompleteRegister: (complete_register) => set({ complete_register }),
             setInvoiceDownToLoad: (invoiceDownToLoad) => set({ invoiceDownToLoad }),
@@ -91,13 +93,14 @@ const useRegisterForm = create(
                 maternSurname: "",               
                 phone: "",
                 typeRegister: "",
-                genre: "",
-                age: "",
+                genre: "",               
+                nacionality: "",            
                 code_invitation: "",
 
                 company: "",
                 industry: "",
                 position: "",
+                area: "",
                 country: "",
                 municipality: "",
                 state: "",

@@ -11,11 +11,13 @@ export function StepThree({ translates }) {
     phone,
     typeRegister,
     genre,
-    age,
-    linkedin,
+    nacionality,
+    code_invitation,
+
     company,
     industry,
     position,
+    area,
     country,
     municipality,
     state,
@@ -25,18 +27,17 @@ export function StepThree({ translates }) {
     postalCode,
     webPage,
     phoneCompany,
+
     eventKnowledge,
     productInterest,
     levelInfluence,
     wannaBeExhibitor,
     alreadyVisited,
-    nameFair,
     setEventKnowledge,
     setProductInterest,
     setLevelInfluence,
     setWannaBeExhibitor,
     setAlreadyVisited,
-    setNameFair,
     setCompleteRegister,
     setInvoiceDownToLoad,
 
@@ -71,11 +72,13 @@ export function StepThree({ translates }) {
         phone,
         typeRegister,
         genre,
-        age,
-        linkedin,
+        nacionality,
+        code_invitation,
+
         company,
         industry,
         position,
+        area,
         country,
         municipality,
         state,
@@ -85,12 +88,12 @@ export function StepThree({ translates }) {
         postalCode,
         webPage,
         phoneCompany,
+
         eventKnowledge,
         productInterest,
         levelInfluence,
         wannaBeExhibitor,
         alreadyVisited,
-        nameFair,
       }),
     })
     const orderData = await response.json()
@@ -112,7 +115,7 @@ export function StepThree({ translates }) {
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
           <p className='font-semibold text-gray-900 dark:text-white'>
-            {translates.how_find}
+            {translates.how_find} <span className='text-red-600'>*</span>
           </p>
           <select
             {...register('eventKnowledge', {
@@ -150,7 +153,8 @@ export function StepThree({ translates }) {
         </div>
         <div>
           <p className='font-semibold text-gray-900 dark:text-white'>
-            {translates.product_interest}
+            {translates.product_interest}{' '}
+            <span className='text-red-600'>*</span>
           </p>
           <select
             {...register('productInterest', {
@@ -161,22 +165,11 @@ export function StepThree({ translates }) {
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
           >
             <option value=''>{translates.select_option}</option>
-            <option value='AUTOMATIZACIÓN, ROBOTIZACIÓN Y TRANSMISIÓN DE PODER'>
-              AUTOMATIZACIÓN, ROBOTIZACIÓN Y TRANSMISIÓN DE PODER
-            </option>
-            <option value='MÁQUINAS Y HERRAMIENTAS'>
-              MÁQUINAS Y HERRAMIENTAS
-            </option>
-            <option value='AEROESPACIAL'>AEROESPACIAL</option>
-            <option value='LOGÍSTICA INTELIGENTE'>LOGÍSTICA INTELIGENTE</option>
-            <option value='MANUFACTURA DIGITAL'>MANUFACTURA DIGITAL</option>
-            <option value='GOBIERNO'>GOBIERNO</option>
-            <option value='SOLUCIONES DE ENERGÍA'>SOLUCIONES DE ENERGÍA</option>
-            <option value='INSTITUCIONES DE INVESTIGACIÓN'>
-              INSTITUCIONES DE INVESTIGACIÓN
-            </option>
-            <option value='MANUFACTURA ADITIVA'>MANUFACTURA ADITIVA</option>
-            <option value='DATA & SOFTWARE'>DATA & SOFTWARE</option>
+            {translates.list_interest_product.map((item, index) => (
+              <option key={index} value={item}>
+                {item}
+              </option>
+            ))}
           </select>
           {errors.productInterest && (
             <p className='text-[#ffe200] font-light'>
@@ -188,7 +181,7 @@ export function StepThree({ translates }) {
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
           <p className='font-semibold text-gray-900 dark:text-white'>
-            {translates.level_influence}
+            {translates.level_influence} <span className='text-red-600'>*</span>
           </p>
           <select
             {...register('levelInfluence', {
@@ -215,7 +208,8 @@ export function StepThree({ translates }) {
         </div>
         <div>
           <p className='font-semibold text-gray-900 dark:text-white'>
-            {translates.wanna_be_exhibitor}
+            {translates.wanna_be_exhibitor}{' '}
+            <span className='text-red-600'>*</span>
           </p>
           <select
             {...register('wannaBeExhibitor', {
@@ -243,14 +237,27 @@ export function StepThree({ translates }) {
           </p>
           <select
             {...register('alreadyVisited', {
-              required: `${translates.requiered}`,
               onChange: (e) => setAlreadyVisited(e.target.value),
             })}
             defaultValue={alreadyVisited}
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
           >
             <option value=''>{translates.select_option}</option>
-            <option value='Falta lista de ferias'>Falta lista de ferias</option>
+            <option value='Expo Manufactura'>Expo Manufactura</option>
+            <option value='Expomaq'>Expomaq</option>
+            <option value='Fabtech'>Fabtech</option>
+            <option value='Tecma'>Tecma</option>
+            <option value='The Logistics World'>The Logistics World</option>
+            <option value='Automate'>Automate</option>
+            <option value='Expo Logística y Transporte'>
+              Expo Logística y Transporte
+            </option>
+            <option value='Expo Pack'>Expo Pack</option>
+            <option value='Expo Eléctrica'>Expo Eléctrica</option>
+            <option value='Meximold'>Meximold</option>
+            <option value='Fitma'>Fitma</option>
+            <option value='Fitma'>ITMS </option>
+            <option value='Fitma'>Hannover Messe (Alemania)</option>
           </select>
           {errors.alreadyVisited && (
             <p className='text-[#ffe200] font-light'>

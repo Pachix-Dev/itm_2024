@@ -1,7 +1,5 @@
-import QRCode from 'qrcode'
 
-const email_template = async ({uuid, name, paternSurname, maternSurname}) => {      
-    const qrCodeImage = await QRCode.toDataURL(uuid)
+const email_template = async ({ name, paternSurname, maternSurname}) => {          
     
     return (
    `<table align="center" width="100%" role="presentation" cellspacing="0" cellpadding="0" border="0" style="max-width: 680px; width: 100%; margin: 0px auto; background-color: #000000;color: #ffffff;">
@@ -28,10 +26,7 @@ const email_template = async ({uuid, name, paternSurname, maternSurname}) => {
                      </table>
                      <div  style="text-align: justify;">
                         Industrial Transformation Mexico es un evento interesante e inclusivo en el que los actores clave y los grupos objetivo se reúnen para crear redes y oportunidades de intercambio de conocimientos para el éxito empresarial.                     
-                     </div>
-                     <p style="text-align: center;">
-                        <img src="${qrCodeImage}" alt="qrCode" style="width: 150px;">
-                     </p>
+                     </div>                     
                      <p style="font-weight:bold;font-size:20px">TE AÑADIR AL CALENDARIO</p>
                      <div style="text-align:center;padding:20px">
                        <a style="background-color: #0E2242;color:white;padding:20px;border-radius:20px;margin:20px;" href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20240608T180000Z%2F20240610T000000Z&details=Evento%20dise%C3%B1ado%20para%20el%20disfrute%20y%20el%20aprendizaje%20alrededor%20de%20esta%20bebida%20universal.%20Re%C3%BAne%20a%20expertos%2C%20amantes%20del%20vino%20y%20vi%C3%B1edos%20en%20un%20ambiente%20festivo%20y%20educativo.%20Es%20la%20plataforma%20perfecta%20para%20mostrar%20tus%20vinos%20y%20conectarte%20con%20nuevos%20consumidores%20y%20profesionales%20del%20sector.%0A&location=Distrito%20Le%C3%B3n%20MX%2C%20instalaciones%20de%20la%20feria&text=VIVE%20EL%20VINO"
