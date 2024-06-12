@@ -351,7 +351,7 @@ async function generatePDF_freePass( body, uuid, registerFile) {
     .moveDown(0.5)
     .text(body.company);
 
-    body.typeRegister === 'VISITANTE' ? doc.image('img/footer_ITM.jpg', 0, 328, { width: 305 }) : doc.image('img/footer2_medio.jpg', 0, 328, { width: 305 });
+    body.typeRegister === 'VISITANTE' ? doc.image('img/footer_ITM.jpg', 0, 328, { width: 305 }) : doc.image('img/footer_medio.jpg', 0, 328, { width: 305 });
     doc
     .font('Helvetica-Bold')
     .fontSize(17)
@@ -446,7 +446,7 @@ async function generatePDF_freePass( body, uuid, registerFile) {
         align: 'center'
     });
 
-    body.typeRegister === 'VISITANTE' ? doc.image('img/footer2_ITM.jpg', 307, 328, { width: 306 }) : doc.image('img/footer2_programa_vip.jpg', 307, 328, { width: 306 });;
+    body.typeRegister === 'VISITANTE' ? doc.image('img/footer2_ITM.jpg', 307, 328, { width: 306 }) : doc.image('img/footer2_medio.jpg', 307, 328, { width: 306 });;
     
     doc.save();
     // Rotate and draw some text
