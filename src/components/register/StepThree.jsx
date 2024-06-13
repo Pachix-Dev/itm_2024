@@ -114,7 +114,7 @@ export function StepThree({ translates }) {
     <>
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
-          <p className='font-semibold text-gray-900 dark:text-white'>
+          <p className='font-semibold text-white'>
             {translates.how_find} <span className='text-red-600'>*</span>
           </p>
           <select
@@ -152,7 +152,7 @@ export function StepThree({ translates }) {
           )}
         </div>
         <div>
-          <p className='font-semibold text-gray-900 dark:text-white'>
+          <p className='font-semibold text-white'>
             {translates.product_interest}{' '}
             <span className='text-red-600'>*</span>
           </p>
@@ -180,7 +180,7 @@ export function StepThree({ translates }) {
       </div>
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
-          <p className='font-semibold text-gray-900 dark:text-white'>
+          <p className='font-semibold text-white'>
             {translates.level_influence} <span className='text-red-600'>*</span>
           </p>
           <select
@@ -207,7 +207,7 @@ export function StepThree({ translates }) {
           )}
         </div>
         <div>
-          <p className='font-semibold text-gray-900 dark:text-white'>
+          <p className='font-semibold text-white'>
             {translates.wanna_be_exhibitor}{' '}
             <span className='text-red-600'>*</span>
           </p>
@@ -232,7 +232,7 @@ export function StepThree({ translates }) {
       </div>
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
-          <p className='font-semibold text-gray-900 dark:text-white'>
+          <p className='font-semibold text-white'>
             {translates.already_visited}
           </p>
           <select

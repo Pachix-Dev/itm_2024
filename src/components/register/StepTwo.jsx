@@ -105,7 +105,7 @@ export function StepTwo({ translates }) {
     <>
       <div className='grid md:grid-cols-2 gap-6 mt-10'>
         <div>
-          <p>
+          <p className='text-white'>
             {translates.company_name} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
@@ -146,7 +146,7 @@ export function StepTwo({ translates }) {
           )}
         </div>
         <div>
-          <p className='font-semibold text-gray-900 dark:text-white'>
+          <p className='font-semibold text-white'>
             {translates.industry} <span className='text-red-600'>*</span>
           </p>
           <select
@@ -202,7 +202,7 @@ export function StepTwo({ translates }) {
       </div>
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
-          <p className='font-semibold text-gray-900 dark:text-white'>
+          <p className='font-semibold text-white'>
             {translates.position} <span className='text-red-600'>*</span>
           </p>
           <select
@@ -230,7 +230,7 @@ export function StepTwo({ translates }) {
           )}
         </div>
         <div>
-          <p className='font-semibold text-gray-900 dark:text-white'>
+          <p className='font-semibold text-white'>
             {translates.area} <span className='text-red-600'>*</span>
           </p>
           <select
@@ -256,7 +256,7 @@ export function StepTwo({ translates }) {
         </div>
       </div>
       <div className='mt-3'>
-        <p>
+        <p className='text-white'>
           {translates.adrdress} <span className='text-red-600'>*</span>
         </p>
         <div className='relative mt-2'>
@@ -301,7 +301,7 @@ export function StepTwo({ translates }) {
       </div>
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
-          <p className='font-semibold text-gray-900 dark:text-white'>
+          <p className='font-semibold text-white'>
             {translates.country} <span className='text-red-600'>*</span>
           </p>
           <select
@@ -326,7 +326,7 @@ export function StepTwo({ translates }) {
           )}
         </div>
         <div>
-          <p>
+          <p className='text-white'>
             {translates.postal_code} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
@@ -378,7 +378,7 @@ export function StepTwo({ translates }) {
 
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
-          <p>
+          <p className='text-white'>
             {translates.state} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
@@ -415,7 +415,7 @@ export function StepTwo({ translates }) {
           )}
         </div>
         <div>
-          <p>
+          <p className='text-white'>
             {translates.municipality} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
@@ -458,7 +458,7 @@ export function StepTwo({ translates }) {
       </div>
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
-          <p>
+          <p className='text-white'>
             {translates.colony} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
@@ -518,7 +518,7 @@ export function StepTwo({ translates }) {
           )}
         </div>
         <div>
-          <p>
+          <p className='text-white'>
             {translates.city} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
@@ -561,7 +561,7 @@ export function StepTwo({ translates }) {
 
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
-          <p>{translates.website}</p>
+          <p className='text-white'>{translates.website}</p>
           <div className='relative mt-2'>
             <input
               type='text'
@@ -592,7 +592,7 @@ export function StepTwo({ translates }) {
           </div>
         </div>
         <div>
-          <p>{translates.company_phone} </p>
+          <p className='text-white'>{translates.company_phone} </p>
           <div className='relative mt-2'>
             <input
               type='tel'

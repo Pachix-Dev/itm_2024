@@ -116,7 +116,7 @@ export function StepOne({ translates }) {
           )}
         </div>
         <div>
-          <p className='mb-4 font-semibold text-gray-900 dark:text-white'>
+          <p className='mb-4 font-semibold text-white'>
             {translates.type_register} <span className='text-red-600'>*</span>
           </p>
           <select
@@ -147,7 +147,7 @@ export function StepOne({ translates }) {
 
       <div className='grid grid-cols-3 gap-6'>
         <div>
-          <p className='mt-5'>
+          <p className='mt-5 text-white'>
             {translates.name} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
@@ -199,7 +199,7 @@ export function StepOne({ translates }) {
           )}
         </div>
         <div>
-          <p className='mt-5'>
+          <p className='mt-5 text-white'>
             {translates.lastname} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
@@ -253,7 +253,7 @@ export function StepOne({ translates }) {
           )}
         </div>
         <div>
-          <p className='mt-5'>{translates.surname}</p>
+          <p className='mt-5 text-white'>{translates.surname}</p>
           <div className='relative mt-2'>
             <input
               type='text'
@@ -307,7 +307,7 @@ export function StepOne({ translates }) {
 
       <div className='grid grid-cols-2 gap-6'>
         <div>
-          <p className='mt-5'>
+          <p className='mt-5 text-white'>
             {translates.email} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2 '>
@@ -351,7 +351,7 @@ export function StepOne({ translates }) {
           )}
         </div>
         <div>
-          <p className='mt-5'>{translates.code_invitation}</p>
+          <p className='mt-5 text-white'>{translates.code_invitation}</p>
           <div className='relative mt-2 '>
             <input
               type='text'
@@ -385,7 +385,7 @@ export function StepOne({ translates }) {
           </div>
         </div>
       </div>
-      <p className='mt-5'>
+      <p className='mt-5 text-white'>
         {translates.phone} <span className='text-red-600'>*</span>
       </p>
       <div className='relative mt-2'>
@@ -403,7 +403,7 @@ export function StepOne({ translates }) {
         <p className='text-[#ffe200] font-light'>{errors.phone.message}</p>
       )}
 
-      <p className='mt-5'>
+      <p className='mt-5 text-white'>
         {translates.nacionality} <span className='text-red-600'>*</span>
       </p>
       <select

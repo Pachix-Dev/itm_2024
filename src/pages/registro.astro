@@ -1,11 +1,11 @@
 ---
-import { changeLanguage, t } from "i18next";
-import { RegisterForm } from "../components/register/RegisterForm.jsx";
-import LayoutRegister from "../layouts/LayoutRegister.astro";
+import { changeLanguage, t } from 'i18next'
+import { RegisterForm } from '../components/register/RegisterForm.jsx'
+import LayoutRegister from '../layouts/LayoutRegister.astro'
 
-changeLanguage("es");
+changeLanguage('es')
 
-const registerTranslations = t("register", { returnObjects: true });
+const registerTranslations = t('register', { returnObjects: true })
 ---
 
 <LayoutRegister title='ITM | Registro 2024'>
