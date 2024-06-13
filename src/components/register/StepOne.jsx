@@ -258,7 +258,6 @@ export function StepOne({ translates }) {
             <input
               type='text'
               {...register('maternSurname', {
-                required: `${translates.requiered}`,
                 minLength: {
                   value: 3,
                   message: `${translates.min_char}`,
