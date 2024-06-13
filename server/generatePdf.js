@@ -170,7 +170,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      .moveDown(0.5)
      .text(body.company);
  
-     doc.image('img/footer_programa.jpg', 0, 328, { width: 305 });
+     doc.image('img/footer_programa_vip.jpg', 0, 328, { width: 305 });
      doc
      .font('Helvetica-Bold')
      .fontSize(17)
@@ -265,7 +265,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
          align: 'center'
      });
  
-     doc.image('img/footer2_programa.jpg', 307, 328, { width: 306 });;
+     doc.image('img/footer2_programa_vip.jpg', 307, 328, { width: 306 });;
      
      doc.save();
      // Rotate and draw some text
