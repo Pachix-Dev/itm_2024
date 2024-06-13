@@ -443,6 +443,18 @@ app.get('/generate-pdf', async (req, res) => {
   doc.end();
 });
 
+app.get('/template-email', async (req, res) => {
+    const data = {
+        name: 'Juan',
+        paternSurname: 'Perez',
+        maternSurname: 'Gomez',
+        email: ''
+    }
+    const emailContent = await email_template({ ...data });
+    res.send(emailContent);
+});
+
+
 async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
         // Nodemailer setup
