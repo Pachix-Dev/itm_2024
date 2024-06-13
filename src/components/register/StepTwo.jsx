@@ -248,10 +248,8 @@ export function StepTwo({ translates }) {
               </option>
             ))}
           </select>
-          {errors.position && (
-            <p className='text-[#ffe200] font-light'>
-              {errors.position.message}
-            </p>
+          {errors.area && (
+            <p className='text-[#ffe200] font-light'>{errors.area.message}</p>
           )}
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form'
 import { useRegisterForm } from '../../store/register-form'
 import PhoneInputWithCountry from 'react-phone-number-input/react-hook-form'
+import { countries } from '../../data/list_countries'
 import 'react-phone-number-input/style.css'
 import './Form.css'
 export function StepOne({ translates }) {
@@ -415,9 +416,9 @@ export function StepOne({ translates }) {
         className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm *:text-black'
       >
         <option value=''>{translates.select_option}</option>
-        {translates.countries.map((country, index) => (
-          <option key={index} value={country}>
-            {country}
+        {countries.map((country, index) => (
+          <option key={index} value={country.name}>
+            {country.name}
           </option>
         ))}
       </select>
