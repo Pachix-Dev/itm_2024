@@ -34,7 +34,7 @@ const useRegisterForm = create(
             productInterest: "",
             levelInfluence: "",
             wannaBeExhibitor: "",
-            alreadyVisited: "",
+            alreadyVisited: [],
             
 
             complete_register: false,
@@ -116,7 +116,7 @@ const useRegisterForm = create(
                 productInterest: "",
                 levelInfluence: "",
                 wannaBeExhibitor: "",
-                alreadyVisited: "",
+                alreadyVisited: [],
                 item:{},                
                 
             })

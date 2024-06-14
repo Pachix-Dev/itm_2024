@@ -5,6 +5,8 @@ import Confettti from "../components/shared/Confetti";
 import { Redirect } from "../components/shared/Redirect.jsx";
 import { DonwloadAccess } from "../components/register/DonwloadAccess";
 import { ProgramVip } from "../components/register/ProgramVip";
+import MarqueeSponsors from "../components/register/MarqueeSponsors.astro";
+import { sponsors } from "../data/constans_logos";
 
 changeLanguage("es");
 ---
@@ -42,6 +44,12 @@ changeLanguage("es");
         {/*<ProgramVip client:only='react' />*/}
       </div>
     </div>
+    <section class='my-10 max-w-screen-lg mx-auto'>
+      <p class='text-center font-extrabold text-3xl mb-5 text-white'>
+        {t('home.title-sponsors')}
+      </p>
+      <MarqueeSponsors partners={sponsors} isLeftToRight />
+    </section>
   </div>
 </Layout>
 <style>

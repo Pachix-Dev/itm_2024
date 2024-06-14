@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form'
 import { useRegisterForm } from '../../store/register-form'
 import { useState } from 'react'
+import { MultiSelect } from 'react-multi-select-component'
 
 export function StepThree({ translates }) {
   const {
@@ -47,6 +48,25 @@ export function StepThree({ translates }) {
 
   const [message, setMessage] = useState('')
   const [processing, setProcessing] = useState(false)
+  const [selected, setSelected] = useState([])
+  const options = [
+    { label: 'Expo Manufactura', value: 'Expo Manufactura' },
+    { label: 'Expomaq', value: 'Expomaq' },
+    { label: 'Fabtech', value: 'Fabtech' },
+    { label: 'Tecma', value: 'Tecma' },
+    { label: 'The Logistics World', value: 'The Logistics World' },
+    { label: 'Automate', value: 'Automate' },
+    {
+      label: 'Expo Logística y Transporte',
+      value: 'Expo Logística y Transporte',
+    },
+    { label: 'Expo Pack', value: 'Expo Pack' },
+    { label: 'Expo Eléctrica', value: 'Expo Eléctrica' },
+    { label: 'Meximold', value: 'Meximold' },
+    { label: 'Fitma', value: 'Fitma' },
+    { label: 'ITMS', value: 'ITMS' },
+    { label: 'Hannover Messe (Alemania)', value: 'Hannover Messe (Alemania)' },
+  ]
 
   const {
     register,
@@ -123,26 +143,24 @@ export function StepThree({ translates }) {
               onChange: (e) => setEventKnowledge(e.target.value),
             })}
             defaultValue={eventKnowledge}
-            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
+            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black uppercase'
           >
             <option value=''>{translates.select_option}</option>
-            <option value='ESPECTACULAR'>ESPECTACULAR</option>
-            <option value='PAGINA WEB'>PAGINA WEB</option>
-            <option value='CORREO ELÉCTRONICO/MAILING'>
-              CORREO ELÉCTRONICO/MAILING
-            </option>
+            <option value='ESPECTACULAR'>{translates.spectacular}</option>
+            <option value='PAGINA WEB'>{translates.website}</option>
+            <option value='CORREO ELÉCTRONICO/MAILING'>MAILING</option>
             <option value='FACEBOOK'>FACEBOOK</option>
             <option value='TWITTER'>TWITTER</option>
             <option value='LINKEDIN'>LINKEDIN</option>
             <option value='INSTAGRAM'>INSTAGRAM</option>
-            <option value='CORREO ELECTRÓNICO'>CORREO ELECTRÓNICO</option>
+            <option value='CORREO ELECTRÓNICO'>{translates.email}</option>
             <option value='INVITADO POR EXPOSITOR'>
-              INVITADO POR EXPOSITOR
+              {translates.guest_by_exhibitor}
             </option>
             <option value='RADIO'>RADIO</option>
-            <option value='TELEVISIÓN'>TELEVISIÓN</option>
-            <option value='PRENSA'>PRENSA</option>
-            <option value='ANUNCIO EN REVISTA'>ANUNCIO EN REVISTA</option>
+            <option value='TELEVISIÓN'>{translates.television}</option>
+            <option value='PRENSA'>{translates.press}</option>
+            <option value='ANUNCIO EN REVISTA'>{translates.magazine_ad}</option>
             <option value='TELEMARKETING'>TELEMARKETING</option>
           </select>
           {errors.eventKnowledge && (
@@ -162,7 +180,7 @@ export function StepThree({ translates }) {
               onChange: (e) => setProductInterest(e.target.value),
             })}
             defaultValue={productInterest}
-            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
+            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black uppercase'
           >
             <option value=''>{translates.select_option}</option>
             {translates.list_interest_product.map((item, index) => (
@@ -192,12 +210,14 @@ export function StepThree({ translates }) {
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
           >
             <option value=''>{translates.select_option}</option>
-            <option value='APRUEBO COMPRAS'>APRUEBO COMPRAS</option>
+            <option value='APRUEBO COMPRAS'>
+              {translates.approve_purchases}
+            </option>
             <option value='EVALUO O RECOMIENDO PROVEEDOR'>
-              EVALÚO O RECOMIENDO PROVEEDOR
+              {translates.test_recomend}
             </option>
             <option value='NO TENGO DECISIÓN EN COMPRAS'>
-              NO TENGO DECISIÓN EN COMPRAS
+              {translates.not_decide}
             </option>
           </select>
           {errors.levelInfluence && (
@@ -235,7 +255,15 @@ export function StepThree({ translates }) {
           <p className='font-semibold text-white'>
             {translates.already_visited}
           </p>
-          <select
+          <MultiSelect
+            options={options}
+            value={alreadyVisited}
+            onChange={setAlreadyVisited}
+            labelledBy='Select'
+            className='mt-2 w-full text-sm text-white *:text-black '
+            hasSelectAll={false}
+          />
+          {/*<select
             {...register('alreadyVisited', {
               onChange: (e) => setAlreadyVisited(e.target.value),
             })}
@@ -263,7 +291,7 @@ export function StepThree({ translates }) {
             <p className='text-[#ffe200] font-light'>
               {errors.alreadyVisited.message}
             </p>
-          )}
+          )}*/}
         </div>
       </div>
       <div className='flex justify-between'>

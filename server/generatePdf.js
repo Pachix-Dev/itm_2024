@@ -247,7 +247,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      .moveDown(1)
      .text('Octubre')
      .text('October')
-     .text('(9) 11:00 am – 19:00 hrs', 330, 250, {
+     .text('(9)   11:00 am – 19:00 hrs', 330, 250, {
          width: 250,    
          align: 'center'
      })
@@ -292,7 +292,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      
      })
      .moveDown(1)
-     .text('n caso de que pierdas tu gafete y necesites reimprimirlo, se cobrará una cuota de $300 MXN. In case you lose your badge and need to reprint it, a replacement fee of $300 MXN will be charged.', {
+     .text('En caso de que pierdas tu gafete y necesites reimprimirlo, se cobrará una cuota de $300 MXN. In case you lose your badge and need to reprint it, a replacement fee of $300 MXN will be charged.', {
          width: 250,
          align: 'justify'
      
@@ -440,7 +440,7 @@ async function generatePDF_freePass( body, uuid, registerFile) {
     .moveDown(1)
     .text('Octubre')
     .text('October')
-    .text('(9) 11:00 am – 19:00 hrs', 330, 250, {
+    .text('(9)   11:00 am – 19:00 hrs', 330, 250, {
         width: 250,    
         align: 'center'
     })
@@ -485,7 +485,7 @@ async function generatePDF_freePass( body, uuid, registerFile) {
     
     })
     .moveDown(1)
-    .text('n caso de que pierdas tu gafete y necesites reimprimirlo, se cobrará una cuota de $300 MXN. In case you lose your badge and need to reprint it, a replacement fee of $300 MXN will be charged.', {
+    .text('En caso de que pierdas tu gafete y necesites reimprimirlo, se cobrará una cuota de $300 MXN. In case you lose your badge and need to reprint it, a replacement fee of $300 MXN will be charged.', {
         width: 250,
         align: 'justify'
     
