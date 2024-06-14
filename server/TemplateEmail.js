@@ -27,10 +27,11 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
               Industrial Transformation Mexico es un evento interesante e inclusivo en el que los actores clave y los grupos objetivo se reúnen para crear redes y oportunidades de intercambio de conocimientos para el éxito empresarial.                     
             </div>
             <div style="text-align:center;padding:20px;margin-top:25px;">
-              <a style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);color:white;padding:20px;border-radius:20px;margin:20px;text-decoration:none;font-weight:bold;" 
-                href="https://industrialtransformation.mx/programa" target='_blank'>                        
-                CONSULTA EL PROGRAMA DE EVENTOS PARALELOS A ITM 2024
-              </a>
+              <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);padding:20px;border-radius:20px;margin:20px;width:fit-content;margin:auto;">
+                <a style="text-decoration:none; color: white;font-weight:bold;" href="https://industrialtransformation.mx/programa" target='_blank'>                 
+                  CONSULTA EL PROGRAMA DE EVENTOS PARALELOS A ITM 2024
+                </a>
+              <p>
               <p style="margin-top:40px;margin-bottom: 40px;">
                 Te esperamos en la sexta edición de INDUSTRIAL TRANSFORMATION MEXICO del <strong>9 al 11 de octubre, Poliforum, León.</strong>
               </p>
@@ -84,26 +85,33 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
         </tr>               
         <tr>
           <td style="width: 50%;padding-top:20px;" align="center">
-           <a style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);color:white;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
-            ENTÉRATE DE TODOS NUESTROS EVENTOS
-           </a>            
+            <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
+              <a style="text-decoration:none;color:white;">
+                ENTÉRATE DE TODOS NUESTROS EVENTOS
+              </a>
+            </p>          
           </td>
           <td style="width: 50%;padding-top:20px;" align="center">
-            <a style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);color:white;width:fit-content;border-radius: 20px;padding:20px;margin:auto;text-decoration:none;" href="https://industrialtransformation.mx/files/Floorplan_ITM_2024_31.05.2023.pdf" target="_blank">
-              PLANO ITM 2024
-            </a>          
+            <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
+              <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/files/Floorplan_ITM_2024_31.05.2023.pdf" target="_blank">
+                PLANO ITM 2024
+              </a>
+            </p>         
           </td>
         </tr> 
         <tr>
           <td style="width: 50%;padding-top:50px;" align="center">
-           <a style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);color:white;width:fit-content;border-radius: 20px;padding:20px;margin:auto;text-decoration:none;" href="https://industrialtransformation.mx/hotels" target="_blank">
-            RESERVA AQUÍ TU HOSPEDAJE CON TARIFA PREFERENCIAL
-           </a>            
+           <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
+            <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/hotels" target="_blank">
+              RESERVA AQUÍ TU HOSPEDAJE CON TARIFA PREFERENCIAL
+            </a>
+           </p>           
           </td>
           <td style="width: 50%;padding-top:50px;" align="center">
-            <a style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);color:white;width:fit-content;border-radius: 20px;padding:20px;margin:auto;text-decoration:none;" href="https://industrialtransformation.mx" target="_blank">
-              INVITA A UN COLEGA
-            </a>          
+            <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
+              <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx" target="_blank">
+                INVITA A UN COLEGA
+              </a>          
           </td>
         </tr>       
         <tr>
