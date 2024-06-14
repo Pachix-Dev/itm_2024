@@ -2,6 +2,9 @@
 import { changeLanguage, t } from "i18next";
 import { RegisterForm } from "../components/register/RegisterForm.jsx";
 import LayoutRegister from "../layouts/LayoutRegister.astro";
+import Marquee from "../components/shared/Marquee.astro";
+import { sponsors } from "../data/constans_logos.js";
+import MarqueeSponsors from "../components/register/MarqueeSponsors.astro";
 
 changeLanguage("es");
 
@@ -9,13 +12,20 @@ const registerTranslations = t("register", { returnObjects: true });
 ---
 
 <LayoutRegister title='ITM | Registro 2024'>
-  <main class='py-10 grid w-full content-center container mx-auto px-4'>
+  <main class='py-5 grid w-full content-center container mx-auto px-4'>
+    <section class='mb-10 max-w-screen-lg mx-auto'>
+      <p class='text-center font-extrabold text-3xl mb-5'>
+        {t('home.title-sponsors')}
+      </p>
+      <MarqueeSponsors partners={sponsors} isLeftToRight />
+    </section>
     <h1 class='text-center font-extrabold text-4xl'>
       {t('register.title')}
     </h1>
     <p class='text-center text-2xl font-bold'>
       {t('register.description')}
     </p>
+
     <RegisterForm translates={registerTranslations} client:only='react' />
   </main>
 </LayoutRegister>

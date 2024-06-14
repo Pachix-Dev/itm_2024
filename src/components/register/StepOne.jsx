@@ -386,47 +386,52 @@ export function StepOne({ translates }) {
           </div>
         </div>
       </div>
-      <p className='mt-5 text-white'>
-        {translates.phone} <span className='text-red-600'>*</span>
-      </p>
-      <div className='relative mt-2'>
-        <PhoneInputWithCountry
-          name='phone'
-          control={control}
-          rules={{ required: true }}
-          defaultValue={phone}
-          onChange={(e) => setPhone(e)}
-          className='w-full rounded-lg border border-gray-200 ps-4 text-sm shadow-sm'
-          placeholder={translates.placeholder_phone}
-        />
+      <div className='grid grid-cols-2 gap-6'>
+        <div>
+          <p className='mt-5 text-white'>
+            {translates.phone} <span className='text-red-600'>*</span>
+          </p>
+          <div className='relative mt-2'>
+            <PhoneInputWithCountry
+              name='phone'
+              control={control}
+              rules={{ required: true }}
+              defaultValue={phone}
+              onChange={(e) => setPhone(e)}
+              className='w-full rounded-lg border border-gray-200 ps-4 text-sm shadow-sm'
+              placeholder={translates.placeholder_phone}
+            />
+          </div>
+          {errors.phone && (
+            <p className='text-[#ffe200] font-light'>{errors.phone.message}</p>
+          )}
+        </div>
+        <div>
+          <p className='mt-5 text-white'>
+            {translates.nacionality} <span className='text-red-600'>*</span>
+          </p>
+          <select
+            {...register('nacionality', {
+              required: `${translates.requiered}`,
+              onChange: (e) => setNacionality(e.target.value),
+            })}
+            defaultValue={nacionality}
+            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm *:text-black'
+          >
+            <option value=''>{translates.select_option}</option>
+            {countries.map((country, index) => (
+              <option key={index} value={country.name}>
+                {country.name}
+              </option>
+            ))}
+          </select>
+          {errors.nacionality && (
+            <p className='text-[#ffe200] font-light'>
+              {errors.nacionality.message}
+            </p>
+          )}
+        </div>
       </div>
-      {errors.phone && (
-        <p className='text-[#ffe200] font-light'>{errors.phone.message}</p>
-      )}
-
-      <p className='mt-5 text-white'>
-        {translates.nacionality} <span className='text-red-600'>*</span>
-      </p>
-      <select
-        {...register('nacionality', {
-          required: `${translates.requiered}`,
-          onChange: (e) => setNacionality(e.target.value),
-        })}
-        defaultValue={nacionality}
-        className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm *:text-black'
-      >
-        <option value=''>{translates.select_option}</option>
-        {countries.map((country, index) => (
-          <option key={index} value={country.name}>
-            {country.name}
-          </option>
-        ))}
-      </select>
-      {errors.nacionality && (
-        <p className='text-[#ffe200] font-light'>
-          {errors.nacionality.message}
-        </p>
-      )}
       <div className='w-full flex justify-end'>
         <button
           className='px-3 py-2 bg-[#E42128] hover:bg-red-700 rounded-2xl text-white font-bold mt-5'

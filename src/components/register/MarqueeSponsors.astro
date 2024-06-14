@@ -15,9 +15,13 @@ const { partners, isLeftToRight } = Astro.props as Props
 
 <div class='enable-animation'>
   <div class='marquee marquee--hover-pause'>
-    <div class='bg-gradient-left bg-gradient-to-l from-transparent to-white'>
+    <div
+      class='bg-gradient-left bg-gradient-to-l from-transparent to-[#131926]'
+    >
     </div>
-    <div class='bg-gradient-right bg-gradient-to-l to-transparent from-white'>
+    <div
+      class='bg-gradient-right bg-gradient-to-l to-transparent from-[#131926]'
+    >
     </div>
     <ul
       class='marquee__content'
@@ -25,7 +29,7 @@ const { partners, isLeftToRight } = Astro.props as Props
     >
       {
         partners?.map((partner) => (
-          <li class=''>
+          <li class='bg-[#19233b] rounded-xl hover:bg-[#1f2c48]'>
             <a
               href={partner.link}
               target='_blank'
@@ -51,7 +55,7 @@ const { partners, isLeftToRight } = Astro.props as Props
     >
       {
         partners?.map((partner) => (
-          <li class=''>
+          <li class='bg-[#19233b] rounded-xl hover:bg-[#1f2c48]'>
             <a
               href={partner.link}
               target='_blank'
