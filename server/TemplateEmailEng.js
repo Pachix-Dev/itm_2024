@@ -1,5 +1,5 @@
 
-const email_template = async ({ name, paternSurname, maternSurname}) => {          
+const email_template_eng = async ({ name, paternSurname, maternSurname}) => {          
     
     return (
    `<table width="100%" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="max-width: 680px;">
@@ -18,31 +18,31 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
         <tr>
           <td colspan="2" width="100%">
             <h2 style="text-align: center;margin:0;font-weight:bold;text-transform: uppercase;margin-top: 20px;">
-              BIENVENIDO, ${name} ${paternSurname} ${maternSurname}. TU REGISTRO SE HA REALIZADO CON ÉXITO.
+              WELCOME, ${name} ${paternSurname} ${maternSurname}. YOUR REGISTRATION WAS SUCCESSFUL.
             </h2>
             <h2 style='text-align: center;'>
-              GRACIAS POR FORMAR PARTE DE <span style="color:#E94568;font-weight:bold;">INDUSTRIAL TRANSFORMATION MEXICO 2024, </span>, PRODUCTOS Y SOLUCIONES PARA LA FÁBRICA INTELIGENTE.
+              THANK YOU FOR BEING PART OF <span style="color:#E94568;font-weight:bold;">INDUSTRIAL TRANSFORMATION MEXICO 2024, </span>, PRODUCTS AND SOLUTIONS FOR THE SMART FACTORY.
             </h2>
             <div style="text-align: justify;font-size:22px;">
-              Descubre las últimas tendencias, innovaciones, conocimientos, herramientas y tecnologías que traen para ti los líderes globales en <strong>Automatización, Fábrica Inteligente y Soluciones de Logística Digital,</strong> y que están transformando el futuro de la industria.                    
+              Discover the latest trends, innovations, insights, tools and technologies brought to you by global leaders in <strong>Automation, Smart Factory and Digital Logistics Solutions,</strong> that are transforming the future of the industry.                    
             </div>
             <div style="text-align:center;padding:20px;margin-top:25px;">
               <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);padding:20px;border-radius:20px;margin:20px;width:fit-content;margin:auto;">
                 <a style="text-decoration:none; color: white;font-weight:bold;" href="https://industrialtransformation.mx/programa" target='_blank'>                 
-                  CONSULTA EL PROGRAMA DE EVENTOS PARALELOS A ITM 2024
+                  SEE THE PROGRAM OF EVENTS PARALLEL TO ITM 2024
                 </a>
               <p>
               <p style="margin-top:40px;margin-bottom: 40px;">
-                Te esperamos en la sexta edición de <strong>INDUSTRIAL TRANSFORMATION MEXICO del 9 al 11 de octubre, Poliforum, León, Guanajuato.</strong>
+                We look forward to seeing you at the sixth edition of <strong>INDUSTRIAL TRANSFORMATION MEXICO from October 9 to 11, Poliforum, Leon, Guanajuato.</strong>
               </p>
               <div style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);color:white;width:fit-content;border-radius: 20px;padding:20px;margin:auto;position:relative;">
                
-               <p><strong>HORARIOS:</strong></p>
-               <p>miércoles 9 y jueves 10 de  11:00 am - 7:00 pm hrs</p>
-               <p>viernes 11 de 11:00 am - 5:00 pm hrs</p>
+               <p><strong>SCHEDULES:</strong></p>
+               <p>Wednesday 9 and Thursday 10 from 11:00 am - 7:00 pm hrs.</p>
+               <p>Friday 11 from 11:00 am - 5:00 pm hrs</p>
               </div>
             </div>               
-            <p style="font-weight:bold;font-size:20px;text-align: center;">AÑADIR AL CALENDARIO</p>
+            <p style="font-weight:bold;font-size:20px;text-align: center;">ADD TO CALENDAR</p>
             <div style="text-align:center;padding:20px">
               <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;margin:20px;text-decoration:none;" href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20241009T170000Z%2F20241012T010000Z&details=Industrial%20Transformation%20Mexico%20es%20un%20evento%20interesante%20e%20inclusivo%20en%20el%20que%20los%20actores%20clave%20y%20los%20grupos%20objetivo%20se%20re%C3%BAnen%20para%20crear%20redes%20y%20oportunidades%20de%20intercambio%20de%20conocimientos%20para%20el%20%C3%A9xito%20empresarial.%0A&location=Poliforum%2C%20Le%C3%B3n&text=INDUSTRIAL%20TRANSFORMATION%20MEXICO%202024"
               target="_blank">                        
@@ -65,20 +65,20 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
               </a>
             </div>
             <p style="font-size:15px;line-height:21px;margin:16px 0px;font-weight:bold">
-              INSTRUCCIONES PARA TU VISITA:
+              INSTRUCTIONS FOR YOUR VISIT:
             </p>
             <ul>
               <li>
-                <strong>IMPORTANTE:</strong> Es indispensable llevar tu pre-registro impreso o en formato digital para agilizar tu acceso al evento.
+                <strong>IMPORTANT:</strong> It is essential to bring your pre-registration printed or in digital format to speed up your access to the event.
               </li>
               <li>
-                Recuerda llevar tu credencial oficial de empresa o negocio para verificar tus datos.
+                Remember to bring your official company or business credentials to verify your data.
               </li>
               <li>
-                Tu acceso es único e intransferible y debe estar visible durante toda tu visita.
+                Your access is unique and non-transferable and must be visible throughout your visit.
               </li>
               <li>
-                En caso de perder tu gafete, no habrá reimpresiones en el piso expositor. Por lo cual, se tendrá que generar una compra de boleto para su ingreso con un costo de $300 MXN.
+                In case you lose your badge, there will be no reprints on the exhibit floor. Therefore, you will have to purchase a ticket for admission at a cost of $300 MXN.
               </li>                  
             </ul>                                                          
           </td>      
@@ -87,14 +87,14 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
           <td style="width: 50%;padding-top:20px;" align="center">
             <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;">
-                ENTÉRATE DE TODOS NUESTROS EVENTOS
+                FIND OUT ABOUT ALL OUR EVENTS
               </a>
             </p>          
           </td>
           <td style="width: 50%;padding-top:20px;" align="center">
             <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/files/Floorplan_ITM_2024_31.05.2023.pdf" target="_blank">
-                PLANO ITM 2024
+                ITM 2024 FLOOR PLAN 
               </a>
             </p>         
           </td>
@@ -103,14 +103,14 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
           <td style="width: 50%;padding-top:50px;" align="center">
            <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
             <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/hotels" target="_blank">
-              RESERVA AQUÍ TU HOSPEDAJE CON TARIFA PREFERENCIAL
+              BOOK HERE YOUR LODGING WITH PREFERENTIAL RATES
             </a>
            </p>           
           </td>
           <td style="width: 50%;padding-top:50px;" align="center">
             <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
-              <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx" target="_blank">
-                INVITA A UN COLEGA
+              <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/registro" target="_blank">
+                INVITE A COLLEAGUE
               </a>          
           </td>
         </tr>       
@@ -127,5 +127,5 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
     )
   }
   
-  export {email_template}
+  export {email_template_eng}
   

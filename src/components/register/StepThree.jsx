@@ -3,7 +3,7 @@ import { useRegisterForm } from '../../store/register-form'
 import { useState } from 'react'
 import { MultiSelect } from 'react-multi-select-component'
 
-export function StepThree({ translates }) {
+export function StepThree({ translates, currentLanguage }) {
   const {
     name,
     paternSurname,
@@ -114,6 +114,7 @@ export function StepThree({ translates }) {
         levelInfluence,
         wannaBeExhibitor,
         alreadyVisited: alreadyVisited.map((item) => item.value).join(),
+        currentLanguage,
       }),
     })
     const orderData = await response.json()

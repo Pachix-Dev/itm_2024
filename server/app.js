@@ -5,6 +5,8 @@ import pkg from 'body-parser';
 import { v4 as uuidv4 } from 'uuid';
 import {RegisterModel} from './db.js';
 import {email_template} from './TemplateEmail.js';
+import {email_template_eng} from './TemplateEmailEng.js';
+
 import nodemailer from 'nodemailer';
 import { generatePDFInvoice, generatePDF_freePass, generateQRDataURL } from './generatePdf.js';
 import PDFDocument from 'pdfkit';
@@ -468,7 +470,7 @@ async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){
             }
         });
 
-        const emailContent = await email_template({ ...data });
+        const emailContent = body.currentLanguage === 'es' ?  await email_template({ ...data }) : await email_template_eng({ ...data });
 
         const mailOptions = {
             from: process.env.USER_GMAIL,
