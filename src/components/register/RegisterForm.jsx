@@ -7,6 +7,7 @@ import { Stepper } from './Stepper'
 
 export function RegisterForm({ translates, currentLanguage }) {
   const { step } = useRegisterForm()
+  console.log(currentLanguage)
   return (
     <section className='py-5'>
       <Stepper translates={translates} />

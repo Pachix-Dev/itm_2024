@@ -1,5 +1,5 @@
 ---
-import { changeLanguage, t } from "i18next";
+import i18next, { changeLanguage, t } from "i18next";
 import { RegisterForm } from "../../components/register/RegisterForm.jsx";
 import LayoutRegister from "../../layouts/LayoutRegister.astro";
 import { sponsors } from "../../data/constans_logos.js";
@@ -8,6 +8,7 @@ import MarqueeSponsors from "../../components/register/MarqueeSponsors.astro";
 changeLanguage("en");
 
 const registerTranslations = t("register", { returnObjects: true });
+const currentLanguage = i18next.language;
 ---
 
 <LayoutRegister title='ITM | Registro 2024'>
@@ -25,7 +26,11 @@ const registerTranslations = t("register", { returnObjects: true });
       {t('register.description')}
     </p>
 
-    <RegisterForm translates={registerTranslations} client:only='react' />
+    <RegisterForm
+      translates={registerTranslations}
+      currentLanguage={currentLanguage}
+      client:only='react'
+    />
   </main>
 </LayoutRegister>
 <style>
