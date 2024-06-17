@@ -226,14 +226,18 @@ export function StepTwo({ translates }) {
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
           >
             <option value=''>{translates.select_option}</option>
-            <option value='CEO / PRESIDENTE'>{translates.position_1}</option>
-            <option value='DIRECTOR / COORDINADOR DE AREA'>
+            <option value={translates.position_1}>
+              {translates.position_1}
+            </option>
+            <option value={translates.position_2}>
               {translates.position_2}
             </option>
-            <option value='JEFE / GERENTE DE AREA'>
+            <option value={translates.position_3}>
               {translates.position_3}
             </option>
-            <option value='PERSONAL OPERATIVO'>{translates.position_4}</option>
+            <option value={translates.position_4}>
+              {translates.position_4}
+            </option>
           </select>
           {errors.position && (
             <p className='text-[#ffe200] font-light'>
