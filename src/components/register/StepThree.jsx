@@ -122,7 +122,9 @@ export function StepThree({ translates, currentLanguage }) {
       //clear()
       setCompleteRegister(true)
       setInvoiceDownToLoad(orderData?.invoice)
-      window.location.href = '/gracias-por-registrarte'
+      currentLanguage === 'es'
+        ? (window.location.href = '/gracias-por-registrarte')
+        : (window.location.href = '/en/gracias-por-registrarte')
     } else {
       setProcessing(false)
       setMessage(orderData?.message)
