@@ -470,7 +470,7 @@ async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){
             }
         });
 
-        const emailContent = body.currentLanguage === 'es' ?  await email_template({ ...data }) : await email_template_eng({ ...data });
+        const emailContent = data.currentLanguage === 'es' ?  await email_template({ ...data }) : await email_template_eng({ ...data });
 
         const mailOptions = {
             from: process.env.USER_GMAIL,
