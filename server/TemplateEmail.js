@@ -2,7 +2,7 @@
 const email_template = async ({ name, paternSurname, maternSurname}) => {          
     
     return (
-   `<table width="80%" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"">
+   `<table width="70%" align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"">
     <tbody>
         <tr style="width: 100%;">
           <td colspan="2">
