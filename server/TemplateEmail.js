@@ -6,28 +6,22 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
     <tbody>
         <tr style="width: 100%;">
           <td colspan="2">
-            <img src="https://industrialtransformation.mx/headerITMmail.webp" alt="logo" style="width: 100%;">                             
+            <img src="https://industrialtransformation.mx/header-ITM-register.jpg" alt="logo" style="width: 100%;">                             
           </td>
-        </tr>
-        <tr>
-          <td align="right" colspan="2">
-            <img src="https://industrialtransformation.mx/italianExhibitionGroup.jpg" alt="logo" style="width: 80px;margin-top: 15px;">          
-            <img src="https://industrialtransformation.mx/deutscheMesse.jpg" alt="logo" style="width: 150px;margin-left: 5px;">
-          </td>
-        </tr>
+        </tr>        
         <tr>
           <td colspan="2" width="100%">
             <h2 style="text-align: center;margin:0;font-weight:bold;text-transform: uppercase;margin-top: 20px;">
               BIENVENIDO, ${name} ${paternSurname} ${maternSurname}. TU REGISTRO SE HA REALIZADO CON ÉXITO.
             </h2>
             <h2 style='text-align: center;'>
-              GRACIAS POR FORMAR PARTE DE <span style="color:#E94568;font-weight:bold;">INDUSTRIAL TRANSFORMATION MEXICO 2024, </span>PRODUCTOS Y SOLUCIONES PARA LA FÁBRICA INTELIGENTE.
+              GRACIAS POR FORMAR PARTE DE <span style="color:#E42128;font-weight:bold;">INDUSTRIAL TRANSFORMATION MEXICO 2024, </span>PRODUCTOS Y SOLUCIONES PARA LA FÁBRICA INTELIGENTE.
             </h2>
             <div style="text-align: justify;font-size:22px;">
               Descubre las últimas tendencias, innovaciones, conocimientos, herramientas y tecnologías que traen para ti los líderes globales en <strong>Automatización, Fábrica Inteligente y Soluciones de Logística Digital,</strong> y que están transformando el futuro de la industria.                    
             </div>
             <div style="text-align:center;padding:20px;margin-top:25px;">
-              <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);padding:20px;border-radius:20px;margin:20px;width:fit-content;margin:auto;">
+              <p style="background: #E42128;padding:20px;border-radius:20px;margin:20px;width:fit-content;margin:auto;">
                 <a style="text-decoration:none; color: white;font-weight:bold;" href="https://industrialtransformation.mx/programa" target='_blank'>                 
                   CONSULTA EL PROGRAMA DE EVENTOS PARALELOS A ITM 2024
                 </a>
@@ -35,7 +29,7 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
               <p style="margin-top:40px;margin-bottom: 40px;">
                 Te esperamos en la sexta edición de <strong>INDUSTRIAL TRANSFORMATION MEXICO del 9 al 11 de octubre, Poliforum, León, Guanajuato.</strong>
               </p>
-              <div style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);color:white;width:fit-content;border-radius: 20px;padding:20px;margin:auto;position:relative;">
+              <div style="background: #E42128;color:white;width:fit-content;border-radius: 20px;padding:20px;margin:auto;position:relative;">
                
                <p><strong>HORARIOS:</strong></p>
                <p>miércoles 9 y jueves 10 de  11:00 am - 7:00 pm hrs</p>
@@ -85,14 +79,14 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
         </tr>               
         <tr>
           <td style="padding-top:20px;" align="center">
-            <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
+            <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;">
                 ENTÉRATE DE TODOS NUESTROS EVENTOS
               </a>
             </p>          
           </td>
           <td style="padding-top:20px;" align="center">
-            <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
+            <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/files/Floorplan_ITM_2024_31.05.2023.pdf" target="_blank">
                 PLANO ITM 2024
               </a>
@@ -101,14 +95,14 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
         </tr> 
         <tr>
           <td style="padding-top:50px;" align="center">
-           <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
+           <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
             <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/hotels" target="_blank">
               RESERVA AQUÍ TU HOSPEDAJE <br />CON TARIFA PREFERENCIAL
             </a>
            </p>           
           </td>
           <td style="padding-top:50px;" align="center">
-            <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
+            <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx" target="_blank">
                 INVITA A UN COLEGA
               </a>          

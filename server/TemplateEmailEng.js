@@ -6,7 +6,7 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
     <tbody>
         <tr style="width: 100%;">
           <td colspan="2">
-            <img src="https://industrialtransformation.mx/headerITMmail.webp" alt="logo" style="width: 100%;">                             
+            <img src="https://industrialtransformation.mx/header-ITM-register-eng.jpg" alt="logo" style="width: 100%;">                             
           </td>
         </tr>
         <tr>
@@ -27,7 +27,7 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
               Discover the latest trends, innovations, insights, tools and technologies brought to you by global leaders in <strong>Automation, Smart Factory and Digital Logistics Solutions,</strong> that are transforming the future of the industry.                    
             </div>
             <div style="text-align:center;padding:20px;margin-top:25px;">
-              <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);padding:20px;border-radius:20px;margin:20px;width:fit-content;margin:auto;">
+              <p style="background: #E42128;padding:20px;border-radius:20px;margin:20px;width:fit-content;margin:auto;">
                 <a style="text-decoration:none; color: white;font-weight:bold;" href="https://industrialtransformation.mx/programa" target='_blank'>                 
                   SEE THE PROGRAM OF EVENTS PARALLEL TO ITM 2024
                 </a>
@@ -35,7 +35,7 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
               <p style="margin-top:40px;margin-bottom: 40px;">
                 We look forward to seeing you at the sixth edition of <strong>INDUSTRIAL TRANSFORMATION MEXICO from October 9 to 11, Poliforum, Leon, Guanajuato.</strong>
               </p>
-              <div style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);color:white;width:fit-content;border-radius: 20px;padding:20px;margin:auto;position:relative;">
+              <div style="background: #E42128;color:white;width:fit-content;border-radius: 20px;padding:20px;margin:auto;position:relative;">
                
                <p><strong>SCHEDULES:</strong></p>
                <p>Wednesday 9 and Thursday 10 from 11:00 am - 7:00 pm hrs.</p>
@@ -85,14 +85,14 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
         </tr>               
         <tr>
           <td style="width: 50%;padding-top:20px;" align="center">
-            <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
+            <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;">
                 FIND OUT ABOUT ALL OUR EVENTS
               </a>
             </p>          
           </td>
           <td style="padding-top:20px;" align="center">
-            <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
+            <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/files/Floorplan_ITM_2024_31.05.2023.pdf" target="_blank">
                 ITM 2024 FLOOR PLAN 
               </a>
@@ -101,14 +101,14 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
         </tr> 
         <tr>
           <td style="padding-top:50px;" align="center">
-           <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
+           <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
             <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/hotels" target="_blank">
               BOOK HERE YOUR LODGING<br /> WITH PREFERENTIAL RATES
             </a>
            </p>           
           </td>
           <td style="padding-top:50px;" align="center">
-            <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
+            <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/registro" target="_blank">
                 INVITE A COLLEAGUE
               </a>          
