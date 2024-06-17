@@ -91,7 +91,7 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
               </a>
             </p>          
           </td>
-          <td style="width: 50%;padding-top:20px;" align="center">
+          <td style="padding-top:20px;" align="center">
             <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/files/Floorplan_ITM_2024_31.05.2023.pdf" target="_blank">
                 ITM 2024 FLOOR PLAN 
@@ -100,14 +100,14 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
           </td>
         </tr> 
         <tr>
-          <td style="width: 50%;padding-top:50px;" align="center">
+          <td style="padding-top:50px;" align="center">
            <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
             <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/hotels" target="_blank">
-              BOOK HERE YOUR LODGING WITH PREFERENTIAL RATES
+              BOOK HERE YOUR LODGING<br /> WITH PREFERENTIAL RATES
             </a>
            </p>           
           </td>
-          <td style="width: 50%;padding-top:50px;" align="center">
+          <td style="padding-top:50px;" align="center">
             <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/registro" target="_blank">
                 INVITE A COLLEAGUE

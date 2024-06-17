@@ -84,14 +84,14 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
           </td>      
         </tr>               
         <tr>
-          <td style="width: 50%;padding-top:20px;" align="center">
+          <td style="padding-top:20px;" align="center">
             <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;">
                 ENTÉRATE DE TODOS NUESTROS EVENTOS
               </a>
             </p>          
           </td>
-          <td style="width: 50%;padding-top:20px;" align="center">
+          <td style="padding-top:20px;" align="center">
             <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/files/Floorplan_ITM_2024_31.05.2023.pdf" target="_blank">
                 PLANO ITM 2024
@@ -100,14 +100,14 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
           </td>
         </tr> 
         <tr>
-          <td style="width: 50%;padding-top:50px;" align="center">
+          <td style="padding-top:50px;" align="center">
            <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
             <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/hotels" target="_blank">
-              RESERVA AQUÍ TU HOSPEDAJE CON TARIFA PREFERENCIAL
+              RESERVA AQUÍ TU HOSPEDAJE <br />CON TARIFA PREFERENCIAL
             </a>
            </p>           
           </td>
-          <td style="width: 50%;padding-top:50px;" align="center">
+          <td style="padding-top:50px;" align="center">
             <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx" target="_blank">
                 INVITA A UN COLEGA
