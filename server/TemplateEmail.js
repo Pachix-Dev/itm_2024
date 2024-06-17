@@ -11,8 +11,8 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
         </tr>
         <tr>
           <td align="right">
-            <img src="https://re-plus-mexico.igeco.mx/italianExhibitionGroup.webp" alt="logo" style="width: 80px;margin-top: 15px;">          
-            <img src="https://re-plus-mexico.igeco.mx/deutscheMesse.webp" alt="logo" style="width: 150px;margin-left: 5px;">
+            <img src="https://re-plus-mexico.igeco.mx/italianExhibitionGroup.jpg" alt="logo" style="width: 80px;margin-top: 15px;">          
+            <img src="https://re-plus-mexico.igeco.mx/deutscheMesse.jpg" alt="logo" style="width: 150px;margin-left: 5px;">
           </td>
         </tr>
         <tr>
