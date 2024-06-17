@@ -255,7 +255,7 @@ export function StepTwo({ translates }) {
               onChange: (e) => setArea(e.target.value),
             })}
             defaultValue={area}
-            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
+            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black uppercase'
           >
             <option value=''>{translates.select_option}</option>
             {translates.list_area.map((area, index) => (

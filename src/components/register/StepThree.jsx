@@ -210,7 +210,7 @@ export function StepThree({ translates, currentLanguage }) {
               onChange: (e) => setLevelInfluence(e.target.value),
             })}
             defaultValue={levelInfluence}
-            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
+            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black uppercase'
           >
             <option value=''>{translates.select_option}</option>
             <option value='APRUEBO COMPRAS'>
@@ -240,7 +240,7 @@ export function StepThree({ translates, currentLanguage }) {
               onChange: (e) => setWannaBeExhibitor(e.target.value),
             })}
             defaultValue={wannaBeExhibitor}
-            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
+            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black uppercase'
           >
             <option value=''>{translates.select_option}</option>
             <option value='SI'>{translates.yes}</option>
@@ -263,7 +263,7 @@ export function StepThree({ translates, currentLanguage }) {
             value={alreadyVisited}
             onChange={setAlreadyVisited}
             labelledBy='Select'
-            className='mt-2 w-full text-sm text-white *:text-black '
+            className='mt-2 w-full text-sm text-white *:text-black uppercase'
             hasSelectAll={false}
           />
           {/*<select
