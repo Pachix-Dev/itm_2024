@@ -21,7 +21,7 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
               WELCOME, ${name} ${paternSurname} ${maternSurname}. YOUR REGISTRATION WAS SUCCESSFUL.
             </h2>
             <h2 style='text-align: center;'>
-              THANK YOU FOR BEING PART OF <span style="color:#E94568;font-weight:bold;">INDUSTRIAL TRANSFORMATION MEXICO 2024, </span>, PRODUCTS AND SOLUTIONS FOR THE SMART FACTORY.
+              THANK YOU FOR BEING PART OF <span style="color:#E94568;font-weight:bold;">INDUSTRIAL TRANSFORMATION MEXICO 2024, </span>PRODUCTS AND SOLUTIONS FOR THE SMART FACTORY.
             </h2>
             <div style="text-align: justify;font-size:22px;">
               Discover the latest trends, innovations, insights, tools and technologies brought to you by global leaders in <strong>Automation, Smart Factory and Digital Logistics Solutions,</strong> that are transforming the future of the industry.                    
