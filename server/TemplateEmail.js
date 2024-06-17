@@ -10,9 +10,9 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
           </td>
         </tr>
         <tr>
-          <td align="right">
-            <img src="https://re-plus-mexico.igeco.mx/italianExhibitionGroup.jpg" alt="logo" style="width: 80px;margin-top: 15px;">          
-            <img src="https://re-plus-mexico.igeco.mx/deutscheMesse.jpg" alt="logo" style="width: 150px;margin-left: 5px;">
+          <td align="right" colspan="2">
+            <img src="https://industrialtransformation.mx/italianExhibitionGroup.jpg" alt="logo" style="width: 80px;margin-top: 15px;">          
+            <img src="https://industrialtransformation.mx/deutscheMesse.jpg" alt="logo" style="width: 150px;margin-left: 5px;">
           </td>
         </tr>
         <tr>
