@@ -5,8 +5,8 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
    `<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="max-width: 680px;">
     <tbody>
         <tr>
-          <td colspan="2">
-            <img src="https://industrialtransformation.mx/header-ITM-register.jpg" alt="logo" style="max-width: 680px;">                             
+          <td colspan="2" align="center">
+            <img src="https://industrialtransformation.mx/header-ITM-register.jpg" alt="logo" width="500px";>                             
           </td>
         </tr>        
         <tr>
