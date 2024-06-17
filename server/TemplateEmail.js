@@ -21,10 +21,10 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
               BIENVENIDO, ${name} ${paternSurname} ${maternSurname}. TU REGISTRO SE HA REALIZADO CON ÉXITO.
             </h2>
             <h2 style='text-align: center;'>
-              GRACIAS POR FORMAR PARTE DE <span style="color:#E94568;font-weight:bold;">ITM 2024</span>, CONSTRUYAMOS LA INDUSTRIA DEL MAÑANA
+              GRACIAS POR FORMAR PARTE DE <span style="color:#E94568;font-weight:bold;">INDUSTRIAL TRANSFORMATION MEXICO 2024, </span>, PRODUCTOS Y SOLUCIONES PARA LA FÁBRICA INTELIGENTE .
             </h2>
             <div style="text-align: justify;font-size:22px;">
-              Industrial Transformation Mexico es un evento interesante e inclusivo en el que los actores clave y los grupos objetivo se reúnen para crear redes y oportunidades de intercambio de conocimientos para el éxito empresarial.                     
+              Descubre las últimas tendencias, innovaciones, conocimientos, herramientas y tecnologías que traen para ti los líderes globales en <strong>Automatización, Fábrica Inteligente y Soluciones de Logística Digital,</strong> y que están transformando el futuro de la industria.                    
             </div>
             <div style="text-align:center;padding:20px;margin-top:25px;">
               <p style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);padding:20px;border-radius:20px;margin:20px;width:fit-content;margin:auto;">
@@ -33,7 +33,7 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
                 </a>
               <p>
               <p style="margin-top:40px;margin-bottom: 40px;">
-                Te esperamos en la sexta edición de INDUSTRIAL TRANSFORMATION MEXICO del <strong>9 al 11 de octubre, Poliforum, León.</strong>
+                Te esperamos en la sexta edición de <strong>INDUSTRIAL TRANSFORMATION MEXICO del 9 al 11 de octubre, Poliforum, León, Guanajuato.</strong>
               </p>
               <div style="background: rgb(228,9,102);background: linear-gradient(90deg, rgba(228,9,102,1) 0%, rgba(225,7,37,1) 100%);color:white;width:fit-content;border-radius: 20px;padding:20px;margin:auto;position:relative;">
                
