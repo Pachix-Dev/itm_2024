@@ -48,7 +48,7 @@ export function StepThree({ translates }) {
 
   const [message, setMessage] = useState('')
   const [processing, setProcessing] = useState(false)
-  const [selected, setSelected] = useState([])
+
   const options = [
     { label: 'Expo Manufactura', value: 'Expo Manufactura' },
     { label: 'Expomaq', value: 'Expomaq' },
@@ -113,7 +113,7 @@ export function StepThree({ translates }) {
         productInterest,
         levelInfluence,
         wannaBeExhibitor,
-        alreadyVisited,
+        alreadyVisited: alreadyVisited.map((item) => item.value).join(),
       }),
     })
     const orderData = await response.json()
