@@ -21,14 +21,15 @@ export function PostalCode() {
   } = useRegisterForm()
   const {
     register,
-    handleSubmit,
     formState: { errors },
   } = useForm({})
 
   const handlePostalCode = async (e) => {
     setPostalCode(e)
     if (e.length === 5 && country === 'Mexico') {
-      const res = await fetch(`http://localhost:3010/get-postalcode/${e}`)
+      const res = await fetch(
+        `https://industrialtransformation.mx/server/get-postalcode/${e}`
+      )
       const data = await res.json()
       if (data.status) {
         setPostalCode(e)

@@ -19,7 +19,7 @@ export function Checkout() {
     currency: 'MXN',
     intent: 'capture',
   }
-  const urlbase = 'https://demo.industrialtransformation.mx/server/'
+  const urlbase = 'https://industrialtransformation.mx/server/'
   //const urlbase = 'http://localhost:3010/'
 
   async function createOrder() {

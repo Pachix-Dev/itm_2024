@@ -58,7 +58,7 @@ export function StepTwo({ translates }) {
     setValue('colonia', colonia)
   }, [state, municipality, city, colonia, setValue])
   const [messagePostalCode, setMessagePostalCode] = useState('')
-  const urlbase = 'https://demo.industrialtransformation.mx/server/'
+  const urlbase = 'https://industrialtransformation.mx/server/'
   //const urlbase = 'http://localhost:3010/'
   const handlePostalCode = async (e) => {
     setPostalCode(e)

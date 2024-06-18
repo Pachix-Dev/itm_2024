@@ -8,7 +8,7 @@ export function Upgrade() {
   const [message, setMessage] = useState('')
   const [user, setUser] = useState(false)
 
-  const urlbase = 'https://demo.industrialtransformation.mx/server/'
+  const urlbase = 'https://industrialtransformation.mx/server/'
   //const urlbase = 'http://localhost:3010/';
 
   const verifyUser = async () => {
