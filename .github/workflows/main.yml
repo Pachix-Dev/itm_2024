@@ -24,7 +24,7 @@ jobs:
           server: '${{ secrets.SERVER }}'
           port: '${{ secrets.SSH_PORT }}'
           local_path: './dist/*'
-          remote_path: '/home/industrialtransf/public_html/industrialtransformation.mx'
+          remote_path: '/home/industrialtransf/public_html/'
           sftp_only: true
           password: '${{ secrets.SFTP_PASSWORD }}'
 
@@ -35,6 +35,6 @@ jobs:
           server: '${{ secrets.SERVER }}'
           port: '${{ secrets.SSH_PORT }}'
           local_path: './server'
-          remote_path: '/home/industrialtransf/public_html/industrialtransformation.mx'
+          remote_path: '/home/industrialtransf/public_html/'
           sftp_only: true
           password: '${{ secrets.SFTP_PASSWORD }}'
