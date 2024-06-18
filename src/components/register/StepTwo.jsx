@@ -496,8 +496,6 @@ export function StepTwo({ translates }) {
               <input
                 type='text'
                 {...register('colonia', {
-                  required: `${translates.requiered}`,
-
                   onChange: (e) => setColonia(e.target.value),
                 })}
                 name='colonia'
