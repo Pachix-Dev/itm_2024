@@ -6,7 +6,7 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
     <tbody>
         <tr style="width: 100%;">
           <td colspan="2">
-            <img src="https://industrialtransformation.mx/header-ITM-register-eng.jpg" alt="logo" width="680">                             
+            <img src="https://industrialtransformation.mx/header-ITM-register-eng.jpg" alt="logo" width="550">               
           </td>
         </tr>
         <tr>
