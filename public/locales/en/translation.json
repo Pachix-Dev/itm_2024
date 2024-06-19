@@ -561,8 +561,8 @@
         "level_influence": "Level of influence",
         "wanna_be_exhibitor": "Would you consider exhibiting at our fair in future editions?",
         "already_visited": "Have you visited this or a similar fair?",
-        "yes": "Yes",
-        "no": "No",
+        "yes": "YES",
+        "no": "NO",
         "list_area": [
             "BOARD OF MANAGEMENT / EXCECUTIVE BOARD",
             "PURCHASING",

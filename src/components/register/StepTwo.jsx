@@ -473,7 +473,12 @@ export function StepTwo({ translates }) {
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
           <p className='text-white'>
-            {translates.colony} <span className='text-red-600'>*</span>
+            {translates.colony}
+            {country === 'Mexico' ? (
+              <span className='text-red-600'>*</span>
+            ) : (
+              ''
+            )}
           </p>
           <div className='relative mt-2'>
             {country === 'Mexico' ? (
