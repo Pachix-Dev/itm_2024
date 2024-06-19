@@ -25,7 +25,7 @@ const { item, key } = Astro.props as Props;
 ---
 
 <article class="flex flex-col xl:flex-row">
-    <div class="xl:w-[10%] pr-10 py-5 xl:border-r-[1px] flex gap-2.5 xl:inline">
+    <div class="xl:w-[10%] pr-10 xl:py-5 border-t-[1px] xl:border-t-0 xl:border-r-[1px] flex gap-2.5 xl:inline pt-5 xl:pt-0">
         <p class="text-left">{item.time}</p>
         <p class="text-left">
             <svg
@@ -42,11 +42,11 @@ const { item, key } = Astro.props as Props;
                     stroke-linejoin="round"
                     d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            {item.duration}
+            {item.duration }
         </p>
     </div>
     <div class="xl:w-[90%] xl:pl-5">
-        <h3 class="font-semibold text-[#E42128] text-lg pb-2 pt-5">
+        <h3 class="font-semibold text-[#E42128] text-lg pb-2">
             {item.title}
         </h3>
         {
