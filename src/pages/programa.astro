@@ -1,0 +1,248 @@
+---
+import LayoutRegister from "../layouts/LayoutRegister.astro";
+import programs from "../data/constans_program.ts";
+import MarqueeSpeakers from "../components/shared/MarqueeSpeakers.astro";
+
+interface Speaker {
+  name: string;
+  position: string;
+  company: string;
+  image?: string;
+}
+
+interface Program {
+  title: string;
+  description: string;
+  time: string;
+  duration: string;
+  speakers: Speaker[];
+}
+---
+
+<LayoutRegister title="ITM | Directorio Digital 2024">
+  <main class="mx-5 md:mx-16 lg:mx-32 pb-5">
+    <h1 class="text-left text-[#E42128] text-5xl font-extrabold py-5">
+      Programa
+    </h1>
+    <section>
+      <h3 class="text-3xl pb-3">Escenarios</h3>
+      <div class="md:ml-5">
+        <button
+          id="stage-1"
+          class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-[#E42128] to-[#CF1363] text-white focus:ring-2 focus:outline-none focus:ring-[#644B8E]"
+        >
+          <span
+            class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0"
+          >
+            Transformation Area
+          </span>
+        </button>
+        <button
+          id="stage-2"
+          class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-r from-[#E42128] to-[#CF1363] text-white focus:ring-2 focus:outline-none focus:ring-[#644B8E]"
+        >
+          <span
+            class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0"
+          >
+            Leaders of Tomorrow Arena
+          </span>
+        </button>
+      </div>
+      <div
+        class="w-full bg-gradient-to-br from-[#E42128] to-[#CF1363] h-[1px] mt-1 mb-3 rounded-sm"
+      >
+      </div>
+      <div class="md:ml-5 *:w-full md:*:w-fit">
+        <button
+          id="day-1"
+          class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-[#E42128] to-[#CF1363] text-white focus:ring-2 focus:outline-none focus:ring-[#644B8E]"
+        >
+          <span
+            class="text-left relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0 w-full"
+          >
+            Día 1<br />Miércoles, 6 de noviembre
+          </span>
+        </button>
+        <button
+          id="day-2"
+          class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-[#E42128] to-[#CF1363] text-white focus:ring-2 focus:outline-none focus:ring-[#644B8E]"
+        >
+          <span
+            class="text-left relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0 w-full"
+          >
+            Día 2<br />Jueves, 7 de noviembre
+          </span>
+        </button>
+        <button
+          id="day-3"
+          class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-[#E42128] to-[#CF1363] text-white focus:ring-2 focus:outline-none focus:ring-[#644B8E]"
+        >
+          <span
+            class="text-left relative px-5 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0 w-full"
+          >
+            Día 3<br />Viernes, 8 de noviembre
+          </span>
+        </button>
+      </div>
+      {
+        programs.map((program) => (
+          <section
+            class="mt-5 hidden"
+            id={`program-${program.stage}-${program.day}`}
+          >
+            {program.conferences.map((item, key) => (
+              <article class="flex flex-col xl:flex-row">
+                <div class="xl:w-[10%] pr-10 py-5 xl:border-r-[1px] flex gap-2.5 xl:inline">
+                  <p class="text-left">{item.time}</p>
+                  <p class="text-left">
+                    <svg
+                      class="inline"
+                      width="20"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    {item.duration}
+                  </p>
+                </div>
+                <div class="xl:w-[90%] xl:pl-5">
+                  <h3 class="font-semibold text-[#E42128] text-lg pb-2 pt-5">
+                    {item.title}
+                  </h3>
+                  {item.description === "" ? (
+                    ""
+                  ) : (
+                    <p class="text-justify">{item.description}</p>
+                  )}
+                  {item.speakers.length === 0 ? (
+                    ""
+                  ) : (
+                    <MarqueeSpeakers
+                      speakers={item.speakers}
+                      key={program.stage + "-" + program.day + "-" + key}
+                    />
+                  )}
+                </div>
+              </article>
+            ))}
+          </section>
+        ))
+      }
+    </section>
+  </main>
+</LayoutRegister>
+<style>
+  body {
+    background-color: #111827;
+    color: white;
+  }
+</style>
+<script>
+  const state = {
+    stage: 1,
+    day: 1,
+  };
+  const url = new URL(window.location.href);
+
+  function showProgram(stage: number, day: number) {
+    if (state.stage === stage && state.day === day) return;
+
+    let programElement;
+    programElement = document.getElementById(
+      `program-${state.stage}-${state.day}`,
+    );
+    if (programElement !== null) {
+      programElement.style.display = "none";
+    }
+    programElement = document.getElementById(`program-${stage}-${day}`);
+    if (programElement !== null) {
+      programElement.style.display = "block";
+    }
+
+    url.searchParams.set("stage", stage.toString());
+    url.searchParams.set("day", day.toString());
+    window.history.pushState({}, "", url);
+
+    state.stage = stage;
+    state.day = day;
+  }
+
+  function changeOpacityStageBts(stage: number) {
+    document
+      .getElementById("stage-1")
+      ?.firstElementChild?.classList.remove("bg-opacity-0");
+    document
+      .getElementById("stage-2")
+      ?.firstElementChild?.classList.remove("bg-opacity-0");
+    document
+      .getElementById(`stage-${stage}`)
+      ?.firstElementChild?.classList.add("bg-opacity-0");
+  }
+
+  function changeOpacityDayBts(day: number) {
+    document
+      .getElementById("day-1")
+      ?.firstElementChild?.classList.remove("bg-opacity-0");
+    document
+      .getElementById("day-2")
+      ?.firstElementChild?.classList.remove("bg-opacity-0");
+    document
+      .getElementById("day-3")
+      ?.firstElementChild?.classList.remove("bg-opacity-0");
+    document
+      .getElementById(`day-${day}`)
+      ?.firstElementChild?.classList.add("bg-opacity-0");
+  }
+
+  function initProgram() {
+    const stage = Number(url.searchParams.get("stage")) || 1;
+    const day = Number(url.searchParams.get("day")) || 1;
+
+    state.stage = stage;
+    state.day = day;
+
+    const programElement = document.getElementById(`program-${stage}-${day}`);
+    if (programElement) {
+      programElement.style.display = "block";
+    }
+
+    changeOpacityStageBts(stage);
+    changeOpacityDayBts(day);
+  }
+
+  function main() {
+    initProgram();
+
+    document.getElementById("stage-1")?.addEventListener("click", (e) => {
+      changeOpacityStageBts(1);
+      showProgram(1, state.day);
+    });
+    document.getElementById("stage-2")?.addEventListener("click", (e) => {
+      changeOpacityStageBts(2);
+      showProgram(2, state.day);
+    });
+
+    document.getElementById("day-1")?.addEventListener("click", (e) => {
+      changeOpacityDayBts(1);
+      showProgram(state.stage, 1);
+    });
+    document.getElementById("day-2")?.addEventListener("click", (e) => {
+      changeOpacityDayBts(2);
+      showProgram(state.stage, 2);
+    });
+    document.getElementById("day-3")?.addEventListener("click", (e) => {
+      changeOpacityDayBts(3);
+      showProgram(state.stage, 3);
+    });
+  }
+
+  document.addEventListener("astro:page-load", main);
+</script>

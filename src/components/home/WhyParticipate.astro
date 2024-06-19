@@ -1,6 +1,7 @@
 ---
 import i18next, { t } from 'i18next'
-import RedButton from '../shared/RedButton.astro'
+// @ts-ignore
+import { localizePath } from "astro-i18next";
 ---
 
 <section
@@ -131,7 +132,7 @@ import RedButton from '../shared/RedButton.astro'
     <div class='mt-5 grid md:flex gap-5 justify-center'>
       <a
         class='rounded-xl bg-[#e8001e] py-2 px-5 mt-5 inline-block text-white text-center text-uppercase text-sm hover:bg-[#cf3b49] font-bold uppercase'
-        href='/perfil-del-expositor/'
+        href={localizePath('/perfil-del-expositor/')}
         rel='noreferrer'
       >
         <span

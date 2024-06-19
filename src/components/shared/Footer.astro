@@ -1,6 +1,8 @@
 ---
 import i18next, { t } from 'i18next'
 import { LanguageSelector } from 'astro-i18next/components'
+// @ts-ignore
+import { localizePath } from "astro-i18next";
 ---
 
 <footer>
@@ -67,8 +69,8 @@ import { LanguageSelector } from 'astro-i18next/components'
         </div>
     </div>
     <div class="mx-5 md:mx-20 py-10 font-bold">
-        <a class="hover:text-[#e8001e]" href="/aviso-de-privacidad">{t('home.privacy_policy')}</a>
+        <a class="hover:text-[#e8001e]" href="https://igeco.mx/aviso-de-privacidad" target="_blank">{t('home.privacy_policy')}</a>
         <p class="inline">|</p>
-        <a class="hover:text-[#e8001e]" href="/contacto">{t('home.contact')}</a>
+        <a class="hover:text-[#e8001e]" href={localizePath('/contacto')}>{t('home.contact')}</a>
     </div>
 </footer>

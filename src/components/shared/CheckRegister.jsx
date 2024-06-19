@@ -3,7 +3,7 @@ import { useRegisterForm } from '../../store/register-form'
 
 export const CheckRegister = ({translations}) => {
 
-    const {description, btn, emailExample, registerNow, freeRegister, programUrl} = translations;
+    const {description, btn, 'email-example': emailExample, 'register-now': registerNow, 'free-register': freeRegister, programUrl, registerUrl} = translations;
 
     const [message, setMessage] = useState('')
     const { email, setEmail } = useRegisterForm()
@@ -54,7 +54,7 @@ export const CheckRegister = ({translations}) => {
             <p className='mt-10 text-center'>
                 {registerNow}{' -> '}
                 <a
-                    href='/registro'
+                    href={registerUrl}
                     className='px-3 py-2 bg-[#E42128] hover:bg-red-700 font-bold rounded-2xl text-white  mt-5  gap-2'
                 >
                     {freeRegister}
