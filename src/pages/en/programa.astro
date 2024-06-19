@@ -1,11 +1,11 @@
 ---
-import LayoutRegister from "../layouts/LayoutRegister.astro";
-import programs from "../data/constans_program.ts";
-import Button from "../components/schedule/Button.astro";
-import Conference from "../components/schedule/Conference.astro";
+import LayoutRegister from "../../layouts/LayoutRegister.astro";
+import programs from "../../data/constans_program.ts";
+import Button from "../../components/schedule/Button.astro";
+import Conference from "../../components/schedule/Conference.astro";
 import { t, changeLanguage } from "i18next";
 
-changeLanguage("es");
+changeLanguage("en");
 ---
 
 <LayoutRegister title={`ITM | ${t('program.title')}`}>

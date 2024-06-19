@@ -7,12 +7,9 @@ import { CheckRegister } from "../../components/shared/CheckRegister.jsx";
 
 changeLanguage("en");
 
+const check_register = t("checkRegister", { returnObjects: true });
 const translations = {
-    description: t("checkRegister.description"),
-    btn: t("checkRegister.btn"),
-    emailExample: t("checkRegister.email-example"),
-    registerNow: t("checkRegister.register-now"),
-    freeRegister: t("checkRegister.free-register"),
+    ...check_register,
     programUrl: localizePath("/directorio-digital"),
     registerUrl: localizePath("/registro"),
 };
