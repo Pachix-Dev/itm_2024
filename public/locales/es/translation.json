@@ -456,8 +456,8 @@
         "deadline": "Fecha límite de inscripción 25 de agosto de 2023"
     },
     "program": {
-        "title": "Programa",
-        "subtitle": "Construyamos la industria del mañana.",
+        "title": "Conferencias",
+        "description": "Estamos encantados de presentarles un innovador programa diseñado para potenciar el desarrollo personal y profesional de nuestros participantes. Nuestro enfoque se centra en dos áreas clave que creemos fundamentales para el éxito en el mundo moderno: la Transformation Area y la Leaders of Tomorrow Area",
         "title_s": "Ponentes",
         "subtitle_s": "Déjate inspirar por nuestros increíbles ponentes.",
         "day": "Día",
@@ -638,7 +638,8 @@
         "btn": "Ver más",
         "futuristics-minds": "Forma parte del capítulo educativo de ITM y asiste a competencias, conferencias, talleres, exhibición de prototipos y recorridos interactivos.",
         "mtech": "Desafía al futuro y demuestra tu talento en la tercera edición de la competencia de robótica que el Gobierno del Estado de Guanajuato e Italian German Exhibition Company Mexico que organizan para ti.",
-        "startup-pitch": "¿Tienes un emprendimiento de algún producto o servicio de base tecnológica? Participa en la cuarta edición de la convocatoria Startup Pitch, presenta tu proyecto en Industrial Transformation México 2024 y sé uno de los finalistas que tengan la posibilidad de ganar un stand en el área de Startups en la Hannover Messe de Alemania."
+        "startup-pitch": "¿Tienes un emprendimiento de algún producto o servicio de base tecnológica? Participa en la cuarta edición de la convocatoria Startup Pitch, presenta tu proyecto en Industrial Transformation México 2024 y sé uno de los finalistas que tengan la posibilidad de ganar un stand en el área de Startups en la Hannover Messe de Alemania.",
+        "oktoberfest": "¡Celebra con nosotros la tradicional fiesta alemana! Disfruta de la música, la comida y la cerveza en un ambiente festivo y lleno de diversión."
     },
     "checkRegister": {
         "title": "Verifica tu registro",

@@ -3,23 +3,40 @@ import { t } from 'i18next'
 
 const otherEvents = [
   {
-    title: 'Futuristics Minds',
-    description: t('otherEvents.futuristics-minds'),
-    image:
-      'https://futuristics-minds.industrialtransformation.mx/img/bg_banner.webp',
-    link: 'https://futuristics-minds.industrialtransformation.mx/',
+    title: t('program.title'),
+    description: t('program.description'),
+    image: '/img/bg-programa.webp',
+    link: '/programa',
+    target: '_self',
   },
   {
     title: 'M-TECH 2024',
     description: t('otherEvents.mtech'),
     video: 'https://mtech.igeco.mx/videos/bg_mtech_2024.mp4',
     link: 'https://mtech.igeco.mx/',
+    target: '_blank',
   },
   {
     title: 'Startup Pitch',
     description: t('otherEvents.startup-pitch'),
     image: '/img/startup-pitch-bg.webp',
     link: '/startup-pitch',
+    target: '_self',
+  },
+  {
+    title: 'Oktober fest',
+    description: t('otherEvents.oktoberfest'),
+    video: '/videos/OKTOBERFEST-2024.mp4',
+    link: '',
+    target: '_self',
+  },
+  {
+    title: 'Futuristics Minds',
+    description: t('otherEvents.futuristics-minds'),
+    image:
+      'https://futuristics-minds.industrialtransformation.mx/img/bg_banner.webp',
+    link: 'https://futuristics-minds.industrialtransformation.mx/',
+    target: '_blank',
   },
 ]
 ---
@@ -57,7 +74,7 @@ const otherEvents = [
 
           <div class='relative h-full bg-gradient-to-t from-gray-900/70 to-gray-900/40 pt-32'>
             <div class='relative h-[266px] p-4 sm:p-6 translate-y-52 md:translate-y-48 xl:translate-y-[180px] transform transition-transform ease-out duration-300 group-hover:translate-y-0'>
-              <h3 class='mt-0.5 text-2xl xl:text-3xl 2xl:text-4xl pb-2 text-white font-bold'>
+              <h3 class='mt-0.5 text-2xl xl:text-3xl 2xl:text-4xl pb-2 text-white font-bold uppercase'>
                 {event.title}
               </h3>
 
@@ -66,7 +83,7 @@ const otherEvents = [
               </p>
               <a
                 href={event.link}
-                target='_blank'
+                {...(event.target && { target: event.target })}
                 class='absolute bottom-3 2xl:text-base group mt-4 inline-flex items-center gap-1 text-sm font-medium text-white hover:text-white hover:bg-black rounded-md p-2 transition-all'
               >
                 {t('otherEvents.btn')}
