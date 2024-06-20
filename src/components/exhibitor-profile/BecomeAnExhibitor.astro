@@ -1,31 +1,45 @@
 ---
-import i18n, { t } from "i18next";
+import i18n, { t } from 'i18next'
 // @ts-ignore
-import { localizePath } from "astro-i18next";
+import { localizePath } from 'astro-i18next'
 
-import RedButton from "../shared/RedButton.astro";
+import RedButton from '../shared/RedButton.astro'
 ---
 
-<section class="bg-[url('/img/BanderaMexico.webp')] bg-cover bg-center bg-no-repeat bg-fixed text-white px-5 md:px-10 lg:px-20 py-10">
-    <p>INDUSTRIAL TRANSFORMATION MÉXICO 2024</p>
-    <h2 class="font-bold text-4xl pt-5" >{t("profile.subtitle")}</h2>
-    <p class="text-xl pt-2 md:w-8/12" set:html={t("profile.description")} />
-    <ul class="flex flex-col md:flex-row flex-wrap gap-5 md:pl-5 pt-10 items-center w-full">
-        <RedButton href={i18n.language === "en"
-        ? "/files/Factsheet_ITM_ENG_v2_120124.pdf"
-        : "/files/Factsheet_ITM_2024_AC_ESP_VF_08-03-2024.pdf"}
-        withIcon={true}
-        openInNewTab={true}>
-            Factsheet 2024
-        </RedButton>
-        <RedButton href="/files/Floorplan_ITM_2024_31.05.2023.pdf" withIcon={true} openInNewTab={true}>
-            {t("menu.exhibitors_5")}
-        </RedButton>
-        <RedButton href="/files/ITM2024-contract-V2.pdf" withIcon={true} openInNewTab={true}>
-            {t("menu.exhibitors_6")}
-        </RedButton>
-        <RedButton href={localizePath("/patrocinios")} withIcon={true}>
-            {t("menu.exhibitors_7")}
-        </RedButton>
-    </ul>
+<section
+  class='bg-black bg-cover bg-center bg-no-repeat bg-fixed text-white px-5 md:px-10 lg:px-20 py-10'
+>
+  <p>INDUSTRIAL TRANSFORMATION MEXICO 2024</p>
+  <h2 class='font-bold text-4xl pt-5'>{t('profile.subtitle')}</h2>
+  <p class='text-xl pt-2 md:w-8/12' set:html={t('profile.description')} />
+  <ul
+    class='flex flex-col md:flex-row flex-wrap gap-5 md:pl-5 pt-10 items-center w-full'
+  >
+    <RedButton
+      href={i18n.language === 'en'
+        ? '/files/Factsheet_ITM_ENG_v2_120124.pdf'
+        : '/files/Factsheet_ITM_2024_AC_ESP_VF_08-03-2024.pdf'}
+      withIcon={true}
+      openInNewTab={true}
+    >
+      Factsheet 2024
+    </RedButton>
+    <RedButton
+      href='/files/Floorplan_ITM_2024_31.05.2023.pdf'
+      withIcon={true}
+      openInNewTab={true}
+    >
+      {t('menu.exhibitors_5')}
+    </RedButton>
+    <RedButton
+      href='/files/ITM2024-contract-V2.pdf'
+      withIcon={true}
+      openInNewTab={true}
+    >
+      {t('menu.exhibitors_6')}
+    </RedButton>
+    <RedButton href={localizePath('/patrocinios')} withIcon={true}>
+      {t('menu.exhibitors_7')}
+    </RedButton>
+  </ul>
 </section>

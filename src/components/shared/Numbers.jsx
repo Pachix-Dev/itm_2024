@@ -22,5 +22,5 @@ export function Numbers({ number, duration }) {
     return () => clearInterval(timer)
   }, [number, duration])
 
-  return <div className=''>{formatNumberWithCommas(count)}</div>
+  return <>{formatNumberWithCommas(count)}</>
 }

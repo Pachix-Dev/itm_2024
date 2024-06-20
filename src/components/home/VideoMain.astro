@@ -1,0 +1,20 @@
+---
+import i18next, { t } from 'i18next'
+---
+
+<section class='bg-black py-20 text-white'>
+  <div class='container mx-auto px-4 max-w-6xl'>
+    <p class='text-2xl font-extrabold'>
+      {t('home.best_itm')}
+    </p>
+    <lite-youtube
+      class='mt-5 shadow-2xl shadow-white/10 rounded-xl mx-auto'
+      videoid={i18next.language === 'es' ? 'xM_V_nwXI_c' : 'vbPJj3SUFiY'}
+      videotitle='ITM 2024'
+    >
+    </lite-youtube>
+  </div>
+</section>
+<script>
+  import '@justinribeiro/lite-youtube'
+</script>

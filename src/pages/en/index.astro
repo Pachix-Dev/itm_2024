@@ -10,6 +10,9 @@ import { home } from "../../data/constans_gallery.js";
 import Score from "../../components/home/Score.astro";
 import Marquee from "../../components/shared/Marquee.astro";
 import { media_1, media_2, alliesStrategic } from "../../data/constans_logos";
+import VideoMain from "../../components/home/VideoMain.astro";
+import Testimonials from "../../components/home/Testimonials.astro";
+import BecomeAnExhibitor from "../../components/exhibitor-profile/BecomeAnExhibitor.astro";
 
 changeLanguage("en");
 ---
@@ -18,9 +21,12 @@ changeLanguage("en");
   <main>
     <Hero />
     <OtherEvents />
-    <Sponsors />
-    <WhyParticipate />
+    <VideoMain />
     <Score />
+    <Sponsors />
+    <BecomeAnExhibitor />
+    <WhyParticipate />
+    <Testimonials />
     <p class='mt-10 text-center text-[#E8001E] font-bold text-3xl mb-5'>
       {t('home.strategic_allies')}
     </p>

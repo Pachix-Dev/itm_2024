@@ -114,7 +114,15 @@
         "email": "Email",
         "subscription": "SUBSCRIBE",
         "want-exhibitor":"I want to be an exhibitor",
-        "free_register": "Free Registration"
+        "free_register": "Free Registration",
+        "best_itm": "INDUSTRIAL TRANSFORMATION MEXICO 2024 - THE BEST OF INDUSTRY 4.0",
+        "testimonials": "Testimonials exhibitors",
+        "whyparticipate1": "Inspire and position your innovations in our leading conference program.",
+        "whyparticipate2": "Take advantage of the large influx of trade visitors and our networking areas for your meetings.",
+        "whyparticipate3": "Position relevant topics in front of the industry's most important decision makers at our exclusive events.",
+        "whyparticipate4": "Benefit from the extensive coverage of more than 150 national and international media.",
+        "whyparticipate5": "Access a hotbed of STEM talent for your company with our education program.",
+        "whyparticipate6": "Invite customers and colleagues to enjoy a German cultural and gastronomic experience."
     },
     "aboutPage": {
         "title": "ABOUT US ITM",
@@ -143,7 +151,7 @@
     },
     "profile": {        
         "subtitle": "Become an Exhibitor",
-        "description": "As the platform for Industry 4.0 in Latin America, ITM is the showcase for industrial transformation year after year, with innovations, technological breakthroughs and groundbreaking products. From development to production, logistics, energy supply and services: INDUSTRIAL TRANSFORMATION MEXICO showcases cross-sector solutions and interface technologies for the entire industrial ecosystem.<br /><br />ITM is an event of Hannover Messe, the world's leading industrial trade fair.",
+        "description": "ITM allows you to connect with an exclusive network of professional buyers looking for technologies and solutions, enhancing their businesses, contacts and strategic allies. <br /><br />Since 2019, Industrial Transformation MEXICO, the HANNOVER MESSE of the American continent, is the platform that leads business, promotion and industrial technological advancement in the region, by uniting exhibitors and policy takers. national and international decision, most important from the private, public and academic sectors related to Industry 4.0.",
         "why-exhibit":{
             "title":"WHY EXHIBIT?",
             "description-1":"PROFESSIONAL BUYERS",
@@ -635,7 +643,7 @@
         "register_button": "Registrate gratis"
     },
     "otherEvents": {
-        "title": "Discover other events",
+        "title": "Discover everything ITM has to offer",
         "btn": "See more",
         "futuristics-minds": "Be part of ITM's educational chapter and attend competitions, conferences, workshops, prototype exhibitions and interactive tours.",
         "mtech": "Challenge the future and show your talent in the third edition of the robotics competition that the Government of the State of Guanajuato and Italian German Exhibition Company Mexico are organizing for you.",
