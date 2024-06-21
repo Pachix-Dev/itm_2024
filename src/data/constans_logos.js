@@ -269,4 +269,7 @@ const sponsors = [
   { src: '/img/siemens_white.png', alt: 'NSK', link: 'https://www.siemens.com/mx/', width: 200 },
 ]
 
+const buyers = [
+  { src: '/img/misumi_white.png', alt: 'MISUMI', link: 'http://www.misumimex.com/', width: 200 },  
+]
 export { exhibitors_1, exhibitors_2, media_1, media_2, alliesStrategic, sponsors}
