@@ -1,0 +1,85 @@
+---
+import { t } from 'i18next'
+---
+
+<section class='bg-black py-10 text-white'>
+  <div class='container mx-auto px-4'>
+    <div class='relative h-[100px]'>
+      <div
+        class='absolute top-0 w-full square z-10 font-extrabold text-sm md:text-3xl uppercase px-5 text-white'
+      >
+        {t('home.testimonial_visitor')}
+      </div>
+    </div>
+    <div class='mt-10 grid md:grid-cols-2 gap-10'>
+      <div class='grid md:flex gap-5'>
+        <img src='/img/visitorTestimonial1.webp' width='250' />
+        <p>
+          <strong>Laura Herrera</strong>
+          <br /><br />
+
+          Directora Comercial, en Dobótica<br /><br />
+          “Hay buenas empresas de alta tecnología, prospectos de todas partes de
+          la República. Vine en la búsqueda de más herramientas y soluciones, y sin
+          duda ITM fue el lugar ideal para encontrarlas”.
+        </p>
+      </div>
+      <div class='grid md:flex gap-5'>
+        <img src='/img/visitorTestimonial2.webp' width='250' />
+        <p>
+          <strong>Mauricio Rubio </strong>
+          <br /><br />
+
+          Global Automation de Bogotá<br /><br />
+          “Nos llamó la atención que fuera la misma feria de Hannover Messe. Asistimos
+          para ver las nuevas tendencias y a realizar muchos contactos, ha sido muy
+          interesante ver cómo todas esta empresas líderes en la industria se reúnen
+          en un solo lugar”.
+        </p>
+      </div>
+      <div class='grid md:flex gap-5'>
+        <img src='/img/visitorTestimonial3.webp' width='250' />
+        <p>
+          <strong>Miguel Ángel Lara </strong>
+          <br /><br />
+
+          Emprededor de negocio de maquinaria <br /><br />
+          “Es una excelente idea asistir a esta expo para ver la nueva tecnología
+          que hay en el mercado. He encontrado muchos expositores muy buenos, quienes
+          brindan el soporte y el servicio adecuado. Me ha gustado mucho y he vivido
+          una gran experiencia”.
+        </p>
+      </div>
+      <div class='grid md:flex gap-5'>
+        <img src='/img/visitorTestimonial4.webp' width='250' />
+        <p>
+          <strong>Jorge Estrada </strong>
+          <br /><br />
+
+          Director de Inversiones del gobierno de Tabasco<br /><br />
+          “Una feria muy completa por los expositores, las conferencias y los foros
+          que tiene. Cumple con total expectativa, debido a que he asistido también
+          a la Hannover Messe, en Alemania”.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .square {
+    display: grid;
+    place-items: center;
+    min-height: 100px;
+    z-index: 1;
+    background: rgb(18, 172, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(18, 172, 255, 1) 0%,
+      rgba(10, 61, 255, 1) 100%
+    );
+    overflow: hidden;
+    -ms-transform: skew(-10deg); /* IE 9 */
+    -webkit-transform: skew(-10deg); /* Chrome, Safari, Opera */
+    transform: skew(-10deg); /* Standard syntax */
+  }
+</style>
