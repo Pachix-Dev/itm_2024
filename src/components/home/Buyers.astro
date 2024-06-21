@@ -1,8 +1,39 @@
 ---
-
+import { t } from 'i18next'
+import { buyers } from '../../data/constans_logos.js'
 ---
 
-<section class='container mx-auto px-4'>
-  <p>Nuestros compradores profesional</p>
-  <div class='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6'></div>
+<section class='container mx-auto px-4 py-10'>
+  <div class='relative'>
+    <div
+      class='absolute w-full square z-10 font-extrabold text-sm md:text-3xl uppercase px-5 text-white'
+    >
+      {t('home.buyers_profesionals')}
+    </div>
+  </div>
+  <div class='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-9 gap-6'>
+    {
+      buyers.map((buyer) => (
+        <div class='flex justify-center items-center'>
+          <img src={buyer.src} alt={buyer.alt} width={buyer.width} />
+        </div>
+      ))
+    }
+  </div>
+  <p class='text-right font-extrabold text-2xl uppercase'>
+    {t('home.others')}...
+  </p>
 </section>
+<style>
+  .square {
+    display: grid;
+    place-items: center;
+    min-height: 100px;
+    z-index: 1;
+    background: #dd0000;
+    overflow: hidden;
+    -ms-transform: skew(-10deg); /* IE 9 */
+    -webkit-transform: skew(-10deg); /* Chrome, Safari, Opera */
+    transform: skew(-10deg); /* Standard syntax */
+  }
+</style>
