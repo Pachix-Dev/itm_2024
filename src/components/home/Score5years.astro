@@ -1,0 +1,35 @@
+---
+import { t } from 'i18next'
+---
+
+<section class='bg-black'>
+  <div class='relative container ms-auto'>
+    <div
+      class='absolute top-0 w-full square z-10 font-extrabold text-sm md:text-3xl uppercase px-5 text-white'
+    >
+      <p>
+        {t('home.title5years_1')}
+        <span class='text-9xl'>5</span>
+        {t('home.title5years_2')}
+      </p>
+    </div>
+  </div>
+</section>
+<style>
+  .square {
+    display: grid;
+    place-items: center;
+    min-height: 100px;
+    z-index: 1;
+    background: rgb(18, 172, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(18, 172, 255, 1) 0%,
+      rgba(10, 61, 255, 1) 100%
+    );
+    overflow: hidden;
+    -ms-transform: skew(-10deg); /* IE 9 */
+    -webkit-transform: skew(-10deg); /* Chrome, Safari, Opera */
+    transform: skew(-10deg); /* Standard syntax */
+  }
+</style>
