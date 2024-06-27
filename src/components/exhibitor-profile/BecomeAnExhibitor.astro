@@ -7,39 +7,51 @@ import RedButton from '../shared/RedButton.astro'
 ---
 
 <section
-  class='bg-black bg-cover bg-center bg-no-repeat bg-fixed text-white px-5 md:px-10 lg:px-20 py-10'
+  class='bg-black bg-cover bg-center bg-no-repeat bg-fixed text-white px-5 md:px-10 lg:px-20 py-10 grid md:grid-cols-3 gap-20'
 >
-  <p>INDUSTRIAL TRANSFORMATION MEXICO 2024</p>
-  <h2 class='font-bold text-4xl pt-5'>{t('profile.subtitle')}</h2>
-  <p class='text-xl pt-2 md:w-8/12' set:html={t('profile.description')} />
-  <ul
-    class='flex flex-col md:flex-row flex-wrap gap-5 md:pl-5 pt-10 items-center w-full'
-  >
-    <RedButton
-      href={i18n.language === 'en'
-        ? '/files/Factsheet_ITM_ENG_v2_120124.pdf'
-        : '/files/Factsheet_ITM_2024_AC_ESP_VF_08-03-2024.pdf'}
-      withIcon={true}
-      openInNewTab={true}
+  <div class='col-span-2'>
+    <p>INDUSTRIAL TRANSFORMATION MEXICO 2024</p>
+    <div class='my-3 square_blue w-full font-bold text-2xl md:text-6xl px-4'>
+      {t('profile.subtitle')}
+    </div>
+    <p class='text-2xl pt-2' set:html={t('profile.description')} />
+    <ul
+      class='flex flex-col md:flex-row flex-wrap gap-5 md:pl-5 pt-10 items-center w-full'
     >
-      Factsheet 2024
-    </RedButton>
-    <RedButton
-      href='/files/Floorplan-ITM-2024-21-06-2024.pdf'
-      withIcon={true}
-      openInNewTab={true}
-    >
-      {t('menu.exhibitors_5')}
-    </RedButton>
-    <RedButton
-      href='/files/ITM2024-SpaceAgreement-ED-jun.pdf'
-      withIcon={true}
-      openInNewTab={true}
-    >
-      {t('menu.exhibitors_6')}
-    </RedButton>
-    <RedButton href={localizePath('/patrocinios')} withIcon={true}>
-      {t('menu.exhibitors_7')}
-    </RedButton>
-  </ul>
+      <RedButton
+        href={i18n.language === 'en'
+          ? '/files/Factsheet_ITM_ENG_v2_120124.pdf'
+          : '/files/Factsheet_ITM_2024_AC_ESP_VF_08-03-2024.pdf'}
+        withIcon={true}
+        openInNewTab={true}
+      >
+        Factsheet 2024
+      </RedButton>
+      <RedButton
+        href='/files/Floorplan-ITM-2024-21-06-2024.pdf'
+        withIcon={true}
+        openInNewTab={true}
+      >
+        {t('menu.exhibitors_5')}
+      </RedButton>
+      <RedButton
+        href='/files/ITM2024-SpaceAgreement-ED-jun.pdf'
+        withIcon={true}
+        openInNewTab={true}
+      >
+        {t('menu.exhibitors_6')}
+      </RedButton>
+      <RedButton href={localizePath('/patrocinios')} withIcon={true}>
+        {t('menu.exhibitors_7')}
+      </RedButton>
+    </ul>
+  </div>
+  <div class='p-12 bg-[url(/img/bg_videoExpositor.webp)] bg-cover bg-no-repeat'>
+    <video
+      src='/videos/ITM_2023_exhibitor.mp4'
+      autoplay
+      loop
+      muted
+      class='rounded-lg'></video>
+  </div>
 </section>

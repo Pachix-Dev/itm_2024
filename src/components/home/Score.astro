@@ -8,7 +8,46 @@ import { Numbers } from '../shared/Numbers'
     <div class='home-activities-wrapper'>
       <div class='relative'>
         <img
-          src='/img/item_num.webp'
+          src='/img/bgscore1.webp'
+          alt='Categoria 1'
+          class='w-full h-full object-cover absolute z-[-1]'
+        />
+        <div class='info'>
+          <span class='text-[#E20B24] font-bold text-5xl'>
+            +<Numbers client:only='react' number='200' duration='5' />
+          </span>
+          <p class='text-white text-2xl'>{t('home.bullet_1')}</p>
+        </div>
+      </div>
+      <div class='relative'>
+        <img
+          src='/img/bgscore2.webp'
+          alt='Categoria 1'
+          class='w-full h-full object-cover absolute z-[-1]'
+        />
+        <div class='info'>
+          <span class='text-[#E20B24] font-bold text-5xl'>
+            <Numbers client:only='react' number='13700' duration='5' />
+          </span>
+          <p class='text-white text-2xl'>{t('home.bullet_2')}</p>
+        </div>
+      </div>
+      <div class='relative'>
+        <img
+          src='/img/bgscore3.webp'
+          alt='Categoria 1'
+          class='w-full h-full object-cover absolute z-[-1]'
+        />
+        <div class='info'>
+          <span class='text-[#E20B24] font-bold text-5xl'>
+            +<Numbers client:only='react' number='5' duration='5' />
+          </span>
+          <p class='text-white text-xl'>{t('home.bullet_3')}</p>
+        </div>
+      </div>
+      <div class='relative'>
+        <img
+          src='/img/bgscore4.webp'
           alt='Categoria 1'
           class='w-full h-full object-cover absolute z-[-1]'
         />
@@ -16,38 +55,25 @@ import { Numbers } from '../shared/Numbers'
           <span class='text-[#E20B24] font-bold text-5xl'>
             <Numbers client:only='react' number='20000' duration='5' />
           </span>
-          <p class='text-white'>{t('home.bullet_1')}</p>
+          <p class='text-white text-xl'>{t('home.bullet_4')}</p>
         </div>
       </div>
       <div class='relative'>
         <img
-          src='/img/item_num2.webp'
+          src='/img/bgscore5.webp'
           alt='Categoria 1'
           class='w-full h-full object-cover absolute z-[-1]'
         />
         <div class='info'>
           <span class='text-[#E20B24] font-bold text-5xl'>
-            <Numbers client:only='react' number='7000' duration='5' />
+            + <Numbers client:only='react' number='1370' duration='5' />
           </span>
-          <p class='text-white'>{t('home.bullet_2')}</p>
+          <p class='text-white text-xl'>{t('home.bullet_5')}</p>
         </div>
       </div>
       <div class='relative'>
         <img
-          src='/img/item_num3.webp'
-          alt='Categoria 1'
-          class='w-full h-full object-cover absolute z-[-1]'
-        />
-        <div class='info'>
-          <span class='text-[#E20B24] font-bold text-5xl'>
-            <Numbers client:only='react' number='1370' duration='5' />
-          </span>
-          <p class='text-white'>{t('home.bullet_3')}</p>
-        </div>
-      </div>
-      <div class='relative'>
-        <img
-          src='/img/item_num4.webp'
+          src='/img/bgscore6.webp'
           alt='Categoria 1'
           class='w-full h-full object-cover absolute z-[-1]'
         />
@@ -55,20 +81,7 @@ import { Numbers } from '../shared/Numbers'
           <span class='text-[#E20B24] font-bold text-5xl'>
             <Numbers client:only='react' number='260' duration='5' />
           </span>
-          <p class='text-white'>{t('home.bullet_4')}</p>
-        </div>
-      </div>
-      <div class='relative'>
-        <img
-          src='/img/item_num5.webp'
-          alt='Categoria 1'
-          class='w-full h-full object-cover absolute z-[-1]'
-        />
-        <div class='info'>
-          <span class='text-[#E20B24] font-bold text-5xl'>
-            + <Numbers client:only='react' number='13700' duration='5' />
-          </span>
-          <p class='text-white'>{t('home.bullet_5')}</p>
+          <p class='text-white text-xl'>{t('home.bullet_6')}</p>
         </div>
       </div>
     </div>
@@ -108,18 +121,18 @@ import { Numbers } from '../shared/Numbers'
 
     .home-activities-wrapper .info {
       width: 100%;
-      font-size: 23px;
       color: white;
-      font-weight: bold;
+      font-weight: bolder;
       background: linear-gradient(to bottom, transparent, black);
       height: 100%;
       padding: 10px;
       transition: none;
-      display: grid;
-      place-content: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       .home-activities-wrapper .info {
         top: 0;
         height: 100%;

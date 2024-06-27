@@ -5,11 +5,13 @@ import Marquee from '../shared/Marquee.astro'
 ---
 
 <section
-  class='container mx-auto px-4 py-10 text-center text-[#6C757D] font-bold text-3xl uppercase'
+  class='container mx-auto px-4 py-10 text-center text-[#6C757D] font-bold uppercase'
 >
-  <p>
+  <div
+    class='square_red text-center font-bold text-xl lg:text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto'
+  >
     {t('home.title-sponsors')}
-  </p>
+  </div>
   <div class='grid grid-cols-4 place-items-center sm:flex justify-center gap-6'>
     <a
       href='https://mx.mitsubishielectric.com/fa/en/'
@@ -53,9 +55,11 @@ import Marquee from '../shared/Marquee.astro'
       />
     </a>
   </div>
-  <p class='mt-5'>
+  <div
+    class='mt-10 square_red text-center font-bold text-xl lg:text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto'
+  >
     {t('menu.exhibitors_2_1')}
-  </p>
+  </div>
   <Marquee partners={exhibitors_1} isLeftToRight={true} />
   <Marquee partners={exhibitors_2} isLeftToRight={false} />
 </section>

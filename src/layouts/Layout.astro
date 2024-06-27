@@ -2,6 +2,7 @@
 import { ViewTransitions } from 'astro:transitions'
 import { HeadHrefLangs } from 'astro-i18next/components'
 import i18next from 'i18next'
+import AnimatedCursor from 'react-animated-cursor'
 
 import Menu from '../components/shared/Menu.astro'
 import Footer from '../components/shared/Footer.astro'
@@ -20,6 +21,7 @@ const { title } = Astro.props
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/png' href='/img/favicon.png' />
     <meta name='generator' content={Astro.generator} />
+    <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet' />
     <title>{title}</title>
     <ViewTransitions />
     <HeadHrefLangs />
@@ -86,6 +88,29 @@ const { title } = Astro.props
         style='display:none;visibility:hidden'></iframe></noscript
     >
     <!-- End Google Tag Manager (noscript) -->
+    <AnimatedCursor
+      client:only='react'
+      showSystemCursor
+      innerSize={8}
+      outerSize={50}
+      color='247, 8, 6'
+      outerAlpha={0.5}
+      innerScale={0.7}
+      outerScale={2}
+      clickables={[
+        'a',
+        'input[type="text"]',
+        'input[type="email"]',
+        'input[type="number"]',
+        'input[type="submit"]',
+        'input[type="image"]',
+        'label[for]',
+        'select',
+        'textarea',
+        'button',
+        '.link',
+      ]}
+    />
     <Menu />
     <slot />
     <Footer />
@@ -100,6 +125,30 @@ const { title } = Astro.props
       }
       ::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+
+      .square_red {
+        display: grid;
+        place-items: center;
+        background: #dd0000;
+        overflow: hidden;
+        -ms-transform: skew(-10deg); /* IE 9 */
+        -webkit-transform: skew(-10deg); /* Chrome, Safari, Opera */
+        transform: skew(-10deg); /* Standard syntax */
+      }
+      .square_blue {
+        display: grid;
+        place-items: center;
+        min-height: 100px;
+        background: rgb(18, 172, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(18, 172, 255, 1) 0%,
+          rgba(10, 61, 255, 1) 100%
+        );
+        -ms-transform: skew(-10deg); /* IE 9 */
+        -webkit-transform: skew(-10deg); /* Chrome, Safari, Opera */
+        transform: skew(-10deg); /* Standard syntax */
       }
     </style>
     <script type='text/javascript'>
@@ -132,5 +181,14 @@ const { title } = Astro.props
         src='https://px.ads.linkedin.com/collect/?pid=5150082&fmt=gif'
       />
     </noscript>
+    <script
+      is:inline
+      data-astro-rerun
+      src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+    <script is:inline data-astro-rerun>
+      AOS.init({
+        disable: 'mobile',
+      })
+    </script>
   </body>
 </html>

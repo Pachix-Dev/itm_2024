@@ -1,7 +1,6 @@
 ---
 import { changeLanguage, t } from "i18next";
 import Hero from "../../components/home/Hero.astro";
-import Layout from "../../layouts/Layout.astro";
 import Sponsors from "../../components/home/Sponsors.astro";
 import WhyParticipate from "../../components/home/WhyParticipate.astro";
 import OtherEvents from "../../components/home/OtherEvents.astro";
@@ -16,19 +15,24 @@ import BecomeAnExhibitor from "../../components/exhibitor-profile/BecomeAnExhibi
 import Buyers from "../../components/home/Buyers.astro";
 import TestimonialVisitor from "../../components/home/TestimonialVisitor.astro";
 import Score5Years from "../../components/home/Score5years.astro";
+import FreeRegister from "../../components/home/FreeRegister.astro";
+import DigitalTransformation from "../../components/home/DigitalTransformation.astro";
+import LayoutHome from "../../layouts/LayoutHome.astro";
 
 changeLanguage("en");
 ---
 
-<Layout title='ITM 2024 | Home'>
+<LayoutHome title='ITM 2024 | Home'>
   <main>
     <Hero />
+    <FreeRegister />
     <OtherEvents />
     <VideoMain />
     <Score />
     <Sponsors />
     <BecomeAnExhibitor />
-    {/* <Score5Years />*/}
+    <Score5Years />
+    <DigitalTransformation />
     <WhyParticipate />
     <Testimonials />
     <Buyers />
@@ -61,7 +65,7 @@ changeLanguage("en");
           Eder Raúl Rangel Déziga<br />
           Tel. +52 55 7028 3335 ext. 809
         </p>
-        <a class='text-[#E8001E]' href='mailto:eder.rangel@igeco.mx'
+        <a class='text-[#E8001E] text-xl' href='mailto:eder.rangel@igeco.mx'
           >eder.rangel@igeco.mx</a
         >
       </div>
@@ -72,12 +76,12 @@ changeLanguage("en");
           Simone Robering<br />
           Tel. +49 511 89 33128
         </p>
-        <a class='text-[#E8001E]' href='mailto:simone.Robering@messe.de'
+        <a class='text-[#E8001E] text-xl' href='mailto:simone.Robering@messe.de'
           >simone.robering@messe.de</a
         >
       </div>
     </section>
   </main>
-</Layout>
+</LayoutHome>
 
 <style></style>

@@ -76,19 +76,20 @@
         "hours": "hours",
         "minutes": "minutes",
         "seconds": "seconds",
-        "titleITM": "LET'S CREATE THE INDUSTRY OF TOMORROW",
-        "titleCounter": "4 - 6 October 2023",
+        "titleITM": "THE INDUSTRY'S MOST IMPORTANT WEEK IS APPROACHING",
+        "titleCounter": "October 9 - 11",
         "button": "TIC & ITZAMNÁ Awards",
-        "leyend": "ADMISSION cost from octubre 9 onwards $300 MXN",
+        "leyend": "Registration with cost from October 9th $300 MXN",
         "registro_itm_2023": "Register",
-        "dateEvent": "Wednesday 9, Thursday 10 from 11:00 am to 7:00 pm <br /> Friday 11 from 11:00 am to 5:00 pm",
+        "dateEvent": "Wednesday, Thursday from 11:00 am to 7:00 pm <br /> Friday from 11:00 am to 5:00 pm",
         "highlights_ITM2022": "Industrial Transformation Mexico 2023",
         "description": "<strong>Industrial Transformation Mexico</strong> celebrated its sixth edition as the leading trade show for digital transformation in Latin America, successfully reaffirming our conviction to help Mexico move towards the adoption of the digital and technological agenda, as well as the generation of 4.0 knowledge to move towards more efficient, flexible and sustainable production models.<br /><br /> Once again this year, ITM served as a platform to open diverse spaces for collaboration between the leading exponents of <strong>4.0 technologies</strong> and key players in the global industry.",
-        "bullet_1": "Professional buyers",
-        "bullet_2": "Students",
-        "bullet_3": "Millions of pesos of on-site business",
-        "bullet_4": "Millions of pesos in media coverage value",
-        "bullet_5": "Exhibitor floor space",
+        "bullet_1": "EXHIBITORS",
+        "bullet_2": "EXHIBITOR FLOOR",
+        "bullet_3": "INTERNATIONAL HALLS",
+        "bullet_4": "PROFESSIONAL BUYERS",
+        "bullet_5": "mdp OF ON-SITE BUSINESS",
+        "bullet_6": "mdp IN MEDIA COVERAGE VALUE",     
         "galleryhome":"'Highlights ITM 2023",
         "directory": "Directory",
         "title-sponsors":"SPONSORS ITM 2024",
@@ -127,7 +128,15 @@
         "others": "Others",
         "testimonial_visitor": "What do our visitors have to say?",
         "title5years_1": "In only",
-        "title5years_2": "years we have achieved:"
+        "title5years_2": "years we have achieved:",
+        "text5years_1": "billions of pesos",
+        "text5years_1_1": "of on-site 4.0 technology business",
+        "text5years_2": "leading national and international Industry 4.0 exhibitors",
+        "text5years_3": "professional buyers",
+        "text5years_4": "students from STEM profiles",
+        "text5years_5": "millions of pesos in",
+        "text5years_5_1": "media coverage value",
+        "directory_2024": "ITM Digital Directory 2024"
     },
     "aboutPage": {
         "title": "ABOUT US ITM",
@@ -156,7 +165,7 @@
     },
     "profile": {        
         "subtitle": "Become an Exhibitor",
-        "description": "ITM allows you to connect with an exclusive network of professional buyers looking for technologies and solutions, enhancing their businesses, contacts and strategic allies. <br /><br />Since 2019, Industrial Transformation MEXICO, the HANNOVER MESSE of the American continent, is the platform that leads business, promotion and industrial technological advancement in the region, by uniting exhibitors and policy takers. national and international decision, most important from the private, public and academic sectors related to Industry 4.0.",
+        "description": "ITM allows you to connect with an exclusive network of professional buyers looking for technologies and solutions, enhancing their businesses, contacts and strategic allies. <br /><br />Since 2019, <strong>Industrial Transformation MEXICO, the HANNOVER MESSE</strong> of the American continent, is the platform that leads business, promotion and industrial technological advancement in the region, by uniting exhibitors and policy takers. national and international decision, most important from the private, public and academic sectors related to Industry 4.0.",
         "why-exhibit":{
             "title":"WHY EXHIBIT?",
             "description-1":"PROFESSIONAL BUYERS",
@@ -359,7 +368,8 @@
         "name": "Name (required)",
         "position": "Position (required)",
         "company": "Company (required)",
-        "email": "Email (required)"
+        "email": "Email (required)",
+        "comming_soon": "Comming soon..."
     },
     "gallery": {
         "title": "ITM GALLERY",
@@ -650,9 +660,19 @@
     "otherEvents": {
         "title": "Discover everything ITM has to offer",
         "btn": "See more",
+        "program-vip": "VIP Program",
+        "program-vip-description": "Introducing our exclusive VIP conference program, where you can learn from and gain access to key experts from the companies that are leading the Industry 4.0 revolution.",
+        "summit": "SUMMIT CCE",
+        "summit-description": "Get inspired and forge strategic alliances with industry leaders and experts in Mexico and the world.",
+        "itmujeres": "We reaffirm our strong commitment to empowering women in technology with the goal of building an inclusive and diverse industry, creating opportunities for women to lead the digital revolution.",
+        "noche-industriales": "INDUSTRIAL NIGHT",
+        "noche-industriales-description": "More than 1,500 business leaders and decision makers gathered for an exclusive evening of cocktails and networking.",
+        "premiostic": "TIC AND ITZMNÁ AWARDS",
+        "premiostic-description": "Together with Canieti, we recognize the strategies, projects and initiatives that promote digitalization and the implementation of measures aimed at an Industry 4.0 Agenda in Mexico and Latin America.",
         "futuristics-minds": "Be part of ITM's educational chapter and attend competitions, conferences, workshops, prototype exhibitions and interactive tours.",
         "mtech": "Challenge the future and show your talent in the third edition of the robotics competition that the Government of the State of Guanajuato and Italian German Exhibition Company Mexico are organizing for you.",
-        "startup-pitch": "Do you have a technology-based product or service venture? Participate in the fourth edition of the Startup Pitch call, present your project at Industrial Transformation Mexico 2024 and be one of the finalists who have the chance to win a stand in the Startup area at the Hannover Messe in Germany."
+        "startup-pitch": "Do you have a technology-based product or service venture? Participate in the fourth edition of the Startup Pitch call, present your project at Industrial Transformation Mexico 2024 and be one of the finalists who have the chance to win a stand in the Startup area at the Hannover Messe in Germany.",
+        "oktoberfest": "Celebrate with us the traditional German holiday! Enjoy music, food and beer in a festive and fun-filled atmosphere."
     },
     "checkRegister": {
         "title": "Verify your registration",

@@ -6,6 +6,7 @@ import {
   Dropdown,
   DropdownItems,
   DropdownSubmenu,
+  StickyHeader,
 } from 'astro-navbar'
 import i18next, { t } from 'i18next'
 import { LanguageSelector } from 'astro-i18next/components'
@@ -203,16 +204,11 @@ const menu: MenuItem[] = [
       { title: 'roadhows', href: '/roadshows' },
     ],
   },
-  {
-    title: 'cuatro cero',
-    href: 'https://cuatro-cero.mx/',
-    target: '_blank',
-  },
 ]
 ---
 
-<header
-  class='sticky top-0 z-[200] lg:flex justify-between items-center p-5 gap-5 w-full bg-black text-white font-bold'
+<StickyHeader
+  class='sticky top-0 z-[200] lg:flex justify-between items-center p-5 gap-5 w-full text-white font-bold bg-black'
 >
   <Astronav closeOnClick>
     <div class='flex w-full lg:w-auto justify-between items-center'>
@@ -362,6 +358,11 @@ const menu: MenuItem[] = [
             </li>
           ))
         }
+        <li>
+          <a href='https://cuatro-cero.mx/' target='_blank'>
+            <img src='/img/cuatrocerologo.webp' alt='Cuatro Cero' width='150' />
+          </a>
+        </li>
         <li class='flex items-center md:order-2 button-language'>
           {
             i18next.language === 'en' ? (
@@ -387,4 +388,4 @@ const menu: MenuItem[] = [
       </ul>
     </MenuItems>
   </Astronav>
-</header>
+</StickyHeader>

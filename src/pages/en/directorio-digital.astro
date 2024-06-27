@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { changeLanguage, t } from "i18next";
 import LayoutRegister from "../../layouts/LayoutRegister.astro";
 // @ts-ignore
 import { localizePath } from "astro-i18next";
@@ -9,9 +9,14 @@ changeLanguage("en");
 const path = localizePath("/consulta-directorio-digital");
 ---
 
-<LayoutRegister title="ITM | Directorio Digital 2024">
+<LayoutRegister title='ITM | Directorio Digital 2024'>
   <main data-path={path}>
-    <h1 class="text-center text-[#E42128] text-6xl font-extrabold">Directorio Digital</h1>
+    <h1 class='text-center text-[#E42128] text-6xl font-extrabold'>
+      Directorio Digital
+    </h1>
+    <p class='mt-10 uppercase text-center text-5xl font-extrabold'>
+      {t('directory.comming_soon')}
+    </p>
   </main>
 </LayoutRegister>
 <style>
@@ -22,10 +27,12 @@ const path = localizePath("/consulta-directorio-digital");
 </style>
 <script>
   document.addEventListener('DOMContentLoaded', (event) => {
-    const path = document.querySelector('main')?.dataset.path;
-    const validate = JSON.parse(sessionStorage.getItem('validate-register') || 'false');
+    const path = document.querySelector('main')?.dataset.path
+    const validate = JSON.parse(
+      sessionStorage.getItem('validate-register') || 'false'
+    )
     if (!validate) {
-        window.location.href = path || "/consulta-directorio-digital";
+      window.location.href = path || '/consulta-directorio-digital'
     }
-  });
+  })
 </script>

@@ -1,34 +1,71 @@
 ---
-import { t } from 'i18next'
+import i18next, { t } from 'i18next'
+const lang = i18next.language
+const base = i18next.language === 'es' ? '' : `/${lang}`
 
 const otherEvents = [
   {
     title: t('program.title'),
     description: t('program.description'),
-    image: '/img/bg-programa.webp',
-    link: '/programa',
+    image: '/img/bgconferencias.webp',
+    link: `${base}/programa`,
+    target: '_self',
+  },
+  {
+    title: t('otherEvents.program-vip'),
+    description: t('otherEvents.program-vip-description'),
+    image: '/img/bgconferenciasVip.webp',
+    link: `${base}/compra-programa-vip`,
+    target: '_self',
+  },
+  {
+    title: t('otherEvents.summit'),
+    description: t('otherEvents.summit-description'),
+    image: '/img/bgconsejo.webp',
+    link: '',
     target: '_self',
   },
   {
     title: 'Startup Pitch',
     description: t('otherEvents.startup-pitch'),
-    image: '/img/startup-pitch-bg.webp',
-    link: '/startup-pitch',
+    image: '/img/bgstartupitch.webp',
+    link: `${base}/startup-pitch`,
     target: '_self',
   },
   {
-    title: 'Oktober fest',
-    description: t('otherEvents.oktoberfest'),
-    video: '/videos/OKTOBERFEST-2024.mp4',
+    title: 'ITMUJERES',
+    description: t('otherEvents.itmujeres'),
+    image: '/img/bgitmmujeres.webp',
     link: '',
     target: '_self',
   },
   {
-    title: 'M-TECH 2024',
+    title: 'M-TECH',
     description: t('otherEvents.mtech'),
     video: 'https://mtech.igeco.mx/videos/bg_mtech_2024.mp4',
     link: 'https://mtech.igeco.mx/',
     target: '_blank',
+  },
+  {
+    title: t('otherEvents.noche-industriales'),
+    description: t('otherEvents.noche-industriales-description'),
+    image: '/img/bgnocheindustriales.webp',
+    link: '',
+    target: '_blank',
+  },
+  {
+    title: t('otherEvents.premiostic'),
+    description: t('otherEvents.premiostic-description'),
+    image: '/img/bgpremios.webp',
+    link: '',
+    target: '_blank',
+  },
+  {
+    title: 'Oktoberfest',
+    description: t('otherEvents.oktoberfest'),
+    video: '/videos/OKTOBERFEST-2024.mp4',
+    link: '',
+    target: '_self',
   },
 
   {
@@ -43,16 +80,21 @@ const otherEvents = [
 ---
 
 <section class='m-10 xl:mx-32'>
-  <h2
-    class='text-center font-bold pt-5 text-3xl xl:text-4xl pb-5 pl-3 uppercase text-gray-500'
+  <div
+    class='square_red text-center font-bold text-3xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
   >
     {t('otherEvents.title')}
-  </h2>
-  <!-- <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10"> -->
-  <div class='flex justify-center flex-wrap gap-10'>
+  </div>
+  <!-- <div class='flex justify-center flex-wrap gap-10'>  -->
+  <div class='mt-10 grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10'>
     {
-      otherEvents.map((event) => (
-        <article class='relative box-border overflow-hidden rounded-lg shadow transition group bg-black'>
+      otherEvents.map((event, index) => (
+        <article
+          data-aos='fade-up'
+          data-aos-delay={index * 100}
+          data-aos-duration='1000'
+          class='relative box-border overflow-hidden rounded-lg shadow transition group bg-black w-full'
+        >
           {event.image ? (
             <img
               alt={event.title}
@@ -69,16 +111,15 @@ const otherEvents = [
               <source
                 src={event.video}
                 type={`video/${event.video && event.video.split('.').pop()}`}
-              />
+              />{' '}
             </video>
           )}
 
           <div class='relative h-full bg-gradient-to-t from-gray-900/70 to-gray-900/40 pt-32'>
-            <div class='relative h-[266px] p-4 sm:p-6 translate-y-52 md:translate-y-48 xl:translate-y-[180px] transform transition-transform ease-out duration-300 group-hover:translate-y-0'>
-              <h3 class='mt-0.5 text-2xl xl:text-3xl 2xl:text-4xl pb-2 text-white font-bold uppercase'>
+            <div class='relative h-[266px] p-4 sm:p-6 translate-y-52 md:translate-y-48 xl:translate-y-[190px] transform transition-transform ease-out duration-300 group-hover:translate-y-0'>
+              <h3 class='mt-0.5 text-2xl pb-2 text-white font-bold uppercase'>
                 {event.title}
               </h3>
-
               <p class='mt-2 text-sm/relaxed text-white/95'>
                 {event.description}
               </p>
@@ -99,15 +140,3 @@ const otherEvents = [
     }
   </div>
 </section>
-<style>
-  @media screen and (min-width: 768px) {
-    article {
-      width: calc(50% - 2.5rem / 2);
-    }
-  }
-  @media screen and (min-width: 1080px) {
-    article {
-      width: calc(100% / 3 - 5rem / 2);
-    }
-  }
-</style>
