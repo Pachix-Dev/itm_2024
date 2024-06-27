@@ -5,13 +5,13 @@ import '@appnest/masonry-layout'
 
 export default function SimpleGallery(props) {
   const [page, setPage] = useState(0)
-  const masonryRef = useRef(null);
+  const masonryRef = useRef(null)
 
   useEffect(() => {
     if (masonryRef.current) {
-      masonryRef.current.scheduleLayout();
+      masonryRef.current.scheduleLayout()
     }
-  }, [page]);
+  }, [page])
 
   useEffect(() => {
     let lightbox = new PhotoSwipeLightbox({
@@ -63,10 +63,11 @@ export default function SimpleGallery(props) {
           {imageGroups.map((_, index) => (
             <li key={index}>
               <button
-                className={`flex items-center justify-center px-3 h-10 leading-tight border border-gray-300 hover:bg-gray-100 hover:text-gray-700 ${page === index
+                className={`flex items-center justify-center px-3 h-10 leading-tight border border-gray-300 hover:bg-gray-100 hover:text-gray-700 ${
+                  page === index
                     ? 'bg-gray-100 text-gray-700'
                     : 'text-gray-500 bg-white'
-                  }`}
+                }`}
                 onClick={() => setPage(index)}
               >
                 {index + 1}
@@ -110,10 +111,8 @@ export default function SimpleGallery(props) {
   return (
     <div className={props.class}>
       {imageGroups.length > 1 && <Pagination />}
-      <masonry-layout
-        ref={masonryRef}
-        gap='24'
-        class='container mx-auto px-4'
+      <div
+        class='container mx-auto px-4 grid grid-cols-4 gap-5'
         id={props.galleryID}
       >
         {imageGroups[page].map((image, index) => (
@@ -125,10 +124,14 @@ export default function SimpleGallery(props) {
             target='_blank'
             rel='noreferrer'
           >
-            <img src={image.src} alt='' />
+            <img
+              src={image.src}
+              alt={`itm-2024-${index}`}
+              className='object-cover w-full h-52 rounded-lg'
+            />
           </a>
         ))}
-      </masonry-layout>
+      </div>
       {imageGroups.length > 1 && <Pagination />}
     </div>
   )

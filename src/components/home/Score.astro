@@ -16,7 +16,7 @@ import { Numbers } from '../shared/Numbers'
           <span class='text-[#E20B24] font-bold text-5xl'>
             +<Numbers client:only='react' number='200' duration='5' />
           </span>
-          <p class='text-white text-2xl'>{t('home.bullet_1')}</p>
+          <p class='text-white text-2xl font-extrabold'>{t('home.bullet_1')}</p>
         </div>
       </div>
       <div class='relative'>
@@ -28,8 +28,9 @@ import { Numbers } from '../shared/Numbers'
         <div class='info'>
           <span class='text-[#E20B24] font-bold text-5xl'>
             <Numbers client:only='react' number='13700' duration='5' />
+            <span class='text-white' set:html={t('home.m2')} />
           </span>
-          <p class='text-white text-2xl'>{t('home.bullet_2')}</p>
+          <p class='text-white text-2xl font-extrabold'>{t('home.bullet_2')}</p>
         </div>
       </div>
       <div class='relative'>
@@ -42,7 +43,7 @@ import { Numbers } from '../shared/Numbers'
           <span class='text-[#E20B24] font-bold text-5xl'>
             +<Numbers client:only='react' number='5' duration='5' />
           </span>
-          <p class='text-white text-xl'>{t('home.bullet_3')}</p>
+          <p class='text-white text-2xl font-extrabold'>{t('home.bullet_3')}</p>
         </div>
       </div>
       <div class='relative'>
@@ -55,7 +56,7 @@ import { Numbers } from '../shared/Numbers'
           <span class='text-[#E20B24] font-bold text-5xl'>
             <Numbers client:only='react' number='20000' duration='5' />
           </span>
-          <p class='text-white text-xl'>{t('home.bullet_4')}</p>
+          <p class='text-white text-xl font-extrabold'>{t('home.bullet_4')}</p>
         </div>
       </div>
       <div class='relative'>
@@ -65,10 +66,11 @@ import { Numbers } from '../shared/Numbers'
           class='w-full h-full object-cover absolute z-[-1]'
         />
         <div class='info'>
-          <span class='text-[#E20B24] font-bold text-5xl'>
+          <span class='text-[#E20B24] font-bold text-4xl'>
             + <Numbers client:only='react' number='1370' duration='5' />
+            <span class='text-white'>MDP</span>
           </span>
-          <p class='text-white text-xl'>{t('home.bullet_5')}</p>
+          <p class='text-white text-2xl font-extrabold'>{t('home.bullet_5')}</p>
         </div>
       </div>
       <div class='relative'>
@@ -78,72 +80,75 @@ import { Numbers } from '../shared/Numbers'
           class='w-full h-full object-cover absolute z-[-1]'
         />
         <div class='info'>
-          <span class='text-[#E20B24] font-bold text-5xl'>
+          <span class='text-[#E20B24] font-bold text-4xl'>
             <Numbers client:only='react' number='260' duration='5' />
+            <span class='text-white'>MDP</span>
           </span>
-          <p class='text-white text-xl'>{t('home.bullet_6')}</p>
+          <p class='text-white text-xl font-extrabold'>{t('home.bullet_6')}</p>
         </div>
       </div>
     </div>
   </div>
-  <style>
-    .home-activities-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      /* Allow items to wrap on smaller screens */
-      position: relative;
-      z-index: 1;
-      height: auto;
-      /* Adjust to allow content to determine height */
-    }
+</section>
+<style>
+  .home-activities-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
+    position: relative;
+    z-index: 1;
+    height: auto;
+    /* Adjust to allow content to determine height */
+  }
 
-    .home-activities-wrapper div {
-      width: 0;
-      height: 500px;
-      flex-grow: 1;
-      transition: 0.5s ease;
-      box-sizing: border-box;
-      /* Include padding and border in the width */
-    }
+  .home-activities-wrapper div {
+    width: 0;
+    height: 500px;
+    flex-grow: 1;
+    transition: 0.5s ease;
+    box-sizing: border-box;
+    /* Include padding and border in the width */
+  }
 
-    .home-activities-wrapper > div:hover {
-      cursor: crosshair;
-      width: 300px;
-      opacity: 1 !important;
+  .home-activities-wrapper > div:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1 !important;
+  }
+  .home-activities-wrapper div:hover ul {
+    display: block;
+  }
+
+  .home-activities-wrapper div:hover video {
+    opacity: 1 !important;
+  }
+
+  .home-activities-wrapper .info {
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    background: linear-gradient(to bottom, transparent, black);
+    height: 100%;
+    padding: 10px;
+    transition: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .home-activities-wrapper > div:hover .info {
+    background: linear-gradient(to bottom, transparent 80%, black);
+  }
+  @media (max-width: 1024px) {
+    .home-activities-wrapper .info {
+      top: 0;
+      height: 100%;
     }
-    .home-activities-wrapper div:hover ul {
+    .home-activities-wrapper ul {
       display: block;
     }
-
-    .home-activities-wrapper div:hover video {
-      opacity: 1 !important;
-    }
-
-    .home-activities-wrapper .info {
+    .home-activities-wrapper div {
       width: 100%;
-      color: white;
-      font-weight: bolder;
-      background: linear-gradient(to bottom, transparent, black);
-      height: 100%;
-      padding: 10px;
-      transition: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
+      height: 500px;
     }
-
-    @media (max-width: 1024px) {
-      .home-activities-wrapper .info {
-        top: 0;
-        height: 100%;
-      }
-      .home-activities-wrapper ul {
-        display: block;
-      }
-      .home-activities-wrapper div {
-        width: 100%;
-        height: 500px;
-      }
-    }
-  </style>
-</section>
+  }
+</style>

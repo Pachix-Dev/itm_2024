@@ -1,22 +1,158 @@
+---
+import i18next, { t } from 'i18next'
+const lang = i18next.language
+const base = i18next.language === 'es' ? '' : `/${lang}`
+---
+
 <section class='bg-black py-10'>
   <div class='container mx-auto px-4'>
     <img
-      src='/img/transformacionDigital1.webp'
+      src='/img/titleIndustry.webp'
       alt='Lidera la transformación digital de la industria 4.0'
     />
   </div>
-  <img
-    src='/img/transformacionDigital2.webp'
-    alt='Lidera la transformación digital de la industria 4.0'
-  />
-  <div class='grid place-content-end px-4'>
-    <img
-      src='/img/transformacionDigital3.webp'
-      alt='Lidera la transformación digital de la industria 4.0'
-    />
-    <img
-      src='/img/transformacionDigital4.webp'
-      alt='Lidera la transformación digital de la industria 4.0'
-    />
+  <p class='text-white font-extrabold text-6xl text-center'>
+    {t('home.segmentos_title')}
+  </p>
+  <div class='mt-10 home-activities text-center'>
+    <div class='home-activities-wrapper'>
+      <div class='relative'>
+        <a href=`${base}/logistica-inteligente
+        `>
+          <img
+            src='/img/bg_segmentos_1.webp'
+            alt='Categoria 1'
+            class='w-full h-full object-cover absolute z-[-1]'
+          />
+          <div class='info'>
+            <p class='text-white text-2xl'>{t('home.segmentos_1')}</p>
+          </div>
+        </a>
+      </div>
+      <div class='relative'>
+        <img
+          src='/img/bg_segmentos_2.webp'
+          alt='Categoria 1'
+          class='w-full h-full object-cover absolute z-[-1]'
+        />
+        <div class='info'>
+          <p class='text-white text-2xl'>{t('home.segmentos_2')}</p>
+        </div>
+      </div>
+      <div class='relative'>
+        <img
+          src='/img/bg_segmentos_3.webp'
+          alt='Categoria 1'
+          class='w-full h-full object-cover absolute z-[-1]'
+        />
+        <div class='info'>
+          <p class='text-white text-xl'>{t('home.segmentos_3')}</p>
+        </div>
+      </div>
+      <div class='relative'>
+        <a href=`${base}/automatizacion-robotizacion
+        `>
+          <img
+            src='/img/bg_segmentos_4.webp'
+            alt='Categoria 1'
+            class='w-full h-full object-cover absolute z-[-1]'
+          />
+          <div class='info'>
+            <p class='text-white text-xl'>{t('home.segmentos_4')}</p>
+          </div>
+        </a>
+      </div>
+      <div class='relative'>
+        <img
+          src='/img/bg_segmentos_5.webp'
+          alt='Categoria 1'
+          class='w-full h-full object-cover absolute z-[-1]'
+        />
+        <div class='info'>
+          <p class='text-white text-xl'>{t('home.segmentos_5')}</p>
+        </div>
+      </div>
+      <div class='relative'>
+        <img
+          src='/img/bg_segmentos_6.webp'
+          alt='Categoria 1'
+          class='w-full h-full object-cover absolute z-[-1]'
+        />
+        <div class='info'>
+          <p class='text-white text-xl'>{t('home.segmentos_6')}</p>
+        </div>
+      </div>
+      <div class='relative'>
+        <img
+          src='/img/bg_segmentos_7.webp'
+          alt='Categoria 1'
+          class='w-full h-full object-cover absolute z-[-1]'
+        />
+        <div class='info'>
+          <p class='text-white text-xl'>{t('home.segmentos_7')}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+<style>
+  .home-activities-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+    height: auto;
+  }
+
+  .home-activities-wrapper div {
+    width: 0;
+    height: 500px;
+    flex-grow: 1;
+    transition: 0.5s ease;
+    box-sizing: border-box;
+  }
+
+  .home-activities-wrapper > div:hover {
+    cursor: pointer;
+    width: 300px;
+    opacity: 1 !important;
+  }
+  .home-activities-wrapper div:hover ul {
+    display: block;
+  }
+
+  .home-activities-wrapper div:hover video {
+    opacity: 1 !important;
+  }
+
+  .home-activities-wrapper > div:hover .info {
+    background: linear-gradient(to bottom, transparent 80%, black);
+  }
+
+  .home-activities-wrapper .info {
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    background: linear-gradient(to bottom, transparent, black);
+    height: 100%;
+    padding: 10px;
+    transition: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  @media (max-width: 1024px) {
+    .home-activities-wrapper .info {
+      top: 0;
+      height: 100%;
+    }
+    .home-activities-wrapper ul {
+      display: block;
+    }
+    .home-activities-wrapper div {
+      width: 100%;
+      height: 500px;
+    }
+  }
+</style>

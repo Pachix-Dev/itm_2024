@@ -1,18 +1,18 @@
 ---
-import { changeLanguage, t } from 'i18next'
+import { changeLanguage, t } from "i18next";
 // @ts-ignore
-import { localizePath } from 'astro-i18next'
-import LayoutRegister from '../layouts/LayoutRegister.astro'
-import { CheckRegister } from '../components/shared/CheckRegister.jsx'
+import { localizePath } from "astro-i18next";
+import LayoutRegister from "../layouts/LayoutRegister.astro";
+import { CheckRegister } from "../components/shared/CheckRegister.jsx";
 
-changeLanguage('es')
+changeLanguage("es");
 
-const check_register = t('checkRegister', { returnObjects: true })
+const check_register = t("checkRegister", { returnObjects: true });
 const translations = {
-  ...check_register,
-  programUrl: localizePath('/directorio-digital'),
-  registerUrl: localizePath('/registro'),
-}
+    ...check_register,
+    programUrl: localizePath("/directorio-digital"),
+    registerUrl: localizePath("/registro"),
+};
 ---
 
 <LayoutRegister title='ITM | Programa 2024'>

@@ -152,20 +152,21 @@ const menu: MenuItem[] = [
         items: [
           {
             title: t('menu.itm2020_1'),
-            href:
-              i18next.language === 'en'
-                ? '/files/Aftershow-report-ITM-2020.pdf'
-                : '/files/Resultados-ITM-virtual-2020.pdf',
+            href: '/files/ESP-DirectorioDigital-ITM-2020.pdf',
+
             target: '_blank',
           },
           {
             title: t('menu.itm2020_2'),
-            href: '/files/ESP-DirectorioDigital-ITM-2020.pdf',
+            href: '/files/ESP-Passport-ITM-2020.pdf',
             target: '_blank',
           },
           {
             title: t('menu.itm2020_3'),
-            href: '/files/ESP-Passport-ITM-2020.pdf',
+            href:
+              i18next.language === 'en'
+                ? '/files/Aftershow-report-ITM-2020.pdf'
+                : '/files/Resultados-ITM-virtual-2020.pdf',
             target: '_blank',
           },
         ],
@@ -175,20 +176,22 @@ const menu: MenuItem[] = [
         items: [
           {
             title: t('menu.itm2019_1'),
-            href:
-              i18next.language === 'en'
-                ? '/files/After-Show-report-bis-carta-2019.pdf'
-                : '/files/After-Show-Report-Esp-2019.pdf',
+            href: '/files/ESP-DirectorioDigital-ITM-2019.pdf',
+
             target: '_blank',
           },
           {
             title: t('menu.itm2019_2'),
-            href: '/files/ESP-DirectorioDigital-ITM-2019.pdf',
+            href: '/files/ESP-Passport-ITM-2019.pdf',
             target: '_blank',
           },
           {
             title: t('menu.itm2019_3'),
-            href: '/files/ESP-Passport-ITM-2019.pdf',
+
+            href:
+              i18next.language === 'en'
+                ? '/files/After-Show-report-bis-carta-2019.pdf'
+                : '/files/After-Show-Report-Esp-2019.pdf',
             target: '_blank',
           },
         ],
@@ -208,7 +211,7 @@ const menu: MenuItem[] = [
 ---
 
 <StickyHeader
-  class='sticky top-0 z-[200] lg:flex justify-between items-center p-5 gap-5 w-full text-white font-bold bg-black'
+  class='sticky top-0 z-[200] lg:flex justify-between items-center p-5 gap-5 w-full text-white font-bold menuSecondary'
 >
   <Astronav closeOnClick>
     <div class='flex w-full lg:w-auto justify-between items-center'>
@@ -389,3 +392,8 @@ const menu: MenuItem[] = [
     </MenuItems>
   </Astronav>
 </StickyHeader>
+<style>
+  .menuSecondary {
+    background-color: black !important;
+  }
+</style>

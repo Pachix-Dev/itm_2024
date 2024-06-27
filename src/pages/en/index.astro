@@ -29,26 +29,32 @@ changeLanguage("en");
     <OtherEvents />
     <VideoMain />
     <Score />
+    <Score5Years />
     <Sponsors />
     <BecomeAnExhibitor />
-    <Score5Years />
-    <DigitalTransformation />
     <WhyParticipate />
+    <DigitalTransformation />
     <Testimonials />
     <Buyers />
     <TestimonialVisitor />
-    <p class='mt-10 text-center text-[#E8001E] font-bold text-3xl mb-5'>
+    <div
+      class='mt-10 square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
+    >
       {t('home.strategic_allies')}
-    </p>
+    </div>
     <Marquee partners={alliesStrategic} isLeftToRight={true} />
-    <p class='mt-10 text-center text-[#E8001E] font-bold text-3xl mb-5'>
+    <div
+      class='mt-10 square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
+    >
       {t('home.platinum_media')}
-    </p>
+    </div>
     <Marquee partners={media_1} isLeftToRight={true} />
     <Marquee partners={media_2} isLeftToRight={false} />
-    <p class='mt-10 text-center text-[#E8001E] font-bold text-3xl'>
-      Highlights ITM 2023
-    </p>
+    <div
+      class='mt-10 square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
+    >
+      {t('home.bestitm')}
+    </div>
     <Gallery
       images={home}
       galleryID='gallery'

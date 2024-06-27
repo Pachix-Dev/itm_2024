@@ -1,0 +1,123 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { t, changeLanguage } from "i18next";
+
+changeLanguage("en");
+---
+
+<Layout title='ITM  | Gracias por contactarnos'>
+  <section class='bg-black py-10'>
+    <div class='container px-4 py-10'>
+      <p class='text-white text-5xl ms-10'>
+        {t('automatizacionRobotizacion.text_1')}
+      </p>
+      <div
+        class='mt-2 square_red text-center font-bold text-2xl xl:text-6xl py-5 px-10 uppercase text-white w-fit ms-5'
+      >
+        {t('automatizacionRobotizacion.text_2')}
+      </div>
+      <p
+        class='mt-2 text-white text-4xl ms-10'
+        set:html={t('automatizacionRobotizacion.text_3')}
+      />
+    </div>
+    <div class='mt-10 flex items-center'>
+      <span class='w-16'>
+        <svg
+          viewBox='0 0 20 10'
+          xmlns='http://www.w3.org/2000/svg'
+          class='w-fit'
+        >
+          <line x1='0' y1='5' x2='20' y2='5' stroke='red'></line>
+        </svg>
+      </span>
+      <p
+        class='text-white text-4xl ms-10'
+        set:html={t('automatizacionRobotizacion.text_4')}
+      />
+    </div>
+    <div class='flex mt-10'>
+      <div class='w-60 relative'>
+        <div class='bg_hero w-full h-full absolute top-0 z-20'></div>
+        <video
+          src='/videos/bg_segmentos.mp4'
+          autoplay
+          loop
+          muted
+          class='object-cover w-full h-full'></video>
+      </div>
+      <div class='px-16 md:px-28 mx-auto'>
+        <div class='grid md:flex gap-5 items-center'>
+          <p class='text-white text-4xl font-extrabold text-right'>
+            {t('automatizacionRobotizacion.text_5')}
+          </p>
+          <span class='text-[#DD0000] text-9xl font-extrabold'>10</span>
+          <div class='text-white text-4xl font-extrabold'>
+            {t('automatizacionRobotizacion.text_6')}
+            <p class='text-sm text-right text-white'>*(2022, IFR)</p>
+          </div>
+        </div>
+        <div class='mt-5 grid md:flex gap-5 items-center'>
+          <span class='text-[#DD0000] text-9xl font-extrabold'>#1</span>
+          <p class='text-white text-4xl font-extrabold'>
+            {t('automatizacionRobotizacion.text_7')}
+          </p>
+          <span class='text-[#DD0000] text-9xl font-extrabold'>#2</span>
+          <div class='text-white'>
+            <span class='font-extrabold text-5xl'
+              >{t('automatizacionRobotizacion.text_8')}
+            </span><br />
+            <span class='text-3xl'
+              >{t('automatizacionRobotizacion.text_9')}
+            </span>
+            <p class='text-sm text-right text-white'>*(2022, IFR)</p>
+          </div>
+        </div>
+        <div class='mt-5 grid md:flex gap-5 items-center'>
+          <span class='text-[#DD0000] text-9xl font-extrabold'>
+            5<sup><u class='text-2xl'>o</u></sup>
+          </span>
+          <div class='text-white'>
+            <p class='text-white text-4xl font-extrabold'>
+              {t('automatizacionRobotizacion.text_10')}
+            </p>
+            <p class='text-white text-4xl'>
+              {t('automatizacionRobotizacion.text_11')}
+            </p>
+            <p class='text-sm text-right text-white'>(Data México)</p>
+          </div>
+          <img src='/img/planetaAvion.webp' alt='México' width='200' />
+        </div>
+        <div class='mt-5 grid md:flex gap-5 items-center'>
+          <div class='text-white'>
+            <p class='text-white text-4xl'>
+              {t('automatizacionRobotizacion.text_12')}
+            </p>
+            <p class='text-white text-4xl font-extrabold text-right'>
+              {t('automatizacionRobotizacion.text_13')}
+            </p>
+            <p class='text-sm text-right text-white'>(Mordor Intelligence)</p>
+          </div>
+          <span class='text-[#DD0000] text-9xl font-extrabold'> 9% </span>
+        </div>
+      </div>
+    </div>
+    <div class='container mx-auto px-4'>
+      <img
+        src='/img/transformacionDigital4.webp'
+        alt='Lidera la transformación digital de la industria 4.0'
+      />
+      {
+        /* <p class='mt-10 text-white text-4xl text-center font-extrabold'>
+        {t('automatizacionRobotizacion.text_14')}*/
+      }
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .bg_hero {
+    background-image: linear-gradient(225deg, #0040ff80, #0040ff40),
+      linear-gradient(to bottom, #0000, #0000);
+  }
+</style>

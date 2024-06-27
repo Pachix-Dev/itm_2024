@@ -6,7 +6,7 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
 const otherEvents = [
   {
     title: t('program.title'),
-    description: t('program.description'),
+    description: t('otherEvents.conferences'),
     image: '/img/bgconferencias.webp',
     link: `${base}/programa`,
     target: '_self',
@@ -22,8 +22,8 @@ const otherEvents = [
     title: t('otherEvents.summit'),
     description: t('otherEvents.summit-description'),
     image: '/img/bgconsejo.webp',
-    link: '',
-    target: '_self',
+    link: '/files/PROGRAMA-CCE-ITM-2024.pdf',
+    target: '_blank',
   },
   {
     title: 'Startup Pitch',
@@ -128,10 +128,19 @@ const otherEvents = [
                 {...(event.target && { target: event.target })}
                 class='2xl:text-base group mt-4 inline-flex items-center gap-1 text-sm font-medium text-white hover:text-white hover:bg-black rounded-md p-2 transition-all'
               >
-                {t('otherEvents.btn')}
-                <span aria-hidden='true' class='block ms-0.5 rtl:rotate-180'>
-                  &rarr;
-                </span>
+                {event.link === '' ? (
+                  t('directory.comming_soon')
+                ) : (
+                  <>
+                    {t('otherEvents.btn')}
+                    <span
+                      aria-hidden='true'
+                      class='block ms-0.5 rtl:rotate-180'
+                    >
+                      &rarr;
+                    </span>
+                  </>
+                )}
               </a>
             </div>
           </div>
