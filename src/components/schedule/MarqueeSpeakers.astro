@@ -29,7 +29,7 @@ const { speakers, key } = Astro.props as Props;
                 <div class="marquee-content shrink-0 flex justify-start items-center min-w-full">
                     {speakers.map((speaker) => (
                         <a
-                            href={`ponentes/${formatString(speaker.name)}`}
+                            href={`/ponentes/${formatString(speaker.name)}`}
                             class="mx-2 relative inline-flex items-center justify-center p-0.5 overflow-hidden rounded-lg group bg-gradient-to-br from-[#2F4858] to-[#354E79] focus:outline-none h-full"
                         >
                             <div class="flex relative px-3 py-2.5 transition-all ease-in duration-75 bg-gray-900 rounded-md group-hover:bg-opacity-0 h-full">
