@@ -1,0 +1,40 @@
+---
+import { Numbers } from '../shared/Numbers'
+import { t } from 'i18next'
+---
+
+<section class='py-10 grid place-items-center bg-black'>
+  <div
+    class='container px-4 mx-auto grid place-items-center md:flex justify-center w-full md:w-8/12'
+  >
+    <img src='/img/phoneITM.webp' alt='AMOF Redes' class='w-96 relative z-40' />
+
+    <div class='text-center uppercase'>
+      <p
+        class='square_blue text-white font-bold text-4xl py-4 px-20 mt-20 ms-[-48px] uppercase'
+      >
+        {t('home.socialmedia_title')}
+      </p>
+      <div class='mt-10'>
+        <span class='text-[#E20B24] font-extrabold text-4xl'>
+          + <Numbers client:only='react' number='28500' duration='5' />
+        </span>
+      </div>
+      <p class='text-white font-extrabold text-4xl'>
+        {t('home.socialmedia_text_1')}
+      </p>
+      <p class='text-white text-xl'>{t('home.socialmedia_text_2')}</p>
+      <span class='text-[#E20B24] font-extrabold text-4xl'>
+        + <Numbers client:only='react' number='4000000' duration='5' />
+      </span>
+      <p class='text-white font-extrabold text-4xl'>
+        {t('home.socialmedia_text_3')}
+      </p>
+      <p class='text-white text-xl'>{t('home.socialmedia_text_4')}</p>
+      <p class='mt-10 text-[#E20B24] font-extrabold text-4xl'>
+        {t('home.socialmedia_text_5')}
+      </p>
+      <p class='text-white text-xl'>{t('home.socialmedia_text_6')}</p>
+    </div>
+  </div>
+</section>
