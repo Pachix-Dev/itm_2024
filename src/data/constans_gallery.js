@@ -8,6 +8,9 @@ const home = [
     { src: '/img/gallery/home/galeriaITM5.webp', width: 1024, height: 683 },
     { src: '/img/gallery/home/galeriaITM6.webp', width: 1024, height: 683 },
     { src: '/img/gallery/home/galeriaITM10.webp', width: 1024, height: 683 },
+    { src: '/img/gallery/2023/conferencias1.jpg', width: 1024, height: 683 },
+    { src: '/img/gallery/2023/startuppitch1.jpg', width: 1024, height: 683 },
+    { src: '/img/gallery/2023/octoker1.jpg', width: 1024, height: 683 },
   ]
 
 export {home}
