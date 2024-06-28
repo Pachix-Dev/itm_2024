@@ -1,9 +1,14 @@
 ---
 import { t } from 'i18next'
+import { Numbers } from '../shared/Numbers'
 ---
 
-<section class='bg-black py-10'>
-  <div class='relative container ms-auto w-full h-40'>
+<section class='bg-black py-20'>
+  <div
+    data-aos='fade-up'
+    data-aos-duration='1000'
+    class='relative container ms-auto w-full h-40'
+  >
     <div
       class='absolute top-0 right-3 w-fit square_blue md:-skew-x-12 z-10 font-extrabold px-6 md:px-14 py-3 text-white'
     >
@@ -22,11 +27,20 @@ import { t } from 'i18next'
     </div>
   </div>
   <div class='relative container mx-auto px-4 text-white overflow-hidden'>
-    <img src='/img/franjaRoja.webp' class='absolute top-0 z-0' />
+    <img
+      data-aos='fade-right'
+      data-aos-duration='1000'
+      src='/img/franjaRoja.webp'
+      class='absolute top-0 z-0'
+    />
     <div
       class='grid md:grid-cols-2 gap-10 md:place-items-center relative z-10 text-center lg:text-left'
     >
-      <div class='grid place-items-center lg:flex gap-2 md:gap-6'>
+      <div
+        data-aos='fade-right'
+        data-aos-duration='1000'
+        class='grid place-items-center lg:flex gap-2 md:gap-6'
+      >
         <span class='text-6xl lg:text-9xl font-extrabold'>2</span>
         <p class='text-xl md:text-5xl font-extrabold'>
           {t('home.text5years_1')}<br />
@@ -35,28 +49,44 @@ import { t } from 'i18next'
           </span>
         </p>
       </div>
-      <img src='/img/numeralia1.webp' />
-      <div class='grid place-items-center lg:flex gap-6'>
-        <span class='text-6xl lg:text-7xl font-extrabold'>800</span>
+      <img
+        data-aos='fade-left'
+        data-aos-duration='1000'
+        src='/img/numeralia1.webp'
+      />
+      <div
+        data-aos='fade-right'
+        data-aos-duration='1000'
+        class='grid place-items-center lg:flex gap-6'
+      >
+        <span class='text-6xl lg:text-7xl font-extrabold'>
+          <Numbers client:only number='800' duration='5' />
+        </span>
         <p class='text-xl font-extrabold' set:html={t('home.text5years_2')} />
       </div>
       <img src='/img/numeralia2.webp' />
       <div class='grid place-items-center lg:flex gap-6'>
-        <span class='text-6xl lg:text-7xl font-extrabold'>+100,000</span>
+        <span class='text-6xl lg:text-7xl font-extrabold'
+          >+<Numbers client:only number='100000' duration='5' />
+        </span>
         <p class='text-xl font-extrabold'>
           {t('home.text5years_3')}
         </p>
       </div>
       <img src='/img/numeralia3.webp' />
       <div class='grid place-items-center lg:flex gap-6'>
-        <span class='text-6xl lg:text-7xl font-extrabold'>+37,000</span>
+        <span class='text-6xl lg:text-7xl font-extrabold'
+          >+<Numbers client:only number='37000' duration='5' /></span
+        >
         <p class='text-xl font-extrabold'>
           {t('home.text5years_4')}
         </p>
       </div>
       <img src='/img/numeralia4.webp' />
       <div class='grid place-items-center lg:flex gap-6'>
-        <span class='text-6xl lg:text-7xl font-extrabold'>+670,000</span>
+        <span class='text-6xl lg:text-7xl font-extrabold'
+          >+<Numbers client:only number='670000' duration='5' /></span
+        >
         <p class='text-5xl lg:text-4xl font-extrabold'>
           {t('home.text5years_5')}
           <span class='text-xl font-bold'>

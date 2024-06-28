@@ -112,7 +112,7 @@ export default function SimpleGallery(props) {
     <div className={props.class}>
       {imageGroups.length > 1 && <Pagination />}
       <div
-        class='container mx-auto px-4 grid grid-cols-4 gap-5'
+        className='container mx-auto px-4 grid grid-cols-4 gap-5'
         id={props.galleryID}
       >
         {imageGroups[page].map((image, index) => (

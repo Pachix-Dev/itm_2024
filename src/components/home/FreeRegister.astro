@@ -74,7 +74,7 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
     </div>
   </div>
   <div
-    class='mt-20 container mx-auto py-5 px-4 grid md:grid-cols-3 gap-10 backdrop-blur-sm bg-white/30 rounded-xl'
+    class='mt-20 container mx-auto py-5 px-4 grid md:grid-cols-4 gap-10 backdrop-blur-sm bg-white/30 rounded-xl'
   >
     <a
       href=`${base}/consulta-directorio-digital`
@@ -122,6 +122,27 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
       class='text-white bg-black hover:bg-white hover:text-black font-bold flex justify-center gap-5 py-5 rounded-xl'
     >
       {t('menu.visitors_3')}
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        fill='none'
+        viewBox='0 0 24 24'
+        stroke-width='1.5'
+        stroke='currentColor'
+        class='size-6'
+      >
+        <path
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          d='M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244'
+        ></path>
+      </svg>
+    </a>
+    <a
+      href='/files/United-Meetings-Agreement-2023-ENG.pdf'
+      target='_blank'
+      class='text-white bg-black hover:bg-white hover:text-black font-bold flex justify-center gap-5 py-5 rounded-xl'
+    >
+      {t('menu.visitors_4')}
       <svg
         xmlns='http://www.w3.org/2000/svg'
         fill='none'
