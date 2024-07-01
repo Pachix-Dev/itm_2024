@@ -731,5 +731,9 @@
         "text_27": "Farmacéutica y Dispositivos médicos",
         "text_28": "Electrónica",
         "text_29": "Alimentos y bebidas"
-    }
+    },
+    "nocheIndustriales":{
+        "title": "NOCHE DE INDUSTRIALES",
+        "description": "Celebramos la quinta edición de la Noche de Industriales, donde reunimos a más de mil quinientos líderes empresariales a nivel mundial. Durante el evento, realizamos junto a Canieti la entrega de los Premios a la Industria TIC e Innovación Itzamná."       
+    }    
 }
