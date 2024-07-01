@@ -736,6 +736,10 @@
     "nocheIndustriales": {
         "title": "Industrial Night",
         "description": "We celebrated the fifth edition of the Industrials Night, where we brought together more than 1,500 business leaders from around the world. During the event, together with Canieti, we presented the Itzamná ICT Industry and Innovation Awards"      
-    }
+    },
+    "itmujeres": {
+        "title": "ITMujeres",
+        "description": "True to our origin, we reaffirm our commitment to promote and empower the professional development of women in Industry 4.0, with the aim of building an inclusive and diverse sector."
+    }  
     
 }

@@ -735,5 +735,9 @@
     "nocheIndustriales":{
         "title": "NOCHE DE INDUSTRIALES",
         "description": "Celebramos la quinta edición de la Noche de Industriales, donde reunimos a más de mil quinientos líderes empresariales a nivel mundial. Durante el evento, realizamos junto a Canieti la entrega de los Premios a la Industria TIC e Innovación Itzamná."       
-    }    
+    },
+    "itmujeres": {
+        "title": "ITMujeres",
+        "description": "Fieles a nuestro origen, refrendamos nuestro compromiso en promover y empoderar el desarrollo profesional de las mujeres en la Industria 4.0, con el objetivo de construir un sector inclusivo y diverso."
+    }   
 }
