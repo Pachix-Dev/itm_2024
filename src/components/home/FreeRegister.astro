@@ -35,6 +35,9 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
           {t('home.titleCounter')}
         </div>
         <p class='text-white text-xl' set:html={t('home.dateEvent')} />
+        <p class='mt-5 text-white font-bold text-xl'>
+          * {t('home.student')}
+        </p>
       </div>
 
       {
@@ -70,7 +73,7 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
           >{t('register.title')}</span
         >
       </a>
-      <p class='mt-5 text-white text-xl'>* {t('home.leyend')}</p>
+      <p class='mt-5 text-white text-xl font-extrabold'>* {t('home.leyend')}</p>
     </div>
   </div>
   <div
