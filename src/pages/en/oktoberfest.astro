@@ -1,0 +1,33 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { changeLanguage, t } from "i18next";
+import Gallery from "../../components/shared/Gallery.jsx";
+import { octoker2023 } from "../../data/constans_gallery_by_year.js";
+
+changeLanguage("en");
+---
+
+<Layout title='ITM | Oktoberfest León'>
+  <section class='bg-black'>
+    <video src='/videos/OKTOBERFEST_BG.mp4' muted autoplay loop></video>
+    <div class='container mx-auto py-10'>
+      <div
+        class='square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit'
+      >
+        {t('oktoberfest.title')}
+      </div>
+      <p class='text-white font-bold mt-5'>
+        {t('oktoberfest.description')}
+      </p>
+      <lite-youtube
+        videoid='AYcSRf5PhRc'
+        posterquality='maxresdefault'
+        class='shadow-2xl shadow-white/10 rounded-lg md:w-5/6 md:h-96 mt-5 mx-auto'
+      >
+      </lite-youtube>
+    </div>
+  </section>
+</Layout>
+<script>
+  import '@justinribeiro/lite-youtube'
+</script>
