@@ -1,24 +1,80 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import { changeLanguage, t } from 'i18next'
+import i18next, { changeLanguage, t } from 'i18next'
 import Gallery from '../components/shared/Gallery.jsx'
 import { octoker2023 } from '../data/constans_gallery_by_year.js'
-
+import LayoutHome from '../layouts/LayoutHome.astro'
+const lang = i18next.language
+const base = i18next.language === 'es' ? '' : `/${lang}`
 changeLanguage('es')
 ---
 
-<Layout title='ITM | Oktoberfest León'>
-  <section class='bg-black'>
-    <video src='/videos/OKTOBERFEST_BG.mp4' muted autoplay loop></video>
-    <div class='container mx-auto py-10'>
-      <div
-        class='square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit'
-      >
-        {t('oktoberfest.title')}
+<LayoutHome title='ITM | Oktoberfest León'>
+  <section
+    class='relative h-full py-32 md:py-16 md:h-screen w-full grid place-items-center'
+  >
+    <div class='container mx-auto px-4 relative z-40'>
+      <div class='grid md:grid-cols-2 gap-6 place-items-center'>
+        <div class='font-[germania-one] text-white text-center'>
+          <p class='font-extrabold text-9xl'>09-11</p>
+          <p class='font-extrabold text-6xl uppercase'>
+            {t('oktoberfest.octubre')} 2024
+          </p>
+          <p class='font-extrabold text-2xl'>
+            {t('oktoberfest.hours')}
+          </p>
+          <p class='text-2xl'>Instalaciones de la feria</p>
+          <p class='text-2xl'>Léon, Guanajuato</p>
+          <p class='mt-5 mb-5'>{t('otherEvents.oktoberfest')}</p>
+          <a
+            href=`${base}/oktoberfest-reservaciones`
+            target='_blank'
+            class='text-white text-2xl font-bold bg-black py-2 px-5 rounded-lg mt-5 hover:bg-white hover:text-black transition duration-300 ease-in-out delay-150'
+          >
+            {t('oktoberfest.reservation')} 🍻
+          </a>
+        </div>
+        <img
+          src='/img/OKTOBERFESTLOGO2.webp'
+          alt='Logo Oktoberfest'
+          class='drop-shadow-2xl'
+        />
       </div>
-      <p class='text-white font-bold mt-5'>
-        {t('oktoberfest.description')}
-      </p>
+    </div>
+    <div class='bg_hero w-full h-full absolute top-0 z-20'></div>
+    <video
+      src='/videos/OKTOBERFEST_BG.mp4'
+      autoplay
+      muted
+      loop
+      class='absolute top-0 w-full h-full object-cover z-10'></video>
+    <svg
+      width='100%'
+      id='svg'
+      viewBox='0 0 1440 250'
+      xmlns='http://www.w3.org/2000/svg'
+      class='absolute bottom-0 z-30 transition duration-300 ease-in-out delay-150'
+      ><path
+        d='M 0,400 L 0,150 C 84.14358974358973,144.38717948717948 168.28717948717946,138.774358974359 250,155 C 331.71282051282054,171.225641025641 410.99487179487187,209.28974358974358 496,198 C 581.0051282051281,186.71025641025642 671.7333333333333,126.06666666666666 755,97 C 838.2666666666667,67.93333333333334 914.071794871795,70.44358974358975 982,92 C 1049.928205128205,113.55641025641025 1109.979487179487,154.15897435897435 1185,167 C 1260.020512820513,179.84102564102565 1350.0102564102565,164.92051282051284 1440,150 L 1440,400 L 0,400 Z'
+        stroke='none'
+        stroke-width='0'
+        fill='#ffffff'
+        fill-opacity='1'
+        class='transition-all duration-300 ease-in-out delay-150 path-0'
+      ></path></svg
+    >
+  </section>
+  <section class='container mx-auto py-10 px-4'>
+    <div class='grid md:grid-cols-2 place-items-center'>
+      <div>
+        <div
+          class='square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit'
+        >
+          {t('oktoberfest.title')}
+        </div>
+        <p class='text-black font-bold mt-5'>
+          {t('oktoberfest.description')}
+        </p>
+      </div>
       <lite-youtube
         videoid='AYcSRf5PhRc'
         posterquality='maxresdefault'
@@ -26,8 +82,32 @@ changeLanguage('es')
       >
       </lite-youtube>
     </div>
+    <div
+      class='mt-10 square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
+    >
+      OKTOBERFEST LEÓN 2023
+    </div>
+    <Gallery
+      images={octoker2023}
+      galleryID={`oktoberfest-león-2023`}
+      client:only='react'
+      class='mt-10 px-4 lg:px-20'
+    />
   </section>
-</Layout>
+</LayoutHome>
+<style>
+  @font-face {
+    font-family: 'germania-one';
+    src: url('/fonts/GermaniaOne-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .bg_hero {
+    background-image: linear-gradient(225deg, #16161980, #060b1c40),
+      linear-gradient(to bottom, #0000, #0000);
+  }
+</style>
+
 <script>
   import '@justinribeiro/lite-youtube'
 </script>
