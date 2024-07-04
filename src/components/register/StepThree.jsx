@@ -14,7 +14,6 @@ export function StepThree({ translates, currentLanguage }) {
     genre,
     nacionality,
     code_invitation,
-
     company,
     industry,
     position,
@@ -28,7 +27,6 @@ export function StepThree({ translates, currentLanguage }) {
     postalCode,
     webPage,
     phoneCompany,
-
     eventKnowledge,
     productInterest,
     levelInfluence,
@@ -41,7 +39,6 @@ export function StepThree({ translates, currentLanguage }) {
     setAlreadyVisited,
     setCompleteRegister,
     setInvoiceDownToLoad,
-
     decrementStep,
     clear,
   } = useRegisterForm()
