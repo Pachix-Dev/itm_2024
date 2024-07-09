@@ -31,15 +31,15 @@ const exhibitors_2 = [
 
 const alliesStrategic = [
     {
-      src: '/A3.webp',
-      width: 190,
+      src: '/a3association.webp',
+      width: 250,
       height: 127,
       alt: 'A3',
       link: 'https://www.a3mexico.com.mx/a3',
     },
     {
       src: '/ahk.webp',
-      width: 190,
+      width: 250,
       height: 127,
       alt: 'ahk',
       link: 'https://mexiko.ahk.de/es/',
@@ -53,7 +53,7 @@ const alliesStrategic = [
     },
     {
       src: '/giz.webp',
-      width: 190,
+      width: 250,
       height: 127,
       alt: 'giz',
       link: 'https://www.giz.de/en/worldwide/33041.html',
@@ -130,7 +130,7 @@ const alliesStrategic = [
     },
     {
       src: '/concamin.webp',
-      width: 200,
+      width: 180,
       alt: 'concamin',
       link: 'https://www.concamin.org.mx/inicio',
     },
