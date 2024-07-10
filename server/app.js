@@ -256,6 +256,46 @@ app.post('/upgrade-user', async (req, res) => {
     }
 });
 
+// Create student register
+
+app.post('/free-register-futuristic', async (req, res) => {
+    const { body } = req;
+    
+    try {        
+        const data = { 
+            uuid: uuidv4(),            
+            ...body
+        };          
+        const userResponse = await RegisterModel.create_user({ ...data }); 
+
+        if(!userResponse.status){
+            return  res.status(500).send({
+                ...userResponse
+            });
+        }
+        
+        const currentDate = new Date();
+        const timestamp = currentDate.getTime();
+        const registerFile = 'registro-gratis-' + timestamp;
+
+        const pdfAtch = await generatePDF_freePass(body, data.uuid, registerFile);
+
+        const mailResponse = await sendEmail(data, pdfAtch, registerFile);   
+
+        return res.send({
+            ...mailResponse,
+            invoice: `${registerFile}.pdf`
+        });                
+               
+    } catch (err) {
+        console.log(err);
+        res.status(500).send({
+            status: false,
+            message: 'hubo un error al procesar tu registro, por favor intenta mas tarde...'
+        });
+    }
+});
+
 app.use(express.static('public'));
 
 app.get('/generate-pdf', async (req, res) => {

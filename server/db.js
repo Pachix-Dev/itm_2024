@@ -27,89 +27,89 @@ const hableError = (error) => {
 
 export class RegisterModel {
 
-    static async create_user ({   
-        uuid,             
-        name,
-        paternSurname,
-        maternSurname,
-        email,
-        phone,
-        typeRegister,
-        genre,
-        nacionality,
-        code_invitation,
+  static async create_user ({
+      uuid,             
+      name,
+      paternSurname,
+      maternSurname,
+      email,
+      phone,
+      typeRegister,
+      genre,
+      nacionality,
+      code_invitation,
 
-        company,
-        industry,
-        position,
-        area,
-        country,
-        municipality,
-        state,
-        city,
-        address,
-        colonia,
-        postalCode,
-        webPage,
-        phoneCompany,
+      company,
+      industry,
+      position,
+      area,
+      country,
+      municipality,
+      state,
+      city,
+      address,
+      colonia,
+      postalCode,
+      webPage,
+      phoneCompany,
 
-        eventKnowledge,
-        productInterest,
-        levelInfluence,
-        wannaBeExhibitor,
-        alreadyVisited,
-      }) {
-        const connection = await mysql.createConnection(config)
-        try {      
-          const [result] = await connection.query(
-            'INSERT INTO users (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, code_invitation, company, industry, position, area, country, municipality, state, city, address, colonia, postalCode, webPage, phoneCompany, eventKnowledge, productInterest, levelInfluence, wannaBeExhibitor, alreadyVisited ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
-            [
-              uuid,             
-              name,
-              paternSurname,
-              maternSurname,
-              email,
-              phone,
-              typeRegister,
-              genre,
-              nacionality,
-              code_invitation,
-      
-              company,
-              industry,
-              position,
-              area,
-              country,
-              municipality,
-              state,
-              city,
-              address,
-              colonia,
-              postalCode,
-              webPage,
-              phoneCompany,
-      
-              eventKnowledge,
-              productInterest,
-              levelInfluence,
-              wannaBeExhibitor,
-              alreadyVisited,   
-            ]
-          )
-                                  
-          return {
-            status: true,
-            insertId: result.insertId,
-            ...result,
-          }
-        }catch (error) {
-          console.log(error)
-          return hableError(error)          
+      eventKnowledge,
+      productInterest,
+      levelInfluence,
+      wannaBeExhibitor,
+      alreadyVisited,
+    }) {
+      const connection = await mysql.createConnection(config)
+      try {      
+        const [result] = await connection.query(
+          'INSERT INTO users (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, code_invitation, company, industry, position, area, country, municipality, state, city, address, colonia, postalCode, webPage, phoneCompany, eventKnowledge, productInterest, levelInfluence, wannaBeExhibitor, alreadyVisited ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+          [
+            uuid,             
+            name,
+            paternSurname,
+            maternSurname,
+            email,
+            phone,
+            typeRegister,
+            genre,
+            nacionality,
+            code_invitation,
+    
+            company,
+            industry,
+            position,
+            area,
+            country,
+            municipality,
+            state,
+            city,
+            address,
+            colonia,
+            postalCode,
+            webPage,
+            phoneCompany,
+    
+            eventKnowledge,
+            productInterest,
+            levelInfluence,
+            wannaBeExhibitor,
+            alreadyVisited,   
+          ]
+        )
+                                
+        return {
+          status: true,
+          insertId: result.insertId,
+          ...result,
         }
-        finally {
-          await connection.end()
-        }
-    }
+      }catch (error) {
+        console.log(error)
+        return hableError(error)          
+      }
+      finally {
+        await connection.end()
+      }
+  }
 
   static async save_order (user_id, paypal_id_order,paypal_id_transaction, total) {
     const connection = await mysql.createConnection(config)
@@ -188,4 +188,82 @@ export class RegisterModel {
 			await connection.end()
 		}
 	}
+
+  // Create student register
+  static async create_user_futuristic ({
+    uuid,             
+    name,
+    paternSurname,
+    maternSurname,
+    email,
+    phone,
+    typeRegister,
+    genre,
+    nacionality,    
+
+    institution,
+    level_education,
+    semestres,    
+    country,
+    municipality,
+    state,
+    city,
+    address,
+    colonia,
+    postalCode,
+    webPage,
+    schoolPhone,
+
+    eventKnowledge,
+    hour_date_1,
+    hour_date_2,    
+  }) {
+    const connection = await mysql.createConnection(config)
+    try {      
+      const [result] = await connection.query(
+        'INSERT INTO users_students (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, institution, level_education, semestres, country, municipality, state, city, address, colonia, postalCode, webPage, schoolPhone, eventKnowledge, hour_date_1, hour_date_2 ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+        [
+          uuid,             
+          name,
+          paternSurname,
+          maternSurname,
+          email,
+          phone,
+          typeRegister,
+          genre,
+          nacionality,          
+  
+          institution,
+          level_education,
+          semestres, 
+          country,
+          municipality,
+          state,
+          city,
+          address,
+          colonia,
+          postalCode,
+          webPage,
+          schoolPhone,
+  
+          eventKnowledge,
+          hour_date_1,
+          hour_date_2,                    
+        ]
+      )
+                              
+      return {
+        status: true,
+        insertId: result.insertId,
+        ...result,
+      }
+    }catch (error) {
+      console.log(error)
+      return hableError(error)          
+    }
+    finally {
+      await connection.end()
+    }
+  }
+
 }
