@@ -215,11 +215,10 @@ const media_2 = [
     link: 'https://www.vanguardia-industrial.net/',
 },
 {
-    src: '/am.webp',
-    width: 200,
-    height: 133,
-    alt: 'AM ',
-    link: 'https://www.am.com.mx/',
+    src: '/energiahoy.webp',
+    width: 200,    
+    alt: 'Energia hoy ',
+    link: 'https://energiahoy.com/',
 },
 {
     src: '/directorioauto.webp',
