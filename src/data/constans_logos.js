@@ -193,6 +193,18 @@ const media_1 = [
       alt: 'mexico industry',
       link: 'https://mexicoindustry.com/',
     },
+    {
+      src: '/LOGO_KOKO.webp',
+      width: 150,      
+      alt: 'KOKO MËXICO',
+      link: 'https://kokomexico.com/es/home',
+    },
+    {
+      src: '/airtrade_world_logo.webp',
+      width: 120,      
+      alt: 'Airtrade World',
+      link: 'https://www.facebook.com/AirTradeWorld/',
+    }
 ]
 const media_2 = [
 {
