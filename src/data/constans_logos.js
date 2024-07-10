@@ -193,6 +193,13 @@ const media_1 = [
       alt: 'mexico industry',
       link: 'https://mexicoindustry.com/',
     },
+    {
+      src: '/koko.webp',
+      width: 200,
+      height: 133,
+      alt: 'koko México',
+      link: 'https://kokomexico.com/es/home',
+    },
 ]
 const media_2 = [
 {
