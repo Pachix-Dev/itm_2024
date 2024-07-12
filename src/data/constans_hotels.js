@@ -8,7 +8,7 @@ const hotels = [
       phone_international: 'International: 844-683-8959',
       phone_mexico: 'México: 477 295 9400',
       celular: '',
-      email: 'lesly.deavila@courtyard.com',
+      email: 'enrique.guzman2@courtyard.com',
       cc:'',
       code: 'HANNOVER',
       time_walk: '2 min',
