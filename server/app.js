@@ -8,7 +8,7 @@ import {email_template} from './TemplateEmail.js';
 import {email_template_eng} from './TemplateEmailEng.js';
 
 import nodemailer from 'nodemailer';
-import { generatePDFInvoice, generatePDF_freePass, generateQRDataURL } from './generatePdf.js';
+import { generatePDFInvoice, generatePDF_freePass, generatePDF_freePass_futuristic, generateQRDataURL } from './generatePdf.js';
 import PDFDocument from 'pdfkit';
 
 const { json } = pkg
@@ -266,7 +266,7 @@ app.post('/free-register-futuristic', async (req, res) => {
             uuid: uuidv4(),            
             ...body
         };          
-        const userResponse = await RegisterModel.create_user({ ...data }); 
+        const userResponse = await RegisterModel.create_user_futuristic({ ...data }); 
 
         if(!userResponse.status){
             return  res.status(500).send({
@@ -278,7 +278,7 @@ app.post('/free-register-futuristic', async (req, res) => {
         const timestamp = currentDate.getTime();
         const registerFile = 'registro-gratis-' + timestamp;
 
-        const pdfAtch = await generatePDF_freePass(body, data.uuid, registerFile);
+        const pdfAtch = await generatePDF_freePass_futuristic(body, data.uuid, registerFile);
 
         const mailResponse = await sendEmail(data, pdfAtch, registerFile);   
 
@@ -344,134 +344,130 @@ app.get('/generate-pdf', async (req, res) => {
 
   doc.image('img/footer_ITM.jpg', 0, 328, { width: 305 });
   doc
-  .font('Helvetica-Bold')
-  .fontSize(17)
-  .text('INSTRUCCIONES PARA TU VISITA', 310, 10, {
-    width: 300,
-    align: 'center'
-  })
-  .moveDown(0.2);
+    .font('Helvetica-Bold')
+    .fontSize(17)
+    .text('INSTRUCCIONES PARA TU VISITA', 310, 10, {
+        width: 300,
+        align: 'center'
+    })
+    .moveDown(0.2);
 
-  doc.text(' GUIDELINES FOR YOUR VISIT', {
-    width: 300,
-    align: 'center'
-  }).moveDown(1);
-  
-  doc.font('Helvetica-Bold')
-  .fontSize(8)
-  .text('1.', 330)
-  .font('Helvetica')
-  .text('Tu gafete es tu pase a la exposición de ITM 2024. Deberás portarlo en todo momento.', 345, 75, {
-    width: 250,
-    align: 'justify'
-  })  
-  doc.text('Your badge is your access pass to ITM 2024 tradeshow. You must wear it at all times.',{
-    width: 250,
-    align: 'justify'
-  })
-  .moveDown(1); 
+    doc.fontSize(14)
+        .font('Helvetica')
+        .text(' Este gafete da acceso a:', {
+        width: 300,
+        align: 'center'
+    }).moveDown(1);
+    
+    doc.font('Helvetica-Bold')
+    .fontSize(12)
+    .text('Futuristic Minds', 330)
+    .fontSize(10)
+    .list(['Sede explora'])
+    .font('Helvetica')
+    .fontSize(8)
+    .text('Programa educativo (conferencias, talleres y recorridos interactivos) especialmente para jóvenes, realizado en el Centro de Ciencias Explora, ubicado en Blvd. Francisco Villa 202, colonia La Martinica, León, Gto. México.', {
+        width: 250,
+        align: 'justify'
+    })
+    .moveDown(0.5);
+    
+    doc.font('Helvetica-Bold')
+    .fontSize(10)    
+    .list(['Sede velaria'])
+    .font('Helvetica')
+    .fontSize(8)
+    .text('Área de las competencias de electromovilidad, robótica y habilidades profesionales, que se llevará a cabo en la Velaria de la Feria de León, ubicada en Blvd. Paseo de los Niños 111, Zona Recreativa y Cultural, León, Gto. México.', {
+        width: 250,
+        align: 'justify'
+    })
+    .moveDown(0.5);
 
-  doc.font('Helvetica-Bold')
-  .fontSize(8)
-  .text('2.', 330)
-  .font('Helvetica')
-  .text('El gafete es personal e intransferible. Por motivos de seguridad, podemos solicitarte al ingreso de la exposición una identificación con fotografía.', 345, 120, {
-    width: 250,
-    align: 'justify'
-  })
-  .text('The badge is personal and non-transferable. For security reasons, we may ask for an ID with picture at the entrance of the exhibition.', {
-    width: 250,
-    align: 'justify'
-  })
-  .moveDown(1); 
-  doc.font('Helvetica-Bold')
-  .fontSize(8)
-  .text('3.', 330)
-  .font('Helvetica')
-  .text('Disfruta tu visita y utiliza el hashtag', 345, 175, {
-    width: 250,    
-    continued: true
-  })
-  .fillColor('#1E92D0')
-  .font('Helvetica-Bold')
-  .text(' #ITM2024 ', { continued: true })
-  .fillColor('black')
-  .font('Helvetica')
-  .text(' en tus posteos en redes sociales.')
-  .text('Enjoy your visit and use the hashtag', {
-    width: 250,    
-    continued: true
-  })
-  .fillColor('#1E92D0')
-  .font('Helvetica-Bold')
-  .text(' #ITM2024 ', { continued: true })
-  .fillColor('black')
-  .font('Helvetica')
-  .text(' on your social media posts.')
-  .moveDown(2);
-  
-  doc
-  .font('Helvetica-Bold')
-  .text('HORARIOS / SCHEDULE',{
-    width: 250,    
-    align: 'center'
-  })
-  .moveDown(1)
-  .text('Octubre')
-  .text('October')
-  .text('(9) 11:00 am – 19:00 hrs', 330, 250, {
-    width: 250,    
-    align: 'center'
-  })
-  .text('(10)  11:00 am – 19:00 hrs', 330, 260, {
-    width: 250,    
-    align: 'center'
-  })
-  .text('(11)  11:00 am – 17:00 hrs', 330, 270, {
-    width: 250,    
-    align: 'center'
-  })
-  .moveDown(1)
-  .text('ITALIAN GERMAN EXHIBITION COMPANY MEXICO', {
-    width: 250,    
-    align: 'center'
-  });
+    doc.font('Helvetica-Bold')
+    .fontSize(12)
+    .text('Industrial Transformation Mexico.')
+    .fontSize(8)
+    .font('Helvetica')
+    .text('Los estudiantes podrán visitar el piso de exposición el viernes 11 de octubre a partir de las 3:00 p.m en Poliforum León.',  {
+        width: 250,
+        align: 'justify'
+    })
+    .moveDown(3);
+
+    doc.lineWidth(1);    
+    doc.moveTo(320, 230)
+        .lineTo( 600, 230 )
+        .stroke();
+
+    doc.fontSize(8)
+    .font('Helvetica')
+    .text('El gafete es', {
+        width: 250,
+        align: 'justify',
+        continued: true
+    })
+    .font('Helvetica-Bold')
+    .text('personal e intransferible ', {continued: true})
+    .font('Helvetica')
+    .text(' y deberás presentarlo de forma impresa o digital para permitir el ingreso.')
+    .moveDown(2);
+
+    doc
+    .font('Helvetica-Bold')    
+    .moveDown(1)
+    .text('ITALIAN GERMAN EXHIBITION COMPANY MEXICO', {
+        width: 250,    
+        align: 'center'
+    });
 
   doc.image('img/footer2_ITM.jpg', 307, 328, { width: 306 });
   
   doc.save();
   // Rotate and draw some text
   doc.rotate(180, {origin: [150, 305]})
-  .fillColor('red')  
-  .fontSize(20)
-  .text('AVISO / DISCLAIMER', 15, -140, {
-    width: 250,
+  .fillColor('#009FE3')  
+  .fontSize(20)  
+  .text('HORARIOS', 50, -110, {
+    width: 200,
     align: 'center'
   
   })
   .moveDown(1)
   .fillColor('black')  
-  .fontSize(12)
-  .text('Agilice su entrada imprimiendo su acreditación o llevando este documento en su teléfono móvil. Speed up your entrance by printing your badge or carrying this document on your cell phone.', {
-    width: 250,
-    align: 'justify'
-  
+  .fontSize(14)
+  .text('SEDE EXPLORA', {
+    width: 200,
+    align: 'center'  
   })
   .moveDown(1)
-  .text('El gafete es personal e intransferible y se imprimirá una sola vez en el módulo de registro digital. The badge is personal and non-transferable and will be printed once at the digital registration module.', {
-    width: 250,
-    align: 'justify'
-  
+  .text('9 OCT ', {continued: true})
+  .font('Helvetica')
+  .text('10:00 am – 5:00 pm ')
+  .moveDown(1)
+  .font('Helvetica-Bold')
+  .text('10 OCT ', {continued: true})
+  .font('Helvetica')
+  .text('10:00 am – 5:00 pm ')
+  .moveDown(1)
+  .font('Helvetica-Bold')
+  .text('11 OCT ', {continued: true})
+  .font('Helvetica')
+  .text('10:00 am – 3:00 pm ')
+  .fontSize(14)
+  .moveDown(1)
+  .font('Helvetica-Bold')
+  .text('SEDE VELARIA', {
+    width: 200,
+    align: 'center'  
   })
   .moveDown(1)
-  .text('n caso de que pierdas tu gafete y necesites reimprimirlo, se cobrará una cuota de $300 MXN. In case you lose your badge and need to reprint it, a replacement fee of $300 MXN will be charged.', {
-    width: 250,
-    align: 'justify'
-  
-  });
+  .text('9,10 y 11 OCT ', {continued: true})
+  .font('Helvetica')
+  .text('09:00 am – 5:00 pm ')
 
   doc.fontSize(14)
-  .text('BADGE FOLDING / PLEGADO DE GAFETE', -360, -140, {
+  .font('Helvetica-Bold')
+  .text('PLEGADO DE GAFETE', -360, -140, {
     width: 400,
     align: 'center'
   });

@@ -10,6 +10,9 @@ changeLanguage("en");
   <main class='container mx-auto px-4 md:px-20 my-10'>
     <h1 class='font-bold text-4xl'>{t('hotels.title')}</h1>
     <p class='mt-5' set:html={t('hotels.description')} />
+    <p class='mt-5 font-bold'>
+      {t('hotels.code_reservation')}
+    </p>
     <div class='mt-10 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'>
       {
         hotels.map((hotel) => {
@@ -112,5 +115,5 @@ changeLanguage("en");
         })
       }
     </div>
-  </mian>
+  </main>
 </Layout>

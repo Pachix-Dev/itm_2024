@@ -216,12 +216,13 @@ export class RegisterModel {
 
     eventKnowledge,
     hour_date_1,
-    hour_date_2,    
+    hour_date_2,
+    hour_date_3,   
   }) {
     const connection = await mysql.createConnection(config)
     try {      
       const [result] = await connection.query(
-        'INSERT INTO users_students (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, institution, level_education, semestres, country, municipality, state, city, address, colonia, postalCode, webPage, schoolPhone, eventKnowledge, hour_date_1, hour_date_2 ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+        'INSERT INTO users_students (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, institution, level_education, semestres, country, municipality, state, city, address, colonia, postalCode, webPage, schoolPhone, eventKnowledge, hour_date_1, hour_date_2, hour_date_3 ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, ?)',
         [
           uuid,             
           name,
@@ -248,7 +249,8 @@ export class RegisterModel {
   
           eventKnowledge,
           hour_date_1,
-          hour_date_2,                    
+          hour_date_2,  
+          hour_date_3,                  
         ]
       )
                               
