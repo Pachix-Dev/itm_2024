@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 import {RegisterModel} from './db.js';
 import {email_template} from './TemplateEmail.js';
 import {email_template_eng} from './TemplateEmailEng.js';
+import {email_template_futuristic} from './TemplateFuturistic.js';
 
 import nodemailer from 'nodemailer';
 import { generatePDFInvoice, generatePDF_freePass, generatePDF_freePass_futuristic, generateQRDataURL } from './generatePdf.js';
@@ -280,7 +281,7 @@ app.post('/free-register-futuristic', async (req, res) => {
 
         const pdfAtch = await generatePDF_freePass_futuristic(body, data.uuid, registerFile);
 
-        const mailResponse = await sendEmail(data, pdfAtch, registerFile);   
+        const mailResponse = await sendEmailFuturistic(data, pdfAtch, registerFile);   
 
         return res.send({
             ...mailResponse,
@@ -488,11 +489,58 @@ app.get('/template-email', async (req, res) => {
         maternSurname: 'Gomez',
         email: ''
     }
-    const emailContent = await email_template({ ...data });
+    const emailContent = await email_template_futuristic({ ...data });
     res.send(emailContent);
 });
 
+/* EMAIL FUTURISTIC */
+async function sendEmailFuturistic(data, pdfAtch = null, paypal_id_transaction = null){    
+    try{
+        // Nodemailer setup
+        const transporter = nodemailer.createTransport({
+            host: process.env.SMTP_GMAIL,
+            port: process.env.PORT_GMAIL,
+            secure: true,
+            auth: {
+                user: process.env.USER_GMAIL,
+                pass: process.env.PASS_GMAIL
+            }
+        });
 
+        const emailContent =   await email_template_futuristic({ ...data });
+
+        const mailOptions = {
+            from: process.env.USER_GMAIL,
+            to: data.email,
+            subject: 'Confirmación de pre registro FUTURISTIC MINDS 2024',
+            attachDataUrls: true,
+            html: emailContent,            
+            attachments: pdfAtch ? [
+                {
+                    filename: `${paypal_id_transaction}.pdf`,
+                    path: pdfAtch,
+                    contentType: 'application/pdf'
+                }
+            ] : []
+        };
+
+        await transporter.sendMail(mailOptions);
+
+        return {
+            status: true,
+            message: 'Gracias por registrarte, te hemos enviado un correo de confirmación a tu bandeja de entrada...'
+        };
+
+    } catch (err) {
+        console.log(err);
+        return {
+            status: false,
+            message: 'No pudimos enviarte el correo de confirmación de tu registro, por favor descarga tu registro en este pagina y presentalo hasta el dia del evento...'
+        };              
+    }    
+}
+
+/* EMAIL ITM */
 async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
         // Nodemailer setup
