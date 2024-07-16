@@ -7,9 +7,11 @@ import {RegisterModel} from './db.js';
 import {email_template} from './TemplateEmail.js';
 import {email_template_eng} from './TemplateEmailEng.js';
 import {email_template_futuristic} from './TemplateFuturistic.js';
+import {email_template_amof} from './TemplateEmailAmof.js';
+import {email_template_amof_eng} from './TemplateEmailAmofEng.js';
 
 import nodemailer from 'nodemailer';
-import { generatePDFInvoice, generatePDF_freePass, generatePDF_freePass_futuristic, generateQRDataURL } from './generatePdf.js';
+import { generatePDFInvoice, generatePDF_freePass, generatePDF_freePass_amof, generatePDF_freePass_futuristic, generateQRDataURL } from './generatePdf.js';
 import PDFDocument from 'pdfkit';
 
 const { json } = pkg
@@ -149,19 +151,15 @@ app.post('/free-register', async (req, res) => {
             return  res.status(500).send({
                 ...userResponse
             });
-        }
-        
-        const currentDate = new Date();
-        const timestamp = currentDate.getTime();
-        const registerFile = 'registro-gratis-' + timestamp;
+        }                       
 
-        const pdfAtch = await generatePDF_freePass(body, data.uuid, registerFile);
+        const pdfAtch = await generatePDF_freePass(body, data.uuid );
 
-        const mailResponse = await sendEmail(data, pdfAtch, registerFile);   
+        const mailResponse = await sendEmail(data, pdfAtch, data.uuid);   
 
         return res.send({
             ...mailResponse,
-            invoice: `${registerFile}.pdf`
+            invoice: `${data.uuid}.pdf`
         });                
                
     } catch (err) {
@@ -258,7 +256,6 @@ app.post('/upgrade-user', async (req, res) => {
 });
 
 // Create student register
-
 app.post('/free-register-futuristic', async (req, res) => {
     const { body } = req;
     
@@ -286,6 +283,41 @@ app.post('/free-register-futuristic', async (req, res) => {
         return res.send({
             ...mailResponse,
             invoice: `${registerFile}.pdf`
+        });                
+               
+    } catch (err) {
+        console.log(err);
+        res.status(500).send({
+            status: false,
+            message: 'hubo un error al procesar tu registro, por favor intenta mas tarde...'
+        });
+    }
+});
+
+// Create amof registration
+app.post('/free-register-amof', async (req, res) => {
+    const { body } = req;
+
+    try {        
+        const data = { 
+            uuid: uuidv4(),            
+            ...body
+        };          
+        const userResponse = await RegisterModel.create_user_amof({ ...data }); 
+
+        if(!userResponse.status){
+            return  res.status(500).send({
+                ...userResponse
+            });
+        }
+                 
+        const pdfAtch = await generatePDF_freePass_amof(body, data.uuid);
+
+        const mailResponse = await sendEmailAmof(data, pdfAtch, data.uuid);   
+
+        return res.send({
+            ...mailResponse,
+            invoice: `${data.uuid}.pdf`
         });                
                
     } catch (err) {
@@ -327,7 +359,7 @@ app.get('/generate-pdf', async (req, res) => {
   doc.restore();
 
 
-  doc.image('img/header_ITM.jpg', -20, -15, { width: 325 });
+  doc.image('img/header-amof.jpg', 0, 0, { width: 305 });
   // aqui iria el QR con info del usuario
   const imageQr = await generateQRDataURL('uuid-1234567890');
   doc.image(imageQr, 90, 120, { width: 120 });
@@ -489,9 +521,56 @@ app.get('/template-email', async (req, res) => {
         maternSurname: 'Gomez',
         email: ''
     }
-    const emailContent = await email_template_futuristic({ ...data });
+    const emailContent = await email_template_amof_eng({ ...data });
     res.send(emailContent);
 });
+
+/* EMAIL AMOF */
+async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null){    
+    try{
+        // Nodemailer setup
+        const transporter = nodemailer.createTransport({
+            host: process.env.SMTP_GMAIL,
+            port: process.env.PORT_GMAIL,
+            secure: true,
+            auth: {
+                user: process.env.USER_GMAIL,
+                pass: process.env.PASS_GMAIL
+            }
+        });
+
+        const emailContent = data.currentLanguage === 'es' ?  await email_template_amof({ ...data }) : await email_template_amof_eng({ ...data });
+
+        const mailOptions = {
+            from: process.env.USER_GMAIL,
+            to: data.email,
+            subject: 'Confirmación de pre registro AMERICAS´ mobility of the future 2024',
+            attachDataUrls: true,
+            html: emailContent,            
+            attachments: pdfAtch ? [
+                {
+                    filename: `${paypal_id_transaction}.pdf`,
+                    path: pdfAtch,
+                    contentType: 'application/pdf'
+                }
+            ] : []
+        };
+
+        await transporter.sendMail(mailOptions);
+
+        return {
+            status: true,
+            message: 'Gracias por registrarte, te hemos enviado un correo de confirmación a tu bandeja de entrada...'
+        };
+
+    } catch (err) {
+        console.log(err);
+        return {
+            status: false,
+            message: 'No pudimos enviarte el correo de confirmación de tu registro, por favor descarga tu registro en este pagina y presentalo hasta el dia del evento...'
+        };              
+    }    
+}
 
 /* EMAIL FUTURISTIC */
 async function sendEmailFuturistic(data, pdfAtch = null, paypal_id_transaction = null){    
