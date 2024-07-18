@@ -13,6 +13,7 @@ import {email_template_amof_eng} from './TemplateEmailAmofEng.js';
 import nodemailer from 'nodemailer';
 import { generatePDFInvoice, generatePDF_freePass, generatePDF_freePass_amof, generatePDF_freePass_futuristic, generateQRDataURL } from './generatePdf.js';
 import PDFDocument from 'pdfkit';
+import { Resend } from "resend";
 
 const { json } = pkg
 const app = express()
@@ -38,6 +39,7 @@ const environment = process.env.ENVIRONMENT || 'sandbox';
 const client_id = process.env.CLIENT_ID;
 const client_secret = process.env.CLIENT_SECRET;
 const endpoint_url = environment === 'sandbox' ? 'https://api-m.sandbox.paypal.com' : 'https://api-m.paypal.com';
+const resend = new Resend(process.env.RESEND_APIKEY)
 
 app.post('/create-order', (req, res) => {    
     const { body } = req;
@@ -146,12 +148,12 @@ app.post('/free-register', async (req, res) => {
             ...body
         };          
         const userResponse = await RegisterModel.create_user({ ...data }); 
-
+        
         if(!userResponse.status){
             return  res.status(500).send({
                 ...userResponse
             });
-        }                       
+        }                 
 
         const pdfAtch = await generatePDF_freePass(body, data.uuid );
 
@@ -541,7 +543,7 @@ async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null)
 
         const emailContent = data.currentLanguage === 'es' ?  await email_template_amof({ ...data }) : await email_template_amof_eng({ ...data });
 
-        const mailOptions = {
+        /*const mailOptions = {
             from: process.env.USER_GMAIL,
             to: data.email,
             subject: 'Confirmación de pre registro AMERICAS´ mobility of the future 2024',
@@ -556,7 +558,21 @@ async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null)
             ] : []
         };
 
-        await transporter.sendMail(mailOptions);
+        await transporter.sendMail(mailOptions);*/
+
+        await resend.emails.send({
+            from: 'ITM 2024 <noreply@igeco.mx>',
+            to: data.email,
+            subject: 'Confirmación de pre registro AMERICAS´ mobility of the future 2024',
+            html: emailContent,
+            attachments: [
+                {
+                    filename: `${paypal_id_transaction}.pdf`,
+                    path: pdfAtch,
+                    content_type: 'application/pdf'
+                },
+              ],           
+        })
 
         return {
             status: true,
@@ -622,7 +638,7 @@ async function sendEmailFuturistic(data, pdfAtch = null, paypal_id_transaction =
 /* EMAIL ITM */
 async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
-        // Nodemailer setup
+       
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_GMAIL,
             port: process.env.PORT_GMAIL,
@@ -634,7 +650,7 @@ async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){
         });
 
         const emailContent = data.currentLanguage === 'es' ?  await email_template({ ...data }) : await email_template_eng({ ...data });
-
+        
         const mailOptions = {
             from: process.env.USER_GMAIL,
             to: data.email,
