@@ -564,35 +564,22 @@ async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null)
 /* EMAIL FUTURISTIC */
 async function sendEmailFuturistic(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
-        // Nodemailer setup
-        const transporter = nodemailer.createTransport({
-            host: process.env.SMTP_GMAIL,
-            port: process.env.PORT_GMAIL,
-            secure: true,
-            auth: {
-                user: process.env.USER_GMAIL,
-                pass: process.env.PASS_GMAIL
-            }
-        });
-
+        
         const emailContent =   await email_template_futuristic({ ...data });
 
-        const mailOptions = {
-            from: process.env.USER_GMAIL,
+        await resend.emails.send({
+            from: 'FUTURISTIC MINDS 2024 <noreply@industrialtransformation.mx>',
             to: data.email,
             subject: 'Confirmación de pre registro FUTURISTIC MINDS 2024',
-            attachDataUrls: true,
-            html: emailContent,            
-            attachments: pdfAtch ? [
+            html: emailContent,
+            attachments: [
                 {
                     filename: `${paypal_id_transaction}.pdf`,
-                    path: pdfAtch,
-                    contentType: 'application/pdf'
-                }
-            ] : []
-        };
-
-        await transporter.sendMail(mailOptions);
+                    path: `https://industrialtransformation.mx/invoices/${paypal_id_transaction}.pdf`,
+                    content_type: 'application/pdf'
+                },
+              ],           
+        })        
 
         return {
             status: true,
