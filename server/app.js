@@ -534,7 +534,7 @@ async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null)
         const emailContent = data.currentLanguage === 'es' ?  await email_template_amof({ ...data }) : await email_template_amof_eng({ ...data });
 
         await resend.emails.send({
-            from: 'ITM 2024 <noreply@industrialtransformation.mx>',
+            from: 'AMOF 2024 <noreply@industrialtransformation.mx>',
             to: data.email,
             subject: 'Confirmación de pre registro AMERICAS´ mobility of the future 2024',
             html: emailContent,
