@@ -568,7 +568,7 @@ async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null)
             attachments: [
                 {
                     filename: `${paypal_id_transaction}.pdf`,
-                    path: `https://industrialtransformation.mx/invoices/${paypal_id_transaction}.pdf`,
+                    path: `invoices/${paypal_id_transaction}.pdf`,
                     content_type: 'application/pdf'
                 },
               ],           
