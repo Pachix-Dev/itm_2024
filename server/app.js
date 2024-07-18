@@ -273,18 +273,15 @@ app.post('/free-register-futuristic', async (req, res) => {
                 ...userResponse
             });
         }
-        
-        const currentDate = new Date();
-        const timestamp = currentDate.getTime();
-        const registerFile = 'registro-gratis-' + timestamp;
+                
 
-        const pdfAtch = await generatePDF_freePass_futuristic(body, data.uuid, registerFile);
+        const pdfAtch = await generatePDF_freePass_futuristic(body, data.uuid);
 
-        const mailResponse = await sendEmailFuturistic(data, pdfAtch, registerFile);   
+        const mailResponse = await sendEmailFuturistic(data, pdfAtch, data.uuid);   
 
         return res.send({
             ...mailResponse,
-            invoice: `${registerFile}.pdf`
+            invoice: `${data.uuid}.pdf`
         });                
                
     } catch (err) {

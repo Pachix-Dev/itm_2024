@@ -702,13 +702,13 @@ async function generatePDF_freePass_amof( body, uuid) {
 }
 
 // generate pdf for free pass futuristic minds
-async function generatePDF_freePass_futuristic( body, uuid, registerFile) {
+async function generatePDF_freePass_futuristic( body, uuid ) {
 
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = dirname(__filename);
 
     const outputPath = path.resolve(__dirname, '../invoices');
-    const pdfSave = path.join(outputPath, `${registerFile}.pdf`);
+    const pdfSave = path.join(outputPath, `${uuid}.pdf`);
 
     const doc = new PDFDocument();
     const pdfStream = fs.createWriteStream(pdfSave);            
@@ -743,13 +743,13 @@ async function generatePDF_freePass_futuristic( body, uuid, registerFile) {
     doc
     .font('Helvetica-Bold')
     .fontSize(18)
-    .text('Juan', 30, 240)
-    .text('Perez')
+    .text(body.name, 30, 240)
+    .text(body.paternSurname)
     .fontSize(12)
     .font('Helvetica')
-    .text('CEO/Founder')
+    .text(body.level_education)
     .moveDown(0.5)
-    .text('IGECO');
+    .text(body.institution);
   
     doc.image('img/footer_FUTURISTIC.jpg', 0, 328, { width: 305 });
     doc
