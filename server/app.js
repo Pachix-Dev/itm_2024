@@ -560,7 +560,7 @@ async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null)
 
         await transporter.sendMail(mailOptions);*/
 
-        await resend.emails.send({
+        const resendEmail = await resend.emails.send({
             from: 'ITM 2024 <noreply@industrialtransformation.mx>',
             to: data.email,
             subject: 'Confirmación de pre registro AMERICAS´ mobility of the future 2024',
@@ -568,12 +568,12 @@ async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null)
             attachments: [
                 {
                     filename: `${paypal_id_transaction}.pdf`,
-                    path: pdfAtch,
+                    path: `https://industrialtransformation.mx/invoices/${paypal_id_transaction}.pdf`,
                     content_type: 'application/pdf'
                 },
               ],           
         })
-
+        console.log(resendEmail);
         return {
             status: true,
             message: 'Gracias por registrarte, te hemos enviado un correo de confirmación a tu bandeja de entrada...'
