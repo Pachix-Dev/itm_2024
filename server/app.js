@@ -560,7 +560,7 @@ async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null)
 
         await transporter.sendMail(mailOptions);*/
 
-        const resendEmail = await resend.emails.send({
+        await resend.emails.send({
             from: 'ITM 2024 <noreply@industrialtransformation.mx>',
             to: data.email,
             subject: 'Confirmación de pre registro AMERICAS´ mobility of the future 2024',
@@ -568,12 +568,12 @@ async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null)
             attachments: [
                 {
                     filename: `${paypal_id_transaction}.pdf`,
-                    path: `invoices/${paypal_id_transaction}.pdf`,
+                    path: `https://industrialtransformation.mx/invoices/${paypal_id_transaction}.pdf`,
                     content_type: 'application/pdf'
                 },
               ],           
         })
-        console.log(resendEmail);
+        
         return {
             status: true,
             message: 'Gracias por registrarte, te hemos enviado un correo de confirmación a tu bandeja de entrada...'
@@ -639,34 +639,23 @@ async function sendEmailFuturistic(data, pdfAtch = null, paypal_id_transaction =
 async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
        
-        const transporter = nodemailer.createTransport({
-            host: process.env.SMTP_GMAIL,
-            port: process.env.PORT_GMAIL,
-            secure: true,
-            auth: {
-                user: process.env.USER_GMAIL,
-                pass: process.env.PASS_GMAIL
-            }
-        });
-
-        const emailContent = data.currentLanguage === 'es' ?  await email_template({ ...data }) : await email_template_eng({ ...data });
         
-        const mailOptions = {
-            from: process.env.USER_GMAIL,
+        const emailContent = data.currentLanguage === 'es' ?  await email_template({ ...data }) : await email_template_eng({ ...data });
+       
+        await resend.emails.send({
+            from: 'ITM 2024 <noreply@industrialtransformation.mx>',
             to: data.email,
             subject: 'Confirmación de pre registro ITM 2024',
-            attachDataUrls: true,
-            html: emailContent,            
-            attachments: pdfAtch ? [
+            html: emailContent,
+            attachments: [
                 {
                     filename: `${paypal_id_transaction}.pdf`,
-                    path: pdfAtch,
-                    contentType: 'application/pdf'
-                }
-            ] : []
-        };
-
-        await transporter.sendMail(mailOptions);
+                    path: `https://industrialtransformation.mx/invoices/${paypal_id_transaction}.pdf`,
+                    content_type: 'application/pdf'
+                },
+              ],           
+        })
+        
 
         return {
             status: true,
