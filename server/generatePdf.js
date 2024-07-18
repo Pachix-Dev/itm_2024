@@ -743,150 +743,164 @@ async function generatePDF_freePass_futuristic( body, uuid, registerFile) {
     doc
     .font('Helvetica-Bold')
     .fontSize(18)
-    .text(body.name, 30, 240)
-    .text(body.paternSurname,)
+    .text('Juan', 30, 240)
+    .text('Perez')
     .fontSize(12)
     .font('Helvetica')
-    .text(body.level_education)
+    .text('CEO/Founder')
     .moveDown(0.5)
-    .text(body.institution);
-
-    doc.image('img/footer_FUTURISTIC.jpg', 0, 328, { width: 305 })
+    .text('IGECO');
+  
+    doc.image('img/footer_FUTURISTIC.jpg', 0, 328, { width: 305 });
     doc
-    .font('Helvetica-Bold')
-    .fontSize(17)
-    .text('INSTRUCCIONES PARA TU VISITA', 310, 10, {
-        width: 300,
-        align: 'center'
-    })
-    .moveDown(0.2);
-
-    doc.fontSize(14)
-        .font('Helvetica')
-        .text(' Este gafete da acceso a:', {
-        width: 300,
-        align: 'center'
-    }).moveDown(1);
+      .font('Helvetica-Bold')
+      .fontSize(17)
+      .text('INSTRUCCIONES', 310, 10, {
+          width: 300,
+          align: 'center'
+      })
+      .text('PARA TU VISITA', 310, 30, {
+          width: 300,
+          align: 'center'
+      })    
+      .moveDown(0.2);
+  
+      doc.fontSize(14)
+          .font('Helvetica')
+          .text(' ESTEGAFETE DA ACCESO A:', {
+          width: 300,
+          align: 'center'
+      }).moveDown(1);
+      
+      doc.font('Helvetica-Bold')
+      .fontSize(12)
+      .text('Futuristic Minds', 330)
+      .fontSize(10)
+      .font('Helvetica-BoldOblique')
+      .list(['SEDE EXPLORA'])
+      .font('Helvetica')
+      .fontSize(8)
+      .text('Programa educativo (conferencias, talleres y recorridos interactivos) especialmente para jóvenes, realizado en el Centro de Ciencias Explora, ubicado en Blvd. Francisco Villa 202, colonia La Martinica, León, Gto. México.', {
+          width: 250,
+          align: 'justify'
+      })
+      .moveDown(0.5);
+      
+      doc.font('Helvetica-BoldOblique')
+      .fontSize(10)    
+      .list(['SEDE VELARIA'])
+      .font('Helvetica')
+      .fontSize(8)
+      .text('Área de las competencias de electromovilidad, robótica y habilidades profesionales, que se llevará a cabo en la Velaria de la Feria de León, ubicada en Blvd. Paseo de los Niños 111, Zona Recreativa y Cultural, León, Gto. México.', {
+          width: 250,
+          align: 'justify'
+      })
+      .moveDown(0.5);
+  
+      doc.font('Helvetica-Bold')
+      .fontSize(12)
+      .text('Industrial Transformation Mexico.')
+      .fontSize(8)
+      .font('Helvetica')
+      .text('Los estudiantes podrán visitar el piso de exposición el viernes 11 de octubre a partir de las 3:00 p.m en Poliforum León.',  {
+          width: 250,
+          align: 'justify'
+      })
+      .moveDown(3);
+  
+      doc.lineWidth(1);    
+      doc.moveTo(320, 250)
+          .lineTo( 600, 250 )
+          .stroke();
+  
+      doc.fontSize(8)
+      .font('Helvetica')
+      .text('El gafete es ', {
+          width: 250,
+          align: 'justify',
+          continued: true
+      })
+      .font('Helvetica-Bold')
+      .text('personal e intransferible ', {continued: true})
+      .font('Helvetica')
+      .text(' y deberás presentarlo de forma impresa o digital para permitir el ingreso.')
+      .moveDown(2);
+  
+      doc
+      .font('Helvetica-Bold')    
+      .moveDown(1)
+      .text('ITALIAN GERMAN EXHIBITION COMPANY MEXICO', {
+          width: 250,    
+          align: 'center'
+      });
+  
+    doc.image('img/footer2_FUTURISTIC.jpg', 307, 328, { width: 306 });
     
-    doc.font('Helvetica-Bold')
-    .fontSize(12)
-    .text('Futuristic Minds', 330)
-    .fontSize(10)
-    .list(['Sede explora'])
-    .font('Helvetica')
-    .fontSize(8)
-    .text('Programa educativo (conferencias, talleres y recorridos interactivos) especialmente para jóvenes, realizado en el Centro de Ciencias Explora, ubicado en Blvd. Francisco Villa 202, colonia La Martinica, León, Gto. México.', {
-        width: 250,
-        align: 'justify'
-    })
-    .moveDown(0.5);
+    doc.save();
+    // Rotate and draw some text
+    doc.rotate(180, {origin: [150, 305]})
+    .fillColor('#009FE3')  
+    .fontSize(20)  
+    .text('HORARIOS', 50, -110, {
+      width: 200,
+      align: 'center'
     
-    doc.font('Helvetica-Bold')
-    .fontSize(10)    
-    .list(['Sede velaria'])
-    .font('Helvetica')
-    .fontSize(8)
-    .text('Área de las competencias de electromovilidad, robótica y habilidades profesionales, que se llevará a cabo en la Velaria de la Feria de León, ubicada en Blvd. Paseo de los Niños 111, Zona Recreativa y Cultural, León, Gto. México.', {
-        width: 250,
-        align: 'justify'
     })
-    .moveDown(0.5);
-
-    doc.font('Helvetica-Bold')
-    .fontSize(12)
-    .text('Industrial Transformation Mexico.')
-    .fontSize(8)
-    .font('Helvetica')
-    .text('Los estudiantes podrán visitar el piso de exposición el viernes 11 de octubre a partir de las 3:00 p.m en Poliforum León.',  {
-        width: 250,
-        align: 'justify'
-    })
-    .moveDown(3);
-
-    doc.lineWidth(1);    
-    doc.moveTo(320, 230)
-        .lineTo( 600, 230 )
-        .stroke();
-
-    doc.fontSize(8)
-    .font('Helvetica')
-    .text('El gafete es', {
-        width: 250,
-        align: 'justify',
-        continued: true
-    })
-    .font('Helvetica-Bold')
-    .text('personal e intransferible ', {continued: true})
-    .font('Helvetica')
-    .text(' y deberás presentarlo de forma impresa o digital para permitir el ingreso.')
-    .moveDown(2);
-
-    doc
-    .font('Helvetica-Bold')    
     .moveDown(1)
-    .text('ITALIAN GERMAN EXHIBITION COMPANY MEXICO', {
-        width: 250,    
-        align: 'center'
+    .fillColor('black')  
+    .fontSize(14)
+    .font('Helvetica-BoldOblique')
+    .text('SEDE EXPLORA', {
+      width: 200,
+      align: 'center'  
+    })
+    .moveDown(1)
+    .text('9 OCT ', {continued: true})
+    .font('Helvetica')
+    .text('10:00 - 17:00 hrs. ')
+    .moveDown(1)
+    .font('Helvetica-Bold')
+    .text('10 OCT ', {continued: true})
+    .font('Helvetica')
+    .text('10:00 - 17:00 hrs. ')
+    .moveDown(1)
+    .font('Helvetica-Bold')
+    .text('11 OCT ', {continued: true})
+    .font('Helvetica')
+    .text('10:00 - 15:00 hrs.')
+    .fontSize(14)
+    .moveDown(1)
+    .font('Helvetica-BoldOblique')
+    .text('SEDE VELARIA', {
+      width: 200,
+      align: 'center'  
+    })
+    .moveDown(1)
+    .font('Helvetica-Bold')
+    .text('9 y 10 OCT ', {continued: true})
+    .font('Helvetica')
+    .text('9:00 - 17:00 hrs.')
+    .moveDown(1)
+    .font('Helvetica-Bold')
+    .text('11 OCT ', {continued: true})
+    .font('Helvetica')
+    .text('9:00 - 16:00 hrs.')
+  
+    doc.fontSize(14)
+    .font('Helvetica-Bold')
+    .text('PLEGADO DE GAFETE', -360, -140, {
+      width: 400,
+      align: 'center'
     });
-
-   doc.image('img/footer2_FUTURISTIC.jpg', 307, 328, { width: 306 })
-   doc.save();
-   // Rotate and draw some text
-   doc.rotate(180, {origin: [150, 305]})
-   .fillColor('#009FE3')  
-   .fontSize(20)  
-   .text('HORARIOS', 50, -110, {
-     width: 200,
-     align: 'center'
+  
+    doc.rotate(180, {origin: [-170, 50]})
+    .image('img/indicaciones_ITM.jpg', -330, -100, { width: 305 });
+  
+    // Restore the previous state to avoid rotating everything else
+    doc.restore();
+    
    
-   })
-   .moveDown(1)
-   .fillColor('black')  
-   .fontSize(14)
-   .text('SEDE EXPLORA', {
-     width: 200,
-     align: 'center'  
-   })
-   .moveDown(1)
-   .text('9 OCT ', {continued: true})
-   .font('Helvetica')
-   .text('10:00 am – 5:00 pm ')
-   .moveDown(1)
-   .font('Helvetica-Bold')
-   .text('10 OCT ', {continued: true})
-   .font('Helvetica')
-   .text('10:00 am – 5:00 pm ')
-   .moveDown(1)
-   .font('Helvetica-Bold')
-   .text('11 OCT ', {continued: true})
-   .font('Helvetica')
-   .text('10:00 am – 3:00 pm ')
-   .fontSize(14)
-   .moveDown(1)
-   .font('Helvetica-Bold')
-   .text('SEDE VELARIA', {
-     width: 200,
-     align: 'center'  
-   })
-   .moveDown(1)
-   .text('9,10 y 11 OCT ', {continued: true})
-   .font('Helvetica')
-   .text('09:00 am – 5:00 pm ')
- 
-   doc.fontSize(14)
-   .font('Helvetica-Bold')
-   .text('PLEGADO DE GAFETE', -360, -140, {
-     width: 400,
-     align: 'center'
-   });
- 
-   doc.rotate(180, {origin: [-170, 50]})
-   .image('img/indicaciones_ITM.jpg', -330, -100, { width: 305 });
- 
-   // Restore the previous state to avoid rotating everything else
-   doc.restore();
-   
-   doc.end();
+    doc.end();
     return pdfSave;
 }
 

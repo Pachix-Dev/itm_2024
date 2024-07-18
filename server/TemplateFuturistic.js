@@ -12,27 +12,31 @@ const email_template_futuristic = async ({ name, paternSurname, maternSurname}) 
         <tr>
           <td colspan="2" >
             <h2 style="text-align: center;margin:0;font-weight:bold;text-transform: uppercase;margin-top: 20px;">
-              BIENVENIDO, ${name} ${paternSurname} ${maternSurname}. TU REGISTRO SE HA REALIZADO CON ÉXITO.
+              BIENVENID@, ${name} ${paternSurname} ${maternSurname}. TU REGISTRO SE HA REALIZADO CON ÉXITO.
             </h2>
             <h2 style='text-align: center;'>
-              GRACIAS POR FORMAR PARTE DE <span style="color:#E42128;font-weight:bold;">FUTURISTIC MINDS2024, </span> CAPÍTULO EDUCATIVO DE ITM
+              GRACIAS POR FORMAR PARTE DE <span style="color:#E42128;font-weight:bold;">FUTURISTIC MINDS 2024, </span> CAPÍTULO EDUCATIVO DE ITM
             </h2>
             <div style="text-align: justify;font-size:22px;">
               Asiste a <strong>competencias, conferencias, talleres, exhibición de prototipos y recorridos interactivos.</strong>       
             </div>
             <div style="text-align:center;padding:20px;margin-top:25px;">
               <div style="background: #E42128;padding:20px;border-radius:20px;">
-                <a style="text-decoration:none; color: white;font-weight:bold;" href="https://futuristics-minds.industrialtransformation.mx/#programa" target='_blank'>                 
+                <a style="text-decoration:none; color: white;font-weight:bold;" href="https://futuristic-minds.industrialtransformation.mx/#programa" target='_blank'>                 
                   CONSULTA EL PROGRAMA DE ACTIVIDADES
                 </a>
               </div>
               <p style="margin-top:40px;margin-bottom: 40px;">
-                Te esperamos en <strong>FUTURISTIC MINDS del 9 al 11 de octubre, Poliforum, León, Guanajuato.</strong>
+                Te esperamos en <strong>FUTURISTIC MINDS del 9 al 11 de octubre, Centro de Ciencias Explora y Velaria de la Feria, León, Guanajuato.</strong>
               </p>
               <div style="background: #E42128;color:white;border-radius: 20px;padding:20px;">               
                <p><strong>HORARIOS:</strong></p>
-               <p>miércoles 9 y jueves 10 de  10:00 am - 17:00 pm hrs</p>
-               <p>viernes 11 de 10:00 am - 3:00 pm hrs</p>
+               <p><strong>Centro de Ciencias Explora</strong></p>
+               <p>miércoles 9 y jueves 10 de 10:00 - 17:00 hrs.</p>
+               <p>viernes 11 de 10:00 - 15:00 hrs.</p>
+               <p><strong>Velaria</strong></p>
+               <p>miércoles 9 y jueves 10 de 9:00 - 17:00 hrs.</p>
+               <p>viernes 11 de 9:00 - 16:00 hrs.</p>
               </div>
             </div>               
             <p style="font-weight:bold;font-size:20px;text-align: center;">AÑADIR AL CALENDARIO</p>
@@ -64,18 +68,24 @@ const email_template_futuristic = async ({ name, paternSurname, maternSurname}) 
               INSTRUCCIONES PARA TU VISITA:
             </p>
             <ul>
+              
               <li>
-                <strong>IMPORTANTE:</strong> Es indispensable llevar tu pre-registro impreso o en formato digital para agilizar tu acceso al evento.
+                <strong>Este gafete da acceso a:</strong><br /><br />
+                <strong>Futuristic Minds</strong><br />
+                <strong>Sede Explora</strong><br />
+                Programa educativo (conferencias, talleres y recorridos interactivos) especialmente para jóvenes, realizado en el Centro de Ciencias Explora, ubicado en Blvd. Francisco Villa 202, colonia La Martinica, León, Gto. México.
               </li>
               <li>
-                Recuerda llevar tu credencial oficial de empresa o negocio para verificar tus datos.
+                <strong>Sede Velaria</strong><br />
+                Área de las competencias de electromovilidad, robótica y habilidades profesionales, que se llevará a cabo en la Velaria de la Feria de León, ubicada en Blvd. Paseo de los Niños 111, Zona Recreativa y Cultural, León, Gto. México.
               </li>
               <li>
-                Tu acceso es único e intransferible y debe estar visible durante toda tu visita.
-              </li>
+                <strong>Industrial Transformation Mexico.</strong><br />
+                Los estudiantes podrán visitar el piso de exposición el viernes 11 de octubre a partir de las 15:00 hrs. en Poliforum León.
+              </li>    
               <li>
-                * Entrada para estudiantes a piso de exposición ITM es el viernes a partir de las 3:00pm.
-              </li>                  
+                <strong>IMPORTANTE:</strong> El gafete es personal e intransferible y deberás presentarlo de forma impresa o digital para permitir el ingreso.
+              </li>              
             </ul>                                                          
           </td>      
         </tr>               
@@ -86,14 +96,7 @@ const email_template_futuristic = async ({ name, paternSurname, maternSurname}) 
                 ENTÉRATE DE TODOS NUESTROS EVENTOS
               </a>
             </div>          
-          </td>
-          <td style="padding:20px;" align="center">
-            <div style="background: #E42128;border-radius: 20px;padding:20px;margin:auto;">
-              <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/files/Floorplan_ITM_2024_31.05.2023.pdf" target="_blank">
-                PLANO 2024
-              </a>
-            </div>         
-          </td>
+          </td>          
         </tr>             
         <tr>
           <td colspan="2">

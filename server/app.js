@@ -361,7 +361,7 @@ app.get('/generate-pdf', async (req, res) => {
   doc.restore();
 
 
-  doc.image('img/header-amof.jpg', 0, 0, { width: 305 });
+  doc.image('img/header-FUTURISTIC.jpg', 0, 0, { width: 305 });
   // aqui iria el QR con info del usuario
   const imageQr = await generateQRDataURL('uuid-1234567890');
   doc.image(imageQr, 90, 120, { width: 120 });
@@ -377,19 +377,23 @@ app.get('/generate-pdf', async (req, res) => {
   .moveDown(0.5)
   .text('IGECO');
 
-  doc.image('img/footer_ITM.jpg', 0, 328, { width: 305 });
+  doc.image('img/footer_FUTURISTIC.jpg', 0, 328, { width: 305 });
   doc
     .font('Helvetica-Bold')
     .fontSize(17)
-    .text('INSTRUCCIONES PARA TU VISITA', 310, 10, {
+    .text('INSTRUCCIONES', 310, 10, {
         width: 300,
         align: 'center'
     })
+    .text('PARA TU VISITA', 310, 30, {
+        width: 300,
+        align: 'center'
+    })    
     .moveDown(0.2);
 
     doc.fontSize(14)
         .font('Helvetica')
-        .text(' Este gafete da acceso a:', {
+        .text(' ESTEGAFETE DA ACCESO A:', {
         width: 300,
         align: 'center'
     }).moveDown(1);
@@ -398,7 +402,8 @@ app.get('/generate-pdf', async (req, res) => {
     .fontSize(12)
     .text('Futuristic Minds', 330)
     .fontSize(10)
-    .list(['Sede explora'])
+    .font('Helvetica-BoldOblique')
+    .list(['SEDE EXPLORA'])
     .font('Helvetica')
     .fontSize(8)
     .text('Programa educativo (conferencias, talleres y recorridos interactivos) especialmente para jóvenes, realizado en el Centro de Ciencias Explora, ubicado en Blvd. Francisco Villa 202, colonia La Martinica, León, Gto. México.', {
@@ -407,9 +412,9 @@ app.get('/generate-pdf', async (req, res) => {
     })
     .moveDown(0.5);
     
-    doc.font('Helvetica-Bold')
+    doc.font('Helvetica-BoldOblique')
     .fontSize(10)    
-    .list(['Sede velaria'])
+    .list(['SEDE VELARIA'])
     .font('Helvetica')
     .fontSize(8)
     .text('Área de las competencias de electromovilidad, robótica y habilidades profesionales, que se llevará a cabo en la Velaria de la Feria de León, ubicada en Blvd. Paseo de los Niños 111, Zona Recreativa y Cultural, León, Gto. México.', {
@@ -430,13 +435,13 @@ app.get('/generate-pdf', async (req, res) => {
     .moveDown(3);
 
     doc.lineWidth(1);    
-    doc.moveTo(320, 230)
-        .lineTo( 600, 230 )
+    doc.moveTo(320, 250)
+        .lineTo( 600, 250 )
         .stroke();
 
     doc.fontSize(8)
     .font('Helvetica')
-    .text('El gafete es', {
+    .text('El gafete es ', {
         width: 250,
         align: 'justify',
         continued: true
@@ -455,7 +460,7 @@ app.get('/generate-pdf', async (req, res) => {
         align: 'center'
     });
 
-  doc.image('img/footer2_ITM.jpg', 307, 328, { width: 306 });
+  doc.image('img/footer2_FUTURISTIC.jpg', 307, 328, { width: 306 });
   
   doc.save();
   // Rotate and draw some text
@@ -470,6 +475,7 @@ app.get('/generate-pdf', async (req, res) => {
   .moveDown(1)
   .fillColor('black')  
   .fontSize(14)
+  .font('Helvetica-BoldOblique')
   .text('SEDE EXPLORA', {
     width: 200,
     align: 'center'  
@@ -477,28 +483,34 @@ app.get('/generate-pdf', async (req, res) => {
   .moveDown(1)
   .text('9 OCT ', {continued: true})
   .font('Helvetica')
-  .text('10:00 am – 5:00 pm ')
+  .text('10:00 - 17:00 hrs. ')
   .moveDown(1)
   .font('Helvetica-Bold')
   .text('10 OCT ', {continued: true})
   .font('Helvetica')
-  .text('10:00 am – 5:00 pm ')
+  .text('10:00 - 17:00 hrs. ')
   .moveDown(1)
   .font('Helvetica-Bold')
   .text('11 OCT ', {continued: true})
   .font('Helvetica')
-  .text('10:00 am – 3:00 pm ')
+  .text('10:00 - 15:00 hrs.')
   .fontSize(14)
   .moveDown(1)
-  .font('Helvetica-Bold')
+  .font('Helvetica-BoldOblique')
   .text('SEDE VELARIA', {
     width: 200,
     align: 'center'  
   })
   .moveDown(1)
-  .text('9,10 y 11 OCT ', {continued: true})
+  .font('Helvetica-Bold')
+  .text('9 y 10 OCT ', {continued: true})
   .font('Helvetica')
-  .text('09:00 am – 5:00 pm ')
+  .text('9:00 - 17:00 hrs.')
+  .moveDown(1)
+  .font('Helvetica-Bold')
+  .text('11 OCT ', {continued: true})
+  .font('Helvetica')
+  .text('9:00 - 16:00 hrs.')
 
   doc.fontSize(14)
   .font('Helvetica-Bold')
