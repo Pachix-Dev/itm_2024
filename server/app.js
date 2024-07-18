@@ -561,7 +561,7 @@ async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null)
         await transporter.sendMail(mailOptions);*/
 
         await resend.emails.send({
-            from: 'ITM 2024 <noreply@igeco.mx>',
+            from: 'ITM 2024 <noreply@industrialtransformation.mx>',
             to: data.email,
             subject: 'Confirmación de pre registro AMERICAS´ mobility of the future 2024',
             html: emailContent,
