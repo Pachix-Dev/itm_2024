@@ -530,35 +530,8 @@ app.get('/template-email', async (req, res) => {
 /* EMAIL AMOF */
 async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
-        // Nodemailer setup
-        const transporter = nodemailer.createTransport({
-            host: process.env.SMTP_GMAIL,
-            port: process.env.PORT_GMAIL,
-            secure: true,
-            auth: {
-                user: process.env.USER_GMAIL,
-                pass: process.env.PASS_GMAIL
-            }
-        });
 
         const emailContent = data.currentLanguage === 'es' ?  await email_template_amof({ ...data }) : await email_template_amof_eng({ ...data });
-
-        /*const mailOptions = {
-            from: process.env.USER_GMAIL,
-            to: data.email,
-            subject: 'Confirmación de pre registro AMERICAS´ mobility of the future 2024',
-            attachDataUrls: true,
-            html: emailContent,            
-            attachments: pdfAtch ? [
-                {
-                    filename: `${paypal_id_transaction}.pdf`,
-                    path: pdfAtch,
-                    contentType: 'application/pdf'
-                }
-            ] : []
-        };
-
-        await transporter.sendMail(mailOptions);*/
 
         await resend.emails.send({
             from: 'ITM 2024 <noreply@industrialtransformation.mx>',
