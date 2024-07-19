@@ -46,13 +46,6 @@ const stage_1_day_1: Program[] = [
 
 const stage_1_day_2: Program[] = [
     {
-        "title": "Mitsubishi",
-        "description": "",
-        "time": "11:45 hrs",
-        "duration": "45 mins",
-        "speakers": []
-    },
-    {
         "title": "Tu tiempo, nuestra prioridad",
         "description": "Exploraremos como MISUMI puede contribuir al valor de tu tiempo. Destacaremos cómo nuestra amplia gama de productos y servicios simplifica la cadena de suministro y acelera los procesos de producción, permitiendo a nuestros clientes enfocarse en su core business. Únete para descubrir cómo MISUMI está transformando el concepto del tiempo en una ventaja competitiva.",
         "time": "12:30 hrs",
@@ -72,10 +65,31 @@ const stage_1_day_2: Program[] = [
         "time": "13:15 hrs",
         "duration": "45 mins",
         "speakers": []
+    },
+    {
+        "title": "Mitsubishi",
+        "description": "",
+        "time": "16:15 hrs",
+        "duration": "45 mins",
+        "speakers": []
     }
 ]
 
 const stage_1_day_3: Program[] = [
+    {
+        "title": "Eficiencia energética como una oportunidad de ahorro y crecimiento para las PYMEs",
+        "description": "",
+        "time": "11:00 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {
+                "name": "GIZ",
+                "position": "",
+                "company": "",
+                "image": "/profile.svg"
+            }
+        ]
+    },
     {
         "title": "SIEMENS",
         "description": "",
@@ -131,14 +145,14 @@ const stage_2_day_1: Program[] = [
     {
         "title": "Mitsubishi",
         "description": "",
-        "time": "16:15 hrs",
+        "time": "16:00 hrs",
         "duration": "45 mins",
         "speakers": []
     },
     {
         "title": "Cómo la tecnología está redefiniendo la manufactura y transformando a la industria",
         "description": "",
-        "time": "18:00 hrs",
+        "time": "17:30 hrs",
         "duration": "45 mins",
         "speakers": [
             {
