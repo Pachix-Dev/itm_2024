@@ -9,7 +9,7 @@ export function AddCart({ item }) {
         onClick={() => addToCart(item)}
         className='square_red text-white font-bold p-2 hover:bg-red-700'
       >
-        Add to cart
+        Agregar al carrito
       </button>
     </>
   )
