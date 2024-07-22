@@ -736,7 +736,7 @@ async function generatePDF_freePass_futuristic( body, uuid ) {
     doc.restore();
 
 
-    doc.image('img/header-FUTURISTIC.jpg', -20, -15, { width: 325 });
+    doc.image('img/header-FUTURISTIC.jpg', 0, 0, { width: 305 });
     // aqui iria el QR con info del usuario    
     doc.image(qrMainUser, 90, 120, { width: 120 });
     
@@ -767,7 +767,7 @@ async function generatePDF_freePass_futuristic( body, uuid ) {
   
       doc.fontSize(14)
           .font('Helvetica')
-          .text(' ESTEGAFETE DA ACCESO A:', {
+          .text(' ESTE GAFETE DA ACCESO A:', {
           width: 300,
           align: 'center'
       }).moveDown(1);
@@ -799,10 +799,10 @@ async function generatePDF_freePass_futuristic( body, uuid ) {
   
       doc.font('Helvetica-Bold')
       .fontSize(12)
-      .text('Industrial Transformation Mexico.')
+      .text('Industrial Transformation Mexico')
       .fontSize(8)
       .font('Helvetica')
-      .text('Los estudiantes podrán visitar el piso de exposición el viernes 11 de octubre a partir de las 3:00 p.m en Poliforum León.',  {
+      .text('Los estudiantes podrán visitar el piso de exposición el viernes 11 de octubre a partir de las 15:00 hrs en Poliforum León.',  {
           width: 250,
           align: 'justify'
       })
@@ -855,14 +855,9 @@ async function generatePDF_freePass_futuristic( body, uuid ) {
       align: 'center'  
     })
     .moveDown(1)
-    .text('9 OCT ', {continued: true})
+    .text('9 y 10 OCT ', {continued: true})
     .font('Helvetica')
-    .text('10:00 - 17:00 hrs. ')
-    .moveDown(1)
-    .font('Helvetica-Bold')
-    .text('10 OCT ', {continued: true})
-    .font('Helvetica')
-    .text('10:00 - 17:00 hrs. ')
+    .text('10:00 - 17:00 hrs. ')    
     .moveDown(1)
     .font('Helvetica-Bold')
     .text('11 OCT ', {continued: true})

@@ -15,7 +15,7 @@ const email_template_futuristic = async ({ name, paternSurname, maternSurname}) 
               BIENVENID@, ${name} ${paternSurname} ${maternSurname}. TU REGISTRO SE HA REALIZADO CON ÉXITO.
             </h2>
             <h2 style='text-align: center;'>
-              GRACIAS POR FORMAR PARTE DE <span style="color:#E42128;font-weight:bold;">FUTURISTIC MINDS 2024, </span> CAPÍTULO EDUCATIVO DE ITM
+              GRACIAS POR FORMAR PARTE DE <span style="color:#E42128;font-weight:bold;">FUTURISTIC MINDS 2024, </span> PROGRAMA EDUCATIVO DE ITM
             </h2>
             <div style="text-align: justify;font-size:22px;">
               Asiste a <strong>competencias, conferencias, talleres, exhibición de prototipos y recorridos interactivos.</strong>       

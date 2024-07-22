@@ -579,7 +579,7 @@ async function sendEmailFuturistic(data, pdfAtch = null, paypal_id_transaction =
         await resend.emails.send({
             from: 'FUTURISTIC MINDS 2024 <noreply@industrialtransformation.mx>',
             to: data.email,
-            subject: 'Confirmación de pre registro FUTURISTIC MINDS 2024',
+            subject: 'Confirmación de registro FUTURISTIC MINDS 2024',
             html: emailContent,
             attachments: [
                 {

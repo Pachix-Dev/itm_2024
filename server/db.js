@@ -203,7 +203,8 @@ export class RegisterModel {
 
     institution,
     level_education,
-    semestres,    
+    semestres, 
+    programEducation,   
     country,
     municipality,
     state,
@@ -215,12 +216,13 @@ export class RegisterModel {
     schoolPhone,
 
     eventKnowledge,
+    areaInterest,
     hour_date_1,   
   }) {
     const connection = await mysql.createConnection(config)
     try {      
       const [result] = await connection.query(
-        'INSERT INTO users_students (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, institution, level_education, semestres, country, municipality, state, city, address, colonia, postalCode, webPage, schoolPhone, eventKnowledge, hour_date_1 ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+        'INSERT INTO users_students (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, institution, level_education, semestres, programEducation, country, municipality, state, city, address, colonia, postalCode, webPage, schoolPhone, eventKnowledge, areaInterest, hour_date_1 ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, ?, ?)',
         [
           uuid,             
           name,
@@ -234,7 +236,8 @@ export class RegisterModel {
   
           institution,
           level_education,
-          semestres, 
+          semestres,
+          programEducation,
           country,
           municipality,
           state,
@@ -246,6 +249,7 @@ export class RegisterModel {
           schoolPhone,
                     
           eventKnowledge,
+          areaInterest,
           hour_date_1                         
         ]
       )
@@ -347,5 +351,5 @@ export class RegisterModel {
     finally {
       await connection.end()
     }
-}
+  }
 }
