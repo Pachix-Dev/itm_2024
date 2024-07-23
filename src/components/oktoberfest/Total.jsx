@@ -20,8 +20,8 @@ export function Total() {
         <p className='text-xl'>{formatAmountMXN(total)}</p>
       </div>
       <div className='flex justify-between'>
-        <h2 className='text-5xl font-bold'>Total</h2>
-        <p className='text-5xl'>{formatAmountMXN(total)}</p>
+        <h2 className='text-4xl font-bold'>Total</h2>
+        <p className='text-4xl'>{formatAmountMXN(total)}</p>
       </div>
     </div>
   )
