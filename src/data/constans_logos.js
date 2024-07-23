@@ -4,7 +4,7 @@ const exhibitors_1 = [
     { src: '/exhibitors/benq.webp', alt: '', width: 170 },
     { src: '/exhibitors/ccg.webp', alt: '', width: 170 },
     { src: '/exhibitors/ckd.webp', alt: '', width: 170 },
-    { src: '/exhibitors/cleveland.webp', alt: '', width: 170 },
+    { src: '/exhibitors/cleveland_v2.webp', alt: '', width: 170 },
     { src: '/exhibitors/ema.webp', alt: '', width: 170 },
     { src: '/exhibitors/euchner.webp', alt: '', width: 170 },
     { src: '/exhibitors/ifm.webp', alt: '', width: 170 },
