@@ -13,17 +13,19 @@ export function Checkout() {
   const [message, setMessage] = useState('')
   const [processing, setProcessing] = useState(false)
   const style = { layout: 'vertical' }
+
   const initialOptions = {
     clientId:
       'ASXsJEVjLguO7vsn4IOGxaFeZp0FzEkMErWxv6Foin2-niMwBWX_0ryUceIDzdiD-WNQy-WvdMx-lIwf',
     currency: 'MXN',
     intent: 'capture',
   }
-  const urlbase = 'https://industrialtransformation.mx/server/'
-  //const urlbase = 'http://localhost:3010/'
+
+  //const urlbase = 'https://industrialtransformation.mx/server/'
+  const urlbase = 'http://localhost:3010/'
 
   async function createOrder() {
-    const response = await fetch(urlbase + 'create-order', {
+    const response = await fetch(urlbase + 'create-order-oktoberfest', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -38,7 +40,7 @@ export function Checkout() {
 
   async function onApprove(data) {
     setProcessing(true)
-    const response = await fetch(urlbase + 'upgrade-user', {
+    const response = await fetch(urlbase + 'compplete-order-oktoberfest', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
