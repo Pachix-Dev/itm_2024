@@ -11,10 +11,8 @@ const exhibitors_1 = [
     { src: '/exhibitors/ika.webp', alt: '', width: 170 },
     { src: '/exhibitors/info-portal.webp', alt: '', width: 170 },
     { src: '/exhibitors/knipex.webp', alt: '', width: 170 },
-    { src: '/exhibitors/la-salle.webp', alt: '', width: 170 }
-    
-]
-const exhibitors_2 = [
+    { src: '/exhibitors/la-salle.webp', alt: '', width: 170 },
+
     { src: '/exhibitors/lean-mdc.webp', alt: '', width: 170 },
     { src: '/exhibitors/misumi.webp', alt: '', width: 170 },
     { src: '/exhibitors/mitsubishi.webp', alt: '', width: 170 },
@@ -27,6 +25,26 @@ const exhibitors_2 = [
     { src: '/exhibitors/vega.webp', alt: '', width: 170 },
     { src: '/exhibitors/wago.webp', alt: '', width: 170 },
     { src: '/exhibitors/schneider_v2.webp', alt: '', width: 170 },
+
+    { src: '/exhibitors/otennlux.webp', alt: '', width: 170 },
+    { src: '/exhibitors/welbe.webp', alt: '', width: 170 },
+    { src: '/exhibitors/umati.webp', alt: '', width: 170 },
+    { src: '/exhibitors/stacomex.webp', alt: '', width: 170 },
+    { src: '/exhibitors/neoden.webp', alt: '', width: 170 },
+    { src: '/exhibitors/moxa.webp', alt: '', width: 170 },
+    { src: '/exhibitors/mnd.webp', alt: '', width: 170 },
+    { src: '/exhibitors/idaka.webp', alt: '', width: 170 },
+    { src: '/exhibitors/gicmac.webp', alt: '', width: 170 },
+    { src: '/exhibitors/elite_robots.webp', alt: '', width: 170 },
+    { src: '/exhibitors/durabook.webp', alt: '', width: 170 },
+    { src: '/exhibitors/dimo_maint.webp', alt: '', width: 170 },
+    { src: '/exhibitors/beckhoff.webp', alt: '', width: 170 },
+    { src: '/exhibitors/avetta.webp', alt: '', width: 170 },
+    { src: '/exhibitors/autonics.webp', alt: '', width: 170 },
+    { src: '/exhibitors/hlp.webp', alt: '', width: 170 },
+    { src: '/exhibitors/nova_tech.webp', alt: '', width: 170 },
+    { src: '/exhibitors/emka.webp', alt: '', width: 170 },
+
 ]
 
 const alliesStrategic = [
