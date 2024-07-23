@@ -1,0 +1,31 @@
+---
+import { changeLanguage, t } from 'i18next'
+import LayoutOktoberfest from '../layouts/LayoutOktoberfest.astro'
+
+import { Resume } from '../components/oktoberfest/Resume.jsx'
+import { Total } from '../components/oktoberfest/Total.jsx'
+import { CheckoutForm } from '../components/oktoberfest/CheckoutForm.jsx'
+
+changeLanguage('es')
+---
+
+<LayoutOktoberfest title='Oktoberfest | reservaciones'>
+  <header class='flex items-center gap-5 mx-4'>
+    <img src='/img/oktoberfest-logo.webp' alt='Oktoberfest' class='w-24' />
+    <p class='font-extrabold text-3xl'>
+      {t('oktoberfest.reservation_description')}
+    </p>
+  </header>
+  <main class='sm:p-10 w-full sm:w-3/5 order-2 sm:order-1 px-4'>
+    <CheckoutForm client:only />
+  </main>
+  <aside
+    class='sm:fixed right-0 top-0 z-50 p-5 w-full sm:w-2/5 order-1 sm:order-2 bg-[#f7f7f8] h-auto sm:h-full border shadow-lg'
+  >
+    <p class='text-center text-2xl font-bold hidden md:block text-black'>
+      Resumen del pedido
+    </p>
+    <Resume client:only />
+    <Total client:only />
+  </aside>
+</LayoutOktoberfest>

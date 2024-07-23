@@ -2,7 +2,8 @@
 import { changeLanguage, t } from 'i18next'
 import LayoutOktoberfest from '../layouts/LayoutOktoberfest.astro'
 import Products from '../components/oktoberfest/Products.astro'
-
+import { Items } from '../components/oktoberfest/Items.jsx'
+import { Total } from '../components/oktoberfest/Total.jsx'
 changeLanguage('es')
 ---
 
@@ -23,6 +24,15 @@ changeLanguage('es')
       <p class='text-center text-2xl font-bold hidden md:block text-black'>
         Resumen del pedido
       </p>
+      <Items client:only />
+      <Total client:only />
+
+      <a
+        href='oktoberfest-checkout'
+        class='bg-black p-4 text-white text-4xl flex rounded-xl justify-center items-center w-full mt-5 hover:bg-gray-800'
+      >
+        Continuar
+      </a>
     </aside>
   </main>
 </LayoutOktoberfest>
