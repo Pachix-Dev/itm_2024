@@ -12,7 +12,6 @@ const exhibitors_1 = [
     { src: '/exhibitors/info-portal.webp', alt: '', width: 170 },
     { src: '/exhibitors/knipex.webp', alt: '', width: 170 },
     { src: '/exhibitors/la-salle.webp', alt: '', width: 170 },
-
     { src: '/exhibitors/lean-mdc.webp', alt: '', width: 170 },
     { src: '/exhibitors/misumi.webp', alt: '', width: 170 },
     { src: '/exhibitors/mitsubishi.webp', alt: '', width: 170 },
@@ -25,7 +24,6 @@ const exhibitors_1 = [
     { src: '/exhibitors/vega.webp', alt: '', width: 170 },
     { src: '/exhibitors/wago.webp', alt: '', width: 170 },
     { src: '/exhibitors/schneider_v2.webp', alt: '', width: 170 },
-
     { src: '/exhibitors/otennlux.webp', alt: '', width: 170 },
     { src: '/exhibitors/welbe.webp', alt: '', width: 170 },
     { src: '/exhibitors/umati.webp', alt: '', width: 170 },
@@ -44,7 +42,6 @@ const exhibitors_1 = [
     { src: '/exhibitors/hlp.webp', alt: '', width: 170 },
     { src: '/exhibitors/nova_tech.webp', alt: '', width: 170 },
     { src: '/exhibitors/emka.webp', alt: '', width: 170 },
-
 ]
 
 const alliesStrategic = [
