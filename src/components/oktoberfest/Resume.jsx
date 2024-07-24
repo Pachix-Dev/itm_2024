@@ -23,6 +23,7 @@ export function Resume() {
           <div>
             <h3 className='font-bold text-lg'>{item.title}</h3>
             <p className='text-sm'>{item.description}</p>
+            <p className='text-lg'>x{item.quantity}</p>
           </div>
           <p className='text-3xl'>{formatAmountMXN(item.price)}</p>
         </div>

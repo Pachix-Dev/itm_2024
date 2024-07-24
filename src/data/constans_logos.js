@@ -366,4 +366,4 @@ const buyers = [
   { src: '/img/buyers68.webp', alt: 'buyers itm 68',  width: 200 },
   { src: '/img/buyers69.webp', alt: 'buyers itm 69',  width: 200 }
 ]
-export { exhibitors_1, exhibitors_2, media_1, media_2, alliesStrategic, sponsors, buyers}
+export { exhibitors_1, media_1, media_2, alliesStrategic, sponsors, buyers}

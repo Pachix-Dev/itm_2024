@@ -10,7 +10,6 @@ import {email_template_futuristic} from './TemplateFuturistic.js';
 import {email_template_amof} from './TemplateEmailAmof.js';
 import {email_template_amof_eng} from './TemplateEmailAmofEng.js';
 
-import nodemailer from 'nodemailer';
 import { generatePDFInvoice, generatePDF_freePass, generatePDF_freePass_amof, generatePDF_freePass_futuristic, generateQRDataURL } from './generatePdf.js';
 import PDFDocument from 'pdfkit';
 import { Resend } from "resend";
@@ -324,6 +323,118 @@ app.post('/free-register-amof', async (req, res) => {
         res.status(500).send({
             status: false,
             message: 'hubo un error al procesar tu registro, por favor intenta mas tarde...'
+        });
+    }
+});
+
+// oktoberfest registration
+app.post('/create-order-oktoberfest', async (req, res) => {
+    const { body } = req;
+    let total = 0;
+    const get_products = await RegisterModel.get_products();    
+
+    if(get_products.status){
+        const products = get_products.result;
+
+        body.items.forEach(item => {
+            const product = products.find(product => product.id == item.id);
+            total += product.price * item.quantity;
+
+            if(!product){
+                return res.status(500).send({
+                    status: false,
+                    message: 'Producto no encontrado...'
+                });
+            }            
+        });
+        if(total != body.total){
+            return res.status(500).send({
+                status: false,
+                message: 'Tu compra no pudo ser procesada, la información no es valida...'
+            });
+        }
+        get_access_token()
+        .then(access_token => {
+            let order_data_json = {
+                'intent': "CAPTURE",
+                'purchase_units': [{
+                    'amount': {
+                        'currency_code': 'MXN',
+                        'value': body.total                        
+                    },                                             
+                    'description': 'Venta de Programa VIP Oktoberfest 2024 online',
+                }]
+            };
+            const data = JSON.stringify(order_data_json)
+
+            fetch(endpoint_url + '/v2/checkout/orders', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${access_token}`
+                    },
+                    body: data
+                })
+                .then(res => res.json())
+                .then(json => {
+                    console.log(json);
+                    res.send(json);
+                }) //Send minimal data to client
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).send(err)
+        })     
+    }else{
+        return res.status(500).send({
+            status: false,
+            message: 'No se encontraron productos...'
+        });
+    }        
+});
+
+// oktoberfest complete order
+app.post('/complete-order-oktoberfest', async (req, res) => {
+    const { body } = req;    
+    try {
+        
+        const access_token = await get_access_token();
+        const response = await fetch(endpoint_url + '/v2/checkout/orders/' + req.body.orderID + '/capture', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${access_token}`
+            }
+        });
+        const json = await response.json();
+        console.log(JSON.stringify(json));
+        if (json.id) {
+            if(json.purchase_units[0].payments.captures[0].status === 'COMPLETED' || json.purchase_units[0].payments.captures[0].status === 'PENDING' ){
+                
+                const paypal_id_order = json.id;
+                const paypal_id_transaction = json.purchase_units[0].payments.captures[0].id;                     
+                await RegisterModel.save_order_oktoberfest({paypal_id_order, paypal_id_transaction, ...body});
+
+                /*const pdfAtch = await generatePDFInvoice(paypal_id_transaction, body, uuid);
+
+                const mailResponse = await sendEmail(body, pdfAtch, paypal_id_transaction);   
+                */
+                return res.send({
+                    //...mailResponse,
+                    invoice: `${paypal_id_transaction}.pdf`
+                });                
+            }
+        } else {        
+            return res.status(500).send({
+                status: false,
+                message: 'Tu compra no pudo ser procesada, hay un problema con tu metodo de pago por favor intenta mas tarde...'
+            });
+        }       
+    } catch (err) {
+        console.log(err);
+        res.status(500).send({
+            status: false,
+            message: 'hubo un error al procesar tu compra, por favor intenta mas tarde...'
         });
     }
 });

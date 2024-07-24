@@ -352,4 +352,65 @@ export class RegisterModel {
       await connection.end()
     }
   }
+
+  // get product to calculate total
+  static async get_products () {
+    const connection = await mysql.createConnection(config)
+    try {      
+      const [result] = await connection.query(
+        'SELECT * FROM oktoberfest_products'
+      )
+      return {
+        status: true,
+        result
+      }
+    }catch (error) {
+      console.log(error)
+      return {
+        status: false,        
+      }   
+    }
+     finally {
+      await connection.end() // Close the connection
+    }
+  }
+
+  // create user oktoberfest
+  static async save_order_oktoberfest ({      
+      name,      
+      email,
+      phone,
+      company,
+      paypal_id_order, 
+      paypal_id_transaction,
+      total,
+    }) {
+      const connection = await mysql.createConnection(config)
+      try {      
+        const [result] = await connection.query(
+          'INSERT INTO oktoberfest_orders ( name, email, phone, company, paypal_id_order, paypal_id_transaction, total ) VALUES (?,?,?,?,?,?,?)',
+          [                                   
+            name,      
+            email,
+            phone,
+            company,
+            paypal_id_order, 
+            paypal_id_transaction, 
+            total,             
+          ]
+        )
+                                
+        return {
+          status: true,          
+          ...result,
+        }
+      }catch (error) {
+        console.log(error)
+        return hableError(error)          
+      }
+      finally {
+        await connection.end()
+      }
+  }
+
 }

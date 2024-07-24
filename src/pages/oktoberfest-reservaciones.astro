@@ -14,16 +14,19 @@ changeLanguage('es')
         <img src='/img/oktoberfest-logo.webp' alt='Oktoberfest' class='w-24' />
         <p class='font-extrabold text-3xl'>
           {t('oktoberfest.reservation_description')}
+          <br />
+          <span class='font-light text-xl'>Mesa para 10 personas maximo</span>
         </p>
       </div>
       <Products />
     </section>
     <aside
-      class='sm:fixed right-0 top-0 z-50 p-5 w-full sm:w-2/5 sm:order-2 bg-[#f7f7f8] h-auto sm:h-full border rounded-lg shadow-lg'
+      class='sm:fixed right-0 top-0 z-50 p-5 w-full sm:w-2/5 sm:order-2 bg-[#f7f7f8] h-auto sm:h-full border rounded-lg shadow-lg overflow-y-scroll'
     >
       <p class='text-center text-2xl font-bold hidden md:block text-black'>
         Resumen del pedido
       </p>
+
       <Items client:only />
       <Total client:only />
 

@@ -14,7 +14,7 @@ export function Items() {
   }
 
   return (
-    <div className='grid gap-6'>
+    <div className='grid gap-6 '>
       {items.map((item) => (
         <div
           key={item.id}

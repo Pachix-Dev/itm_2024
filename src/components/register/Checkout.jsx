@@ -25,7 +25,7 @@ export function Checkout() {
   const urlbase = 'http://localhost:3010/'
 
   async function createOrder() {
-    const response = await fetch(urlbase + 'create-order-oktoberfest', {
+    const response = await fetch(urlbase + 'create-order', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ export function Checkout() {
 
   async function onApprove(data) {
     setProcessing(true)
-    const response = await fetch(urlbase + 'compplete-order-oktoberfest', {
+    const response = await fetch(urlbase + 'compplete-order', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
