@@ -1,11 +1,13 @@
 ---
-import i18next, { changeLanguage, t } from 'i18next'
-import Gallery from '../components/shared/Gallery.jsx'
-import { octoker2023 } from '../data/constans_gallery_by_year.js'
-import LayoutHome from '../layouts/LayoutHome.astro'
-const lang = i18next.language
-const base = i18next.language === 'es' ? '' : `/${lang}`
-changeLanguage('es')
+import i18next, { changeLanguage, t } from "i18next";
+import Gallery from "../components/shared/Gallery.jsx";
+import { octoker2023 } from "../data/constans_gallery_by_year.js";
+import LayoutHome from "../layouts/LayoutHome.astro";
+
+changeLanguage("es");
+
+const lang = i18next.language;
+const base = i18next.language === "es" ? "" : `/${lang}`;
 ---
 
 <LayoutHome title='ITM | Oktoberfest León'>
