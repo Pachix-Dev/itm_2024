@@ -42,6 +42,8 @@ const exhibitors_1 = [
     { src: '/exhibitors/hlp.webp', alt: '', width: 170 },
     { src: '/exhibitors/nova_tech.webp', alt: '', width: 170 },
     { src: '/exhibitors/emka.webp', alt: '', width: 170 },
+    { src: '/exhibitors/ateq.webp', alt: '', width: 170 },
+    { src: '/exhibitors/copa_data.webp', alt: '', width: 170 },
 ]
 
 const alliesStrategic = [
