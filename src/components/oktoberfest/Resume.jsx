@@ -21,7 +21,7 @@ export function Resume() {
           className='grid md:flex justify-between items-end gap-5 rounded-xl shadow-md p-4 bg-white relative'
         >
           <div>
-            <h3 className='font-bold text-lg'>{item.title}</h3>
+            <h3 className='font-bold text-lg'>{item.name}</h3>
             <p className='text-sm'>{item.description}</p>
             <p className='text-lg'>x{item.quantity}</p>
           </div>

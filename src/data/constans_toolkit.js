@@ -1,7 +1,7 @@
 const toolkitES = [
     { src:'/img/gallery/toolkit/Exhibitor-Foto-de-fondo-para-LinkedIn-es.webp', alt: 'Exhibitor Foto de fondo para LinkedIn', width: 1584, height: 396 },
     { src:'/img/gallery/toolkit/Exhibitor-Banner-para-Doc-es.webp', alt: 'Exhibitor Banner para Doc', width: 2000, height: 600},
-    { sr:'/img/gallery/toolkit/Exhibitor-Encabezado-para-Twitter-de-viajes-es.webp', alt: 'Exhibitor Encabezado para Twitter de viajes', width: 1500, height: 500},
+    { src:'/img/gallery/toolkit/Exhibitor-Encabezado-para-Twitter-de-viajes-es.webp', alt: 'Exhibitor Encabezado para Twitter de viajes', width: 1500, height: 500},
     { src:'/img/gallery/toolkit/Exhibitor-Banner-horizontal-es.webp', alt: 'Exhibitor Banner horizontal', width: 6912, height: 3456},
     { src:'/img/gallery/toolkit/Exhibitor-Post-para-Facebook-Horizontal-es.webp', alt: 'Exhibitor Post para Facebook Horizontal', width: 940, height: 788},
     { src:'/img/gallery/toolkit/Exhibitor-Instagram-Story-es.webp', alt: 'Exhibitor Instagram Story', width: 1080, height: 1920}
