@@ -1,5 +1,5 @@
 
-const email_template_eng = async ({ name, paternSurname, maternSurname}) => {          
+const email_template_oktoberfest_en = async ({ name, paternSurname, maternSurname}) => {          
     
     return (
    `<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="max-width: 680px;">
@@ -18,13 +18,13 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
         <tr>
           <td colspan="2">
             <h2 style="text-align: center;margin:0;font-weight:bold;text-transform: uppercase;margin-top: 20px;">
-              WELCOME, ${name} ${paternSurname} ${maternSurname}.<BR /> YOUR REGISTRATION WAS SUCCESSFUL.
+              WELCOME, ${name} ${paternSurname} ${maternSurname}. <BR /> THANKS FOR YOUR PURCHASE.
             </h2>
             <h2 style='text-align: center;'>
-              THANK YOU FOR BEING PART OF <span style="color:#E94568;font-weight:bold;">INDUSTRIAL TRANSFORMATION MEXICO 2024, </span>PRODUCTS AND SOLUTIONS FOR THE SMART FACTORY.
+              THANK YOU FOR BEING PART OF <span style="color:#E94568;font-weight:bold;"><BR />OKTOBERFEST LEÓN 2024, </span>
             </h2>
             <div style="text-align: justify;font-size:22px;">
-              Discover the latest trends, innovations, insights, tools and technologies brought to you by global leaders in <strong>Automation, Smart Factory and Digital Logistics Solutions,</strong> that are transforming the future of the industry.                    
+             Celebrate with us the traditional German holiday! Enjoy music, food and beer in a festive and fun-filled atmosphere.                    
             </div>
             <div style="text-align:center;padding:20px;margin-top:25px;">
               <p style="background: #E42128;padding:20px;border-radius:20px;margin:20px;width:fit-content;margin:auto;">
@@ -72,16 +72,16 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
             </p>
             <ul>
               <li>
-                <strong>IMPORTANT:</strong> It is essential to bring your pre-registration printed or in digital format to speed up your access to the event.
+                <strong>IMPORTANT:</strong> It is essential to bring this proof of payment, which is enclosed in the mail in printed or digital format, to redeem your meal.
               </li>
               <li>
-                Remember to bring your official company or business credentials to verify your data.
+                Remember to bring your official credentials to verify your data.
               </li>
               <li>
-                Your access is unique and non-transferable and must be visible throughout your visit.
+                This document is unique and non-transferable, so it cannot be shared with another person.
               </li>
               <li>
-                In case you lose your badge, there will be no reprints on the exhibit floor. Therefore, you will have to purchase a ticket for admission at a cost of $300 MXN.
+                No returns or exchanges are accepted.
               </li>                  
             </ul>                                                          
           </td>      
@@ -130,5 +130,5 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
     )
   }
   
-  export {email_template_eng}
+  export {email_template_oktoberfest_en}
   

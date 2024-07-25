@@ -7,7 +7,7 @@ import {
   usePayPalScriptReducer,
 } from '@paypal/react-paypal-js'
 
-export function CheckoutForm() {
+export function CheckoutForm({ currentLanguage }) {
   const {
     items,
     name,
@@ -108,6 +108,7 @@ export function CheckoutForm() {
         email,
         phone,
         company,
+        currentLanguage,
       }),
     })
     const orderData = await response.json()

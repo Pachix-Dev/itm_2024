@@ -9,8 +9,10 @@ import {email_template_eng} from './TemplateEmailEng.js';
 import {email_template_futuristic} from './TemplateFuturistic.js';
 import {email_template_amof} from './TemplateEmailAmof.js';
 import {email_template_amof_eng} from './TemplateEmailAmofEng.js';
+import {email_template_oktoberfest} from './TemplateOktoberfest.js';
+import {email_template_oktoberfest_en} from './TemplateOktoberfestEn.js';
 
-import { generatePDFInvoice, generatePDF_freePass, generatePDF_freePass_amof, generatePDF_freePass_futuristic, generateQRDataURL } from './generatePdf.js';
+import { generatePDFInvoice, generatePDF_freePass, generatePDF_freePass_amof, generatePDF_freePass_futuristic, generateQRDataURL, generatePDFInvoiceOktoberfest } from './generatePdf.js';
 import PDFDocument from 'pdfkit';
 import { Resend } from "resend";
 
@@ -415,12 +417,12 @@ app.post('/complete-order-oktoberfest', async (req, res) => {
                 const paypal_id_transaction = json.purchase_units[0].payments.captures[0].id;                     
                 await RegisterModel.save_order_oktoberfest({paypal_id_order, paypal_id_transaction, ...body});
 
-                /*const pdfAtch = await generatePDFInvoice(paypal_id_transaction, body, uuid);
+                const pdfAtch = await generatePDFInvoiceOktoberfest(paypal_id_transaction, body);
 
-                const mailResponse = await sendEmail(body, pdfAtch, paypal_id_transaction);   
-                */
+                const mailResponse = await sendEmailOktoberfest(body, pdfAtch, paypal_id_transaction);   
+                
                 return res.send({
-                    //...mailResponse,
+                    ...mailResponse,
                     invoice: `${paypal_id_transaction}.pdf`
                 });                
             }
@@ -643,7 +645,7 @@ app.get('/template-email', async (req, res) => {
         maternSurname: 'Gomez',
         email: ''
     }
-    const emailContent = await email_template_amof_eng({ ...data });
+    const emailContent = await email_template_oktoberfest_en({ ...data });
     res.send(emailContent);
 });
 
@@ -740,6 +742,42 @@ async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){
         return {
             status: true,
             message: 'Gracias por registrarte, te hemos enviado un correo de confirmación a tu bandeja de entrada...'
+        };
+
+    } catch (err) {
+        console.log(err);
+        return {
+            status: false,
+            message: 'No pudimos enviarte el correo de confirmación de tu registro, por favor descarga tu registro en este pagina y presentalo hasta el dia del evento...'
+        };              
+    }    
+}
+
+/* EMAIL OKTOBERFEST */
+async function sendEmailOktoberfest(data, pdfAtch = null, paypal_id_transaction = null){    
+    try{
+       
+        
+        const emailContent = data.currentLanguage === 'es' ?  await email_template_oktoberfest({ ...data }) : await email_template_oktoberfest_en({ ...data });
+       
+        await resend.emails.send({
+            from: 'OKTOBERFEST LEÓN 2024 <noreply@industrialtransformation.mx>',
+            to: data.email,
+            subject: 'Gracias por tu compra, te esperamos en OKTOBERFEST LEÓN 2024',
+            html: emailContent,
+            attachments: [
+                {
+                    filename: `${paypal_id_transaction}.pdf`,
+                    path: `https://industrialtransformation.mx/invoices/${paypal_id_transaction}.pdf`,
+                    content_type: 'application/pdf'
+                },
+              ],           
+        })
+        
+
+        return {
+            status: true,
+            message: 'Gracias por tu compra, te hemos enviado un correo de confirmación a tu bandeja de entrada...'
         };
 
     } catch (err) {

@@ -900,7 +900,7 @@ async function generatePDF_freePass_futuristic( body, uuid ) {
 }
 
 // generate pdf for oktoberfest reservation
-async function generatePDFInvoiceOktoberfest(paypal_id_transaction, body, uuid) {
+async function generatePDFInvoiceOktoberfest(paypal_id_transaction, body) {
 
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = dirname(__filename);
@@ -999,4 +999,4 @@ async function generatePDFInvoiceOktoberfest(paypal_id_transaction, body, uuid) 
     return pdfSave;
 }
 
-export { generatePDFInvoice, generatePDF_freePass, generatePDF_freePass_amof, generatePDF_freePass_futuristic, generateQRDataURL };
+export { generatePDFInvoice, generatePDF_freePass, generatePDF_freePass_amof, generatePDF_freePass_futuristic, generateQRDataURL, generatePDFInvoiceOktoberfest };
