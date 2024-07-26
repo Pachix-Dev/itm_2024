@@ -20,6 +20,8 @@ export function CheckoutForm({ currentLanguage }) {
     setPhone,
     setCompany,
     setCompleted,
+    setcomplete_purchase,
+    setInvoiceDownToLoad,
     total,
     clearCart,
   } = useOktoberfest()
@@ -116,7 +118,7 @@ export function CheckoutForm({ currentLanguage }) {
       //clearCart()
       setcomplete_purchase(true)
       setInvoiceDownToLoad(orderData?.invoice)
-      window.location.href = '/thanks-for-your-purchase'
+      window.location.href = '/oktoberfest-gracias-por-tu-compra'
     } else {
       setProcessing(false)
       setMessage(orderData?.message)

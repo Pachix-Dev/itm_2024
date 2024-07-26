@@ -11,12 +11,19 @@ const useOktoberfest = create(
             company: '',
             total: 0,
             completed: false,
+            
+            complete_purchase: false,    
+            invoiceDownToLoad: '',
 
             setName: (name) => set({ name }),
             setEmail: (email) => set({ email }),
             setPhone: (phone) => set({ phone }),
             setCompany: (company) => set({ company }),
             setCompleted: (completed) => set({ completed }),
+
+            setcomplete_purchase: (value) => set({ complete_purchase: value }),
+            setInvoiceDownToLoad: (value) => set({ invoiceDownToLoad: value }),
+
 
             addToCart: (product, quantity = 1) => {
               console.log('hola');
