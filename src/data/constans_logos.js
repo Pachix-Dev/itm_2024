@@ -44,7 +44,17 @@ const exhibitors_1 = [
     { src: '/exhibitors/emka.webp', alt: '', width: 170 },
     { src: '/exhibitors/ateq.webp', alt: '', width: 170 },
     { src: '/exhibitors/copa_data.webp', alt: '', width: 170 },
-]
+    { src: '/exhibitors/meanwell.webp', alt: '', width: 170 },
+    { src: '/exhibitors/krohne.webp', alt: '', width: 170 },
+    { src: '/exhibitors/badesa.webp', alt: '', width: 170 },
+    { src: '/exhibitors/cronos.webp', alt: '', width: 170 },
+    { src: '/exhibitors/halder.webp', alt: '', width: 170 },
+    { src: '/exhibitors/tractian.webp', alt: '', width: 170 },
+    { src: '/exhibitors/polyworks.webp', alt: '', width: 170 },
+    { src: '/exhibitors/dyce.webp', alt: '', width: 170 },
+    { src: '/exhibitors/cognex.webp', alt: '', width: 170 },
+    { src: '/exhibitors/deltorno.webp', alt: '', width: 170 },
+  ]
 
 const alliesStrategic = [
     {
