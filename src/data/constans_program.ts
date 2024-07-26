@@ -15,7 +15,7 @@ interface Program {
 
 const stage_1_day_1: Program[] = [
     {
-        "title": "Mitsubishi",
+        "title": "El futuro del end of arm tooling by Mitsubishi",
         "description": "",
         "time": "12:00 hrs",
         "duration": "45 mins",
@@ -28,9 +28,9 @@ const stage_1_day_1: Program[] = [
         "duration": "45 mins",
         "speakers": [
             {
-                "name": "Akitake Kato",
-                "position": "Presidente de Misumi México",
-                "company": "",
+                "name": "Carlos Orozco",
+                "position": "Director de Ventas",
+                "company": "MISUMI México",
                 "image": "/profile.svg"
             }
         ]
@@ -52,9 +52,9 @@ const stage_1_day_2: Program[] = [
         "duration": "45 mins",
         "speakers": [
             {
-                "name": "Akitake Kato",
-                "position": "Presidente de Misumi México",
-                "company": "",
+                "name": "Carlos Orozco",
+                "position": "Director de Ventas",
+                "company": "MISUMI México",
                 "image": "/profile.svg"
             }
         ]
@@ -67,7 +67,7 @@ const stage_1_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "Mitsubishi",
+        "title": "La transformación del diecasting by Mitsubishi",
         "description": "",
         "time": "16:15 hrs",
         "duration": "45 mins",
@@ -104,15 +104,15 @@ const stage_1_day_3: Program[] = [
         "duration": "45 mins",
         "speakers": [
             {
-                "name": "Akitake Kato",
-                "position": "Presidente de Misumi México",
-                "company": "",
+                "name": "Carlos Orozco",
+                "position": "Director de Ventas",
+                "company": "MISUMI México",
                 "image": "/profile.svg"
             }
         ]
     },
     {
-        "title": "Mitsubishi",
+        "title": "Procesos de inspección a la medida by Mitsubishi",
         "description": "",
         "time": "13:15 hrs",
         "duration": "45 mins",
@@ -150,8 +150,15 @@ const stage_2_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": "Cómo la tecnología está redefiniendo la manufactura y transformando a la industria",
+        "title": "Panel Nokia ",
         "description": "",
+        "time": "16:45 hrs",
+        "duration": "45 mins",
+        "speakers": []
+    },
+    {
+        "title": "Industrial Transformation",
+        "description": "Esta conferencia explora como la tecnología esta redefiniendo los procesos de fabricación y gestión empresarial. Descubre como estas innovaciones impulsan la productividad, competitividad y colaboración internacional a través de la automatización y digitalización de servicios. Además, ejemplifica cómo estas acciones están transformando el futuro de la industria y catapultando a México hacia una era de crecimiento económico para el sector nacional.",
         "time": "17:30 hrs",
         "duration": "45 mins",
         "speakers": [
@@ -181,21 +188,21 @@ const stage_2_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "Cumbre",
+        "title": "Panel de la Cumbre",
         "description": "",
         "time": "13:15 hrs",
         "duration": "45 mins",
         "speakers": []
     },
     {
-        "title": "Cumbre",
+        "title": "Panel de la Cumbre",
         "description": "",
         "time": "14:00 hrs",
         "duration": "45 mins",
         "speakers": []
     },
     {
-        "title": "Cumbre",
+        "title": "Panel de la Cumbre",
         "description": "",
         "time": "15:00 hrs",
         "duration": "60 mins",
@@ -213,6 +220,45 @@ const stage_2_day_2: Program[] = [
                 "company": "",
                 "image": "/profile.svg"
             }
+        ]
+    },
+    {
+        "title": "MUJERES QUE TRANSFORMAN: Marketing y Automatización",
+        "description": "",
+        "time": "17:30 hrs",
+        "duration": "60 mins",
+        "speakers": [
+            {
+                "name": "Siemens ",
+                "position": "",
+                "company": "",
+                "image": "/profile.svg"
+            },
+            {
+                "name": "Mitsubishi ",
+                "position": "",
+                "company": "",
+                "image": "/profile.svg"
+            },
+            {
+                "name": "Festo ",
+                "position": "",
+                "company": "",
+                "image": "/profile.svg"
+            },
+            {
+                "name": "Hitachi ",
+                "position": "",
+                "company": "",
+                "image": "/profile.svg"
+            },  
+            {
+                "name": "Claudia Rodrigez ",
+                "position": "Marketing Manager",
+                "company": "A3 Mexico",
+                "image": "/profile.svg"
+            },       
+
         ]
     },
     {
