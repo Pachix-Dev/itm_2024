@@ -1,11 +1,13 @@
 ---
-import { changeLanguage, t } from "i18next";
+import i18next, { changeLanguage, t } from "i18next";
 import LayoutOktoberfest from "../../layouts/LayoutOktoberfest.astro";
 import { Resume } from "../../components/oktoberfest/Resume.jsx";
 import { Total } from "../../components/oktoberfest/Total.jsx";
 import { CheckoutForm } from "../../components/oktoberfest/CheckoutForm.jsx";
 
 changeLanguage("en");
+
+const currentLanguage = i18next.language;
 ---
 
 <LayoutOktoberfest title='Oktoberfest | reservaciones'>
@@ -16,7 +18,7 @@ changeLanguage("en");
     </p>
   </header>
   <main class='sm:p-10 w-full sm:w-3/5 order-2 sm:order-1 p-4'>
-    <CheckoutForm client:only />
+    <CheckoutForm currentLanguage={currentLanguage} client:only />
   </main>
   <aside
     class='sm:fixed right-0 top-0 z-50 p-5 w-full sm:w-2/5 order-1 sm:order-2 bg-[#f7f7f8] h-auto sm:h-full border shadow-lg'

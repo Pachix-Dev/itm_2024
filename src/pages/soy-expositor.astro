@@ -1,11 +1,12 @@
 ---
-import { t, changeLanguage } from "i18next";
-// @ts-ignore
-import { localizePath } from "astro-i18next";
+import i18next, { t, changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import RedButton from "../components/shared/RedButton.astro";
 
 changeLanguage("es");
+
+const lang = i18next.language;
+const base = i18next.language === "es" ? "" : `/${lang}`;
 ---
 
 <Layout title={`ITM 2024 | ${t('menu.exhibitors_11')}`}>
@@ -17,12 +18,12 @@ changeLanguage("es");
     </h1>
     <div class='flex flex-wrap gap-5 px-5 justify-center'>
       <RedButton
-        href={localizePath('/tarifas-especiales-para-hoteles')}
+        href={`${base}/tarifas-especiales-para-hoteles`}
         withIcon={false}
         className='text-2xl font-semibold *:p-5'>{t('hotels.title')}</RedButton
       >
       <RedButton
-        href={localizePath('/toolkit-2024')}
+        href={`${base}/toolkit-2024`}
         withIcon={false}
         className='text-2xl font-semibold *:p-5'>Toolkit ITM</RedButton
       >
