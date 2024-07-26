@@ -5,82 +5,112 @@ import Layout from "../../layouts/Layout.astro";
 changeLanguage("en");
 ---
 
-<Layout title={`ITM 2024 | ${t("menu.exhibitors_7")}`}>
-    <main class="p-5 md:px-20 xl:px-36">
-        <h2>{t('sponsorships.subtitle')}</h2>
-        <h1 class="text-3xl lg:text-4xl 2xl:text-5xl font-medium py-5" >{t('sponsorships.title')}</h1>
-        <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 2xl:gap-10"
-        >
-            <div class="relative bg-white border border-gray-200 rounded-lg shadow">
-                <img class="rounded-t-lg" src="/img/sponsorbg1.webp" alt="sponsor 1" />
-                <div class="p-5">
-                    <h5 class="mb-10 text-xl font-semibold tracking-tight text-black">
-                        Paquetes de Patrocinios: Platino, Gold y Silver
-                    </h5>
-                    <a class="absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5" href="/files/1_patrocinio%20alianza-ITM-2024-v2.pdf" target="_blank">{t('sponsorships.button')}</a>
-                </div>
-            </div>
-
-            <div class="relative bg-white border border-gray-200 rounded-lg shadow">
-                <img class="rounded-t-lg" src="/img/sponsorbg2.webp" alt="sponsor 2" />
-                <div class="p-5">
-                    <h5 class="mb-10 text-xl font-semibold tracking-tight text-black">
-                        Patrocinio de Conferencia Keynote
-                    </h5>
-                    <a class="absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5" href="/files/2-Patrocinio-Keynote-ITM-2024.pdf" target="_blank">{t('sponsorships.button')}</a>
-                </div>
-            </div>
-
-            <div class="relative bg-white border border-gray-200 rounded-lg shadow">
-                <img class="rounded-t-lg" src="/img/sponsorbg3.webp" alt="sponsor 3" />
-                <div class="p-5">
-                    <h5 class="mb-10 text-xl font-semibold tracking-tight text-black">
-                        Patrocinios Noche de Industriales
-                    </h5>
-                    <a class="absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5" href="/files/3-Patrocinios-Noche-de-Industriales-ITM-2024.pdf" target="_blank">{t('sponsorships.button')}</a>
-                </div>
-            </div>
-
-            <div class="relative bg-white border border-gray-200 rounded-lg shadow">
-                <img class="rounded-t-lg" src="/img/sponsorbg4.webp" alt="sponsor 4" />
-                <div class="p-5">
-                    <h5 class="mb-10 text-xl font-semibold tracking-tight text-black">
-                        Patrocinio presentación comercial – Transformation Area
-                    </h5>
-                    <a class="absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5" href="/files/4-Patrocinio-Transformation-ITM-2024.pdf" target="_blank">{t('sponsorships.button')}</a>
-                </div>
-            </div>
-
-            <div class="relative bg-white border border-gray-200 rounded-lg shadow">
-                <img class="rounded-t-lg" src="/img/sponsorbg5.webp" alt="sponsor 5" />
-                <div class="p-5">
-                    <h5 class="mb-10 text-xl font-semibold tracking-tight text-black">
-                        Patrocinio de Módulos de registro
-                    </h5>
-                    <a class="absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5" href="/files/5-Patrocinio-Módulos-de-registro-ITM-2024.pdf" target="_blank">{t('sponsorships.button')}</a>
-                </div>
-            </div>
-
-            <div class="relative bg-white border border-gray-200 rounded-lg shadow">
-                <img class="rounded-t-lg" src="/img/sponsorbg6.webp" alt="sponsor 6" />
-                <div class="p-5">
-                    <h5 class="mb-10 text-xl font-semibold tracking-tight text-black">
-                        Patrocinio Inauguración
-                    </h5>
-                    <a class="absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5" href="/files/6-Patrocinio-Inauguracion-ITM-2024.pdf" target="_blank">{t('sponsorships.button')}</a>
-                </div>
-            </div>
-
-            <div class="relative bg-white border border-gray-200 rounded-lg shadow">
-                <img class="rounded-t-lg" src="/img/sponsorbg7.webp" alt="sponsor 7" />
-                <div class="p-5">
-                    <h5 class="mb-10 text-xl font-semibold tracking-tight text-black">
-                        Patrocinio Área de Networking
-                    </h5>
-                    <a class="absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5" href="/files/7-Patrocinio-Área-de-Networking-ITM-2023.pdf" target="_blank">{t('sponsorships.button')}</a>
-                </div>
-            </div>
+<Layout title={`ITM 2024 | ${t('menu.exhibitors_7')}`}>
+  <main class='p-5 md:px-20 xl:px-36'>
+    <h2>{t('sponsorships.subtitle')}</h2>
+    <h1 class='text-3xl lg:text-4xl 2xl:text-5xl font-medium py-5'>
+      {t('sponsorships.title')}
+    </h1>
+    <div
+      class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 2xl:gap-10'
+    >
+      <div class='relative bg-white border border-gray-200 rounded-lg shadow'>
+        <img class='rounded-t-lg' src='/img/sponsorbg1.webp' alt='sponsor 1' />
+        <div class='p-5'>
+          <h5 class='mb-10 text-xl font-semibold tracking-tight text-black'>
+            Paquetes de Patrocinios: Platino, Gold y Silver
+          </h5>
+          <a
+            class='absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5'
+            href='/files/1_patrocinio%20alianza-ITM-2024-v2.pdf'
+            target='_blank'>{t('sponsorships.button')}</a
+          >
         </div>
-    </main>
+      </div>
+
+      <div class='relative bg-white border border-gray-200 rounded-lg shadow'>
+        <img class='rounded-t-lg' src='/img/sponsorbg2.webp' alt='sponsor 2' />
+        <div class='p-5'>
+          <h5 class='mb-10 text-xl font-semibold tracking-tight text-black'>
+            Patrocinio de Conferencia Keynote
+          </h5>
+          <a
+            class='absolute bottom-2 bg-gray-700 font-bold rounded-lg text-white py-2 px-5'
+            href='/files/2-Patrocinio-Keynote-ITM-2024.pdf'
+            target='_blank'>SOLD OUT</a
+          >
+        </div>
+      </div>
+
+      <div class='relative bg-white border border-gray-200 rounded-lg shadow'>
+        <img class='rounded-t-lg' src='/img/sponsorbg3.webp' alt='sponsor 3' />
+        <div class='p-5'>
+          <h5 class='mb-10 text-xl font-semibold tracking-tight text-black'>
+            Patrocinios Noche de Industriales
+          </h5>
+          <a
+            class='absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5'
+            href='/files/3-Patrocinios-Noche-de-Industriales-ITM-2024.pdf'
+            target='_blank'>{t('sponsorships.button')}</a
+          >
+        </div>
+      </div>
+
+      <div class='relative bg-white border border-gray-200 rounded-lg shadow'>
+        <img class='rounded-t-lg' src='/img/sponsorbg4.webp' alt='sponsor 4' />
+        <div class='p-5'>
+          <h5 class='mb-10 text-xl font-semibold tracking-tight text-black'>
+            Patrocinio presentación comercial – Transformation Area
+          </h5>
+          <a
+            class='absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5'
+            href='/files/4-Patrocinio-Transformation-ITM-2024.pdf'
+            target='_blank'>{t('sponsorships.button')}</a
+          >
+        </div>
+      </div>
+
+      <div class='relative bg-white border border-gray-200 rounded-lg shadow'>
+        <img class='rounded-t-lg' src='/img/sponsorbg5.webp' alt='sponsor 5' />
+        <div class='p-5'>
+          <h5 class='mb-10 text-xl font-semibold tracking-tight text-black'>
+            Patrocinio de Módulos de registro
+          </h5>
+          <a
+            class='absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5'
+            href='/files/5-Patrocinio-Módulos-de-registro-ITM-2024.pdf'
+            target='_blank'>{t('sponsorships.button')}</a
+          >
+        </div>
+      </div>
+
+      <div class='relative bg-white border border-gray-200 rounded-lg shadow'>
+        <img class='rounded-t-lg' src='/img/sponsorbg6.webp' alt='sponsor 6' />
+        <div class='p-5'>
+          <h5 class='mb-10 text-xl font-semibold tracking-tight text-black'>
+            Patrocinio Inauguración
+          </h5>
+          <a
+            class='absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5'
+            href='/files/6-Patrocinio-Inauguracion-ITM-2024.pdf'
+            target='_blank'>{t('sponsorships.button')}</a
+          >
+        </div>
+      </div>
+
+      <div class='relative bg-white border border-gray-200 rounded-lg shadow'>
+        <img class='rounded-t-lg' src='/img/sponsorbg7.webp' alt='sponsor 7' />
+        <div class='p-5'>
+          <h5 class='mb-10 text-xl font-semibold tracking-tight text-black'>
+            Patrocinio Área de Networking
+          </h5>
+          <a
+            class='absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5'
+            href='/files/7-Patrocinio-Área-de-Networking-ITM-2023.pdf'
+            target='_blank'>{t('sponsorships.button')}</a
+          >
+        </div>
+      </div>
+    </div>
+  </main>
 </Layout>
