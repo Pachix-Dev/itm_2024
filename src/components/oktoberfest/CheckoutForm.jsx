@@ -66,7 +66,7 @@ export function CheckoutForm({ currentLanguage }) {
       <div className='flex-1 flex flex-col justify-center items-center h-screen'>
         <p className='text-2xl font-bold'>Tu carrito está vacío</p>
         <a
-          href='/tickets'
+          href='/oktoberfest-reservaciones'
           className='bg-[#002C5B] hover:bg-[#941E81] text-white rounded-lg p-4 mt-5'
         >
           Volver a la tienda
@@ -75,8 +75,8 @@ export function CheckoutForm({ currentLanguage }) {
     )
   }
 
-  //const urlbase = 'https://industrialtransformation.mx/server/'
-  const urlbase = 'http://localhost:3010/'
+  const urlbase = 'https://industrialtransformation.mx/server/'
+  //const urlbase = 'http://localhost:3010/'
 
   async function createOrder() {
     const response = await fetch(urlbase + 'create-order-oktoberfest', {
