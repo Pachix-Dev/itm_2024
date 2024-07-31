@@ -748,6 +748,15 @@
         "octubre": "October",
         "hours": "1:00pm - 9:00pm",
         "reservation": "Reserve your table"
-    }   
-    
+    },
+    "programaSummiTCCE": {
+        "title": "CONFERENCE PROGRAM",
+        "text_1": "FIRST GLOBAL SUMMIT MEXICO",
+        "text_2": "BUILDING THE MEXICO OF THE FUTURE",
+        "text_3": "Towards a Technological and Inclusive Prosperity",
+        "room_1": "ROOM MAGISTRAL",
+        "room_2": "ROOM AMOF",
+        "room_3": "ROOM ITM",
+        "get_vip": "Get access"
+    }
 }

@@ -7,8 +7,13 @@ export function ProgramVip() {
   const products = [
     {
       id: 1,
-      name: 'Conferencias premium',
-      price: 3500,
+      name: 'Programa de Conferencias CCE - ITM - AMOF',
+      price: 5800,
+      included: [
+        'Acceso 2 días al programa de Conferencias CCE - ITM - AMOF',
+        'Coffee Break',
+        'Entrada al piso de exposición',
+      ],
     },
   ]
 
@@ -66,11 +71,28 @@ export function ProgramVip() {
               <div className='flex items-baseline text-black '>
                 <span className='text-3xl font-semibold'>$</span>
                 <span className='text-5xl font-extrabold tracking-tight'>
-                  {product.price}
+                  5000 + IVA
                 </span>
                 <span className='font-bold'>MXN</span>
               </div>
-
+              <ul role='list' className='space-y-5 my-7'>
+                {product.included.map((list, index) => (
+                  <li key={index} className='flex items-center'>
+                    <svg
+                      className='flex-shrink-0 w-4 h-4 text-blue-600 '
+                      aria-hidden='true'
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='currentColor'
+                      viewBox='0 0 20 20'
+                    >
+                      <path d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z' />
+                    </svg>
+                    <span className='text-base font-normal leading-tight text-gray-500  ms-3'>
+                      {list}
+                    </span>
+                  </li>
+                ))}
+              </ul>
               <button
                 type='button'
                 className='mt-5 text-white border border-white bg-gray-950 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center'

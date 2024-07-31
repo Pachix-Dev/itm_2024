@@ -49,9 +49,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
 
     const doc = new PDFDocument();
     const pdfStream = fs.createWriteStream(pdfSave);            
-    const logoVev = path.resolve(__dirname, 'Logo_ITM.jpg');  
-
-    const imageQr = await generateQRDataURL(paypal_id_transaction);
+    const logoVev = path.resolve(__dirname, 'img/Logo_ITM.jpg');     
       
     doc.pipe(pdfStream);             
     doc.image(logoVev, 50, 45, { width: 100 });    
@@ -113,9 +111,9 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
     doc    
     .fontSize(10)
     .text(body.item.name, 50, 310)
-    .text(formatAmountMXN(body.item.price), 320, 310 )
+    .text(formatAmountMXN('5000'), 320, 310 )
     .text('1', 450, 310)
-    .text(formatAmountMXN(body.item.price), 0, 310, { align: "right" });
+    .text(formatAmountMXN('5000'), 0, 310, { align: "right" });
     
     doc
     .strokeColor("#aaaaaa")
@@ -127,12 +125,14 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
     doc.moveDown(2);    
     doc
         .fontSize(10)
-        .text('Subtotal:       '+ formatAmountMXN(body.total), { width: 540, align: "right" });
+        .text('Subtotal:       $5,000', { width: 540, align: "right" });
+    doc
+        .fontSize(10)
+        .text('IVA:            $8,00 ', { width: 540, align: "right" });    
     doc
         .fontSize(10)
         .font("Helvetica-Bold")
-        .text('TOTAL:          ' + formatAmountMXN(body.total), { width: 540, align: "right" });    
-    doc.image(imageQr, 50, 650, { width: 100 });
+        .text('TOTAL:          $5,800' , { width: 540, align: "right" });    
 
     const qrMainUser = await generateQRDataURL(uuid);
     doc.addPage();

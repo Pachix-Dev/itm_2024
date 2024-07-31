@@ -45,7 +45,7 @@ const resend = new Resend(process.env.RESEND_APIKEY)
 app.post('/create-order', (req, res) => {    
     const { body } = req;
     
-    if(body.total != 3500){
+    if(body.total != 5800){
         return res.status(500).send({
             status: false,
             message: 'Tu compra no pudo ser procesada, la información no es valida...'

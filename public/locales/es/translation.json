@@ -506,7 +506,7 @@
         "day_1": "miércoles",
         "day_2": "jueves",
         "day_3": "viernes",
-        "stages": "Escenarios",
+        "stages": "Escenarios",        
         "about": "Acerca de",
         "speech": "Ponencia"
     },
@@ -749,5 +749,15 @@
         "reservation": "Reserva tu mesa",
         "reservation_description": "RESERVA DE MESAS - OKTOBERFEST LEON 2024"
 
-    }    
+    },
+    "programaSummiTCCE": {
+        "title": "PROGRAMA DE CONFERENCIAS",
+        "text_1": "PRIMERA CUMBRE MUNDIAL MÉXICO",
+        "text_2": "CONSTRUYENDO EL MÉXICO DEL FUTURO",
+        "text_3": "Hacia una Prosperidad Tecnológica e Inclusiva",
+        "room_1": "SALÓN MAGISTRAL",
+        "room_2": "SALÓN AMOF",
+        "room_3": "SALÓN ITM",
+        "get_vip": "Obtén tu acceso"
+    }
 }

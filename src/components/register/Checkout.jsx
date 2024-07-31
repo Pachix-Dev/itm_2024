@@ -21,8 +21,8 @@ export function Checkout() {
     intent: 'capture',
   }
 
-  //const urlbase = 'https://industrialtransformation.mx/server/'
-  const urlbase = 'http://localhost:3010/'
+  const urlbase = 'https://industrialtransformation.mx/server/'
+  //const urlbase = 'http://localhost:3010/'
 
   async function createOrder() {
     const response = await fetch(urlbase + 'create-order', {
@@ -40,7 +40,7 @@ export function Checkout() {
 
   async function onApprove(data) {
     setProcessing(true)
-    const response = await fetch(urlbase + 'compplete-order', {
+    const response = await fetch(urlbase + 'upgrade-user', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -89,14 +89,14 @@ export function Checkout() {
   return (
     <>
       <div className='grid place-items-center w-full bg-white rounded-xl shadow-xl'>
+        {message && (
+          <p className='mt-5 text-red-600 font-bold text-center'>{message}</p>
+        )}
         <div className='mx-auto w-full p-5'>
           <PayPalScriptProvider options={initialOptions}>
             <ButtonWrapper showSpinner={false} />
           </PayPalScriptProvider>
         </div>
-        {message && (
-          <p className='text-red-600 font-bold text-center'>{message}</p>
-        )}
       </div>
 
       {processing && (

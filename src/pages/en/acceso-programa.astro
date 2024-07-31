@@ -1,9 +1,9 @@
 ---
 import { changeLanguage, t } from "i18next";
-import LayoutRegister from "../layouts/LayoutRegister.astro";
-import { Upgrade } from "../components/register/Upgrade.jsx";
+import { Upgrade } from "../../components/register/Upgrade.jsx";
+import LayoutRegister from "../../layouts/LayoutRegister.astro";
 
-changeLanguage("es");
+changeLanguage("en");
 ---
 
 <LayoutRegister title='SUMMIT CCE'>
@@ -11,15 +11,12 @@ changeLanguage("es");
     <h1
       class='text-[#E42128] text-3xl md:text-5xl leading-snug font-extrabold text-center uppercase'
     >
-      Adquiere tu programa de conferencias vip
+      Adquiere tu programa de conferencias <br />CCE - ITM - AMOF
     </h1>
     <p class='text-center font-bold text-lg md:text-2xl uppercase'>
       da el salto y disfruta de todas nuestras ventajas
     </p>
-    <p class='mt-10 uppercase text-center text-5xl font-extrabold'>
-      {t('directory.comming_soon')}
-    </p>
-    {/* <Upgrade client:only='react' />*/}
+    <Upgrade client:only='react' />
   </main>
 </LayoutRegister>
 <style>

@@ -307,6 +307,13 @@ const sponsors = [
   { src: '/img/siemens_white.png', alt: 'NSK', link: 'https://www.siemens.com/mx/', width: 200 },
 ]
 
+const logosProgramVip = [
+  { src: '/img/logocce.webp', alt: 'program vip 1', width: 200, link: 'https://cce.org.mx/' },
+  { src: '/img/concamin.webp', alt: 'program vip 2', width: 180, link: 'https://www.concamin.org.mx/inicio' },
+  { src: '/img/italianExhibitionGroup.webp', alt: 'program vip 3', width: 150, link: 'https://www.iegexpo.it/en/' },
+  { src: '/img/deutscheMesse.webp', alt: 'program vip 4', width: 200, link: 'https://www.messe.de/en/' },  
+]
+
 const buyers = [
   { src: '/img/buyers1.webp', alt: 'buyers itm 1',  width: 200 },
   { src: '/img/buyers2.webp', alt: 'buyers itm 2',  width: 200 },
@@ -378,4 +385,4 @@ const buyers = [
   { src: '/img/buyers68.webp', alt: 'buyers itm 68',  width: 200 },
   { src: '/img/buyers69.webp', alt: 'buyers itm 69',  width: 200 }
 ]
-export { exhibitors_1, media_1, media_2, alliesStrategic, sponsors, buyers}
+export { exhibitors_1, media_1, media_2, alliesStrategic, sponsors, buyers, logosProgramVip}

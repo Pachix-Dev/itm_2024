@@ -9,7 +9,7 @@ export function Upgrade() {
   const [user, setUser] = useState(false)
 
   const urlbase = 'https://industrialtransformation.mx/server/'
-  //const urlbase = 'http://localhost:3010/';
+  //const urlbase = 'http://localhost:3010/'
 
   const verifyUser = async () => {
     const response = await fetch(urlbase + 'get-user-by-email?email=' + email)
