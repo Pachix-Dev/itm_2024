@@ -1,5 +1,15 @@
 const stage_1_day_1=[
     {
+        "title": "Registro y networking café",
+        "title_en": "Registration and networking coffee",
+        "description": "",
+        "description_en": "",
+        "time": "8:30 hrs",
+        "duration": "30 mins",
+        "speakers": [
+        ]
+    },
+    {
         "title": "Hacia un Nuevo Equilibrio Regional: necesaria una visión integral y de largo plazo",
         "title_en": "Towards a New Regional Balance: a comprehensive and long-term vision is necessary",
         "description": "Introducción, S.E. Ken Salazar, Embajador de EUA en México",
@@ -78,6 +88,12 @@ const stage_1_day_1=[
                 "image": "/profile.svg"
             },
             {
+                "name": "Embajador",
+                "position": "República Federal Alemana en México",
+                "company": "CAINTRA",
+                "image": "/profile.svg"
+            },
+            {
                 "name": "Manuel Pérez Cárdenas",
                 "position": "Moderador",
                 "company": "Consejo Coordinador Empresarial (CCE)",
@@ -137,8 +153,8 @@ const stage_1_day_1=[
     {
         "title": "CONSTRUYENDO EL PAIS DESDE SUS REGIONES. ¿Cómo lograrlo en alianza con el sector privado?",
         "title_en": "BUILDING THE COUNTRY FROM ITS REGIONS. How to achieve it in partnership with the private sector?",
-        "description": "Introducción, por Eduardo Sojo, Coordinador Académico del Pacto Oaxaca",
-        "description_en": "Introduction, by Eduardo Sojo, Academic Coordinator of the Oaxaca Pact",
+        "description": "Introducción, por Eduardo Sojo, Coordinador Académico del Pacto Oaxaca  (2019-2020)",
+        "description_en": "Introduction, by Eduardo Sojo, Academic Coordinator of the Oaxaca Pact  (2019-2020)",
         "time": "16:00 hrs",
         "duration": "90 mins",
         "speakers": [
@@ -170,6 +186,12 @@ const stage_1_day_1=[
                 "name": "Eduardo Sojo",
                 "position": "Coordinador Académico del Pacto ",
                 "company": "Oaxaca",
+                "image": "/profile.svg"
+            },
+            {
+                "name": "Manuel Pérez Cárdenas",
+                "position": "Asesor Ejecutivo de la Presidencia",
+                "company": "CCE",
                 "image": "/profile.svg"
             },
         ]
@@ -268,6 +290,12 @@ const statge_1_day_2=[
                 "name": "José Luis Navarro",
                 "position": "CEO",
                 "company": " ENEL Green Power & ENEL X México",
+                "image": "/profile.svg"
+            },
+            {
+                "name": "Alcaldes de algunas ciudades globales relevantes",
+                "position": "",
+                "company": " ",
                 "image": "/profile.svg"
             },
             {
@@ -417,7 +445,7 @@ const statge_1_day_2=[
         "title_en": "OPPORTUNITIES FOR MEXICO FROM THE RAPID EXPANSION OF THE SPACE INDUSTRY IN THE USA",
         "description": "",
         "time": "17:00 hrs",
-        "duration": "60 mins",
+        "duration": "90 mins",
         "speakers": [
             {
                 "name": "Andrés Rodríguez",
@@ -425,72 +453,6 @@ const statge_1_day_2=[
                 "company": "Lockheed Martin",
                 "image": "/profile.svg"
             },
-            {
-                "name": "Northrop Grumman Corporation",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
-            },
-            {
-                "name": "Space X",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
-            },
-            {
-                "name": "US Space Force",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
-            }
-        ]
-    },
-    {
-        "title": "¿QUÉ REQUIEREN LAS EMPRESAS MEXICANAS PARA LIGARSE A LAS CADENAS DE PROVEEDURIA DE LOS EUA?",
-        "title_en": "WHAT DO MEXICAN COMPANIES NEED TO LINK TO US SUPPLY CHAINS?",
-        "description": "",
-        "time": "18:00 hrs",
-        "duration": "60 mins",
-        "speakers": [
-            {
-                "name": "Departamento de Comercio del Gobierno de los EUA",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
-            },
-            {
-                "name": "USA Department of State",
-                "position": "Directorate of Defense",
-                "company": "Trade Controls (DDTC) ",
-                "image": "/profile.svg"
-            },
-            {
-                "name": "Lockheed Martin Corporation",
-                "position": "Director of Global Supply Chain",
-                "company": "Lockheed Martin Corporation",
-                "image": "/profile.svg"
-            },
-            {
-                "name": "Especialista Jurídico y Legislativo en Materia Aeroespacial Mexicana",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
-            },
-            {
-                "name": "Experto Legal, Marco Legal Norteamericano en Materia de Cadenas de Suministro Aeroespacial",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
-            }
-        ]
-    },
-    {
-        "title": "MÉXICO COMO UN HUB DEL NUEVO ESPACIO DE AMÉRICA DEL NORTE",
-        "title_en": "MEXICO AS A HUB OF THE NEW SPACE OF NORTH AMERICA",
-        "description": "",
-        "time": "19:00 hrs",
-        "duration": "60 mins",
-        "speakers": [
             {
                 "name": "Asociación Europea de Pequeñas Empresas Espaciales",
                 "position": "",
@@ -504,13 +466,24 @@ const statge_1_day_2=[
                 "image": "/profile.svg"
             },
             {
-                "name": ". Instituto de Investigación Aeroespacial de Corea del Sur",
+                "name": "Instituto de Investigación Aeroespacial de Corea del Sur",
                 "position": "",
                 "company": "KARI",
                 "image": "/profile.svg"
             }
         ]
-    },    
+    },
+    {
+        "title": "SESION DE DISCUSION ABIERTA Y PREGUNTAS",
+        "title_en": "OPEN DISCUSSION SESSION AND QUESTIONS",
+        "description": "Los panelistas discuten entre ellos e interactúan con el público",
+        "description_en": "All the panelists discuss among themselves and interact with the public",
+        "time": "17:00 hrs",
+        "duration": "90 mins",
+        "speakers": [
+        ]
+    }
+      
 ]
 
 
