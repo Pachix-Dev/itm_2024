@@ -751,7 +751,28 @@
         "max_people": "Mesa para 10 personas máximo",
         "people": "Persona(s)",
         "individual": "Porción individual",
-        "addtocart": "Agregar al carrito"
+        "addtocart": "Agregar al carrito",
+        "resume": "Resumen del pedido",
+        "continue": "Continuar",
+        "empty_cart": "Tu carrito está vacío",
+        "back_to_shop": "Volver a la tienda",
+        "register_data": "Regístra tus datos",
+        "edit": "Editar",
+        "check_info": "Por favor revisa que la información sea correcta.",
+        "required": "Campo requerido",
+        "fullname": "Ingresa tu nombre completo",
+        "spacesNotAllowed": "No se aceptan espacios en blanco al inicio o final del nombre, ni simbolos",
+        "email": "Ingresa tu correo electrónico",
+        "novalidEmail": "Por favor ingresa un correo válido",
+        "phone": "Ingresa tu teléfono",
+        "novalidPhone": "Por favor ingresa un teléfono válido",
+        "company": "Ingresa el nombre de tu empresa",
+        "disclamer_1": "No se aceptan cambios, cancelaciones o devoluciones.",
+        "disclamer_2": "Recuerda que deberás presentar una identificación oficial para ingresar al evento.",
+        "disclamer_3": "Los menores de edad deben ingresar en compañía de 1 adulto",
+        "method_payment": "Método de pago"
+        
+        
 
     },
     "programaSummiTCCE": {

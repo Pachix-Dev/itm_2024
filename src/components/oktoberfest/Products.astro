@@ -1,6 +1,6 @@
 ---
 import { AddCart } from './AddCart.jsx'
-import { t } from 'i18next'
+import i18next, { t } from 'i18next'
 
 const translate = t('oktoberfest', { returnObjects: true })
 
@@ -11,6 +11,8 @@ const combos = [
     price: 150,
     description:
       'Salchicha blanca de ternera asada a la parrilla, con una pieza de pan. Acompañada de col agria y ensalada de papa.',
+    description_en:
+      'Grilled white veal sausage with a piece of bread. Served with sour cabbage and potato salad.',
     image: '/img/paquete1.webp',
   },
   {
@@ -19,6 +21,8 @@ const combos = [
     price: 150,
     description:
       'Salchicha roja de cerdo asada a la parrilla, bañada en salsa de curry, servida sobre papas a la francesa.',
+    description_en:
+      'Grilled red pork sausage, bathed in curry sauce, served over french fries.',
     image: '/img/paquete2.webp',
   },
   {
@@ -26,6 +30,7 @@ const combos = [
     name: 'Eisbein mit Sauerkraut und Bratkartoffeln',
     price: 295,
     description: 'Chamorro de cerdo acompañado de col agria y papas asadas.',
+    description_en: 'Pork shank served with sour cabbage and roasted potatoes.',
     image: '/img/paquete3.webp',
   },
   {
@@ -34,6 +39,8 @@ const combos = [
     price: 399,
     description:
       'Salchica blanca o roja asada a la parrilla, con una pieza de pan. Acompañada de col agria y ensalada de papa. INCLUYE TARRO y cerveza de 500ml',
+    description_en:
+      'Grilled white or red sausage, with a piece of bread. Served with sour cabbage and potato salad. INCLUDES 500ml beer and a 500ml jar.',
     image: '/img/paquete4.webp',
   },
 ]
@@ -53,7 +60,11 @@ const combos = [
         />
 
         <div class='p-5'>
-          <p class='text-white'>{combo.description}</p>
+          <p class='text-white'>
+            {i18next.language === 'es'
+              ? combo.description
+              : combo.description_en}
+          </p>
           <div class='mt-2 flex items-center justify-between'>
             <span class='text-3xl font-bold text-white'>${combo.price}</span>
             <AddCart item={combo} translate={translate} client:only />

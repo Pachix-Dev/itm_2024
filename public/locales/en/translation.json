@@ -752,7 +752,27 @@
         "max_people": "Maximum number of people 10",
         "people": "People",
         "individual": "individual portion",
-        "addtocart": "Add to cart"
+        "addtocart": "Add to cart",
+        "resume": "Order summary",
+        "continue": "Continue",
+        "empty_cart": "Empty cart",
+        "back_to_shop": "Back to shop",
+        "register_data": "Register your data",
+        "edit": "Edit",
+        "check_info": "Check your information",
+        "required": "Required field",
+        "fullname": "Enter you full name",
+        "spacesNotAllowed": "Blank spaces at the beginning or end of the name, or symbols are not accepted.",
+        "email": "Enter your email",
+        "novalidEmail": "Please enter a valid email address",
+        "phone": "Enter your phone",
+        "novalidPhone": "Please enter a valid phone number",
+        "company": "Enter your company",
+        "disclamer_1": "No changes, cancellations or refunds are accepted.", 
+        "disclamer_2": "Remember you must present an official ID to enter the event.",        
+        "disclamer_3": "Minors must be accompanied by 1 adult",
+        "method_payment": "Payment method"
+
 
     },
     "programaSummiTCCE": {

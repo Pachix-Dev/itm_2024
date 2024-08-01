@@ -29,7 +29,7 @@ const translate = t("oktoberfest", { returnObjects: true });
       class='sm:fixed right-0 top-0 z-50 p-5 w-full sm:w-2/5 sm:order-2 bg-[#f7f7f8] h-auto sm:h-full border rounded-lg shadow-lg overflow-y-scroll'
     >
       <p class='text-center text-2xl font-bold hidden md:block text-black'>
-        Resumen del pedido
+        {t('oktoberfest.resume')}
       </p>
 
       <Items client:only translate={translate} />
@@ -39,7 +39,7 @@ const translate = t("oktoberfest", { returnObjects: true });
         href='/oktoberfest-checkout'
         class='bg-black p-4 text-white text-4xl flex rounded-xl justify-center items-center w-full mt-5 hover:bg-gray-800'
       >
-        Continuar
+        {t('oktoberfest.continue')}
       </a>
     </aside>
   </main>

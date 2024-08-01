@@ -7,7 +7,7 @@ import {
   usePayPalScriptReducer,
 } from '@paypal/react-paypal-js'
 
-export function CheckoutForm({ currentLanguage }) {
+export function CheckoutForm({ currentLanguage, translate }) {
   const {
     items,
     name,
@@ -66,12 +66,12 @@ export function CheckoutForm({ currentLanguage }) {
   if (items.length === 0) {
     return (
       <div className='flex-1 flex flex-col justify-center items-center h-screen'>
-        <p className='text-2xl font-bold'>Tu carrito está vacío</p>
+        <p className='text-2xl font-bold'>{translate.empty_cart}</p>
         <a
           href='/oktoberfest-reservaciones'
           className='bg-[#002C5B] hover:bg-[#941E81] text-white rounded-lg p-4 mt-5'
         >
-          Volver a la tienda
+          {translate.back_to_shop}
         </a>
       </div>
     )
@@ -129,7 +129,7 @@ export function CheckoutForm({ currentLanguage }) {
     <>
       <div className='px-4 py-7 sm:px-6 lg:px-8 border rounded-2xl shadow-lg'>
         <div className='flex justify-between'>
-          <p className='font-bold text-2xl'>Regístra tus datos</p>
+          <p className='font-bold text-2xl'>{translate.register_data}</p>
           <button
             onClick={() => setCompleted(false)}
             className='text-[#941E81] font-bold flex'
@@ -148,7 +148,7 @@ export function CheckoutForm({ currentLanguage }) {
                 d='m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10'
               />
             </svg>{' '}
-            Editar
+            {translate.edit}
           </button>
         </div>
         {completed ? (
@@ -229,7 +229,7 @@ export function CheckoutForm({ currentLanguage }) {
         ) : (
           <>
             <p className='mt-4 text-gray-500 font-bold'>
-              Por favor revisa que la información sea correcta.
+              {translate.check_info}
             </p>
 
             <form
@@ -240,11 +240,10 @@ export function CheckoutForm({ currentLanguage }) {
                 <input
                   type='text'
                   {...register('name', {
-                    required: 'Nombre completo  es requerido',
+                    required: translate.required,
                     pattern: {
                       value: /^[A-Za-zÀ-ÖØ-öø-ÿ]+(\s[A-Za-zÀ-ÖØ-öø-ÿ]+)*$/,
-                      message:
-                        'No se aceptan espacios en blanco al inicio o final del nombre, ni simbolos',
+                      message: translate.spacesNotAllowed,
                     },
                     onChange: (e) => setName(e.target.value),
                   })}
@@ -252,7 +251,7 @@ export function CheckoutForm({ currentLanguage }) {
                   id='name'
                   defaultValue={name}
                   className='w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm'
-                  placeholder='Ingresa tu nombre completo'
+                  placeholder={translate.fullname}
                   autoComplete='name'
                 />
                 <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
@@ -281,10 +280,10 @@ export function CheckoutForm({ currentLanguage }) {
                 <input
                   type='email'
                   {...register('email', {
-                    required: 'Email es requerido',
+                    required: translate.required,
                     pattern: {
                       value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-                      message: 'Email no válido',
+                      message: translate.novalidEmail,
                     },
                     onChange: (e) => setEmail(e.target.value),
                   })}
@@ -292,7 +291,7 @@ export function CheckoutForm({ currentLanguage }) {
                   name='email'
                   id='email'
                   className='w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm'
-                  placeholder='Ingresa tu email'
+                  placeholder={translate.email}
                   autoComplete='email'
                 />
 
@@ -322,10 +321,10 @@ export function CheckoutForm({ currentLanguage }) {
                 <input
                   type='number'
                   {...register('phone', {
-                    required: 'Numero de teléfono es requerido',
+                    required: translate.required,
                     pattern: {
                       value: /^[0-9]+$/,
-                      message: 'Teléfono no válido',
+                      message: translate.novalidPhone,
                     },
                     onChange: (e) => setPhone(e.target.value),
                   })}
@@ -333,7 +332,7 @@ export function CheckoutForm({ currentLanguage }) {
                   name='phone'
                   id='phone'
                   className='w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm'
-                  placeholder='Ingresa tu numero de teléfono'
+                  placeholder={translate.phone}
                   autoComplete='phone'
                 />
                 <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
@@ -362,11 +361,10 @@ export function CheckoutForm({ currentLanguage }) {
                 <input
                   type='text'
                   {...register('company', {
-                    required: 'Nombre de tu empresa es requerido',
+                    required: translate.required,
                     pattern: {
                       value: /^[A-Za-zÀ-ÖØ-öø-ÿ]+(\s[A-Za-zÀ-ÖØ-öø-ÿ]+)*$/,
-                      message:
-                        'No se aceptan espacios en blanco al inicio o final del nombre, ni simbolos',
+                      message: translate.spacesNotAllowed,
                     },
                     onChange: (e) => setCompany(e.target.value),
                   })}
@@ -374,7 +372,7 @@ export function CheckoutForm({ currentLanguage }) {
                   id='company'
                   defaultValue={company}
                   className='w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm'
-                  placeholder='Ingresa el nombre de tu Empresa'
+                  placeholder={translate.company}
                   autoComplete='company'
                 />
                 <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
@@ -414,7 +412,7 @@ export function CheckoutForm({ currentLanguage }) {
                     d='m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'
                   />
                 </svg>{' '}
-                No se aceptan cambios, cancelaciones o devoluciones.
+                {translate.disclamer_1}
               </div>
 
               <div className=' flex gap-4 mt-2'>
@@ -432,8 +430,7 @@ export function CheckoutForm({ currentLanguage }) {
                     d='M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Zm6-10.125a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0Zm1.294 6.336a6.721 6.721 0 0 1-3.17.789 6.721 6.721 0 0 1-3.168-.789 3.376 3.376 0 0 1 6.338 0Z'
                   />
                 </svg>{' '}
-                Recuerda que deberás presentar una identificación oficial para
-                ingresar al evento.
+                {translate.disclamer_2}
               </div>
 
               <div className='flex gap-4 mt-2'>
@@ -451,21 +448,21 @@ export function CheckoutForm({ currentLanguage }) {
                     d='M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z'
                   />
                 </svg>{' '}
-                Los menores de edad deben ingresar en compañía de 1 adulto
+                {translate.disclamer_3}
               </div>
 
               <button
                 type='submit'
                 className='mt-10 w-full inline-block rounded-lg bg-black hover:bg-slate-700 px-5 py-3 text-2xl font-bold text-white'
               >
-                Continuar
+                {translate.continue}
               </button>
             </form>
           </>
         )}
       </div>
       <div className='mt-5 px-7 py-7 mx-auto border rounded-2xl shadow-lg'>
-        <p className='font-bold text-2xl'>Método de pago</p>
+        <p className='font-bold text-2xl'>{translate.method_payment}</p>
         <PayPalScriptProvider options={initialOptions}>
           {completed && <ButtonWrapper showSpinner={false} />}
         </PayPalScriptProvider>
