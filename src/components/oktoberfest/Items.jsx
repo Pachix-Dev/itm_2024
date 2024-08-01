@@ -1,6 +1,6 @@
 import { useOktoberfest } from '../../store/oktoberfest-cart'
 
-export function Items() {
+export function Items({ translate }) {
   const { items, updateQuantity, removeToCart } = useOktoberfest()
 
   function formatAmountMXN(amount) {
@@ -40,6 +40,7 @@ export function Items() {
           <div>
             <h3 className='font-bold text-lg'>{item.name}</h3>
             <p className='text-sm'>{item.description}</p>
+            <p>* {translate.individual}</p>
             <button
               onClick={() => updateQuantity(item.id, item.quantity - 1)}
               type='button'
@@ -56,7 +57,8 @@ export function Items() {
               className='border-2 rounded-e-lg px-2 leading-[initial] border-gray-300 font-bold'
             >
               +
-            </button>
+            </button>{' '}
+            {translate.people}
           </div>
           <p className='text-3xl'>{formatAmountMXN(item.price)}</p>
         </div>

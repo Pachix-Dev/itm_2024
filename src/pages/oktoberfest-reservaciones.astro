@@ -6,6 +6,8 @@ import { Items } from "../components/oktoberfest/Items.jsx";
 import { Total } from "../components/oktoberfest/Total.jsx";
 
 changeLanguage("es");
+
+const translate = t("oktoberfest", { returnObjects: true });
 ---
 
 <LayoutOktoberfest title='Oktoberfest | reservaciones'>
@@ -16,7 +18,9 @@ changeLanguage("es");
         <p class='font-extrabold text-3xl'>
           {t('oktoberfest.reservation_description')}
           <br />
-          <span class='font-light text-xl'>Mesa para 10 personas maximo</span>
+          <span class='font-light text-xl'>
+            {t('oktoberfest.max_people')}
+          </span>
         </p>
       </div>
       <Products />
@@ -28,7 +32,7 @@ changeLanguage("es");
         Resumen del pedido
       </p>
 
-      <Items client:only />
+      <Items client:only translate={translate} />
       <Total client:only />
 
       <a
