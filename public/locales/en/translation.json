@@ -665,7 +665,10 @@
         "title": "Thank you for registering",
         "title2": "Thank_you_for_registering",
         "description": "Your registration has been successfully completed. We will send you an email with your access to the event.<br /> <br /> We look forward to seeing you at Industrial Transformation Mexico 2024.",
-        "download_pass": "Download your pass"        
+        "download_pass": "Download your pass",
+        "thanks_purchasing": "Thank you for your purchase",
+        "sucess_purchasing": "Fantastic! your purchase was successfully processed.",
+        "email_sent": "You will receive a confirmation email soon!"
     },
     "program_vip": {
         "title": "ADQUIERE TU PROGRAMA DE CONFERENCIAS VIP",

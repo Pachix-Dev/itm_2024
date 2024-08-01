@@ -664,7 +664,10 @@
         "title": "Gracias por registrarte",
         "title2": "Gracias_por_registrarte",
         "description": "Tu registro ha sido exitoso, te hemos enviado un correo con tu gafete de acceso al evento. <br /> <br /> ¡Nos vemos en Industrial Transformation Mexico 2024!",
-        "download_pass": "Descargar tu gafete"        
+        "download_pass": "Descargar tu gafete",
+        "thanks_purchasing": "Gracias por tu compra",
+        "sucess_purchasing": "¡Fantástico! haz tu compra fue procesada correctamente.",
+        "email_sent": "¡Pronto recibiras un correo de confirmación!"
     },
     "program_vip": {
         "title": "ADQUIERE TU PROGRAMA DE CONFERENCIAS VIP",
@@ -771,9 +774,6 @@
         "disclamer_2": "Recuerda que deberás presentar una identificación oficial para ingresar al evento.",
         "disclamer_3": "Los menores de edad deben ingresar en compañía de 1 adulto",
         "method_payment": "Método de pago"
-        
-        
-
     },
     "programaSummiTCCE": {
         "title": "PROGRAMA DE CONFERENCIAS",
