@@ -538,6 +538,12 @@ const stage_2_day_1=[
         "duration": "30 mins",
         "speakers": [
             {
+                "name": "Felipe Gallego",
+                "position": "COO Co-Funder",
+                "company": " Megaflux",
+                "image": "/profile.svg"
+            },
+            {
                 "name": "Francisco Javier García Osorio",
                 "position": "Director de Gestión para la Eficiencia Energética",
                 "company": " Comisión Nacional para el Uso Eficiente de la Energía (CONUEE)",
