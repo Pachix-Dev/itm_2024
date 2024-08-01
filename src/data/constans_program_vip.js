@@ -544,6 +544,15 @@ const stage_2_day_1=[
                 "image": "/profile.svg"
             }
         ]
+    },
+    {
+        "title": "NETWORKING HAPPY HOUR",
+        "title_en": "NETWORKING HAPPY HOUR",
+        "description": "",
+        "time": "19:00 hrs",
+        "duration": "60 mins",
+        "speakers": [            
+        ]
     },          
 ]
 
@@ -553,6 +562,14 @@ const stage_2_day_2=[
         "title_en": "Keynote Clarios",
         "description": "",
         "time": "11:00 hrs",
+        "duration": "30 mins",
+        "speakers": []
+    }, 
+    {
+        "title": "Fireside chat pendiente",
+        "title_en": "Pending fireside chat",
+        "description": "",
+        "time": "12:00 hrs",
         "duration": "30 mins",
         "speakers": []
     },    
