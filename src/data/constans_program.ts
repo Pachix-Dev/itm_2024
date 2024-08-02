@@ -157,6 +157,7 @@ const stage_1_day_3: Program[] = [
 const stage_2_day_1: Program[] = [
     {
         "title": "SIEMENS",
+        "title_en": "SIEMENS",
         "description": "",
         "time": "12:30 hrs",
         "duration": "45 mins",
@@ -180,6 +181,7 @@ const stage_2_day_1: Program[] = [
     },
     {
         "title": "Mitsubishi",
+        "title_en": "Mitsubishi",
         "description": "",
         "time": "16:00 hrs",
         "duration": "45 mins",
@@ -187,6 +189,7 @@ const stage_2_day_1: Program[] = [
     },
     {
         "title": "Panel Nokia ",
+        "title_en": "Nokia Panel",
         "description": "",
         "time": "16:45 hrs",
         "duration": "45 mins",
@@ -194,6 +197,7 @@ const stage_2_day_1: Program[] = [
     },
     {
         "title": "Industrial Transformation",
+        "title_en": "Industrial Transformation",
         "description": "Esta conferencia explora como la tecnología esta redefiniendo los procesos de fabricación y gestión empresarial. Descubre como estas innovaciones impulsan la productividad, competitividad y colaboración internacional a través de la automatización y digitalización de servicios. Además, ejemplifica cómo estas acciones están transformando el futuro de la industria y catapultando a México hacia una era de crecimiento económico para el sector nacional.",
         "description_en": "This conference explores how technology is redefining manufacturing processes and business management. Discover how these innovations drive productivity, competitiveness, and international collaboration through the automation and digitalization of services. It also exemplifies how these actions are transforming the future of the industry and propelling Mexico towards an era of economic growth for the national sector.",
         "time": "17:30 hrs",
@@ -212,6 +216,7 @@ const stage_2_day_1: Program[] = [
 const stage_2_day_2: Program[] = [
     {
         "title": "SIEMENS",
+        "title_en": "SIEMENS",
         "description": "",
         "time": "12:00 hrs",
         "duration": "45 mins",
@@ -219,6 +224,7 @@ const stage_2_day_2: Program[] = [
     },
     {
         "title": "Inauguración Cumbre",
+        "title_en": "Summit Inauguration",
         "description": "",
         "time": "12:45 hrs",
         "duration": "30 mins",
@@ -226,6 +232,7 @@ const stage_2_day_2: Program[] = [
     },
     {
         "title": "Panel de la Cumbre",
+        "title_en": "Summit Panel",
         "description": "",
         "time": "13:15 hrs",
         "duration": "45 mins",
@@ -233,6 +240,7 @@ const stage_2_day_2: Program[] = [
     },
     {
         "title": "Panel de la Cumbre",
+        "title_en": "Summit Panel",
         "description": "",
         "time": "14:00 hrs",
         "duration": "45 mins",
@@ -240,6 +248,7 @@ const stage_2_day_2: Program[] = [
     },
     {
         "title": "Panel de la Cumbre",
+        "title_en": "Summit Panel",
         "description": "",
         "time": "15:00 hrs",
         "duration": "60 mins",
@@ -247,6 +256,7 @@ const stage_2_day_2: Program[] = [
     },
     {
         "title": "Liderazgo femenino en la innovación Industrial",
+        "title_en": "Women's leadership in industrial innovation",
         "description": "",
         "time": "17:00 hrs",
         "duration": "30 mins",
@@ -261,6 +271,7 @@ const stage_2_day_2: Program[] = [
     },
     {
         "title": "MUJERES QUE TRANSFORMAN: Marketing y Automatización",
+        "title_en": "WOMEN WHO TRANSFORM: Marketing and Automation",
         "description": "",
         "time": "17:30 hrs",
         "duration": "60 mins",
@@ -300,6 +311,7 @@ const stage_2_day_2: Program[] = [
     },
     {
         "title": "Cierre ITMujeres y premiación MTech",
+        "title_en": "Closing ITMujeres and MTech award",
         "description": "",
         "time": "18:30 hrs",
         "duration": "30 mins",
@@ -310,6 +322,7 @@ const stage_2_day_2: Program[] = [
 const stage_2_day_3: Program[] = [
     {
         "title": "Desafíos y oportunidades sobre la implementación de la tecnología 5G en el sector industrial",
+        "title_en": "Challenges and opportunities on the implementation of 5G technology in the industrial sector",
         "description": "",
         "time": "11:00 hrs",
         "duration": "60 mins",
@@ -324,6 +337,7 @@ const stage_2_day_3: Program[] = [
     },
     {
         "title": "Mitsubishi",
+        "title_en": "Mitsubishi",
         "description": "",
         "time": "12:00 hrs",
         "duration": "45 mins",
@@ -331,6 +345,7 @@ const stage_2_day_3: Program[] = [
     },
     {
         "title": "Startup Pitch y clausura ITM 2024",
+        "title_en": "Startup Pitch and closing ITM 2024",
         "description": "",
         "time": "15:45 hrs",
         "duration": "75 mins",
