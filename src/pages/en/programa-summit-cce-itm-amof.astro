@@ -46,7 +46,6 @@ const base = i18next.language === "es" ? "" : `/${i18next.language}`;
       <div class='md:ml-5'>
         <Button id='stage-1'>{t('programaSummiTCCE.room_1')}</Button>
         <Button id='stage-2'>{t('programaSummiTCCE.room_2')}</Button>
-        <Button id='stage-3'>{t('programaSummiTCCE.room_3')}</Button>
       </div>
       <div
         class='w-full bg-gradient-to-br from-[#E42128] to-[#CF1363] h-[1px] mt-1 mb-3 rounded-sm'
@@ -166,9 +165,6 @@ const base = i18next.language === "es" ? "" : `/${i18next.language}`;
       .getElementById('stage-2')
       ?.firstElementChild?.classList.remove('bg-opacity-0')
     document
-      .getElementById('stage-3')
-      ?.firstElementChild?.classList.remove('bg-opacity-0')
-    document
       .getElementById(`stage-${stage}`)
       ?.firstElementChild?.classList.add('bg-opacity-0')
   }
@@ -179,9 +175,6 @@ const base = i18next.language === "es" ? "" : `/${i18next.language}`;
       ?.firstElementChild?.classList.remove('bg-opacity-0')
     document
       .getElementById('day-2')
-      ?.firstElementChild?.classList.remove('bg-opacity-0')
-    document
-      .getElementById('day-3')
       ?.firstElementChild?.classList.remove('bg-opacity-0')
     document
       .getElementById(`day-${day}`)
@@ -215,10 +208,6 @@ const base = i18next.language === "es" ? "" : `/${i18next.language}`;
       changeOpacityStageBts(2)
       showProgram(2, state.day)
     })
-    document.getElementById('stage-3')?.addEventListener('click', (e) => {
-      changeOpacityStageBts(3)
-      showProgram(3, state.day)
-    })
 
     document.getElementById('day-1')?.addEventListener('click', (e) => {
       changeOpacityDayBts(1)
@@ -227,10 +216,6 @@ const base = i18next.language === "es" ? "" : `/${i18next.language}`;
     document.getElementById('day-2')?.addEventListener('click', (e) => {
       changeOpacityDayBts(2)
       showProgram(state.stage, 2)
-    })
-    document.getElementById('day-3')?.addEventListener('click', (e) => {
-      changeOpacityDayBts(3)
-      showProgram(state.stage, 3)
     })
   }
 

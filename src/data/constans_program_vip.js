@@ -474,12 +474,20 @@ const statge_1_day_2=[
         ]
     },
     {
+        "title": "¿QUÉ REQUIEREN LAS EMPRESAS MEXICANAS PARA LIGERARSE A LAS CADENAS DE PROVEEDURÍA DE LOS EUA?",
+        "title_en": "WHAT DO MEXICAN COMPANIES NEED TO LINK TO US SUPPLY CHAINS?",
+        "description": "",
+        "time": "18:00 hrs",
+        "duration": "30 mins",
+        "speakers": []
+    },
+    {
         "title": "SESION DE DISCUSION ABIERTA Y PREGUNTAS",
         "title_en": "OPEN DISCUSSION SESSION AND QUESTIONS",
         "description": "Los panelistas discuten entre ellos e interactúan con el público",
         "description_en": "All the panelists discuss among themselves and interact with the public",
-        "time": "17:00 hrs",
-        "duration": "90 mins",
+        "time": "18:30 hrs",
+        "duration": "60 mins",
         "speakers": [
         ]
     }
@@ -614,67 +622,6 @@ const stage_2_day_2=[
 ]
 
 
-const stage_3_day_1=[
-    {
-        "title": "HACIA UNA POLITICA INDUSTRIAL Y DIGITAL. Los retos del Futuro",
-        "title_en": "TOWARDS AN INDUSTRIAL AND DIGITAL POLICY. The challenges of the Future",
-        "description": "",
-        "time": "13:30 hrs",
-        "duration": "60 mins",
-        "speakers": []
-    },
-    {
-        "title": "CONSTRUYENDO EL PAÍS DESDE SUS REGIONES ¿Cómo lograrlo en alianza con el sector privado?",
-        "title_en": "BUILDING THE COUNTRY FROM ITS REGIONS How to achieve it in partnership with the private sector?",
-        "description": "",
-        "time": "16:00 hrs",
-        "duration": "60 mins",
-        "speakers": []
-    },
-    {
-        "title": "LA INDUSTRIA AEROESPACIAL MEXICANA: Expansión Extraordinaria de una Industria de Frontera Tecnológica. Oportunidades para la Empresa Mexicana.",
-        "title_en": "THE MEXICAN AEROSPACE INDUSTRY: Extraordinary Expansion of a Technological Frontier Industry. Opportunities for the Mexican Company.",
-        "description": "",
-        "time": "17:30 hrs",
-        "duration": "30 mins",
-        "speakers": []
-    },    
-]
-
-const stage_3_day_2=[
-    {
-        "title": "SUSTENTABILIDAD Y RESPONSABILIDAD SOCIAL EMPRESARIAL: Metas 2030-2050",
-        "title_en": "SUSTAINABILITY AND CORPORATE SOCIAL RESPONSIBILITY: Goals 2030-2050",
-        "description": "",
-        "time": "11:00 hrs",
-        "duration": "60 mins",
-        "speakers": []
-    },
-    {
-        "title": "CAPACIDADES ACTUALES DE MÉXICO APLICABLES AL SECTOR ESPACIAL",
-        "title_en": "CURRENT CAPABILITIES OF MEXICO APPLICABLE TO THE SPACE SECTOR",
-        "description": "",
-        "time": "16:00 hrs",
-        "duration": "30 mins",
-        "speakers": []
-    },
-    {
-        "title": "OPORTUNIDADES PARA MÉXICO DE LA RÁPIDA EXPANSIÓN INDUSTRIAL ESPACIAL EN LOS EUA",
-        "title_en": "OPPORTUNITIES FOR MEXICO FROM THE RAPID EXPANSION OF THE SPACE INDUSTRY IN THE USA",
-        "description": "",
-        "time": "17:00 hrs",
-        "duration": "30 mins",
-        "speakers": []
-    },
-    {
-        "title": "¿QUÉ REQUIEREN LAS EMPRESAS MEXICANAS PARA LIGERARSE A LAS CADENAS DE PROVEEDURÍA DE LOS EUA?",
-        "title_en": "WHAT DO MEXICAN COMPANIES NEED TO LINK TO US SUPPLY CHAINS?",
-        "description": "",
-        "time": "18:00 hrs",
-        "duration": "30 mins",
-        "speakers": []
-    }
-]
 
 export default [
     {
@@ -696,16 +643,5 @@ export default [
         day: 2,
         stage: 2,
         conferences: stage_2_day_2,
-    },
-    {
-        day: 1,
-        stage: 3,
-        conferences: stage_3_day_1,
-    },
-    {
-        day: 2,
-        stage: 3,
-        conferences: stage_3_day_2,
     }
-
 ]
