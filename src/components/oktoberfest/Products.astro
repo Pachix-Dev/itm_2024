@@ -6,6 +6,16 @@ const translate = t('oktoberfest', { returnObjects: true })
 
 const combos = [
   {
+    id: 4,
+    name: 'COMBO EMPRESARIAL',
+    price: 399,
+    description:
+      'Salchica blanca o roja asada a la parrilla, con una pieza de pan. Acompañada de col agria y ensalada de papa. INCLUYE TARRO y cerveza de 500ml',
+    description_en:
+      'Grilled white or red sausage, with a piece of bread. Served with sour cabbage and potato salad. INCLUDES 500ml beer and a 500ml jar.',
+    image: '/img/paquete4.webp',
+  },
+  {
     id: 1,
     name: 'Weißwurst mit Kartoffelsalat',
     price: 150,
@@ -33,16 +43,6 @@ const combos = [
     description_en: 'Pork shank served with sour cabbage and roasted potatoes.',
     image: '/img/paquete3.webp',
   },
-  {
-    id: 4,
-    name: 'Combo Empresarial',
-    price: 399,
-    description:
-      'Salchica blanca o roja asada a la parrilla, con una pieza de pan. Acompañada de col agria y ensalada de papa. INCLUYE TARRO y cerveza de 500ml',
-    description_en:
-      'Grilled white or red sausage, with a piece of bread. Served with sour cabbage and potato salad. INCLUDES 500ml beer and a 500ml jar.',
-    image: '/img/paquete4.webp',
-  },
 ]
 ---
 
@@ -50,9 +50,7 @@ const combos = [
   {
     combos.map((combo) => (
       <div class=' w-full max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700'>
-        <h5 class='text-xl font-semibold text-white text-center py-2'>
-          {combo.name}
-        </h5>
+        <h5 class='text-xl  text-white text-center py-2'>{combo.name}</h5>
         <img
           class='rounded-t-lg object-cover w-full h-52 md:h-60'
           src={combo.image}
