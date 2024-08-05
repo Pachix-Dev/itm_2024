@@ -390,7 +390,7 @@ export class RegisterModel {
       const connection = await mysql.createConnection(config)
       try {      
         const [result] = await connection.query(
-          'INSERT INTO oktoberfest_orders ( name, email, phone, company, hour, comments, paypal_id_order, paypal_id_transaction, total ) VALUES (?,?,?,?,?,?,?)',
+          'INSERT INTO oktoberfest_orders ( name, email, phone, company, hour, comments, paypal_id_order, paypal_id_transaction, total ) VALUES (?,?,?,?,?,?,?,?,?)',
           [                                   
             name,      
             email,
