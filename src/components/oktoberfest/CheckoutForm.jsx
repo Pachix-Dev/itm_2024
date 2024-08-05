@@ -412,19 +412,19 @@ export function CheckoutForm({ currentLanguage, translate }) {
                   <option value='' className='text-black'>
                     {translate.select_default}
                   </option>
-                  <option value='9 octubre comida' className='text-black'>
+                  <option value={translate.option1} className='text-black'>
                     {translate.option1}
                   </option>
-                  <option value='9 octubre cena' className='text-black'>
+                  <option value={translate.option2} className='text-black'>
                     {translate.option2}
                   </option>
-                  <option value='10 octubre comida' className='text-black'>
+                  <option value={translate.option3} className='text-black'>
                     {translate.option3}
                   </option>
-                  <option value='10 octubre cena' className='text-black'>
+                  <option value={translate.option4} className='text-black'>
                     {translate.option4}
                   </option>
-                  <option value='11 octubre comida' className='text-black'>
+                  <option value={translate.option5} className='text-black'>
                     {translate.option5}
                   </option>
                 </select>
