@@ -112,6 +112,8 @@ export function CheckoutForm({ currentLanguage, translate }) {
         total: total.toFixed(2),
         name,
         email,
+        hour,
+        comments,
         phone,
         company,
         currentLanguage,
