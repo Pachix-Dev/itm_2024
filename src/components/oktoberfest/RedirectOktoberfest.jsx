@@ -1,7 +1,7 @@
 import { useOktoberfest } from '../../store/oktoberfest-cart'
 import { useEffect } from 'react'
 
-export function Redirect() {
+export function RedirectOktoberfest() {
   const { complete_purchase } = useOktoberfest()
 
   useEffect(() => {

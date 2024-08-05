@@ -25,22 +25,6 @@ const email_template_oktoberfest_en = async ({ name, paternSurname, maternSurnam
             </h2>
             <div style="text-align: justify;font-size:22px;">
              Celebrate with us the traditional German holiday! Enjoy music, food and beer in a festive and fun-filled atmosphere.                    
-            </div>
-            <div style="text-align:center;padding:20px;margin-top:25px;">
-              <p style="background: #E42128;padding:20px;border-radius:20px;margin:20px;width:fit-content;margin:auto;">
-                <a style="text-decoration:none; color: white;font-weight:bold;" href="https://industrialtransformation.mx/programa" target='_blank'>                 
-                  SEE THE PROGRAM OF EVENTS PARALLEL TO ITM 2024
-                </a>
-              <p>
-              <p style="margin-top:40px;margin-bottom: 40px;">
-                We look forward to seeing you at the sixth edition of <strong>INDUSTRIAL TRANSFORMATION MEXICO from October 9 to 11, Poliforum, Leon, Guanajuato.</strong>
-              </p>
-              <div style="background: #E42128;color:white;width:fit-content;border-radius: 20px;padding:20px;margin:auto;position:relative;">
-               
-               <p><strong>SCHEDULES:</strong></p>
-               <p>Wednesday 9 and Thursday 10 from 11:00 am - 7:00 pm hrs.</p>
-               <p>Friday 11 from 11:00 am - 5:00 pm hrs</p>
-              </div>
             </div>               
             <p style="font-weight:bold;font-size:20px;text-align: center;">ADD TO CALENDAR</p>
             <div style="text-align:center;padding:20px;margin: 20px;">

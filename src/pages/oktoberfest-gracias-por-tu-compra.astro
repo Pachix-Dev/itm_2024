@@ -2,14 +2,14 @@
 import { changeLanguage, t } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import Confettti from "../components/shared/Confetti";
-import { Redirect } from "../components/shared/Redirect.jsx";
+import { RedirectOktoberfest } from "../components/oktoberfest/RedirectOktoberfest.jsx";
 import { DownloadOktoberfest } from "../components/oktoberfest/DownloadOktoberfest.jsx";
 
 changeLanguage("es");
 ---
 
 <Layout title='ITM  | Gracias por contactarnos'>
-  <Redirect client:only='react' />
+  <RedirectOktoberfest client:only='react' />
   <div class='w-screen h-full p-5 lg:p-20 bg-black'>
     <div
       class='rounded-lg px-4 ecomondo-bloq-1 w-full h-full shadow-2xl text-white flex flex-col items-center justify-center relative'

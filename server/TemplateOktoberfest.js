@@ -19,22 +19,7 @@ const email_template_oktoberfest = async ({ name, paternSurname, maternSurname})
             </h2>
             <div style="text-align: justify;font-size:22px;">
               ¡Celebra con nosotros la tradicional fiesta alemana! Disfruta de la música, la comida y la cerveza en un ambiente festivo y lleno de diversión.                   
-            </div>
-            <div style="text-align:center;padding:20px;margin-top:25px;">
-              <div style="background: #E42128;padding:20px;border-radius:20px;">
-                <a style="text-decoration:none; color: white;font-weight:bold;" href="https://industrialtransformation.mx/programa" target='_blank'>                 
-                  CONSULTA EL PROGRAMA DE EVENTOS PARALELOS A ITM 2024
-                </a>
-              </div>
-              <p style="margin-top:40px;margin-bottom: 40px;">
-                Te esperamos en la sexta edición de <strong>INDUSTRIAL TRANSFORMATION MEXICO del 9 al 11 de octubre, Poliforum, León, Guanajuato.</strong>
-              </p>
-              <div style="background: #E42128;color:white;border-radius: 20px;padding:20px;">               
-               <p><strong>HORARIOS:</strong></p>
-               <p>miércoles 9 y jueves 10 de  11:00 am - 7:00 pm hrs</p>
-               <p>viernes 11 de 11:00 am - 5:00 pm hrs</p>
-              </div>
-            </div>               
+            </div>             
             <p style="font-weight:bold;font-size:20px;text-align: center;">AÑADIR AL CALENDARIO</p>
             <div style="text-align:center;padding:20px;margin: 20px;">
               <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;margin:20px;text-decoration:none;" href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20241009T170000Z%2F20241012T010000Z&details=Industrial%20Transformation%20Mexico%20es%20un%20evento%20interesante%20e%20inclusivo%20en%20el%20que%20los%20actores%20clave%20y%20los%20grupos%20objetivo%20se%20re%C3%BAnen%20para%20crear%20redes%20y%20oportunidades%20de%20intercambio%20de%20conocimientos%20para%20el%20%C3%A9xito%20empresarial.%0A&location=Poliforum%2C%20Le%C3%B3n&text=INDUSTRIAL%20TRANSFORMATION%20MEXICO%202024"

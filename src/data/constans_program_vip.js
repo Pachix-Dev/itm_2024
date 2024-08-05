@@ -10,8 +10,8 @@ const stage_1_day_1=[
         ]
     },
     {
-        "title": "Hacia un Nuevo Equilibrio Regional: necesaria una visión integral y de largo plazo",
-        "title_en": "Towards a New Regional Balance: a comprehensive and long-term vision is necessary",
+        "title": "Hacia un nuevo desarrollo con equilibrio regional: Necesaria una visión integral y de largo plazo",
+        "title_en": "Towards a new development with regional balance: A comprehensive and long-term vision is necessary",
         "description": "Introducción, S.E. Ken Salazar, Embajador de EUA en México",
         "description_en": "Introduction, H.E. Ken Salazar, US Ambassador to Mexico",
         "time": "9:00 hrs",
@@ -129,7 +129,7 @@ const stage_1_day_1=[
             {
                 "name": "Juan Pablo García",
                 "position": "Director General",
-                "company": "CAINTRA",
+                "company": "CAINTRA - Nuevo León",
                 "image": "/profile.svg"
             },
             {
