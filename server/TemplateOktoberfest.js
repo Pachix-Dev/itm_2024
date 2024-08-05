@@ -12,7 +12,7 @@ const email_template_oktoberfest = async ({ name, paternSurname, maternSurname})
         <tr>
           <td colspan="2" >
             <h2 style="text-align: center;margin:0;font-weight:bold;text-transform: uppercase;margin-top: 20px;">
-              BIENVENIDO, ${name} ${paternSurname} ${maternSurname}. <BR /> MUCHAS GRACIAS POR TU COMPRA.
+              BIENVENIDO, ${name}. <BR /> MUCHAS GRACIAS POR TU COMPRA.
             </h2>
             <h2 style='text-align: center;'>
               GRACIAS POR FORMAR PARTE DE <span style="color:#E42128;font-weight:bold;"> <br />OKTOBERFEST LEÓN 2024. </span>
@@ -67,15 +67,15 @@ const email_template_oktoberfest = async ({ name, paternSurname, maternSurname})
               <li>
                 <strong>IMPORTANTE:</strong> Es indispensable llevar este comprobante de pago que viene adjunto en el correo impreso o en formato digital para canjear tu comida.
               </li>
-              <li>
-                Recuerda llevar tu credencial oficial para verificar tus datos.
-              </li>
-              <li>
-                Este documento es unico e intransferible, por lo que no podrá ser compartido con otra persona.
-              </li>
-              <li>
+               <li>
                 No se aceptan cambios ni devoluciones.
-              </li>                              
+              </li>  
+              <li>
+                Recuerda que deberás presentar una identificación oficial.
+              </li>
+              <li>
+                Si deseas factura envie un correo a emmanuel.heredia@igeco.mx  (4774201314) <br /> FAVOR DE ADJUNTAR LOS SIGUIENTES DOCUMENTOS: <br /> - CONSTANCIA SITUACIÓN FISCAL <br /> - FOTO DEL RECIBO DE COMPRA <br /> - USO DE CFDI
+              </li>                                        
             </ul>                                                          
           </td>      
         </tr>               

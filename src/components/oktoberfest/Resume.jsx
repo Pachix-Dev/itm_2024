@@ -1,6 +1,6 @@
 import { useOktoberfest } from '../../store/oktoberfest-cart'
 
-export function Resume() {
+export function Resume({ translate }) {
   const { items } = useOktoberfest()
 
   function formatAmountMXN(amount) {
@@ -23,7 +23,10 @@ export function Resume() {
           <div>
             <h3 className='font-bold text-lg'>{item.name}</h3>
             <p className='text-sm'>{item.description}</p>
-            <p className='text-lg'>x{item.quantity}</p>
+            <p>* {translate.individual}</p>
+            <p className='text-lg'>
+              x{item.quantity} {translate.people}
+            </p>
           </div>
           <p className='text-3xl'>{formatAmountMXN(item.price)}</p>
         </div>

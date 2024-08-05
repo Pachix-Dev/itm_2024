@@ -1,11 +1,11 @@
 ---
-import { changeLanguage, t } from "i18next";
-import Layout from "../layouts/Layout.astro";
-import Confettti from "../components/shared/Confetti";
-import { Redirect } from "../components/shared/Redirect.jsx";
-import { DownloadOktoberfest } from "../components/oktoberfest/DownloadOktoberfest.jsx";
+import { changeLanguage, t } from 'i18next'
+import Layout from '../layouts/Layout.astro'
+import Confettti from '../components/shared/Confetti'
+import { Redirect } from '../components/shared/Redirect.jsx'
+import { DownloadOktoberfest } from '../components/oktoberfest/DownloadOktoberfest.jsx'
 
-changeLanguage("es");
+changeLanguage('es')
 ---
 
 <Layout title='ITM  | Gracias por contactarnos'>
@@ -23,8 +23,8 @@ changeLanguage("es");
           </div>
           <img
             class='mt-10 w-52 z-10'
-            src='/img/Logo_ITM.webp'
-            alt='ecomondo feria de sustentabilidad'
+            src='/img/oktoberfest-logo.webp'
+            alt='Oktoberfest'
           />
           <p class='font-bold text-center'>
             {t('thanks_page.sucess_purchasing')}
@@ -34,7 +34,7 @@ changeLanguage("es");
           </p>
           <DownloadOktoberfest
             client:only='react'
-            text={t('thanks_page.download_pass')}
+            text={t('thanks_page.download_invoice')}
           />
         </div>
       </div>

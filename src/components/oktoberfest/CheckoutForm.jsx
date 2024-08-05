@@ -14,11 +14,15 @@ export function CheckoutForm({ currentLanguage, translate }) {
     email,
     phone,
     company,
+    hour,
+    comments,
     completed,
     setName,
     setEmail,
     setPhone,
     setCompany,
+    setHour,
+    setComments,
     setCompleted,
     setcomplete_purchase,
     setInvoiceDownToLoad,
@@ -77,8 +81,8 @@ export function CheckoutForm({ currentLanguage, translate }) {
     )
   }
 
-  const urlbase = 'https://industrialtransformation.mx/server/'
-  //const urlbase = 'http://localhost:3010/'
+  //const urlbase = 'https://industrialtransformation.mx/server/'
+  const urlbase = 'http://localhost:3010/'
 
   async function createOrder() {
     const response = await fetch(urlbase + 'create-order-oktoberfest', {
@@ -361,7 +365,6 @@ export function CheckoutForm({ currentLanguage, translate }) {
                 <input
                   type='text'
                   {...register('company', {
-                    required: translate.required,
                     pattern: {
                       value: /^[A-Za-zÀ-ÖØ-öø-ÿ]+(\s[A-Za-zÀ-ÖØ-öø-ÿ]+)*$/,
                       message: translate.spacesNotAllowed,
@@ -391,10 +394,52 @@ export function CheckoutForm({ currentLanguage, translate }) {
                     />
                   </svg>
                 </span>
+              </div>
 
-                {errors.company && (
-                  <p style={{ color: 'red' }}>{errors.company.message}</p>
+              <div className='relative mt-5'>
+                <p>{translate.select_hour}</p>
+                <p>{translate.text_select}</p>
+                <select
+                  {...register('hour', {
+                    required: translate.required,
+                    onChange: (e) => setHour(e.target.value),
+                  })}
+                  defaultValue={hour}
+                  className='mt-2  rounded-lg border border-gray-200 p-4 pe-12 text-sm uppercase '
+                >
+                  <option value='' className='text-black'>
+                    {translate.select_default}
+                  </option>
+                  <option value='9 octubre comida' className='text-black'>
+                    {translate.option1}
+                  </option>
+                  <option value='9 octubre cena' className='text-black'>
+                    {translate.option2}
+                  </option>
+                  <option value='10 octubre comida' className='text-black'>
+                    {translate.option3}
+                  </option>
+                  <option value='10 octubre cena' className='text-black'>
+                    {translate.option4}
+                  </option>
+                  <option value='11 octubre comida' className='text-black'>
+                    {translate.option5}
+                  </option>
+                </select>
+                {errors.hour && (
+                  <p style={{ color: 'red' }}>{errors.hour.message}</p>
                 )}
+              </div>
+
+              <div className='relative mt-5'>
+                <p>{translate.comments}: </p>
+                <textarea
+                  {...register('comments')}
+                  defaultValue={comments}
+                  onChange={(e) => setComments(e.target.value)}
+                  className='w-full mt-5 rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm'
+                  placeholder='...'
+                ></textarea>
               </div>
 
               <div className='flex gap-4 mt-5'>
@@ -451,6 +496,26 @@ export function CheckoutForm({ currentLanguage, translate }) {
                 {translate.disclamer_3}
               </div>
 
+              <div className='flex gap-4 mt-2'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  strokeWidth={1.5}
+                  stroke='currentColor'
+                  className='w-6 h-6'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z'
+                  />
+                </svg>
+
+                <p
+                  dangerouslySetInnerHTML={{ __html: translate.disclamer_4 }}
+                ></p>
+              </div>
               <button
                 type='submit'
                 className='mt-10 w-full inline-block rounded-lg bg-black hover:bg-slate-700 px-5 py-3 text-2xl font-bold text-white'

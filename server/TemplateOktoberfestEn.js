@@ -18,7 +18,7 @@ const email_template_oktoberfest_en = async ({ name, paternSurname, maternSurnam
         <tr>
           <td colspan="2">
             <h2 style="text-align: center;margin:0;font-weight:bold;text-transform: uppercase;margin-top: 20px;">
-              WELCOME, ${name} ${paternSurname} ${maternSurname}. <BR /> THANKS FOR YOUR PURCHASE.
+              WELCOME, ${name}. <BR /> THANKS FOR YOUR PURCHASE.
             </h2>
             <h2 style='text-align: center;'>
               THANK YOU FOR BEING PART OF <span style="color:#E94568;font-weight:bold;"><BR />OKTOBERFEST LEÓN 2024, </span>
@@ -47,41 +47,39 @@ const email_template_oktoberfest_en = async ({ name, paternSurname, maternSurnam
               <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;margin:20px;text-decoration:none;" href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20241009T170000Z%2F20241012T010000Z&details=Industrial%20Transformation%20Mexico%20es%20un%20evento%20interesante%20e%20inclusivo%20en%20el%20que%20los%20actores%20clave%20y%20los%20grupos%20objetivo%20se%20re%C3%BAnen%20para%20crear%20redes%20y%20oportunidades%20de%20intercambio%20de%20conocimientos%20para%20el%20%C3%A9xito%20empresarial.%0A&location=Poliforum%2C%20Le%C3%B3n&text=INDUSTRIAL%20TRANSFORMATION%20MEXICO%202024"
               target="_blank">                        
                 Google
-              </a>                           
-            </div>
-            <div style="text-align:center;padding:20px;margin: 20px;">
-                 <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;text-decoration:none;" href="https://outlook.live.com/calendar/0/action/compose?allday=false&body=Industrial%20Transformation%20Mexico%20es%20un%20evento%20interesante%20e%20inclusivo%20en%20el%20que%20los%20actores%20clave%20y%20los%20grupos%20objetivo%20se%20re%C3%BAnen%20para%20crear%20redes%20y%20oportunidades%20de%20intercambio%20de%20conocimientos%20para%20el%20%C3%A9xito%20empresarial.%0A&enddt=2024-10-11T19%3A00%3A00&location=Poliforum%2C%20Le%C3%B3n&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2024-10-09T11%3A00%3A00&subject=INDUSTRIAL%20TRANSFORMATION%20MEXICO%202024
+              </a>    
+              <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;text-decoration:none;" href="https://outlook.live.com/calendar/0/action/compose?allday=false&body=Industrial%20Transformation%20Mexico%20es%20un%20evento%20interesante%20e%20inclusivo%20en%20el%20que%20los%20actores%20clave%20y%20los%20grupos%20objetivo%20se%20re%C3%BAnen%20para%20crear%20redes%20y%20oportunidades%20de%20intercambio%20de%20conocimientos%20para%20el%20%C3%A9xito%20empresarial.%0A&enddt=2024-10-11T19%3A00%3A00&location=Poliforum%2C%20Le%C3%B3n&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2024-10-09T11%3A00%3A00&subject=INDUSTRIAL%20TRANSFORMATION%20MEXICO%202024
               target="_blank">                       
                 Outlook
-              </a>
-            </div>                   
+              </a>                       
+            </div>
+                            
             <div style="text-align:center;padding:20px;margin: 20px;">
               <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;margin:20px;text-decoration:none;" href="https://calendar.yahoo.com/?desc=Industrial%2520Transformation%2520Mexico%2520es%2520un%2520evento%2520interesante%2520e%2520inclusivo%2520en%2520el%2520que%2520los%2520actores%2520clave%2520y%2520los%2520grupos%2520objetivo%2520se%2520re%25C3%25BAnen%2520para%2520crear%2520redes%2520y%2520oportunidades%2520de%2520intercambio%2520de%2520conocimientos%2520para%2520el%2520%25C3%25A9xito%2520empresarial.%250A&dur=false&et=20241012T010000Z&in_loc=Poliforum%2C+Le%C3%B3n&st=20241009T170000Z&title=INDUSTRIAL%2520TRANSFORMATION%2520MEXICO%25202024&v=60"
               target="_blank">
                 
               <i>Y!</i> Yahoo!
-              </a>                            
-            </div>
-            <div style="text-align:center;padding:20px;margin: 20px;">
-                <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;text-decoration:none;" href="https://industrialtransformation.mx/icalendar.ics" donwload target="_blank">  
+              </a>    
+              <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;text-decoration:none;" href="https://industrialtransformation.mx/icalendar.ics" donwload target="_blank">  
                 iCalendar
-              </a>
+              </a>                        
             </div>
+           
             <p style="font-size:15px;line-height:21px;margin:16px 0px;font-weight:bold">
               INSTRUCTIONS FOR YOUR VISIT:
             </p>
             <ul>
               <li>
-                <strong>IMPORTANT:</strong> It is essential to bring this proof of payment, which is enclosed in the mail in printed or digital format, to redeem your meal.
+                <strong>IMPORTANT:</strong> It is essential to bring this proof of payment that is attached to the printed email or in digital format to redeem your food.
+              </li>
+               <li>
+                Changes or refunds are not accepted.
+              </li>  
+              <li>
+                Remember that you must present official identification.
               </li>
               <li>
-                Remember to bring your official credentials to verify your data.
-              </li>
-              <li>
-                This document is unique and non-transferable, so it cannot be shared with another person.
-              </li>
-              <li>
-                No returns or exchanges are accepted.
+                If you want an invoice, send an email to emmanuel.heredia@igeco.mx (4774201314) <br /> PLEASE ATTACH THE FOLLOWING DOCUMENTS: <br /> - PROOF OF TAX SITUATION <br /> - PHOTO OF THE PURCHASE RECEIPT <br /> - USE OF CFDI
               </li>                  
             </ul>                                                          
           </td>      

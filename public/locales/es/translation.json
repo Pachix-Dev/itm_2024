@@ -665,6 +665,7 @@
         "title2": "Gracias_por_registrarte",
         "description": "Tu registro ha sido exitoso, te hemos enviado un correo con tu gafete de acceso al evento. <br /> <br /> ¡Nos vemos en Industrial Transformation Mexico 2024!",
         "download_pass": "Descargar tu gafete",
+        "download_invoice": "Descargar tu recibo de compra",
         "thanks_purchasing": "Gracias por tu compra",
         "sucess_purchasing": "¡Fantástico! haz tu compra fue procesada correctamente.",
         "email_sent": "¡Pronto recibiras un correo de confirmación!"
@@ -771,9 +772,19 @@
         "novalidPhone": "Por favor ingresa un teléfono válido",
         "company": "Ingresa el nombre de tu empresa",
         "disclamer_1": "No se aceptan cambios, cancelaciones o devoluciones.",
-        "disclamer_2": "Recuerda que deberás presentar una identificación oficial para ingresar al evento.",
+        "disclamer_2": "Recuerda que deberás presentar una identificación oficial.",
         "disclamer_3": "Los menores de edad deben ingresar en compañía de 1 adulto",
-        "method_payment": "Método de pago"
+        "disclamer_4": "Si deseas factura envie un correo a emmanuel.heredia@igeco.mx  (4774201314) <br /> FAVOR DE ADJUNTAR LOS SIGUIENTES DOCUMENTOS: <br /> - CONSTANCIA SITUACIÓN FISCAL <br /> - FOTO DEL RECIBO DE COMPRA <br /> - USO DE CFDI",
+        "method_payment": "Método de pago",
+        "select_hour": "¿En qué día y en que horario requieres tu mesa?",
+        "select_default": "Selecciona un horario",
+        "text_select": "Seleccióne el día y horario elegido para asistir al evento, esta reserva incluye el espacio de una mesa para hasta 10 personas", 
+        "option1": "miercoles 9 de octubre horario de comida (13:00 - 17:00 hrs)",
+        "option2": "miercoles 9 de octubre horario de cena (17:00 - 21:00 hrs)",
+        "option3": "jueves 10 de octubre horario de comida (13:00 - 17:00 hrs)",
+        "option4": "jueves 10 de octubre horario de cena (17:00 - 21:00 hrs)",
+        "option5": "viernes 11 de octubre horario de comida (13:00 - 17:00 hrs)",
+        "comments": "Comentarios adicionales"
     },
     "programaSummiTCCE": {
         "title": "PROGRAMA DE CONFERENCIAS",

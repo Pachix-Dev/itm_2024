@@ -9,6 +9,9 @@ const useOktoberfest = create(
             email: '',
             phone: '',
             company: '',
+            hour: '',
+            comments: '',
+
             total: 0,
             completed: false,
             
@@ -19,6 +22,9 @@ const useOktoberfest = create(
             setEmail: (email) => set({ email }),
             setPhone: (phone) => set({ phone }),
             setCompany: (company) => set({ company }),
+            setHour: (hour) => set({ hour }),
+            setComments: (comments) => set({ comments }),
+
             setCompleted: (completed) => set({ completed }),
 
             setcomplete_purchase: (value) => set({ complete_purchase: value }),
@@ -90,7 +96,9 @@ const useOktoberfest = create(
                 name: '', 
                 email: '', 
                 phone: '', 
-                company: '' 
+                company: '',
+                hour: '',
+                comments: '',
               });
             },
 

@@ -666,6 +666,7 @@
         "title2": "Thank_you_for_registering",
         "description": "Your registration has been successfully completed. We will send you an email with your access to the event.<br /> <br /> We look forward to seeing you at Industrial Transformation Mexico 2024.",
         "download_pass": "Download your pass",
+        "download_invoice": "Download your invoice",
         "thanks_purchasing": "Thank you for your purchase",
         "sucess_purchasing": "Fantastic! your purchase was successfully processed.",
         "email_sent": "You will receive a confirmation email soon!"
@@ -772,9 +773,19 @@
         "novalidPhone": "Please enter a valid phone number",
         "company": "Enter your company",
         "disclamer_1": "No changes, cancellations or refunds are accepted.", 
-        "disclamer_2": "Remember you must present an official ID to enter the event.",        
+        "disclamer_2": "Remember you must present an official ID.",        
         "disclamer_3": "Minors must be accompanied by 1 adult",
-        "method_payment": "Payment method"
+        "disclamer_4": "If you want an invoice, send an email to emmanuel.heredia@igeco.mx (4774201314) <br /> PLEASE ATTACH THE FOLLOWING DOCUMENTS: <br /> - PROOF OF TAX SITUATION <br /> - PHOTO OF THE PURCHASE RECEIPT <br /> - USE OF CFDI",
+        "method_payment": "Payment method",
+        "select_hour": "On what day and at what time do you need your table?",
+        "select_default": "Select an schedule",
+        "text_select": "Select the day and time chosen to attend the event, this reservation includes a table space for up to 10 people", 
+        "option1": "Wednesday, october 9 lunchtime (13:00 - 17:00 hrs)",
+        "option2": "Wednesday, october 9 dinner schedule (17:00 - 21:00 hrs)",
+        "option3": "Thursday, october 10 lunchtime (13:00 - 17:00 hrs)",
+        "option4": "Thursday, october 10 dinner schedule (17:00 - 21:00 hrs)",
+        "option5": "Friday, october 11 lunchtime (13:00 - 17:00 hrs)",
+        "comments": "Aditional comments"
 
 
     },
