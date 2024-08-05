@@ -992,6 +992,9 @@ async function generatePDFInvoiceOktoberfest(paypal_id_transaction, body) {
         .font("Helvetica-Bold")
         .text('TOTAL:          ' + formatAmountMXN(body.total), { width: 540, align: "right" });
 
+    doc.moveDown(2)
+        .text(body.hour, 50)
+        
     doc.moveDown(5)
         .font("Helvetica-Bold")
         .text("INSTRUCCIONES PARA TU VISITA:", 50)
