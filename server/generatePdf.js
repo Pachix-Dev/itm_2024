@@ -992,8 +992,21 @@ async function generatePDFInvoiceOktoberfest(paypal_id_transaction, body) {
         .font("Helvetica-Bold")
         .text('TOTAL:          ' + formatAmountMXN(body.total), { width: 540, align: "right" });
 
+    doc.moveDown(5)
+        .font("Helvetica-Bold")
+        .text("INSTRUCCIONES PARA TU VISITA:", 50)
+        .text("IMPORTANTE:")
+        .font("Helvetica")
+        .text("* Es indispensable llevar este comprobante de pago que viene adjunto en el correo impreso o en formato digital para canjear tu comida.")
+        .text("* No se aceptan cambios ni devoluciones.")
+        .text("* Recuerda que deberás presentar una identificación oficial.")
+        .text("* Si deseas factura envie un correo a emmanuel.heredia@igeco.mx  (4774201314)")
+        .text("* FAVOR DE ADJUNTAR LOS SIGUIENTES DOCUMENTOS:")
+        .text("- CONSTANCIA SITUACIÓN FISCAL", 55)
+        .text("- FOTO DEL RECIBO DE COMPRA", 55)
+        .text("- USO DE CFDI", 55);
     
-     doc.restore();       
+    doc.restore();       
 
     doc.end();
     return pdfSave;
