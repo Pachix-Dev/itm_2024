@@ -189,6 +189,12 @@ const stage_1_day_1=[
                 "image": "/profile.svg"
             },
             {
+                "name": "Omar Troncoso",
+                "position": "Partner ",
+                "company": "Kearney – Global Management Consulting Firm",
+                "image": "/profile.svg"
+            },
+            {
                 "name": "Manuel Pérez Cárdenas",
                 "position": "Asesor Ejecutivo de la Presidencia",
                 "company": "CCE",
@@ -293,9 +299,9 @@ const statge_1_day_2=[
                 "image": "/profile.svg"
             },
             {
-                "name": "Alcaldes de algunas ciudades globales relevantes",
-                "position": "",
-                "company": " ",
+                "name": "Ernesto del Blanco Arjona",
+                "position": "Presidente",
+                "company": " ELAM-FAW",
                 "image": "/profile.svg"
             },
             {
