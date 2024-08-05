@@ -13,6 +13,7 @@ export function ProgramVip() {
         'Acceso 2 días al programa de Conferencias CCE - ITM - AMOF',
         'Coffee Break',
         'Entrada al piso de exposición',
+        'Pase doble a noche de industriales, previo registro: gabriela.aguirre@igeco.mx',
       ],
     },
   ]
@@ -70,8 +71,8 @@ export function ProgramVip() {
               </div>
               <div className='flex items-baseline text-black '>
                 <span className='text-3xl font-semibold'>$</span>
-                <span className='text-5xl font-extrabold tracking-tight'>
-                  5000 + IVA
+                <span className='text-4xl font-extrabold tracking-tight'>
+                  5,000 + IVA
                 </span>
                 <span className='font-bold'>MXN</span>
               </div>

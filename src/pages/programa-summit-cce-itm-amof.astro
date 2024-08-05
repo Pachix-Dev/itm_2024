@@ -1,15 +1,15 @@
 ---
-import i18next, { changeLanguage, t } from "i18next";
-import programs from "../data/constans_program_vip";
-import Button from "../components/schedule/Button.astro";
-import Conference from "../components/schedule/Conference.astro";
-import Layout from "../layouts/Layout.astro";
-import { logosProgramVip } from "../data/constans_logos.js";
-import MarqueeBlack from "../components/shared/MarqueeBlack.astro";
+import i18next, { changeLanguage, t } from 'i18next'
+import programs from '../data/constans_program_vip'
+import Button from '../components/schedule/Button.astro'
+import Conference from '../components/schedule/Conference.astro'
+import Layout from '../layouts/Layout.astro'
+import { logosProgramVip } from '../data/constans_logos.js'
+import MarqueeBlack from '../components/shared/MarqueeBlack.astro'
 
-changeLanguage("es");
+changeLanguage('es')
 
-const base = i18next.language === "es" ? "" : `/${i18next.language}`;
+const base = i18next.language === 'es' ? '' : `/${i18next.language}`
 ---
 
 <Layout title='SUMMIT CCE'>

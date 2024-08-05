@@ -95,8 +95,8 @@ const stage_1_day_1=[
             },
             {
                 "name": "Manuel Pérez Cárdenas",
-                "position": "Moderador",
-                "company": "Consejo Coordinador Empresarial (CCE)",
+                "position": "Asesor Ejecutivo de la Presidencia",
+                "company": "CCE",
                 "image": "/profile.svg"
             }
         ]
