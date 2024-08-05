@@ -71,7 +71,7 @@ const stage_1_day_1=[
             },
             {
                 "name": "Marcelo Ebrard",
-                "position": "Secretario de Economía de México",
+                "position": "Proximo Secretario de Economía de México",
                 "company": "",
                 "image": "/profile.svg"
             },
@@ -116,7 +116,7 @@ const stage_1_day_1=[
             },
             {
                 "name": "Rosaura Ruiz",
-                "position": "Secretaria de Ciencia, Humanidades, Tecnología e Innovación",
+                "position": " Proxima Secretaria de Ciencia, Humanidades, Tecnología e Innovación",
                 "company": "Gobierno Federal",
                 "image": "/profile.svg"
             },
