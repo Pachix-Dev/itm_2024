@@ -54,6 +54,19 @@ const exhibitors_1 = [
     { src: '/exhibitors/dyce.webp', alt: '', width: 170 },
     { src: '/exhibitors/cognex.webp', alt: '', width: 170 },
     { src: '/exhibitors/deltorno.webp', alt: '', width: 170 },
+    { src: '/exhibitors/novus.webp', alt: '', width: 110 },
+    { src: '/exhibitors/xadis.webp', alt: '', width: 170 },
+    { src: '/exhibitors/degson.webp', alt: '', width: 170 },
+    { src: '/exhibitors/luguer.webp', alt: '', width: 170 },
+    { src: '/exhibitors/eaton.webp', alt: '', width: 170 },
+    { src: '/exhibitors/PC&EBajio.webp', alt: '', width: 170 },
+    { src: '/exhibitors/monitorapp.webp', alt: '', width: 170 },
+    { src: '/exhibitors/mediba.webp', alt: '', width: 170 },
+    { src: '/exhibitors/klemsan.webp', alt: '', width: 200 },
+    { src: '/exhibitors/kaspersky.webp', alt: '', width: 200 },
+    { src: '/exhibitors/hiwin.webp', alt: '', width: 200 },
+    { src: '/exhibitors/crestultrasonics.webp', alt: '', width: 200 },
+    { src: '/exhibitors/cosmomexico.webp', alt: '', width: 200 },
   ]
 
 const alliesStrategic = [

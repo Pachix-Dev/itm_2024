@@ -1,14 +1,14 @@
 ---
-import i18next, { changeLanguage, t } from 'i18next'
-import LayoutOktoberfest from '../layouts/LayoutOktoberfest.astro'
-import { Resume } from '../components/oktoberfest/Resume.jsx'
-import { Total } from '../components/oktoberfest/Total.jsx'
-import { CheckoutForm } from '../components/oktoberfest/CheckoutForm.jsx'
+import i18next, { changeLanguage, t } from "i18next";
+import LayoutOktoberfest from "../layouts/LayoutOktoberfest.astro";
+import { Resume } from "../components/oktoberfest/Resume.jsx";
+import { Total } from "../components/oktoberfest/Total.jsx";
+import { CheckoutForm } from "../components/oktoberfest/CheckoutForm.jsx";
 
-changeLanguage('es')
+changeLanguage("es");
 
-const currentLanguage = i18next.language
-const translate = t('oktoberfest', { returnObjects: true })
+const currentLanguage = i18next.language;
+const translate = t("oktoberfest", { returnObjects: true });
 ---
 
 <LayoutOktoberfest title='Oktoberfest | reservaciones'>

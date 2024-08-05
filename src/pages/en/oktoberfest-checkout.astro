@@ -31,7 +31,7 @@ const translate = t("oktoberfest", { returnObjects: true });
     <p class='text-center text-2xl font-bold hidden md:block text-black'>
       Resumen del pedido
     </p>
-    <Resume client:only />
+    <Resume client:only translate={translate} />
     <Total client:only />
   </aside>
 </LayoutOktoberfest>
