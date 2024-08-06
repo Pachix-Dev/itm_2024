@@ -518,6 +518,7 @@ export function CheckoutForm({ currentLanguage, translate }) {
                   dangerouslySetInnerHTML={{ __html: translate.disclamer_4 }}
                 ></p>
               </div>
+              <p className='mt-2'>* {translate.disclamer_5}</p>
               <button
                 type='submit'
                 className='mt-10 w-full inline-block rounded-lg bg-black hover:bg-slate-700 px-5 py-3 text-2xl font-bold text-white'

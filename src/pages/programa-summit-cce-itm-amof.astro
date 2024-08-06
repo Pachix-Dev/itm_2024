@@ -1,21 +1,30 @@
 ---
-import i18next, { changeLanguage, t } from 'i18next'
-import programs from '../data/constans_program_vip'
-import Button from '../components/schedule/Button.astro'
-import Conference from '../components/schedule/Conference.astro'
-import Layout from '../layouts/Layout.astro'
-import { logosProgramVip } from '../data/constans_logos.js'
-import MarqueeBlack from '../components/shared/MarqueeBlack.astro'
+import i18next, { changeLanguage, t } from "i18next";
+import programs from "../data/constans_program_vip";
+import Button from "../components/schedule/Button.astro";
+import Conference from "../components/schedule/Conference.astro";
+import Layout from "../layouts/Layout.astro";
+import { logosProgramVip } from "../data/constans_logos.js";
 
-changeLanguage('es')
+changeLanguage("es");
 
-const base = i18next.language === 'es' ? '' : `/${i18next.language}`
+const base = i18next.language === "es" ? "" : `/${i18next.language}`;
 ---
 
 <Layout title='SUMMIT CCE'>
   <main class='mt-10 mx-auto py-10 container px-4'>
-    <section class='mb-10 max-w-screen-lg mx-auto'>
-      <MarqueeBlack partners={logosProgramVip} isLeftToRight />
+    <section class='mb-10 max-w-screen-lg mx-auto flex gap-6'>
+      {
+        logosProgramVip.map((logo) => (
+          <a
+            href={logo.link}
+            target='_blank'
+            class='bg-white rounded-2xl grid place-items-center p-2'
+          >
+            <img src={logo.src} alt={logo.alt} width='200' />
+          </a>
+        ))
+      }
     </section>
     <section class='mt-20'>
       <h1
@@ -34,11 +43,11 @@ const base = i18next.language === 'es' ? '' : `/${i18next.language}`
       </p>
       <p class='text-center uppercase'>{t('programaSummiTCCE.text_3')}</p>
       <a
-        href={`${base}/`}
+        href={`${base}/acceso-programa`}
         class='card p-5 hover:scale-105 ease-in-out duration-300 mx-auto mt-10'
       >
         <span class='text-white z-10 font-extrabold text-xl'>
-          {t('programaSummiTCCE.get_vip')} {t('directory.comming_soon')}</span
+          {t('programaSummiTCCE.get_vip')}</span
         >
       </a>
     </section>

@@ -1,12 +1,12 @@
 
-const email_template_oktoberfest_en = async ({ name, paternSurname, maternSurname}) => {          
+const email_template_oktoberfest_en = async ({ name, hour }) => {          
     
     return (
    `<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="max-width: 680px;">
     <tbody>
         <tr>
           <td colspan="2" align="center">
-            <img src="https://industrialtransformation.mx/header-ITM-register-eng.jpg" alt="logo" width="550">               
+            <img src="https://industrialtransformation.mx/header-oktoberfest.jpg" alt="logo" width="550">               
           </td>
         </tr>
         <tr>
@@ -25,28 +25,28 @@ const email_template_oktoberfest_en = async ({ name, paternSurname, maternSurnam
             </h2>
             <div style="text-align: justify;font-size:22px;">
              Celebrate with us the traditional German holiday! Enjoy music, food and beer in a festive and fun-filled atmosphere.                    
-            </div>               
+            </div>     
+            <p>Reservation confirmed for - ${hour}</p>
+            <p>* Maximum number of people 10</p>             
             <p style="font-weight:bold;font-size:20px;text-align: center;">ADD TO CALENDAR</p>
             <div style="text-align:center;padding:20px;margin: 20px;">
-              <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;margin:20px;text-decoration:none;" href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20241009T170000Z%2F20241012T010000Z&details=Industrial%20Transformation%20Mexico%20es%20un%20evento%20interesante%20e%20inclusivo%20en%20el%20que%20los%20actores%20clave%20y%20los%20grupos%20objetivo%20se%20re%C3%BAnen%20para%20crear%20redes%20y%20oportunidades%20de%20intercambio%20de%20conocimientos%20para%20el%20%C3%A9xito%20empresarial.%0A&location=Poliforum%2C%20Le%C3%B3n&text=INDUSTRIAL%20TRANSFORMATION%20MEXICO%202024"
+              <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;margin:20px;text-decoration:none;" href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20241009T190000Z%2F20241012T030000Z&details=%C2%A1Celebra%20con%20nosotros%20la%20tradicional%20fiesta%20alemana%21%20Disfruta%20de%20la%20m%C3%BAsica%2C%20la%20comida%20y%20la%20cerveza%20en%20un%20ambiente%20festivo%20y%20lleno%20de%20diversi%C3%B3n.&location=Poliforum%20Le%C3%B3n%2C%20GTO&text=Oktoberfest"
               target="_blank">                        
                 Google
-              </a>    
-              <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;text-decoration:none;" href="https://outlook.live.com/calendar/0/action/compose?allday=false&body=Industrial%20Transformation%20Mexico%20es%20un%20evento%20interesante%20e%20inclusivo%20en%20el%20que%20los%20actores%20clave%20y%20los%20grupos%20objetivo%20se%20re%C3%BAnen%20para%20crear%20redes%20y%20oportunidades%20de%20intercambio%20de%20conocimientos%20para%20el%20%C3%A9xito%20empresarial.%0A&enddt=2024-10-11T19%3A00%3A00&location=Poliforum%2C%20Le%C3%B3n&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2024-10-09T11%3A00%3A00&subject=INDUSTRIAL%20TRANSFORMATION%20MEXICO%202024
+              </a>
+              <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;text-decoration:none;" href="https://outlook.live.com/calendar/0/action/compose?allday=false&body=%C2%A1Celebra%20con%20nosotros%20la%20tradicional%20fiesta%20alemana%21%20Disfruta%20de%20la%20m%C3%BAsica%2C%20la%20comida%20y%20la%20cerveza%20en%20un%20ambiente%20festivo%20y%20lleno%20de%20diversi%C3%B3n.&enddt=2024-10-11T21%3A00%3A00&location=Poliforum%20Le%C3%B3n%2C%20GTO&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2024-10-09T13%3A00%3A00&subject=Oktoberfest"
               target="_blank">                       
                 Outlook
-              </a>                       
-            </div>
-                            
+              </a>
+            </div>          
             <div style="text-align:center;padding:20px;margin: 20px;">
-              <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;margin:20px;text-decoration:none;" href="https://calendar.yahoo.com/?desc=Industrial%2520Transformation%2520Mexico%2520es%2520un%2520evento%2520interesante%2520e%2520inclusivo%2520en%2520el%2520que%2520los%2520actores%2520clave%2520y%2520los%2520grupos%2520objetivo%2520se%2520re%25C3%25BAnen%2520para%2520crear%2520redes%2520y%2520oportunidades%2520de%2520intercambio%2520de%2520conocimientos%2520para%2520el%2520%25C3%25A9xito%2520empresarial.%250A&dur=false&et=20241012T010000Z&in_loc=Poliforum%2C+Le%C3%B3n&st=20241009T170000Z&title=INDUSTRIAL%2520TRANSFORMATION%2520MEXICO%25202024&v=60"
+              <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;margin:20px;text-decoration:none;" href="https://calendar.yahoo.com/?desc=%25C2%25A1Celebra%2520con%2520nosotros%2520la%2520tradicional%2520fiesta%2520alemana%21%2520Disfruta%2520de%2520la%2520m%25C3%25BAsica%252C%2520la%2520comida%2520y%2520la%2520cerveza%2520en%2520un%2520ambiente%2520festivo%2520y%2520lleno%2520de%2520diversi%25C3%25B3n.&dur=false&et=20241012T030000Z&in_loc=Poliforum+Le%C3%B3n%2C+GTO&st=20241009T190000Z&title=Oktoberfest&v=60"
               target="_blank">
-                
               <i>Y!</i> Yahoo!
-              </a>    
-              <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;text-decoration:none;" href="https://industrialtransformation.mx/icalendar.ics" donwload target="_blank">  
+              </a>
+              <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;text-decoration:none;" href="https://industrialtransformation.mx/icalendarOktoberfest.ics" donwload target="_blank">  
                 iCalendar
-              </a>                        
+              </a>
             </div>
            
             <p style="font-size:15px;line-height:21px;margin:16px 0px;font-weight:bold">
@@ -54,7 +54,7 @@ const email_template_oktoberfest_en = async ({ name, paternSurname, maternSurnam
             </p>
             <ul>
               <li>
-                <strong>IMPORTANT:</strong> It is essential to bring this proof of payment that is attached to the printed email or in digital format to redeem your food.
+                <strong>IMPORTANT:</strong> It is essential to bring this proof of payment that is attached to the printed email or in digital format to redeem your order.
               </li>
                <li>
                 Changes or refunds are not accepted.
@@ -64,41 +64,13 @@ const email_template_oktoberfest_en = async ({ name, paternSurname, maternSurnam
               </li>
               <li>
                 If you want an invoice, send an email to emmanuel.heredia@igeco.mx (4774201314) <br /> PLEASE ATTACH THE FOLLOWING DOCUMENTS: <br /> - PROOF OF TAX SITUATION <br /> - PHOTO OF THE PURCHASE RECEIPT <br /> - USE OF CFDI
-              </li>                  
+              </li>
+              <li>
+                Maximum billing date October 25, 2024
+              </li>                
             </ul>                                                          
           </td>      
         </tr>               
-        <tr>
-          <td style="padding:20px;" align="center">
-            <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
-              <a style="text-decoration:none;color:white;">
-                FIND OUT ABOUT ALL OUR EVENTS
-              </a>
-            </p>          
-          </td>
-          <td style="padding:20px;" align="center">
-            <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
-              <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/files/Floorplan_ITM_2024_31.05.2023.pdf" target="_blank">
-                ITM 2024 FLOOR PLAN 
-              </a>
-            </p>         
-          </td>
-        </tr> 
-        <tr>
-          <td style="padding:20px;" align="center">
-           <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
-            <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/hotels" target="_blank">
-              BOOK HERE YOUR LODGING<br /> WITH PREFERENTIAL RATES
-            </a>
-           </p>           
-          </td>
-          <td style="padding:20px;" align="center">
-            <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
-              <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/registro" target="_blank">
-                INVITE A COLLEAGUE
-              </a>          
-          </td>
-        </tr>       
         <tr>
           <td colspan="2">
           <hr style="width:100%;border-top:1px solid rgb(214,216,219);border-right:none rgb(214,216,219);border-bottom:none rgb(214,216,219);border-left:none rgb(214,216,219);margin:30px 0px">

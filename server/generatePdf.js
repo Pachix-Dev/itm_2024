@@ -993,7 +993,8 @@ async function generatePDFInvoiceOktoberfest(paypal_id_transaction, body) {
         .text('TOTAL:          ' + formatAmountMXN(body.total), { width: 540, align: "right" });
 
     doc.moveDown(2)
-        .text(body.hour, 50)
+        .text('Reservación confirmada - '+body.hour, 50)
+        .text('* Mesa para 10 personas máximo')
         
     doc.moveDown(5)
         .font("Helvetica-Bold")

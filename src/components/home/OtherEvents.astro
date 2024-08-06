@@ -57,7 +57,7 @@ const otherEvents = [
     title: 'Oktoberfest',
     description: t('otherEvents.oktoberfest'),
     video: '/videos/OKTOBERFEST-2024.mp4',
-    link: '',
+    link: `${base}/oktoberfest`,
     target: '_self',
   },
   {
@@ -91,7 +91,6 @@ const otherEvents = [
   >
     {t('otherEvents.title')}
   </div>
-  <!-- <div class='flex justify-center flex-wrap gap-10'>  -->
   <div class='mt-10 grid md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10'>
     {
       otherEvents.map((event, index) => (

@@ -25,6 +25,11 @@ export function Upgrade() {
     }
   }
 
+  const handleEmail = (e) => {
+    setUser(false)
+    setEmail(e)
+  }
+
   return (
     <>
       <div className='flex flex-col gap-1 md:block md:relative lg:mx-auto lg:w-2/3 xl:w-1/2 mt-5 md:mt-20'>
@@ -41,7 +46,7 @@ export function Upgrade() {
           type='email'
           name='email'
           placeholder='tucorreo@hola.com'
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => handleEmail(e.target.value)}
         />
         <button
           className={`md:absolute md:right-3 ${

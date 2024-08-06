@@ -645,7 +645,7 @@ app.get('/template-email', async (req, res) => {
         maternSurname: 'Gomez',
         email: ''
     }
-    const emailContent = await email_template_oktoberfest_en({ ...data });
+    const emailContent = await email_template_oktoberfest({ ...data });
     res.send(emailContent);
 });
 

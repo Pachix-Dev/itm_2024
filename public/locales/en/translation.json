@@ -776,6 +776,7 @@
         "disclamer_2": "Remember you must present an official ID.",        
         "disclamer_3": "Minors must be accompanied by 1 adult",
         "disclamer_4": "If you want an invoice, send an email to emmanuel.heredia@igeco.mx (4774201314) <br /> PLEASE ATTACH THE FOLLOWING DOCUMENTS: <br /> - PROOF OF TAX SITUATION <br /> - PHOTO OF THE PURCHASE RECEIPT <br /> - USE OF CFDI",
+        "disclamer_5": "Maximum invoicing date October 25, 2024",
         "method_payment": "Payment method",
         "select_hour": "On what day and at what time do you need your table?",
         "select_default": "Select an schedule",
