@@ -10,10 +10,10 @@ const stage_1_day_1=[
         ]
     },
     {
-        "title": "Hacia un nuevo desarrollo con equilibrio regional: Necesaria una visión integral y de largo plazo",
-        "title_en": "Towards a new development with regional balance: A comprehensive and long-term vision is necessary",
-        "description": "Introducción, S.E. Ken Salazar, Embajador de EUA en México",
-        "description_en": "Introduction, H.E. Ken Salazar, US Ambassador to Mexico",
+        "title": "MESA 1:<br /> Hacia un nuevo desarrollo con equilibrio regional: <br/> <span class='font-normal text-white'>Necesaria una visión integral y de largo plazo</span>",
+        "title_en": "TABLE 1:<br /> Towards a new development with regional balance: <br/> <span class='font-normal text-white'> A comprehensive and long-term vision is necessary</span>",
+        "description": "Introducción: S.E. Ken Salazar, Embajador de EUA en México",
+        "description_en": "Introduction: H.E. Ken Salazar, US Ambassador to Mexico",
         "time": "9:00 hrs",
         "duration": "90 mins",
         "speakers": [
@@ -56,14 +56,14 @@ const stage_1_day_1=[
         ]
     },
     {
-        "title": "PRESENTACIÓN DEL LIBRO Transformación Digital y Política Digial",
-        "title_en": "PRESENTATION OF THE BOOK Digital Transformation and Digital Policy",
+        "title": "PRESENTACIÓN DEL LIBRO: <br /> Transformación Digital y Política Industrial <br /> <span class='font-normal text-white'>Retos y oportunidades</span>",
+        "title_en": "PRESENTATION OF THE BOOK:<br /> Digital Transformation and Industry Policy <span class='font-normal text-white'>Challenges and opportunities</span>",
         "description": "Presenta el libro: Arturo Oropeza, Presidente del del Instituto para el Desarrollo Industrial y la Transformación Digital (INADI)",
         "description_en": "Presents the book: Arturo Oropeza, President of the Institute for Industrial Development and Digital Transformation (INADI)",
         "time": "12:00 hrs",
         "duration": "90 mins",
         "speakers": [
-            {
+            { 
                 "name": "Francisco Cervantes",
                 "position": "Presidente",
                 "company": "CCE",
@@ -102,8 +102,8 @@ const stage_1_day_1=[
         ]
     },
     {
-        "title": "HACIA UNA POLITICA INDUSTRIAL Y DIGITAL. Los retos del Futuro",
-        "title_en": "TOWARDS AN INDUSTRIAL AND DIGITAL POLICY. The challenges of the Future",
+        "title": "MESA 2: <br />HACIA UNA POLITICA INDUSTRIAL Y DIGITAL.<br /> <span class='font-normal text-white'> Los retos del Futuro</span>",
+        "title_en": "TABLE 2: <br />TOWARDS AN INDUSTRIAL AND DIGITAL POLICY.<br /> <span class='font-normal text-white'>The challenges of the Future</span>",
         "description": "",
         "time": "13:30 hrs",
         "duration": "90 mins",
@@ -151,9 +151,9 @@ const stage_1_day_1=[
         ]
     },
     {
-        "title": "CONSTRUYENDO EL PAIS DESDE SUS REGIONES. ¿Cómo lograrlo en alianza con el sector privado?",
-        "title_en": "BUILDING THE COUNTRY FROM ITS REGIONS. How to achieve it in partnership with the private sector?",
-        "description": "Introducción, por Eduardo Sojo, Coordinador Académico del Pacto Oaxaca  (2019-2020)",
+        "title": "MESA 3: <br /> CONSTRUYENDO EL PAIS DESDE SUS REGIONES.<br /> <span class='font-normal text-white'>¿Cómo lograrlo en alianza con el sector privado?</span>",
+        "title_en": "TABLE 3: BUILDING THE COUNTRY FROM ITS REGIONS. How to achieve it in partnership with the private sector?",
+        "description": "Introducción, por Eduardo Sojo, Coordinador Académico del CONCAMIN-CCE 'Pacto Oaxaca'  (2019-2020)",
         "description_en": "Introduction, by Eduardo Sojo, Academic Coordinator of the Oaxaca Pact  (2019-2020)",
         "time": "16:00 hrs",
         "duration": "90 mins",
@@ -203,8 +203,8 @@ const stage_1_day_1=[
         ]
     },       
     {
-        "title": "LA INDUSTRIA AEROESPACIAL MEXICANA: Expansión extraordinaria de una industria de frontera tecnológica. Oportunidades para la empresa mexicana",
-        "title_en": "THE MEXICAN AEROSPACE INDUSTRY: Extraordinary expansion of a technological frontier industry. Opportunities for the Mexican company",
+        "title": "MESA 4:<br /> LA INDUSTRIA AEROESPACIAL MEXICANA: Expansión extraordinaria de una industria de frontera tecnológica.<br /> <span class='font-normal text-white'> Oportunidades para la empresa mexicana</span>",
+        "title_en": "TABLE 4:<br /> THE MEXICAN AEROSPACE INDUSTRY: Extraordinary expansion of a technological frontier industry.<br /> <span class='font-normal text-white'> Opportunities for the Mexican company</span>",
         "description": "Introducción: por Luis Lizcano, Presidente Ejecutivo de la Federación Mexicana de la Industria Aeroespacial (FEMIA)",
         "description_en": "Introduction: by Luis Lizcano, Executive President of the Mexican Federation of the Aerospace Industry (FEMIA)",
         "time": "17:30 hrs",
@@ -262,8 +262,8 @@ const stage_1_day_1=[
 
 const statge_1_day_2=[
     {
-        "title": "LA MOVILIDAD DEL FUTURO. Oportunidades y Retos",
-        "title_en": "THE MOBILITY OF THE FUTURE. Opportunities and Challenges",
+        "title": "MESA 5:<br /> LA MOVILIDAD DEL FUTURO.<br /> <span class='font-normal text-white'> Oportunidades y Retos para las grandes urbes</span>",
+        "title_en": "TABLE 5: <br />THE MOBILITY OF THE FUTURE.<br /> <span class='font-normal text-white'>Opportunities and Challenges for Large Cities</span>",
         "description": "",
         "time": "9:00 hrs",
         "duration": "90 mins",
@@ -313,8 +313,8 @@ const statge_1_day_2=[
         ]
     },
     {
-        "title": "SUSTENTABILIDAD Y RESPONSABILIDAD SOCIAL EMPRESARIAL: Metas 2030-2050",
-        "title_en": "SUSTAINABILITY AND CORPORATE SOCIAL RESPONSIBILITY: Goals 2030-2050",
+        "title": "MESA 6:<br /> SUSTENTABILIDAD Y RESPONSABILIDAD SOCIAL EMPRESARIAL:<br /> <span class='font-normal text-white'>Metas 2030-2050</span>",
+        "title_en": "TABLE 6:<br /> SUSTAINABILITY AND CORPORATE SOCIAL RESPONSIBILITY:<br /> <span class='font-normal text-white'>Goals 2030-2050</span>",
         "description": "Introducción: Pietro Paolo Cornero, Presidente y Director General de Ferrero México y Centroamérica",
         "description_en": "Introduction: Pietro Paolo Cornero, President and CEO of Ferrero Mexico and Central America",
         "time": "11:00 hrs",
@@ -367,10 +367,10 @@ const statge_1_day_2=[
         ]
     },
     {
-        "title": "EL NUEVO ESPACIO, LUGAR DE ENORME OPORTUNIDAD PARA LA INTEGRACIÓN DE CADENAS PRODUCTIVAS DE MEXICO Y ESTADOS UNIDOS NUEVO ESPACIO: PUNTO DE ENCUENTRO DE LA CIENCIA, LA TECNOLOGÍA, LA INDUSTRIA Y LA DEFENSA",
-        "title_en": "THE NEW SPACE, A PLACE OF ENORMOUS OPPORTUNITY FOR THE INTEGRATION OF PRODUCTIVE CHAINS OF MEXICO AND THE UNITED STATES NEW SPACE: MEETING POINT OF SCIENCE, TECHNOLOGY, INDUSTRY AND DEFENSE",
-        "description": "Introducción: Francisco Cervantes, Presidente del CCE (Tendencias globales, los sectores industriales del Nuevo Espacio y la acción de los estados nacionales para promover la integración industrial transfronteriza en el ámbito espacial). MARCO LEGAL ESPACIAL EN MÉXICO: Reforma constitucional en materia espacial en consideración en el Senado Mexicano. Ana Lilia Rivera Rivera, Senadora de la República, LXV Legislatura. NUEVO ESPACIO: PUNTO DE ENCUENTRO DE LA CIENCIA, LA TECNOLOGIA, LA INDUSTRIA Y LA DEFENSA ¿Qué es el Nuevo Espacio y hacia dónde va tanto en el sector privado como en el público y en el sector de R&D?",
-        "description_en": "Introduction: Francisco Cervantes, President of the CCE (Global trends, the industrial sectors of the New Space and the action of national states to promote cross-border industrial integration in the space field). SPACE LEGAL FRAMEWORK IN MEXICO: Constitutional reform in space matters under consideration in the Mexican Senate. Ana Lilia Rivera Rivera, Senator of the Republic, LXV Legislature. NEW SPACE: MEETING POINT OF SCIENCE, TECHNOLOGY, INDUSTRY AND DEFENSE What is the New Space and where is it going in both the private and public sectors and in the R&D sector?",
+        "title": "EL NUEVO ESPACIO, LUGAR DE ENORME OPORTUNIDAD PARA LA INTEGRACIÓN DE CADENAS PRODUCTIVAS DE MEXICO Y ESTADOS UNIDOS.<br /> <span class='font-normal text-white'> Una visión de los actores</span>",
+        "title_en": "THE NEW SPACE, A PLACE OF ENORMOUS OPPORTUNITY FOR THE INTEGRATION OF PRODUCTIVE CHAINS OF MEXICO AND THE UNITED STATES.<br /> <span class='font-normal text-white'> A vision of the actors</span>",
+        "description": "Introducción: Francisco Cervantes, Presidente del CCE (Tendencias globales, los sectores industriales del Nuevo Espacio y la acción de los estados nacionales para promover la integración industrial transfronteriza en el ámbito espacial).<br /><br /> <strong>MARCO LEGAL ESPACIAL EN MÉXICO:</strong> Reforma constitucional en materia espacial en consideración en el Senado Mexicano.<br /><br /> Ana Lilia Rivera, Senadora de la República, LXV Legislatura y Presidenta de la Comisión de Ciencia y Tecnología del Senado de la República en la LXIV Legislatura <br /><br /><strong><u>PANEL UNO : </u><br />NUEVO ESPACIO:</strong> PUNTO DE ENCUENTRO DE LA CIENCIA, LA TECNOLOGIA, LA INDUSTRIA Y LA DEFENSA ¿Qué es el Nuevo Espacio y hacia dónde va tanto en el sector privado como en el público y en el sector de R&D?",
+        "description_en": "Introduction: Francisco Cervantes, President of the CCE (Global trends, the industrial sectors of the New Space and the action of national states to promote cross-border industrial integration in the space field).<br /><br /> SPACE LEGAL FRAMEWORK IN MEXICO: Constitutional reform in space matters under consideration in the Mexican Senate.<br /><br /> Ana Lilia Rivera, Senator of the Republic of Mexico, LXV Legislature and Chairwoman of the Science and Technology Commission of the Senate of the of the Republic in the LXIV Legislature.<br /><br /><strong><u>PANEL ONE : </u><br /> NEW SPACE: </strong>MEETING POINT OF SCIENCE, TECHNOLOGY, INDUSTRY AND DEFENSE What is the New Space and where is it going in both the private and public sectors and in the R&D sector?",
         "time": "14:30 hrs",
         "duration": "90 mins",
         "speakers": [
@@ -413,8 +413,8 @@ const statge_1_day_2=[
         ]
     },
     {
-        "title": "CAPACIDADES ACTUALES DE MEXICO APLICABLES AL SECTOR ESPACIAL",
-        "title_en": "CURRENT CAPABILITIES OF MEXICO APPLICABLE TO THE SPACE SECTOR",
+        "title": "<strong class='text-white'><u>PANEL DOS : </u></strong><br />CAPACIDADES ACTUALES DE MEXICO APLICABLES AL SECTOR ESPACIAL",
+        "title_en": "<strong class='text-white'><u>PANEL TWO : </u></strong><br />CURRENT CAPABILITIES OF MEXICO APPLICABLE TO THE SPACE SECTOR",
         "description": "COMIDA libre (Oktoberfest, en Distrito León MX)",
         "description_en": "FREE LUNCH (Oktoberfest, in District León MX)",
         "time": "16:00 hrs",
@@ -447,8 +447,8 @@ const statge_1_day_2=[
         ]
     },
     {
-        "title": "OPORTUNIDADES PARA MEXICO DE LA RAPIDA EXPANSION DE LA INDUSTRIA ESPACIAL EN LOS EUA",
-        "title_en": "OPPORTUNITIES FOR MEXICO FROM THE RAPID EXPANSION OF THE SPACE INDUSTRY IN THE USA",
+        "title": "<strong class='text-white'><u>PANEL TRES : </u></strong><br />OPORTUNIDADES PARA MEXICO DE LA RAPIDA EXPANSION DE LA INDUSTRIA ESPACIAL EN LOS EUA Y EL MUNDO",
+        "title_en": "<strong class='text-white'><u>PANEL THREE : </u></strong><br />OPPORTUNITIES FOR MEXICO FROM THE RAPID EXPANSION OF THE SPACE INDUSTRY IN THE USA AND THE WORLD",
         "description": "",
         "time": "17:00 hrs",
         "duration": "90 mins",
@@ -478,15 +478,7 @@ const statge_1_day_2=[
                 "image": "/profile.svg"
             }
         ]
-    },
-    {
-        "title": "¿QUÉ REQUIEREN LAS EMPRESAS MEXICANAS PARA LIGERARSE A LAS CADENAS DE PROVEEDURÍA DE LOS EUA?",
-        "title_en": "WHAT DO MEXICAN COMPANIES NEED TO LINK TO US SUPPLY CHAINS?",
-        "description": "",
-        "time": "18:00 hrs",
-        "duration": "30 mins",
-        "speakers": []
-    },
+    },    
     {
         "title": "SESION DE DISCUSION ABIERTA Y PREGUNTAS",
         "title_en": "OPEN DISCUSSION SESSION AND QUESTIONS",

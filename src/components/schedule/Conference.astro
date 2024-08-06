@@ -29,7 +29,7 @@ const { item, key } = Astro.props as Props
 
 <article class='flex flex-col xl:flex-row'>
   <div
-    class='xl:w-[10%] pr-10 xl:py-5 border-t-[1px] xl:border-t-0 xl:border-r-[1px] flex gap-2.5 xl:inline pt-5 xl:pt-0'
+    class='xl:w-[10%] pr-10 xl:py-5 border-t-[1px] xl:border-t-0 xl:border-r-[1px] flex gap-2.5 xl:inline pt-5'
   >
     <p class='text-left'>{item.time}</p>
     <p class='text-left'>
@@ -50,16 +50,17 @@ const { item, key } = Astro.props as Props
       {item.duration}
     </p>
   </div>
-  <div class='xl:w-[90%] xl:pl-5'>
-    <h3 class='font-semibold text-[#E42128] text-lg pb-2 uppercase'>
-      {i18next.language === 'es' ? item.title : item.title_en}
-    </h3>
+  <div class='xl:w-[90%] xl:pl-5 pt-5'>
+    <div
+      class='font-semibold text-[#E42128] text-lg pb-2 uppercase'
+      set:html={i18next.language === 'es' ? item.title : item.title_en}
+    />
     {
       item.description === '' ? (
         ''
       ) : (
-        <p class='text-justify'>
-          {i18next.language === 'es' ? item.description : item.description_en}
+        <p class='text-justify' set:html={i18next.language === 'es' ? item.description : item.description_en}>
+          
         </p>
       )
     }
@@ -67,7 +68,22 @@ const { item, key } = Astro.props as Props
       item.speakers.length === 0 ? (
         ''
       ) : (
-        <MarqueeSpeakers speakers={item.speakers} key={key} />
+        <p class="mt-2 font-extrabold">Panelistas: </p>
+        <ul class='mt-2 ms-2 gap-2 grid grid-cols-2'>
+          {item.speakers.map((speaker) => (
+            <li class="mt-2 flex items-center gap-2">
+              <img
+                class='w-10 h-10 rounded-full'
+                src={speaker.image}
+                alt={speaker.name}
+              />
+              <p>
+                {speaker.name}<br />
+                {speaker.position} {speaker.company}
+              </p>
+            </li>
+          ))}
+        </ul>
       )
     }
   </div>
