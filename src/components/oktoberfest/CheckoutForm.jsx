@@ -281,7 +281,6 @@ export function CheckoutForm({ currentLanguage, translate }) {
                   <p style={{ color: 'red' }}>{errors.name.message}</p>
                 )}
               </div>
-
               <div className='relative mt-5 '>
                 <input
                   type='email'
@@ -322,7 +321,6 @@ export function CheckoutForm({ currentLanguage, translate }) {
                   <p style={{ color: 'red' }}>{errors.email.message}</p>
                 )}
               </div>
-
               <div className='relative mt-5'>
                 <input
                   type='number'
@@ -362,7 +360,6 @@ export function CheckoutForm({ currentLanguage, translate }) {
                   <p style={{ color: 'red' }}>{errors.phone.message}</p>
                 )}
               </div>
-
               <div className='relative mt-5'>
                 <input
                   type='text'
@@ -397,7 +394,6 @@ export function CheckoutForm({ currentLanguage, translate }) {
                   </svg>
                 </span>
               </div>
-
               <div className='relative mt-5'>
                 <p>{translate.select_hour}</p>
                 <p>{translate.text_select}</p>
@@ -432,7 +428,6 @@ export function CheckoutForm({ currentLanguage, translate }) {
                   <p style={{ color: 'red' }}>{errors.hour.message}</p>
                 )}
               </div>
-
               <div className='relative mt-5'>
                 <p>{translate.comments}: </p>
                 <textarea
@@ -443,7 +438,6 @@ export function CheckoutForm({ currentLanguage, translate }) {
                   placeholder='...'
                 ></textarea>
               </div>
-
               <div className='flex gap-4 mt-5'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -461,7 +455,6 @@ export function CheckoutForm({ currentLanguage, translate }) {
                 </svg>{' '}
                 {translate.disclamer_1}
               </div>
-
               <div className=' flex gap-4 mt-2'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -479,7 +472,6 @@ export function CheckoutForm({ currentLanguage, translate }) {
                 </svg>{' '}
                 {translate.disclamer_2}
               </div>
-
               <div className='flex gap-4 mt-2'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -497,7 +489,6 @@ export function CheckoutForm({ currentLanguage, translate }) {
                 </svg>{' '}
                 {translate.disclamer_3}
               </div>
-
               <div className='flex gap-4 mt-2'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

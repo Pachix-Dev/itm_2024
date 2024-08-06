@@ -63,7 +63,7 @@ const email_template_oktoberfest_en = async ({ name, hour }) => {
                 Remember that you must present official identification.
               </li>
               <li>
-                If you want an invoice, send an email to emmanuel.heredia@igeco.mx (4774201314) <br /> PLEASE ATTACH THE FOLLOWING DOCUMENTS: <br /> - PROOF OF TAX SITUATION <br /> - PHOTO OF THE PURCHASE RECEIPT <br /> - USE OF CFDI
+                If you want an invoice, send an email to cxc@igeco.mx <br /> PLEASE ATTACH THE FOLLOWING DOCUMENTS: <br /> - PROOF OF TAX SITUATION <br /> - PHOTO OF THE PURCHASE RECEIPT <br /> - INDICATE THE METHOD OF PAYMENT (CREDIT OR DEBIT CARD)<br /> - USE OF CFDI
               </li>
               <li>
                 Maximum billing date October 25, 2024

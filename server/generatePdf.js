@@ -98,7 +98,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
     doc
         .fontSize(10)
         .text('Descripcion', 50, 280)
-        .text('Costo unitario', 280, 280, { width: 90, align: "right" })
+        .text('Costo unitario', 290, 280, { width: 90, align: "right" })
         .text('cantidad', 370, 280, { width: 90, align: "right" })
         .text('Total', 0, 280, { align: "right" });
     doc
@@ -111,7 +111,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
     doc    
     .fontSize(10)
     .text(body.item.name, 50, 310)
-    .text(formatAmountMXN('5000'), 320, 310 )
+    .text(formatAmountMXN('5000'), 330, 310 )
     .text('1', 450, 310)
     .text(formatAmountMXN('5000'), 0, 310, { align: "right" });
     
@@ -128,11 +128,23 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
         .text('Subtotal:       $5,000', { width: 540, align: "right" });
     doc
         .fontSize(10)
-        .text('IVA:            $8,00 ', { width: 540, align: "right" });    
+        .text('IVA:            $8,00 ', { width: 540, align: "right" });   
+
     doc
         .fontSize(10)
         .font("Helvetica-Bold")
         .text('TOTAL:          $5,800' , { width: 540, align: "right" });    
+    
+    doc.moveDown(5)
+        .font("Helvetica-Bold")        
+        .text("SI DESEAS FACTURA FAVOR DE ENVIAR CORREO A CXC@IGECO.MX", 50)
+        .font("Helvetica")
+        .text("FAVOR DE ADJUNTAR LOS SIGUIENTES DOCUMENTOS:")
+        .text("- CONSTANCIA SITUACIÓN FISCAL", 55)
+        .text("- FOTO DEL RECIBO DE COMPRA", 55)
+        .text("- INDICAR EL MÉTODO DE PAGO (TARJETA DE CREDITO O DEBITO)", 55)
+        .text("- USO DE CFDI", 55)
+        .text("* FECHA MÁXIMA DE FACTURACIÓN 25 DE OCTUBRE DE 2024")
 
     const qrMainUser = await generateQRDataURL(uuid);
     doc.addPage();
@@ -1004,11 +1016,14 @@ async function generatePDFInvoiceOktoberfest(paypal_id_transaction, body) {
         .text("* Es indispensable llevar este comprobante de pago que viene adjunto en el correo impreso o en formato digital para canjear tu comida.")
         .text("* No se aceptan cambios ni devoluciones.")
         .text("* Recuerda que deberás presentar una identificación oficial.")
-        .text("* Si deseas factura envie un correo a emmanuel.heredia@igeco.mx  (4774201314)")
+        .text("* Si deseas factura envie un correo a cxc@igeco.mx")
         .text("* FAVOR DE ADJUNTAR LOS SIGUIENTES DOCUMENTOS:")
         .text("- CONSTANCIA SITUACIÓN FISCAL", 55)
         .text("- FOTO DEL RECIBO DE COMPRA", 55)
-        .text("- USO DE CFDI", 55);
+        .text("- INDICAR EL MÉTODO DE PAGO (TARJETA DE CREDITO O DEBITO)", 55)
+        .text("- USO DE CFDI", 55)
+        .text("* FECHA MÁXIMA DE FACTURACIÓN 25 DE OCTUBRE DE 2024")	
+
     
     doc.restore();       
 
