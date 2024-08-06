@@ -304,7 +304,7 @@ export class RegisterModel {
     const connection = await mysql.createConnection(config)
     try {      
       const [result] = await connection.query(
-        'INSERT INTO users_amof (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, code_invitation, company, industry, position, area, country, municipality, state, city, address, colonia, postalCode, webPage, phoneCompany, eventKnowledge, productInterest, levelInfluence, wannaBeExhibitor, alreadyVisited ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+        'INSERT INTO users (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, code_invitation, company, industry, position, area, country, municipality, state, city, address, colonia, postalCode, webPage, phoneCompany, eventKnowledge, productInterest, levelInfluence, wannaBeExhibitor, alreadyVisited, user_amof ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, ?)',
         [
           uuid,             
           name,
@@ -335,7 +335,8 @@ export class RegisterModel {
           productInterest,
           levelInfluence,
           wannaBeExhibitor,
-          alreadyVisited,   
+          alreadyVisited,
+          "si"   
         ]
       )
                               
