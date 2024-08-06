@@ -5,6 +5,7 @@ import i18next from 'i18next'
 import AnimatedCursor from 'react-animated-cursor'
 import Footer from '../components/shared/Footer.astro'
 import MenuHome from '../components/shared/MenuHome.astro'
+import WidgetSocial from '../components/shared/WidgetSocial.astro'
 interface Props {
   title: string
 }
@@ -87,6 +88,7 @@ const { title } = Astro.props
         style='display:none;visibility:hidden'></iframe></noscript
     >
     <!-- End Google Tag Manager (noscript) -->
+    <WidgetSocial />
     <AnimatedCursor
       client:only='react'
       showSystemCursor

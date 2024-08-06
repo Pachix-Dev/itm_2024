@@ -323,6 +323,7 @@ const sponsors = [
 const logosProgramVip = [
   { src: '/img/logocce.webp', alt: 'program vip 1', width: 200, link: 'https://cce.org.mx/' },
   { src: '/img/concamin.webp', alt: 'program vip 2', width: 180, link: 'https://www.concamin.org.mx/inicio' },
+  { src: '/logo_INA-vertical.webp', alt: 'Industria Nacional de Autopartes', width: 150, link: 'https://ina.com.mx/' },
   { src: '/img/italianExhibitionGroup.webp', alt: 'program vip 3', width: 150, link: 'https://www.iegexpo.it/en/' },
   { src: '/img/deutscheMesse.webp', alt: 'program vip 4', width: 200, link: 'https://www.messe.de/en/' },  
 ]
