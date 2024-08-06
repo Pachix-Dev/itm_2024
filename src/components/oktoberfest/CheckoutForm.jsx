@@ -42,7 +42,7 @@ export function CheckoutForm({ currentLanguage, translate }) {
 
   const initialOptions = {
     clientId:
-      'ASXsJEVjLguO7vsn4IOGxaFeZp0FzEkMErWxv6Foin2-niMwBWX_0ryUceIDzdiD-WNQy-WvdMx-lIwf',
+      'AZFPcXoEcNQyoYLYV-jTqEi3_ufNa3cPvWkEg741EYryPSimjaBL45KMgWHjVWd90Qn_QHT1lFI0sZUn',
     currency: 'MXN',
     intent: 'capture',
   }

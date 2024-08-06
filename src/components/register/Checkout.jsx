@@ -7,7 +7,7 @@ import {
 import { useState } from 'react'
 import { useRegisterForm } from '../../store/register-form'
 
-export function Checkout() {
+export function Checkout({ currentLanguage }) {
   const { item, email, setCompleteRegister, setInvoiceDownToLoad, clear } =
     useRegisterForm()
   const [message, setMessage] = useState('')
@@ -16,7 +16,7 @@ export function Checkout() {
 
   const initialOptions = {
     clientId:
-      'ASXsJEVjLguO7vsn4IOGxaFeZp0FzEkMErWxv6Foin2-niMwBWX_0ryUceIDzdiD-WNQy-WvdMx-lIwf',
+      'AZFPcXoEcNQyoYLYV-jTqEi3_ufNa3cPvWkEg741EYryPSimjaBL45KMgWHjVWd90Qn_QHT1lFI0sZUn',
     currency: 'MXN',
     intent: 'capture',
   }
@@ -50,6 +50,7 @@ export function Checkout() {
         total: item.price.toFixed(2),
         item,
         email,
+        currentLanguage,
       }),
     })
     const orderData = await response.json()

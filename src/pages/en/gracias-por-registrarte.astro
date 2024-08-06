@@ -1,5 +1,5 @@
 ---
-import { changeLanguage, t } from "i18next";
+import i18next, { changeLanguage, t } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 import Confettti from "../../components/shared/Confetti";
 import { Redirect } from "../../components/shared/Redirect.jsx";
@@ -9,6 +9,8 @@ import MarqueeSponsors from "../../components/register/MarqueeSponsors.astro";
 import { sponsors } from "../../data/constans_logos";
 
 changeLanguage("en");
+
+const currentLanguage = i18next.language;
 ---
 
 <Layout title='ITM  | Gracias por contactarnos'>
@@ -41,7 +43,7 @@ changeLanguage("en");
             text={t('thanks_page.download_pass')}
           />
         </div>
-        <ProgramVip client:only='react' />
+        <ProgramVip client:only='react' currentLanguage={currentLanguage} />
       </div>
     </div>
     <section class='my-10 max-w-screen-lg mx-auto'>

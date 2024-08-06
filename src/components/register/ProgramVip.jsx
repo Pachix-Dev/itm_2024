@@ -1,7 +1,7 @@
 import { useRegisterForm } from '../../store/register-form'
 import { Checkout } from './Checkout'
 
-export function ProgramVip() {
+export function ProgramVip({ currentLanguage }) {
   const { addTocart, item } = useRegisterForm()
 
   const products = [
@@ -125,7 +125,9 @@ export function ProgramVip() {
               )}
             </div>
           ))}
-          {Object.keys(item).length > 0 && <Checkout />}
+          {Object.keys(item).length > 0 && (
+            <Checkout currentLanguage={currentLanguage} />
+          )}
         </div>
       </div>
     </>
