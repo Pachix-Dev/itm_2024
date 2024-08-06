@@ -121,7 +121,7 @@ export function CheckoutForm({ currentLanguage, translate }) {
     })
     const orderData = await response.json()
     if (orderData.status) {
-      //clearCart()
+      clearCart()
       setcomplete_purchase(true)
       setInvoiceDownToLoad(orderData?.invoice)
       window.location.href = '/oktoberfest-gracias-por-tu-compra'
