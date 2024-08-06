@@ -1,5 +1,5 @@
 
-const email_template_oktoberfest_en = async ({ name, hour }) => {          
+const email_template_oktoberfest_en = async ({ name, hour, email, phone, items }) => {          
     
     return (
    `<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="max-width: 680px;">
@@ -25,7 +25,15 @@ const email_template_oktoberfest_en = async ({ name, hour }) => {
             </h2>
             <div style="text-align: justify;font-size:22px;">
              Celebrate with us the traditional German holiday! Enjoy music, food and beer in a festive and fun-filled atmosphere.                    
-            </div>     
+            </div>
+            <p style="font-size:22px;"><strong>Name - ${name} </strong></p>
+            <p style="font-size:22px;"><strong>Email - ${email} </strong></p>
+            <p style="font-size:22px;"><strong>Phone - ${phone} </strong></p>
+            ${items.map((item, index) => {
+              return (
+                `<p style="font-size:22px;"><strong>- ${item.name}  x${item.quantity}</strong></p>`                
+              )
+            }).join('')}                 
             <p>Reservation confirmed for - ${hour}</p>
             <p>* Maximum number of people 10</p>             
             <p style="font-weight:bold;font-size:20px;text-align: center;">ADD TO CALENDAR</p>

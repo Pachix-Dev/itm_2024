@@ -1,5 +1,5 @@
 
-const email_template_oktoberfest = async ({ name, hour }) => {          
+const email_template_oktoberfest = async ({ name, hour, email, phone, items }) => {          
     
     return (
    `<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="max-width: 680px;">
@@ -19,7 +19,15 @@ const email_template_oktoberfest = async ({ name, hour }) => {
             </h2>
             <div style="text-align: justify;font-size:22px;">
               ¡Celebra con nosotros la tradicional fiesta alemana! Disfruta de la música, la comida y la cerveza en un ambiente festivo y lleno de diversión.                   
-            </div>
+            </div>}
+            <p style="font-size:22px;"><strong>Nombre - ${name} </strong></p>
+            <p style="font-size:22px;"><strong>Email - ${email} </strong></p>
+            <p style="font-size:22px;"><strong>Teléfono - ${phone} </strong></p>
+            ${items.map((item, index) => {
+              return (
+                `<p style="font-size:22px;"><strong>- ${item.name}  x${item.quantity}</strong></p>`                
+              )
+            }).join('')}            
             <p style="font-size:22px;"><strong>Reservación confirmada - ${hour} </strong></p>
             <p style="font-size:22px;"><strong>* Mesa para 10 personas máximo </strong></p>
             <p style="font-weight:bold;font-size:20px;text-align: center;">AÑADIR AL CALENDARIO</p>
