@@ -8,13 +8,7 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
           <td colspan="2" align="center">
             <img src="https://industrialtransformation.mx/header-ITM-register-eng.jpg" alt="logo" width="550">               
           </td>
-        </tr>
-        <tr>
-          <td align="right" colspan="2">
-            <img src="https://industrialtransformation.mx/italianExhibitionGroup.jpg" alt="logo" style="width: 80px;margin-top: 15px;">          
-            <img src="https://industrialtransformation.mx/deutscheMesse.jpg" alt="logo" style="width: 150px;margin-left: 5px;">
-          </td>
-        </tr>
+        </tr>        
         <tr>
           <td colspan="2">
             <h2 style="text-align: center;margin:0;font-weight:bold;text-transform: uppercase;margin-top: 20px;">
