@@ -640,10 +640,14 @@ app.get('/generate-pdf', async (req, res) => {
 
 app.get('/template-email', async (req, res) => {
     const data = {
-        name: 'Juan',
-        paternSurname: 'Perez',
-        maternSurname: 'Gomez',
-        email: ''
+        name: 'Juan Perez',
+        email: 'Pachi.claros@gmaail.com',
+        phone: '4775690282',
+        hour: '10:00 am',
+        items: [
+            {name: 'Combo Empresarial', quantity: 2},
+            {name: 'item 2', quantity: 2},
+        ]
     }
     const emailContent = await email_template_oktoberfest({ ...data });
     res.send(emailContent);

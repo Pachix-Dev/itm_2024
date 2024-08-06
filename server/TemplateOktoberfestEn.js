@@ -26,12 +26,13 @@ const email_template_oktoberfest_en = async ({ name, hour, email, phone, items }
             <div style="text-align: justify;font-size:22px;">
              Celebrate with us the traditional German holiday! Enjoy music, food and beer in a festive and fun-filled atmosphere.                    
             </div>
-            <p style="font-size:22px;"><strong>Name - ${name} </strong></p>
-            <p style="font-size:22px;"><strong>Email - ${email} </strong></p>
-            <p style="font-size:22px;"><strong>Phone - ${phone} </strong></p>
+            <p style="font-size:22px;"><strong>Name: ${name} </strong></p>
+            <p style="font-size:22px;"><strong>Email: ${email} </strong></p>
+            <p style="font-size:22px;"><strong>Phone: ${phone} </strong></p>}
+            <p style="font-size:22px;"><strong>Order: </strong></p>
             ${items.map((item, index) => {
               return (
-                `<p style="font-size:22px;"><strong>- ${item.name}  x${item.quantity}</strong></p>`                
+                `<p style="font-size:22px;margin-left:10px;"><strong>- ${item.name}  x${item.quantity}</strong></p>`                
               )
             }).join('')}                 
             <p>Reservation confirmed for - ${hour}</p>
