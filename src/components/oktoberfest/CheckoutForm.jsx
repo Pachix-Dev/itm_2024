@@ -424,6 +424,9 @@ export function CheckoutForm({ currentLanguage, translate }) {
                   <option value={translate.option5} className='text-black'>
                     {translate.option5}
                   </option>
+                  <option value={translate.option6} className='text-black'>
+                    {translate.option6}
+                  </option>
                 </select>
                 {errors.hour && (
                   <p style={{ color: 'red' }}>{errors.hour.message}</p>
