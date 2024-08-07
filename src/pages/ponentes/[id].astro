@@ -1,0 +1,34 @@
+---
+import { speakers_vip } from '../../data/constans_speakers_vip.js'
+import Layout from '../../layouts/Layout.astro'
+
+const { id } = Astro.params
+
+export function getStaticPaths() {
+  return speakers_vip.map((speaker) => ({
+    params: {
+      id: speaker.id,
+    },
+  }))
+}
+
+const speaker = speakers_vip.find((speaker) => speaker.id === id)
+---
+
+<Layout title='Ponentes'>
+  <main>
+    <section class='mt-10 mx-auto py-10 container px-4 flex'>
+      <img
+        src={speaker?.image}
+        alt={speaker?.name}
+        class='w-40 h-40 mx-auto rounded-full'
+      />
+      <h1
+        class='text-black
+              text-3xl md:text-5xl leading-snug font-extrabold text-center uppercase'
+      >
+        {speaker?.name}
+      </h1>
+    </section>
+  </main>
+</Layout>

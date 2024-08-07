@@ -18,6 +18,7 @@ const stage_1_day_1=[
         "duration": "90 mins",
         "speakers": [
             {
+                "id": "1",
                 "name": "Gobernadores",
                 "position": "Sonora, Chihuahua, Coahuila, Aguascalientes, Querétaro y Oaxaca",
                 "company": "",
@@ -30,6 +31,7 @@ const stage_1_day_1=[
                 "image": "/profile.svg"
             },
             {
+                
                 "name": "Alfred Rodríguez",
                 "position": "Embajador de la Industria del Futuro de Francia en México",
                 "company": "Moderador",
