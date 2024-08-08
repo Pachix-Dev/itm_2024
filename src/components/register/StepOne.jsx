@@ -4,6 +4,7 @@ import PhoneInputWithCountry from 'react-phone-number-input/react-hook-form'
 import { countries } from '../../data/list_countries'
 import 'react-phone-number-input/style.css'
 import './Form.css'
+import { useEffect } from 'react'
 export function StepOne({ translates }) {
   const {
     name,
@@ -33,6 +34,25 @@ export function StepOne({ translates }) {
     handleSubmit,
     formState: { errors },
   } = useForm({})
+  const url = new URL(window.location.href)
+
+  const param1 = url.searchParams.get('name') || ''
+  const param2 = url.searchParams.get('paternName') || ''
+  const param3 = url.searchParams.get('maternName') || ''
+  const param4 = url.searchParams.get('email') || ''
+  const param5 = url.searchParams.get('phone') || ''
+  const param6 = url.searchParams.get('nacionality') || ''
+  const param7 = url.searchParams.get('typeRegister') || ''
+
+  useEffect(() => {
+    setName(param1)
+    setPaternSurname(param2)
+    setMaternSurname(param3)
+    setEmail(param4)
+    setPhone(param5)
+    setNacionality(param6)
+    setTypeRegister(param7)
+  }, [param1, param2, param3, param4, param5, param6, param7])
 
   return (
     <>
