@@ -137,7 +137,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
     
     doc.moveDown(5)
         .font("Helvetica-Bold")        
-        .text("SI DESEAS FACTURA FAVOR DE ENVIAR CORREO A CXC@IGECO.MX", 50)
+        .text("SI DESEAS FACTURA FAVOR DE ENVIAR CORREO A emmanuel.heredia@igeco.mx@igeco.mx", 50)
         .font("Helvetica")
         .text("FAVOR DE ADJUNTAR LOS SIGUIENTES DOCUMENTOS:")
         .text("- CONSTANCIA SITUACIÓN FISCAL", 55)
