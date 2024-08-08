@@ -31,11 +31,11 @@ const stage_1_day_1=[
                 "image": "/profile.svg"
             },
             {
-                
+                "id": "2",
                 "name": "Alfred Rodríguez",
                 "position": "Embajador de la Industria del Futuro de Francia en México",
                 "company": "Moderador",
-                "image": "/profile.svg"
+                "image": "/img/speakers/alfredo_rodríguez.webp"
             }
         ]
     },
@@ -117,10 +117,11 @@ const stage_1_day_1=[
                 "image": "/profile.svg"
             },
             {
+                "id": "15",
                 "name": "Rosaura Ruiz",
                 "position": " Proxima Secretaria de Ciencia, Humanidades, Tecnología e Innovación",
                 "company": "Gobierno Federal",
-                "image": "/profile.svg"
+                "image": "/img/speakers/rosaura_ruiz.webp"
             },
             {
                 "name": "Alejandro Malagón",
@@ -237,10 +238,11 @@ const stage_1_day_1=[
                 "image": "/profile.svg"
             },
             {
+                "id": "23",
                 "name": "Carlos Robles",
                 "position": "Presidente",
                 "company": "FEMIA",
-                "image": "/profile.svg"
+                "image": "/img/speakers/carlos_robles.webp"
             }
         ]
     },
