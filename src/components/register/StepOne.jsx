@@ -45,12 +45,19 @@ export function StepOne({ translates }) {
   const param7 = url.searchParams.get('typeRegister') || ''
 
   useEffect(() => {
+    if (param1 === '') return
     setName(param1)
+    if (param2 === '') return
     setPaternSurname(param2)
+    if (param3 === '') return
     setMaternSurname(param3)
+    if (param4 === '') return
     setEmail(param4)
+    if (param5 === '') return
     setPhone(param5)
+    if (param6 === '') return
     setNacionality(param6)
+    if (param7 === '') return
     setTypeRegister(param7)
   }, [param1, param2, param3, param4, param5, param6, param7])
 
