@@ -74,7 +74,7 @@ const stage_1_day_1=[
             {
                 "name": "Marcelo Ebrard",
                 "position": "Proximo Secretario de Economía de México",
-                "company": "",
+                "company": "Secretaria de Economía de México",
                 "image": "/profile.svg"
             },
             {
@@ -191,12 +191,6 @@ const stage_1_day_1=[
                 "image": "/profile.svg"
             },
             {
-                "name": "Omar Troncoso",
-                "position": "Partner ",
-                "company": "Kearney – Global Management Consulting Firm",
-                "image": "/profile.svg"
-            },
-            {
                 "name": "Manuel Pérez Cárdenas",
                 "position": "Asesor Ejecutivo de la Presidencia",
                 "company": "CCE",
@@ -243,8 +237,8 @@ const stage_1_day_1=[
                 "image": "/profile.svg"
             },
             {
-                "name": "Luis Lizcano",
-                "position": "Presidente Ejecutivo",
+                "name": "Carlos Robles",
+                "position": "Presidente",
                 "company": "FEMIA",
                 "image": "/profile.svg"
             }
