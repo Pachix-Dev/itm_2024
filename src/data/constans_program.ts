@@ -1,4 +1,5 @@
 interface Speaker {
+    id?: string;
     name: string;
     position: string;
     company: string;
@@ -33,7 +34,7 @@ const stage_1_day_1: Program[] = [
         "time": "12:45 hrs",
         "duration": "45 mins",
         "speakers": [
-            {
+            {                
                 "name": "Carlos Orozco",
                 "position": "Director de Ventas",
                 "company": "MISUMI México",
