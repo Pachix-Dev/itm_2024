@@ -1,13 +1,13 @@
 const speakers = [
-    // {
-    //     id: "",
-    //     name: "",
-    //     position: "",
-    //     company: "",
-    //     description: "",
-    //     image: "",
+    {
+        id: "0",
+        name: "",
+        position: "",
+        company: "",
+        description: "",
+        image: "",
 
-    // },
+    },
     {
         id: "1",
         name: "Carlos Orozco",

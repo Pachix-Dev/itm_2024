@@ -62,6 +62,7 @@ const stage_1_day_2: Program[] = [
         "duration": "45 mins",
         "speakers": [
             {
+                "id":"0",
                 "name": "José Armas Ramírez",
                 "position": "Account Executive",
                 "company": "Extreme Networks",
@@ -160,12 +161,19 @@ const stage_1_day_3: Program[] = [
 
 const stage_2_day_1: Program[] = [
     {
-        "title": "SIEMENS",
-        "title_en": "SIEMENS",
-        "description": "",
+        "title": "Metaverso Industrial: Revolucionando la Manufactura del Futuro",
+        "title_en": "Metaverso Industrial: Revolucionando la Manufactura del Futuro",
+        "description": "El Metaverso Industrial no se trata de crear mundos de fantasía virtuales (o universos paralelos) con poca o ninguna relevancia en el mundo físico. Más bien, se trata de conectar el mundo real con el mundo digital para resolver problemas del mundo real. Se trata de impacto en el mundo real, de mejorar la manera en que hacemos las cosas, de proporcionar beneficios tangibles para los consumidores, las empresas y la sociedad. El Metaverso Industrial está muy vivo. A través de nuestra tecnología Siemens atiende a decenas de miles de clientes industriales en todo el mundo, y podemos confirmar que las compañías están adoptando el metaverso industrial para transformar tecnológicamente sus industrias en los próximos años.",
         "time": "12:30 hrs",
         "duration": "45 mins",
-        "speakers": []
+        "speakers": [
+            {
+                "name": "Alejandro Preinfalk",
+                "position": "Director de Digital Industries",
+                "company": "CEO Siemens México, Centroamérica y el Caribe",
+                "image": "/profile.svg"
+            }
+        ]
     },
     {
         "title": "Hacia una nueva era Industrial 4.0: Impulsando la sustentabilidad y  la Transición Justa ",
@@ -227,52 +235,60 @@ const stage_2_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "Inauguración Cumbre",
-        "title_en": "Summit Inauguration",
+        "title": "Inauguración de la Cumbre de Desarrollo Industrial Sostenible",
+        "title_en": "Inauguration of the Sustainable Industrial Development Summit",
         "description": "",
         "time": "12:45 hrs",
-        "duration": "30 mins",
+        "duration": "15 mins",
         "speakers": []
     },
     {
-        "title": "Panel de la Cumbre",
-        "title_en": "Summit Panel",
+        "title": "Panel CDIS: El Modelo de Desarrollo Inclusivo",
+        "title_en": "CDIS Panel: The Inclusive Development Model",
         "description": "",
-        "time": "13:15 hrs",
-        "duration": "45 mins",
+        "time": "13:00 hrs",
+        "duration": "60 mins",
         "speakers": []
     },
     {
-        "title": "Panel de la Cumbre",
-        "title_en": "Summit Panel",
+        "title": "Panel CDIS: Liderazgo Empresarial en la Transformación Digital Sostenible",
+        "title_en": "CDIS Panel: Business Leadership in Sustainable Digital Transformation",
         "description": "",
         "time": "14:00 hrs",
-        "duration": "45 mins",
+        "duration": "60 mins",
         "speakers": []
     },
     {
-        "title": "Panel de la Cumbre",
-        "title_en": "Summit Panel",
+        "title": "Panel CDIS: Nearshoring y cadenas globales de valor sostenibles",
+        "title_en": "CDIS Panel: Nearshoring and sustainable global value chains",
         "description": "",
         "time": "15:00 hrs",
         "duration": "60 mins",
         "speakers": []
     },
     {
-        "title": "Liderazgo femenino en la innovación Industrial",
-        "title_en": "Women's leadership in industrial innovation",
+        "title": "Palabras de cierre de la Cumbre de Desarrollo Industrial Sostenible",
+        "title_en": "Closing Remarks at the Sustainable Industrial Development Summit",
         "description": "",
-        "time": "17:00 hrs",
-        "duration": "30 mins",
-        "speakers": [
-            {
-                "name": "Misumi",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
-            }
-        ]
+        "time": "16:00 hrs",
+        "duration": "15 mins",
+        "speakers": []
     },
+    // {
+    //     "title": "Liderazgo femenino en la innovación Industrial",
+    //     "title_en": "Women's leadership in industrial innovation",
+    //     "description": "",
+    //     "time": "17:00 hrs",
+    //     "duration": "30 mins",
+    //     "speakers": [
+    //         {
+    //             "name": "Misumi",
+    //             "position": "",
+    //             "company": "",
+    //             "image": "/profile.svg"
+    //         }
+    //     ]
+    // },
     {
         "title": "MUJERES QUE TRANSFORMAN: Marketing y Automatización",
         "title_en": "WOMEN WHO TRANSFORM: Marketing and Automation",
