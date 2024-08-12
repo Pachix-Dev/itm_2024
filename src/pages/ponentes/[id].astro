@@ -7,11 +7,11 @@ changeLanguage("es");
 
 const { id } = Astro.params;
 export function getStaticPaths() {
-  return speakers_vip.map((speaker) => ({
-    params: {
-      id: speaker.id,
-    },
-  }));
+    return speakers_vip.map((speaker) => ({
+        params: {
+            id: speaker.id,
+        },
+    }));
 }
 const speaker = speakers_vip.find((speaker) => speaker.id === id);
 ---

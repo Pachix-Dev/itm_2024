@@ -1,7 +1,7 @@
 ---
 import programs from "../data/constans_program.ts";
 import Button from "../components/schedule/Button.astro";
-import Conference from "../components/schedule/Conference.astro";
+import ConferenceItm from "../components/schedule/ConferenceItm.astro";
 import { t, changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
 
@@ -47,7 +47,7 @@ changeLanguage("es");
             id={`program-${program.stage}-${program.day}`}
           >
             {program.conferences.map((item, key) => (
-              <Conference
+              <ConferenceItm
                 item={item}
                 key={program.stage + '-' + program.day + '-' + key}
               />

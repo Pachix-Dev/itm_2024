@@ -16,20 +16,29 @@ export function getStaticPaths() {
 const speaker = speakers_vip.find((speaker) => speaker.id === id);
 ---
 
-<Layout title='Ponentes'>
+<Layout title="Ponentes">
   <main>
-    <section class='mt-10 mx-auto py-10 container px-4 flex'>
-      <img
-        src={speaker?.image}
-        alt={speaker?.name}
-        class='w-40 h-40 mx-auto rounded-full'
-      />
-      <h1
-        class='text-black
-              text-3xl md:text-5xl leading-snug font-extrabold text-center uppercase'
+    <section class="mx-auto py-10 container px-4 flex justify-center">
+      <div
+        class=" w-auto grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 justify-center items-center"
       >
-        {speaker?.name}
-      </h1>
+        <div class="md:w-[500px] sm:w-[500px]  flex justify-center">
+          <img
+            src={speaker?.image}
+            alt={speaker?.name}
+            class="h-[400px]"
+          />
+        </div>
+        <div class="sm:w-[500px]">
+          <h1
+            class="text-black
+              text-3xl md:text-5xl leading-snug font-extrabold text-center uppercase"
+          >
+            {speaker?.name}
+          </h1>
+          <p class="text-lg text-justify mt-10">{speaker?.description}</p>
+        </div>
+      </div>
     </section>
   </main>
 </Layout>

@@ -34,11 +34,12 @@ const stage_1_day_1: Program[] = [
         "time": "12:45 hrs",
         "duration": "45 mins",
         "speakers": [
-            {                
+            {            
+                "id": "1",    
                 "name": "Carlos Orozco",
                 "position": "Director de Ventas",
                 "company": "MISUMI México",
-                "image": "/profile.svg"
+                "image": "/img/speakers/carlos_orozco.webp"
             }
         ]
     },
@@ -84,10 +85,11 @@ const stage_1_day_2: Program[] = [
         "duration": "45 mins",
         "speakers": [
             {
+                "id":"1",
                 "name": "Carlos Orozco",
                 "position": "Director de Ventas",
                 "company": "MISUMI México",
-                "image": "/profile.svg"
+                "image": "/img/speakers/carlos_orozco.webp"
             }
         ]
     },
@@ -139,10 +141,11 @@ const stage_1_day_3: Program[] = [
         "duration": "45 mins",
         "speakers": [
             {
+                "id" :"1",
                 "name": "Carlos Orozco",
                 "position": "Director de Ventas",
                 "company": "MISUMI México",
-                "image": "/profile.svg"
+                "image": "/img/speakers/carlos_orozco.webp"
             }
         ]
     },
