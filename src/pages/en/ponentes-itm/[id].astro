@@ -1,9 +1,9 @@
 ---
 import { changeLanguage } from "i18next";
-import { speakers } from "../../data/constans_speakers.js";
-import Layout from "../../layouts/Layout.astro";
+import { speakers } from "../../../data/constans_speakers.js";
+import Layout from "../../../layouts/Layout.astro";
 
-changeLanguage("es");
+changeLanguage("en");
 
 const { id } = Astro.params;
 export function getStaticPaths() {
