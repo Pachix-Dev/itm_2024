@@ -1,5 +1,5 @@
 ---
-import { changeLanguage, t } from "i18next";
+import i18next, { changeLanguage, t } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 import Meteors from "@/components/magicui/meteors";
 // @ts-ignore
@@ -22,7 +22,7 @@ const path = localizePath("/consulta-directorio-digital");
         <p
           class='square_red text-white text-left text-4xl font-extrabold place-items-start py-5'
         >
-          Bienvenid@ al directorio de Expositores de ITM 2024
+          {t('directory.title')}	
         </p>
       </div>
     </section>
@@ -45,7 +45,7 @@ const path = localizePath("/consulta-directorio-digital");
           data-aos-duration='1300' class='col-span-2'>
               <span class='ms-[-10px] font-bold'>{item.stand_number}</span>
               <h2 class='text-2xl font-bold'>{item.name}</h2>
-              <p class='text-lg mt-2'>{item.description}</p>
+              <p class='text-lg mt-2'>{i18next.language === 'es' ? item.description : item.description_en}</p>
               <div class='mt-2 text-lg flex items-center gap-1'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
