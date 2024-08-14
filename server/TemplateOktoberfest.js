@@ -65,7 +65,7 @@ const email_template_oktoberfest = async ({ name, hour, email, phone, items }) =
                 Recuerda que deberás presentar una identificación oficial.
               </li>
               <li>
-                Si deseas factura envie un correo a emmanuel.heredia@igeco.mx <br /> FAVOR DE ADJUNTAR LOS SIGUIENTES DOCUMENTOS: <br /> - CONSTANCIA SITUACIÓN FISCAL <br /> - FOTO DEL RECIBO DE COMPRA <br /> - INDICAR EL MÉTODO DE PAGO (TARJETA DE CREDITO O DEBITO)<br /> - USO DE CFDI
+                Si deseas factura envie un correo a cxc@igeco.mx <br /> FAVOR DE ADJUNTAR LOS SIGUIENTES DOCUMENTOS: <br /> - CONSTANCIA SITUACIÓN FISCAL <br /> - FOTO DEL RECIBO DE COMPRA <br /> - INDICAR EL MÉTODO DE PAGO (TARJETA DE CREDITO O DEBITO)<br /> - USO DE CFDI
               </li> 
               <li>
                 Fecha máxima de facturación 25 de octubre de 2024

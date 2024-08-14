@@ -7,36 +7,32 @@ changeLanguage("es");
 
 const { id } = Astro.params;
 export function getStaticPaths() {
-  return speakers_vip.map((speaker) => ({
-    params: {
-      id: speaker.id,
-    },
-  }));
+    return speakers_vip.map((speaker) => ({
+        params: {
+            id: speaker?.id ? speaker.id.toString() : "0",
+        },
+    }));
 }
 const speaker = speakers_vip.find((speaker) => speaker.id === id);
 ---
 
-<Layout title="Ponentes">
+<Layout title='Ponentes'>
   <main>
-    <section class="mx-auto py-10 container px-4 flex justify-center">
+    <section class='mx-auto py-10 container px-4 flex justify-center'>
       <div
-        class=" w-auto grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 justify-center items-center"
+        class='w-auto grid md:grid-cols-2 sm:grid-cols-2 grid-cols-1 justify-center items-center'
       >
-        <div class="md:w-[500px] sm:w-[500px]  flex justify-center">
-          <img
-            src={speaker?.image}
-            alt={speaker?.name}
-            class="h-[400px]"
-          />
+        <div class='md:w-[500px] sm:w-[500px] flex justify-center'>
+          <img src={speaker?.image} alt={speaker?.name} class='h-[400px]' />
         </div>
-        <div class="sm:w-[500px]">
+        <div class='sm:w-[500px]'>
           <h1
-            class="text-black
-              text-3xl md:text-5xl leading-snug font-extrabold text-center uppercase"
+            class='text-black
+              text-3xl md:text-5xl leading-snug font-extrabold text-center uppercase'
           >
             {speaker?.name}
           </h1>
-          <p class="text-lg text-justify mt-10">{speaker?.description}</p>
+          <p class='text-lg text-justify mt-10'>{speaker?.description}</p>
         </div>
       </div>
     </section>

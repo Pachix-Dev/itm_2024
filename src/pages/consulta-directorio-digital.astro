@@ -25,10 +25,7 @@ const translations = {
     <p class='text-center font-bold text-lg md:text-2xl uppercase'>
       {t('checkRegister.subtitle')}
     </p>
-    <p class='mt-10 uppercase text-center text-5xl font-extrabold'>
-      {t('directory.comming_soon')}
-    </p>
-    {/*<CheckRegister client:only="react" translations={translations} />*/}
+    <CheckRegister client:only='react' translations={translations} />
   </main>
 </LayoutRegister>
 <style>
