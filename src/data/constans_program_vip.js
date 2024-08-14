@@ -33,8 +33,8 @@ const stage_1_day_1=[
             {
                 "id": "2",
                 "name": "Alfred Rodríguez",
-                "position": "Embajador de la Industria del Futuro de Francia en México",
-                "company": "Moderador",
+                "position": "<p>Moderador</p>Embajador de la Industria del Futuro de Francia en México",
+                "company": "",
                 "image": "/img/speakers/alfredo_rodríguez.webp"
             }
         ]
@@ -60,7 +60,7 @@ const stage_1_day_1=[
     {
         "title": "PRESENTACIÓN DEL LIBRO: <br /> Transformación Digital y Política Industrial <br /> <span class='font-normal text-white'>Retos y oportunidades</span>",
         "title_en": "PRESENTATION OF THE BOOK:<br /> Digital Transformation and Industry Policy <span class='font-normal text-white'>Challenges and opportunities</span>",
-        "description": "Presenta el libro: Arturo Oropeza, Presidente del del Instituto para el Desarrollo Industrial y la Transformación Digital (INADI)",
+        "description": "Presenta el libro: Arturo Oropeza, Presidente del Instituto para el Desarrollo Industrial y la Transformación Digital (INADI)",
         "description_en": "Presents the book: Arturo Oropeza, President of the Institute for Industrial Development and Digital Transformation (INADI)",
         "time": "12:00 hrs",
         "duration": "90 mins",
@@ -79,25 +79,25 @@ const stage_1_day_1=[
             },
             {
                 "name": "Alejandro Malagón",
-                "position": "Presidente",
+                "position": "<p>Moderador</p>Presidente",
                 "company": "CONCAMIN",
                 "image": "/profile.svg"
             },
             {
                 "name": "Máximo Vedoya",
                 "position": "Presidente",
-                "company": "CAINTRA",
+                "company": "CAINTRA & CEO de Ternium",
                 "image": "/profile.svg"
             },
             {
-                "name": "Embajador",
-                "position": "República Federal Alemana en México",
+                "name": "Embajada de la República Federal de Alemania en México",
+                "position": "",
                 "company": "CAINTRA",
                 "image": "/profile.svg"
             },
             {
                 "name": "Manuel Pérez Cárdenas",
-                "position": "Asesor Ejecutivo de la Presidencia",
+                "position": "<p>Moderador</p> Asesor Ejecutivo de la Presidencia",
                 "company": "CCE",
                 "image": "/profile.svg"
             }
@@ -125,7 +125,7 @@ const stage_1_day_1=[
             },
             {
                 "name": "Alejandro Malagón",
-                "position": "Presidente",
+                "position": "<p>Moderador</p>Presidente",
                 "company": "CONCAMIN",
                 "image": "/profile.svg"
             },
@@ -193,7 +193,7 @@ const stage_1_day_1=[
             },
             {
                 "name": "Manuel Pérez Cárdenas",
-                "position": "Asesor Ejecutivo de la Presidencia",
+                "position": "<p>Moderador</p> Asesor Ejecutivo de la Presidencia",
                 "company": "CCE",
                 "image": "/profile.svg"
             },
@@ -202,8 +202,8 @@ const stage_1_day_1=[
     {
         "title": "MESA 4:<br /> LA INDUSTRIA AEROESPACIAL MEXICANA: Expansión extraordinaria de una industria de frontera tecnológica.<br /> <span class='font-normal text-white'> Oportunidades para la empresa mexicana</span>",
         "title_en": "TABLE 4:<br /> THE MEXICAN AEROSPACE INDUSTRY: Extraordinary expansion of a technological frontier industry.<br /> <span class='font-normal text-white'> Opportunities for the Mexican company</span>",
-        "description": "Introducción: por Luis Lizcano, Presidente Ejecutivo de la Federación Mexicana de la Industria Aeroespacial (FEMIA)",
-        "description_en": "Introduction: by Luis Lizcano, Executive President of the Mexican Federation of the Aerospace Industry (FEMIA)",
+        "description": "Introducción: por Carlos Robles, Presidente de la Federación Mexicana de la Industria Aeroespacial (FEMIA)",
+        "description_en": "Introduction: By Carlos Robles, President of the Mexican Federation of the Aerospace Industry (FEMIA)type industries",
         "time": "17:30 hrs",
         "duration": "60 mins",
         "speakers": [
@@ -216,7 +216,7 @@ const stage_1_day_1=[
             {
                 "name": "Carlos Lozano",
                 "position": "Director de ventas",
-                "company": "FRISA",
+                "company": "Grupo Frisa",
                 "image": "/profile.svg"
             },
             {
@@ -240,7 +240,7 @@ const stage_1_day_1=[
             {
                 "id": "23",
                 "name": "Carlos Robles",
-                "position": "Presidente",
+                "position": "<p>Moderador</p> Presidente FEMIA",
                 "company": "FEMIA",
                 "image": "/img/speakers/carlos_robles.webp"
             }
@@ -249,7 +249,7 @@ const stage_1_day_1=[
     {
         "title": "NETWORKING",
         "title_en": "NETWORKING",
-        "description": "hora feliz en el VIP lounge",
+        "description": "Hora feliz en el VIP lounge",
         "description_en": "happy hour in the VIP lounge",
         "time": "18:30 hrs",
         "duration": "90 mins",
@@ -281,7 +281,7 @@ const statge_1_day_2=[
             {
                 "name": "Éric Martel",
                 "position": "Presidente",
-                "company": " CEO Bombardier Canada",
+                "company": " CEO Bombardier Canada, Presidente y CEO Bomardier Canada",
                 "image": "/profile.svg"
             },
             {
@@ -296,15 +296,15 @@ const statge_1_day_2=[
                 "company": " ENEL Green Power & ENEL X México",
                 "image": "/profile.svg"
             },
-            {
-                "name": "Ernesto del Blanco Arjona",
-                "position": "Presidente",
-                "company": " ELAM-FAW",
-                "image": "/profile.svg"
-            },
+            // {
+            //     "name": "Ernesto del Blanco Arjona",
+            //     "position": "Presidente",
+            //     "company": " ELAM-FAW",
+            //     "image": "/profile.svg"
+            // },
             {
                 "name": "Francisco González",
-                "position": "Presidente",
+                "position": "<p>Moderador</p>Presidente",
                 "company": " INA",
                 "image": "/profile.svg"
             }
@@ -321,7 +321,7 @@ const statge_1_day_2=[
             {
                 "name": "Alessandro Modiano",
                 "position": "Embajador de Italia en México",
-                "company": " México",
+                "company": "",
                 "image": "/profile.svg"
             },
             {
@@ -350,7 +350,7 @@ const statge_1_day_2=[
             },
             {
                 "name": "Alejandro Malagón",
-                "position": "Presidente",
+                "position": "<p>Moderador</p>Presidente",
                 "company": "CONCAMIN",
                 "image": "/profile.svg"
             }
@@ -367,23 +367,23 @@ const statge_1_day_2=[
     {
         "title": "EL NUEVO ESPACIO, LUGAR DE ENORME OPORTUNIDAD PARA LA INTEGRACIÓN DE CADENAS PRODUCTIVAS DE MEXICO Y ESTADOS UNIDOS.<br /> <span class='font-normal text-white'> Una visión de los actores</span>",
         "title_en": "THE NEW SPACE, A PLACE OF ENORMOUS OPPORTUNITY FOR THE INTEGRATION OF PRODUCTIVE CHAINS OF MEXICO AND THE UNITED STATES.<br /> <span class='font-normal text-white'> A vision of the actors</span>",
-        "description": "Introducción: Francisco Cervantes, Presidente del CCE (Tendencias globales, los sectores industriales del Nuevo Espacio y la acción de los estados nacionales para promover la integración industrial transfronteriza en el ámbito espacial).<br /><br /> <strong>MARCO LEGAL ESPACIAL EN MÉXICO:</strong> Reforma constitucional en materia espacial en consideración en el Senado Mexicano.<br /><br /> Ana Lilia Rivera, Senadora de la República, LXV Legislatura y Presidenta de la Comisión de Ciencia y Tecnología del Senado de la República en la LXIV Legislatura <br /><br /><strong><u>PANEL UNO : </u><br />NUEVO ESPACIO:</strong> PUNTO DE ENCUENTRO DE LA CIENCIA, LA TECNOLOGIA, LA INDUSTRIA Y LA DEFENSA ¿Qué es el Nuevo Espacio y hacia dónde va tanto en el sector privado como en el público y en el sector de R&D?",
+        "description": "Introducción: Francisco Cervantes, Presidente del CCE (Tendencias globales, los sectores industriales del Nuevo Espacio y la acción de los estados nacionales para promover la integración industrial transfronteriza en el ámbito espacial).<br /><br /> <strong>MARCO LEGAL ESPACIAL EN MÉXICO:</strong> Reforma constitucional en materia espacial en consideración en el Senado Mexicano.<br /><br /> Ana Lilia Rivera, Senadora de la República, LXV Legislatura y Presidenta de la Comisión de Ciencia y Tecnología del Senado de la República en la LXIV Legislatura <br /><br /><strong><u>PANEL UNO : </u><br />NUEVO ESPACIO:</strong> PUNTO DE ENCUENTRO DE LA CIENCIA, LA TECNOLOGIA, LA INDUSTRIA Y LA DEFENSA ¿Qué es el Nuevo Espacio y hacia dónde va tanto en el sector privado como en el público y de investigación de desarrollo?",
         "description_en": "Introduction: Francisco Cervantes, President of the CCE (Global trends, the industrial sectors of the New Space and the action of national states to promote cross-border industrial integration in the space field).<br /><br /> SPACE LEGAL FRAMEWORK IN MEXICO: Constitutional reform in space matters under consideration in the Mexican Senate.<br /><br /> Ana Lilia Rivera, Senator of the Republic of Mexico, LXV Legislature and Chairwoman of the Science and Technology Commission of the Senate of the of the Republic in the LXIV Legislature.<br /><br /><strong><u>PANEL ONE : </u><br /> NEW SPACE: </strong>MEETING POINT OF SCIENCE, TECHNOLOGY, INDUSTRY AND DEFENSE What is the New Space and where is it going in both the private and public sectors and in the R&D sector?",
         "time": "14:30 hrs",
         "duration": "90 mins",
         "speakers": [
-            {
-                "name": "Gustavo Medina",
-                "position": "Director",
-                "company": " Laboratorio de Instrumentación Espacial de la UNAM (LINX - UNAM)",
-                "image": "/profile.svg"
-            },
-            {
-                "name": "Ana Lilia Rivera Rivera",
-                "position": "Senadora de la República",
-                "company": " LXV Legislatura",
-                "image": "/profile.svg"
-            },
+            // {
+            //     "name": "Gustavo Medina",
+            //     "position": "Director",
+            //     "company": " Laboratorio de Instrumentación Espacial de la UNAM (LINX - UNAM)",
+            //     "image": "/profile.svg"
+            // },
+            // {
+            //     "name": "Ana Lilia Rivera Rivera",
+            //     "position": "Senadora de la República",
+            //     "company": " LXV Legislatura",
+            //     "image": "/profile.svg"
+            // },
             {
                 "name": "Benjamín Najar",
                 "position": "Presidente",
@@ -413,7 +413,7 @@ const statge_1_day_2=[
     {
         "title": "<strong class='text-white'><u>PANEL DOS : </u></strong><br />CAPACIDADES ACTUALES DE MEXICO APLICABLES AL SECTOR ESPACIAL",
         "title_en": "<strong class='text-white'><u>PANEL TWO : </u></strong><br />CURRENT CAPABILITIES OF MEXICO APPLICABLE TO THE SPACE SECTOR",
-        "description": "COMIDA libre (Oktoberfest, en Distrito León MX)",
+        "description": "Oktoberfest, en Distrito León MX",
         "description_en": "FREE LUNCH (Oktoberfest, in District León MX)",
         "time": "16:00 hrs",
         "duration": "60 mins",
@@ -432,7 +432,7 @@ const statge_1_day_2=[
             },
             {
                 "name": "Carlos Lozano",
-                "position": "",
+                "position": "Director de ventas",
                 "company": "Grupo Frisa",
                 "image": "/profile.svg"
             },        
