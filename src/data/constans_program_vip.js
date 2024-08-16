@@ -516,6 +516,7 @@ const stage_2_day_1=[
         "duration": "30 mins",
         "speakers": [
             {
+                "id": "13",
                 "name": "Francisco N. González",
                 "position": "Presidente Ejecutivo",
                 "company": " Industria Nacional de Autopartes (INA)",
@@ -531,10 +532,17 @@ const stage_2_day_1=[
         "duration": "30 mins",
         "speakers": [ 
             {
+                "id": "11",
                 "name": "Gustavo Jiménez",
                 "position": "Director Ejecutivo",
                 "company": "Grupo emobilitas",
-                "image": "/img/speakers/.webp"
+                "image": "/img/speakers/gustavo-jimenez.webp"
+            },
+            {
+                "name": "Leon Becker",
+                "position": "Asesor Técnico",
+                "company": "Cooperación Técnica Alemana (GIZ) en México",
+                "image": "/img/speakers/leonbecker.webp"
             },
         ]
     },
@@ -546,10 +554,16 @@ const stage_2_day_1=[
         "duration": "30 mins",
         "speakers": [
             {
+                "name": "Takaaki Kuga",
+                "position": "Vicepresidente",
+                "company": "Estrategia Empresarial, Toyota Motor de México, y  Presidente de la Cámara de Comercio de Japón en México",
+                "image": "/img/speakers/takaaki-kuga.webp"
+            },
+            {
                 "name": "Felipe Gallego",
                 "position": "COO Co-Funder",
                 "company": " Megaflux",
-                "image": "/profile.svg"
+                "image": "/img/speakers/felipe-gallego.webp"
             },
             {
                 "name": "Francisco Javier García Osorio",
@@ -598,7 +612,7 @@ const stage_2_day_2=[
     {
         "title": "COMIDA LIBRE",
         "title_en": "FREE LUNCH",
-        "description": "(Oktoberfest, en Distrito León MX)",
+        "description": "(Oktoberfest, en Distrsito León MX)",
         "description_en": "(Oktoberfest, in District León MX)",
         "time": "13:30 hrs",
         "duration": "30 mins",
