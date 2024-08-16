@@ -82,20 +82,37 @@ const { item, key } = Astro.props as Props
         <ul class='mt-2 ms-2 gap-2 grid grid-cols-2'>
           {item.speakers.map((speaker) => (
             <li class="mt-2 ">
-              <a
-              href={`/ponentes/${speaker.id}`}
-              class="flex flex-row items-center gap-2">
-                <img                 
-                  class='w-16 h-16 rounded-full object-cover'
-                  src={speaker.image}
-                  alt={speaker.name}
-                />
-               <div class="">
-                <p class="text-lg font-bold">{speaker.name}</p>
-                <p class="font-light"set:html={speaker.position}></p>
-                <p class="font-light">{speaker.company}</p>
-               </div>
-              </a>
+              {speaker?.id ? (
+                <a
+                href={`/ponentes/${speaker.id}`}
+                class="flex flex-row items-center gap-2">
+                  <img                 
+                    class='w-16 h-16 rounded-full object-cover'
+                    src={speaker.image}
+                    alt={speaker.name}
+                  />
+                  <div class="">
+                    <p class="text-lg font-bold">{speaker.name}</p>
+                    <p class="font-light"set:html={speaker.position}></p>
+                    <p class="font-light">{speaker.company}</p>
+                  </div>
+                </a>
+              ):
+              (
+                <div class="flex flex-row items-center gap-2">
+                  <img
+                    class='w-16 h-16 rounded-full object-cover'
+                    src={speaker.image}
+                    alt={speaker.name}
+                  />
+                  <div class="">
+                    <p class="text-lg font-bold">{speaker.name}</p>
+                    <p class="font-light"set:html={speaker.position}></p>
+                    <p class="font-light">{speaker.company}</p>
+                  </div>
+                </div>
+              )
+            }
             </li>
           ))}
         </ul>
