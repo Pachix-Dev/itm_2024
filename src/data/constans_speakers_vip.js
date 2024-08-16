@@ -81,6 +81,28 @@ const speakers_vip = [
         image: "/img/speakers/salomon_jara.webp",
     },
     {
+        id: "9",
+        name: "Raúl Fernández",
+        position: "Presidente de OAXACAAEROSPACE",
+        position_en: "President of OAXACAAEROSPACE",
+        company: "",
+        description: "Fundador de la empresa Operadora de líneas de transporte, calificada como una de las más eficientes al servicio de Pemex; y la empresa Traylfer, la primera empresa en fabricar carrocerías y remolques en Oaxaca. En 1980, desarrolló el vehículo Puma, un automóvil utilitario de 2 cilindros, cuatro años más tarde desarrolló y produjo el Auto-Flex, el primer autobus articulado en México, y por el cual fue reconocido por sus avances tecnológicos en Frankfurt y París. En 1994, desarrolló el Cine transformer, un tráiler expandible que se transformaba en una sala de cine para 91 personas, esto le valió una patente mundial. y recibió el premio TV Technologies Mario, otorgado a lo más destacado en tecnología en televisión y proyección. Además, desarrolló el Pegasus PE-210A, el primer avión mexicano bi-plaza con aplicaciones militares de observación, capacitación e intercepción, con tecnologías como un ala canard y hélice trasera enductada.",
+        description_en:"Founder of the company Operadora de líneas de transporte, qualified as one of the most efficient services to Pemex; and the company Traylfer, the first company to manufacture bodies and trailers in Oaxaca. In 1980, he developed the Puma vehicle, a 2-cylinder utility car, four years later he developed and produced the Auto-Flex, the first articulated bus in Mexico, and for which he was recognized for his technological advances in Frankfurt and Paris. In 1994, he developed the Cine transformer, an expandable trailer that transformed into a cinema for 91 people, this earned him a world patent. and received the TV Technologies Mario award, awarded to the most outstanding in television and projection technology. In addition, he developed the Pegasus PE-210A, the first Mexican two-seater aircraft with military applications for observation, training and interception, with technologies such as a canard wing and rear ducted propeller.",
+        image: "/img/speakers/raul_hernandez.webp",
+    },
+    {
+        id: "10",
+        name: "Eugenio Grandio",
+        position: "Presidente de EMA",
+        position_en: "President of EMA",
+        company: "EMA Electromovilidad Asociación",
+        email: "egrandio@emasociacion.org",
+        phone: "5534016164",
+        description: "Eugenio Grandio, presidente de la EMA, es un pionero de la movilidad eléctrica en México y experto en el tema. Hasta junio de 2024, fue responsable de desarrollo de mercado y relaciones gubernamentales para Tesla en México, siendo líder del proyecto para la localización y negociación de la planta planeada para instalarse en Santa Catarina, Nuevo León. También fungió como cabeza de ventas, expansión y desarrollo de infraestructura de carga de la marca en México.La trayectoria del presidente de la EMA evidencia su gran pasión automotriz e interés por la electrificación, de la mano con las nuevas tendencias de la industria desde que iniciaba desarrollándose en  Toyota, en donde era responsable de promover la cultura de mejora continua. Más tarde, en BMW Group México trabajó ocho años en áreas como ventas, operaciones y desarrollo de distribuidores para, finalmente, dirigir la estrategia de introducción de vehículos eléctricos de la marca BMWi en México y Latinoamérica. Hoy en día su talento y experiencia está enfocado en la misión de acelerar la transición a la movilidad eléctrica y promover el ecosistema que permitan la adopción de estas tecnologías en México.",
+        description_en:"Eugenio Grandio, president of EMA, is a pioneer of electric mobility in Mexico and an expert on the subject. Until June 2024, he was responsible for market development and government relations for Tesla in Mexico, leading the project for the localization and negotiation of the planned plant to be installed in Santa Catarina, Nuevo León. He also served as head of sales, expansion and charging infrastructure development for the brand in Mexico. The career of the president of EMA shows his great passion for the automotive industry and interest in electrification, hand in hand with the new trends in the industry since he began developing at Toyota, where he was responsible for promoting the culture of continuous improvement. Later, at BMW Group Mexico, he worked for eight years in areas such as sales, operations and dealer development to finally lead the strategy for introducing electric vehicles from the BMWi brand in Mexico and Latin America. Today his talent and experience are focused on the mission of accelerating the transition to electric mobility and promoting the ecosystem that allows the adoption of these technologies in Mexico.",
+        image: "/img/speakers/eugenio_grandio.webp",
+    },
+    {
         id: "15",
         name: "Rosaura Ruiz",
         position: "Proxima Secretaria de Ciencia, Humanidades",
@@ -109,17 +131,9 @@ const speakers_vip = [
         description: "Ingeniero Mecánico por la Universidad de las Américas de Puebla, cuenta con una Maestría en Dirección de Operaciones con especialización en Sistemas de Manufactura por parte de la Universidad de Nottingham, en Reino Unido; y con un Doctorado en Dirección de Organizaciones por la Universidad Popular Autónoma del Estado de Puebla. Cuenta con 20 años de experiencia profesional multicultural en la industria automotriz y aeroespacial. Desde el 2017 y hasta el 2020, se desempeñó como vicepresidente de Bombardier Aerospace México con operaciones en Querétaro, Chihuahua y Montreal. Fungió como presidente de la Federación Mexicana de la Industria Aeroespacial (FEMIA) y socio de AMBE Engineering.",
         description_en:"Mechanical Engineer by the Universidad de las Américas de Puebla, he has a Master's degree in Operations Management with a specialization in Manufacturing Systems from the University of Nottingham in the United Kingdom, and a PhD in Organizational Management from the Universidad Popular Autónoma del Estado de Puebla. He has 20 years of multicultural professional experience in the automotive and aerospace industries. From 2017 until 2020, he served as vice president of Bombardier Aerospace Mexico with operations in Querétaro, Chihuahua and Montreal. He served as president of the Mexican Federation of the Aerospace Industry (FEMIA) and partner of AMBE Engineering.",
         image: "/img/speakers/carlos_robles.webp",
-    }
-    // {
-    //     id: "",
-    //     name: "",
-    //     position: "",
-    //     position_en: "",
-    //     company: "",
-    //     description: "",
-    //     description_en:"",
-    //     image: "",
-    // }
+    },
+    
+    
 ]
 
 export { speakers_vip }

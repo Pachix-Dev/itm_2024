@@ -62,11 +62,11 @@ const stage_1_day_2: Program[] = [
         "duration": "45 mins",
         "speakers": [
             {
-                "id":"0",
+                "id":"2",
                 "name": "José Armas Ramírez",
                 "position": "Account Executive",
                 "company": "Extreme Networks",
-                "image": "/profile.svg"
+                "image": "/img/speakers/jose-armas.webp"
             }
         ]
     },
@@ -168,15 +168,16 @@ const stage_2_day_1: Program[] = [
         "duration": "45 mins",
         "speakers": [
             {
+                "id": "3",
                 "name": "Alejandro Preinfalk",
                 "position": "Director de Digital Industries",
                 "company": "CEO Siemens México, Centroamérica y el Caribe",
-                "image": "/profile.svg"
+                "image": "/img/speakers/alejandro_preinfalk.webp"
             }
         ]
     },
     {
-        "title": "Hacia una nueva era Industrial 4.0: Impulsando la sustentabilidad y  la Transición Justa ",
+        "title": "Hacia una nueva era Industrial 4.0: Impulsando la sustentabilidad y  la Transición Justa",
         "title_en": "Towards a new Industrial 4.0 era: Driving sustainability and Just Transition",
         "description": "Panel de alto nivel. En un mundo de Industria 4.0, redefinir objetivos más allá de la productividad es crucial. Este panel explorará cómo avanzar hacia una industria sustentable y centrada en el bienestar humano, en una Transición Justa. Se abordará la alineación con los ODS de la ONU, promoviendo una cultura organizacional ética e inclusiva. También se examina la colaboración empresa-gobierno para un futuro industrial equitativo y resiliente.",
         "description_en": "High-level panel. In a world of Industry 4.0, redefining goals beyond productivity is crucial. This panel will explore how to move towards a sustainable industry focused on human well-being, in a Just Transition. Alignment with the UN SDGs will be addressed, promoting an ethical and inclusive organizational culture. It also examines business-government collaboration for an equitable and resilient industrial future.",
@@ -216,10 +217,11 @@ const stage_2_day_1: Program[] = [
         "duration": "45 mins",
         "speakers": [
             {
+                "id": "4",
                 "name": "Akitake Kato",
                 "position": "Presidente de MISUMI México",
                 "company": "",
-                "image": "/profile.svg"
+                "image": "/img/speakers/kato.webp"
             }
         ]
     }
