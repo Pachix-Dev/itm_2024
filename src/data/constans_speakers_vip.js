@@ -148,6 +148,16 @@ const speakers_vip = [
         description_en:"She holds a degree, master's degree and doctorate in biology from the Faculty of Sciences of the National Autonomous University of Mexico (UNAM).She held the positions of Director and professor of the Faculty of Sciences, Secretary of Institutional Development, and General Director of Graduate Studies at UNAM. She is a member of the National System of Researchers and in 2008 she was appointed president of the Mexican Academy of Sciences, being the first woman to hold that position. From 2018 to 2023 she served as head of the Secretariat of Education, Science, Technology and Innovation of Mexico City. She has collaborated with international organizations such as the Organization of Ibero-American States where she has served as an expert advisor on education and science issues since 2009.",
         image: "/img/speakers/rosaura_ruiz.webp",
     },
+    {
+        id: "16",
+        name: "Johannes Dobinger",
+        position: "Representante",
+        position_en: "Representative",
+        company: "ONUDI para México y América Central",
+        description: "Johannes Dobinger, ingeniero civil, obtuvo su título de maestría en la Universidad de Economía de Viena y Administración de Empresas con especialización en economía del desarrollo y pequeñas y medianas empresas. Tiene experiencia como experto internacional en el campo del desarrollo industrial de la Organización de las Naciones Unidas para el Desarrollo Industrial (ONUDI). Se ha desempeñado como Secretario General de la Asociación de investigación y transferencia de tecnología industrial Cristian Doppler (CDG) en Austria. En años recientes se ha desempeñado como Representante de ONUDI para la Región Andina, con sede en Colombia, como Director de la División de Evaluación Independiente de ONUDI. Actualmente el Sr. Dobinger es el Representante de la Oficina Regional de ONUDI para México y Centroamérica.",
+        description_en:"Johannes Dobinger, a civil engineer, received his master's degree from the Vienna University of Economics and Business Administration with a specialization in development economics and small and medium-sized enterprises. He has experience as an international expert in the field of industrial development of the United Nations Industrial Development Organization (UNIDO). He has served as Secretary General of the Cristian Doppler Industrial Technology Transfer and Research Association (CDG) in Austria. In recent years he has served as UNIDO Representative for the Andean Region, based in Colombia, as Director of UNIDO's Independent Evaluation Division. Mr. Dobinger is currently the UNIDO Regional Office Representative for Mexico and Central America.",
+        image: "/img/speakers/johannes_dobinger.webp",
+    },
      {
         id: "22",
         name: "Omar Troncoso",

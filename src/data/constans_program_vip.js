@@ -327,9 +327,10 @@ const statge_1_day_2=[
                 "image": "/img/speakers/alessandro_modiano.webp"
             },
             {
+                "id": "16",
                 "name": "Johannes Dobinger",
                 "position": "Representante",
-                "company": " ONUDI para México y América Central",
+                "company": "ONUDI para México y América Central",
                 "image": "/img/speakers/johannes_dobinger.webp"
             },
             {
