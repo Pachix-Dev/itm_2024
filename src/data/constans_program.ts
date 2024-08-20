@@ -44,11 +44,32 @@ const stage_1_day_1: Program[] = [
         ]
     },
     {
-        "title": "SIEMENS",
-        "description": "",
+        "title": "Transformación digital sostenible en la industria automotriz",
+        "title_en": "Sustainable digital transformation in the automotive industry",
+        "description": "En esta sesión, exploraremos cómo la digitalización y el IoT están revolucionando la industria automotriz, impulsando la sostenibilidad y mejorando la eficiencia operativa. Roger Guerrero y Jair Mexía de Siemens México, compartirán sus experiencias y estrategias para implementar estas tecnologías avanzadas. Desde la gestión de la cadena de suministro hasta el mantenimiento predictivo, analizaremos cómo desde Siemens nos enfrentamos y adaptamos a los desafíos actuales y futuros para alcanzar nuestros objetivos globales de sostenibilidad y digitalización.",
+        "description_en": "In this session, we will explore how digitalization and IoT are revolutionizing the automotive industry, driving sustainability and improving operational efficiency. Roger Guerrero and Jair Mexía from Siemens Mexico will share their experiences and strategies for implementing these advanced technologies. From supply chain management to predictive maintenance, we will discuss how Siemens is addressing and adapting to current and future challenges to achieve our global sustainability and digitalization goals.",
         "time": "13:30 hrs",
         "duration": "45 mins",
-        "speakers": []
+        "speakers": [
+            {                               
+                "name": "Roger Guerrero",
+                "position": "Business Head para Factory Automation & Motion Control",
+                "company": "Siemens México, Centroamérica y el Caribe",
+                "image": "/profile.svg"
+            },
+            {
+                "name": "Jair Mexía",
+                "position": "Business Head para Electrical Products",
+                "company": "Siemens México, Centroamérica y el Caribe",
+                "image": "/profile.svg"
+            },
+            {
+                "name": "Valeria Rivera",
+                "position": "Directora de Comunicación y Desarrollo de Negocio",
+                "company": "Siemens México, Centroamérica y el Caribe",
+                "image": "/profile.svg"
+            }
+        ]
     }
 ]
 
@@ -229,12 +250,20 @@ const stage_2_day_1: Program[] = [
 
 const stage_2_day_2: Program[] = [
     {
-        "title": "SIEMENS",
-        "title_en": "SIEMENS",
+        "title": "Descarbonización y Electromovilidad: claves para las ciudades inteligentes",
+        "title_en": "Decarbonization and Electromobility: keys to smart cities",
         "description": "",
         "time": "12:00 hrs",
         "duration": "45 mins",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "5",
+                "name": "Marco Cosío",
+                "position": "Vicepresidente de Smart Infrastructure ",
+                "company": "Siemens México, Centroamérica y el Caribe",
+                "image": "/img/speakers/marco-cosio.webp"
+            }
+        ]
     },
     {
         "title": "Inauguración de la Cumbre de Desarrollo Industrial Sostenible",
@@ -275,22 +304,7 @@ const stage_2_day_2: Program[] = [
         "time": "16:00 hrs",
         "duration": "15 mins",
         "speakers": []
-    },
-    // {
-    //     "title": "Liderazgo femenino en la innovación Industrial",
-    //     "title_en": "Women's leadership in industrial innovation",
-    //     "description": "",
-    //     "time": "17:00 hrs",
-    //     "duration": "30 mins",
-    //     "speakers": [
-    //         {
-    //             "name": "Misumi",
-    //             "position": "",
-    //             "company": "",
-    //             "image": "/profile.svg"
-    //         }
-    //     ]
-    // },
+    },    
     {
         "title": "MUJERES QUE TRANSFORMAN: Marketing y Automatización",
         "title_en": "WOMEN WHO TRANSFORM: Marketing and Automation",

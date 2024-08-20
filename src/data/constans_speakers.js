@@ -48,6 +48,17 @@ const speakers = [
         description_en: "Akitake Kato, President of MISUMI Mexico, is an executive with a strong international background. He holds an MBA from Babson College and a MPA from Harvard University, specializing in international business and geopolitics respectively. As a former management consultant at McKinsey and with international business development experience at NEC and MISUMI, he has a proven track record of leadership in management, business development, sales and marketing. His ability to develop new markets and strategic approach strengthens MISUMI's position in the region.",
         image: "/img/speakers/kato.webp",
     },
+    {
+        id: "5",
+        name: "Marco Cosío",
+        position: "Vicepresidente de Smart Infrastructure",
+        company: "Siemens México, Centroamérica y el Caribe",
+        email: "Marco.cosio@siemens.com",
+        description: "Marco cuenta con una amplia trayectoria de más de 17 años en la industria eléctrica. Ha desempeñado diversos cargos directivos en Siemens como director de la unidad de negocio de mediano voltaje, así como CEO de Centro América de 2014 a 2019. Es Ingeniero Industrial, graduado en la Universidad las Américas Puebla. Actualmente es el Vicepresidente de Smart Infrastructure en Siemens México, Centroamérica y el Caribe cargo que asumió el 1 de marzo de 2019. ",
+        description_en: "Marco has an extensive career of more than 17 years in the electrical industry. He has held various management positions at Siemens as Director of the medium voltage business unit, as well as CEO of Central America from 2014 to 2019. He is an Industrial Engineer, graduated from the Universidad las Américas Puebla. He is currently the Vice President of Smart Infrastructure at Siemens Mexico, Central America and the Caribbean, a position he assumed on March 1st, 2019.",
+        image: "/img/speakers/marco-cosio.webp",
+    },
+    
 ]
 
 export { speakers }

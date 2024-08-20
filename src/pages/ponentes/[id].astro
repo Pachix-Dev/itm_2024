@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import i18next, { changeLanguage } from "i18next";
 import { speakers_vip } from "../../data/constans_speakers_vip.js";
 import Layout from "../../layouts/Layout.astro";
 
@@ -32,7 +32,13 @@ const speaker = speakers_vip.find((speaker) => speaker.id === id);
           >
             {speaker?.name}
           </h1>
-          <p class='text-lg text-justify mt-10'>{speaker?.description}</p>
+          <p class='text-lg text-justify mt-10'>
+            {
+              i18next.language === 'es'
+                ? speaker?.description
+                : speaker?.description_en
+            }
+          </p>
         </div>
       </div>
     </section>

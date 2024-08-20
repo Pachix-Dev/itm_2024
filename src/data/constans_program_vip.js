@@ -555,22 +555,24 @@ const stage_2_day_1=[
         "duration": "30 mins",
         "speakers": [
             {
+                "id": "12",
                 "name": "Takaaki Kuga",
                 "position": "Vicepresidente",
                 "company": "Estrategia Empresarial, Toyota Motor de México, y  Presidente de la Cámara de Comercio de Japón en México",
                 "image": "/img/speakers/takaaki-kuga.webp"
+            },            
+            {
+                "id": "18",
+                "name": "Israel Hurtado",
+                "position": "Presidente Ejecutivo",
+                "company": "Asociación Mexicana del Hidrógeno",
+                "image": "/img/speakers/israel-hurtado.webp"
             },
             {
                 "name": "Felipe Gallego",
                 "position": "COO Co-Funder",
                 "company": " Megaflux",
                 "image": "/img/speakers/felipe-gallego.webp"
-            },
-            {
-                "name": "Francisco Javier García Osorio",
-                "position": "Director de Gestión para la Eficiencia Energética",
-                "company": " Comisión Nacional para el Uso Eficiente de la Energía (CONUEE)",
-                "image": "/profile.svg"
             }
         ]
     },
@@ -627,10 +629,11 @@ const stage_2_day_2=[
         "duration": "30 mins",
         "speakers": [
             {
-                "name": "Armando Cortés",
-                "position": "Director General",
-                "company": " INA",
-                "image": "/profile.svg"
+                "id": "17",
+                "name": "Miguel Primo Armendariz",
+                "position": "Mexico Country Director",
+                "company": " International Youth Foundation",
+                "image": "/img/speakers/miguel-primoArmendariz.webp"
             }
         ]
     }
