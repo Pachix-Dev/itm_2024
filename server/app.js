@@ -61,7 +61,7 @@ app.post('/create-order', (req, res) => {
                         'currency_code': 'MXN',
                         'value': body.total                        
                     },                                             
-                    'description': 'Venta de Programa VIP ITM 2024 online',
+                    'description': 'PROGRAMA DE CONFERENCIAS CCE - CONCAMIN - ITM - AMOF 2024',
                 }]
             };
             const data = JSON.stringify(order_data_json)
