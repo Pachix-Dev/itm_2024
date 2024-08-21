@@ -116,11 +116,42 @@ const stage_1_day_2: Program[] = [
         ]
     },
     {
-        "title": "SIEMENS",
-        "description": "",
+        "title": "Innovación sostenible en la industria de alimentos y bebidas",
+        "title_en": "Sustainable innovation in the food and beverage industry",
+        "description": "Esta ponencia te sumergirá en el mundo de la sustentabilidad, el mantenimiento predictivo y las tecnologías y soluciones que ofrece Siemens para hacer más sostenibles los procesos productivos en la industria de alimentos y bebidas. Desde el suministro en la cadena de producción hasta la transportación de los insumos, Siemens acompaña a las industrias en cada proceso para hacer más eficientes sus recursos y gocen de los beneficios para maximizar la disponibilidad y la eficiencia en las operaciones industriales. Proporcionaremos una visión integral de las estrategias, herramientas y mejores prácticas para implementar exitosamente nuestras soluciones sustentables en las organizaciones, logrando una mayor productividad y un menor impacto de los tiempos de inactividad no planificados.",
+        "description_en": "This presentation will immerse you in the world of sustainability, predictive maintenance, and the technologies and solutions that Siemens offers to make production processes in the food and beverage industry more sustainable. From supply in the production chain to the transportation of inputs, Siemens accompanies industries in every process to make their resources more efficient and enjoy the benefits to maximize availability and efficiency in industrial operations. We will provide a comprehensive view of the strategies, tools, and best practices to successfully implement our sustainable solutions in organizations, achieving greater productivity and less impact from unplanned downtime.",
         "time": "13:15 hrs",
         "duration": "45 mins",
-        "speakers": []
+        "speakers": [
+            {
+                "id":"6",
+                "name": "Rodrigo Zavala",
+                "position": "Business Head de Process Automation",
+                "company": "Siemens México, Centroamérica y el Caribe",
+                "image": "/img/speakers/rodrigo-zavala.webp"
+            },
+            {
+                "id":"7",
+                "name": "Gonzalo Matteoda",
+                "position": "Business Head de Customer Services",
+                "company": "Siemens México, Centroamérica y el Caribe",
+                "image": "/img/speakers/gonzalo-matteoda.webp"
+            },
+            {
+                "id":"8",
+                "name": "Horacio Ramos",
+                "position": "Business Head de Electromovilidad",
+                "company": "Siemens México, Centroamérica y el Caribe",
+                "image": "/img/speakers/horacio.webp"
+            },
+            {
+                "id":"9",
+                "name": "Valeria Rivera",
+                "position": "Directora de Comunicación y Desarrollo de Negocio",
+                "company": "Siemens México, Centroamérica y el Caribe",
+                "image": "/img/speakers/valeriarivera.webp"
+            }
+        ]
     },
     {
         "title": "La transformación del diecasting by Mitsubishi",
@@ -148,11 +179,28 @@ const stage_1_day_3: Program[] = [
         ]
     },
     {
-        "title": "SIEMENS",
-        "description": "",
+        "title": "La descarbonización a partir del big data",
+        "title_en": "Decarbonization through big data",
+        "description": "La descarbonización en el sector industrial es crucial para reducir las emisiones de gases de efecto invernadero (GEI) y mitigar el cambio climático. El Big Data y su análisis avanzado juega un papel esencial en este proceso al proporcionar herramientas avanzadas a las empresas para identificar patrones y áreas de mejora en sus procesos, optimizando el uso de recursos y reduciendo las emisiones de gases de efecto invernadero. En esta plática compartiremos cómo a través del portafolio de tecnologías y soluciones Siemens, podemos ayudar a las industrias a reducir su huella de carbono y generar eficiencias a partir del análisis de datos.",
+        "description_en": "Decarbonization in the industrial sector is crucial to reduce greenhouse gas emissions (GHG) and mitigate climate change. Big Data and its advanced analysis play an essential role in this process by providing advanced tools to companies to identify patterns and areas for improvement in their processes, optimizing resource use and reducing greenhouse gas emissions. In this talk we will share how through the Siemens portfolio of technologies and solutions, we can help industries reduce their carbon footprint and generate efficiencies through data analysis.",
         "time": "11:45 hrs",
         "duration": "45 mins",
-        "speakers": []
+        "speakers": [
+            {
+                "id":"10",
+                "name": "Gerardo Pérez",
+                "position": "Head of Digital Enterprise",
+                "company": "Siemens",
+                "image": "/img/speakers/gerardo-perez.webp"
+            },
+            {
+                "id":"11",
+                "name": "Horacio Cerón",
+                "position": "Portfolio Sales Manager of Electrical Products",
+                "company": "Siemens",
+                "image": "/img/speakers/horacio-ceron.webp"
+            }
+        ]
     },
     {
         "title": "Tu tiempo, nuestra prioridad",
@@ -185,6 +233,7 @@ const stage_2_day_1: Program[] = [
         "title": "Metaverso Industrial: Revolucionando la Manufactura del Futuro",
         "title_en": "Metaverso Industrial: Revolucionando la Manufactura del Futuro",
         "description": "El Metaverso Industrial no se trata de crear mundos de fantasía virtuales (o universos paralelos) con poca o ninguna relevancia en el mundo físico. Más bien, se trata de conectar el mundo real con el mundo digital para resolver problemas del mundo real. Se trata de impacto en el mundo real, de mejorar la manera en que hacemos las cosas, de proporcionar beneficios tangibles para los consumidores, las empresas y la sociedad. El Metaverso Industrial está muy vivo. A través de nuestra tecnología Siemens atiende a decenas de miles de clientes industriales en todo el mundo, y podemos confirmar que las compañías están adoptando el metaverso industrial para transformar tecnológicamente sus industrias en los próximos años.",
+        "description_en": "The Industrial Metaverse is not about creating virtual fantasy worlds (or parallel universes) with little or no relevance to the physical world. Rather, it is about connecting the real world with the digital world to solve real-world problems. It is about impact in the real world, improving the way we do things, providing tangible benefits for consumers, businesses, and society. The Industrial Metaverse is very much alive. Through our technology Siemens serves tens of thousands of industrial customers worldwide, and we can confirm that companies are adopting the industrial metaverse to technologically transform their industries in the coming years.",
         "time": "12:30 hrs",
         "duration": "45 mins",
         "speakers": [
@@ -200,8 +249,8 @@ const stage_2_day_1: Program[] = [
     {
         "title": "Hacia una nueva era Industrial 4.0: Impulsando la sustentabilidad y  la Transición Justa",
         "title_en": "Towards a new Industrial 4.0 era: Driving sustainability and Just Transition",
-        "description": "Panel de alto nivel. En un mundo de Industria 4.0, redefinir objetivos más allá de la productividad es crucial. Este panel explorará cómo avanzar hacia una industria sustentable y centrada en el bienestar humano, en una Transición Justa. Se abordará la alineación con los ODS de la ONU, promoviendo una cultura organizacional ética e inclusiva. También se examina la colaboración empresa-gobierno para un futuro industrial equitativo y resiliente.",
-        "description_en": "High-level panel. In a world of Industry 4.0, redefining goals beyond productivity is crucial. This panel will explore how to move towards a sustainable industry focused on human well-being, in a Just Transition. Alignment with the UN SDGs will be addressed, promoting an ethical and inclusive organizational culture. It also examines business-government collaboration for an equitable and resilient industrial future.",
+        "description": "En un mundo donde la Industria 4.0 está transformando rápidamente los paradigmas industriales, surge la necesidad de redefinir nuestros objetivos más allá de la productividad. En este panel de discusión, exploraremos cómo podemos impulsar a la industria hacia una nueva era, priorizando la sustentabilidad ambiental y el bienestar humano, en el marco de una Transición Justa. Discutiremos estrategias prácticas para alinear los objetivos empresariales con los Objetivos de Desarrollo Sostenible (ODS) de las Naciones Unidas, así como la importancia de fomentar una cultura organizacional centrada en la ética, la inclusión y el cuidado de las personas, garantizando simultáneamente una Transición Justa para los trabajadores y las comunidades impactadas por los cambios industriales. Además, examinaremos el papel crucial de la colaboración entre empresas y gobiernos para construir un futuro industrial más equitativo, resiliente y orientado hacia el bien común.",
+        "description_en": "In a world where Industry 4.0 is rapidly transforming industrial paradigms, there is a need to redefine our goals beyond productivity. In this panel discussion, we will explore how we can drive industry towards a new era, prioritizing environmental sustainability and human well-being, within the framework of a Just Transition. We will discuss practical strategies to align business objectives with the United Nations Sustainable Development Goals (SDGs), as well as the importance of fostering an organizational culture centered on ethics, inclusion, and care for people, while simultaneously ensuring a Just Transition for workers and communities impacted by industrial changes. In addition, we will examine the crucial role of collaboration between companies and governments to build a more equitable, resilient, and common good-oriented industrial future.",
         "time": "13:15 hrs",
         "duration": "60 mins",
         "speakers": [
@@ -210,12 +259,33 @@ const stage_2_day_1: Program[] = [
                 "position": "Directora residente de la Cooperación Técnica Alemana (GIZ) en México",
                 "company": "",
                 "image": "/profile.svg"
+            },
+            {
+                "id": "12",
+                "name": "Johannes Dobinger",
+                "position": "Representante",
+                "company": "ONUDI para México y América Central",
+                "image": "/img/speakers/johannes_dobinger.webp"
+            },
+            {
+                
+                "name": "Claudia Esteves Cano",
+                "position": "Directora General",
+                "company": "Asociación Mexicana de Parques Industriales Privados (AMPIP)",
+                "image": "/profile.svg"
+            },
+            {
+                
+                "name": "Liliana Campos",
+                "position": "",
+                "company": "GIZ México",
+                "image": "/profile.svg"
             }
         ]
     },
     {
-        "title": "Mitsubishi",
-        "title_en": "Mitsubishi",
+        "title": "Japón como generador de inversiones",
+        "title_en": "Japan as an investment generator",
         "description": "",
         "time": "16:00 hrs",
         "duration": "45 mins",
@@ -372,8 +442,8 @@ const stage_2_day_3: Program[] = [
         ]
     },
     {
-        "title": "Mitsubishi",
-        "title_en": "Mitsubishi",
+        "title": "Automation for anything",
+        "title_en": "Automation for anything",
         "description": "",
         "time": "12:00 hrs",
         "duration": "45 mins",
