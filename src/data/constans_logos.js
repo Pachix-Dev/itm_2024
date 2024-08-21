@@ -83,8 +83,10 @@ const exhibitors_1 = [
     { src: '/exhibitors/shw.webp', alt: 'shw', width: 200 },
     { src: '/exhibitors/flexus.webp', alt: 'flexus', width: 200 },
     { src: '/exhibitors/mui-intasco.webp', alt: 'mui-intasco', width: 200 },
+    { src: '/exhibitors/muirtapes.webp', alt: 'muirtapes', width: 200 },
     { src: '/exhibitors/robotape-f.webp', alt: 'robotape-f', width: 200 },
     { src: '/exhibitors/ethosonsite.webp', alt: 'ethosonsite', width: 200 },
+    { src: '/exhibitors/ethosautomation.webp', alt: 'ethosautomation', width: 200 },
     { src: '/exhibitors/modula.webp', alt: 'modula', width: 200 },
   ]
 
