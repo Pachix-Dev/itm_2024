@@ -89,6 +89,7 @@ const exhibitors_1 = [
     { src: '/exhibitors/ethosautomation.webp', alt: 'ethosautomation', width: 200 },
     { src: '/exhibitors/modula.webp', alt: 'modula', width: 200 },
     { src: '/exhibitors/sapal.webp', alt: 'sapal', width: 200 },
+    { src: '/exhibitors/tbsek.webp', alt: 'tbsek', width: 200 },
   ]
 
 const alliesStrategic = [
