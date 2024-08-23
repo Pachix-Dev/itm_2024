@@ -508,7 +508,8 @@
         "day_3": "viernes",
         "stages": "Escenarios",        
         "about": "Acerca de",
-        "speech": "Ponencia"
+        "speech": "Ponencia",
+        "changes": "programa sujeto a cambios sin previo aviso"
     },
     "footer": {
         "dateFooter": "9 al 11 de octubre de 2024",
