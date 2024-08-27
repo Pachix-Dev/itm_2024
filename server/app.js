@@ -333,8 +333,16 @@ app.post('/free-register-amof', async (req, res) => {
 app.post('/create-order-oktoberfest', async (req, res) => {
     const { body } = req;
     let total = 0;
-    const get_products = await RegisterModel.get_products();    
 
+    const check_availability = await RegisterModel.check_sales_limit(body.hour);
+    if(!check_availability.status){
+        return res.status(500).send({
+            status: false,
+            message: 'Lo sentimos, el dia y horario seleccionado ya no esta disponible, por favor selecciona otro...'
+        });
+    }
+
+    const get_products = await RegisterModel.get_products();    
     if(get_products.status){
         const products = get_products.result;
 

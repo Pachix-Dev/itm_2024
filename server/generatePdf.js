@@ -137,7 +137,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
     
     doc.moveDown(5)
         .font("Helvetica-Bold")        
-        .text("SI DESEAS FACTURA FAVOR DE ENVIAR CORREO A cxc@igeco.mx@igeco.mx", 50)
+        .text("SI DESEAS FACTURA FAVOR DE ENVIAR CORREO A emmanuel.heredia@igeco.mx", 50)
         .font("Helvetica")
         .text("FAVOR DE ADJUNTAR LOS SIGUIENTES DOCUMENTOS:")
         .text("- CONSTANCIA SITUACIÓN FISCAL", 55)
@@ -1016,7 +1016,7 @@ async function generatePDFInvoiceOktoberfest(paypal_id_transaction, body) {
         .text("* Es indispensable llevar este comprobante de pago que viene adjunto en el correo impreso o en formato digital para canjear tu comida.")
         .text("* No se aceptan cambios ni devoluciones.")
         .text("* Recuerda que deberás presentar una identificación oficial.")
-        .text("* Si deseas factura envie un correo a cxc@igeco.mx")
+        .text("* Si deseas factura envie un correo a emmanuel.heredia@igeco.mx")
         .text("* FAVOR DE ADJUNTAR LOS SIGUIENTES DOCUMENTOS:")
         .text("- CONSTANCIA SITUACIÓN FISCAL", 55)
         .text("- FOTO DEL RECIBO DE COMPRA", 55)

@@ -418,4 +418,33 @@ export class RegisterModel {
       }
   }
 
+  // check sales limit no more than 30 by schedule
+  static async check_sales_limit (hour) {
+    const connection = await mysql.createConnection(config)
+    try {      
+      const [result] = await connection.query(
+        'SELECT * FROM oktoberfest_orders WHERE hour = ?',
+        [hour]
+      )
+      if (result.length >= 30) {
+        return {
+          status: false,
+          message: 'Lo sentimos, ya no hay lugares disponibles para esta hora.',
+        }
+      }
+      return {
+        status: true,
+        message: 'Lugares disponibles.',
+      }
+    }catch (error) {
+      console.log(error)
+      return {
+        status: false,        
+      }   
+    }
+     finally {
+      await connection.end() // Close the connection
+    }
+  }
+
 }
