@@ -69,7 +69,10 @@ const email_template_oktoberfest = async ({ name, hour, email, phone, items }) =
               </li> 
               <li>
                 Fecha máxima de facturación 25 de octubre de 2024
-              </li>                                       
+              </li>
+              <li>
+                Propina NO incluida
+              </li>                                         
             </ul>                                                          
           </td>      
         </tr>               

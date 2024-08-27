@@ -425,7 +425,7 @@ export class RegisterModel {
       const [result] = await connection.query(
         'SELECT * FROM oktoberfest_orders WHERE hour = ?',
         [hour]
-      )
+      )      
       if (result.length >= 30) {
         return {
           status: false,

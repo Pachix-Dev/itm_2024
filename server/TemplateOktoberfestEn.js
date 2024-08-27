@@ -76,7 +76,10 @@ const email_template_oktoberfest_en = async ({ name, hour, email, phone, items }
               </li>
               <li>
                 Maximum billing date October 25, 2024
-              </li>                
+              </li>  
+              <li>
+                Tipping NOT included
+              </li>              
             </ul>                                                          
           </td>      
         </tr>               

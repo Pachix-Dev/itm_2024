@@ -334,7 +334,7 @@ app.post('/create-order-oktoberfest', async (req, res) => {
     const { body } = req;
     let total = 0;
 
-    const check_availability = await RegisterModel.check_sales_limit(body.hour);
+    const check_availability = await RegisterModel.check_sales_limit(body.hour);    
     if(!check_availability.status){
         return res.status(500).send({
             status: false,

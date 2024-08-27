@@ -93,10 +93,18 @@ export function CheckoutForm({ currentLanguage, translate }) {
       },
       body: JSON.stringify({
         items,
+        hour,
         total: total.toFixed(2),
       }),
     })
     const order = await response.json()
+    if (!order?.status) {
+      setMessage(order.message)
+      setTimeout(() => {
+        setMessage('')
+      }, 5000)
+      return
+    }
     return order.id
   }
 
@@ -514,6 +522,7 @@ export function CheckoutForm({ currentLanguage, translate }) {
                 ></p>
               </div>
               <p className='mt-2'>* {translate.disclamer_5}</p>
+              <p className='mt-2'>* {translate.disclamer_6}</p>
               <button
                 type='submit'
                 className='mt-10 w-full inline-block rounded-lg bg-black hover:bg-slate-700 px-5 py-3 text-2xl font-bold text-white'

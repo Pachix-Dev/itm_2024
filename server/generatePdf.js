@@ -1022,7 +1022,8 @@ async function generatePDFInvoiceOktoberfest(paypal_id_transaction, body) {
         .text("- FOTO DEL RECIBO DE COMPRA", 55)
         .text("- INDICAR EL MÉTODO DE PAGO (TARJETA DE CREDITO O DEBITO)", 55)
         .text("- USO DE CFDI", 55)
-        .text("* FECHA MÁXIMA DE FACTURACIÓN 25 DE OCTUBRE DE 2024")	
+        .text("* FECHA MÁXIMA DE FACTURACIÓN 25 DE OCTUBRE DE 2024")
+        .text("* Propina NO incluida")	
 
     
     doc.restore();       
