@@ -90,7 +90,7 @@ const exhibitors_1 = [
     { src: '/exhibitors/modula.webp', alt: 'modula', width: 200 },
     { src: '/exhibitors/sapal.webp', alt: 'sapal', width: 200 },
     { src: '/exhibitors/tbsek_1.webp', alt: 'tbsek_1', width: 200 },
-    { src: '/exhibitors/ientc.webp', alt: 'ientc', width: 200 },
+    
   ]
 
 const alliesStrategic = [
