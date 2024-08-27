@@ -271,70 +271,76 @@ const media_1 = [
     }
 ]
 const media_2 = [
-{
-    src: '/vanguardia.webp',
+  {
+      src: '/vanguardia.webp',
+      width: 200,
+      height: 133,
+      alt: 'vanguardia ',
+      link: 'https://www.vanguardia-industrial.net/',
+  },
+  {
+      src: '/energiahoy.webp',
+      width: 200,    
+      alt: 'Energia hoy ',
+      link: 'https://energiahoy.com/',
+  },
+  {
+      src: '/directorioauto.webp',
+      width: 200,
+      height: 133,
+      alt: 'Directorio automotriz ',
+      link: 'https://www.directorioautomotriz.com.mx/',
+  },
+  {
+      src: '/cuatrocero.webp',
+      width: 200,
+      height: 125,
+      alt: 'cuatro cero',
+      link: 'https://cuatro-cero.mx/',
+  },
+  {
+      src: '/revistaconsultoria.webp',
+      width: 200,
+      height: 133,
+      alt: 'revista consultora ',
+      link: 'https://revistaconsultoria.com.mx/',
+  },
+  {
+      src: '/partner12.webp',
+      width: 200,
+      alt: 'cosmos online ',
+      link: 'https://www.cosmos.com.mx/',
+  },
+  {
+      src: '/heraldoHorizontal.webp',
+      width: 200,
+      alt: 'Heraldo Mexico',
+      link: 'https://heraldodemexico.com.mx/',
+  },
+  {
+      src: '/manufacturalatam.webp',
+      width: 300,
+      alt: 'Manufactura LATAM',
+      link: 'https://www.manufactura-latam.com/es',
+  },
+  {
+      src: '/metalmecanica.webp',
+      width: 250,
+      alt: 'Metalmecánica',
+      link: 'https://www.metalmecanica.com/es',
+  },
+  {
+      src: '/Milenio.webp',
+      width: 200,
+      alt: 'Grupo Milenio',
+      link: 'https://www.milenio.com/',
+  },
+  {
+    src: '/mexitown.webp',
     width: 200,
-    height: 133,
-    alt: 'vanguardia ',
-    link: 'https://www.vanguardia-industrial.net/',
-},
-{
-    src: '/energiahoy.webp',
-    width: 200,    
-    alt: 'Energia hoy ',
-    link: 'https://energiahoy.com/',
-},
-{
-    src: '/directorioauto.webp',
-    width: 200,
-    height: 133,
-    alt: 'Directorio automotriz ',
-    link: 'https://www.directorioautomotriz.com.mx/',
-},
-{
-    src: '/cuatrocero.webp',
-    width: 200,
-    height: 125,
-    alt: 'cuatro cero',
-    link: 'https://cuatro-cero.mx/',
-},
-{
-    src: '/revistaconsultoria.webp',
-    width: 200,
-    height: 133,
-    alt: 'revista consultora ',
-    link: 'https://revistaconsultoria.com.mx/',
-},
-{
-    src: '/partner12.webp',
-    width: 200,
-    alt: 'cosmos online ',
-    link: 'https://www.cosmos.com.mx/',
-},
-{
-    src: '/heraldoHorizontal.webp',
-    width: 200,
-    alt: 'Heraldo Mexico',
-    link: 'https://heraldodemexico.com.mx/',
-},
-{
-    src: '/manufacturalatam.webp',
-    width: 300,
-    alt: 'Manufactura LATAM',
-    link: 'https://www.manufactura-latam.com/es',
-},
-{
-    src: '/metalmecanica.webp',
-    width: 250,
-    alt: 'Metalmecánica',
-    link: 'https://www.metalmecanica.com/es',
-},
-{
-    src: '/Milenio.webp',
-    width: 200,
-    alt: 'Grupo Milenio',
-    link: 'https://www.milenio.com/',
-}
+    alt: 'Mexi Town',
+    link: 'https://es.mexi-town.com/',
+  }
 ] 
 
 const sponsors = [
