@@ -447,4 +447,33 @@ export class RegisterModel {
     }
   }
 
+
+  // endpoints for scanner
+  static async get_info_user (uuid) {
+    const connection = await mysql.createConnection(config)
+    try {      
+      const [result] = await connection.query(
+        'SELECT name, paternSurname, maternSurname, company, position,  phone, email FROM users WHERE uuid = ?',
+        [uuid]
+      )
+      if (result.length === 0) {
+        return {
+          status: false,
+          message: 'No se encontró el usuario',
+        }
+      }
+      return {
+        status: true,
+        result
+      }
+    }catch (error) {
+      console.log(error)
+      return {
+        status: false,        
+      }   
+    }
+     finally {
+      await connection.end() // Close the connection
+    }
+  }
 }

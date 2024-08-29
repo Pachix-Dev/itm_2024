@@ -661,6 +661,24 @@ app.get('/template-email', async (req, res) => {
     res.send(emailContent);
 });
 
+app.get('/get-info-user/:uuid', async (req, res) => {
+    const { uuid } = req.params;
+    const response = await RegisterModel.get_info_user(uuid);
+    if(response.status){
+        return res.send({
+            status: true,
+            records: response.result
+        })
+    }else{
+        return res.status(500).send({
+            status: false,
+            message: 'No se encontraron resultados...'
+        });
+    }    
+});
+
+
+
 /* EMAIL AMOF */
 async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
