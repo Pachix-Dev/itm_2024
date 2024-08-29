@@ -4,6 +4,7 @@ interface Speaker {
     position: string;
     company: string;
     image?: string;
+    moderador?: boolean;
 }
 
 interface Program {

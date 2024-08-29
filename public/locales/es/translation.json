@@ -511,7 +511,8 @@
         "stages": "Escenarios",        
         "about": "Acerca de",
         "speech": "Ponencia",
-        "changes": "programa sujeto a cambios sin previo aviso"
+        "changes": "Programa sujeto a cambios sin previo aviso",
+        "invitation": "* Invitados por confirmar"
     },
     "footer": {
         "dateFooter": "9 al 11 de octubre de 2024",
