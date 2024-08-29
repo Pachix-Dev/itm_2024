@@ -20,7 +20,7 @@ const stage_1_day_1=[
             {
                 
                 "name": "Gobernadores",
-                "position": "Sonora, Chihuahua, Coahuila, Aguascalientes, Querétaro y Oaxaca",
+                "position": "Sonora, Chihuahua, Coahuila, Querétaro y Oaxaca",
                 "company": "",
                 "image": "/profile.svg"
             },
@@ -92,7 +92,7 @@ const stage_1_day_1=[
             {
                 "name": "Embajada de la República Federal de Alemania en México",
                 "position": "",
-                "company": "CAINTRA",
+                "company": "",
                 "image": "/profile.svg"
             },
             {
@@ -397,7 +397,7 @@ const statge_1_day_2=[
     {
         "title": "<strong class='text-white'><u>PANEL DOS : </u></strong><br />CAPACIDADES ACTUALES DE MEXICO APLICABLES AL SECTOR ESPACIAL",
         "title_en": "<strong class='text-white'><u>PANEL TWO : </u></strong><br />CURRENT CAPABILITIES OF MEXICO APPLICABLE TO THE SPACE SECTOR",
-        "description": "Oktoberfest, en Distrito León MX",
+        "description": "Distrito León MX",
         "description_en": "FREE LUNCH (Oktoberfest, in District León MX)",
         "time": "16:00 hrs",
         "duration": "60 mins",
