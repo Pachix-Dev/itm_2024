@@ -90,7 +90,9 @@ const exhibitors_1 = [
     { src: '/exhibitors/modula.webp', alt: 'modula', width: 200 },
     { src: '/exhibitors/sapal.webp', alt: 'sapal', width: 200 },
     { src: '/exhibitors/tbsek_1.webp', alt: 'tbsek_1', width: 200 },
-    
+    { src: '/exhibitors/temisa.webp', alt: 'TEMISA', width: 200 },
+    { src: '/exhibitors/tierratech.webp', alt: 'Tierra Tech', width: 200 },
+    { src: '/exhibitors/eastmont.webp', alt: 'East Montgomery', width: 10 },
   ]
 
 const alliesStrategic = [
