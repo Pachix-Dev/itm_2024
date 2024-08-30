@@ -158,7 +158,7 @@ const stage_1_day_1=[
         ]
     },
     {
-        "title": "MESA 3: <br /> CONSTRUYENDO EL PAIS DESDE SUS REGIONES.<br /> <span class='font-normal text-white'>¿Cómo lograrlo en alianza con el sector privado?</span>",
+        "title": "MESA 3: <br /> CONSTRUYENDO EL PAÍS DESDE SUS REGIONES.<br /> <span class='font-normal text-white'>¿Cómo lograrlo en alianza con el sector privado?</span>",
         "title_en": "TABLE 3: BUILDING THE COUNTRY FROM ITS REGIONS. How to achieve it in partnership with the private sector?",
         "description": "Introducción, por Eduardo Sojo, Presidente Fundación Novagob México",
         "description_en": "Introduction, by Eduardo Sojo, Academic Coordinator of the Oaxaca Pact  (2019-2020)",
@@ -336,8 +336,8 @@ const statge_1_day_2=[
             },
             {
                 "name": "Pietro Paolo Cornero",
-                "position": "Presidente",
-                "company": "Director General de Ferrero México y Centroamérica",
+                "position": "Presidente y Director General ",
+                "company": "Ferrero México y Centroamérica",
                 "image": "/img/speakers/pietro_paolo.webp"
             },
             {
@@ -361,7 +361,7 @@ const statge_1_day_2=[
     {
         "title": "EL NUEVO ESPACIO, LUGAR DE ENORME OPORTUNIDAD PARA LA INTEGRACIÓN DE CADENAS PRODUCTIVAS DE MÉXICO Y ESTADOS UNIDOS.<br /> <span class='font-normal text-white'> Una visión de los actores</span>",
         "title_en": "THE NEW SPACE, A PLACE OF ENORMOUS OPPORTUNITY FOR THE INTEGRATION OF PRODUCTIVE CHAINS OF MEXICO AND THE UNITED STATES.<br /> <span class='font-normal text-white'> A vision of the actors</span>",
-        "description": "Introducción: Francisco Cervantes, Presidente del CCE (Tendencias globales, los sectores industriales del Nuevo Espacio y la acción de los estados nacionales para promover la integración industrial transfronteriza en el ámbito espacial).<br /><br /> <strong>MARCO LEGAL ESPACIAL EN MÉXICO:</strong> Reforma constitucional en materia espacial en consideración en el Senado Mexicano.<br /><br /> Ana Lilia Rivera, Senadora de la República, LXV Legislatura y Presidenta de la Comisión de Ciencia y Tecnología del Senado de la República en la LXIV Legislatura <br /><br /><strong><u>PANEL UNO : </u><br />NUEVO ESPACIO:</strong> PUNTO DE ENCUENTRO DE LA CIENCIA, LA TECNOLOGIA, LA INDUSTRIA Y LA DEFENSA ¿Qué es el Nuevo Espacio y hacia dónde va tanto en el sector privado como en el público y de investigación de desarrollo?",
+        "description": "Introducción: Francisco Cervantes, Presidente del CCE (Tendencias globales, los sectores industriales del Nuevo Espacio y la acción de los estados nacionales para promover la integración industrial transfronteriza en el ámbito espacial).<br /><br /> <strong>MARCO LEGAL ESPACIAL EN MÉXICO:</strong> Reforma constitucional en materia espacial en consideración en el Senado Mexicano.<br /><br /> Ana Lilia Rivera, Senadora de la República, LXV Legislatura y Presidenta de la Comisión de Ciencia y Tecnología del Senado de la República en la LXIV Legislatura <br /><br /><strong><u>PANEL UNO : </u><br />NUEVO ESPACIO:</strong> PUNTO DE ENCUENTRO DE LA CIENCIA, LA TECNOLOGÍA, LA INDUSTRIA Y LA DEFENSA ¿Qué es el Nuevo Espacio y hacia dónde va tanto en el sector privado como en el público y de investigación de desarrollo?",
         "description_en": "Introduction: Francisco Cervantes, President of the CCE (Global trends, the industrial sectors of the New Space and the action of national states to promote cross-border industrial integration in the space field).<br /><br /> SPACE LEGAL FRAMEWORK IN MEXICO: Constitutional reform in space matters under consideration in the Mexican Senate.<br /><br /> Ana Lilia Rivera, Senator of the Republic of Mexico, LXV Legislature and Chairwoman of the Science and Technology Commission of the Senate of the of the Republic in the LXIV Legislature.<br /><br /><strong><u>PANEL ONE : </u><br /> NEW SPACE: </strong>MEETING POINT OF SCIENCE, TECHNOLOGY, INDUSTRY AND DEFENSE What is the New Space and where is it going in both the private and public sectors and in the R&D sector?",
         "time": "14:30 hrs",
         "duration": "90 mins",
@@ -431,6 +431,13 @@ const statge_1_day_2=[
                 "position": "Presidente",
                 "company": "Feria Aeroespacial Mexicana (FAMEX)",
                 "image": "/img/speakers/general_disraeli_gomez.webp"
+            },
+            {
+                "name": "Gustavo Medina",
+                "position": "Creador y Jefe",
+                "company": " Laboratorio de Instrumentación Espacial (LINX - UNAM) ",
+                "image": "/profile.svg",
+                "moderador": true
             }
         ]
     },
@@ -464,6 +471,13 @@ const statge_1_day_2=[
                 "position": "",
                 "company": "",
                 "image": "/profile.svg"
+            },
+            {
+                "name": "Gustavo Medina",
+                "position": "Creador y Jefe",
+                "company": " Laboratorio de Instrumentación Espacial (LINX - UNAM) ",
+                "image": "/profile.svg",
+                "moderador": true
             }
         ]
     },    
