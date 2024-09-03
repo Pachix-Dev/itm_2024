@@ -52,6 +52,15 @@ const base = i18next.language === "es" ? "" : `/${i18next.language}`;
       </a>
       <p class='italic my-5 text-center text-2xl'>{t('program.changes')}</p>
       <p class='italic my-5 text-center text-2xl'>{t('program.invitation')}</p>
+      <div class='square_red w-fit font-bold p-2'>{t('program.tuesday')}</div>
+      <div class='mt-5 flex gap-8'>
+        <div>18:30</div>
+        <div class='text-lg' set:html={t('program.industry')} />
+      </div>
+      <div class='flex gap-8 mt-2'>
+        <div>20:00</div>
+        <div class='text-lg' set:html={t('program.industry_1')} />
+      </div>
     </section>
     <section class='mt-20'>
       <div class='md:ml-5'>
