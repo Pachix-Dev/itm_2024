@@ -266,7 +266,7 @@ const statge_1_day_2=[
         "title_en": "TABLE 5: <br />THE MOBILITY OF THE FUTURE.<br /> <span class='font-normal text-white'>Opportunities and Challenges for Large Cities</span>",
         "description": "",
         "time": "9:00 hrs",
-        "duration": "90 mins",
+        "duration": "120 mins",
         "speakers": [
             {
                 "name": "Luis Lozano *",
@@ -506,8 +506,8 @@ const stage_2_day_1=[
             {
                 "id": "10",
                 "name": "Eugenio Grandio",
-                "position": "Presidente de EMA",
-                "company": "Presidente de EMA",
+                "position": "Presidente",
+                "company": "EMA",
                 "image": "/img/speakers/eugenio_grandio.webp",
 
             },
@@ -533,8 +533,8 @@ const stage_2_day_1=[
             {
                 "id": "24",
                 "name": "Alejandro Canela",
-                "position": "Presidente de EMA",
-                "company": "Vicepresidente de México y Centroamérica de Siemens Digital Industries Software, Presidente de Innovación y Desarrollo Tecnológico del Cluster Metropolitano y Vicepresidente de la comisión Industria 4.0 de Concamin",
+                "position": "Vice-president and General Country ManagerMexico and Central America",
+                "company": "Siemens",
                 "image": "/img/speakers/alejandroCanela.webp",
 
             }

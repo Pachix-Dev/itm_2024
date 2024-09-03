@@ -157,7 +157,7 @@
         "socialmedia_text_5": "COBERTURA",
         "socialmedia_text_6": "EN TODAS NUESTRAS REDES",
         "student": "Entrada para estudiantes viernes a partir de las 3:00pm",
-        "credential": "Debes presentar una credendial de empresa para tener acceso a la feria"
+        "credential": "Debes presentar una credendial de empresa para tener acceso a la feria"        
         
     },
     "aboutPage": {
@@ -514,7 +514,10 @@
         "about": "Acerca de",
         "speech": "Ponencia",
         "changes": "Programa sujeto a cambios sin previo aviso",
-        "invitation": "* Invitados por confirmar"
+        "invitation": "* Invitados por confirmar",
+        "tuesday": "Martes 8 de octubre",
+        "industry": "<strong>Noche de Industriales</strong> (evento solo con invitación)<br /> Teatro Bicentenario",
+        "industry_1": "<strong>Coctel VIP</strong><br/> Terraza del Teatro Bicentenario"
     },
     "footer": {
         "dateFooter": "9 al 11 de octubre de 2024",
