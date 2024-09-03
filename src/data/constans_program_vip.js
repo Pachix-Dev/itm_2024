@@ -449,16 +449,10 @@ const statge_1_day_2=[
         "duration": "90 mins",
         "speakers": [
             {
-                "name": "Andrés Rodríguez *",
+                "name": "Andrés Rodríguez",
                 "position": "Senior Manager - Global Business Development & Strategy",
                 "company": "Lockheed Martin",
                 "image": "/img/speakers/andres_trodriguez.webp"
-            },
-            {
-                "name": "Asociación Europea de Pequeñas Empresas Espaciales (SME4Space) *",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
             },
             {
                 "name": "Angelo Pansini *",
@@ -466,6 +460,12 @@ const statge_1_day_2=[
                 "company": "LEONARDO SpA",
                 "image": "/img/speakers/angelo_pansini.webp"
             },
+            {
+                "name": "Asociación Europea de Pequeñas Empresas Espaciales (SME4Space) *",
+                "position": "",
+                "company": "",
+                "image": "/profile.svg"
+            },           
             {
                 "name": "Instituto de Investigación Aeroespacial de Corea del Sur (KARI) *",
                 "position": "",
