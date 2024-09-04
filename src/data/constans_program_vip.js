@@ -207,36 +207,36 @@ const stage_1_day_1=[
         "duration": "60 mins",
         "speakers": [
             {
-                "name": "Elfido Ramos *",
+                "name": "Elfido Ramos",
                 "position": "Project Manager & Supplier Development",
                 "company": "Safran",
                 "image": "/img/speakers/elfido_ramos.webp"
             },
             {
-                "name": "Carlos Lozano *",
-                "position": "Director de ventas",
-                "company": "FRISA",
-                "image": "/img/speakers/carlos_lozano.webp"
-            },
-            {
-                "name": "Víctor González *",
+                "name": "Víctor González",
                 "position": "Director y Fundador",
                 "company": "Solinda",
                 "image": "/img/speakers/victor_gonzalez.webp"
             },
             {
-                "name": "Giovanni Angelucci",
-                "position": "Director",
-                "company": "Horizontec",
-                "image": "/img/speakers/giovanni_angelucci.webp"
-            },
-            {
                 "id": "9",
-                "name": "Raúl Fernández *",
+                "name": "Raúl Fernández",
                 "position": "Presidente",
                 "company": "Oaxaca Aerospace",
                 "image": "/img/speakers/raul_hernandez.webp"
             },
+            {
+                "name": "Carlos Lozano",
+                "position": "Director de ventas",
+                "company": "FRISA",
+                "image": "/img/speakers/carlos_lozano.webp"
+            },            
+            {
+                "name": "Giovanni Angelucci",
+                "position": "Director",
+                "company": "Horizontec",
+                "image": "/img/speakers/giovanni_angelucci.webp"
+            },            
             {
                 "id": "23",
                 "name": "Carlos Robles",
@@ -281,7 +281,7 @@ const statge_1_day_2=[
                 "image": "/img/speakers/eric_martel.webp"
             },
             {
-                "name": "José Luis Navarro *",
+                "name": "José Luis Navarro",
                 "position": "Country Manager para México",
                 "company": " Enel Group",
                 "image": "/img/speakers/jose_luis_navarro.webp"
@@ -323,7 +323,7 @@ const statge_1_day_2=[
                 "image": "/img/speakers/johannes_dobinger.webp"
             },
             {
-                "name": "Leonard Franchini *",
+                "name": "Leonard Franchini",
                 "position": "Vicepresidente",
                 "company": "Eurotranciatura México, CEO BU Automotive EGLA y Cónsul Honorario de Italia en Querétaro",
                 "image": "/img/speakers/leonard_franchini.webp"
@@ -367,7 +367,7 @@ const statge_1_day_2=[
         "duration": "90 mins",
         "speakers": [
             {
-                "name": "Benjamín Najar *",
+                "name": "Benjamín Najar",
                 "position": "Presidente",
                 "company": " Comisión de Espacio de la FEMIA",
                 "image": "/img/speakers/benjamin_najar.webp"
@@ -455,7 +455,7 @@ const statge_1_day_2=[
                 "image": "/img/speakers/andres_trodriguez.webp"
             },
             {
-                "name": "Angelo Pansini *",
+                "name": "Angelo Pansini",
                 "position": "CCO - Commercial Governance & Offset Management SVP",
                 "company": "LEONARDO SpA",
                 "image": "/img/speakers/angelo_pansini.webp"
