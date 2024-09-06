@@ -1774,4 +1774,22 @@ export const directory = [
         description_en: 'Distributor of assembly and forming applications companies',        
         facebook: 'https://www.facebook.com/prensasycilindros https://www.youtube.com/@prensasycilindros https://www.linkedin.com/company/prensasycilindros https://www.instagram.com/prensasycilindros/'           
     },
+    {
+        id: 90,
+        name: 'ARMIS / TBSEK',
+        logo: '/exhibitors/tbsek_1.webp',
+        stand_number: '0-26',
+        contact: 'JOSUÉ MATURANO',
+        position: 'DIRECTOR COMERCIAL',
+        phone: '5550738582',
+        email: 'JOSUE.MATURANO@ARMIS.COM',
+        webpage: 'https://www.tbsek.mx',
+        address: 'AV. PROLONGACION PASEO DE LA REFORMA 215 PISO 23 INTERIOR 7 COL. PASEO DE LAS LOMAS ALCALDIA: ALVARO OBREGON C.P. 01330 CIUDAD DE MEXICO MEXICO.',
+        cp: '01330',
+        city: 'CIUDAD DE MEXICO',
+        state: 'CIUDAD DE MEXICO',
+        country: 'Mexico',
+        description: 'EMPRESA DE CIBERSEGURIDAD IT Y OT ENFOCADA EN BRINDAR SERVICIOS DE VISIBILIDAD Y DESCUBRIMIENTO DE ACTIVOS. AYUDAMOS A LAS ORGANIZACIONES CON LA CONVERGENCIA ENTRE LA RED IT/OT, DESCUBRIMIENTO DE ACTIVOS Y LOS RIESGOS ASOCIADOS A ESTOS.',
+        description_en: 'Armis the cyber exposure management platform, protects the entire attack surface and manages the organization’s cyber risk exposure in real time. Partnering with TBSEK our Platinum partner we offer managed services for visibility and detection and response.',                         
+    },
 ]
