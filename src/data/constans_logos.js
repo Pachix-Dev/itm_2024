@@ -99,6 +99,9 @@ const exhibitors_1 = [
     { src: '/exhibitors/ethos_automation.webp', alt: 'ethos_automation', width: 200 },
     { src: '/exhibitors/ati.webp', alt: 'ati', width: 200 },
     { src: '/exhibitors/a3_mexico.webp', alt: 'association for advancing automation', width: 200 },
+    { src: '/exhibitors/magswitch.webp', alt: 'magswitch', width: 200 },
+    { src: '/exhibitors/oimi.webp', alt: 'oimi', width: 200 },
+    { src: '/exhibitors/nozomi.webp', alt: 'nozomi', width: 200 },
     
   ]
 
