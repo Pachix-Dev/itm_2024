@@ -102,6 +102,7 @@ const exhibitors_1 = [
     { src: '/exhibitors/magswitch.webp', alt: 'magswitch', width: 200 },
     { src: '/exhibitors/oimi.webp', alt: 'oimi', width: 200 },
     { src: '/exhibitors/nozomi.webp', alt: 'nozomi', width: 200 },
+    { src: '/exhibitors/fortinet.webp', alt: 'fortinet', width: 200 },
     
   ]
 
