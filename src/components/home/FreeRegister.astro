@@ -43,18 +43,9 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
         </p>
       </div>
 
-      {
-        /*<p class='mt-10 text-center text-white font-bold'>
-          {t('register.text_1')}
-        </p>
-         <a
-          href={`${base}/compra-programa-vip`}
-          class='mt-5 bg-[#E42128] rounded-2xl px-4 py-2 font-extrabold text-xl text-white hover:bg-[#CF3B49] hover:cursor-pointer'
-        >
-          {t('register.button_1')}
-        </a>
-        */
-      }
+      <p class='mt-10 text-center text-white font-bold'>
+        {t('register.text_1')}
+      </p>
     </div>
     <div
       data-aos='fade-up'
@@ -68,14 +59,26 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
         minutos={t('home.minutes')}
         segundos={t('home.seconds')}
       />
-      <a
-        href={`${base}/registro`}
-        class='card p-5 hover:scale-105 ease-in-out duration-300'
+      <div
+        class='container mx-auto py-5 px-4 grid md:grid-cols-2 gap-10 backdrop-blur-sm bg-white/30 rounded-xl'
       >
-        <span class='text-white z-10 font-extrabold text-xl'
-          >{t('register.title')}</span
+        <a
+          href={`${base}/registro`}
+          class='card p-5 hover:scale-105 ease-in-out duration-300'
         >
-      </a>
+          <span class='text-white z-10 font-extrabold text-xl'
+            >{t('register.title')}</span
+          >
+        </a>
+        <a
+          href={`${base}/programa-summit-cce-itm-amof`}
+          class='card p-5 hover:scale-105 ease-in-out duration-300'
+        >
+          <span class='text-white z-10 font-extrabold text-xl text-center'>
+            {t('home.programCCE')}
+          </span>
+        </a>
+      </div>
       <p class='mt-5 text-white text-xl font-extrabold'>* {t('home.leyend')}</p>
     </div>
   </div>
