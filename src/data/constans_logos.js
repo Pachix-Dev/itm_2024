@@ -70,7 +70,7 @@ const exhibitors_1 = [
     { src: '/exhibitors/gsport.webp', alt: 'gsport', width: 200 },
 
 
-    { src: '/exhibitors/tlv.webp', alt: 'tlv', width: 200 },
+    { src: '/exhibitors/tlv_v2.webp', alt: 'tlv', width: 180 },
     { src: '/exhibitors/svision.webp', alt: 'svision', width: 200 },
     { src: '/exhibitors/rackart.webp', alt: 'rackart', width: 200 },
     { src: '/exhibitors/pascal.webp', alt: 'pascal', width: 200 },
@@ -93,7 +93,7 @@ const exhibitors_1 = [
     { src: '/exhibitors/robo_tape.webp', alt: 'robo_tape', width: 200 },
     { src: '/exhibitors/muir_intasco.webp', alt: 'muir_intasco', width: 200 },
     { src: '/exhibitors/muir.webp', alt: 'muir', width: 200 },
-    { src: '/exhibitors/modula.webp', alt: 'modula', width: 200 },
+    { src: '/exhibitors/modula_v2.webp', alt: 'modula', width: 200 },
     { src: '/exhibitors/flexus.webp', alt: 'flexus', width: 200 },
     { src: '/exhibitors/ethos_site.webp', alt: 'ethos_site', width: 200 },
     { src: '/exhibitors/ethos_automation.webp', alt: 'ethos_automation', width: 200 },
@@ -103,7 +103,10 @@ const exhibitors_1 = [
     { src: '/exhibitors/oimi.webp', alt: 'oimi', width: 200 },
     { src: '/exhibitors/nozomi.webp', alt: 'nozomi', width: 200 },
     { src: '/exhibitors/fortinet.webp', alt: 'fortinet', width: 200 },
-    
+    { src: '/exhibitors/smartsol.webp', alt: '3d_systems', width: 200 },
+     { src: '/exhibitors/roil.webp', alt: '3m', width: 200 },
+     { src: '/exhibitors/indeq.webp', alt: '3ntr', width: 200 },
+     { src: '/exhibitors/axl.webp', alt: '4d_tech', width: 200 },
   ]
 
 const alliesStrategic = [
