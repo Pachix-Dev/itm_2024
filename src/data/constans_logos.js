@@ -107,6 +107,9 @@ const exhibitors_1 = [
      { src: '/exhibitors/roil.webp', alt: '3m', width: 200 },
      { src: '/exhibitors/indeq.webp', alt: '3ntr', width: 200 },
      { src: '/exhibitors/axl.webp', alt: '4d_tech', width: 200 },
+    { src: '/exhibitors/impeweb_v2.webp ', alt: '3d_systems', width: 200 },
+    { src: '/exhibitors/ita_color.webp', alt: '3m', width: 200 },
+     
   ]
 
 const alliesStrategic = [
