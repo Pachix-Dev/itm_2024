@@ -103,13 +103,13 @@ const exhibitors_1 = [
     { src: '/exhibitors/oimi.webp', alt: 'oimi', width: 200 },
     { src: '/exhibitors/nozomi.webp', alt: 'nozomi', width: 200 },
     { src: '/exhibitors/fortinet.webp', alt: 'fortinet', width: 200 },
-    { src: '/exhibitors/smartsol.webp', alt: '3d_systems', width: 200 },
-     { src: '/exhibitors/roil.webp', alt: '3m', width: 200 },
-     { src: '/exhibitors/indeq.webp', alt: '3ntr', width: 200 },
-     { src: '/exhibitors/axl.webp', alt: '4d_tech', width: 200 },
-    { src: '/exhibitors/impeweb_v2.webp ', alt: '3d_systems', width: 200 },
-    { src: '/exhibitors/ita_color.webp', alt: '3m', width: 200 },
-     
+    { src: '/exhibitors/smartsol.webp', alt: 'smartsol', width: 200 },
+    { src: '/exhibitors/roil.webp', alt: 'roil', width: 200 },
+    { src: '/exhibitors/indeq.webp', alt: 'indeq', width: 200 },
+    { src: '/exhibitors/axl.webp', alt: 'axl', width: 200 },
+    { src: '/exhibitors/impeweb_v2.webp ', alt: 'impeweb', width: 200 },
+    { src: '/exhibitors/ita_color.webp', alt: 'ita', width: 200 },
+    { src: '/exhibitors/manwinwin_software.webp', alt: 'manwinwin software', width: 200 },
   ]
 
 const alliesStrategic = [
