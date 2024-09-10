@@ -68,11 +68,9 @@ const exhibitors_1 = [
     { src: '/exhibitors/crestultrasonics.webp', alt: '', width: 200 },
     { src: '/exhibitors/cosmomexico.webp', alt: '', width: 200 },
     { src: '/exhibitors/gsport.webp', alt: 'gsport', width: 200 },
-
-
     { src: '/exhibitors/tlv_v2.webp', alt: 'tlv', width: 180 },
     { src: '/exhibitors/svision.webp', alt: 'svision', width: 200 },
-    { src: '/exhibitors/rackart.webp', alt: 'rackart', width: 200 },
+    { src: '/exhibitors/rackart_v2.webp', alt: 'rackart', width: 200 },
     { src: '/exhibitors/pascal.webp', alt: 'pascal', width: 200 },
     { src: '/exhibitors/mindcan.webp', alt: 'mindcan', width: 200 },
     { src: '/exhibitors/konica.webp', alt: 'konica', width: 200 },
