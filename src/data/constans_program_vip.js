@@ -391,10 +391,10 @@ const statge_1_day_2=[
                 "image": "/img/speakers/erik_kulu.webp"
             },
             {
-                "name": "Gustavo Medina",
-                "position": "Creador y Jefe",
+                "name": "Gustavo Medina Tanco",
+                "position": "Director",
                 "company": " Laboratorio de Instrumentación Espacial (LINX - UNAM) ",
-                "image": "/profile.svg",
+                "image": "/img/speakers/gustavo_medina_tanco.webp",
                 "moderador": true
             }
 
@@ -473,10 +473,10 @@ const statge_1_day_2=[
                 "image": "/profile.svg"
             },
             {
-                "name": "Gustavo Medina",
-                "position": "Creador y Jefe",
+                "name": "Gustavo Medina Tanco",
+                "position": "Director",
                 "company": " Laboratorio de Instrumentación Espacial (LINX - UNAM) ",
-                "image": "/profile.svg",
+                "image": "/img/speakers/gustavo_medina_tanco.webp",
                 "moderador": true
             }
         ]
