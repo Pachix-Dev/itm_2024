@@ -167,7 +167,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      doc.restore();
  
  
-     doc.image('img/header_ITM.jpg', -20, -15, { width: 325 });
+     doc.image('img/bannerGafete.jpg', 0, 0, { width: 305 });
      // aqui iria el QR con info del usuario    
      doc.image(qrMainUser, 90, 120, { width: 120 });
      
@@ -359,8 +359,8 @@ async function generatePDF_freePass( body, uuid) {
         .stroke();
     doc.restore();
 
-
-    doc.image('img/header_ITM.jpg', -20, -15, { width: 325 });
+    
+    body.typeRegister === 'VISITANTE' ? doc.image('img/header_ITM.png', 0, 0, { width: 305 }) : doc.image('img/bannerGafete.jpg', 0, 0, { width: 305 });       
     // aqui iria el QR con info del usuario    
     doc.image(qrMainUser, 90, 120, { width: 120 });
     
@@ -552,9 +552,9 @@ async function generatePDF_freePass_amof( body, uuid) {
         .lineTo(doc.page.width, midY)
         .stroke();
     doc.restore();
-
-
-    doc.image('img/header-amof.jpg', 0, 0, { width: 305 });
+    
+   
+    body.typeRegister === 'VISITANTE' ?  doc.image('img/header-amof.jpg', 0, 0, { width: 305 }) : doc.image('img/bannerGafete.jpg', 0, 0, { width: 305 });
     // aqui iria el QR con info del usuario    
     doc.image(qrMainUser, 90, 120, { width: 120 });
     

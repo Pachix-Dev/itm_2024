@@ -479,7 +479,7 @@ app.get('/generate-pdf', async (req, res) => {
   doc.restore();
 
 
-  doc.image('img/header-FUTURISTIC.jpg', 0, 0, { width: 305 });
+  doc.image('img/header_ITM.png', 0, 0, { width: 305 })
   // aqui iria el QR con info del usuario
   const imageQr = await generateQRDataURL('uuid-1234567890');
   doc.image(imageQr, 90, 120, { width: 120 });
