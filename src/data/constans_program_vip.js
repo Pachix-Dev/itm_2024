@@ -290,7 +290,7 @@ const statge_1_day_2=[
                 "name": "Lucien Pinto",
                 "position": "Presidente y CEO",
                 "company": " Ford México, CA y el Caribe",
-                "image": "/img/speakers/maite_ramos.webp"
+                "image": "/img/speakers/lucienpinto.webp"
             },  
             {
                 "name": "Maite Ramos",
@@ -344,7 +344,7 @@ const statge_1_day_2=[
                 "name": "Roberto Novoa",
                 "position": "Presidente",
                 "company": "Consejo Coordinador Empresarial de León (CCEL)",
-                "image": "/profile.svg",
+                "image": "/img/speakers/robertonovoa.webp",
                 "moderador": true
             }
         ]
@@ -433,10 +433,10 @@ const statge_1_day_2=[
                 "image": "/img/speakers/general_disraeli_gomez.webp"
             },
             {
-                "name": "Gustavo Medina Tanco,",
+                "name": "Gustavo Medina Tanco",
                 "position": "Director",
                 "company": " Laboratorio de Instrumentación Espacial (LINX - UNAM) ",
-                "image": "/profile.svg",
+                "image": "/img/speakers/gustavo_medina_tanco.webp",
                 "moderador": true
             }
         ]
@@ -533,7 +533,7 @@ const stage_2_day_1=[
             {
                 "id": "24",
                 "name": "Alejandro Canela",
-                "position": "Vice-president and General Country ManagerMexico and Central America",
+                "position": "Vicepresidente de México y Centroamérica de Siemens Digital Industries Software, Presidente de Innovación y Desarrollo Tecnológico del Cluster Metropolitano y Vicepresidente de la comisión Industria 4.0 de Concamin",
                 "company": "Siemens",
                 "image": "/img/speakers/alejandroCanela.webp",
 
@@ -606,7 +606,7 @@ const stage_2_day_1=[
                 "image": "/img/speakers/felipe-gallego.webp"
             }
         ]
-    },
+    },    
     {
         "title": "NETWORKING HAPPY HOUR",
         "title_en": "NETWORKING HAPPY HOUR",
@@ -641,7 +641,33 @@ const stage_2_day_2=[
         "description": "",
         "time": "12:30 hrs",
         "duration": "60 mins",
-        "speakers": []
+        "speakers": [
+            {            
+                "name": "Luis Iván Hernández Becerril",
+                "position": "Director",
+                "company": "Normalización en la Asociación de Normalización y Certificación (ANCE)",
+                "image": "/img/speakers/luis_ivan_hernandez.webp"
+            },
+            {            
+                "name": "Alberto de Icaza Bravo",
+                "position": "Director",
+                "company": "Relaciones con Gobierno, Cámaras y Asociaciones, ZF Group México.",
+                "image": "/img/speakers/alberto_icaza.webp"
+            },
+            {            
+                "name": "Oscar Daniel Ruiz Aguilar",
+                "position": "Gerente",
+                "company": "Regulatorio y de Asuntos de Gobierno, Daimler Truck México",
+                "image": "/img/speakers/oscar_ruiz.webp"
+            },
+            { 
+                "id": "25",                
+                "name": "Lilia de Diego Correa",
+                "position": "Asesora",
+                "company": "Cooperación Técnica Alemana (GIZ)",
+                "image": "/img/speakers/liliade_diego.webp"
+            },
+        ]
     },
     {
         "title": "COMIDA LIBRE",
@@ -664,6 +690,12 @@ const stage_2_day_2=[
                 "name": "Miguel Primo Armendariz",
                 "position": "Mexico Country Director",
                 "company": " International Youth Foundation",
+                "image": "/img/speakers/miguel-primoArmendariz.webp"
+            },
+            {                
+                "name": "Alejandro Rojo Valerio",
+                "position": "Líder en Manufactura y Diseño Automotriz,",
+                "company": " ITESM",
                 "image": "/img/speakers/miguel-primoArmendariz.webp"
             }
         ]
