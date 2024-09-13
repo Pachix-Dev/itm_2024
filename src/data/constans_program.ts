@@ -52,23 +52,26 @@ const stage_1_day_1: Program[] = [
         "time": "13:30 hrs",
         "duration": "45 mins",
         "speakers": [
-            {                               
+            {         
+                "id": "13",                      
                 "name": "Roger Guerrero",
                 "position": "Business Head para Factory Automation & Motion Control",
                 "company": "Siemens México, Centroamérica y el Caribe",
-                "image": "/profile.svg"
+                "image": "/img/speakers/roger_guerrero.webp"
             },
             {
+                "id": "14",
                 "name": "Jair Mexía",
                 "position": "Business Head para Electrical Products",
                 "company": "Siemens México, Centroamérica y el Caribe",
-                "image": "/profile.svg"
+                "image": "/img/speakers//jairmexia.webp"
             },
             {
+                "id": "15",
                 "name": "Valeria Rivera",
                 "position": "Directora de Comunicación y Desarrollo de Negocio",
                 "company": "Siemens México, Centroamérica y el Caribe",
-                "image": "/profile.svg"
+                "image": "/img/speakers/valeriarivera.webp"
             }
         ]
     }
@@ -93,11 +96,19 @@ const stage_1_day_2: Program[] = [
         ]
     },
     {
-        "title": "Nokia",
-        "description": "",
+        "title": "Redes privadas 5G e Industria 4.0",
+        "description": "rendimiento - tienen un rol relevante en la materialización de las beneficios de la digitalización de las operaciones. La totalidad de las empresas que ya tienen desplegadas redes privadas LTE o 5G, expanden su aplicación a casos de uso no previstos cuando se implementó por primera vez, o las despliegan en ubicaciones industriales no contempladas inicialmente. Revisaremos cuáles y cuan relevantes son dichos beneficios y cómo se consiguen, cómo se encuentra México en su adopción y alguna sugerencia para reducir la actual brecha.",
         "time": "11:45 hrs",
         "duration": "45 mins",
-        "speakers": []
+        "speakers": [
+            {
+                "id":"16",               
+                "name": "Alfredo Gonzalez Herrero",
+                "position": "Director de Ventas de Manufactura para América Latina",
+                "company": "Nokia",
+                "image": "/img/speakers/alfredoGonzalez.webp"
+            }
+        ]
     },
     {
         "title": "Tu tiempo, nuestra prioridad",
@@ -167,15 +178,17 @@ const stage_1_day_3: Program[] = [
     {
         "title": "Eficiencia energética como una oportunidad de ahorro y crecimiento para las PYMEs",
         "title_en": "Energy efficiency as a savings and growth opportunity for SMEs",
-        "description": "",
+        "description": "En esta conferencia, las personas participantes explorarán los fundamentos de la eficiencia energética y aprenderán estrategias prácticas para reducir el consumo de energía y los costos operativos en sus empresas. Adquirirán habilidades clave para optimizar recursos, identificar áreas de mejora y descubrir soluciones innovadoras que aumenten la rentabilidad mientras mitigan las emisiones. Los contenidos se adaptarán a las necesidades específicas del público, garantizando una experiencia personalizada y relevante.",
+        "description_en": "In this conference, participants will explore the fundamentals of energy efficiency and learn practical strategies to reduce energy consumption and operating costs in their companies. They will acquire key skills to optimize resources, identify areas for improvement, and discover innovative solutions that increase profitability while mitigating emissions. The content will be tailored to the specific needs of the audience, ensuring a personalized and relevant experience.",
         "time": "11:00 hrs",
         "duration": "45 mins",
         "speakers": [
             {
-                "name": "GIZ",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
+                "id":"17",
+                "name": "Sofía Durón",
+                "position": "Asesora Técnica",
+                "company": "Cooperación Técnica Alemana (GIZ)",
+                "image": "/img/speakers/sofiaDuron.webp"
             }
         ]
     },
@@ -226,7 +239,55 @@ const stage_1_day_3: Program[] = [
         "time": "13:15 hrs",
         "duration": "45 mins",
         "speakers": []
+    },
+    {
+        "title": "Sistemas de Control y Automatización DCS - PLC - Scada para aumentar la sustentabilidad de las industrias",        "description": "Sistemas de control distribuido, como disminuir el cableado eléctrico en un proyecto donde se tiene miles de señales analógicas, digitales, que tradicionalmente se deben cablear desde el punto de medición hasta el cuarto de control. Con el uso de un sistema por fibra óptica se disminuye el cableado punto a punto.",
+        "description_en": "Distributed control systems, such as reducing electrical wiring in a project where there are thousands of analog, digital signals, which traditionally must be wired from the measurement point to the control room. With the use of a fiber optic system, point-to-point wiring is reduced.",
+        "time": "14:00 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {          
+                "id":"18",      
+                "name": "Hilario Gaytan",
+                "position": "Business Driver Control & Automation Systems",
+                "company": "Mytec Automation International",
+                "image": "/img/speakers/hilariogaytan.webp"
+            }
+        ]
+    },
+    {
+        "title": "Redes Privadas grado industrial – Acelerando la transformación digital",       
+        "description": "El vínculo de la transformación digital y su relación con 4G/5G es claro. La transformación digital significa máquinas que toman decisiones tan rápido como los humanos para procesar información instantáneamente Pensemos en las máquinas de minería, puertos, robots móviles de selección y empaque en un almacén o la complejidad de una fábrica flexible que se puede reconfigurar para acomodar nuevos productos o diferentes procesos. En el pasado, tales soluciones tendrían que arrastrar cables tras de sí. Las redes cableadas son rápidas pero inflexibles; 4G/5G brinda un rendimiento comparable o incluso mejor que Ethernet o fibra, con el beneficio de que transmisor o receptor no tienen que estar fijos en su lugar.",
+        "description_en": "The link between digital transformation and its relationship with 4G/5G is clear. Digital transformation means machines making decisions as fast as humans to process information instantly. Think of mining machines, ports, mobile robots for picking and packing in a warehouse, or the complexity of a flexible factory that can be reconfigured to accommodate new products or different processes. In the past, such solutions would have to drag cables behind them. Wired networks are fast but inflexible; 4G/5G provides performance comparable to or even better than Ethernet or fiber, with the benefit that the transmitter or receiver does not have to be fixed in place.",
+        "time": "15:30 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {          
+                "id":"19",      
+                "name": "Alejandro M. Albanese",
+                "position": "Director de Ventas",
+                "company": "Nokia Enterprise – Industrias 4.0",
+                "image": "/img/speakers/alejandro_albanese.webp"
+            }
+        ]
+    },
+    {
+        "title": "Tendencias en el desarrollo de skills dentro de la cultura del LifeLong Learning en la industria",       
+        "description": "Ante los retos y la forma en que se está transformando la cadena de suministro rumbo al 2025 y 2030 con la llegada y fortalecimiento de procesos automatizados y nuevos sistemas de producción tenemos la oportunidad única para explorar las habilidades esenciales que están transformando a la industria al conocer sobre las tendencias emergentes, tecnologías innovadoras y competencias clave que serán imprescindibles para enfrentar los desafíos del futuro. La inteligencia artificial y la robótica son sólo el comienzo de una nueva era profesional, donde las oportunidades y desafíos para aquellos que se adapten a esta emergente prospectiva serán innumerables y decisivos para el éxito en el futuro. La transformación hacia los nuevos perfiles que impactan en empleadores, educación y el propio individuo demanda cada día más el ser parte de una cultura de aprendizaje continuo. A través de esta charla presentaremos el concepto del 'Life Long Learning' y de cómo debemos aprender a aprender ante la inevitable y acelerada evolución de la educación continua digital hacia el 2030.",
+        "description_en": "Faced with the challenges and the way the supply chain is transforming towards 2025 and 2030 with the arrival and strengthening of automated processes and new production systems, we have the unique opportunity to explore the essential skills that are transforming the industry by learning about emerging trends, innovative technologies, and key competencies that will be essential to face the challenges of the future. Artificial intelligence and robotics are just the beginning of a new professional era, where the opportunities and challenges for those who adapt to this emerging perspective will be countless and decisive for success in the future. The transformation towards new profiles that impact employers, education, and the individual themselves increasingly demands being part of a culture of continuous learning. Through this talk, we will present the concept of 'Life Long Learning' and how we must learn to learn in the face of the inevitable and accelerated evolution of digital continuous education towards 2030.",
+        "time": "16:15 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {          
+                "id":"20",      
+                "name": "Fermín Fernando Mojica Araujo",
+                "position": "Director TEC Mobility Solutions",
+                "company": "TEC de Monterrey",
+                "image": "/img/speakers/fermin_mojica.webp"
+            }
+        ]
     }
+
 ]
 
 const stage_2_day_1: Program[] = [
@@ -256,10 +317,11 @@ const stage_2_day_1: Program[] = [
         "duration": "60 mins",
         "speakers": [
             {
+                "id": "21",
                 "name": "Dra. Ute Böttcher",
-                "position": "Directora residente de la Cooperación Técnica Alemana (GIZ) en México",
-                "company": "",
-                "image": "/profile.svg"
+                "position": "Directora residente",
+                "company": "Cooperación Técnica Alemana (GIZ) en México",
+                "image": "/img/speakers/ute_Boettcher_farbe.webp"
             },
             {
                 "id": "12",
@@ -269,18 +331,18 @@ const stage_2_day_1: Program[] = [
                 "image": "/img/speakers/johannes_dobinger.webp"
             },
             {
-                
+                "id": "22",
                 "name": "Claudia Esteves Cano",
                 "position": "Directora General",
                 "company": "Asociación Mexicana de Parques Industriales Privados (AMPIP)",
-                "image": "/profile.svg"
+                "image": "/img/speakers/claudia_Esteves.webp"
             },
-            {
-                
+            {                           
+                "id": "23",
                 "name": "Liliana Campos",
-                "position": "",
-                "company": "GIZ México",
-                "image": "/profile.svg"
+                "position": "Asesora",
+                "company": "Cooperación Técnica Alemana (GIZ) en México",
+                "image": "/img/speakers/liliana_Campos.webp"
             }
         ]
     },
