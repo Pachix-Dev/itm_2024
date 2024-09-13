@@ -67,7 +67,7 @@ const stage_1_day_1: Program[] = [
                 "image": "/img/speakers//jairmexia.webp"
             },
             {
-                "id": "15",
+                "id": "9",                
                 "name": "Valeria Rivera",
                 "position": "Directora de Comunicación y Desarrollo de Negocio",
                 "company": "Siemens México, Centroamérica y el Caribe",
@@ -383,6 +383,23 @@ const stage_2_day_1: Program[] = [
 
 const stage_2_day_2: Program[] = [
     {
+        "title": "Beyond Boundaries: Redefining Industrial Cybersecurity in the Age of Industry 4.0",
+        "title_en": "Beyond Boundaries: Redefining Industrial Cybersecurity in the Age of Industry 4.0",
+        "description": "A medida que la transformación digital de la Industria 4.0 se acelera, la convergencia de los sistemas de TI y OT introduce complejidades y vulnerabilidades sin precedentes. En esta sesión, profundizamos en el panorama de amenazas en evolución donde los perímetros de seguridad tradicionales ya no son suficientes. Explora cómo los marcos avanzados de ciberseguridad y un enfoque de plataforma unificada pueden trascender los límites convencionales para construir redes industriales resilientes y a prueba de futuro. Examinaremos los impulsores fundamentales que están remodelando la ciberseguridad en la manufactura, desde la evolución de la arquitectura y las presiones regulatorias hasta la creciente sofisticación de las amenazas cibernéticas. A través de casos de uso avanzados, que van desde la visibilidad y segmentación de red granulares hasta la seguridad del acceso privilegiado para trabajadores remotos, descubriremos estrategias que van más allá del cumplimiento, garantizando la continuidad operativa y protegiendo los activos críticos. Únete a nosotros para repensar la ciberseguridad no solo como una medida defensiva, sino como un habilitador estratégico de la innovación, la seguridad y el tiempo de actividad sostenido en un mundo cada vez más interconectado.",
+        "description_en": "As the digital transformation of Industry 4.0 accelerates, the convergence of IT and OT systems introduces unprecedented complexities and vulnerabilities. In this session, we delve into the evolving threat landscape where traditional security perimeters no longer suffice. Explore how advanced cybersecurity frameworks and a unified platform approach can transcend conventional boundaries to build resilient, future-proof industrial networks. We will examine the pivotal drivers reshaping cybersecurity in manufacturing, from architecture evolution and regulatory pressures to the rising sophistication of cyber threats. Through advanced use cases—ranging from granular network visibility and segmentation to securing privileged access for remote workers—we’ll uncover strategies that go beyond compliance, ensuring operational continuity and safeguarding critical assets. Join us to rethink cybersecurity not just as a defensive measure, but as a strategic enabler of innovation, safety, and sustained uptime in an increasingly interconnected world",
+        "time": "11:15 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {
+                "id": "24",
+                "name": "Del Rodillas",
+                "position": "Distinguished Product Manager for Industrial Cybersecurity",
+                "company": "Palo Alto Networks",
+                "image": "/img/speakers/delrodillas.webp"
+            }
+        ]
+    },
+    {
         "title": "Descarbonización y Electromovilidad: claves para las ciudades inteligentes",
         "title_en": "Decarbonization and Electromobility: keys to smart cities",
         "description": "",
@@ -444,36 +461,37 @@ const stage_2_day_2: Program[] = [
         "description": "",
         "time": "17:30 hrs",
         "duration": "60 mins",
-        "speakers": [
+        "speakers": [            
             {
-                "name": "Siemens ",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
+                "id": "9",                
+                "name": "Valeria Rivera",
+                "position": "Directora de Comunicación y Desarrollo de Negocio",
+                "company": "Siemens México, Centroamérica y el Caribe",
+                "image": "/img/speakers/valeriarivera.webp"
             },
             {
-                "name": "Mitsubishi ",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
+                "name": "Daniela Arce",
+                "position": "Strategic Marketing ",
+                "company": "Mitsubishi Electric Automation",
+                "image": "/img/speakers/daniela_Mitsubishi.webp"
             },
             {
-                "name": "Festo ",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
+                "name": "Aída Benavides",
+                "position": "Directora",
+                "company": "Festo Didactic México ",
+                "image": "/img/speakers/Aida_Festo.webp"
             },
             {
-                "name": "Hitachi ",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
+                "name": "Sandra Hernández",
+                "position": "Marketing Communications Country Manager",
+                "company": "Hitachi Energy México",
+                "image": "/img/speakers/sandra_Hitachi.webp"
             },  
             {
                 "name": "Claudia Rodrigez ",
                 "position": "Marketing Manager",
                 "company": "A3 Mexico",
-                "image": "/profile.svg"
+                "image": "/img/speakers/claudia_Rodriguez.webp"
             },       
 
         ]
@@ -497,10 +515,18 @@ const stage_2_day_3: Program[] = [
         "duration": "60 mins",
         "speakers": [
             {
-                "name": "Panelistas TBD",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
+                "id": "25",
+                "name": "Andreas Jahn",
+                "position": "Miembro del Comité Ejecutivo Federal",
+                "company": "Asociación Alemana de la Pequeña y Mediana Empresa (BVMW)",
+                "image": "/img/speakers/andreas_Jahn.webp"
+            },
+            {
+                "id": "26",
+                "name": "Juan Carlos Casis",
+                "position": "Director de Porfafolio y Consultoría",
+                "company": "Siemens Digital Industries Software",
+                "image": "/img/speakers/juan_carlos_casis.webp"
             }
         ]
     },
@@ -513,11 +539,28 @@ const stage_2_day_3: Program[] = [
         "speakers": []
     },
     {
+        "title": "Servo reductores en la robótica",
+        "title_en": "Servo reducers in robotics",
+        "description": "Las aplicaciones en la industria robótica requieren movimientos controlados, donde la alta precisión es crucial para su éxito. Fernando Vázquez, de Sumitomo Drive Technologies, nos compartirá cómo los reductores de velocidad de última generación de Sumitomo, aplicados en robótica, pueden ayudar a que las aplicaciones más exigentes logren perfiles de movimiento ultra precisos.",
+        "description_en": "Applications in the robotic industry require controlled movements, where high precision is crucial for their success. Fernando Vázquez, from Sumitomo Drive Technologies, will share with us how Sumitomo's latest generation speed reducers, applied in robotics, can help the most demanding applications achieve ultra-precise motion profiles.",
+        "time": "13:45 hrs",
+        "duration": "60 mins",
+        "speakers": [
+            {
+                "id": "27",
+                "name": "Fernando Vázquez ",
+                "position": "General Manager International Mechatronics",
+                "company": "Sumitomo Drive Technologies",
+                "image": "/img/speakers/Fernando_Vazquez.webp"
+            }
+        ]
+    },
+    {
         "title": "Startup Pitch y clausura ITM 2024",
         "title_en": "Startup Pitch and closing ITM 2024",
         "description": "",
-        "time": "15:45 hrs",
-        "duration": "75 mins",
+        "time": "16:00 hrs",
+        "duration": "60 mins",
         "speakers": []
     }
 ]

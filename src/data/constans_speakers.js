@@ -226,6 +226,42 @@ const speakers = [
         description_en:"Dr. Campos, with over 20 years of experience, holds a PhD and MSc in Sustainable Construction Technologies from the University of Nottingham, UK. She is currently Project Director at the German Technical Cooperation (GIZ Mexico), where she has led international cooperation projects on topics such as Just Transition, Climate Finance, Resource Efficiency, and Sustainable Energy. She has managed a project portfolio valued at over 18.7 million euros, collaborating with entities such as the World Bank and the Inter-American Development Bank. She has advised Latin American governments on social housing and sustainable construction, and chaired the habitability technical committee of the National Housing Council of Mexico. She is also a mentor at the Global Women’s Network for Energy Transition",
         image: "/img/speakers/liliana_Campos.webp",
     },
+    {
+        id: "24",
+        name: "Del Rodillas",
+        position: "Distinguished Product Manager for Industrial Cybersecurity",        
+        company: " Palo Alto Networks",
+        description: "En su rol actual como Distinguished Product Manager para Ciberseguridad Industrial en Palo Alto Networks, Del Rodillas forma parte del equipo que define la hoja de ruta y garantiza la excelencia del producto para el portafolio de Seguridad de Red OT de Palo Alto Networks. Trabaja en estrecha colaboración con una variedad de usuarios finales en Industrias Críticas como Utilities, Energía y Manufactura y colabora con partes interesadas de la industria para desarrollar soluciones integradas de seguridad OT. Del es un veterano de la industria con más de 28 años de experiencia en Ciberseguridad y Tecnología en diferentes roles, incluyendo Gestión de Productos y Marketing, Operaciones Comerciales e Ingeniería. Del comenzó su carrera como Ingeniero de Rendimiento de Manufactura en la industria de Semiconductores para Xilinx (ahora AMD). Tiene un MSEE en Ingeniería Eléctrica de la Universidad de Santa Clara y un MBA de la Wharton School. Ha sido miembro del subcomité NSTAC del Presidente para la Convergencia IT/OT, forma parte del grupo de trabajo de Resiliencia de Manufactura del Foro Económico Mundial y también ha sido certificado con la certificación de ciberseguridad industrial GICSP.",
+        description_en:"In his current role as Distinguished Product Manager for Industrial Cybersecurity at Palo Alto Networks, Del Rodillas is part of the team defining the roadmap and ensuring product excellence for Palo Alto Networks’ OT Network Security portfolio. He works closely with a variety of end users in Critical Industries such as Utilities, Energy and Manufacturing and collaborates with industry stakeholders to develop integrated OT security solutions. Del is a seasoned industry veteran with over 28 years experience in Cybersecurity and Technology across different roles including Product Management and Marketing, Business Operations, and Engineering. Del started his career as a Manufacturing Yield Engineer in the Semiconductor industry for Xilinx (now AMD). He has an MSEE in Electrical Engineering from Santa Clara University and an MBA from the Wharton School. He served on the President’s NSTAC subcommittee for IT/OT Convergence, is part of the World Economic Forum’s Manufacturing Resilience working group, and has also been certified to the GICSP industrial cybersecurity certification.",
+        image: "/img/speakers/delrodillas.webp",
+    },
+    {
+        id: "25",
+        name: "Andreas Jahn",
+        position: "Miembro del Comité Ejecutivo Federal",        
+        company: " Asociación Alemana de la Pequeña y Mediana Empresa (BVMW).",
+        description: "Andreas Jahn ha sido miembro del Comité Ejecutivo Federal de los departamentos de Política, Economía y Comercio Exterior, Asuntos Públicos, Prensa y Relaciones Públicas del BVMW. Además, el Sr. Jahn es Secretario General de la Alianza de Pequeñas y Medianas Empresas con África, una iniciativa del BVMW que apoya a las empresas en su inserción en el mercado africano. También es el Presidente del Foro Germano-Turcomano desde 2021. De 2009 a 2019, trabajó en el Parlamento Alemán como asesor de política exterior del Diputado Johannes Selle. Andreas Jahn mantiene vínculos estrechos con importantes actores de la política nacional e internacional y ha viajado varias veces con delegaciones a África, Rusia y los Estados de la CEI, así como a otras regiones del mundo.",
+        description_en:"Andreas Jahn has been a member of the Federal Executive Committee of the BVMW's departments for Politics, Economics and Foreign Trade, Public Affairs, Press and Public Relations. In addition, Mr. Jahn is Secretary General of the Alliance of Small and Medium Enterprises with Africa, an initiative of the BVMW that supports companies in their entry into the African market. He is also the President of the German-Turkmen Forum since 2021. From 2009 to 2019, he worked in the German Parliament as a foreign policy advisor to MP Johannes Selle. Andreas Jahn maintains close ties with important actors in national and international politics and has traveled several times with delegations to Africa, Russia and the CIS states, as well as to other regions of the world.",
+        image: "/img/speakers/andreas_Jahn.webp",
+    },
+    {
+        id: "26",
+        name: "Juan Carlos Casis",
+        position: "Director de Porfafolio y Consultoría",        
+        company: " Siemens Digital Industries Software",
+        description: "Juan Carlos Casis, ingeniero mecatrónico con una maestría en Inteligencia Artificial por el King's College London, es un líder reconocido en la transformación digital industrial. Con más de 18 años de experiencia, ha impulsado la implementación exitosa de soluciones tecnológicas de vanguardia como gemelos digitales, IA y metaverso industrial, en diversas industrias. Como Director de Portafolio y Consultoría, ha liderado proyectos que han generado un aumento promedio del 30% en la eficiencia de procesos ",
+        description_en:"Juan Carlos Casis, mechatronics engineer with a master's degree in Artificial Intelligence from King's College London, is a recognized leader in industrial digital transformation. With over 18 years of experience, he has driven the successful implementation of cutting-edge technological solutions such as digital twins, AI, and the industrial metaverse, in various industries. As Director of Portfolio and Consulting, he has led projects that have generated an average 30% increase in process efficiency",
+        image: "/img/speakers/juan_carlos_casis.webp",
+    },
+    {
+        id: "27",
+        name: " Fernando Vázquez",
+        position: "General Manager",        
+        company: "International Mechatronics",
+        description: "Formación Académica: - Ingeniero Mecánico Electricista, Universidad Autónoma de San Luis Potosí - 2005 - Maestría en Administración de Empresas - Instituto Tecnológico de Estudios Superiores de Monterrey - 2010 - Maestría en Ingeniería con Esp. Automatización y Control - Universidad Panamericana 2018 - Trabajando para Sumitomo desde 2005. Posición Actual: - Gerente de Ventas y Automatización y Control. Principales actividades: - Desarrollo de negocios - Productos mecatrónicos. - Ventas - Operaciones",
+        description_en:"Academic Training: - Electrical Mechanical Engineer, Autonomous University of San Luis Potosí - 2005 - Master's in Business Administration - Monterrey Institute of Technology and Higher Education - 2010 - Master's in Engineering with Specialization in Automation and Control - Universidad Panamericana 2018 - Working for Sumitomo since 2005. Current Position: - Sales Manager and Automation and Control. Main activities: - Business development - Mechatronic products. - Sales - Operations",
+        image: "/img/speakers/Fernando_Vazquez.webp",
+    }
 ]
 
 export { speakers }
