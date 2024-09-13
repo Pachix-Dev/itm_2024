@@ -166,7 +166,7 @@ const stage_1_day_1=[
         "duration": "90 mins",
         "speakers": [
             {
-                "name": "Esaú Garza *",
+                "name": "Esaú Garza",
                 "position": "Secretario",
                 "company": "SEDECyT del Estado de Aguascalientes",
                 "image": "/img/speakers/esau_garza.webp"
@@ -620,12 +620,21 @@ const stage_2_day_1=[
 
 const stage_2_day_2=[
     {
-        "title": "Keynote Clarios",
-        "title_en": "Keynote Clarios",
-        "description": "",
+        "title": "El almacenamiento de energía de bajo voltaje en el futuro de la electromovilidad",
+        "title_en": "Low voltage energy storage in the future of electromobility",
+        "description": "La industria automotriz va a cambiar más en los próximos 10 años de lo que ha cambiado en los últimos 100 y la electromovilidad está transformando el negocio de las baterías de automóviles, generando oportunidades para la industria y la academia en este sector. Aquellas que puedan continuar innovando en tecnologías de baterías estarán mejor posicionadas para aprovechar el crecimiento en este campo emergente. Diferentes tipos de químicas, simulación y predicción en el estado de carga, efectos del cambio climático son algunos de los temas de interés que van a estar creciendo para esos próximos años.",
+        "description_en": "The automotive industry will change more in the next 10 years than it has in the last 100 and electromobility is transforming the car battery business, generating opportunities for industry and academia in this sector. Those who can continue to innovate in battery technologies will be better positioned to take advantage of growth in this emerging field. Different types of chemicals, simulation and prediction in the state of charge, effects of climate change are some of the topics of interest that will be growing for those next years.",
         "time": "11:00 hrs",
         "duration": "30 mins",
-        "speakers": []
+        "speakers": [
+            {          
+                "id": "26", 
+                "name": "Dr. Vladimir García Hernández",
+                "position": "Ingeniero Senior de Desarrollo de Materiales Norteamérica",
+                "company": "Clarios",
+                "image": "/img/speakers/vladimir_garcia.webp"
+            },
+        ]
     }, 
     {
         "title": "Fireside chat pendiente",
@@ -643,18 +652,21 @@ const stage_2_day_2=[
         "duration": "60 mins",
         "speakers": [
             {            
+                "id": "27",
                 "name": "Luis Iván Hernández Becerril",
                 "position": "Director",
                 "company": "Normalización en la Asociación de Normalización y Certificación (ANCE)",
                 "image": "/img/speakers/luis_ivan_hernandez.webp"
             },
-            {            
+            {        
+                "id": "28",   
                 "name": "Alberto de Icaza Bravo",
                 "position": "Director",
                 "company": "Relaciones con Gobierno, Cámaras y Asociaciones, ZF Group México.",
                 "image": "/img/speakers/alberto_icaza.webp"
             },
-            {            
+            {          
+                "id": "29",  
                 "name": "Oscar Daniel Ruiz Aguilar",
                 "position": "Gerente",
                 "company": "Regulatorio y de Asuntos de Gobierno, Daimler Truck México",
