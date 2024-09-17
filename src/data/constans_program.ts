@@ -340,7 +340,7 @@ const stage_2_day_1: Program[] = [
             {                           
                 "id": "23",
                 "name": "Liliana Campos",
-                "position": "Asesora",
+                "position": "Directora de Proyecto",
                 "company": "Cooperación Técnica Alemana (GIZ) en México",
                 "image": "/img/speakers/liliana_Campos.webp"
             }
