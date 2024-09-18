@@ -74,6 +74,40 @@ const stage_1_day_1: Program[] = [
                 "image": "/img/speakers/valeriarivera.webp"
             }
         ]
+    },
+    {
+        "title": "Lenguaje Global de Producción: Conecte a sus antiguas máquinas con interoperabilidad semántica",
+        "title_en": "Global Production Language: Connect your legacy machines with semantic interoperability",
+        "description": "",
+        "description_en": "",
+        "time": "15:00 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {         
+                "id": "32",                      
+                "name": "Heiko Herden",
+                "position": "Coordinador del proyecto y presidente",
+                "company": "VDMA - Grupo de trabajo OPC UA para maquinaria",
+                "image": "/img/speakers/herden_heiko.webp"
+            },            
+        ]
+    },
+    {
+        "title": "Herramientas de APM apoyando a mejorar las prácticas de Mantenimiento e Inversión de Capital",
+        "title_en": "APM tools supporting improved Maintenance and Capital Investment practices",
+        "description": "",
+        "description_en": "",
+        "time": "16:30 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {         
+                "id": "33",                      
+                "name": "Luis Alfonso Luna",
+                "position": "Senior Solution Consultant",
+                "company": "Hexagon",
+                "image": "/img/speakers/luis-luna.webp"
+            },            
+        ]
     }
 ]
 
@@ -166,6 +200,21 @@ const stage_1_day_2: Program[] = [
         ]
     },
     {
+        "title": "Gemelo Digital: Conectando el Mundo Físico y Virtual",
+        "description": "",
+        "time": "14:00 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {
+                "id":"34",
+                "name": "Roberto Tepoz",
+                "position": "System & Architecture Senior Engineer",
+                "company": "Schneider Electric",
+                "image": "/img/speakers/roberto-tepoz.webp"
+            },
+        ]
+    },
+    {
         "title": "La transformación del diecasting by Mitsubishi",
         "description": "",
         "time": "16:15 hrs",
@@ -252,6 +301,30 @@ const stage_1_day_3: Program[] = [
                 "position": "Business Driver Control & Automation Systems",
                 "company": "Mytec Automation International",
                 "image": "/img/speakers/hilariogaytan.webp"
+            }
+        ]
+    },
+    {
+        "title": "Conectividad de Equipos Eléctricos: Impulsando la evolución del Código de Red en la industria",
+        "title_en": "Electrical Equipment Connectivity: Driving the evolution of Network Code in Industry",
+        "description": "En esta ponencia, exploraremos la importancia crítica del cumplimiento del Código de Red.  Analizaremos los desafíos y oportunidades que surgen al alinearse con estas regulaciones, destacando cómo el cumplimiento efectivo puede conducir a una mayor eficiencia energética, confiabilidad del sistema y sostenibilidad. Esta ponencia ofrece una mirada perspicaz sobre cómo el cumplimiento del Código de Red no solo es un requisito regulatorio, sino también un motor para la innovación y la excelencia operativa. Únete a nosotros para descubrir cómo avanzar hacia un futuro energético más eficiente y sostenible",
+        "description_en": "In this paper, we will explore the critical importance of Grid Code compliance.  We will analyze the challenges and opportunities that arise from aligning with these regulations, highlighting how effective compliance can lead to greater energy efficiency, system reliability and sustainability. This paper offers an insightful look at how compliance with the Grid Code is not only a regulatory requirement, but also a driver for innovation and operational excellence. Join us to discover how to move towards a more efficient and sustainable energy future.",
+        "time": "14:45 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {          
+                "id":"35",      
+                "name": "Abigail Carrillo",
+                "position": "Business Development Power Quality and Energy Automation",
+                "company": "Schneider Electric",
+                "image": "/img/speakers/abigail_carrillo.webp"
+            },
+            {          
+                "id":"36",      
+                "name": "Edwinn Cortés",
+                "position": "SA & PQ Product Application Engineer",
+                "company": "Schneider Electric",
+                "image": "/img/speakers/edwinn-cortes.webp"
             }
         ]
     },
@@ -347,21 +420,29 @@ const stage_2_day_1: Program[] = [
         ]
     },
     {
+        "title": "Automatización con IMPACTO: Productividad, calidad y sostenibilidad",
+        "title_en": "",
+        "description": "Obtén una visión integral de las tendencias actuales y futuras en el campo de la automatización, destacando cómo esta tecnología está remodelando la industria. Durante la sesión, se abordarán temas como la Industria 4.0, el Internet Industrial de las Cosas (IIoT), la inteligencia artificial aplicada a la manufactura, y la digitalización de procesos industriales. Además, se destacará el papel pionero de Schneider Electric en la conducción de esta revolución tecnológica.",
+        "time": "15:15 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {                           
+                "id": "28",
+                "name": "Mayra Gaxiola",
+                "position": "Industrial Automation Business Developer Manager",
+                "company": "Schneider Electric",
+                "image": "/img/speakers/mayragaxiola.webp"
+            }
+        ]
+    },
+    {
         "title": "Japón como generador de inversiones",
         "title_en": "Japan as an investment generator",
         "description": "",
         "time": "16:00 hrs",
         "duration": "45 mins",
         "speakers": []
-    },
-    {
-        "title": "Panel Nokia ",
-        "title_en": "Nokia Panel",
-        "description": "",
-        "time": "16:45 hrs",
-        "duration": "45 mins",
-        "speakers": []
-    },
+    },    
     {
         "title": "Industrial Transformation",
         "title_en": "Industrial Transformation",
@@ -448,13 +529,37 @@ const stage_2_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "Palabras de cierre de la Cumbre de Desarrollo Industrial Sostenible",
-        "title_en": "Closing Remarks at the Sustainable Industrial Development Summit",
-        "description": "",
-        "time": "16:00 hrs",
-        "duration": "15 mins",
-        "speakers": []
-    },    
+        "title": "Innovación de IMPACTO: Mujeres que automatizan las Industrias del Futuro",
+        "title_en": "IMPACT Innovation: Women Automating the Industries of the Future",
+        "description": "La charla Innovación de IMPACTO: Mujeres que automatizan las Industrias del Futuro reúne a dos visionarias líderes en la industria de la automatización. Desde la perspectiva de una directora de un fabricante de máquinas originales y una destacada líder de Schneider Electric, exploraremos cómo la automatización está transformando las industrias actuales y futuras. Analizaremos las perspectivas sobre la industria actual, el impacto de la tecnología y cómo las mujeres están impulsando la innovación en este emocionante campo",
+        "time": "15:00 hrs",
+        "duration": "60 mins",
+        "speakers": [
+            {
+                "id": "29",
+                "name": "Marisol Cruz",
+                "position": "Distributor Key Account Manager",
+                "company": "Schneider Electric",
+                "image": "/profile.svg"
+            }
+        ]
+    },
+    {
+        "title": "La inclusión como factor clave en la protección de la Industria 4.0",
+        "title_en": "IMPACT Innovation: Women Automating the Industries of the Future",
+        "description": "La charla Innovación de IMPACTO: Mujeres que automatizan las Industrias del Futuro reúne a dos visionarias líderes en la industria de la automatización. Desde la perspectiva de una directora de un fabricante de máquinas originales y una destacada líder de Schneider Electric, exploraremos cómo la automatización está transformando las industrias actuales y futuras. Analizaremos las perspectivas sobre la industria actual, el impacto de la tecnología y cómo las mujeres están impulsando la innovación en este emocionante campo",
+        "time": "15:00 hrs",
+        "duration": "60 mins",
+        "speakers": [
+            {
+                "id": "30",
+                "name": "Dula Hernández",
+                "position": "Directora de Ingeniería",
+                "company": "Palo Alto Networks",
+                "image": "/img/speakers/dula_hernandez.webp"
+            }
+        ]
+    },       
     {
         "title": "MUJERES QUE TRANSFORMAN: Marketing y Automatización",
         "title_en": "WOMEN WHO TRANSFORM: Marketing and Automation",
@@ -537,6 +642,22 @@ const stage_2_day_3: Program[] = [
         "time": "12:00 hrs",
         "duration": "45 mins",
         "speakers": []
+    },
+    {
+        "title": "Digitalizando con Impacto: Eficiencia y Ciberseguridad",
+        "title_en": "",
+        "description": "",
+        "time": "12:45 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {         
+                "id": "31",
+                "name": "Samuel Aceves",
+                "position": "Cybersecurity Senior Technical Sales Consultant México",
+                "company": "Schneider Electric",
+                "image": "/profile.svg"
+            }
+        ]
     },
     {
         "title": "Servo reductores en la robótica",

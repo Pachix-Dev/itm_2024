@@ -227,7 +227,7 @@ const stage_1_day_1=[
             },
             {
                 "name": "Carlos Lozano",
-                "position": "Director de ventas",
+                "position": "Gerente de ventas",
                 "company": "FRISA",
                 "image": "/img/speakers/carlos_lozano.webp"
             },            
