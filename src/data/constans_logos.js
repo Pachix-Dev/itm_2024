@@ -108,6 +108,19 @@ const exhibitors_1 = [
     { src: '/exhibitors/impeweb_v2.webp ', alt: 'impeweb', width: 200 },
     { src: '/exhibitors/ita_color.webp', alt: 'ita', width: 200 },
     { src: '/exhibitors/manwinwin_software.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/vita_energy.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/servi_bot.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/nidec.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/n_mada.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/micro_automacion.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/instruments.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/icon_technologies.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/elo.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/hnc_v2.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/hexagon.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/maper_v2.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/tolomatic_v2.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/tierra_tech_v2.webp', alt: 'manwinwin software', width: 200 },
   ]
 
 const alliesStrategic = [
