@@ -174,6 +174,46 @@ app.post('/free-register', async (req, res) => {
     }
 });
 
+// verificar codigo de cortesia  si es correcto crear gafete vip
+app.post('/check-cortesia', async (req, res) => {
+    const { body } = req;
+    const response = await RegisterModel.check_code_cortesia(body.code_cortesia);    
+    if (response.status) {
+        const userResponse = await RegisterModel.get_user_by_email(body.email);
+        if (!userResponse.status) {
+            return res.status(404).send({
+                message: userResponse.error
+            });
+        }
+        try {
+            const data = { 
+                total: 0,
+                item: body.item,
+                ...userResponse.user
+            };
+
+            await RegisterModel.save_order(data.id, body.code_cortesia, 'codigo-cortesia', data.total);
+            await RegisterModel.use_code_cortesia(body.code_cortesia);
+            const pdfAtch = await generatePDFInvoice(body.code_cortesia+'-cortesia', data, data.uuid);
+            const mailResponse = await sendEmail(data, pdfAtch, body.code_cortesia+'-cortesia');   
+    
+            return res.send({
+                ...mailResponse,
+                invoice: `${body.code_cortesia+'-cortesia'}.pdf`
+            });
+        } catch (err) {
+            return res.status(500).send({
+                status: false,
+                message: 'hubo un error al procesar tu compra, por favor intenta mas tarde...'
+            });
+        }
+    } else {
+        res.status(400 ).send({
+            message: response.message
+        });
+    }
+});
+
 app.get('/get-postalcode/:cp', async (req, res) => {
     const { cp } = req.params;
     const response = await RegisterModel.get_postal_code({cp});
@@ -216,9 +256,7 @@ app.post('/upgrade-user', async (req, res) => {
             item: body.item,
             ...userResponse.user
         };
-
-        console.log(data)
-
+        
         const access_token = await get_access_token();
         const response = await fetch(endpoint_url + '/v2/checkout/orders/' + body.orderID + '/capture', {
             method: 'POST',

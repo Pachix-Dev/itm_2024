@@ -189,6 +189,57 @@ export class RegisterModel {
 		}
 	}
 
+  // check code cortesia
+  static async check_code_cortesia (code_cortesia) {
+    const connection = await mysql.createConnection(config)
+    try {      
+      const [result] = await connection.query(
+        'SELECT * FROM codigos_cortesia WHERE code = ? AND already_used = "" ',
+        [
+          code_cortesia,          
+        ]
+      )
+      if (result.length === 0) {
+        return {
+          status: false,
+          message: 'Código invalido',    
+        }
+      }else{
+        return {
+          status: true,
+          result
+        }                
+      }
+    } finally {
+      await connection.end() // Close the connection
+    }
+  }
+  // use code cortesia
+  static async use_code_cortesia (code_cortesia) {
+    const connection = await mysql.createConnection(config)
+    try {      
+      const [result] = await connection.query(
+        'UPDATE codigos_cortesia SET already_used="si" WHERE code = ?',        
+        [
+          code_cortesia,          
+        ]
+      )
+      if (result.length === 0) {
+        return {
+          status: false,
+          message: 'Código invalido',    
+        }
+      }else{
+        return {
+          status: true,
+          result
+        }                
+      }
+    } finally {
+      await connection.end() // Close the connection
+    }
+  }
+
   // Create student register
   static async create_user_futuristic ({
     uuid,             
@@ -384,21 +435,26 @@ export class RegisterModel {
       company,
       hour,
       comments,
+      items,
       paypal_id_order, 
       paypal_id_transaction,
       total,
     }) {
       const connection = await mysql.createConnection(config)
+      const numero_personas = items.reduce((total, item) => total + item.quantity, 0);
+
       try {      
         const [result] = await connection.query(
-          'INSERT INTO oktoberfest_orders ( name, email, phone, company, hour, comments, paypal_id_order, paypal_id_transaction, total ) VALUES (?,?,?,?,?,?,?,?,?)',
+          'INSERT INTO oktoberfest_orders ( name, email, phone, company, hour, numero_personas, items, comments, paypal_id_order, paypal_id_transaction, total ) VALUES (?,?,?,?,?,?,?,?,?,?,?)',
           [                                   
             name,      
             email,
             phone,
             company,
             hour,
-            comments,
+            numero_personas,
+            JSON.stringify(items),
+            comments,          
             paypal_id_order, 
             paypal_id_transaction, 
             total,             
@@ -426,7 +482,7 @@ export class RegisterModel {
         'SELECT * FROM oktoberfest_orders WHERE hour = ?',
         [hour]
       )      
-      if (result.length >= 30) {
+      if (result.length >= 25) {
         return {
           status: false,
           message: 'Lo sentimos, ya no hay lugares disponibles para esta hora.',

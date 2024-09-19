@@ -36,10 +36,10 @@ const useRegisterForm = create(
             wannaBeExhibitor: "",
             alreadyVisited: [],
             
-
             complete_register: false,
             invoiceDownToLoad: "",
             item:{},
+            code_cortesia: "",
             
             setName: (name) => set({ name }),
             setPaternSurname: (paternSurname) => set({ paternSurname }),
@@ -75,6 +75,8 @@ const useRegisterForm = create(
 
             setCompleteRegister: (complete_register) => set({ complete_register }),
             setInvoiceDownToLoad: (invoiceDownToLoad) => set({ invoiceDownToLoad }),
+            setCode_cortesia: (code_cortesia) => set({code_cortesia}),
+
             incrementStep: () => set((state) => ({ 
                 step: state.step + 1 
             })),
@@ -117,10 +119,9 @@ const useRegisterForm = create(
                 levelInfluence: "",
                 wannaBeExhibitor: "",
                 alreadyVisited: [],
-                item:{},                
-                
+                item:{},
+                code_cortesia: ""        
             })
-
         }), 
         { name: "register-form" }
     )
