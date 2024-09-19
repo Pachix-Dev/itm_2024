@@ -108,7 +108,7 @@ const exhibitors_1 = [
     { src: '/exhibitors/impeweb_v2.webp ', alt: 'impeweb', width: 200 },
     { src: '/exhibitors/ita_color.webp', alt: 'ita', width: 200 },
     { src: '/exhibitors/manwinwin_software.webp', alt: 'manwinwin software', width: 200 },
-    { src: '/exhibitors/vita_energy.webp', alt: 'vita energy', width: 200 },
+    { src: '/exhibitors/vita_energy_v3.webp', alt: 'vita energy', width: 200 },
     { src: '/exhibitors/servi_bot.webp', alt: 'servi bot', width: 200 },
     { src: '/exhibitors/nidec.webp', alt: 'nidec', width: 200 },
     { src: '/exhibitors/n_mada.webp', alt: 'n-mada', width: 200 },
