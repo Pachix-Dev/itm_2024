@@ -116,6 +116,8 @@ const exhibitors_1 = [
     { src: '/exhibitors/instruments.webp', alt: 'manwinwin software', width: 200 },
     { src: '/exhibitors/icon_technologies.webp', alt: 'manwinwin software', width: 200 },
     { src: '/exhibitors/elo.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/hnc_v2.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/hexagon.webp', alt: 'manwinwin software', width: 200 },
   ]
 
 const alliesStrategic = [
