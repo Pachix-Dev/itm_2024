@@ -1,245 +1,252 @@
 ---
-import { t } from 'i18next'
-import { exhibitors_1 } from '../../data/constans_logos'
+import { t } from "i18next";
+import { exhibitors_1 } from "../../data/constans_logos";
 ---
 
 <section
-  class='container mx-auto px-4 py-10 text-center text-[#6C757D] font-bold uppercase'
+  class="container mx-auto px-4 py-10 text-center text-[#6C757D] font-bold uppercase"
 >
-<!-- PATROCINADORES PLATINO  -->
-  <div class='square_blue text-center font-bold text-xl lg:text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto'
+  <!-- PATROCINADORES PLATINO  -->
+  <div
+    class="square_blue text-center font-bold text-xl lg:text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto"
   >
-    {t('home.title-sponsors')}
+    {t("home.title-sponsors")}
   </div>
-  <div class='grid grid-cols-4 place-items-center sm:flex justify-center gap-6'>
+  <div class="grid sm:grid-cols-4 grid-cols-2 place-items-center sm:flex justify-center gap-6">
     <a
-      href='https://mx.mitsubishielectric.com/fa/en/'
-      target='_blank'
-      rel='noreferrer'
+      href="https://mx.mitsubishielectric.com/fa/en/"
+      target="_blank"
+      rel="noreferrer"
     >
       <img
-        src='/img/mitsubishi.webp'
-        class='img-fluid'
-        loading='lazy'
-        width='280'
-        alt='patrocinador ITM Mitsubishi'
+        src="/img/mitsubishi.webp"
+        class="img-fluid"
+        loading="lazy"
+        width="280"
+        alt="patrocinador ITM Mitsubishi"
       />
     </a>
-    <a href='http://www.misumimex.com/' target='_blank' rel='noreferrer'>
+    <a href="http://www.misumimex.com/" target="_blank" rel="noreferrer">
       <img
-        src='/img/misumi.webp'
-        width='280'
-        alt='patrocinador ITM MISUMI'
-        loading='lazy'
+        src="/img/misumi.webp"
+        width="280"
+        alt="patrocinador ITM MISUMI"
+        loading="lazy"
       />
     </a>
-    <a href='https://www.se.com/ww/en/' target='_blank' rel='noreferrer'>
+    <a href="https://www.se.com/ww/en/" target="_blank" rel="noreferrer">
       <img
-        src='/img/logoSchneider.webp'
-        width='250'
-        alt='patrocinador ITM schneider electric'
-        loading='lazy'
+        src="/img/logoSchneider.webp"
+        width="250"
+        alt="patrocinador ITM schneider electric"
+        loading="lazy"
       />
     </a>
     <a
-      href='https://www.siemens.com/mx/es.html'
-      target='_blank'
-      rel='noreferrer'
+      href="https://www.siemens.com/mx/es.html"
+      target="_blank"
+      rel="noreferrer"
     >
       <img
-        src='/img/siemens.webp'
-        width='230'
-        alt='patrocinador ITM schneider electric'
-        loading='lazy'
+        src="/img/siemens.webp"
+        width="230"
+        alt="patrocinador ITM schneider electric"
+        loading="lazy"
+      />
+    </a>
+  </div>
+
+  <!-- Patrocinador de Experiencia Digital  -->
+  <div class="square_blue text-center font-bold text-xl lg:text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto my-10">{t("home.experience-sponsor")} </div>
+  <div class="grid sm:grid-cols-4 place-items-center sm:flex justify-center gap-6">
+    <a
+      href="https://www.boschrexroth.com/es/mx/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img
+        src="/exhibitors/rexroth.webp"
+        width="270"
+        alt="patrocinador de experiencia digital ITM Rexroth"
+        loading="lazy"
       />
     </a>
   </div>
 
   <!-- Patrocinador Gold  -->
   <div
-    class='square_blue text-center font-bold text-xl lg:text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto my-10'
+    class="square_blue text-center font-bold text-xl lg:text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto my-10"
   >
-    {t('home.gold')}
+    {t("home.gold")}
   </div>
-  <div class='grid grid-cols-4 place-items-center sm:flex justify-center gap-6'>
+  <div class="grid sm:grid-cols-4 place-items-center sm:flex justify-center gap-6">
     <a
-      href='https://www.cisco.com/c/es_mx/index.html'
-      target='_blank'
-      rel='noreferrer'
+      href="https://www.cisco.com/c/es_mx/index.html"
+      target="_blank"
+      rel="noreferrer"
     >
       <img
-        src='/exhibitors/cisco.webp'
-        class='img-fluid'
-        loading='lazy'
-        width='250'
-        alt='CISCO'
+        src="/exhibitors/cisco.webp"
+        class="img-fluid"
+        loading="lazy"
+        width="250"
+        alt="CISCO"
       />
     </a>
-    <a href='https://isat.com.mx/' target='_blank' rel='noreferrer'>
-      <img
-        src='/exhibitors/isat.webp'
-        width='250'
-        alt='ISAT'
-        loading='lazy'
-      />
+    <a href="https://isat.com.mx/" target="_blank" rel="noreferrer">
+      <img src="/exhibitors/isat.webp" width="250" alt="ISAT" loading="lazy" />
     </a>
     <a
-      href='https://www.riobravosystems.com/es/rio-bravo-systems_es/'
-      target='_blank'
-      rel='noreferrer'
+      href="https://www.riobravosystems.com/es/rio-bravo-systems_es/"
+      target="_blank"
+      rel="noreferrer"
     >
       <img
-        src='/exhibitors/rio_bravo_systems.webp'
-        width='270'
-        alt='patrocinador ITM schneider electric'
-        loading='lazy'
+        src="/exhibitors/rio_bravo_systems.webp"
+        width="270"
+        alt="patrocinador ITM schneider electric"
+        loading="lazy"
       />
     </a>
   </div>
-
   <!-- Patrocinador Silver -->
   <div
-    class='square_blue text-center font-bold text-xl lg:text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto my-10'
+    class="square_blue text-center font-bold text-xl lg:text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto my-10"
   >
-    {t('home.silver')}
-  </div>
-  <div class='grid grid-cols-4 place-items-center sm:flex justify-center gap-6 mb-8'>
-    <a href='https://www.nokia.com/es_int/' target='_blank' rel='noreferrer'>
-      <img
-        src='/exhibitors/silver_Nokia.webp'
-        class='img-fluid'
-        loading='lazy'
-        width='180'
-        alt='Nokia'
-      />
-    </a>
-    <a href='https://www.telcel.com/empresas' target='_blank' rel='noreferrer'>
-      <img
-        src='/exhibitors/silver_telcel.webp'
-        class='img-fluid'
-        loading='lazy'
-        width='180'
-        alt='Telcel'
-      />
-    </a>
+    {t("home.silver")}
   </div>
   <div
-    class='square_blue text-center font-bold text-xl lg:text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto'
+    class="grid sm:grid-cols-4 place-items-center sm:flex justify-center gap-6 mb-8"
   >
-    Content Partner
+    <a href="https://www.nokia.com/es_int/" target="_blank" rel="noreferrer">
+      <img
+        src="/exhibitors/silver_Nokia.webp"
+        class="img-fluid"
+        loading="lazy"
+        width="180"
+        alt="Nokia"
+      />
+    </a>
+    <a href="https://www.telcel.com/empresas" target="_blank" rel="noreferrer">
+      <img
+        src="/exhibitors/silver_telcel.webp"
+        class="img-fluid"
+        loading="lazy"
+        width="180"
+        alt="Telcel"
+      />
+    </a>
   </div>
-  <div class='grid place-items-center justify-center space-y-4'>
-    <div class='grid md:flex gap-6 items-center'>
+  <!-- Content Partners -->
+  <div
+    class="square_blue text-center font-bold text-xl lg:text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto"
+  >
+    Content Partners
+  </div>
+  <div class="grid place-items-center justify-center space-y-4">
+    <div class="grid md:flex gap-6 items-center">
       <a
-        href='https://www.paloaltonetworks.com.mx/'
-        target='_blank'
-        rel='noreferrer'
+        href="https://www.paloaltonetworks.com.mx/"
+        target="_blank"
+        rel="noreferrer"
       >
         <img
-          src='/exhibitors/paloalto.webp'
-          class='img-fluid'
-          loading='lazy'
-          width='200'
-          alt='Palo Alto Networks'
+          src="/exhibitors/paloalto.webp"
+          class="img-fluid"
+          loading="lazy"
+          width="200"
+          alt="Palo Alto Networks"
         />
       </a>
-      <a
-        href='https://hexagon.com/es'
-        target='_blank'
-        rel='noreferrer'
-      >
+      <a href="https://hexagon.com/es" target="_blank" rel="noreferrer">
         <img
-          src='/exhibitors/hexagon.webp'
-          class='img-fluid'
-          loading='lazy'
-          width='200'
-          alt='hexagon'
+          src="/exhibitors/hexagon.webp"
+          class="img-fluid"
+          loading="lazy"
+          width="200"
+          alt="hexagon"
         />
       </a>
-      <a href='https://ientc.com/' target='_blank' rel='noreferrer'>
+      <a href="https://ientc.com/" target="_blank" rel="noreferrer">
         <img
-          src='/exhibitors/ientc_v2.webp'
-          class='img-fluid'
-          loading='lazy'
-          width='200'
-          alt='ientc'
+          src="/exhibitors/ientc_v2.webp"
+          class="img-fluid"
+          loading="lazy"
+          width="200"
+          alt="ientc"
         />
       </a>
     </div>
-    <div class='grid md:flex gap-6'>
-      <a
-        href='https://hitachi.com.mx/'  target='_blank'  rel='noreferrer'
-      >
+    <div class="grid md:flex gap-6">
+      <a href="https://hitachi.com.mx/" target="_blank" rel="noreferrer">
         <img
-          src='/exhibitors/hitachi_inspire.webp'
-          class='img-fluid'
-          loading='lazy'
-          width='200'
-          alt='hitachi'
+          src="/exhibitors/hitachi_inspire.webp"
+          class="img-fluid"
+          loading="lazy"
+          width="200"
+          alt="hitachi"
         />
       </a>
-
-      <a href='https://hitachi.com.mx/' target='_blank' rel='noreferrer'>
+      <a href="https://hitachi.com.mx/" target="_blank" rel="noreferrer">
         <img
-          src='/exhibitors/hitachi_energy_v2.webp'
-          class='img-fluid'
-          loading='lazy'
-          width='200'
-          alt='hitachi'
+          src="/exhibitors/hitachi_energy_v2.webp"
+          class="img-fluid"
+          loading="lazy"
+          width="200"
+          alt="hitachi"
         />
       </a>
     </div>
-    <div class='grid md:flex gap-6'>
+    <div class="grid md:flex gap-6">
       <a
-        href='https://www.extremenetworks.com/'
-        target='_blank'
-        rel='noreferrer'
+        href="https://www.extremenetworks.com/"
+        target="_blank"
+        rel="noreferrer"
       >
         <img
-          src='/img/extreme-networks.webp'
-          class='img-fluid'
-          loading='lazy'
-          width='180'
-          alt='extremenetworks'
+          src="/img/extreme-networks.webp"
+          class="img-fluid"
+          loading="lazy"
+          width="180"
+          alt="extremenetworks"
         />
       </a>
-      <a href='http://www.cassa.com.mx/' target='_blank' rel='noreferrer'>
+      <a href="http://www.cassa.com.mx/" target="_blank" rel="noreferrer">
         <img
-          src='/img/cassalogo.webp'
-          class='img-fluid'
-          loading='lazy'
-          width='200'
-          alt='patrocinador CASSA'
+          src="/img/cassalogo.webp"
+          class="img-fluid"
+          loading="lazy"
+          width="200"
+          alt="patrocinador CASSA"
         />
       </a>
     </div>
   </div>
   <div
-    class='mt-10 square_red text-center font-bold text-xl lg:text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto'
+    class="mt-10 square_red text-center font-bold text-xl lg:text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto"
   >
-    {t('menu.exhibitors_2_1')}
+    {t("menu.exhibitors_2_1")}
   </div>
   <!-- Se comenta carrucel de logos porque no les gusto :/  -->
   <!-- <Marquee partners={exhibitors_1} isLeftToRight={true} />
   <Marquee partners={exhibitors_2} isLeftToRight={false} /> -->
-
   <div
-    class='grid grid-cols-3 md:grid-cols-6 gap-6 md:m-10 sm:m-10 justify-evenly'
+    class="grid grid-cols-3 md:grid-cols-6 gap-6 md:m-10 sm:m-10 justify-evenly"
   >
     {
       exhibitors_1.map((logo, index) => (
-        <div class='flex justify-center items-center h-full'>
+        <div class="flex justify-center items-center h-full">
           <img
             src={logo.src}
             alt={logo.alt}
-            class='w-auto'
+            class="w-auto"
             style={{ width: logo.width }}
           />
         </div>
       ))
     }
   </div>
-  <p class='text-right font-extrabold text-2xl uppercase text-black'>
-    {t('home.others')}...
+  <p class="text-right font-extrabold text-2xl uppercase text-black">
+    {t("home.others")}...
   </p>
 </section>
