@@ -82,8 +82,8 @@ export function CheckoutForm({ currentLanguage, translate }) {
     )
   }
 
-  //const urlbase = 'https://industrialtransformation.mx/server/'
-  const urlbase = 'http://localhost:3010/'
+  const urlbase = 'https://industrialtransformation.mx/server/'
+  //const urlbase = 'http://localhost:3010/'
 
   async function createOrder() {
     const response = await fetch(urlbase + 'create-order-oktoberfest', {
