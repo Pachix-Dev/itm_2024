@@ -119,6 +119,8 @@ const exhibitors_1 = [
     { src: '/exhibitors/hnc_v2.webp', alt: 'manwinwin software', width: 200 },
     { src: '/exhibitors/hexagon.webp', alt: 'manwinwin software', width: 200 },
     { src: '/exhibitors/maper_v2.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/tolomatic_v2.webp', alt: 'manwinwin software', width: 200 },
+    { src: '/exhibitors/tierra_tech_v2.webp', alt: 'manwinwin software', width: 200 },
   ]
 
 const alliesStrategic = [
