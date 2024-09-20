@@ -36,6 +36,7 @@ export function StepOne({ translates }) {
   } = useForm({})
   const url = new URL(window.location.href)
 
+  const codigoAguascalientes = url.searchParams.get('code_invitation') || ''
   const param1 = url.searchParams.get('name') || ''
   const param2 = url.searchParams.get('paternName') || ''
   const param3 = url.searchParams.get('maternName') || ''
@@ -45,6 +46,7 @@ export function StepOne({ translates }) {
   const param7 = url.searchParams.get('typeRegister') || ''
 
   useEffect(() => {
+    if (codigoAguascalientes != '') setCodeInvitation(codigoAguascalientes)
     if (param1 === '') return
     setName(param1)
     if (param2 === '') return
@@ -59,7 +61,16 @@ export function StepOne({ translates }) {
     setPhone(param5)
     if (param3 === '') return
     setMaternSurname(param3)
-  }, [param1, param2, param3, param4, param5, param6, param7])
+  }, [
+    param1,
+    param2,
+    param3,
+    param4,
+    param5,
+    param6,
+    param7,
+    codigoAguascalientes,
+  ])
 
   return (
     <>
