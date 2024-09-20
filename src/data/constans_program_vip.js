@@ -461,10 +461,11 @@ const statge_1_day_2=[
                 "image": "/img/speakers/angelo_pansini.webp"
             },
             {
-                "name": "Asociación Europea de Pequeñas Empresas Espaciales (SME4Space) *",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
+                "id": "30",
+                "name": "Scott P. Flukinger",
+                "position": "Manager, International Government Sales",
+                "company": "Axiom Space",
+                "image": "/img/speakers/scottFlukinger.webp"
             },           
             {
                 "name": "Instituto de Investigación Aeroespacial de Corea del Sur (KARI) *",
