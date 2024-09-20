@@ -16,10 +16,10 @@ export function SearchExihibitor({ language }) {
   }
 
   return (
-    <section className='container mx-auto px-4 py-10 relative'>
+    <div className='relative w-fit'>
       <input
         type='text'
-        className='w-full h-12 px-4 rounded-xl text-black'
+        className='w-full h-12 px-4 rounded-xl text-black '
         placeholder='Search exhibitor'
         onChange={(e) => searchResults(e.target.value)}
       />
@@ -28,7 +28,7 @@ export function SearchExihibitor({ language }) {
         searchTerm.map((item, index) => (
           <div
             key={index}
-            className='grid md:grid-cols-4 items-center gap-10 py-10'
+            className='grid xl:grid-cols-4 items-center gap-10 py-10 '
           >
             <div className='rounded-xl bg-white'>
               <img
@@ -67,6 +67,7 @@ export function SearchExihibitor({ language }) {
                 {item.address}
               </div>
             </div>
+
             <div>
               <p className='font-bold text-lg'>{item.contact}</p>
               <p className='italic'>{item.position}</p>
@@ -212,6 +213,6 @@ export function SearchExihibitor({ language }) {
             </div>
           </div>
         ))}
-    </section>
+    </div>
   )
 }

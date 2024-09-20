@@ -5,7 +5,6 @@ import Meteors from "@/components/magicui/meteors";
 import { SearchExihibitor } from "../components/shared/SearchExihibitor.jsx";
 // @ts-ignore
 import { localizePath } from "astro-i18next";
-import { directory } from "../data/constans_directory";
 
 changeLanguage("es");
 
@@ -30,9 +29,23 @@ const path = localizePath("/consulta-directorio-digital");
         </p>
       </div>
     </section>
-    <SearchExihibitor language={i18next.language} client:idle />
+    <section
+      class='container mx-auto px-4 py-10 relative md:grid md:grid-flow-col gap-10'
+    >
+      <SearchExihibitor language={i18next.language} client:idle />
+      <div class='relative w-96'>
+        <a href='https://www.se.com/mx/es/' target='_blank'>
+          <img
+            src='/img/banner-directorio-digital-2.webp'
+            alt='Schneider'
+            class='w-96 fixed'
+          />
+        </a>
+      </div>
+    </section>
   </main>
 </Layout>
+
 <style>
   body {
     background-color: black;
