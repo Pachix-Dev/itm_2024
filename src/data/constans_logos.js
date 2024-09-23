@@ -1,5 +1,6 @@
 
 const exhibitors_1 = [
+    { src: '/exhibitors/a3_mexico.webp', alt: '', width: 170 },
     { src: '/exhibitors/altech.webp', alt: '', width: 170 },
     { src: '/exhibitors/benq.webp', alt: '', width: 170 },
     { src: '/exhibitors/ccg.webp', alt: '', width: 170 },
