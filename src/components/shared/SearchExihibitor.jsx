@@ -23,12 +23,18 @@ export function SearchExihibitor({ language }) {
         placeholder='Search exhibitor'
         onChange={(e) => searchResults(e.target.value)}
       />
-
+      <a href='https://www.telcel.com/empresas' target='_blank'>
+        <img
+          src='/img/telcel_empresas_itm_2.webp'
+          alt='Schneider'
+          class='mt-5 w-96'
+        />
+      </a>
       {searchTerm.length > 0 &&
         searchTerm.map((item, index) => (
           <div
             key={index}
-            className='grid xl:grid-cols-4 items-center gap-10 py-10 '
+            className='grid xl:grid-cols-3 2xl:grid-cols-4 items-center gap-10 py-10 '
           >
             <div className='rounded-xl bg-white'>
               <img

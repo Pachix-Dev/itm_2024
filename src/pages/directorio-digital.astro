@@ -34,13 +34,22 @@ const path = localizePath("/consulta-directorio-digital");
     >
       <SearchExihibitor language={i18next.language} client:idle />
       <div class='relative w-96'>
-        <a href='https://www.se.com/mx/es/' target='_blank'>
-          <img
-            src='/img/banner-directorio-digital-2.webp'
-            alt='Schneider'
-            class='w-96 fixed'
-          />
-        </a>
+        <div class='sticky top-0'>
+          <a href='https://www.se.com/mx/es/' target='_blank'>
+            <img
+              src='/img/banner-directorio-digital-2.webp'
+              alt='Schneider'
+              class='w-96'
+            />
+          </a>
+          <a href='https://www.telcel.com/empresas' target='_blank'>
+            <img
+              src='/img/telcel_empresas_itm.webp'
+              alt='Schneider'
+              class='mt-5 w-96'
+            />
+          </a>
+        </div>
       </div>
     </section>
   </main>
