@@ -342,7 +342,43 @@ const speakers = [
         description: "Rspecialista en ventas de energía digital en Schneider Electric. Es ingeniero mecánico, graduado del Instituto Politécnico Nacional, y ha complementado su formación con un diplomado en el Tecnológico de Monterrey. Posee un fuerte conocimiento técnico en el área eléctrica y es reconocido por su dedicación y compromiso en el trabajo.",
         description_en:"Specialist in digital energy sales at Schneider Electric. He is a mechanical engineer, graduated from the National Polytechnic Institute, and has complemented his training with a diploma at the Tecnológico de Monterrey. He has a strong technical knowledge in the electrical area and is recognized for his dedication and commitment at work.",
         image: "/img/speakers/edwinn-cortes.webp",
-    }
+    },
+    {
+        id: "37",
+        name: "José Medina Mora Icaza",
+        position: "Presidente Nacional",        
+        company: "COPARMEX",
+        description: "José Medina Mora Icaza es Ingeniero Civil por la Universidad Iberoamericana. Cuenta con dos maestrías en la Universidad de Stanford, una en Ciencias de Ingeniería con especialidad en Sistemas y la otra en Administración de Empresas con especialidad en Finanzas. Así como, un Doctorado profesional en Dirección de Proyectos de Ingeniería, también por la Universidad de Stanford. También cuenta con una Maestría en Gobierno y Políticas Públicas por la Universidad Panamericana, campus Guadalajara. Es fundador y presidente del Consejo de Administración de CompuSoluciones, una empresa integradora mayorista de soluciones de Tecnología de la Información y Comunicaciones. Desde enero de 2021 es presidente nacional de COPARMEX.",
+        description_en:"José Medina Mora Icaza holds a degree in Civil Engineering from the Universidad Iberoamericana. He holds two master's degrees from Stanford University, one in Engineering Sciences with a specialization in Systems and the other in Business Administration with a specialization in Finance. He also holds a Ph.D. in Engineering Project Management, also from Stanford University. He also holds a Master's degree in Government and Public Policy from Universidad Panamericana, Guadalajara campus. He is founder and Chairman of the Board of Directors of CompuSoluciones, a wholesale integrator of Information Technology and Communications solutions. Since January 2021, he has been national president of COPARMEX.",
+        image: "/img/speakers/jose_medina_mora.webp",
+    },
+    {
+        id: "38",
+        name: "David Epstein Waisman",
+        position: "Director tesorero y miembro",        
+        company: "Comité ejecutivo de la Sociedad Nacional de Industrias (SNI) Perú",
+        description: "Economista Senior. Ejecutivo creador de valor con más de 30 años de amplia experiencia profesional y multicultural en puestos clave y de alta dirección en empresas regionales y multinacionales, trabajando y residiendo en la región LATAM (Perú, Colombia, Panamá, Ecuador). Consultor de negocios y asesoría de primer nivel. Experiencia multisectorial en telecomunicaciones, BPO, logística, contact centers, retail, servicio al cliente, construcción, pesca y servicios financieros. Desarrollador de negocios, B2B, B2G, B2C, y experto en gestión de crisis. Conferencista internacional. Director tesorero y miembro del comité ejecutivo de la Sociedad Nacional de Industrias (SNI) del Perú.",
+        description_en:"Senior Economist. Value-creating executive with more than 30 years of extensive professional and multicultural experience in key and senior management positions in regional and multinational companies, working and residing in the LATAM region (Peru, Colombia, Panama, Ecuador). Top level business consultant and advisor. Multi-sector experience in telecommunications, BPO, logistics, contact centers, retail, customer service, construction, fishing and financial services. Business developer, B2B, B2G, B2C, and expert in crisis management. International speaker. Treasurer Director and member of the executive committee of the National Society of Industries (SNI) of Peru.",
+        image: "/img/speakers/david_epstein_waisman.webp",
+    },
+    {
+        id: "39",
+        name: "Hans Blomeier",
+        position: "Representante",        
+        company: "México de la Fundación Konrad Adenauer (KAS)",
+        description: "Hans Blomeier es ingeniero agrónomo de la Universidad de Kassel y ha sido el representante de las oficinas de la Fundación Konrad Adenauer (KAS) en diversos países, entre ellos Perú, Argentina, Chile, Uruguay, además de Reino Unido y la República de Irlanda. Ha sido jefe del departamento de América Latina en la oficina central de la KAS. El Ing. Blomeier es autor de numerosos artículos de análisis político, así como editor y co-autor de publicaciones (libros y revistas) de la KAS relacionados con la cooperación internacional, así como el desarrollo político y económico en los países a los que fue destinado. Actualmente es el representante de la KAS México desde mayo de 2018.",
+        description_en:"Hans Blomeier is an agricultural engineer from the University of Kassel and has been the representative of the offices of the Konrad Adenauer Foundation (KAS) in several countries, including Peru, Argentina, Chile, Uruguay, as well as the United Kingdom and the Republic of Ireland. He has been head of the Latin America department at KAS headquarters. Mr. Blomeier is the author of numerous articles of political analysis, as well as editor and co-author of KAS publications (books and magazines) related to international cooperation, as well as political and economic development in the countries to which he was assigned. He is currently the representative of KAS Mexico since May 2018.",
+        image: "/img/speakers/hans_blomeier.webp",
+    },
+    {
+        id: "40",
+        name: "Joachim Elsässer",
+        position: "Coordinador del Proyecto Asociación para el Desarrollo Industrial Sostenible Alemania-Alianza del Pacífico (PAGSID)",        
+        company: "Proyecto de cooperación de la Confederación de la Industria Alemana (BDI)",
+        description: "Joachim Elsässer coordina el proyecto PAGSID de la Confederación de la Industria Alemana (BDI), financiado por el Ministerio Federal de Cooperación Económica y Desarrollo de Alemania (BMZ). El proyecto PAGSID se enfoca en la promoción de una nueva cultura empresarial en cooperación con sus socios en México, Colombia y Perú. El Ing. Elsässer comenzó su carrera profesional como representante de la Fundación Konrad Adenauer en México, y ha desempeñado roles clave en la reestructuración de empresas en Alemania Oriental, la promoción de PyMEs en Eslovaquia y la coordinación de programas de cooperación en Europa Oriental y Asia Menor. Entre 2009 y 2016 representó a la Federación de la Industria del Estado de Baden-Württemberg (LVI) en Berlín, y desde 2016 se ha centrado en la cooperación con los países de la Alianza del Pacífico para la BDI.",
+        description_en:"Joachim Elsässer coordinates the PAGSID project of the Confederation of German Industry (BDI), funded by the German Federal Ministry for Economic Cooperation and Development (BMZ). The PAGSID project focuses on the promotion of a new entrepreneurial culture in cooperation with its partners in Mexico, Colombia and Peru. Elsässer started his professional career as a representative of the Konrad Adenauer Foundation in Mexico, and has played key roles in enterprise restructuring in East Germany, SME promotion in Slovakia and coordination of cooperation programs in Eastern Europe and Asia Minor. Between 2009 and 2016 he represented the Baden-Württemberg State Federation of Industry (LVI) in Berlin, and since 2016 he has focused on cooperation with the Pacific Alliance countries for the BDI.",
+        image: "/img/speakers/joachim_elsaesser.webp",
+    },
 ]
 
 export { speakers }

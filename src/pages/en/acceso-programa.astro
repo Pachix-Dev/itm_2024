@@ -2,12 +2,40 @@
 import { changeLanguage, t } from "i18next";
 import { Upgrade } from "../../components/register/Upgrade.jsx";
 import LayoutRegister from "../../layouts/LayoutRegister.astro";
+import { logosProgramVip } from "../../data/constans_logos.js";
 
 changeLanguage("en");
 ---
 
 <LayoutRegister title='SUMMIT CCE'>
   <main class='mt-10 md:mt-20 mx-6 py-10'>
+    <section class='mb-10 max-w-screen-lg mx-auto flex gap-6'>
+      {
+        logosProgramVip.map((logo) => (
+          <a
+            href={logo.link}
+            target='_blank'
+            class='bg-white rounded-2xl grid place-items-center p-2'
+          >
+            <img src={logo.src} alt={logo.alt} width='200' />
+          </a>
+        ))
+      }
+      <a
+        href=''
+        target='_blank'
+        class='bg-white rounded-2xl grid place-items-center p-2'
+      >
+        <img src='/img/V3.png' alt='ITM' width='200' />
+      </a>
+      <a
+        href='https://amofexpo.igeco.mx/'
+        target='_blank'
+        class='bg-white rounded-2xl grid place-items-center p-2'
+      >
+        <img src='/img/amof_nuevo_logo.webp' alt='amof' width='200' />
+      </a>
+    </section>
     <h1
       class='text-[#E42128] text-3xl md:text-5xl leading-snug font-extrabold text-center uppercase'
     >

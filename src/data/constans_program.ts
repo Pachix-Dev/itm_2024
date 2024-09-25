@@ -131,7 +131,7 @@ const stage_1_day_2: Program[] = [
     },
     {
         "title": "Redes privadas 5G e Industria 4.0",
-        "description": "rendimiento - tienen un rol relevante en la materialización de las beneficios de la digitalización de las operaciones. La totalidad de las empresas que ya tienen desplegadas redes privadas LTE o 5G, expanden su aplicación a casos de uso no previstos cuando se implementó por primera vez, o las despliegan en ubicaciones industriales no contempladas inicialmente. Revisaremos cuáles y cuan relevantes son dichos beneficios y cómo se consiguen, cómo se encuentra México en su adopción y alguna sugerencia para reducir la actual brecha.",
+        "description": "Las redes privadas LTE y 5G - infraestructura inalámbrica segura, fiable y de alto rendimiento - tienen un rol relevante en la materialización de las beneficios de la digitalización de las operaciones. La totalidad de las empresas que ya tienen desplegadas redes privadas LTE o 5G, expanden su aplicación a casos de uso no previstos cuando se implementó por primera vez, o las despliegan en ubicaciones industriales no contempladas inicialmente. Revisaremos cuáles y cuan relevantes son dichos beneficios y cómo se consiguen, cómo se encuentra México en su adopción y alguna sugerencia para reducir la actual brecha.",
         "time": "11:45 hrs",
         "duration": "45 mins",
         "speakers": [
@@ -507,10 +507,39 @@ const stage_2_day_2: Program[] = [
     {
         "title": "Panel CDIS: El Modelo de Desarrollo Inclusivo",
         "title_en": "CDIS Panel: The Inclusive Development Model",
-        "description": "",
+        "description": "El Modelo de Desarrollo Inclusivo (MDI) de COPARMEX y USEM es una propuesta que busca promover un crecimiento económico que beneficie a todos los sectores de la sociedad, fomentando la inclusión y reducción de desigualdades. La idea central es generar un desarrollo sostenible que no solo se centre en el crecimiento del PIB, sino también en el bienestar de las personas. El objetivo del panel es intercambiar propuestas para promover una nueva cultura empresarial en México y Latinoamérica que fortalezca – desde una perspectiva holística – la competitividad económica, el desarrollo social y el cuidado del medio ambiente, y esté orientada al cumplimiento de los ODS de las Naciones Unidas.",
         "time": "13:00 hrs",
         "duration": "60 mins",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "37",
+                "name": "José Medina Mora Icaza",
+                "position": "Presidente Nacional",
+                "company": "COPARMEX",
+                "image": "/img/speakers/jose_medina_mora.webp"
+            },
+            {
+                "id": "38",
+                "name": "David Epstein",
+                "position": "Director tesorero y miembro del comité ejecutivo ",
+                "company": "Sociedad Nacional de Industrias (SNI) Perú",
+                "image": "/img/speakers/david_epstein_waisman.webp"
+            },
+            {
+                "id": "39",
+                "name": "Hans Blomeier",
+                "position": "Representante",
+                "company": "México de la Fundación Konrad Adenauer (KAS)",
+                "image": "/img/speakers/hans_blomeier.webp"
+            },
+            {
+                "id": "40",
+                "name": "Joachim Elsässer",
+                "position": "Coordinador del Proyecto Asociación para el Desarrollo Industrial Sostenible Alemania-Alianza del Pacífico (PAGSID",
+                "company": "Proyecto de cooperación de la Confederación de la Industria Alemana (BDI)",
+                "image": "/img/speakers/joachim_elsaesser.webp"
+            }
+        ]
     },
     {
         "title": "Panel CDIS: Liderazgo Empresarial en la Transformación Digital Sostenible",
