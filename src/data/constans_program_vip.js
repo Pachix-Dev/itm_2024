@@ -692,6 +692,15 @@ const stage_2_day_2=[
         "speakers": []
     },
     {
+        "title": "La ruta hacia la descarbonización de los vehículos pesados",
+        "title_en": "",
+        "description": "",
+        "description_en": "",
+        "time": "16:00 hrs",
+        "duration": "30 mins",
+        "speakers": []
+    },
+    {
         "title": "Capacitación y Desarrollo en la Industria Automotriz 4.0 y el papel de los jóvenes en la Transformación de la Movilidad",
         "title_en": "Training and Development in the Automotive Industry 4.0 and the role of young people in the Transformation of Mobility",
         "description": "",

@@ -19,13 +19,35 @@ interface Program {
 
 const stage_1_day_1: Program[] = [
     {
-        "title": "El futuro del end of arm tooling by Mitsubishi",
-        "title_en": "The future of end of arm tooling by Mitsubishi",
+        "title": "Entrega de licencias Mitsubishi Electric Automation - IBERO ",
+        "title_en": "Delivery of Mitsubishi Electric Automation Licenses - IBERO ",
         "description": "",
         "description_en": "",
         "time": "12:00 hrs",
         "duration": "45 mins",
-        "speakers": []
+        "speakers": [
+            {            
+                "id": "0",    
+                "name": "Scott Summerville",
+                "position": "CEO",
+                "company": "Mitsubishi Electric Automation",
+                "image": "/img/speakers/scott_summerville.webp"
+            },
+            {            
+                "id": "0",    
+                "name": "Juan Flores Pelcastre",
+                "position": "Director",
+                "company": "Parque Tecnológico Ibero Innovación",
+                "image": "/img/speakers/juan_flores_pelcastre.webp"
+            },
+            {            
+                "id": "0",    
+                "name": "Mark Fountain",
+                "position": "Business Development Manager",
+                "company": "ICONICS",
+                "image": "/img/speakers/mark_fountain.webp"
+            }
+        ]
     },
     {
         "title": "Tu tiempo, nuestra prioridad",
@@ -73,6 +95,30 @@ const stage_1_day_1: Program[] = [
                 "company": "Siemens México, Centroamérica y el Caribe",
                 "image": "/img/speakers/valeriarivera.webp"
             }
+        ]
+    },
+    {
+        "title": "Electrificación y Sostenibilidad en la Industria",
+        "title_en": "Electrification and Sustainability in Industry",
+        "description": "En esta fascinante charla, exploraremos la convergencia de la electricidad, el control y la automatización, y su impacto en la industria moderna. Desde las últimas innovaciones en electrificación hasta las soluciones sostenibles que están transformando el panorama industrial, descubrirás cómo la integración de estos dos mundos impulsa la eficiencia y la sostenibilidad. Únete a nosotros para sumergirte en el emocionante futuro de la industria a través de la electrificación inteligente y sostenible.",
+        "description_en": "",
+        "time": "14:15 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {         
+                "id": "41",                      
+                "name": "Fernanda Alatorre",
+                "position": "BDM Busway",
+                "company": "ASCO & wireway, Schneider Electric",
+                "image": "/img/speakers/fernanda_alatorre.webp"
+            },
+            {         
+                "id": "42",                      
+                "name": "Valeria Legorreta",
+                "position": "Mexico Global Template",
+                "company": "Schneider Electric",
+                "image": "/img/speakers/valeria_legorreta.webp"
+            },            
         ]
     },
     {
@@ -215,6 +261,43 @@ const stage_1_day_2: Program[] = [
         ]
     },
     {
+        "title": "⁠Innovación energética para las industrias mexicanas",
+        "description": "La generación distribuida con energía fotovoltaica y la penetración de sistemas de almacenamiento de energía en aplicaciones industriales han tenido un crecimiento muy sustantivo en el país en los últimos años. Existen casos de éxito industriales en México en donde la combinación de ambas soluciones han dado muy importantes ahorros de energía para el usuario así como su contribución al uso de energía renovable.",
+        "time": "14:45 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {
+                "id":"43",
+                "name": "Alejandro Fajer Botaya",
+                "position": "Director de Operaciones",
+                "company": "Quartux",
+                "image": "/img/speakers/alejandro_fajer.webp"
+            },
+            {
+                "id":"44",
+                "name": "Jorge Carlos Obregón Franco",
+                "position": "Director Comercial",
+                "company": "Vita Energy",
+                "image": "/img/speakers/jorge_carlos_obregon.webp"
+            },
+        ]
+    },
+    {
+        "title": "Comunicaciones Inalámbricas, un facilitador clave para las smart cities.",
+        "description": "Descubre todas las aplicaciones que se pueden trasmitir a través de las redes inalámbricas por medio de nuestras antenas TROPOS que son un facilitador de las Smart Cities, y con MicroSCADA podremos ver cómo hay una integración de renovables, creación de micro grids, monitoreo en tiempo real del flujo energético en las industrias además otras ventajas.",
+        "time": "15:30 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {
+                "id":"45",
+                "name": "Israel García Palacios",
+                "position": "Market Manager de la Unidad de Negocio para Automatización de Redes",
+                "company": "Hitachi Energy",
+                "image": "/img/speakers/israel_garcia_r.webp"
+            },            
+        ]
+    },
+    {
         "title": "La transformación del diecasting by Mitsubishi",
         "description": "",
         "time": "16:15 hrs",
@@ -283,11 +366,33 @@ const stage_1_day_3: Program[] = [
         ]
     },
     {
-        "title": "Procesos de inspección a la medida by Mitsubishi",
+        "title": "El futuro de la sujeción industrial automatizada",
         "description": "",
         "time": "13:15 hrs",
         "duration": "45 mins",
-        "speakers": []
+        "speakers": [
+            {
+                "id" :"46",
+                "name": "Cristobal Calva",
+                "position": "Inside Sales Manager Clamping, Gripping and Automation Technology",
+                "company": "SCHUNK",
+                "image": "/img/speakers/cristobal_calva.webp"
+            },
+            {
+                "id" :"0",
+                "name": "Maximiliano Hernández",
+                "position": "",
+                "company": "Mitsubishi Electric",
+                "image": "/img/speakers/maximiliano_hernandez.webp"
+            },
+            {
+                "id" :"0",
+                "name": "Alejandro Horta",
+                "position": "",
+                "company": "IKA Technology",
+                "image": "/profile.svg"
+            }
+        ]
     },
     {
         "title": "Sistemas de Control y Automatización DCS - PLC - Scada para aumentar la sustentabilidad de las industrias",        "description": "Sistemas de control distribuido, como disminuir el cableado eléctrico en un proyecto donde se tiene miles de señales analógicas, digitales, que tradicionalmente se deben cablear desde el punto de medición hasta el cuarto de control. Con el uso de un sistema por fibra óptica se disminuye el cableado punto a punto.",
@@ -420,6 +525,22 @@ const stage_2_day_1: Program[] = [
         ]
     },
     {
+        "title": "Aplicación de la Twin Transition Hacer real la digitalización sostenible ",
+        "title_en": "",
+        "description": "",
+        "time": "14:15 hrs",
+        "duration": "60 mins",
+        "speakers": [
+            {                           
+                "id": "0",
+                "name": "Panel Camexa",
+                "position": "",
+                "company": "",
+                "image": "/profile.svg"
+            }
+        ]
+    },
+    {
         "title": "Automatización con IMPACTO: Productividad, calidad y sostenibilidad",
         "title_en": "",
         "description": "Obtén una visión integral de las tendencias actuales y futuras en el campo de la automatización, destacando cómo esta tecnología está remodelando la industria. Durante la sesión, se abordarán temas como la Industria 4.0, el Internet Industrial de las Cosas (IIoT), la inteligencia artificial aplicada a la manufactura, y la digitalización de procesos industriales. Además, se destacará el papel pionero de Schneider Electric en la conducción de esta revolución tecnológica.",
@@ -499,10 +620,39 @@ const stage_2_day_2: Program[] = [
     {
         "title": "Inauguración de la Cumbre de Desarrollo Industrial Sostenible",
         "title_en": "Inauguration of the Sustainable Industrial Development Summit",
-        "description": "",
+        "description": "La Cumbre Desarrollo Industrial Sostenible 2024, es un evento organizado en colaboración con la Fundación Konrad Adenauer (KAS), Italian German Exhibition Company (IGECO) y el proyecto “Asociación para el Desarrollo Industrial Sostenible Alemania-Alianza del Pacífico” (PAGSID) de la Confederación de la Industria Alemana (BDI), cuyo objetivo es el de intercambiar experiencias, compartir buenas prácticas, y promover el diálogo internacional para un desarrollo industrial sostenible en Latinoamérica, con enfoque en tres ejes: 1. El Modelo de Desarrollo Inclusivo: la nueva directriz del sector empresarial latinoamericano. 2. Liderazgo Empresarial para la Transformación Digital Sostenible. 3. Nearshoring y cadenas globales de valor sostenibles.",
         "time": "12:45 hrs",
         "duration": "15 mins",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "47",
+                "name": "Wolfgang Niedermark",
+                "position": "Miembro del Consejo Ejecutivo ",
+                "company": "Confederación de la Industria Alemana (BDI)",
+                "image": "/img/speakers/orador_wolfgang_niedermark.webp"
+            },
+            {
+                "id": "38",
+                "name": "David Epstein",
+                "position": "Director tesorero y miembro",
+                "company": "Comité ejecutivo de la Sociedad Nacional de Industrias (SNI) Perú",
+                "image": "/img/speakers/david_epstein_waisman.webp"
+            },
+            {
+                "id": "37",
+                "name": "José Medina Mora Icaza",
+                "position": "Presidente Nacional",
+                "company": "COPARMEX",
+                "image": "/img/speakers/jose_medina_mora.webp"
+            },
+            {
+                "id": "37",
+                "name": "Hans Blomeier",
+                "position": "Representante",
+                "company": "México de la Fundación Konrad Adenauer (KAS)",
+                "image": "/img/speakers/hans_blomeier.webp"
+            }
+        ]
     },
     {
         "title": "Panel CDIS: El Modelo de Desarrollo Inclusivo",
@@ -702,6 +852,29 @@ const stage_2_day_3: Program[] = [
                 "position": "General Manager International Mechatronics",
                 "company": "Sumitomo Drive Technologies",
                 "image": "/img/speakers/Fernando_Vazquez.webp"
+            }
+        ]
+    },
+    {
+        "title": "Industria 5.0 La era colaborativa",
+        "title_en": "Industry 5.0 The collaborative era",
+        "description": "En la presentación La era colaborativa e industria 5.0, se explorará cómo la robótica colaborativa está dando paso a una nueva era donde robots y humanos co-crean en aplicaciones antes inimaginables. Esta transformación marca un cambio de paradigma hacia una industria centrada en el ser humano, donde la sostenibilidad y la resiliencia son clave. Inspirará a futuros líderes a soñar en grande, liderando con propósito hacia un futuro donde la tecnología y la humanidad avanzan juntos, creando una industria más eficiente y consciente de su impacto en el planeta y la sociedad.	",
+        "time": "15:15 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {
+                "id": "0",
+                "name": "Uriel Fraire",
+                "position": "General Manager Mexico and Central America",
+                "company": "Universal Robots",
+                "image": "/profile.svg"
+            },
+            {
+                "id": "0",
+                "name": "Xavier Quintero",
+                "position": "Sales & Engineering Manager",
+                "company": "HTL Electronics",
+                "image": "/profile.svg"
             }
         ]
     },
