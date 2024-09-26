@@ -694,10 +694,46 @@ const stage_2_day_2: Program[] = [
     {
         "title": "Panel CDIS: Liderazgo Empresarial en la Transformación Digital Sostenible",
         "title_en": "CDIS Panel: Business Leadership in Sustainable Digital Transformation",
-        "description": "",
+        "description": "La Transformación Digital Sostenible emerge como una poderosa herramienta para abordar problemáticas y riesgos de una manera efectiva y responsable. Según el último informe del Foro Económico Mundial, los riesgos tecnológicos ocupan los primeros puestos de la percepción social a dos y diez años, y algunos de los motivos son la ciberseguridad y el peligro de un desarrollo adverso de la IA.Todo esto podría llevarnos a pensar que las nuevas tecnologías y la digitalización son un riesgo para la creación de un futuro sostenible. Sin embargo, una digitalización responsable – entendida como el uso responsable de la tecnología digital para lograr un impacto positivo en la sociedad y el planeta – puede tener muchas ventajas. En especial, aquellas ligadas a la sostenibilidad empresarial, los ODS y la Agenda 2030 de la ONU. En el panel, exploraremos a la digitalización como catalizadora de la sostenibilidad, analizando los desafíos, oportunidades y ventajas que nos ofrece.",
         "time": "14:00 hrs",
         "duration": "60 mins",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "15",
+                "name": "Valeria Rivera",
+                "position": "Directora de Comunicaciones y Desarrollo de Negocios para México",
+                "company": "Centroamérica y el Caribe, Siemens",
+                "image": "/img/speakers/valeriarivera.webp"
+            },
+            {
+                "id": "15",
+                "name": "Azul Ogazón",
+                "position": "Subdirectora General",
+                "company": "Italian German Exhibition Company (IGECO) México",
+                "image": "/img/speakers/azul_ogazon.webp"
+            },
+            {
+                "id": "0",
+                "name": "René Freudenberg",
+                "position": "CEO",
+                "company": "Interlub Group México",
+                "image": "/profile.svg"
+            },
+            {
+                "id": "49",
+                "name": "Martin Reaño Vera",
+                "position": "Gerente del Comité Textil-Confección",
+                "company": "Sociedad Nacional de Industrias (SNI) del Perú",
+                "image": "/img/speakers/martin_reano_vera.webp"
+            },
+            {
+                "id": "50",
+                "name": "Germán Bonilla",
+                "position": "Experto del Proyecto Asociación para el Desarrollo Industrial Sostenible Alemania-Alianza del Pacífico (PAGSID)",
+                "company": "Proyecto de cooperación de la Confederación de la Industria Alemana (BDI)",
+                "image": "/img/speakers/german_bonilla_bermudez.webp"
+            }
+        ]
     },
     {
         "title": "Panel CDIS: Nearshoring y cadenas globales de valor sostenibles",
@@ -705,7 +741,43 @@ const stage_2_day_2: Program[] = [
         "description": "",
         "time": "15:00 hrs",
         "duration": "60 mins",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "47",
+                "name": "Wolfgang Niedermark",
+                "position": "Miembro del Consejo Ejecutivo",
+                "company": "Confederación de la Industria Alemana (BDI)",
+                "image": "/img/speakers/orador_wolfgang_niedermark.webp"
+            },
+            {
+                "id": "51",
+                "name": "Francisco N. González Díaz",
+                "position": "Presidente Ejecutivo",
+                "company": "Industria Nacional de Autopartes (INA)",
+                "image": "/img/speakers/francisco_gonzalez_diaz.webp"
+            },
+            {
+                "id": "52",
+                "name": "Ana Gutiérrez",
+                "position": "Coordinadora de comercio exterior y mercado laboral",
+                "company": "Instituto Mexicano para la Competitividad (IMCO)",
+                "image": "/profile.svg"
+            },
+            {
+                "id": "12",
+                "name": "Johannes Dobinger",
+                "position": "Representante",
+                "company": "ONUDI para México y América Central",
+                "image": "/img/speakers/johannes_dobinger.webp"
+            },
+            {
+                "id": "37",
+                "name": "Hans Blomeier",
+                "position": "Representante",
+                "company": "México de la Fundación Konrad Adenauer (KAS)",
+                "image": "/img/speakers/hans_blomeier.webp"
+            }
+        ]
     },
     {
         "title": "Innovación de IMPACTO: Mujeres que automatizan las Industrias del Futuro",
