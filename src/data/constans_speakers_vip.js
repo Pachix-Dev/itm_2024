@@ -257,6 +257,24 @@ const speakers_vip = [
         description_en: "Scott Flukinger acts as an international government partner lead for Axiom Space, a Houston, Texas-based provider of human spaceflight services and human-rated space infrastructure.  While developing next-generation products like Axiom Station, the successor to the International Space Station, and Axiom Space spacesuits (Axiom Extravehicular Mobility Unit, AxEMU), Axiom Space operates end-to-end missions to the ISS today for customers pursuing scientific research, educational outreach and other innovative uses of microgravity for the benefit of all. For over 25 years, Scott has represented international entities pursuing business, investment and policy objectives across North America in a variety of business development, government relations and legal roles, with a special emphasis upon technology-driven, cross-border, public-private partnerships.  Previously, he has served as a senior advisor in Canada-US trade practice at several law firms in Washington, D.C., Trade Commissioner at the Canadian Consulate General in Dallas, and as an independent strategic advisor to elected and public sector leaders across North America. Scott earned his BA at Rice University in Houston, Texas, and a JD from the University of Texas at Austin.",
         image: "/img/speakers/scottFlukinger.webp"
     },
+    {
+        id: "31",
+        name: "Marco Astua",
+        position: "Distributor Sales Expert/Senior Manager - Country",        
+        company: "Schneider Electric",
+        description: "Marco Astua es ingeniero electrónico por parte del Tecnológico de Costa Rica, con un máster en Project Management de la Universidad para la Cooperación Internacional. Ha sido parte de Schneider Electric durante 8 años y actualmente se desempeña como Sales Manager para la business unit de Digital Energy. Con más de 12 años de experiencia en proyectos de automatización y eléctricos, incluyendo tres años de experiencia internacional en EE.UU. y Brasil, su misión es ayudar a las personas en su camino hacia la descarbonización. Su expertise abarca temas como microredes, recursos energéticos distribuidos, plantas de energía virtual, software de optimización para líneas de distribución e inteligencia artificial.",
+        description_en:"Marco Astua is an electronic engineer from Tecnológico de Costa Rica, with a master's degree in Project Management from the University for International Cooperation. He has been with Schneider Electric for 8 years and currently serves as Sales Manager for the Digital Energy business unit. With more than 12 years of experience in automation and electrical projects, including three years of international experience in the USA and Brazil, his mission is to help people on their way to decarbonization. His expertise covers topics such as microgrids, distributed energy resources, virtual power plants, optimization software for distribution lines and artificial intelligence.",
+        image: "/img/speakers/marco_astua.webp",
+    },
+    {
+        id: "32",
+        name: "Leonardo Fernandez",
+        position: "Multi Country Future Offer Manager",        
+        company: "Schneider Electric",
+        description: "Marco Astua es ingeniero electrónico por parte del Tecnológico de Costa Rica, con un máster en Project Management de la Universidad para la Cooperación Internacional. Ha sido parte de Schneider Electric durante 8 años y actualmente se desempeña como Sales Manager para la business unit de Digital Energy. Con más de 12 años de experiencia en proyectos de automatización y eléctricos, incluyendo tres años de experiencia internacional en EE.UU. y Brasil, su misión es ayudar a las personas en su camino hacia la descarbonización. Su expertise abarca temas como microredes, recursos energéticos distribuidos, plantas de energía virtual, software de optimización para líneas de distribución e inteligencia artificial.",
+        description_en:"Marco Astua is an electronic engineer from Tecnológico de Costa Rica, with a master's degree in Project Management from the University for International Cooperation. He has been with Schneider Electric for 8 years and currently serves as Sales Manager for the Digital Energy business unit. With more than 12 years of experience in automation and electrical projects, including three years of international experience in the USA and Brazil, his mission is to help people on their way to decarbonization. His expertise covers topics such as microgrids, distributed energy resources, virtual power plants, optimization software for distribution lines and artificial intelligence.",
+        image: "/img/speakers/leonardo_fernandez.webp",
+    },
     
 ]
 

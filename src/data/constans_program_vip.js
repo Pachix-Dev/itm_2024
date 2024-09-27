@@ -638,12 +638,27 @@ const stage_2_day_2=[
         ]
     }, 
     {
-        "title": "Fireside chat pendiente",
-        "title_en": "Pending fireside chat",
-        "description": "",
+        "title": "Movilidad Eléctrica: Tendencias Destacadas en México",
+        "title_en": "Electric Mobility: Outstanding Trends in Mexico",
+        "description": "Esta plática ofrece una importante visión de las tendencias emergentes en el sector de la e-movilidad en México, abordando la adopción de vehículos eléctricos, el desarrollo de infraestructura de carga y el impacto en el panorama industrial y medioambiental del país. Además, se examinará el contexto actual de la industria y del sector, brindando una comprensión integral de los avances y desafíos en el ámbito de la movilidad eléctrica en México.",
         "time": "12:00 hrs",
         "duration": "30 mins",
-        "speakers": []
+        "speakers": [
+            {          
+                "id": "31", 
+                "name": "Marco Astua",
+                "position": "Digital Energy and Prosumer Sales Manager",
+                "company": "Schneider Electric",
+                "image": "/img/speakers/marco_astua.webp"
+            },
+            {          
+                "id": "32", 
+                "name": "Leonardo Fernandez",
+                "position": "Multi Country Future Offer Manager",
+                "company": "Schneider Electric",
+                "image": "/img/speakers/leonardo_fernandez.webp"
+            },
+        ]
     },    
     {
         "title": "Los desafíos regulatorios de la electromovilidad en México – Una perspectiva de la industria",
@@ -698,7 +713,15 @@ const stage_2_day_2=[
         "description_en": "",
         "time": "16:00 hrs",
         "duration": "30 mins",
-        "speakers": []
+        "speakers": [
+            { 
+                "id": "0",                
+                "name": "Ernesto Del Blanco",
+                "position": "Presidente ",
+                "company": "Consejo de Administración de ELAM - FAW",
+                "image": "/profile.svg"
+            },
+        ]
     },
     {
         "title": "Capacitación y Desarrollo en la Industria Automotriz 4.0 y el papel de los jóvenes en la Transformación de la Movilidad",

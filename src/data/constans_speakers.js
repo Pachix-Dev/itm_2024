@@ -487,6 +487,7 @@ const speakers = [
         description_en:"",
         image: "/profile.svg",
     },
+    
 ]
 
 export { speakers }
