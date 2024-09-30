@@ -562,7 +562,20 @@ const stage_2_day_1: Program[] = [
         "description": "",
         "time": "16:00 hrs",
         "duration": "45 mins",
-        "speakers": []
+        "speakers": [
+            {                
+                "name": "Nobuhiro Nakajima",
+                "position": "Director General",
+                "company": "JETRO",
+                "image": "/img/speakers/nobuhiro-nakajima.webp"
+            },
+            {                                           
+                "name": "Víctor Fuentes",
+                "position": "Head of Strategic Marketing LATAM",
+                "company": "Mitsubishi Electric Automation ",
+                "image": "/img/speakers/victor_fuentes.webp"
+            }
+        ]
     },    
     {
         "title": "Industrial Transformation",
