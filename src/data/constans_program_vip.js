@@ -744,7 +744,7 @@ const stage_2_day_2=[
                 "name": "Marco Cosio",
                 "position": "Vice Presidente de Smart Infrastructure ",
                 "company": "Siemens México, Centroamérica y el Caribe",
-                "image": "/img/speakers/marco_cosio.webp"
+                "image": "/img/speakers/marco-cosio.webp"
             },
         ]
     },
