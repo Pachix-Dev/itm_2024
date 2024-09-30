@@ -10,7 +10,9 @@ changeLanguage("es");
   <main class='container mx-auto px-4 md:px-20 my-10'>
     <h1 class='font-bold text-4xl'>{t('hotels.title')}</h1>
     <p class='mt-5' set:html={t('hotels.description')} />
-    <p class='mt-5 font-extrabold text-3xl text-[#e8001e]'>{t('hotels.code_reservation')}</p>
+    <p class='mt-5 font-extrabold text-3xl text-[#e8001e]'>
+      {t('hotels.code_reservation')}
+    </p>
     <div class='mt-10 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'>
       {
         hotels.map((hotel) => {
@@ -112,6 +114,13 @@ changeLanguage("es");
           )
         })
       }
+      <a
+        href='https://www.sealand.com.mx/leon/'
+        target='_blank'
+        class='lg:col-span-3 object-cover'
+      >
+        <img src='/img/bannerSealand.webp' alt='SEALAND' />
+      </a>
     </div>
   </main>
 </Layout>
