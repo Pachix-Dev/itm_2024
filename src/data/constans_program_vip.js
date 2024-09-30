@@ -538,6 +538,24 @@ const stage_2_day_1=[
                 "company": "Siemens",
                 "image": "/img/speakers/alejandroCanela.webp",
 
+            },
+            {
+            
+                "id": "0",
+                "name": "Francisco Fernando Monje Fernandez",
+                "position": "Gerencia de Implementación Tecnológica para Ciclo de Vida de Producto y Desarrollo Tecnológico del Cluster Stellantis",
+                "company": "Siemens",
+                "image": "/img/speakers/francisco_monje.webp",
+
+            },
+            {
+            
+                "id": "0",
+                "name": "Paul Pagnoulle De la Rosa",
+                "position": "Engineering Design Manager",
+                "company": "Ford",
+                "image": "/img/speakers/paul_de_la_rosa.webp",
+
             }
         ]
     },
@@ -719,7 +737,14 @@ const stage_2_day_2=[
                 "name": "Ernesto Del Blanco",
                 "position": "Presidente ",
                 "company": "Consejo de Administración de ELAM - FAW",
-                "image": "/profile.svg"
+                "image": "/img/speakers/ernesto_blanco.webp"
+            },
+            { 
+                "id": "0",                
+                "name": "Marco Cosio",
+                "position": "Vice Presidente de Smart Infrastructure ",
+                "company": "Siemens México, Centroamérica y el Caribe",
+                "image": "/img/speakers/marco_cosio.webp"
             },
         ]
     },
