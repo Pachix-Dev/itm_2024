@@ -646,7 +646,7 @@ const stage_2_day_2: Program[] = [
                 "image": "/img/speakers/jose_medina_mora.webp"
             },
             {
-                "id": "37",
+                "id": "39",
                 "name": "Hans Blomeier",
                 "position": "Representante",
                 "company": "México de la Fundación Konrad Adenauer (KAS)",
@@ -706,7 +706,7 @@ const stage_2_day_2: Program[] = [
                 "image": "/img/speakers/valeriarivera.webp"
             },
             {
-                "id": "15",
+                "id": "48",
                 "name": "Azul Ogazón",
                 "position": "Subdirectora General",
                 "company": "Italian German Exhibition Company (IGECO) México",
@@ -771,7 +771,7 @@ const stage_2_day_2: Program[] = [
                 "image": "/img/speakers/johannes_dobinger.webp"
             },
             {
-                "id": "37",
+                "id": "39",
                 "name": "Hans Blomeier",
                 "position": "Representante",
                 "company": "México de la Fundación Konrad Adenauer (KAS)",
