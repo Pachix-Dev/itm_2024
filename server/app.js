@@ -699,6 +699,7 @@ app.get('/template-email', async (req, res) => {
     res.send(emailContent);
 });
 
+// endpoints para registro en sitio
 app.get('/get-info-user/:uuid', async (req, res) => {
     const { uuid } = req.params;
     const response = await RegisterModel.get_info_user(uuid);
