@@ -1,0 +1,6 @@
+{
+    "search.showLineNumbers": true,
+    "notebook.lineNumbers": "on",
+    "editor.renderLineHighlight": "all",
+    "editor.emptySelectionClipboard": true
+}
