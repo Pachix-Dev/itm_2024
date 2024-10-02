@@ -716,6 +716,21 @@ app.get('/get-info-user/:uuid', async (req, res) => {
     }    
 });
 
+app.get('/get-check-cobrar/:id', async (req, res) => {
+    const { id } = req.params;
+    const response = await RegisterModel.get_info_user(id);
+    if(response.status){
+        return res.send({
+            status: true,
+            records: response.result
+        })
+    }else{
+        return res.status(500).send({
+            status: false,
+            message: 'No se encontraron resultados...'
+        });
+    }    
+});
 
 
 /* EMAIL AMOF */

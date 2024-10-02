@@ -509,7 +509,7 @@ export class RegisterModel {
     const connection = await mysql.createConnection(config)
     try {      
       const [result] = await connection.query(
-        'SELECT name, paternSurname, maternSurname, company, position,  phone, email FROM users WHERE uuid = ?',
+        'SELECT name, paternSurname, maternSurname, company, position,  phone, email, CASE WHEN user_amof IS NULL THEN "ITM"  ELSE "AMOF"  END AS event  FROM users WHERE uuid = ?',
         [uuid]
       )
       if (result.length === 0) {
