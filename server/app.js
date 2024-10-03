@@ -780,6 +780,24 @@ app.post('/marcar-pago-vip', async (req, res) => {
     }    
 });
 
+app.put('/cambiar-status-marcar-pago', async (req, res) => { 
+    const {id} = req.body
+    const response = await RegisterModel.cambiar_status_pagar_gafete(id);
+    if(response.status){
+        return res.send({
+            status: true,
+            records: response.result
+        })
+    }else{
+        return res.status(500).send({
+            status: false,
+            message: 'No se encontraron resultados...'
+        });
+    }    
+});
+
+
+
 /* EMAIL AMOF */
 async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
