@@ -19,6 +19,16 @@ interface Program {
 
 const stage_1_day_1: Program[] = [
     {
+
+        "title": "Inauguración ITM 2024 ",
+        "title_en": "Inauguration ITM 2024",
+        "description": "",
+        "description_en": "",
+        "time": "11:00 hrs",
+        "duration": "60 mins",
+        "speakers": []
+    },
+    {
         "title": "Entrega de licencias Mitsubishi Electric Automation - IBERO ",
         "title_en": "Delivery of Mitsubishi Electric Automation Licenses - IBERO ",
         "description": "",
@@ -469,6 +479,16 @@ const stage_1_day_3: Program[] = [
 ]
 
 const stage_2_day_1: Program[] = [
+    {
+
+        "title": "Inauguración ITM 2024 ",
+        "title_en": "Inauguration ITM 2024",
+        "description": "",
+        "description_en": "",
+        "time": "11:00 hrs",
+        "duration": "60 mins",
+        "speakers": []
+    },
     {
         "title": "Metaverso Industrial: Revolucionando la Manufactura del Futuro",
         "title_en": "Metaverso Industrial: Revolucionando la Manufactura del Futuro",
