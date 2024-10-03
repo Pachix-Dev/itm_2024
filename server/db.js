@@ -532,4 +532,116 @@ export class RegisterModel {
       await connection.end() // Close the connection
     }
   }
+
+  static async get_info_user_to_pay (id) {
+    const connection = await mysql.createConnection(config)
+    try {      
+      const [result] = await connection.query(
+        "SELECT uuid, name, paternSurname, maternSurname, company, position,  phone, email, DATE_FORMAT(created_at, '%Y-%m-%d') AS created_at, CASE WHEN created_at > '2024-10-08' THEN CASE WHEN cobrar = 0 THEN 'true' ELSE 'false' END END AS cobrar_status, CASE WHEN user_amof IS NULL THEN 'ITM'  ELSE 'AMOF' END AS event  FROM users WHERE id = ?",
+        [id]
+      )
+      if (result.length === 0) {
+        return {
+          status: false,
+          message: 'No se encontró el usuario',
+        }
+      }
+      return {
+        status: true,
+        result
+      }
+    }catch (error) {
+      console.log(error)
+      return {
+        status: false,        
+      }   
+    }
+     finally {
+      await connection.end() // Close the connection
+    }
+  }
+
+  static async pagar_gafete (id) {
+    const connection = await mysql.createConnection(config)
+    try {      
+      const [result] = await connection.query(
+        "UPDATE users SET cobrar = 1 WHERE id = ?",
+        [id]
+      )
+      if (result.length === 0) {
+        return {
+          status: false,
+          message: 'No se encontró el usuario',
+        }
+      }
+      return {
+        status: true,
+        result
+      }
+    }catch (error) {
+      console.log(error)
+      return {
+        status: false,        
+      }   
+    }
+     finally {
+      await connection.end() // Close the connection
+    }
+  }
+
+  static async get_info_user_vip (uuid) {
+    const connection = await mysql.createConnection(config)
+    try {      
+      const [result] = await connection.query(
+        "SELECT users.id, users.uuid, users.name, users.paternSurname, users.maternSurname, users.email, users.phone, users.typeRegister, users.created_at, CASE WHEN users_vip.user_id IS NOT NULL THEN 'true' ELSE 'false' END AS status_vip FROM users LEFT JOIN users_vip ON users.id = users_vip.user_id WHERE users.uuid = ?",
+        [uuid]
+      )
+      if (result.length === 0) {
+        return {
+          status: false,
+          message: 'No se encontró el usuario',
+        }
+      }
+      return {
+        status: true,
+        result
+      }
+    }catch (error) {
+      console.log(error)
+      return {
+        status: false,        
+      }   
+    }
+     finally {
+      await connection.end() // Close the connection
+    }
+  }
+
+  static async pagar_gafete_vip (id) {
+    const connection = await mysql.createConnection(config)
+    try {      
+      const [result] = await connection.query(
+        'INSERT INTO users_vip (user_id, paypal_id_order, paypal_id_transaction, total ) VALUES (?,?,?,?)',
+        [
+          id,
+          'compra-en-sitio-proveedor',
+          'compra-en-sitio-proveedor',
+          '5800'
+        ]
+      )
+      return {
+        status: true,
+        insertId: result.insertId,
+        ...result,
+      }
+    }catch (error) {
+      console.log(error)
+      return {
+        status: false,        
+      }   
+    }
+     finally {
+      await connection.end() // Close the connection
+    }
+  }
 }

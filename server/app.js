@@ -718,7 +718,7 @@ app.get('/get-info-user/:uuid', async (req, res) => {
 
 app.get('/get-check-cobrar/:id', async (req, res) => {
     const { id } = req.params;
-    const response = await RegisterModel.get_info_user(id);
+    const response = await RegisterModel.get_info_user_to_pay(id);
     if(response.status){
         return res.send({
             status: true,
@@ -732,6 +732,53 @@ app.get('/get-check-cobrar/:id', async (req, res) => {
     }    
 });
 
+app.put('/marcar-pago', async (req, res) => { 
+    const {id} = req.body
+    const response = await RegisterModel.pagar_gafete(id);
+    if(response.status){
+        return res.send({
+            status: true,
+            records: response.result
+        })
+    }else{
+        return res.status(500).send({
+            status: false,
+            message: 'No se encontraron resultados...'
+        });
+    }    
+});
+
+app.get('/get-check-user-vip/:uuid', async (req, res) => {
+    const { uuid } = req.params;
+    const response = await RegisterModel.get_info_user_vip(uuid);
+    if(response.status){
+        return res.send({
+            status: true,
+            records: response.result
+        })
+    }else{
+        return res.status(500).send({
+            status: false,
+            message: 'No se encontraron resultados...'
+        });
+    }    
+});
+
+app.post('/marcar-pago-vip', async (req, res) => { 
+    const {id} = req.body
+    const response = await RegisterModel.pagar_gafete_vip(id);
+    if(response.status){
+        return res.send({
+            status: true,
+            records: response
+        })
+    }else{
+        return res.status(500).send({
+            status: false,
+            message: 'No se encontraron resultados...'
+        });
+    }    
+});
 
 /* EMAIL AMOF */
 async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null){    
