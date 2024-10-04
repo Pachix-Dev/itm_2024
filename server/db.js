@@ -509,7 +509,7 @@ export class RegisterModel {
     const connection = await mysql.createConnection(config)
     try {      
       const [result] = await connection.query(
-        'SELECT name, paternSurname, maternSurname, company, position,  phone, email, CASE WHEN user_amof IS NULL THEN "ITM"  ELSE "AMOF"  END AS event  FROM users WHERE uuid = ?',
+        'SELECT id, uuid, name, paternSurname, maternSurname, company, position,  phone, email, CASE WHEN user_amof IS NULL THEN "ITM"  ELSE "AMOF"  END AS event  FROM users WHERE uuid = ?',
         [uuid]
       )
       if (result.length === 0) {
@@ -537,7 +537,7 @@ export class RegisterModel {
     const connection = await mysql.createConnection(config)
     try {      
       const [result] = await connection.query(
-        "SELECT uuid, name, paternSurname, maternSurname, company, position,  phone, email, DATE_FORMAT(created_at, '%Y-%m-%d') AS created_at, CASE WHEN created_at > '2024-10-08' THEN CASE WHEN cobrar = 0 THEN 'true' ELSE 'false' END END AS cobrar_status, CASE WHEN user_amof IS NULL THEN 'ITM'  ELSE 'AMOF' END AS event  FROM users WHERE id = ?",
+        "SELECT id, uuid, name, paternSurname, maternSurname, company, position,  phone, email, DATE_FORMAT(created_at, '%Y-%m-%d') AS created_at, CASE WHEN created_at > '2024-10-08' THEN CASE WHEN cobrar = 0 THEN 'true' ELSE 'false' END END AS cobrar_status, CASE WHEN user_amof IS NULL THEN 'ITM'  ELSE 'AMOF' END AS event  FROM users WHERE id = ?",
         [id]
       )
       if (result.length === 0) {
@@ -561,14 +561,14 @@ export class RegisterModel {
     }
   }
 
-  static async pagar_gafete (id) {
+  static async pagar_gafete (id, cobrar) {
     const connection = await mysql.createConnection(config)
     try {      
       const [result] = await connection.query(
-        "UPDATE users SET cobrar = 1 WHERE id = ?",
-        [id]
+        "UPDATE users SET cobrar = ? WHERE id = ?",
+        [cobrar, id ]
       )
-      if (result.length === 0) {
+      if (result.affectedRows === 0) {
         return {
           status: false,
           message: 'No se encontró el usuario',
@@ -644,34 +644,7 @@ export class RegisterModel {
       await connection.end() // Close the connection
     }
   }
-
-  static async cambiar_status_pagar_gafete (id) {
-    const connection = await mysql.createConnection(config)
-    try {      
-      const [result] = await connection.query(
-        "UPDATE users SET cobrar = 0 WHERE id = ?",
-        [id]
-      )
-      if (result.length === 0) {
-        return {
-          status: false,
-          message: 'No se encontró el usuario',
-        }
-      }
-      return {
-        status: true,
-        result
-      }
-    }catch (error) {
-      console.log(error)
-      return {
-        status: false,        
-      }   
-    }
-     finally {
-      await connection.end() // Close the connection
-    }
-  }
+  
 
   
 
