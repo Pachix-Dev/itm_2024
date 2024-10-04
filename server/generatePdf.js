@@ -471,7 +471,7 @@ async function generatePDF_freePass( body, uuid) {
     });
 
     body.typeRegister === 'VISITANTE' ? doc.image('img/footer-itm-2.jpg', 307, 328, { width: 306 }) : doc.image('img/footer-itm-2_medio.jpg', 307, 328, { width: 306 });;
-    f
+    
     doc.save();
     // Rotate and draw some text
     doc.rotate(180, {origin: [150, 305]})
