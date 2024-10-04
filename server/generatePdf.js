@@ -375,7 +375,7 @@ async function generatePDF_freePass( body, uuid) {
     .moveDown(0.5)
     .text(body.company);
 
-    body.typeRegister === 'VISITANTE' ? doc.image('img/footer_ITM.jpg', 0, 328, { width: 305 }) : doc.image('img/footer_medio.jpg', 0, 328, { width: 305 });
+    body.typeRegister === 'VISITANTE' ? doc.image('img/footer_ITM.jpg', 0, 328, { width: 305 }) : doc.image('img/footer-itm-2_medio.jpg', 0, 328, { width: 305 });
     doc
     .font('Helvetica-Bold')
     .fontSize(17)
