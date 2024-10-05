@@ -30,7 +30,7 @@ const stage_1_day_1=[
                 "position": "Embajador para  México",
                 "company": "Alianza Industria del Futuro",
                 "image": "/img/speakers/alfredo_rodríguez.webp",
-                "moderador": true
+                
             }
         ]
     },
@@ -90,7 +90,7 @@ const stage_1_day_1=[
                 "position": "Asesor Ejecutivo de la Presidencia",
                 "company": "CCE",
                 "image": "/img/speakers/manuel_perez_cardenas.webp",
-                "moderador": true
+                
             }
         ]
     },
@@ -130,7 +130,7 @@ const stage_1_day_1=[
             "position": "Presidente ",
             "company": "Instituto para el Desarrollo Industrial y la Transformación Digital (INADI)",
             "image": "/img/speakers/arturo_oropeza.webp",
-            "moderador": true
+            
             }
         ]
     },
@@ -187,7 +187,7 @@ const stage_1_day_1=[
                 "position": "Asesor Ejecutivo de la Presidencia",
                 "company": "CCE",
                 "image": "/img/speakers/manuel_perez_cardenas.webp",
-                "moderador": true
+                
             },
         ]
     },       
@@ -230,7 +230,7 @@ const stage_1_day_1=[
                 "position": "Presidente",
                 "company": "FEMIA",
                 "image": "/img/speakers/carlos_robles.webp",
-                "moderador": true
+                
 
             }
         ]
@@ -290,7 +290,7 @@ const statge_1_day_2=[
                 "position": "Presidente",
                 "company": "Industria Nacional de Autopartes (INA)",
                 "image": "/img/speakers/francisco_gonzalez_diaz.webp",
-                "moderador": true
+                
             }
         ]
     },
@@ -332,7 +332,7 @@ const statge_1_day_2=[
                 "position": "Presidente",
                 "company": "Consejo Coordinador Empresarial de León (CCEL)",
                 "image": "/img/speakers/robertonovoa.webp",
-                "moderador": true
+                
             }
         ]
     },
@@ -382,7 +382,7 @@ const statge_1_day_2=[
                 "position": "Director",
                 "company": " Laboratorio de Instrumentación Espacial (LINX - UNAM) ",
                 "image": "/img/speakers/gustavo_medina_tanco.webp",
-                "moderador": true
+                
             }
 
         ]
@@ -424,7 +424,7 @@ const statge_1_day_2=[
                 "position": "Director",
                 "company": " Laboratorio de Instrumentación Espacial (LINX - UNAM) ",
                 "image": "/img/speakers/gustavo_medina_tanco.webp",
-                "moderador": true
+                
             }
         ]
     },
@@ -459,7 +459,7 @@ const statge_1_day_2=[
                 "position": "Director",
                 "company": " Laboratorio de Instrumentación Espacial (LINX - UNAM) ",
                 "image": "/img/speakers/gustavo_medina_tanco.webp",
-                "moderador": true
+                
             }
         ]
     },    
@@ -515,7 +515,7 @@ const stage_2_day_1=[
                 "position": "Presidente",
                 "company": "EMA",
                 "image": "/img/speakers/eugenio_grandio.webp",
-                "moderador": true
+                
             },
         ]
     },    
@@ -551,7 +551,7 @@ const stage_2_day_1=[
                 "position": "Vicepresidente de México y Centroamérica de Siemens Digital Industries Software, Presidente de Innovación y Desarrollo Tecnológico del Cluster Metropolitano y Vicepresidente de la comisión Industria 4.0 de Concamin",
                 "company": "Siemens",
                 "image": "/img/speakers/alejandroCanela.webp",
-                "moderador": true
+                
 
             },
             
@@ -627,7 +627,7 @@ const stage_2_day_1=[
                 "position": "Director de Gestión para la Eficiencia Energética",
                 "company": " Comisión Nacional para el Uso Eficiente de la Energía (CONUEE)",
                 "image": "/profile.svg",
-                "moderador": true
+                
             }
         ]
     },    
@@ -717,7 +717,7 @@ const stage_2_day_2=[
                 "position": "Asesora",
                 "company": "Cooperación Técnica Alemana (GIZ)",
                 "image": "/img/speakers/liliade_diego.webp",
-                "moderador": true
+                
             },
         ]
     },
@@ -778,7 +778,7 @@ const stage_2_day_2=[
                 "position": "Presidente Ejecutivo",
                 "company": " Industria Nacional de Autopartes (INA)",
                 "image": "/img/speakers/francisco_gonzalez_diaz.webp",
-                "moderador": true
+                
             },
         ]
     }
