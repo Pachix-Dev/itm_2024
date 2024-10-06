@@ -149,6 +149,23 @@ const stage_1_day_1: Program[] = [
         ]
     },
     {
+        "title": "Infraestructura como Plataforma (IaaP): Optimización del Análisis de Datos en Manufactura utilizando AI/ML y Edge Computing",
+        "title_en": "Infrastructure as a Platform (IaaP): Optimizing Manufacturing Data Analytics using AI/ML and Edge Computing",
+        "description": "Hoy en día muchas empresas consideran que la aplicación práctica de inteligencia artificial, machine Learning y redes neuronales requiere conocimiento altamente especializado, equipos multidisciplinarios, e inversiones significativas para obtener resultados prácticos en corto plazo. En esta sesión desmitificaremos esta percepción a través de la presentación de un caso práctico, analizando datos de variables utilizando AI/ML con datos sintéticos y mostrando distintos casos de uso aplicando Edge Computing para entornos de manufactura.",
+        "description_en": "Today many companies consider that the practical application of artificial intelligence, machine learning and neural networks requires highly specialized knowledge, multidisciplinary teams, and significant investments to obtain practical results in the short term. In this session we will demystify this perception through the presentation of a case study, analyzing variable data using AI/ML with synthetic data and showing different use cases applying Edge Computing for manufacturing environments.",
+        "time": "15:45 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {         
+                "id": "53",                      
+                "name": "Francisco Bolaños Sánchez",
+                "position": "Director de Desarrollo de Nuevos Negocios",
+                "company": "Rio Bravo Systems",
+                "image": "/img/speakers/francisco_bolaños.webp"
+            },            
+        ]
+    },
+    {
         "title": "Herramientas de APM apoyando a mejorar las prácticas de Mantenimiento e Inversión de Capital",
         "title_en": "APM tools supporting improved Maintenance and Capital Investment practices",
         "description": "",
@@ -163,6 +180,16 @@ const stage_1_day_1: Program[] = [
                 "company": "Hexagon",
                 "image": "/img/speakers/luis-luna.webp"
             },            
+        ]
+    },
+    {
+        "title": "Oferta integral de transformación digital del grupo América móvil",
+        "title_en": "América móvil group's comprehensive digital transformation offer",
+        "description": "",
+        "description_en": "",
+        "time": "17:15 hrs",
+        "duration": "45 mins",
+        "speakers": [                      
         ]
     }
 ]
@@ -308,11 +335,68 @@ const stage_1_day_2: Program[] = [
         ]
     },
     {
-        "title": "La transformación del diecasting by Mitsubishi",
+        "title": "Perespectivas en la implementación de soluciones robóticas",
+        "title_en": 'Perspectives on the implementation of robotic solutions',
         "description": "",
         "time": "16:15 hrs",
         "duration": "45 mins",
-        "speakers": []
+        "speakers": [
+            {
+                "id":"0",
+                "name": "José Luis Duarte",
+                "position": "Sales Manager",
+                "company": "SmartSol",
+                "image": "/img/speakers/joseLuisDuarte.webp"
+            },
+            {
+                "id":"0",
+                "name": "Roberto Ballesteros",
+                "position": "Service Engineer",
+                "company": "Mitsubishi Electric Automation",
+                "image": "/img/speakers/roberto_ballesteros.webp"
+            },
+            {
+                "id":"0",
+                "name": "Raúl Sánchez",
+                "position": "Product Engineer",
+                "company": "Mitsubishi Electric Automation",
+                "image": "/img/speakers/raul_sanchez.webp"
+            },
+        ]
+    },
+    {
+        "title": "Transformación digital - retos de conectividad (Sector Minero)",
+        "title_en": 'Digital transformation - connectivity challenges (Mining Sector)',
+        "description": "",
+        "time": "17:00 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {
+                "id":"0",
+                "name": "Manuel Mendoza",
+                "position": "Ingeniero de Desarrollo en integración",
+                "company": "ISAT",
+                "image": "/profile.svg"
+            },            
+            
+        ]
+    },
+    {
+        "title": "Sistemas de Control Industrial desde la perspectiva de los Ciberdelincuentes",
+        "title_en": 'Digital transformation - connectivity challenges (Mining Sector)',
+        "description": "",
+        "time": "17:45 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {
+                "id":"54",
+                "name": "Juan Fabricio Castillo Alfaro",
+                "position": "Gerente de Seguridad de la Información y Ciberseguridad",
+                "company": "Rio Bravo Systems",
+                "image": "/img/speakers/juan_fabricio_castillo_alfaro.webp"
+            },
+            
+        ]
     }
 ]
 

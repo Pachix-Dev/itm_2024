@@ -487,6 +487,24 @@ const speakers = [
         description_en:"",
         image: "/profile.svg",
     },
+    {
+        id: "53",
+        name: " Francisco Bolaños Sánchez",
+        position: "Director de Desarrollo de Nuevos Negocios",        
+        company: "Rio Bravo Systems",
+        description: "Francisco (Paco) Bolaños, es un profesional con 30 años de experiencia en la industria. Sus áreas de especialización incluyen: Internet de las Cosas, Industria 4.0, Transformación Digital, Diseño de Redes, Ciberseguridad para Sistemas de Control Industrial, Petróleo y Gas, Energía, Manufactura, Minería y Transporte.Tiene una Licenciatura en Electrónica y Comunicaciones por el Instituto Politécnico Nacional de México, una Micromaestría en Liderazgo y Gestión Empresarial Global de la Universidad Estatal de Arizona, una Micromaestría en Sistemas de Información por la Universidad de Indiana, un Certificado Profesional en Transformación Digital por el Instituto Tecnológico de Massachusetts (MIT) y actualmente cursa la certificación profesional en Industria 4.0 en el mismo instituto (MIT). Ha ostentado las siguientes certificaciones técnicas: Cisco: CCNA, CCDA, CCNP, CCDP, CCIP, CMNP, y ha sido orador en distintos foros nacionales e internacionales",
+        description_en:"Francisco (Paco) Bolaños is a professional with 30 years of experience in the industry. His areas of expertise include: Internet of Things, Industry 4.0, Digital Transformation, Network Design, Cybersecurity for Industrial Control Systems, Oil & Gas, Energy, Manufacturing, Mining and Transportation. He holds a Bachelor's Degree in Electronics and Communications from the National Polytechnic Institute of Mexico, a MicroMasters in Leadership and Global Business Management from Arizona State University, a MicroMasters in Information Systems from Indiana University, a Professional Certificate in Digital Transformation from the Massachusetts Institute of Technology (MIT) and is currently pursuing professional certification in Industry 4.0 at the same institute (MIT). He has held the following technical certifications: Cisco: CCNA, CCDA, CCNP, CCDP, CCIP, CMNP, and has been a speaker at various national and international forums.",
+        image: "/img/speakers/francisco_bolaños.webp",
+    },
+    {
+        id: "54",
+        name: " Juan Fabricio Castillo Alfaro",
+        position: "Gerente de Seguridad de la Información y Ciberseguridad",        
+        company: "Rio Bravo Systems",
+        description: "Cuenta con 16 años de experiencia en seguridad de la información y ciberseguridad. Desde 2018, se desempeña como Gerente de Seguridad de la Información y Ciberseguridad en Sistemas Rio Bravo, liderando servicios de seguridad para clientes en México y Estados Unidos. Sus especialidades incluyen el diseño y operación de arquitecturas de ciberseguridad, pruebas de penetración, ingeniería social y respuesta a incidentes. Desde 2023, investiga vulnerabilidades y amenazas en sistemas de control industrial y desarrolla estrategias de defensa. Es Ingeniero en Telecomunicaciones y posee certificaciones clave en seguridad, como CISSP, CCIE Security, CEH, CISM e Implementador Líder ISO/IEC 27001:2022. Además, cuenta con amplia experiencia en la gestión de riesgos y la implementación de sistemas de seguridad basados en normativas internacionales.",
+        description_en:"He has 16 years of experience in information security and cybersecurity. Since 2018, he has served as Information Security and Cybersecurity Manager at Sistemas Rio Bravo, leading security services for clients in Mexico and the United States. His specialties include the design and operation of cybersecurity architectures, penetration testing, social engineering and incident response. Since 2023, he has been researching vulnerabilities and threats in industrial control systems and developing defense strategies. He is a Telecommunications Engineer and holds key security certifications such as CISSP, CCIE Security, CEH, CISM and ISO/IEC 27001:2022 Lead Implementer. In addition, he has extensive experience in risk management and implementation of security systems based on international standards.",
+        image: "/img/speakers/juan_fabricio_castillo_alfaro.webp",
+    },
     
 ]
 

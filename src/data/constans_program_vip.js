@@ -266,13 +266,7 @@ const statge_1_day_2=[
                 "position": "Presidente y CEO",
                 "company": " Bombardier Canadá *",
                 "image": "/img/speakers/eric_martel.webp"
-            },
-            {
-                "name": "José Luis Navarro",
-                "position": "Country Manager para México",
-                "company": " Enel Group",
-                "image": "/img/speakers/jose_luis_navarro.webp"
-            },
+            },            
             {
                 "name": "Lucien Pinto",
                 "position": "Presidente y CEO",
@@ -280,7 +274,7 @@ const statge_1_day_2=[
                 "image": "/img/speakers/lucienpinto.webp"
             },  
             {
-                "name": "Maite Ramos",
+                "name": "Maite Ramos *",
                 "position": "Directora General",
                 "company": " Alstom México",
                 "image": "/img/speakers/maite_ramos.webp"
