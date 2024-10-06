@@ -168,7 +168,7 @@ const stage_1_day_1=[
                 "name": "Cordelia Portilla",
                 "position": "Secretaria Técnica",
                 "company": "Consejo Nuevo León",
-                "image": "/profile.svg"
+                "image": "/img/speakers/cordelia_portilla.webp"
             },                        
             {
                 "name": "Eduardo Sojo",
@@ -180,7 +180,7 @@ const stage_1_day_1=[
                 "name": "Alan Martínez",
                 "position": "Consejo Querétaro de Planeación Estratégica",
                 "company": "",
-                "image": "/profile.svg"
+                "image": "/img/speakers/alan_martinez.webp"
             },
             {
                 "name": "Manuel Pérez Cárdenas",
@@ -284,12 +284,13 @@ const statge_1_day_2=[
                 "position": "Directora General",
                 "company": " Alstom México",
                 "image": "/img/speakers/maite_ramos.webp"
-            },                                  
+            },               
             {
+                "id": "13",
                 "name": "Francisco González",
                 "position": "Presidente",
                 "company": "Industria Nacional de Autopartes (INA)",
-                "image": "/img/speakers/francisco_gonzalez_diaz.webp",
+                "image": "/img/speakers/francisco_gonzalez_diaz_new.webp",
                 "moderador": true
             }
         ]
@@ -369,7 +370,7 @@ const statge_1_day_2=[
                 "name": "Marchel Holle",
                 "position": "US Government Affairs Lead",
                 "company": "ispace Technologies US",
-                "image": "/profile.svg"
+                "image": "/img/speakers/marchel_holle.webp"
             },            
             {
                 "name": "Erik Kulu",
@@ -452,7 +453,7 @@ const statge_1_day_2=[
                 "name": "Marchel Holle",
                 "position": "US Government Affairs Lead",
                 "company": "ispace Technologies US",
-                "image": "/profile.svg"
+                "image": "/img/speakers/marchel_holle.webp"
             },
             {
                 "name": "Gustavo Medina Tanco",
@@ -567,9 +568,9 @@ const stage_2_day_1=[
             {
                 "id": "13",
                 "name": "Francisco N. González",
-                "position": "Presidente Ejecutivo",
+                "position": "Presidente",
                 "company": " Industria Nacional de Autopartes (INA)",
-                "image": "/img/speakers/francisco_gonzalez_diaz.webp"
+                "image": "/img/speakers/francisco_gonzalez_diaz_new.webp"
             },
         ]
     },
@@ -626,7 +627,7 @@ const stage_2_day_1=[
                 "name": "Francisco Javier García Osorio",
                 "position": "Director de Gestión para la Eficiencia Energética",
                 "company": " Comisión Nacional para el Uso Eficiente de la Energía (CONUEE)",
-                "image": "/profile.svg",
+                "image": "/img/speakers/franciscoJavier.webp",
                 "moderador": true
             }
         ]
@@ -770,14 +771,14 @@ const stage_2_day_2=[
                 "name": "Alejandro Rojo Valerio",
                 "position": "Líder en Manufactura y Diseño Automotriz,",
                 "company": " ITESM",
-                "image": "/profile.svg"
+                "image": "/img/speakers/alejandro_rojo.webp"
             },
             {
                 "id": "13",
                 "name": "Francisco N. González",
                 "position": "Presidente Ejecutivo",
                 "company": " Industria Nacional de Autopartes (INA)",
-                "image": "/img/speakers/francisco_gonzalez_diaz.webp",
+                "image": "/img/speakers/francisco_gonzalez_diaz_new.webp",
                 "moderador": true
             },
         ]

@@ -125,7 +125,7 @@ const speakers_vip = [
         phone: "+52 (55) 5682 5862",
         description: "Francisco N. González Díaz es Presidente Ejecutivo de la Industria Nacional de Autopartes, A.C., donde representa los intereses de más de 700 plantas manufactureras de autopartes con operaciones en México. Cuenta con una trayectoria profesional de más de 20 años enfocada a promover a México y sus industrias. Fue Director General de Bancomext y de ProMéxico. Fue Embajador de México ante la República Federal de Alemania. En la iniciativa privada participa activamente como empresario de los sectores de salud, comercio exterior, turismo, así como de banca y finanzas. Es egresado de la licenciatura en Administración de Empresas por el ITAM y de la maestría en Administración por el Tec de Monterrey.",
         description_en:"Francisco N. González Díaz has been representing the interests of more than 700 auto parts companies in Mexico since he was elected executive president of the National Auto Parts Industry Association (INA) in January 2022. For the last 20 years, he has been promoting Mexico and its industries. Former director-general of Mexico’s foreign-trade bank Bancomext and foreign-trade promotion agency ProMéxico, he also served as Mexican ambassador to Germany. He continues to play an active role as a businessman in the country’s health, foreign-trade, tourism, banking and finance sectors. Mr. González holds a BAA from ITAM and an MBA from ITESM.",
-        image: "/img/speakers/francisco_gonzalez_diaz.webp",
+        image: "/img/speakers/francisco_gonzalez_diaz_new.webp",
     },
     {
         id: "15",
