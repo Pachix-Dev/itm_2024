@@ -631,17 +631,38 @@ const stage_2_day_1: Program[] = [
     },
     {
         "title": "Aplicación de la Twin Transition Hacer real la digitalización sostenible ",
-        "title_en": "",
-        "description": "",
+        "title_en": "Implementation of the Twin Transition Making sustainable digitization a reality ",
+        "description": "Se presentan las opciones de capacitación y aplicación tecnológica para lograr la implementación de la digitalización sostenible. CAMEXA propone los trayectos de capacitación para implementar sistemas de gestión de desarrollo sostenible, de medio ambiente y eficiencia energética. SIEMENS presenta su tecnología aplicable para la medición eficiente de las emisiones en la organización y en la cadena de valor. Siemens Monterrey y Eurotranciatura de Querétaro presentan sus casos prácticos.",
         "time": "14:15 hrs",
         "duration": "60 mins",
         "speakers": [
             {                           
-                "id": "0",
-                "name": "Panel Camexa",
-                "position": "",
-                "company": "",
-                "image": "/profile.svg"
+                "id": "55",
+                "name": "Gerardo Pérez Lechuga",
+                "position": "Head of Digital Enterprise",
+                "company": "Siemens Digital Industries en México",
+                "image": "/img/speakers/gerardo_lechuga.webp"
+            },
+            {                           
+                "id": "56",
+                "name": "Olga Romo",
+                "position": "Sustainability Manager",
+                "company": "Eurotranciatura",
+                "image": "/img/speakers/olga_romo.webp"
+            },
+            {                           
+                "id": "57",
+                "name": "Ramón Del Valle Coppel",
+                "position": "Director de EHS de las plantas",
+                "company": "Siemens en Monterrey y Querétaro",
+                "image": "/img/speakers/ramon_valle.webp"
+            },
+            {                           
+                "id": "58",
+                "name": "Andreas Müller",
+                "position": "Director General Adjunto",
+                "company": "CAMEXA",
+                "image": "/img/speakers/andreasmuller.webp"
             }
         ]
     },
@@ -668,6 +689,12 @@ const stage_2_day_1: Program[] = [
         "time": "16:00 hrs",
         "duration": "45 mins",
         "speakers": [
+            {                                           
+                "name": "Katsumi ITAGAKI",
+                "position": "Cónsul General",
+                "company": "",
+                "image": "/img/speakers/katsumi_itagaki.webp"
+            },
             {                
                 "name": "Nobuhiro Nakajima",
                 "position": "Director General",
@@ -675,13 +702,42 @@ const stage_2_day_1: Program[] = [
                 "image": "/img/speakers/nobuhiro-nakajima.webp"
             },
             {                                           
+                "name": "Claudia Gutiérrez Carrillo",
+                "position": "Directora ",
+                "company": "Universidad Nissan",
+                "image": "/img/speakers/claudia_gutierrez.webp"
+            },
+            {                                           
                 "name": "Víctor Fuentes",
                 "position": "Head of Strategic Marketing LATAM",
                 "company": "Mitsubishi Electric Automation ",
                 "image": "/img/speakers/victor_fuentes.webp"
+            },
+            {              
+                "id": "48",                             
+                "name": "Azul Ogazón",
+                "position": "Subdirectora General",
+                "company": "IGECO Mx",
+                "image": "/img/speakers/azul_ogazon.webp"
             }
         ]
-    },    
+    },
+    {
+        "title": "Oportunidades para las Cadenas de Valor",
+        "title_en": "Opportunities for Value Chains",
+        "description": "Las cadenas de valor globales continúan redefiniéndose a raíz de nuevos retos geopolíticos, climáticos y tecnológicos. Presentaremos perspectivas sobre cómo navegar estos retos a partir de estrategias internas, mejores prácticas operativas y colaboraciones público-privadas",
+        "description_en": "Global value chains continue to redefine themselves in the face of new geopolitical, climate and technological challenges. We will present perspectives on how to navigate these challenges through internal strategies, operational best practices and public-private partnerships.",
+        "time": "17:30 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {                
+                "name": "Horacio Leal Straffon",
+                "position": "Principal",
+                "company": "Kearney",
+                "image": "/img/speakers/lealhoracio.webp"
+            }
+        ]
+    },
     {
         "title": "Industrial Transformation",
         "title_en": "Industrial Transformation",
@@ -693,8 +749,8 @@ const stage_2_day_1: Program[] = [
             {
                 "id": "4",
                 "name": "Akitake Kato",
-                "position": "Presidente de MISUMI México",
-                "company": "",
+                "position": "Presidente",
+                "company": "MISUMI México",
                 "image": "/img/speakers/kato.webp"
             }
         ]
@@ -801,6 +857,13 @@ const stage_2_day_2: Program[] = [
                 "image": "/img/speakers/hans_blomeier.webp"
             },
             {
+                "id": "59",
+                "name": "María de Lourdes Gómory Martínez",
+                "position": "Presidenta ",
+                "company": "Confederación USEM UNIAPAC México",
+                "image": "/img/speakers/maria_lourdes.webp"
+            },
+            {
                 "id": "40",
                 "name": "Joachim Elsässer",
                 "position": "Coordinador del Proyecto Asociación para el Desarrollo Industrial Sostenible Alemania-Alianza del Pacífico (PAGSID",
@@ -831,11 +894,11 @@ const stage_2_day_2: Program[] = [
                 "image": "/img/speakers/azul_ogazon.webp"
             },
             {
-                "id": "0",
+                "id": "60",
                 "name": "René Freudenberg",
-                "position": "CEO",
+                "position": "Director General",
                 "company": "Interlub Group México",
-                "image": "/profile.svg"
+                "image": "/img/speakers/renefreudenberg.webp"
             },
             {
                 "id": "49",
@@ -1001,16 +1064,45 @@ const stage_2_day_3: Program[] = [
                 "position": "Director de Porfafolio y Consultoría",
                 "company": "Siemens Digital Industries Software",
                 "image": "/img/speakers/juan_carlos_casis.webp"
+            },
+            {
+                "id": "0",
+                "name": "Andrea Carreón",
+                "position": "Asesora",
+                "company": "Diálogo Digital entre México y Alemania, Cooperación Técnica Alemana (GIZ) México",
+                "image": "/img/speakers/andreaCarreon.webp"
             }
         ]
     },
     {
-        "title": "Automation for anything",
-        "title_en": "Automation for anything",
+        "title": "Factory Smart Insight",
+        "title_en": "Factory Smart Insight",
         "description": "",
         "time": "12:00 hrs",
         "duration": "45 mins",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "61",
+                "name": "Oscar Pérez",
+                "position": "TDCON",
+                "company": "",
+                "image": "/img/speakers/oscar_perez.webp"
+            },
+            {
+                "id": "62",
+                "name": "Alejandro Madrid",
+                "position": "Gerente de Marketing de Producto para el Portafolio de equipos de Bajo Voltaje",
+                "company": "Mitsubishi Electric",
+                "image": "/img/speakers/alejandro_madrid.webp"
+            },
+            {
+                "id": "0",
+                "name": "Javier Cárdenas",
+                "position": "Product Marketing Engineer - Digital Solutions & Cibersecurity",
+                "company": "Mitsubishi Electric",
+                "image": "/img/speakers/javier_cardenas.webp"
+            }
+        ]
     },
     {
         "title": "Digitalizando con Impacto: Eficiencia y Ciberseguridad",
@@ -1034,11 +1126,11 @@ const stage_2_day_3: Program[] = [
         "description": "Las aplicaciones en la industria robótica requieren movimientos controlados, donde la alta precisión es crucial para su éxito. Fernando Vázquez, de Sumitomo Drive Technologies, nos compartirá cómo los reductores de velocidad de última generación de Sumitomo, aplicados en robótica, pueden ayudar a que las aplicaciones más exigentes logren perfiles de movimiento ultra precisos.",
         "description_en": "Applications in the robotic industry require controlled movements, where high precision is crucial for their success. Fernando Vázquez, from Sumitomo Drive Technologies, will share with us how Sumitomo's latest generation speed reducers, applied in robotics, can help the most demanding applications achieve ultra-precise motion profiles.",
         "time": "13:45 hrs",
-        "duration": "60 mins",
+        "duration": "45 mins",
         "speakers": [
             {
                 "id": "27",
-                "name": "Fernando Vázquez ",
+                "name": "Fernando Vázquez",
                 "position": "General Manager International Mechatronics",
                 "company": "Sumitomo Drive Technologies",
                 "image": "/img/speakers/Fernando_Vazquez.webp"
@@ -1049,7 +1141,7 @@ const stage_2_day_3: Program[] = [
         "title": "Industria 5.0 La era colaborativa",
         "title_en": "Industry 5.0 The collaborative era",
         "description": "En la presentación La era colaborativa e industria 5.0, se explorará cómo la robótica colaborativa está dando paso a una nueva era donde robots y humanos co-crean en aplicaciones antes inimaginables. Esta transformación marca un cambio de paradigma hacia una industria centrada en el ser humano, donde la sostenibilidad y la resiliencia son clave. Inspirará a futuros líderes a soñar en grande, liderando con propósito hacia un futuro donde la tecnología y la humanidad avanzan juntos, creando una industria más eficiente y consciente de su impacto en el planeta y la sociedad.	",
-        "time": "15:15 hrs",
+        "time": "14:30 hrs",
         "duration": "45 mins",
         "speakers": [
             {
@@ -1072,8 +1164,8 @@ const stage_2_day_3: Program[] = [
         "title": "Startup Pitch y clausura ITM 2024",
         "title_en": "Startup Pitch and closing ITM 2024",
         "description": "",
-        "time": "16:00 hrs",
-        "duration": "60 mins",
+        "time": "15:30 hrs",
+        "duration": "90 mins",
         "speakers": []
     }
 ]
