@@ -489,7 +489,8 @@ const stage_1_day_3: Program[] = [
         ]
     },
     {
-        "title": "Sistemas de Control y Automatización DCS - PLC - Scada para aumentar la sustentabilidad de las industrias",        "description": "Sistemas de control distribuido, como disminuir el cableado eléctrico en un proyecto donde se tiene miles de señales analógicas, digitales, que tradicionalmente se deben cablear desde el punto de medición hasta el cuarto de control. Con el uso de un sistema por fibra óptica se disminuye el cableado punto a punto.",
+        "title": "Sistemas de Control y Automatización DCS - PLC - Scada para aumentar la sustentabilidad de las industrias",   
+        "description": "Sistemas de control distribuido, como disminuir el cableado eléctrico en un proyecto donde se tiene miles de señales analógicas, digitales, que tradicionalmente se deben cablear desde el punto de medición hasta el cuarto de control. Con el uso de un sistema por fibra óptica se disminuye el cableado punto a punto.",
         "description_en": "Distributed control systems, such as reducing electrical wiring in a project where there are thousands of analog, digital signals, which traditionally must be wired from the measurement point to the control room. With the use of a fiber optic system, point-to-point wiring is reduced.",
         "time": "14:00 hrs",
         "duration": "45 mins",

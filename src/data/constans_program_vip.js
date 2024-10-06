@@ -434,7 +434,7 @@ const statge_1_day_2=[
                 "name": "Lanfranco De Pompeis",
                 "position": "Telespazio/Leonardo",
                 "company": "",
-                "image": "/profile.svg"
+                "image": "/img/speakers/lanfranco_pompeis.webp"
             },            
             {
                 "id": "30",
