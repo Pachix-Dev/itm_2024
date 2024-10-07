@@ -741,7 +741,7 @@ const stage_2_day_1: Program[] = [
         "title_en": "Opportunities for Value Chains",
         "description": "Las cadenas de valor globales continúan redefiniéndose a raíz de nuevos retos geopolíticos, climáticos y tecnológicos. Presentaremos perspectivas sobre cómo navegar estos retos a partir de estrategias internas, mejores prácticas operativas y colaboraciones público-privadas",
         "description_en": "Global value chains continue to redefine themselves in the face of new geopolitical, climate and technological challenges. We will present perspectives on how to navigate these challenges through internal strategies, operational best practices and public-private partnerships.",
-        "time": "17:30 hrs",
+        "time": "16:45 hrs",
         "duration": "45 mins",
         "speakers": [
             {                
