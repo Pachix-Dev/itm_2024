@@ -731,7 +731,7 @@ const stage_2_day_1: Program[] = [
                 "id": "48",                             
                 "name": "Azul Ogazón",
                 "position": "Subdirectora General",
-                "company": "IGECO Mx",
+                "company": "IGECO Mxs",
                 "image": "/img/speakers/azul_ogazon.webp"
             }
         ]
