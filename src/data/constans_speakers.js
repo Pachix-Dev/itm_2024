@@ -577,6 +577,15 @@ const speakers = [
         description_en:"Graduated from the Escuela Superior de Ingeniería Mecánica y Eléctrica (ESIME), Zacatenco campus and with more than 25 years of experience in the electrical industry, he currently holds the role of Product Marketing Manager for the Low Voltage equipment portfolio at Mitsubishi Electric. His extensive experience has given him the opportunity to develop in various areas such as Manufacturing, Quality Control and Assurance, Customer Service, Engineering and Sales, highlighting his extensive knowledge in end user requirements in terms of distribution and protection of electrical energy in low and medium voltage, getting involved in projects for sectors such as mining, automotive, oil and gas, infrastructure, etc.",
         image: "/img/speakers/alejandro_madrid.webp",
     },
+    {
+        id: "63",
+        name: "Alejandro Callejas Linares",
+        position: "Director del Programa Recuperación Verde",        
+        company: "Cooperación Técnica Alemana (GIZ) en México",
+        description: "Alejandro es Biólogo por la Universidad Veracruzana y Maestro en Ciencias Naturales por la UNAM. También está certificado en Emprendiduría Social Comunitaria por el RUDSETI Institute en India, Administración de Proyectos de Desarrollo por el BID y Greening the Economy por la Universidad de Lund, Suecia. Ha desempeñado diversos cargos en Desarrollo Sostenible y Economía Verde, como Subsecretario de Medio Ambiente en Chiapas, Coordinador de Proyectos en el PNUD y asesor en la Comisión de Medio Ambiente y Recursos Naturales de la Cámara de Diputados. Actualmente, es Director del Programa “Recuperación Verde” en la GIZ en México, enfocado en la transición justa hacia Negocios Verdes. Con más de 15 años de experiencia, ha liderado estrategias en biodiversidad, finanzas sostenibles, economía circular, tecnologías limpias y prácticas responsables.",
+        description_en:"Alejandro is a Biologist from the Universidad Veracruzana and holds a Master's degree in Natural Sciences from UNAM. He is also certified in Community Social Entrepreneurship by the RUDSETI Institute in India, Development Project Management by the IDB and Greening the Economy by the University of Lund, Sweden. He has held various positions in Sustainable Development and Green Economy, such as Undersecretary of Environment in Chiapas, Project Coordinator at UNDP and advisor to the Environment and Natural Resources Commission of the Chamber of Deputies. Currently, he is Director of the “Green Recovery” Program at GIZ in Mexico, focused on the just transition to Green Business. With more than 15 years of experience, he has led strategies in biodiversity, sustainable finance, circular economy, clean technologies and responsible practices.",
+        image: "/img/speakers/alejandro_callejas.webp",
+    },
 ]
 
 export { speakers }

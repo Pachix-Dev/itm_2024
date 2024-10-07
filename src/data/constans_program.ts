@@ -189,7 +189,21 @@ const stage_1_day_1: Program[] = [
         "description_en": "",
         "time": "17:15 hrs",
         "duration": "45 mins",
-        "speakers": [                      
+        "speakers": [   
+            {         
+                "id": "0",                      
+                "name": "Sergio Ochoa Arriaga",
+                "position": "Director de Soluciones Digitales",
+                "company": "Global Hitss",
+                "image": "/img/speakers/Sergio_Ochoa.webp"
+            },  
+            {         
+                "id": "0",                      
+                "name": "Victor Hugo Godinez",
+                "position": "Director General",
+                "company": "Global Hitss",
+                "image": "/img/speakers/victor_hugo.webp"
+            },                     
         ]
     }
 ]
@@ -621,11 +635,11 @@ const stage_2_day_1: Program[] = [
                 "image": "/img/speakers/claudia_Esteves.webp"
             },
             {                           
-                "id": "23",
-                "name": "Liliana Campos",
-                "position": "Directora de Proyecto",
+                "id": "63",
+                "name": "Alejandro Callejas Linares",
+                "position": "Director del Programa Recuperación Verde",
                 "company": "Cooperación Técnica Alemana (GIZ) en México",
-                "image": "/img/speakers/liliana_Campos.webp"
+                "image": "/img/speakers/alejandro_callejas.webp"
             }
         ]
     },
