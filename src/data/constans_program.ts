@@ -529,7 +529,7 @@ const stage_1_day_3: Program[] = [
                 "name": "Alejandro Horta",
                 "position": "",
                 "company": "IKA Technology",
-                "image": "/profile.svg"
+                "image": "/img/speakers/alejandro_horta.webp"
             }
         ]
     },
