@@ -1012,7 +1012,7 @@ const stage_2_day_2: Program[] = [
                 "name": "Ana Gutiérrez",
                 "position": "Coordinadora de comercio exterior y mercado laboral",
                 "company": "Instituto Mexicano para la Competitividad (IMCO)",
-                "image": "/profile.svg"
+                "image": "/img/speakers/ana_gutierrez.webp"
             },
             {
                 "id": "12",
