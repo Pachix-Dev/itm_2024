@@ -997,7 +997,7 @@ const stage_2_day_2: Program[] = [
                 "name": "Francisco N. González Díaz",
                 "position": "Presidente Ejecutivo",
                 "company": "Industria Nacional de Autopartes (INA)",
-                "image": "/img/speakers/francisco_gonzalez_diaz.webp"
+                "image": "/img/speakers/francisco_gonzalez_diaz_new.webp"
             },
             {
                 "id": "52",
@@ -1026,8 +1026,8 @@ const stage_2_day_2: Program[] = [
         "title": "Innovación de IMPACTO: Mujeres que automatizan las Industrias del Futuro",
         "title_en": "IMPACT Innovation: Women Automating the Industries of the Future",
         "description": "La charla Innovación de IMPACTO: Mujeres que automatizan las Industrias del Futuro reúne a dos visionarias líderes en la industria de la automatización. Desde la perspectiva de una directora de un fabricante de máquinas originales y una destacada líder de Schneider Electric, exploraremos cómo la automatización está transformando las industrias actuales y futuras. Analizaremos las perspectivas sobre la industria actual, el impacto de la tecnología y cómo las mujeres están impulsando la innovación en este emocionante campo",
-        "time": "15:00 hrs",
-        "duration": "60 mins",
+        "time": "16:15 hrs",
+        "duration": "45 mins",
         "speakers": [
             {
                 "id": "29",
@@ -1042,8 +1042,8 @@ const stage_2_day_2: Program[] = [
         "title": "La inclusión como factor clave en la protección de la Industria 4.0",
         "title_en": "IMPACT Innovation: Women Automating the Industries of the Future",
         "description": "La charla Innovación de IMPACTO: Mujeres que automatizan las Industrias del Futuro reúne a dos visionarias líderes en la industria de la automatización. Desde la perspectiva de una directora de un fabricante de máquinas originales y una destacada líder de Schneider Electric, exploraremos cómo la automatización está transformando las industrias actuales y futuras. Analizaremos las perspectivas sobre la industria actual, el impacto de la tecnología y cómo las mujeres están impulsando la innovación en este emocionante campo",
-        "time": "15:00 hrs",
-        "duration": "60 mins",
+        "time": "17:00 hrs",
+        "duration": "30 mins",
         "speakers": [
             {
                 "id": "30",
