@@ -586,6 +586,14 @@ const speakers = [
         description_en:"Alejandro is a Biologist from the Universidad Veracruzana and holds a Master's degree in Natural Sciences from UNAM. He is also certified in Community Social Entrepreneurship by the RUDSETI Institute in India, Development Project Management by the IDB and Greening the Economy by the University of Lund, Sweden. He has held various positions in Sustainable Development and Green Economy, such as Undersecretary of Environment in Chiapas, Project Coordinator at UNDP and advisor to the Environment and Natural Resources Commission of the Chamber of Deputies. Currently, he is Director of the “Green Recovery” Program at GIZ in Mexico, focused on the just transition to Green Business. With more than 15 years of experience, he has led strategies in biodiversity, sustainable finance, circular economy, clean technologies and responsible practices.",
         image: "/img/speakers/alejandro_callejas.webp",
     },
+    {
+        id: "64",
+        name: "Antonio Ramírez",
+        position: "Regional Sales Manager North LATAM",        
+        company: "TxOne",
+        description: "Cuento con mas de 21 años de experiencia en Seguridad de la Informacion, he tenido la oportunidad de desarrollarme en roles de consultoria, arquitectura de soluciones, desarrollo de negocios y estrategia; esto me ha permitido enfocar mis conocimientos y robustecer mi experiencia en las necesidades de gestión de riesgo y continuidad del negocio. Desde 2010 he desempeñado mis actividades a lo largo de America latina, teniendo el privilegio de apoyar y desarrollar las necesidades de los diferentes proyectos para los diferentes requerimientos de las organizaciones en la region. Fanatico de los viajes, la musica y la comida, y siempre dedicando el mayor esfuerzo al bienestar de mi familia",
+        description_en:"I have more than 21 years of experience in Information Security, I have had the opportunity to develop in consulting roles, solution architecture, business development and strategy; this has allowed me to focus my knowledge and strengthen my experience in the needs of risk management and business continuity. Since 2010 I have performed my activities throughout Latin America, having the privilege of supporting and developing the needs of different projects for the different requirements of organizations in the region. Fanatic of travel, music and food, and always dedicating the greatest effort to the welfare of my family.",
+    },
 ]
 
 export { speakers }

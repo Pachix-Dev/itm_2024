@@ -205,6 +205,37 @@ const stage_1_day_1: Program[] = [
                 "image": "/img/speakers/victor_hugo.webp"
             },                     
         ]
+    },
+    {
+        "title": "Helix Edge",
+        "title_en": "Helix Edge",
+        "description": "",
+        "description_en": "",
+        "time": "18:00 hrs",
+        "duration": "45 mins",
+        "speakers": [   
+            {         
+                "id": "0",                      
+                "name": "Victor Hugo Godinez",
+                "position": "Director General",
+                "company": "Global Hitss",
+                "image": "/img/speakers/victor_hugo.webp"
+            },    
+            {         
+                "id": "0",                      
+                "name": "Ezequiel Bautista",
+                "position": "Senior Solutions Engineer",
+                "company": "Global Hitss",
+                "image": "/img/speakers/ezequiel_bautista.webp"
+            },  
+            {         
+                "id": "0",                      
+                "name": "Adrian Montiel",
+                "position": "Senior Solutions Engineer",
+                "company": "Global Hitss",
+                "image": "/img/speakers/adrian_montiel.webp"
+            },                 
+        ]
     }
 ]
 
@@ -766,6 +797,23 @@ const stage_2_day_1: Program[] = [
                 "position": "Presidente",
                 "company": "MISUMI México",
                 "image": "/img/speakers/kato.webp"
+            }
+        ]
+    },
+    {
+        "title": "Gestión del riesgo en la estrategia de Transformacion Digital",
+        "title_en": "Risk Management in the Digital Transformation Strategy",
+        "description": "Esta conferencia explora como la tecnología esta redefiniendo los procesos de fabricación y gestión empresarial. Descubre como estas innovaciones impulsan la productividad, competitividad y colaboración internacional a través de la automatización y digitalización de servicios. Además, ejemplifica cómo estas acciones están transformando el futuro de la industria y catapultando a México hacia una era de crecimiento económico para el sector nacional.",
+        "description_en": "This conference explores how technology is redefining manufacturing processes and business management. Discover how these innovations drive productivity, competitiveness, and international collaboration through the automation and digitalization of services. It also exemplifies how these actions are transforming the future of the industry and propelling Mexico towards an era of economic growth for the national sector.",
+        "time": "18:15 hrs",
+        "duration": "45 mins",
+        "speakers": [
+            {
+                "id": "64",
+                "name": "Antonio Ramírez",
+                "position": "Regional Sales Manager North LATAM",
+                "company": "TxOne",
+                "image": "/img/speakers/antonioramirez.webp"
             }
         ]
     }
