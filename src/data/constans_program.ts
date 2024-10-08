@@ -671,7 +671,15 @@ const stage_2_day_1: Program[] = [
                 "position": "Director del Programa Recuperación Verde",
                 "company": "Cooperación Técnica Alemana (GIZ) en México",
                 "image": "/img/speakers/alejandro_callejas.webp"
+            },
+            {                           
+                "id": "0",
+                "name": "Secretaría de economía",
+                "position": "",
+                "company": "",
+                "image": "/profile.svg"
             }
+
         ]
     },
     {
