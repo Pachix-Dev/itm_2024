@@ -3,16 +3,12 @@ import i18next, { changeLanguage, t } from "i18next";
 import Layout from "../layouts/Layout.astro";
 import Meteors from "@/components/magicui/meteors";
 import { SearchExihibitor } from "../components/shared/SearchExihibitor.jsx";
-// @ts-ignore
-import { localizePath } from "astro-i18next";
 
 changeLanguage("es");
-
-const path = localizePath("/consulta-directorio-digital");
 ---
 
 <Layout title='ITM | Directorio Digital 2024'>
-  <main data-path={path}>
+  <main>
     <div class='sticky top-0 h-full w-screen'>
       <Meteors client:only number={20} />
     </div>
@@ -62,14 +58,3 @@ const path = localizePath("/consulta-directorio-digital");
     overflow-x: hidden;
   }
 </style>
-<script>
-  document.addEventListener('DOMContentLoaded', (event) => {
-    const path = document.querySelector('main')?.dataset.path
-    const validate = JSON.parse(
-      sessionStorage.getItem('validate-register') || 'false'
-    )
-    if (!validate) {
-      window.location.href = path || '/consulta-directorio-digital'
-    }
-  })
-</script>
