@@ -682,7 +682,8 @@
         "download_invoice": "Descargar tu recibo de compra",
         "thanks_purchasing": "Gracias por tu compra",
         "sucess_purchasing": "¡Fantástico! haz tu compra fue procesada correctamente.",
-        "email_sent": "¡Pronto recibiras un correo de confirmación!"
+        "email_sent": "¡Pronto recibiras un correo de confirmación!",
+        "description_2": "Por favor pasa al modulo de caja con este numero para pagar y recoger tu gafete."
     },
     "program_vip": {
         "title": "ADQUIERE TU PROGRAMA DE CONFERENCIAS VIP",
@@ -811,6 +812,6 @@
         "room_1": "SALÓN MAGISTRAL",
         "room_2": "SALÓN AMOF",
         "room_3": "SALÓN ITM",
-        "get_vip": "Obtén tu acceso"
+        "get_vip": "Obtén tu acceso en el modulo de cajas"
     }
 }

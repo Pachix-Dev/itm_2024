@@ -115,10 +115,11 @@ export function StepThree({ translates, currentLanguage }) {
       }),
     })
     const orderData = await response.json()
-    if (orderData.status) {
-      clear()
+    if (orderData?.status) {
+      //clear()
       setCompleteRegister(true)
-      setInvoiceDownToLoad(orderData?.invoice)
+      //setInvoiceDownToLoad(orderData?.invoice)
+      setInvoiceDownToLoad(orderData?.insertId)
       currentLanguage === 'es'
         ? (window.location.href = '/gracias-por-registrarte')
         : (window.location.href = '/en/gracias-por-registrarte')

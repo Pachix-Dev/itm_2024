@@ -1,10 +1,10 @@
 ---
-import { changeLanguage, t } from "i18next";
-import { Upgrade } from "../components/register/Upgrade.jsx";
-import LayoutRegister from "../layouts/LayoutRegister.astro";
-import { logosProgramVip } from "../data/constans_logos.js";
+import { changeLanguage, t } from 'i18next'
+import { Upgrade } from '../components/register/Upgrade.jsx'
+import LayoutRegister from '../layouts/LayoutRegister.astro'
+import { logosProgramVip } from '../data/constans_logos.js'
 
-changeLanguage("es");
+changeLanguage('es')
 ---
 
 <LayoutRegister title='SUMMIT CCE'>
@@ -44,7 +44,7 @@ changeLanguage("es");
     <p class='text-center font-bold text-lg md:text-2xl uppercase'>
       da el salto y disfruta de todas nuestras ventajas
     </p>
-    <Upgrade client:only='react' />
+    {/*<Upgrade client:only='react' />*/}
   </main>
 </LayoutRegister>
 <style>

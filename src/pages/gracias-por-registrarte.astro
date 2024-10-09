@@ -1,16 +1,16 @@
 ---
-import i18next, { changeLanguage, t } from "i18next";
-import Layout from "../layouts/Layout.astro";
-import Confettti from "../components/shared/Confetti";
-import { Redirect } from "../components/shared/Redirect.jsx";
-import { DonwloadAccess } from "../components/register/DonwloadAccess";
-import { ProgramVip } from "../components/register/ProgramVip";
-import MarqueeSponsors from "../components/register/MarqueeSponsors.astro";
-import { sponsors } from "../data/constans_logos";
+import i18next, { changeLanguage, t } from 'i18next'
+import Layout from '../layouts/Layout.astro'
+import Confettti from '../components/shared/Confetti'
+import { Redirect } from '../components/shared/Redirect.jsx'
+import { DonwloadAccess } from '../components/register/DonwloadAccess'
+import { ProgramVip } from '../components/register/ProgramVip'
+import MarqueeSponsors from '../components/register/MarqueeSponsors.astro'
+import { sponsors } from '../data/constans_logos'
 
-changeLanguage("es");
+changeLanguage('es')
 
-const currentLanguage = i18next.language;
+const currentLanguage = i18next.language
 ---
 
 <Layout title='ITM  | Gracias por contactarnos'>
@@ -34,16 +34,24 @@ const currentLanguage = i18next.language;
             src='/img/Logo_ITM.webp'
             alt='ecomondo feria de sustentabilidad'
           />
-          <p
+          {
+            /* <p
             class='font-bold text-center'
             set:html={t('thanks_page.description')}
+          />*/
+          }
+          <p
+            class='font-bold text-center text-xl'
+            set:html={t('thanks_page.description_2')}
           />
           <DonwloadAccess
             client:only='react'
             text={t('thanks_page.download_pass')}
           />
         </div>
-        <ProgramVip client:only='react' currentLanguage={currentLanguage} />
+        {
+          /*<ProgramVip client:only='react' currentLanguage={currentLanguage} />*/
+        }
       </div>
     </div>
     <section class='my-10 max-w-screen-lg mx-auto'>

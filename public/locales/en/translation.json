@@ -681,7 +681,8 @@
         "download_invoice": "Download your invoice",
         "thanks_purchasing": "Thank you for your purchase",
         "sucess_purchasing": "Fantastic! your purchase was successfully processed.",
-        "email_sent": "You will receive a confirmation email soon!"
+        "email_sent": "You will receive a confirmation email soon!",
+        "description_2": "Please go to the cashier's office with this number to pay and pick up your badge."
     },
     "program_vip": {
         "title": "ADQUIERE TU PROGRAMA DE CONFERENCIAS VIP",
@@ -812,6 +813,6 @@
         "room_1": "ROOM MAGISTRAL",
         "room_2": "ROOM AMOF",
         "room_3": "ROOM ITM",
-        "get_vip": "Get access"
+        "get_vip": "Get your access in the cashier module"
     }
 }

@@ -57,11 +57,7 @@ export function Upgrade() {
         >
           Verificar
         </button>
-        {user && (
-          <div className='mt-10'>
-            <ProgramVip />
-          </div>
-        )}
+        {user && <div className='mt-10'>{/*<ProgramVip />*/}</div>}
         {message && (
           <p className='text-red-600 font-bold text-center pt-5 text-xl'>
             {message}

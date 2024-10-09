@@ -156,13 +156,12 @@ app.post('/free-register', async (req, res) => {
             });
         }                 
 
-        const pdfAtch = await generatePDF_freePass(body, data.uuid );
+        //const pdfAtch = await generatePDF_freePass(body, data.uuid );
 
-        const mailResponse = await sendEmail(data, pdfAtch, data.uuid);   
+        //const mailResponse = await sendEmail(data, pdfAtch, data.uuid);   
 
         return res.send({
-            ...mailResponse,
-            invoice: `${data.uuid}.pdf`
+            ...userResponse,            
         });                
                
     } catch (err) {
@@ -781,7 +780,22 @@ app.post('/marcar-pago-vip', async (req, res) => {
 });
 
 
-
+// get info futuristic minds 
+app.get('/get-info-student/:uuid', async (req, res) => {
+    const { uuid } = req.params;
+    const response = await RegisterModel.get_info_student(uuid);
+    if(response.status){
+        return res.send({
+            status: true,
+            records: response.result
+        })
+    }else{
+        return res.status(500).send({
+            status: false,
+            message: 'No se encontraron resultados...'
+        });
+    }    
+});
 
 
 /* EMAIL AMOF */
