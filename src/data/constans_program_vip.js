@@ -32,7 +32,8 @@ const stage_1_day_1=[
                 "image": "/img/speakers/alfredo_rodríguez.webp",
                 "moderador": true
             }
-        ]
+        ],
+        "boletin": '/files/boletin-prensa-mesa-1-First-Global-Business-Summit.pdf'
     },
     {
         "title": "Traslado a Inauguración",
@@ -132,7 +133,8 @@ const stage_1_day_1=[
             "image": "/img/speakers/arturo_oropeza.webp",
             "moderador": true
             }
-        ]
+        ],
+       "boletin": '/files/boletin-prensa-mesa-2-First-Global-Business-Summit.pdf'
     },
     {
         "title": "COMIDA LIBRE",
