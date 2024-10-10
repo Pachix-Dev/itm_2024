@@ -333,7 +333,8 @@ const statge_1_day_2=[
                 "image": "/img/speakers/robertonovoa.webp",
                 "moderador": true
             }
-        ]
+        ],
+        "boletin": '/files/boletin-prensa-mesa-6-First-Global-Business-Summit.pdf'
     },
     {
         "title": "VISITA A ITM (guiada o libre) / COMIDA LIBRE",
