@@ -68,15 +68,17 @@ const { item, key } = Astro.props as Props
         class='font-semibold text-[#E42128] text-lg pb-2 uppercase'
         set:html={i18next.language === 'es' ? item.title : item.title_en}
       />
-      {
-        item.boletin && 
-        <a href={item.boletin} target="_blank" class="font-bold">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-        </svg>
-        Boletin de prensa
-      </a>
-      }
+      <div>
+        {
+          item.boletin && 
+          <a href={item.boletin} target="_blank" class="font-bold bg-[#E42128] flex justify-center rounded-xl p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+            Boletin de prensa
+          </a>
+        }
+      </div>
     </div>
     
     {
