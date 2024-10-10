@@ -191,7 +191,8 @@ const stage_1_day_1=[
                 "image": "/img/speakers/manuel_perez_cardenas.webp",
                 "moderador": true
             },
-        ]
+        ],
+        "boletin": '/files/boletin-prensa-mesa-3-First-Global-Business-Summit.pdf'
     },       
     {
         "title": "MESA 4:<br /> LA INDUSTRIA AEROESPACIAL MEXICANA: Expansión extraordinaria de una industria de frontera tecnológica.<br /> <span class='font-normal text-white'> Oportunidades para la empresa mexicana</span>",
@@ -235,7 +236,8 @@ const stage_1_day_1=[
                 "moderador": true
 
             }
-        ]
+        ],
+        "boletin": '/files/boletin-prensa-mesa-4-First-Global-Business-Summit.pdf'
     },
     {
         "title": "NETWORKING",
