@@ -9,13 +9,12 @@ const speakers = [
     },
     {
         id: "1",
-        name: "Carlos Orozco",
-        position: "Director de Ventas",
+        name: "Felipe Rubi",
+        position: "Subgerente de ventas externas",
         company: "MISUMI México",
-        email: "corozco@misumimex.com",
-        description: "Con más de 13 años de experiencia en gestión comercial, Carlos Orozco ha demostrado liderazgo y habilidades estratégicas sobresalientes en el mercado industrial internacional. Como Director de Ventas en MISUMI México, Carlos supervisa todas las operaciones de ventas en el país, trabajando en estrecha colaboración con diversos departamentos de la compañía en Japón y el mundo para garantizar una experiencia de compra de alta calidad en un modelo de negocios en línea único. Antes de su actual cargo, Carlos desarrolló y ejecutó estrategias de ventas, gestionando múltiples oficinas y cultivando relaciones sólidas con sus clientes. Posee un diplomado en Ventas Estratégicas de la Universidad Anáhuac y una licenciatura en Ingeniería en Control y Automatización del Instituto Politécnico Nacional. Carlos se destaca por su pasión por la innovación y su compromiso con el crecimiento profesional continuo en el campo de la automatización industrial.",
-        description_en: "With over 13 years of experience in commercial management, Carlos Orozco has demonstrated outstanding leadership and strategic skills in the international industrial market. As Sales Director at MISUMI Mexico, Carlos oversees all sales operations in the country, working closely with various departments of the company in Japan and around the world to ensure a high-quality purchasing experience in a unique online business model. Before his current position, Carlos developed and executed sales strategies, managing multiple offices and cultivating strong relationships with his clients. He holds a diploma in Strategic Sales from the Universidad Anáhuac and a degree in Control and Automation Engineering from the Instituto Politécnico Nacional. Carlos stands out for his passion for innovation and his commitment to continuous professional growth in the field of industrial automation.",
-        image: "/img/speakers/carlos_orozco.webp",
+        description: "",
+        description_en: "",
+        image: "/img/speakers/felipe_rubi.webp",
     },
     {
         id: "2",

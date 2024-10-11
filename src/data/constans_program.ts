@@ -70,7 +70,7 @@ const stage_1_day_1: Program[] = [
             {            
                 "id": "1",    
                 "name": "Carlos Orozco",
-                "position": "Director de Ventas",
+                "position": "Subgerente de ventas externas",
                 "company": "MISUMI México",
                 "image": "/img/speakers/carlos_orozco.webp"
             }
@@ -497,10 +497,10 @@ const stage_1_day_3: Program[] = [
         "speakers": [
             {
                 "id" :"1",
-                "name": "Carlos Orozco",
-                "position": "Director de Ventas",
+                "name": "Felipe Rubi",
+                "position": "Subgerente de ventas externas",
                 "company": "MISUMI México",
-                "image": "/img/speakers/carlos_orozco.webp"
+                "image": "/img/speakers/felipe_rubi.webp"
             }
         ]
     },
