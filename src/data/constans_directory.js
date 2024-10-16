@@ -3150,7 +3150,7 @@ export const directory = [
     {
         id: 159,
         name: 'CONSULTORIA INTEGRACION Y DESARROLLO TOTAL IT',
-        logo: '/exhibitors/VTlogo.webp',
+        logo: '/exhibitors/consitlogo.webp',
         stand_number: 'S06',
         contact: 'David Cruz García Zuñiga',
         position: 'Ingeniero de Preventa',
@@ -3169,7 +3169,7 @@ export const directory = [
     {
         id: 160,
         name: 'LABORATORIOS EXIMUS',
-        logo: '/exhibitors/VTlogo.webp',
+        logo: '/exhibitors/logoeximus.webp',
         stand_number: 'S06',
         contact: 'Luis Carlos Gutierrez Guerrero',
         position: 'Gerente Administrativo',
@@ -3349,7 +3349,7 @@ export const directory = [
     {
         id: 169,
         name: 'Secretaría para la Reactivación Económica de León',
-        logo: '/exhibitors/ker_solutions.webp',
+        logo: '/exhibitors/logoSecretariaReactivacion.webp',
         stand_number: 'S06',
         contact: 'Guillermo Romero Pacheco',
         position: 'Secretario para la Reactivación Económica de León',
