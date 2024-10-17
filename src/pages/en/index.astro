@@ -1,5 +1,5 @@
 ---
-import { changeLanguage, t } from "i18next";
+import i18next, { changeLanguage, t } from "i18next";
 import Hero from "../../components/home/Hero.astro";
 import Sponsors from "../../components/home/Sponsors.astro";
 import WhyParticipate from "../../components/home/WhyParticipate.astro";
@@ -26,7 +26,9 @@ changeLanguage("en");
 <LayoutHome title='ITM 2024 | Home'>
   <main class='bg-black pt-32'>
     <img
-      src='/img/itm_2025_primero.webp'
+      src={i18next.language === 'es'
+        ? '/img/itm_2025_primero.webp'
+        : '/itm_2025_eng.webp'}
       alt='ITM 2025'
       class='w-full h-full'
     />
