@@ -33,6 +33,9 @@
         "visitors_4": "Convenio United Airlines",
         "past_events": "EDICIONES ITM",
         "itm2023": "itm 2023",
+        "itm2024_1": "Directorio de Expositores 2024",
+        "itm2024_2": "Pasaporte ITM 2024",
+        "itm2024_3": "itm Resultados 2024",
         "itm2023_1": "Directorio de Expositores 2023",
         "itm2023_2": "Pasaporte ITM 2023",
         "itm2023_3": "itm Resultados 2023",
@@ -161,9 +164,7 @@
         "summitcce": "Programa SUMMIT CCE empieza a las 9am en piso de exposición",
         "student": "Entrada para estudiantes viernes a partir de las 3:00pm",
         "credential": "Debes presentar una credendial de empresa para tener acceso a la feria",
-        "programCCE": "CONSULTA PROGRAMA DE CONFERENCIAS"
-                
-        
+        "programCCE": "CONSULTA PROGRAMA DE CONFERENCIAS"                        
     },
     "aboutPage": {
         "title": "ACERCA DE ITM",

@@ -17,13 +17,13 @@ import TestimonialVisitor from "../../components/home/TestimonialVisitor.astro";
 import Score5Years from "../../components/home/Score5years.astro";
 import FreeRegister from "../../components/home/FreeRegister.astro";
 import DigitalTransformation from "../../components/home/DigitalTransformation.astro";
-import LayoutHome from "../../layouts/LayoutHome.astro";
 import SocialMedia from "../../components/home/SocialMedia.astro";
+import Layout from "@/layouts/Layout.astro";
 
 changeLanguage("en");
 ---
 
-<LayoutHome title='ITM 2024 | Home'>
+<Layout title='ITM 2024 | Home'>
   <main class='bg-black pt-32'>
     <img
       src={i18next.language === 'es'
@@ -72,60 +72,69 @@ changeLanguage("en");
     <DigitalTransformation />
     <Testimonials />
     <Buyers />
-    <TestimonialVisitor />
-    <div
-      class='mt-10 square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
-    >
-      {t('home.strategic_allies')}
-    </div>
-    <Marquee partners={alliesStrategic} isLeftToRight={true} />
-    <div
-      class='mt-10 square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
-    >
-      {t('home.platinum_media')}
-    </div>
-    <Marquee partners={media_1} isLeftToRight={true} />
-    <Marquee partners={media_2} isLeftToRight={false} />
-    <div
-      class='mt-10 square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
-    >
-      {t('home.bestitm')}
-    </div>
-    <Gallery
-      images={home}
-      galleryID='gallery'
-      client:only='react'
-      class='py-10'
-    />
-    <section
-      class='container mx-auto px-4 py-5 grid md:grid-cols-2 text-2xl text-center font-bold'
-    >
-      <div class='grid place-items-center place-content-center'>
-        <img src='/ederRangel.png' alt='Eder Raúl Rangel Déziga' width='150' />
-        <p>{t('home.contact_mexico_latam')}</p>
-        <p class='mt-2 text-lg'>
-          Eder Raúl Rangel Déziga<br />
-          Tel. +52 55 7028 3335 ext. 809
-        </p>
-        <a class='text-[#E8001E] text-xl' href='mailto:eder.rangel@igeco.mx'
-          >eder.rangel@igeco.mx</a
-        >
+    <TestimonialVisitor />*/
+    }
+    <div class='bg-white pt-10'>
+      <div
+        class='mt-10 square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
+      >
+        {t('home.strategic_allies')}
       </div>
-      <div class='grid place-items-center place-content-center'>
-        <img src='/simoneRobering.webp' alt='Simone Robering' width='160' />
-        <p>{t('home.contact_international')}</p>
-        <p class='mt-2 text-lg'>
-          Simone Robering<br />
-          Tel. +49 511 89 33128
-        </p>
-        <a class='text-[#E8001E] text-xl' href='mailto:simone.Robering@messe.de'
-          >simone.robering@messe.de</a
-        >
+      <Marquee partners={alliesStrategic} isLeftToRight={true} />
+      <div
+        class='mt-10 square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
+      >
+        {t('home.platinum_media')}
+      </div>
+      <Marquee partners={media_1} isLeftToRight={true} />
+      <Marquee partners={media_2} isLeftToRight={false} />
+      <div
+        class='mt-10 square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
+      >
+        {t('home.bestitm')}
+      </div>
+      <Gallery
+        images={home}
+        galleryID='gallery'
+        client:only='react'
+        class='py-10'
+      />
+    </div>
+    <section class='bg-white'>
+      <div
+        class='container mx-auto px-4 py-5 grid md:grid-cols-2 text-2xl text-center font-bold'
+      >
+        <div class='grid place-items-center place-content-center'>
+          <img
+            src='/ederRangel.png'
+            alt='Eder Raúl Rangel Déziga'
+            width='150'
+          />
+          <p>{t('home.contact_mexico_latam')}</p>
+          <p class='mt-2 text-lg'>
+            Eder Raúl Rangel Déziga<br />
+            Tel. +52 55 7028 3335 ext. 809
+          </p>
+          <a class='text-[#E8001E] text-xl' href='mailto:eder.rangel@igeco.mx'
+            >eder.rangel@igeco.mx</a
+          >
+        </div>
+        <div class='grid place-items-center place-content-center'>
+          <img src='/simoneRobering.webp' alt='Simone Robering' width='160' />
+          <p>{t('home.contact_international')}</p>
+          <p class='mt-2 text-lg'>
+            Simone Robering<br />
+            Tel. +49 511 89 33128
+          </p>
+          <a
+            class='text-[#E8001E] text-xl'
+            href='mailto:simone.Robering@messe.de'>simone.robering@messe.de</a
+          >
+        </div>
       </div>
     </section>
-    <SocialMedia />*/
-    }
+    {/*<SocialMedia />*/}
   </main>
-</LayoutHome>
+</Layout>
 
 <style></style>
