@@ -42,7 +42,7 @@ const client_secret = process.env.CLIENT_SECRET;
 const endpoint_url = environment === 'sandbox' ? 'https://api-m.sandbox.paypal.com' : 'https://api-m.paypal.com';
 const resend = new Resend(process.env.RESEND_APIKEY)
 
-app.post('/create-order', (req, res) => {    
+/*app.post('/create-order', (req, res) => {    
     const { body } = req;
     
     if(body.total != 5800){
@@ -173,7 +173,6 @@ app.post('/free-register', async (req, res) => {
     }
 });
 
-// verificar codigo de cortesia  si es correcto crear gafete vip
 app.post('/check-cortesia', async (req, res) => {
     const { body } = req;
     const response = await RegisterModel.check_code_cortesia(body.code_cortesia);    
@@ -212,22 +211,6 @@ app.post('/check-cortesia', async (req, res) => {
         });
     }
 });
-
-app.get('/get-postalcode/:cp', async (req, res) => {
-    const { cp } = req.params;
-    const response = await RegisterModel.get_postal_code({cp});
-    if(response.status){
-        return res.send({
-            status: true,
-            records: response.result
-        })
-    }else{
-        return res.status(500).send({
-            status: false,
-            message: 'No se encontraron resultados...'
-        });
-    }    
-})
 
 app.get('/get-user-by-email', async (req, res) => {
     const { email, requireNonVip = 'true' } = req.query;
@@ -295,7 +278,6 @@ app.post('/upgrade-user', async (req, res) => {
     }
 });
 
-// Create student register
 app.post('/free-register-futuristic', async (req, res) => {
     const { body } = req;
     
@@ -780,7 +762,7 @@ app.post('/marcar-pago-vip', async (req, res) => {
 });
 
 
-// get info futuristic minds 
+
 app.get('/get-info-student/:uuid', async (req, res) => {
     const { uuid } = req.params;
     const response = await RegisterModel.get_info_student(uuid);
@@ -798,7 +780,7 @@ app.get('/get-info-student/:uuid', async (req, res) => {
 });
 
 
-/* EMAIL AMOF */
+
 async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
 
@@ -832,7 +814,7 @@ async function sendEmailAmof(data, pdfAtch = null, paypal_id_transaction = null)
     }    
 }
 
-/* EMAIL FUTURISTIC */
+
 async function sendEmailFuturistic(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
         
@@ -866,7 +848,7 @@ async function sendEmailFuturistic(data, pdfAtch = null, paypal_id_transaction =
     }    
 }
 
-/* EMAIL ITM */
+
 async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
        
@@ -902,7 +884,6 @@ async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){
     }    
 }
 
-/* EMAIL OKTOBERFEST */
 async function sendEmailOktoberfest(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
        
@@ -953,7 +934,23 @@ function get_access_token() {
         .then(json => {
             return json.access_token;
         })
-}
+}*/
+
+app.get('/get-postalcode/:cp', async (req, res) => {
+    const { cp } = req.params;
+    const response = await RegisterModel.get_postal_code({cp});
+    if(response.status){
+        return res.send({
+            status: true,
+            records: response.result
+        })
+    }else{
+        return res.status(500).send({
+            status: false,
+            message: 'No se encontraron resultados...'
+        });
+    }    
+})
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`)
