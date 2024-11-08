@@ -8,7 +8,7 @@
         "exhibitors_1": "Contacto",
         "exhibitors_2": "Quiero exponer",
         "exhibitors_2_1": "Expositores confirmados",
-        "exhibitors_3": "Perfil del expositor",
+        "exhibitors_3": "Quiero ser expositor",
         "exhibitors_4": "Factsheet ITM 2025",
         "exhibitors_4_1": "Manual del Expositor ITM 2024",
         "exhibitors_5": "Plano ITM 2024",
@@ -76,12 +76,13 @@
         }
     },
     "home": {
+        "proximo": "Próximamente...",
         "days": "días",
         "hours": "horas",
         "minutes": "minutos",
         "seconds": "segundos",
         "titleITM": "LA SEMANA MÁS IMPORTANTE DE LA INDUSTRIA SE ACERCA",
-        "titleCounter": "9 - 11 de octubre  ",
+        "titleCounter": "11 - 13 de noviembre de 2025",
         "button": "Premios TIC E ITZAMNÁ",
         "leyend": "Registro con costo a partir del 9 de octubre $300 MXN",
         "registro_itm_2023": "Regístrate",

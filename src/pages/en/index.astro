@@ -23,8 +23,8 @@ import Layout from "@/layouts/Layout.astro";
 changeLanguage("en");
 ---
 
-<Layout title='ITM 2024 | Home'>
-  <main class='bg-black pt-32'>
+<Layout title='ITM 2025 | Home'>
+  <main class='bg-black'>
     <img
       src={i18next.language === 'es'
         ? '/itm_2025_esp.webp'
@@ -32,6 +32,7 @@ changeLanguage("en");
       alt='ITM 2025'
       class='w-full h-full'
     />
+    <FreeRegister />
     <a
       href={i18next.language === 'es'
         ? '/files/ITM_FACTSHEET_2025_compressed.pdf'
@@ -59,14 +60,15 @@ changeLanguage("en");
       alt='ITM 2025'
       class='w-full h-full'
     />
+
     {
       /* <Hero />
-    <FreeRegister />
+    
     <OtherEvents />
     <VideoMain />
     <Score />
     <Score5Years />
-    <Sponsors />
+   
     <BecomeAnExhibitor />
     <WhyParticipate />
     <DigitalTransformation />
@@ -74,7 +76,9 @@ changeLanguage("en");
     <Buyers />
     <TestimonialVisitor />*/
     }
+
     <div class='bg-white pt-10'>
+      <Sponsors />
       <div
         class='mt-10 square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
       >
