@@ -77,7 +77,9 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
     class='mt-20 container mx-auto py-5 px-4 grid md:grid-cols-3 gap-10 backdrop-blur-sm bg-white/30 rounded-xl'
   >
     <a
-      href=`/files/ITM_FACTSHEET_2025_compressed.pdf`
+      href={i18next.language === 'es'
+        ? '/files/ITM-FACTSHEET-ESP-V2-2025_compressed.pdf'
+        : '/files/ITM-FACTSHEET-ENG-V2-2025_compressed.pdf'}
       target='_blank'
       class='text-white bg-black hover:bg-white hover:text-black font-bold flex justify-center gap-5 py-5 rounded-xl'
     >
