@@ -13,7 +13,7 @@
         "exhibitors_4_1": "Exhibitors' Handbook",
         "exhibitors_5": "Floorplan ITM 2025",
         "exhibitors_6": "Contract ITM 2025",
-        "exhibitors_7": "Sponsorships 2024",
+        "exhibitors_7": "Sponsorships 2025",
         "exhibitors_7_1": "Sponsorship packages",
         "exhibitors_7_2": "Sponsorship Sponsorship Conferences",
         "exhibitors_7_3": "Sponsorship Commercial Presentation",
@@ -220,19 +220,19 @@
             "stand-1":{
                 "title":"Raw Space <br/> (no set up)",
                 "type":"Regular price sqm",
-                "price":"USD 378 + VAT",
+                "price":"USD 400 + VAT",
                 "description":"Includes exhibitor badges (3 per 9 sqm), unlimited visitor pre-registration code for your company and mention in the directory. Does NOT include carpet, construction, furniture, or services."
             },
             "stand-2":{
                 "title":"Equipped Booth (Basic Option)",
                 "type":"Regular price sqm",
-                "price":"USD 452 + VAT",
+                "price":"USD 475 + VAT",
                 "description":"Includes standard carpet, dividing partitions, vinyl sign, standard furniture (counter, table and 2 chairs), 1 110v electrical contact, exhibitor badges (3 per 9 sqm), unlimited visitor pre-registration code for your company and mention in the directory."
             },
             "stand-3":{
                 "title":"Comfort Plus",
                 "type":"Regular price sqm",
-                "price":"USD 4,655 + VAT(Price per 9 sqm)",
+                "price":"USD 5,585 + VAT(Price per 9 sqm)",
                 "description":"Includes construction with predetermined design with space for brand positioning, furniture, 1 110v electrical contact per 9 sqm, and 40\" screen, exhibitor badges (3 per 9 sqm), unlimited visitor pre-registration code for your company and mention in the directory."
             }
         }

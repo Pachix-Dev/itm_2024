@@ -13,7 +13,7 @@
         "exhibitors_4_1": "Manual del Expositor ITM 2024",
         "exhibitors_5": "Plano ITM 2025",
         "exhibitors_6": "Contrato ITM 2025",
-        "exhibitors_7": "Patrocinios 2024",
+        "exhibitors_7": "Patrocinios 2025",
         "exhibitors_7_1": "Paquetes de patrocinio",
         "exhibitors_7_2": "Patrocinio Conferencias",
         "exhibitors_7_3": "Patrocinio Presentación Comercial",
@@ -219,23 +219,23 @@
         "btn-exhibitor":"SOY EXPOSITOR",
         "btn-sent-message":"Enviar Mensaje",
         "rates":{
-            "title":"TARIFAS DE PARTICIPACIÓN ITM 2024",
+            "title":"TARIFAS DE PARTICIPACIÓN ITM 2025",
             "stand-1":{
                 "title":"Superficie <br/> libre (Sin Setup)",
                 "type":"Precio de lista m2",
-                "price":"USD 378 + IVA",
+                "price":"USD 400 + IVA",
                 "description":"Incluye gafetes de expositor (3 por cada 9 m ), código de pre-registro de visitantes ilimitados para su compañía y mención en el directorio. NO incluye alfombra, construcción, mobiliario, ni servicios."
             },
             "stand-2":{
                 "title":"Estand Equipado (Opción básica)",
                 "type":"Precio de lista m2",
-                "price":"USD 452 + IVA",
+                "price":"USD 475 + IVA",
                 "description":"Incluye alfombra estándar, mamparas divisorias, antepecho con rótulo en vinil, mobiliario estándar (counter, mesa y 2 sillas), 1 contacto eléctrico de 110v, gafetes de expositor (3 por cada 9 m ), código de pre-registro de visitantes ilimitados para su compañía y mención en el directorio."
             },
             "stand-3":{
                 "title":"Confort Plus",
                 "type":"Precio de lista m2",
-                "price":"USD 4,655 + IVA ( Precio por 9m )",
+                "price":"USD 5,585 + IVA ( Precio por 9m )",
                 "description":"Incluye construcción con diseño predeterminado con espacio para posicionamiento de marca, mobiliario, 1 contacto eléctrico de 110v por cada 9 m , y pantalla de 40”, gafetes de expositor (3 por cada 9 m ), código de pre-registro de visitantes ilimitados para su compañía y mención en el directorio."
             }
         }
