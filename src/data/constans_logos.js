@@ -268,6 +268,12 @@ const alliesStrategic = [
       alt: 'concamin',
       link: 'https://www.concamin.org.mx/inicio',
     },
+    {
+      src: '/comce.webp',
+      width: 120,
+      alt: 'comce',
+      link: 'https://www.comce.org.mx/',
+    },   
 ]
 
 const media_1 = [
