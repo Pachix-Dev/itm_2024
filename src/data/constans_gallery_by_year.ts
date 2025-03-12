@@ -1446,6 +1446,21 @@ const gallery2022: ImageObject[] = [
     }
 ]
 
+const gallery2024: ImageObject[] = [
+    { src: '/img/gallery/2024/itm_2024_1.webp', width: 1024, height: 683 },
+    { src: '/img/gallery/2024/itm_2024_2.webp', width: 1024, height: 683 },
+    { src: '/img/gallery/2024/itm_2024_3.webp', width: 1024, height: 576 },
+    { src: '/img/gallery/2024/itm_2024_4.webp', width: 1024, height: 576 },
+    { src: '/img/gallery/2024/itm_2024_5.webp', width: 1024, height: 576 },
+    { src: '/img/gallery/2024/itm_2024_6.webp', width: 1024, height: 576 },
+    { src: '/img/gallery/2024/itm_2024_7.webp', width: 1024, height: 683 },
+    { src: '/img/gallery/2024/itm_2024_8.webp', width: 1024, height: 683 },
+    { src: '/img/gallery/2024/itm_2024_9.webp', width: 1024, height: 683 },
+    { src: '/img/gallery/2024/itm_2024_10.webp', width: 1024, height: 683 },
+    { src: '/img/gallery/2024/itm_2024_11.webp', width: 1024, height: 683 },
+    { src: '/img/gallery/2024/itm_2024_12.webp', width: 1024, height: 683 },
+]
+
 const galleryExpositores2023: ImageObject[] = [
     {
         "src": "/img/gallery/2023/expositores1.jpg",
@@ -1652,6 +1667,59 @@ const galleryConferencias2023: ImageObject[] = [
     }
 ]
 
+const galleryConferencias2024: ImageObject[] = [
+    {
+        "src": "/img/gallery/2024/conferencias/conferencias1.webp",
+        "width": 1920,
+        "height": 1279
+    },
+    {
+        "src": "/img/gallery/2024/conferencias/conferencias2.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/conferencias/conferencias3.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/conferencias/conferencias4.webp",
+        "width": 1920,
+        "height": 1279
+    },
+    {
+        "src": "/img/gallery/2024/conferencias/conferencias5.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/conferencias/conferencias6.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/conferencias/conferencias7.webp",
+        "width": 1920,
+        "height": 1280
+    },    
+    {
+        "src": "/img/gallery/2024/conferencias/conferencias9.webp",
+        "width": 5184,
+        "height": 3456
+    },
+    {
+        "src": "/img/gallery/2024/conferencias/conferencias10.webp",
+        "width": 5184,
+        "height": 3456
+    },
+    {
+        "src": "/img/gallery/2024/conferencias/conferencias11.webp",
+        "width": 5184,
+        "height": 3456
+    },    
+]
+
 const galleryFuturistic2023: ImageObject[] = [
     {
         "src": "/img/gallery/2023/futuristicminds1.jpg",
@@ -1783,6 +1851,49 @@ const startupPitch2023: ImageObject[] = [
     }
 ]
 
+const startupPitch2024: ImageObject[] = [
+    {
+        "src": "/img/gallery/2024/startuppitch/startuppitch1.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/startuppitch/startuppitch2.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/startuppitch/startuppitch3.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/startuppitch/startuppitch4.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/startuppitch/startuppitch5.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/startuppitch/startuppitch6.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/startuppitch/startuppitch7.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/startuppitch/startuppitch8.webp",
+        "width": 1920,
+        "height": 1280
+    },    
+]
+
 const itmujeres2023: ImageObject[] = [
     {
         "src": "/img/gallery/2023/itmujeres1.jpg",
@@ -1824,6 +1935,54 @@ const itmujeres2023: ImageObject[] = [
         "width": 1024,
         "height": 768
     }
+]
+
+const itmujeres2024: ImageObject[] = [
+    {
+        "src": "/img/gallery/2024/itmmujeres/itmmujeres1.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/itmmujeres/itmmujeres2.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/itmmujeres/itmmujeres3.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/itmmujeres/itmmujeres4.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/itmmujeres/itmmujeres5.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/itmmujeres/itmmujeres6.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/itmmujeres/itmmujeres7.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/itmmujeres/itmmujeres8.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/itmmujeres/itmmujeres9.webp",
+        "width": 1920,
+        "height": 1280
+    }    
 ]
 
 const mtech2023: ImageObject[] = [
@@ -1907,6 +2066,54 @@ const mtech2023: ImageObject[] = [
         "width": 1024,
         "height": 683
     }
+]
+
+const mtech2024: ImageObject[] = [
+    {
+        "src": "/img/gallery/2024/mtech/mtech1.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/mtech/mtech2.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/mtech/mtech3.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/mtech/mtech4.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/mtech/mtech5.webp",
+        "width": 1920,
+        "height": 1080
+    },
+    {
+        "src": "/img/gallery/2024/mtech/mtech6.webp",
+        "width": 1920,
+        "height": 1080
+    },
+    {
+        "src": "/img/gallery/2024/mtech/mtech7.webp",
+        "width": 1920,
+        "height": 1080
+    },
+    {
+        "src": "/img/gallery/2024/mtech/mtech8.webp",
+        "width": 1920,
+        "height": 1080
+    },
+    {
+        "src": "/img/gallery/2024/mtech/mtech9.webp",
+        "width": 1920,
+        "height": 1080
+    },
 ]
 
 const cumbre2023: ImageObject[] = [
@@ -2068,18 +2275,77 @@ const octoker2023: ImageObject[] = [
     }
 ]
 
+const octoker2024: ImageObject[] = [
+    {
+        "src": "/img/gallery/2024/oktoberfest/oktoberfest1.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/oktoberfest/oktoberfest2.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/oktoberfest/oktoberfest3.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/oktoberfest/oktoberfest4.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/oktoberfest/oktoberfest5.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/oktoberfest/oktoberfest6.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/oktoberfest/oktoberfest7.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/oktoberfest/oktoberfest8.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/oktoberfest/oktoberfest9.webp",
+        "width": 1920,
+        "height": 1280
+    },
+    {
+        "src": "/img/gallery/2024/oktoberfest/oktoberfest10.webp",
+        "width": 1920,
+        "height": 1280
+    },
+]
+
 export {
     gallery2019,
     gallery2020,
     gallery2021,
     gallery2022,
+    gallery2024,
     galleryExpositores2023,
     galleryConferencias2023,
+    galleryConferencias2024,
     galleryFuturistic2023,
     startupPitch2023,
+    startupPitch2024,
     itmujeres2023,
+    itmujeres2024,
     mtech2023,
+    mtech2024,
     cumbre2023,
     nocheIndustriales2023,
-    octoker2023
+    octoker2023,
+    octoker2024
 }

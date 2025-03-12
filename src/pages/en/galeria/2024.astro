@@ -1,0 +1,67 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Gallery from "../../../components/shared/Gallery.jsx";
+import { t, changeLanguage } from "i18next";
+import { galleryExpositores2023, galleryConferencias2023, galleryFuturistic2023, startupPitch2023, startupPitch2024, itmujeres2023, itmujeres2024, mtech2023, mtech2024, cumbre2023, nocheIndustriales2023, octoker2023, octoker2024, gallery2024, galleryConferencias2024, } from "../../../data/constans_gallery_by_year.js";
+
+changeLanguage("en");
+---
+
+<Layout title={`ITM 2024 | ${t('menu.media_hub_2')} ITM 2019}`}>
+  <h2 class='font-bold text-5xl text-center text-red-600 pt-10 uppercase'>
+    ITM 2024
+  </h2>
+  <Gallery
+    images={gallery2024}
+    galleryID={`gallery-expositores-2024`}
+    client:only='react'
+    class='mt-5 px-4 lg:px-20'
+  />
+  <h2 class='font-bold text-5xl text-center text-red-600 pt-10 uppercase'>
+    {t('gallery.conferences')}
+  </h2>
+  <Gallery
+    images={galleryConferencias2024}
+    galleryID={`gallery-conferencias-2024`}
+    client:only='react'
+    class='mt-5 px-4 lg:px-20'
+  />
+
+  <h2 class='font-bold text-5xl text-center text-red-600 pt-10 uppercase pb-10'>
+    STARTUP PITCH
+  </h2>
+  <Gallery
+    images={startupPitch2024}
+    galleryID={`startup-pitch-2024`}
+    client:only='react'
+    class='mt-5 px-4 lg:px-20'
+  />
+  <h2 class='font-bold text-5xl text-center text-red-600 pt-10 uppercase pb-10'>
+    ITMUJERES
+  </h2>
+  <Gallery
+    images={itmujeres2024}
+    galleryID={`itm-mujeres-2024`}
+    client:only='react'
+    class='mt-5 px-4 lg:px-20'
+  />
+  <h2 class='font-bold text-5xl text-center text-red-600 pt-10 uppercase'>
+    M-TECH
+  </h2>
+  <Gallery
+    images={mtech2024}
+    galleryID={`m-tech-2024`}
+    client:only='react'
+    class='mt-5 px-4 lg:px-20'
+  />
+
+  <h2 class='font-bold text-5xl text-center text-red-600 pt-10 uppercase pb-10'>
+    OKTOBERFEST LEÓN
+  </h2>
+  <Gallery
+    images={octoker2024}
+    galleryID={`oktober-2024`}
+    client:only='react'
+    class='px-4 lg:px-20 mb-5'
+  />
+</Layout>
