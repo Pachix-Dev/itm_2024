@@ -33,7 +33,12 @@ changeLanguage("en");
       class='w-full h-full'
     />
     <FreeRegister />
-
+    <div class='container mx-auto px-4 py-10'>
+      <lite-youtube
+        videoid={i18next.language === 'es' ? 'C4-nVmZnjYk' : '5TNdH3LznII'}
+        posterquality='maxresdefault'
+        params='controls=0&enablejsapi=1'></lite-youtube>
+    </div>
     <img
       src={i18next.language === 'es'
         ? '/itm_2025_1_new_esp.webp'
@@ -128,5 +133,6 @@ changeLanguage("en");
     {/*<SocialMedia />*/}
   </main>
 </Layout>
-
-<style></style>
+<script>
+  import '@justinribeiro/lite-youtube'
+</script>
