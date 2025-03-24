@@ -165,6 +165,20 @@ const exhibitors_1 = [
 
 const alliesStrategic = [
     {
+      src: '/cancham.webp',
+      width: 150,
+      height: 127,
+      alt: 'cancham',
+      link: 'https://www.canchammx.com/',
+    },
+    {
+      src: '/canieti.webp',
+      width: 150,
+      height: 127,
+      alt: 'canieti',
+      link: 'https://www.canieti.org/inicio.aspx',
+    },
+    {
       src: '/a3association.webp',
       width: 250,
       height: 127,
@@ -172,19 +186,32 @@ const alliesStrategic = [
       link: 'https://www.a3mexico.com.mx/a3',
     },
     {
+      src: '/concamin.webp',
+      width: 180,
+      alt: 'concamin',
+      link: 'https://www.concamin.org.mx/inicio',
+    },
+    {
+      src: '/comce.webp',
+      width: 120,
+      alt: 'comce',
+      link: 'https://www.comce.org.mx/',
+    },   
+    {
+      src: '/enpact.webp',
+      width: 190,
+      height: 127,
+      alt: 'enpact',
+      link: 'https://enpact.org/',
+    },
+    /*{
       src: '/ahk.webp',
       width: 250,
       height: 127,
       alt: 'ahk',
       link: 'https://mexiko.ahk.de/es/',
     },
-    {
-      src: '/canieti.webp',
-      width: 190,
-      height: 127,
-      alt: 'canieti',
-      link: 'https://www.canieti.org/inicio.aspx',
-    },
+    
     {
       src: '/giz.webp',
       width: 250,
@@ -226,14 +253,7 @@ const alliesStrategic = [
       height: 127,
       alt: 'onudi',
       link: 'https://www.gob.mx/semarnat/acciones-y-programas/organizacion-de-las-naciones-unidas-para-el-desarrollo-industrial-onudi',
-    },
-    {
-      src: '/enpact.webp',
-      width: 190,
-      height: 127,
-      alt: 'enpact',
-      link: 'https://enpact.org/',
-    },
+    },    
     {
       src: '/80amsoc.webp',
       width: 190,
@@ -255,98 +275,117 @@ const alliesStrategic = [
       alt: 'cci-france',
       link: 'https://www.franciamexico.com/',
     },
-    {
-      src: '/cancham.webp',
-      width: 190,
-      height: 127,
-      alt: 'cancham',
-      link: 'https://www.canchammx.com/',
-    },
-    {
-      src: '/concamin.webp',
-      width: 180,
-      alt: 'concamin',
-      link: 'https://www.concamin.org.mx/inicio',
-    },
-    {
-      src: '/comce.webp',
-      width: 120,
-      alt: 'comce',
-      link: 'https://www.comce.org.mx/',
-    },   
+    */
 ]
 
 const media_1 = [
     {
-      src: '/EFE.webp',
-      width: 200,
-      height: 133,
-      alt: 'EFE',
-      link: 'https://efe.com/',
-    },
-    {
-      src: '/multimediosLogo.webp',
-      width: 200,
-      height: 155,
-      alt: 'Multimedios',
-      link: 'https://grupomultimedios.com/',
-    },
-    {
-      src: '/global-energy-v2.webp',   
-      width: 200,   
-      height: 70,
-      alt: 'GlobalEnergy',
-      link: 'https://globalenergy.mx/',
-    },
-    {
-      src: '/global-industries_v2.webp',
-      width: 200,  
-      height: 70,
-      alt: 'Global industries ',
-      link: 'https://globalindustries.mx/',
-    },
-    {
-      src: '/cluster.webp',
-      width: 200,
-      height: 133,
-      alt: 'cluster industrial',
-      link: 'https://www.clusterindustrial.com.mx/',
-    },
-    {
-      src: '/dpl.webp',
-      width: 200,
-      height: 76,
-      alt: 'dpl',
-      link: 'https://dplnews.com/',
-    },
-    {
-      src: '/Energy-Commerce.webp',
-      width: 200,
-      height: 70,
-      alt: 'energy commerce',
-      link: 'https://energyandcommerce.com.mx/',
-    },
-    {
-      src: '/mexicoindustry.webp',
-      width: 200,
-      height: 133,
-      alt: 'mexico industry',
-      link: 'https://mexicoindustry.com/',
-    },
-    {
-      src: '/LOGO_KOKO.webp',
-      width: 150,      
-      alt: 'KOKO MËXICO',
-      link: 'https://kokomexico.com/es/home',
+      src: '/metalmecanica.webp',
+      width: 150,
+      alt: 'Metalmecánica',
+      link: 'https://www.metalmecanica.com/es',
     },
     {
       src: '/airtrade_world_logo.webp',
       width: 120,      
       alt: 'Airtrade World',
       link: 'https://www.facebook.com/AirTradeWorld/',
-    }
+    },
+    {
+      src: '/EFE.webp',
+      width: 150,
+      height: 133,
+      alt: 'EFE',
+      link: 'https://efe.com/',
+    },
+    {
+      src: '/multimediosLogo.webp',
+      width: 170,
+      height: 155,
+      alt: 'Multimedios',
+      link: 'https://grupomultimedios.com/',
+    },
+    {
+      src: '/global-energy-v2.webp',   
+      width: 150,   
+      height: 70,
+      alt: 'GlobalEnergy',
+      link: 'https://globalenergy.mx/',
+    },
+    {
+      src: '/global-industries_v2.webp',
+      width: 150,  
+      height: 70,
+      alt: 'Global industries ',
+      link: 'https://globalindustries.mx/',
+    },            
 ]
 const media_2 = [
+  {
+    src: '/Milenio.webp',
+    width: 150,
+    alt: 'Grupo Milenio',
+    link: 'https://www.milenio.com/',
+  },
+  {
+    src: '/revistaconsultoria.webp',
+    width: 150,
+    height: 133,
+    alt: 'revista consultora ',
+    link: 'https://revistaconsultoria.com.mx/',
+  },
+  {
+    src: '/partner12.webp',
+    width: 150,
+    alt: 'cosmos online ',
+    link: 'https://www.cosmos.com.mx/',
+  },
+  {
+    src: '/heraldoHorizontal.webp',
+    width: 150,
+    alt: 'Heraldo Mexico',
+    link: 'https://heraldodemexico.com.mx/',
+  },
+  {
+    src: '/manufacturalatam.webp',
+    width: 150,
+    alt: 'Manufactura LATAM',
+    link: 'https://www.manufactura-latam.com/es',
+  }, 
+  {
+    src: '/cluster.webp',
+    width: 150,
+    height: 133,
+    alt: 'cluster industrial',
+    link: 'https://www.clusterindustrial.com.mx/',
+  },
+  /*{
+    src: '/dpl.webp',
+    width: 200,
+    height: 76,
+    alt: 'dpl',
+    link: 'https://dplnews.com/',
+  },
+  {
+    src: '/Energy-Commerce.webp',
+    width: 200,
+    height: 70,
+    alt: 'energy commerce',
+    link: 'https://energyandcommerce.com.mx/',
+  },
+  {
+    src: '/mexicoindustry.webp',
+    width: 200,
+    height: 133,
+    alt: 'mexico industry',
+    link: 'https://mexicoindustry.com/',
+  },
+  {
+    src: '/LOGO_KOKO.webp',
+    width: 150,      
+    alt: 'KOKO MËXICO',
+    link: 'https://kokomexico.com/es/home',
+  },
   {
       src: '/vanguardia.webp',
       width: 200,
@@ -373,50 +412,13 @@ const media_2 = [
       height: 125,
       alt: 'cuatro cero',
       link: 'https://cuatro-cero.mx/',
-  },
-  {
-      src: '/revistaconsultoria.webp',
-      width: 200,
-      height: 133,
-      alt: 'revista consultora ',
-      link: 'https://revistaconsultoria.com.mx/',
-  },
-  {
-      src: '/partner12.webp',
-      width: 200,
-      alt: 'cosmos online ',
-      link: 'https://www.cosmos.com.mx/',
-  },
-  {
-      src: '/heraldoHorizontal.webp',
-      width: 200,
-      alt: 'Heraldo Mexico',
-      link: 'https://heraldodemexico.com.mx/',
-  },
-  {
-      src: '/manufacturalatam.webp',
-      width: 300,
-      alt: 'Manufactura LATAM',
-      link: 'https://www.manufactura-latam.com/es',
-  },
-  {
-      src: '/metalmecanica.webp',
-      width: 250,
-      alt: 'Metalmecánica',
-      link: 'https://www.metalmecanica.com/es',
-  },
-  {
-      src: '/Milenio.webp',
-      width: 200,
-      alt: 'Grupo Milenio',
-      link: 'https://www.milenio.com/',
-  },
+  },           
   {
     src: '/mexitown.webp',
     width: 200,
     alt: 'Mexi Town',
     link: 'https://es.mexi-town.com/',
-  }
+  }*/
 ] 
 
 const sponsors = [

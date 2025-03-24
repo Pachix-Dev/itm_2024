@@ -5,7 +5,6 @@ import Sponsors from "../../components/home/Sponsors.astro";
 import WhyParticipate from "../../components/home/WhyParticipate.astro";
 import OtherEvents from "../../components/home/OtherEvents.astro";
 import Gallery from "../../components/shared/Gallery";
-import { home } from "../../data/constans_gallery.js";
 import Score from "../../components/home/Score.astro";
 import Marquee from "../../components/shared/Marquee.astro";
 import { media_1, media_2, alliesStrategic } from "../../data/constans_logos";
@@ -19,8 +18,13 @@ import FreeRegister from "../../components/home/FreeRegister.astro";
 import DigitalTransformation from "../../components/home/DigitalTransformation.astro";
 import SocialMedia from "../../components/home/SocialMedia.astro";
 import Layout from "@/layouts/Layout.astro";
+import Events from "@/components/home/Events.astro";
+import { events } from "../../data/constans_events";
 
 changeLanguage("en");
+
+const lang = i18next.language;
+const base = i18next.language === "es" ? "" : `/${lang}`;
 ---
 
 <Layout title='ITM 2025 | Home'>
@@ -33,35 +37,218 @@ changeLanguage("en");
       class='w-full h-full'
     />
     <FreeRegister />
-    <div class='container mx-auto px-4 py-10'>
-      <lite-youtube
-        videoid={i18next.language === 'es' ? 'C4-nVmZnjYk' : '5TNdH3LznII'}
-        posterquality='maxresdefault'
-        params='controls=0&enablejsapi=1'></lite-youtube>
-    </div>
-    <img
-      src={i18next.language === 'es'
-        ? '/itm_2025_1_new_esp.webp'
-        : '/itm_2025_1_new.webp'}
-      alt='ITM 2025'
-      class='w-full h-full'
-    />
-    <img
-      src={i18next.language === 'es'
-        ? '/itm_2025_segundo_new_esp.webp'
-        : '/itm_2025_segundo_new.webp'}
-      alt='ITM 2025'
-      class='w-full h-full'
-    />
-    <Score />
+    <section class='bg-white'>
+      <div class='grid lg:flex items-center'>
+        <img src='/img/itm_program_ce.webp' class='lg:w-3/5 w-full' />
+        <div class='text-right p-4 lg:pe-10'>
+          <p class='text-4xl lg:text-6xl font-extrabold'>
+            {t('home.text_1')}
+            <span class='text-[#CA061A]'>{t('home.text_2')}</span>
+          </p>
+          <p class='mb-10 text-lg' set:html={t('home.text_3')} />
+
+          <a
+            href={`${base}/perfil-del-expositor`}
+            class='rounded-2xl border-2 border-black hover:border-[#CA061A] hover:text-[#CA061A] p-2'
+          >
+            {t('home.text_4')}
+          </a>
+        </div>
+      </div>
+      <div class='flex justify-center flex-wrap gap-5 my-10 px-5'>
+        <div class='rounded-2xl border-2 border-black p-5'>
+          <div class='bg-[#0A37FE] rounded-full p-4 w-20 h-20 text-white'>
+            <svg
+              viewBox='0 0 100 100'
+              xmlns='http://www.w3.org/2000/svg'
+              xmlns:xlink='http://www.w3.org/1999/xlink'
+              aria-hidden='true'
+              role='img'
+              preserveAspectRatio='xMidYMid meet'
+              ><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g
+                id='SVGRepo_tracerCarrier'
+                stroke-linecap='round'
+                stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'
+                ><path
+                  d='M12.55 0C5.662 0 0 5.661 0 12.55c0 6.017 4.317 11.096 10 12.286v50.428c-5.683 1.19-10 6.27-10 12.287C0 94.44 5.661 100.1 12.55 100.1c6.047 0 11.09-4.374 12.241-10.1h50.455c1.152 5.732 6.253 10.1 12.305 10.1c6.65 0 12.105-5.288 12.478-11.852a3.5 3.5 0 0 0 .07-.697a3.5 3.5 0 0 0-.07-.697C99.703 81.117 95.495 76.356 90 75.246V24.854c5.495-1.11 9.703-5.87 10.03-11.606a3.5 3.5 0 0 0 .07-.697a3.5 3.5 0 0 0-.07-.697C99.655 5.29 94.201 0 87.55 0c-6.016 0-11.096 4.317-12.286 10H24.77C23.58 4.324 18.56 0 12.55 0zm0 7c3.107 0 5.55 2.444 5.55 5.55c0 3.107-2.443 5.55-5.55 5.55C9.445 18.1 7 15.657 7 12.55C7 9.445 9.444 7 12.55 7zm75 0c3.107 0 5.55 2.444 5.55 5.55c0 3.107-2.443 5.55-5.55 5.55c-3.106 0-5.55-2.443-5.55-5.55C82 9.445 84.444 7 87.55 7zM24.218 17h51.62A12.678 12.678 0 0 0 83 24.225v51.65A12.684 12.684 0 0 0 75.875 83h-51.7A12.64 12.64 0 0 0 17 75.838V24.262A12.638 12.638 0 0 0 24.217 17zM12.55 82c3.106 0 5.549 2.444 5.549 5.55c0 3.107-2.443 5.55-5.55 5.55C9.445 93.1 7 90.657 7 87.55C7 84.445 9.444 82 12.55 82zm75 0c3.106 0 5.549 2.444 5.549 5.55c0 3.107-2.443 5.55-5.55 5.55c-3.106 0-5.55-2.443-5.55-5.55c0-3.106 2.444-5.55 5.55-5.55z'
+                  fill='white'></path></g
+              >
+            </svg>
+          </div>
+          <p class='mt-1 font-extrabold text-2xl underline'>
+            12,000 {t('home.text_5')}
+          </p>
+          <p>{t('home.text_6')}</p>
+        </div>
+        <div class='rounded-2xl border-2 border-black p-5'>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke-width='1.5'
+            stroke='currentColor'
+            class='bg-[#0A37FE] rounded-full p-4 text-white w-20 h-20'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z'
+            ></path>
+          </svg>
+
+          <p class='mt-1 font-extrabold text-2xl underline'>
+            275 {t('home.text_7')}
+          </p>
+          <p>{t('home.text_8')}</p>
+        </div>
+        <div class='rounded-2xl border-2 border-black p-5'>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke-width='1.5'
+            stroke='currentColor'
+            class='bg-[#0A37FE] rounded-full p-4 text-white w-20 h-20'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='m6.115 5.19.319 1.913A6 6 0 0 0 8.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 0 0 2.288-4.042 1.087 1.087 0 0 0-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 0 1-.98-.314l-.295-.295a1.125 1.125 0 0 1 0-1.591l.13-.132a1.125 1.125 0 0 1 1.3-.21l.603.302a.809.809 0 0 0 1.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 0 0 1.528-1.732l.146-.292M6.115 5.19A9 9 0 1 0 17.18 4.64M6.115 5.19A8.965 8.965 0 0 1 12 3c1.929 0 3.716.607 5.18 1.64'
+            ></path>
+          </svg>
+          <p class='mt-1 font-extrabold text-2xl underline'>
+            +30 {t('home.text_9')}
+          </p>
+          <p>{t('home.text_10')}</p>
+        </div>
+        <div class='rounded-2xl border-2 border-black p-5'>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke-width='1.5'
+            stroke='currentColor'
+            class='bg-[#0A37FE] rounded-full p-4 text-white w-20 h-20'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z'
+            ></path>
+          </svg>
+
+          <p class='mt-1 font-extrabold text-2xl underline'>
+            +50 {t('home.text_11')}
+          </p>
+          <p set:html={t('home.text_12')} />
+        </div>
+        <div class='rounded-2xl border-2 border-black p-5'>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke-width='1.5'
+            stroke='currentColor'
+            class='bg-[#0A37FE] rounded-full p-4 text-white w-20 h-20'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'></path>
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z'
+            ></path>
+          </svg>
+          <p class='mt-1 font-extrabold text-2xl underline'>
+            +15,000 {t('home.text_13')}
+          </p>
+          <p>{t('home.text_14')}</p>
+        </div>
+      </div>
+      <div
+        class="bg-[url('/img/bg_itm_2026_2.webp')] bg-cover bg-no-repeat py-10"
+      >
+        <div class='container mx-auto px-4'>
+          <p
+            class='text-center text-4xl lg:text-6xl text-white font-extrabold mt-44'
+          >
+            {t('home.text_15')}
+          </p>
+          <p class='text-center text-white mt-5' set:html={t('home.text_16')} />
+          <a
+            class='text-white bg-[#0A37FE] rounded-xl p-2 mx-auto block w-fit mt-5'
+            href={`${base}/perfil-del-expositor`}
+          >
+            {t('home.text_4')}
+          </a>
+        </div>
+        <Sponsors />
+      </div>
+    </section>
+    <section class="bg-[url('/img/bg_itm_2026_3.webp')]">
+      <div class='container mx-auto px-4 text-white'>
+        <p class='text-6xl font-extrabold text-center'>{t('home.text_17')}</p>
+        <p class='mt-5 text-center text-2xl' set:html={t('home.text_18')} />
+      </div>
+      <Events events={events} isLeftToRight={true} />
+      <Score />
+      <div
+        class='pt-20 text-white grid md:grid-cols-2 lg:grid-cols-4 place-items-end'
+      >
+        <p class='text-4xl w-full text-center pb-5'>
+          {t('menu.media_hub_2')}
+          <strong>2024</strong>
+        </p>
+        <img
+          src='/img/gallery/2024/itm_2024_1.webp'
+          alt='ITM 2024'
+          class='w-full h-full'
+        />
+        <img
+          src='/img/gallery/2024/itm_2024_2.webp'
+          alt='ITM 2024'
+          class='w-full h-full'
+        />
+        <img
+          src='/img/gallery/2024/itm_2024_3.webp'
+          alt='ITM 2024'
+          class='w-full h-full'
+        />
+      </div>
+      <div
+        class='text-white grid md:grid-cols-2 lg:grid-cols-4 place-items-center'
+      >
+        <img
+          src='/img/gallery/2024/itm_2024_1.webp'
+          alt='ITM 2024'
+          class='w-full h-full'
+        />
+        <img
+          src='/img/gallery/2024/itm_2024_2.webp'
+          alt='ITM 2024'
+          class='w-full h-full'
+        />
+        <img
+          src='/img/gallery/2024/itm_2024_3.webp'
+          alt='ITM 2024'
+          class='w-full h-full'
+        />
+        <a
+          href={`${base}/galeria`}
+          class='text-center rounded-xl border-2 border-white p-2 hover:text-blue-500 hover:border-blue-500'
+        >
+          {t('home.text_20')}
+        </a>
+      </div>
+    </section>
+
     {
-      /* <Hero />
-    
+      /* <Hero />    
     <OtherEvents />
-    <VideoMain />
-    
-    <Score5Years />
-   
+    <VideoMain />    
+    <Score5Years />   
     <BecomeAnExhibitor />
     <WhyParticipate />
     <DigitalTransformation />
@@ -69,67 +256,6 @@ changeLanguage("en");
     <Buyers />
     <TestimonialVisitor />*/
     }
-
-    <div class='bg-white pt-10'>
-      <Sponsors />
-      <div
-        class='mt-10 square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
-      >
-        {t('home.strategic_allies')}
-      </div>
-      <Marquee partners={alliesStrategic} isLeftToRight={true} />
-      <div
-        class='mt-10 square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
-      >
-        {t('home.platinum_media')}
-      </div>
-      <Marquee partners={media_1} isLeftToRight={true} />
-      <Marquee partners={media_2} isLeftToRight={false} />
-      <div
-        class='mt-10 square_red text-center font-bold text-2xl xl:text-4xl py-5 px-10 uppercase text-white w-fit mx-auto'
-      >
-        {t('home.bestitm')}
-      </div>
-      <Gallery
-        images={home}
-        galleryID='gallery'
-        client:only='react'
-        class='py-10'
-      />
-    </div>
-    <section class='bg-white'>
-      <div
-        class='container mx-auto px-4 py-5 grid md:grid-cols-2 text-2xl text-center font-bold'
-      >
-        <div class='grid place-items-center place-content-center'>
-          <img
-            src='/ederRangel.png'
-            alt='Eder Raúl Rangel Déziga'
-            width='150'
-          />
-          <p>{t('home.contact_mexico_latam')}</p>
-          <p class='mt-2 text-lg'>
-            Eder Raúl Rangel Déziga<br />
-            Tel. +52 55 7028 3335 ext. 809
-          </p>
-          <a class='text-[#E8001E] text-xl' href='mailto:eder.rangel@igeco.mx'
-            >eder.rangel@igeco.mx</a
-          >
-        </div>
-        <div class='grid place-items-center place-content-center'>
-          <img src='/simoneRobering.webp' alt='Simone Robering' width='160' />
-          <p>{t('home.contact_international')}</p>
-          <p class='mt-2 text-lg'>
-            Simone Robering<br />
-            Tel. +49 511 89 33128
-          </p>
-          <a
-            class='text-[#E8001E] text-xl'
-            href='mailto:simone.Robering@messe.de'>simone.robering@messe.de</a
-          >
-        </div>
-      </div>
-    </section>
     {/*<SocialMedia />*/}
   </main>
 </Layout>
