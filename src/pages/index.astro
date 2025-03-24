@@ -39,8 +39,17 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
     <FreeRegister />
     <section class='bg-white'>
       <div class='grid lg:flex items-center'>
-        <img src='/img/itm_program_ce.webp' class='lg:w-3/5 w-full' />
-        <div class='text-right p-4 lg:pe-10'>
+        <img
+          src='/img/itm_program_ce.webp'
+          class='lg:w-3/5 w-full'
+          data-aos='fade-right'
+          data-aos-duration='1000'
+        />
+        <div
+          class='text-right p-4 lg:pe-10'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <p class='text-4xl lg:text-6xl font-extrabold'>
             {t('home.text_1')}
             <span class='text-[#CA061A]'>{t('home.text_2')}</span>
@@ -58,7 +67,11 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
       <div
         class='grid grid-cols-2 md:flex md:flex-wrap justify-center gap-5 my-10 px-5'
       >
-        <div class='rounded-2xl border-2 border-black p-5'>
+        <div
+          class='rounded-2xl border-2 border-black p-5'
+          data-aos='fade-up'
+          data-aos-duration='1000'
+        >
           <div class='bg-[#0A37FE] rounded-full p-4 w-20 h-20 text-white'>
             <svg
               viewBox='0 0 100 100'
@@ -82,7 +95,11 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
           </p>
           <p>{t('home.text_6')}</p>
         </div>
-        <div class='rounded-2xl border-2 border-black p-5'>
+        <div
+          class='rounded-2xl border-2 border-black p-5'
+          data-aos='fade-up'
+          data-aos-duration='1200'
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
@@ -103,7 +120,11 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
           </p>
           <p>{t('home.text_8')}</p>
         </div>
-        <div class='rounded-2xl border-2 border-black p-5'>
+        <div
+          class='rounded-2xl border-2 border-black p-5'
+          data-aos='fade-up'
+          data-aos-duration='1400'
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
@@ -123,7 +144,11 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
           </p>
           <p>{t('home.text_10')}</p>
         </div>
-        <div class='rounded-2xl border-2 border-black p-5'>
+        <div
+          class='rounded-2xl border-2 border-black p-5'
+          data-aos='fade-up'
+          data-aos-duration='1600'
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
@@ -144,7 +169,11 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
           </p>
           <p set:html={t('home.text_12')} />
         </div>
-        <div class='rounded-2xl border-2 border-black p-5'>
+        <div
+          class='rounded-2xl border-2 border-black p-5'
+          data-aos='fade-up'
+          data-aos-duration='1800'
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
@@ -172,7 +201,11 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
       <div
         class="bg-[url('/img/bg_itm_2026_2.webp')] bg-cover bg-no-repeat py-10"
       >
-        <div class='container mx-auto px-4'>
+        <div
+          class='container mx-auto px-4'
+          data-aos='fade-up'
+          data-aos-duration='1200'
+        >
           <p
             class='text-center text-4xl lg:text-6xl text-white font-extrabold mt-44'
           >
@@ -190,7 +223,11 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
       </div>
     </section>
     <section class="bg-[url('/img/bg_itm_2026_3.webp')]">
-      <div class='container mx-auto px-4 text-white'>
+      <div
+        class='container mx-auto px-4 text-white'
+        data-aos='fade-up'
+        data-aos-duration='1500'
+      >
         <p class='text-3xl md:text-6xl font-extrabold text-center'>
           {t('home.text_17')}
         </p>
@@ -200,6 +237,8 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
       <Score />
       <div
         class='pt-20 text-white grid md:grid-cols-2 lg:grid-cols-4 place-items-end'
+        data-aos='fade-in'
+        data-aos-duration='1500'
       >
         <p class='text-4xl w-full text-center pb-5'>
           {t('menu.media_hub_2')}
@@ -223,6 +262,8 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
       </div>
       <div
         class='text-white grid md:grid-cols-2 lg:grid-cols-4 place-items-center'
+        data-aos='fade-in'
+        data-aos-duration='1800'
       >
         <img
           src='/img/gallery/2024/itm_2024_1.webp'

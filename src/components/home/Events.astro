@@ -23,7 +23,11 @@ const { events, isLeftToRight } = Astro.props as Props
 import i18next from 'i18next'
 ---
 
-<div class='enable-animation mt-20 text-white'>
+<div
+  class='enable-animation mt-20 text-white'
+  data-aos='fade-in'
+  data-aos-duration='1500'
+>
   <div class='marquee marquee--hover-pause'>
     <div class='bg-gradient-left bg-gradient-to-l from-transparent to-black'>
     </div>
