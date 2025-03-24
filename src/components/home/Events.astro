@@ -12,6 +12,7 @@ interface Props {
     description?: string
     description_en?: string
     date?: string
+    date_en?: string
     location?: string
     logo?: string
   }>
@@ -62,7 +63,7 @@ import i18next from 'i18next'
                 </div>
                 <div class='mt-5 flex justify-center items-center gap-5 text-center'>
                   <span class='border-[0.5px] border-gray-800 py-2 w-full rounded-xl bg-[#121212]'>
-                    {partner.date}
+                    {i18next.language === 'es' ? partner.date : partner.date_en}
                   </span>
                   <span class='border-[0.5px] border-gray-800 py-2 w-full rounded-xl bg-[#121212]'>
                     {partner.location}
@@ -108,7 +109,7 @@ import i18next from 'i18next'
                 </div>
                 <div class='mt-5 flex justify-center items-center gap-5 text-center'>
                   <span class='border-[0.5px] border-gray-800 py-2 w-full rounded-xl bg-[#121212]'>
-                    {partner.date}
+                    {i18next.language === 'es' ? partner.date : partner.date_en}
                   </span>
                   <span class='border-[0.5px] border-gray-800 py-2 w-full rounded-xl bg-[#121212]'>
                     {partner.location}
