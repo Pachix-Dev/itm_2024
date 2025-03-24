@@ -55,7 +55,9 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
           </a>
         </div>
       </div>
-      <div class='flex justify-center flex-wrap gap-5 my-10 px-5'>
+      <div
+        class='grid grid-cols-2 md:flex md:flex-wrap justify-center gap-5 my-10 px-5'
+      >
         <div class='rounded-2xl border-2 border-black p-5'>
           <div class='bg-[#0A37FE] rounded-full p-4 w-20 h-20 text-white'>
             <svg
@@ -189,7 +191,9 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
     </section>
     <section class="bg-[url('/img/bg_itm_2026_3.webp')]">
       <div class='container mx-auto px-4 text-white'>
-        <p class='text-6xl font-extrabold text-center'>{t('home.text_17')}</p>
+        <p class='text-3xl md:text-6xl font-extrabold text-center'>
+          {t('home.text_17')}
+        </p>
         <p class='mt-5 text-center text-2xl' set:html={t('home.text_18')} />
       </div>
       <Events events={events} isLeftToRight={true} />

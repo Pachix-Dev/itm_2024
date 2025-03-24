@@ -35,7 +35,7 @@ import i18next from 'i18next'
     >
       {
         events?.map((partner) => (
-          <li class='grid place-items-center rounded-xl p-3 border-[0.5px] border-gray-600 h-full w-[500px]'>
+          <li class='grid place-items-center rounded-xl p-3 border-[0.5px] border-gray-600 h-full w-96 md:w-[500px]'>
             <a
               href={partner.link}
               target='_blank'
@@ -45,7 +45,7 @@ import i18next from 'i18next'
               class='rounded-xl p-5 h-full bg-cover bg-bottom bg-no-repeat'
             >
               <div class='grid place-content-evenly gap-3 h-full'>
-                <div class='h-80 grid place-items-center'>
+                <div class='h-28 md:h-80 grid place-items-center'>
                   <img src={partner.logo} width={partner.width} />
                 </div>
                 <div>
@@ -81,7 +81,7 @@ import i18next from 'i18next'
     >
       {
         events?.map((partner) => (
-          <li class='grid place-items-center rounded-xl p-3 border-[0.5px] border-gray-600 h-full w-[500px]'>
+          <li class='grid place-items-center rounded-xl p-3 border-[0.5px] border-gray-600 h-full w-96 md:w-[500px]'>
             <a
               href={partner.link}
               target='_blank'
@@ -91,7 +91,7 @@ import i18next from 'i18next'
               class='rounded-xl p-5 h-full bg-cover bg-bottom bg-no-repeat'
             >
               <div class='grid place-content-evenly gap-3 h-full'>
-                <div class='h-80 grid place-items-center'>
+                <div class='h-32 md:h-80 grid place-items-center'>
                   <img src={partner.logo} width={partner.width} />
                 </div>
                 <div>
