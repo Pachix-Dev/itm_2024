@@ -7,9 +7,9 @@ import RedButton from '../shared/RedButton.astro'
 ---
 
 <section
-  class='bg-black bg-cover bg-center bg-no-repeat bg-fixed text-white px-5 md:px-10 lg:px-20 py-10 grid md:grid-cols-3 gap-20'
+  class='bg-black bg-cover bg-center bg-no-repeat bg-fixed text-white px-5 md:px-10 lg:px-20 py-10 grid md:grid-cols-2 gap-20'
 >
-  <div class='col-span-2'>
+  <div>
     <p>INDUSTRIAL TRANSFORMATION MEXICO</p>
     <div class='my-3 square_blue w-full font-bold text-2xl md:text-6xl px-4'>
       {t('profile.subtitle')}
@@ -46,9 +46,13 @@ import RedButton from '../shared/RedButton.astro'
       </RedButton>
     </ul>
   </div>
-  <div class='p-12 bg-[url(/img/bg_videoExpositor.webp)] bg-cover bg-no-repeat'>
+  <div
+    class='p-12 bg-[url(/img/bg_videoExpositor.webp)] bg-cover bg-no-repeat my-auto'
+  >
     <video
-      src='/videos/ITM_2023_exhibitor.mp4'
+      src={i18n.language === 'es'
+        ? '/videos/itm_resumen_2024.mp4'
+        : '/videos/itm_resumen_2024_eng.mp4'}
       autoplay
       loop
       muted
