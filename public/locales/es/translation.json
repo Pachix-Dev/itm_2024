@@ -240,7 +240,7 @@
             "text_18": "Conozca nuevos clientes internacionales y amplíe sus contactos comerciales."
         },
         "segments":{
-            "title":"SEGMENTOS DE INTERÉS 2024 ",
+            "title":"SEGMENTOS DE INTERÉS ",
             "item-1":"Automatización y Robotización",
             "item-2":"Logística Inteligente",
             "item-3":"Soluciones de Energía",
@@ -257,7 +257,7 @@
         "btn-exhibitor":"SOY EXPOSITOR",
         "btn-sent-message":"Enviar Mensaje",
         "rates":{
-            "title":"TARIFAS DE PARTICIPACIÓN ITM 2025",
+            "title":"TARIFAS DE PARTICIPACIÓN ITM",
             "stand-1":{
                 "title":"Superficie <br/> libre (Sin Setup)",
                 "type":"Precio de lista m2",
@@ -568,7 +568,8 @@
         "dateFooter": "11 al 13 de noviembre de 2025",
         "suscribe": "Suscríbete a nuestro boletín",
         "day_1":"Miércoles y Jueves",
-        "day_2":"Viernes"
+        "day_2":"Viernes",
+        "text_1":"<strong>Reserva tu stand y/o conviértete en patrocinador</strong><br /> de Industrial Transformation Mexico."
     },
     "hotels":{
         "title": "Tarifas especiales en hoteles",

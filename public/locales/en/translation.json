@@ -145,7 +145,7 @@
         "text5years_5": "millions of pesos in",
         "text5years_5_1": "media coverage value",
         "directory_2024": "ITM Digital Directory 2024",
-        "segmentos_title": "ITM 2024 SEGMENTS OF INTEREST",
+        "segmentos_title": "ITM SEGMENTS OF INTEREST",
         "segments_1": "Intelligent Logistics",
         "segments_2": "Additive Manufacturing",
         "segment_3": "Machines and Tools",
@@ -240,7 +240,7 @@
             "text_18": "Meet new international customers and expand your business contacts."
         },
         "segments":{
-            "title":"SEGMENTS OF INTEREST 2024",
+            "title":"SEGMENTS OF INTEREST",
             "item-1":"Automation and Robotization ",
             "item-2":"Smart Logistics",
             "item-3":"Energy Solutions",
@@ -255,9 +255,9 @@
         "btn-interested":"I'M INTERESTED",
         "btn-exhibitor-info":"EXHIBITOR INFORMATION",
         "btn-exhibitor":"I AM AN EXHIBITOR",
-        "btn-sent-message":"Sent Message",
+        "btn-sent-message":"Send Message",
         "rates":{
-            "title":"ITM 2024 PARTICIPATION FEES",
+            "title":"ITM PARTICIPATION FEES",
             "stand-1":{
                 "title":"Raw Space <br/> (no set up)",
                 "type":"Regular price sqm",
@@ -569,7 +569,8 @@
         "dateFooter": "11 - 13 November 2025",
         "suscribe": "Subscribe to our newsletter",
         "day_1":"Wednesday and Thursday",
-        "day_2":"Friday"
+        "day_2":"Friday",
+        "text_1":"Reserve your booth and/or become a sponsor</strong><br /> of Industrial Transformation Mexico."
     },
     "hotels":{
         "title": "Special Hotel Rates",
