@@ -204,7 +204,7 @@ const alliesStrategic = [
       alt: 'enpact',
       link: 'https://enpact.org/',
     },
-    /*{
+    {
       src: '/ahk.webp',
       width: 250,
       height: 127,
@@ -275,7 +275,7 @@ const alliesStrategic = [
       alt: 'cci-france',
       link: 'https://www.franciamexico.com/',
     },
-    */
+    
 ]
 
 const media_1 = [
