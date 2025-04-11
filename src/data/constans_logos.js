@@ -221,14 +221,14 @@ const alliesStrategic = [
     },
     {
       src: '/gto200.webp',
-      width: 190,
+      width: 150,
       height: 127,
       alt: 'gto200',
       link: 'https://www.gobiernoabiertogto.org.mx/',
     },
     {
       src: '/dual.webp',
-      width: 190,
+      width: 150,
       height: 127,
       alt: 'dual',
       link: 'https://aedual.mx/',
@@ -256,7 +256,7 @@ const alliesStrategic = [
     },    
     {
       src: '/80amsoc.webp',
-      width: 190,
+      width: 150,
       height: 127,
       alt: '80 amsoc',
       link: 'https://amsoc.mx/es/inicio/',
