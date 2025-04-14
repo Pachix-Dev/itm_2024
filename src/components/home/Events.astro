@@ -53,7 +53,9 @@ import i18next from 'i18next'
                   <img src={partner.logo} width={partner.width} />
                 </div>
                 <div>
-                  <p class='text-2xl font-extrabold'>{partner.title}</p>
+                  <p class='text-2xl font-extrabold uppercase'>
+                    {partner.title}
+                  </p>
                   <p class='mt-5 text-lg font-bold'>
                     {i18next.language === 'es'
                       ? partner.subtitle

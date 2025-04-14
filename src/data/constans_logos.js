@@ -219,13 +219,13 @@ const alliesStrategic = [
       alt: 'giz',
       link: 'https://www.giz.de/en/worldwide/33041.html',
     },
-    {
+    /*{
       src: '/gto200.webp',
       width: 150,
       height: 127,
       alt: 'gto200',
       link: 'https://www.gobiernoabiertogto.org.mx/',
-    },
+    },*/
     {
       src: '/dual.webp',
       width: 150,

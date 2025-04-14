@@ -5,7 +5,7 @@ const events = [
       width: 250,      
       alt: 'AMOF',
       link: 'https://amofexpo.igeco.mx/',
-      title: 'AMERICA´S MOBILITY OF THE FUTURE',
+      title: "AMERICAS’ MOBILITY OF THE FUTURE",
       subtitle: 'La feria de la movilidad del futuro',
       subtitle_en: 'The future mobility fair',
       description:'Conoce los avances más recientes en la industria de la electromovilidad, las ciudades inteligentes y los desarrollos tecnológicos de movilidad en su piso de exposición.',

@@ -223,8 +223,9 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
       </div>
     </section>
     <section class="bg-[url('/img/bg_itm_2026_3.webp')]">
+      <Score />
       <div
-        class='container mx-auto px-4 text-white'
+        class='mt-20 container mx-auto px-4 text-white'
         data-aos='fade-up'
         data-aos-duration='1500'
       >
@@ -234,7 +235,6 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
         <p class='mt-5 text-center text-2xl' set:html={t('home.text_18')} />
       </div>
       <Events events={events} isLeftToRight={true} />
-      <Score />
       <div
         class='pt-20 text-white grid md:grid-cols-2 lg:grid-cols-4 place-items-end'
         data-aos='fade-in'
