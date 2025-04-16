@@ -25,8 +25,8 @@ const events = [
       subtitle_en: 'AI in industry',
       description:'En HANNOVER MESSE 2025, podrás experimentar tecnologías de vanguardia en vivo: desde robots autónomos hasta IA generativa. Descubre cómo la IA está transformando la industria y estableciendo nuevos estándares.',
       description_en:'At HANNOVER MESSE 2025, you can experience cutting-edge technologies live: from autonomous robots to generative AI. Discover how AI is transforming industry and setting new standards.',
-      date: 'Marzo / Abril, 2025',
-      date_en: 'March / April, 2025',
+      date: 'Abril, 2026',
+      date_en: 'April, 2026',
       location: 'Germany',
     },
     {
@@ -118,7 +118,22 @@ const events = [
       date: 'Marzo, 2026',
       date_en: 'March, 2026',
       location: 'Italy',
-    },    
+    },
+    {
+      src: '/img/drone_event_bg.webp',
+      logo: '/img/droneslogo.webp',
+      width: 350,      
+      alt: 'INNOVATORS FORUM MX',
+      link: 'https://drone.igeco.mx/',
+      title: 'DRONE INNOVATORS FORUM MX ',
+      subtitle: 'Liberando el potencial aéreo: El mundo de los drones',
+      subtitle_en: 'Unleashing Aerial Potential: The World of Drones',
+      description:'Participa en el punto de encuentro central para la industria de los drones, incluyendo proveedores de soluciones y tomadores de decisiones.',
+      description_en:'Join the central meeting point for the drone industry, including solution providers and decision makers.',
+      date: 'Noviembre, 2025',
+      date_en: 'November, 2025',
+      location: 'CDMX',
+    }, 
 ]
 
 export {events}

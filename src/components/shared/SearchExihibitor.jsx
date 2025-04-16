@@ -75,7 +75,7 @@ export function SearchExihibitor({ language }) {
             </div>
 
             <div>
-              <p className='font-bold text-lg'>{item.contact}</p>
+              {/*<p className='font-bold text-lg'>{item.contact}</p>
               <p className='italic'>{item.position}</p>
               <p className='text-lg flex items-center gap-2'>
                 <svg
@@ -114,6 +114,7 @@ export function SearchExihibitor({ language }) {
                 </svg>
                 {item.email}
               </a>
+              */}
               <a
                 href={`mailto:${item.webpage}`}
                 className='text-lg flex items-center gap-2 hover:text-red-600'
