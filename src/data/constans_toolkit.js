@@ -1,10 +1,10 @@
 const toolkitES = [
-    { src:'/img/toolkit/linkedin_esp_2025.webp', alt: 'LinkedIn', width: 1584, height: 396 },
-    { src:'/img/toolkit/banner_web_esp_2025.webp', alt: 'Banner Web', width: 1500, height: 500},
-    { src:'/img/toolkit/twitter_esp_2025.webp', alt: 'Twitter', width: 1500, height: 500},
-    { src:'/img/toolkit/key_visual_esp_2025.webp', alt: 'Key Visual', width: 6912, height: 3456},
-    { src:'/img/toolkit/facebook_esp_2025.webp', alt: 'Facebook', width: 940, height: 788},
-    { src:'/img/toolkit/igstories_esp_2025.webp', alt: 'Instagram', width: 1080, height: 1920}
+    { src:'/img/toolkit/linkedin_esp_2025_f.webp', alt: 'LinkedIn', width: 1584, height: 396 },
+    { src:'/img/toolkit/banner_web_esp_2025_f.webp', alt: 'Banner Web', width: 1500, height: 500},
+    { src:'/img/toolkit/twitter_esp_2025_f.webp', alt: 'Twitter', width: 1500, height: 500},
+    { src:'/img/toolkit/key_visual_esp_2025_f.webp', alt: 'Key Visual', width: 6912, height: 3456},
+    { src:'/img/toolkit/facebook_esp_2025_f.webp', alt: 'Facebook', width: 940, height: 788},
+    { src:'/img/toolkit/igstories_esp_2025_f.webp', alt: 'Instagram', width: 1080, height: 1920}
   ]
 
 const toolkitEN = [
