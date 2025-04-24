@@ -38,7 +38,23 @@ const useRegisterForm = create(
             
             complete_register: false,
             invoiceDownToLoad: "",
-            item:{},
+            items:[
+                {
+                    id: 1,
+                    name: "Costo del acceso",
+                    name_en: "Access cost",
+                    price: 300,
+                    included: [
+                        "Acceso a la feria los 3 días del evento",                        
+                        "Acceso a conferencias leaders of tomorrow",                    
+                    ],
+                    included_en: [
+                        "Access to the fair for 3 days of the event",
+                        "Access to leaders of tomorrow conferences",
+                    ],                            
+                }
+            ],
+            total: 300,
             code_cortesia: "",
             
             setName: (name) => set({ name }),
@@ -118,8 +134,7 @@ const useRegisterForm = create(
                 productInterest: "",
                 levelInfluence: "",
                 wannaBeExhibitor: "",
-                alreadyVisited: [],
-                item:{},
+                alreadyVisited: [],                
                 code_cortesia: ""        
             })
         }), 

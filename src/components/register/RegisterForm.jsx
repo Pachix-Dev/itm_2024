@@ -1,8 +1,9 @@
 import { useRegisterForm } from '../../store/register-form'
 
 import { StepOne } from './StepOne'
-import { StepThree } from './StepThree'
 import { StepTwo } from './StepTwo'
+import { StepThree } from './StepThree'
+import { StepFour } from './SetpFour'
 import { Stepper } from './Stepper'
 
 export function RegisterForm({ translates, currentLanguage }) {
@@ -19,6 +20,9 @@ export function RegisterForm({ translates, currentLanguage }) {
             translates={translates}
             currentLanguage={currentLanguage}
           />
+        )}
+        {step === 3 && (
+          <StepFour translates={translates} currentLanguage={currentLanguage} />
         )}
       </form>
     </section>

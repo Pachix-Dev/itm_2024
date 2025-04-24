@@ -42,6 +42,37 @@ const client_secret = process.env.CLIENT_SECRET;
 const endpoint_url = environment === 'sandbox' ? 'https://api-m.sandbox.paypal.com' : 'https://api-m.paypal.com';
 const resend = new Resend(process.env.RESEND_APIKEY)
 
+
+app.post('/free-register', async (req, res) => {
+    const { body } = req;
+
+    try {        
+        const data = { 
+            uuid: uuidv4(),            
+            ...body
+        };          
+        const userResponse = await RegisterModel.create_user({ ...data }); 
+        
+        if(!userResponse.status){
+            return  res.status(500).send({
+                ...userResponse
+            });
+        }                 
+        
+        return res.send({
+            ...userResponse,            
+        });                
+               
+    } catch (err) {
+        console.log(err);
+        res.status(500).send({
+            status: false,
+            message: 'hubo un error al procesar tu registro, por favor intenta mas tarde...'
+        });
+    }
+});
+
+
 /*app.post('/create-order', (req, res) => {    
     const { body } = req;
     
@@ -140,38 +171,7 @@ app.post('/complete-order', async (req, res) => {
     }
 });
 
-app.post('/free-register', async (req, res) => {
-    const { body } = req;
 
-    try {        
-        const data = { 
-            uuid: uuidv4(),            
-            ...body
-        };          
-        const userResponse = await RegisterModel.create_user({ ...data }); 
-        
-        if(!userResponse.status){
-            return  res.status(500).send({
-                ...userResponse
-            });
-        }                 
-
-        //const pdfAtch = await generatePDF_freePass(body, data.uuid );
-
-        //const mailResponse = await sendEmail(data, pdfAtch, data.uuid);   
-
-        return res.send({
-            ...userResponse,            
-        });                
-               
-    } catch (err) {
-        console.log(err);
-        res.status(500).send({
-            status: false,
-            message: 'hubo un error al procesar tu registro, por favor intenta mas tarde...'
-        });
-    }
-});
 
 app.post('/check-cortesia', async (req, res) => {
     const { body } = req;
