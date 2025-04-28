@@ -38,6 +38,7 @@ export function StepFour({ translates, currentLanguage }) {
     levelInfluence,
     wannaBeExhibitor,
     alreadyVisited,
+    total,
     setCompleteRegister,
     setInvoiceDownToLoad,
     decrementStep,
@@ -66,7 +67,7 @@ export function StepFour({ translates, currentLanguage }) {
     }
   }
 
-  const style = { layout: 'vertical', color: 'white' }
+  const style = { layout: 'vertical' }
   const initialOptions = {
     clientId:
       'AZ4hFSk_NoYY2zTeTvsFqPwsik-VE9OlcSedt4jh2RD77iPcvjeKEd1GtXA9qdo_5E4Kw_nYXxmkh6gH',
@@ -90,16 +91,42 @@ export function StepFour({ translates, currentLanguage }) {
 
   async function onApprove(data) {
     setProcessing(true)
-    const response = await fetch(urlbase + 'upgrade-user', {
+    const response = await fetch(urlbase + 'complete-order', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         orderID: data.orderID,
-        total: total,
-        items: items,
+        total,
+        items,
+        name,
+        paternSurname,
+        maternSurname,
         email,
+        phone,
+        typeRegister,
+        genre,
+        nacionality,
+        code_invitation,
+        company,
+        industry,
+        position,
+        area,
+        country,
+        municipality,
+        state,
+        city,
+        address,
+        colonia,
+        postalCode,
+        webPage,
+        phoneCompany,
+        eventKnowledge,
+        productInterest,
+        levelInfluence,
+        wannaBeExhibitor,
+        alreadyVisited,
         currentLanguage,
       }),
     })
@@ -143,7 +170,7 @@ export function StepFour({ translates, currentLanguage }) {
     <>
       <div className='flex gap-10 '>
         <div className='w-full'>
-          <div className='rounded-xl border-2 p-4'>
+          <div className='rounded-xl border-2 p-4 bg-white text-black'>
             <div className='flex justify-between items-center'>
               <div className='flex gap-2'>
                 <input
@@ -157,7 +184,7 @@ export function StepFour({ translates, currentLanguage }) {
                 <label htmlFor='credit_card'>Credit or Debit Card</label>
               </div>
               <div className='grid grid-flow-col place-items-center gap-2'>
-                <img src='/img/visa_white.webp' alt='Visa' width={50} />
+                <img src='/visa.webp' alt='Visa' width={50} />
                 <img src='/mastercard.webp' alt='Mastercard' />
               </div>
             </div>
@@ -172,7 +199,7 @@ export function StepFour({ translates, currentLanguage }) {
             )}
           </div>
           {/* Bank Transfer Option */}
-          <div className='rounded-xl border-2 p-4 mt-5'>
+          <div className='rounded-xl border-2 p-4 mt-5 bg-white text-black'>
             <div className='flex justify-between items-center'>
               <div className='flex gap-2'>
                 <input
@@ -187,10 +214,10 @@ export function StepFour({ translates, currentLanguage }) {
                   {translates.spei_transfer}
                 </label>
               </div>
-              <img src='/img/spei_white.webp' alt='SPEI' width={90} />
+              <img src='/spei.webp' alt='SPEI' width={90} />
             </div>
             {selectedPayment === 'bank_transfer' && (
-              <div className='mt-5 text-sm text-white'>
+              <div className='mt-5 text-sm text-black'>
                 <div className='p-4 w-full'>
                   <div className='flex justify-between items-center gap-3'>
                     <div className='flex gap-2 items-center'>
@@ -215,7 +242,7 @@ export function StepFour({ translates, currentLanguage }) {
                     </div>
                     <button
                       onClick={handleCopy}
-                      className='text-white px-3 py-1 rounded  transition'
+                      className='text-black px-3 py-1 rounded  transition'
                     >
                       {copied ? (
                         translates.copy_success + ' ✅'
@@ -267,7 +294,7 @@ export function StepFour({ translates, currentLanguage }) {
             )}
           </div>
         </div>
-        <div className='border-2 rounded-xl flex flex-col justify-between'>
+        <div className='border-2 rounded-xl flex flex-col justify-between bg-white text-black'>
           <Resume currentLanguage={currentLanguage} />
           <Total />
         </div>

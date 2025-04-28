@@ -72,11 +72,10 @@ app.post('/free-register', async (req, res) => {
     }
 });
 
-
-/*app.post('/create-order', (req, res) => {    
+app.post('/create-order', (req, res) => {    
     const { body } = req;
     
-    if(body.total != 5800){
+    if(body.total != 300){
         return res.status(500).send({
             status: false,
             message: 'Tu compra no pudo ser procesada, la información no es valida...'
@@ -92,7 +91,7 @@ app.post('/free-register', async (req, res) => {
                         'currency_code': 'MXN',
                         'value': body.total                        
                     },                                             
-                    'description': 'PROGRAMA DE CONFERENCIAS CCE - CONCAMIN - ITM - AMOF 2024',
+                    'description': 'ACCESO ITM 2025',
                 }]
             };
             const data = JSON.stringify(order_data_json)
@@ -145,10 +144,8 @@ app.post('/complete-order', async (req, res) => {
                 
                 const paypal_id_order = json.id;
                 const paypal_id_transaction = json.purchase_units[0].payments.captures[0].id;                     
-                await RegisterModel.save_order(insertId, paypal_id_order, paypal_id_transaction, body.total);
-
+                await RegisterModel.save_order(insertId, paypal_id_order, paypal_id_transaction);
                 const pdfAtch = await generatePDFInvoice(paypal_id_transaction, body, uuid);
-
                 const mailResponse = await sendEmail(body, pdfAtch, paypal_id_transaction);   
         
                 return res.send({
@@ -170,6 +167,8 @@ app.post('/complete-order', async (req, res) => {
         });
     }
 });
+
+/*
 
 
 
@@ -919,22 +918,7 @@ async function sendEmailOktoberfest(data, pdfAtch = null, paypal_id_transaction 
     }    
 }
 
-function get_access_token() {
-    const auth = `${client_id}:${client_secret}`
-    const data = 'grant_type=client_credentials'
-    return fetch(endpoint_url + '/v1/oauth2/token', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'Authorization': `Basic ${Buffer.from(auth).toString('base64')}`
-            },
-            body: data
-        })
-        .then(res => res.json())
-        .then(json => {
-            return json.access_token;
-        })
-}*/
+*/
 
 app.get('/get-postalcode/:cp', async (req, res) => {
     const { cp } = req.params;
@@ -951,6 +935,23 @@ app.get('/get-postalcode/:cp', async (req, res) => {
         });
     }    
 })
+
+function get_access_token() {
+    const auth = `${client_id}:${client_secret}`
+    const data = 'grant_type=client_credentials'
+    return fetch(endpoint_url + '/v1/oauth2/token', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Authorization': `Basic ${Buffer.from(auth).toString('base64')}`
+            },
+            body: data
+        })
+        .then(res => res.json())
+        .then(json => {
+            return json.access_token;
+        })
+}
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`)

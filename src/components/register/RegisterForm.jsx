@@ -15,12 +15,7 @@ export function RegisterForm({ translates, currentLanguage }) {
       <form className='mx-auto'>
         {step === 0 && <StepOne translates={translates} />}
         {step === 1 && <StepTwo translates={translates} />}
-        {step === 2 && (
-          <StepThree
-            translates={translates}
-            currentLanguage={currentLanguage}
-          />
-        )}
+        {step === 2 && <StepThree translates={translates} />}
         {step === 3 && (
           <StepFour translates={translates} currentLanguage={currentLanguage} />
         )}

@@ -111,16 +111,15 @@ export class RegisterModel {
       }
   }
 
-  static async save_order (user_id, paypal_id_order,paypal_id_transaction, total) {
+  static async save_order (user_id, paypal_id_order,paypal_id_transaction) {
     const connection = await mysql.createConnection(config)
     try {      
       const [registers] = await connection.query(
-        'INSERT INTO users_vip (user_id, paypal_id_order, paypal_id_transaction, total) VALUES (?,?,?,?)',
+        'UPDATE INTO SET (paypal_id_order, paypal_id_transaction) VALUES (?,?) WHERE id = ?',
         [
-          user_id,
           paypal_id_order,
           paypal_id_transaction,              
-          total
+          user_id
         ]
       )
       return registers

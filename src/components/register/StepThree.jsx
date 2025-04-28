@@ -2,30 +2,8 @@ import { useForm } from 'react-hook-form'
 import { useRegisterForm } from '../../store/register-form'
 import { MultiSelect } from 'react-multi-select-component'
 
-export function StepThree({ translates, currentLanguage }) {
+export function StepThree({ translates }) {
   const {
-    name,
-    paternSurname,
-    maternSurname,
-    email,
-    phone,
-    typeRegister,
-    genre,
-    nacionality,
-    code_invitation,
-    company,
-    industry,
-    position,
-    area,
-    country,
-    municipality,
-    state,
-    city,
-    address,
-    colonia,
-    postalCode,
-    webPage,
-    phoneCompany,
     eventKnowledge,
     productInterest,
     levelInfluence,
@@ -58,59 +36,6 @@ export function StepThree({ translates, currentLanguage }) {
     { label: 'ITMS', value: 'ITMS' },
     { label: 'Hannover Messe (Alemania)', value: 'Hannover Messe (Alemania)' },
   ]
-
-  const handleRegister = async () => {
-    setProcessing(true)
-    const response = await fetch(urlbase + 'free-register', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name,
-        paternSurname,
-        maternSurname,
-        email,
-        phone,
-        typeRegister,
-        genre,
-        nacionality,
-        code_invitation,
-
-        company,
-        industry,
-        position,
-        area,
-        country,
-        municipality,
-        state,
-        city,
-        address,
-        colonia,
-        postalCode,
-        webPage,
-        phoneCompany,
-
-        eventKnowledge,
-        productInterest,
-        levelInfluence,
-        wannaBeExhibitor,
-        alreadyVisited: alreadyVisited.map((item) => item.value).join(),
-        currentLanguage,
-      }),
-    })
-    const orderData = await response.json()
-    if (orderData?.status) {
-      setProcessing(false)
-      incrementStep()
-    } else {
-      setProcessing(false)
-      setMessage(orderData?.message)
-      setTimeout(() => {
-        setMessage('')
-      }, 5000)
-    }
-  }
 
   const {
     register,
@@ -305,7 +230,7 @@ export function StepThree({ translates, currentLanguage }) {
         </button>
         <button
           className='px-3 py-2 bg-[#E42128] hover:bg-red-700 rounded-2xl text-white font-bold mt-5 flex gap-2'
-          onClick={handleSubmit(handleRegister)}
+          onClick={handleSubmit(incrementStep)}
         >
           {translates.continue}
         </button>
