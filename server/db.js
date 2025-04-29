@@ -38,7 +38,6 @@ export class RegisterModel {
       genre,
       nacionality,
       code_invitation,
-
       company,
       industry,
       position,
@@ -52,7 +51,6 @@ export class RegisterModel {
       postalCode,
       webPage,
       phoneCompany,
-
       eventKnowledge,
       productInterest,
       levelInfluence,
@@ -74,7 +72,6 @@ export class RegisterModel {
             genre,
             nacionality,
             code_invitation,
-    
             company,
             industry,
             position,
@@ -88,7 +85,6 @@ export class RegisterModel {
             postalCode,
             webPage,
             phoneCompany,
-    
             eventKnowledge,
             productInterest,
             levelInfluence,
@@ -99,6 +95,7 @@ export class RegisterModel {
                                 
         return {
           status: true,
+          uuid,
           insertId: result.insertId,
           ...result,
         }
@@ -127,7 +124,40 @@ export class RegisterModel {
       await connection.end() // Close the connection
     }
   }
+  static async get_user_by_id(id) {
+		const connection = await mysql.createConnection(config)
+		try {
 
+			const [users] = await connection.query(
+				'SELECT * FROM users WHERE id = ?',
+				[id]
+			)
+			if (users.length === 0) {
+				return {
+          status: false,
+				  error: 'No se encontró el usuario',
+				}
+			}
+      
+      const [vipUsers] = await connection.query(
+        'SELECT * FROM users_vip WHERE user_id = ?',
+        [id]
+      )
+      if (vipUsers.length > 0) {
+        return {
+          status: false,
+          error: 'Ya eres usuario VIP',
+        }
+      }
+      
+			return {
+        status: true,
+				user: users[0],
+			}
+		} finally {
+			await connection.end()
+		}
+	}
   static async get_postal_code ({cp}) {
     const connection = await mysql.createConnection(config)
     try {      

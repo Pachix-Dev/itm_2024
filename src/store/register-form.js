@@ -4,7 +4,8 @@ import { persist } from "zustand/middleware";
 const useRegisterForm = create( 
     persist(
         (set) => ({     
-            step: 0,            
+            step: 0,  
+            user_id: "",           
             name: "",
             paternSurname: "",
             maternSurname: "",
@@ -57,6 +58,7 @@ const useRegisterForm = create(
             total: 300,
             code_cortesia: "",
             
+            setUser_id: (user_id) => set({ user_id }),
             setName: (name) => set({ name }),
             setPaternSurname: (paternSurname) => set({ paternSurname }),
             setMaternSurname: (maternSurname) => set({ maternSurname }),
@@ -105,7 +107,8 @@ const useRegisterForm = create(
             })),
 
             clear: () => set({ 
-                step: 0,            
+                step: 0,                
+                user_id: "",            
                 name: "",
                 paternSurname: "",
                 maternSurname: "",               

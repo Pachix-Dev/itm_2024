@@ -11,9 +11,7 @@ import {email_template_amof} from './TemplateEmailAmof.js';
 import {email_template_amof_eng} from './TemplateEmailAmofEng.js';
 import {email_template_oktoberfest} from './TemplateOktoberfest.js';
 import {email_template_oktoberfest_en} from './TemplateOktoberfestEn.js';
-
 import { generatePDFInvoice, generatePDF_freePass, generatePDF_freePass_amof, generatePDF_freePass_futuristic, generateQRDataURL, generatePDFInvoiceOktoberfest } from './generatePdf.js';
-import PDFDocument from 'pdfkit';
 import { Resend } from "resend";
 
 const { json } = pkg
@@ -119,17 +117,15 @@ app.post('/create-order', (req, res) => {
 app.post('/complete-order', async (req, res) => {
     const { body } = req;    
     try {
-        const uuid = uuidv4();                
-        const userResponse = await RegisterModel.create_user({ uuid, ...body });
-        const { insertId } = userResponse;
-
-        if(!userResponse.status){
-            return  res.status(500).send({
-                ...userResponse
+        const userResponse = await RegisterModel.get_user_by_id(body.user_id);        
+        console.log(userResponse);
+        if (!userResponse.status) {
+            return res.status(404).send({
+                message: userResponse.error
             });
         }
 
-        const access_token = await get_access_token();
+        /*const access_token = await get_access_token();
         const response = await fetch(endpoint_url + '/v2/checkout/orders/' + req.body.orderID + '/capture', {
             method: 'POST',
             headers: {
@@ -158,7 +154,7 @@ app.post('/complete-order', async (req, res) => {
                 status: false,
                 message: 'Tu compra no pudo ser procesada, hay un problema con tu metodo de pago por favor intenta mas tarde...'
             });
-        }       
+        }   */    
     } catch (err) {
         console.log(err);
         res.status(500).send({
