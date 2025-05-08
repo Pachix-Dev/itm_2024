@@ -1,5 +1,5 @@
 ---
-import { t } from 'i18next'
+import i18next, { t } from 'i18next'
 import { Numbers } from '../shared/Numbers'
 ---
 
@@ -106,15 +106,19 @@ import { Numbers } from '../shared/Numbers'
         >
           <span class='text-white font-bold text-4xl'>
             <Numbers client:only='react' number='260' duration='5' />
-            <span class='text-white'>MDP</span>
+            <span class='text-white'
+              >{i18next.language === 'es' ? 'MDP' : 'MMDP'}
+            </span>
+            <p class='text-white text-xl font-extrabold'>
+              {t('home.bullet_6')}
+            </p>
           </span>
-          <p class='text-white text-xl font-extrabold'>{t('home.bullet_6')}</p>
         </div>
       </div>
+      <p class='text-white border-b-2 ps-10 text-4xl order-1 md:order-2 pb-5'>
+        {t('home.text_19')}
+        <strong>2024</strong>
+      </p>
     </div>
-    <p class='text-white border-b-2 ps-10 text-4xl order-1 md:order-2 pb-5'>
-      {t('home.text_19')}
-      <strong>2024</strong>
-    </p>
   </div>
 </section>

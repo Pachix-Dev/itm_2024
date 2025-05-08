@@ -125,7 +125,7 @@ app.post('/complete-order', async (req, res) => {
             });
         }
 
-        /*const access_token = await get_access_token();
+        const access_token = await get_access_token();
         const response = await fetch(endpoint_url + '/v2/checkout/orders/' + req.body.orderID + '/capture', {
             method: 'POST',
             headers: {
@@ -133,15 +133,15 @@ app.post('/complete-order', async (req, res) => {
                 'Authorization': `Bearer ${access_token}`
             }
         });
+
         const json = await response.json();
         console.log(JSON.stringify(json));
         if (json.id) {
-            if(json.purchase_units[0].payments.captures[0].status === 'COMPLETED' || json.purchase_units[0].payments.captures[0].status === 'PENDING' ){
-                
+            if(json.purchase_units[0].payments.captures[0].status === 'COMPLETED' || json.purchase_units[0].payments.captures[0].status === 'PENDING' ) {                
                 const paypal_id_order = json.id;
                 const paypal_id_transaction = json.purchase_units[0].payments.captures[0].id;                     
-                await RegisterModel.save_order(insertId, paypal_id_order, paypal_id_transaction);
-                const pdfAtch = await generatePDFInvoice(paypal_id_transaction, body, uuid);
+                await RegisterModel.save_order(body.user_id, paypal_id_order, paypal_id_transaction);
+                const pdfAtch = await generatePDFInvoice(paypal_id_transaction, body, userResponse.user.uuid);
                 const mailResponse = await sendEmail(body, pdfAtch, paypal_id_transaction);   
         
                 return res.send({
@@ -154,7 +154,7 @@ app.post('/complete-order', async (req, res) => {
                 status: false,
                 message: 'Tu compra no pudo ser procesada, hay un problema con tu metodo de pago por favor intenta mas tarde...'
             });
-        }   */    
+        }
     } catch (err) {
         console.log(err);
         res.status(500).send({
@@ -165,8 +165,6 @@ app.post('/complete-order', async (req, res) => {
 });
 
 /*
-
-
 
 app.post('/check-cortesia', async (req, res) => {
     const { body } = req;
@@ -843,42 +841,6 @@ async function sendEmailFuturistic(data, pdfAtch = null, paypal_id_transaction =
     }    
 }
 
-
-async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){    
-    try{
-       
-        
-        const emailContent = data.currentLanguage === 'es' ?  await email_template({ ...data }) : await email_template_eng({ ...data });
-       
-        await resend.emails.send({
-            from: 'ITM 2024 <noreply@industrialtransformation.mx>',
-            to: data.email,
-            subject: 'Confirmación de pre registro ITM 2024',
-            html: emailContent,
-            attachments: [
-                {
-                    filename: `${paypal_id_transaction}.pdf`,
-                    path: `https://industrialtransformation.mx/invoices/${paypal_id_transaction}.pdf`,
-                    content_type: 'application/pdf'
-                },
-              ],           
-        })
-        
-
-        return {
-            status: true,
-            message: 'Gracias por registrarte, te hemos enviado un correo de confirmación a tu bandeja de entrada...'
-        };
-
-    } catch (err) {
-        console.log(err);
-        return {
-            status: false,
-            message: 'No pudimos enviarte el correo de confirmación de tu registro, por favor descarga tu registro en este pagina y presentalo hasta el dia del evento...'
-        };              
-    }    
-}
-
 async function sendEmailOktoberfest(data, pdfAtch = null, paypal_id_transaction = null){    
     try{
        
@@ -915,6 +877,38 @@ async function sendEmailOktoberfest(data, pdfAtch = null, paypal_id_transaction 
 }
 
 */
+async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null){    
+    try{
+
+        const emailContent = data.currentLanguage === 'es' ?  await email_template({ ...data }) : await email_template_eng({ ...data });       
+        await resend.emails.send({
+            from: 'ITM 2024 <noreply@industrialtransformation.mx>',
+            to: data.email,
+            subject: 'Confirmación de pre registro ITM 2025',
+            html: emailContent,
+            attachments: [
+                {
+                    filename: `${paypal_id_transaction}.pdf`,
+                    path: `https://industrialtransformation.mx/invoices/${paypal_id_transaction}.pdf`,
+                    content_type: 'application/pdf'
+                },
+              ],           
+        })
+        
+
+        return {
+            status: true,
+            message: 'Gracias por registrarte, te hemos enviado un correo de confirmación a tu bandeja de entrada...'
+        };
+
+    } catch (err) {
+        console.log(err);
+        return {
+            status: false,
+            message: 'No pudimos enviarte el correo de confirmación de tu registro, por favor descarga tu registro en este pagina y presentalo hasta el dia del evento...'
+        };              
+    }    
+}
 
 app.get('/get-postalcode/:cp', async (req, res) => {
     const { cp } = req.params;

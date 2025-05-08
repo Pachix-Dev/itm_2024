@@ -12,10 +12,18 @@ import { Total } from './Total'
 export function StepFour({ translates, currentLanguage }) {
   const {
     user_id,
+    name,
+    paternSurname,
+    maternSurname,
+    phone,
+    email,
+    position,
+    company,
     total,
     setCompleteRegister,
     setInvoiceDownToLoad,
     decrementStep,
+    items,
     clear,
   } = useRegisterForm()
 
@@ -74,6 +82,15 @@ export function StepFour({ translates, currentLanguage }) {
         orderID: data.orderID,
         user_id,
         total,
+        items,
+        name,
+        paternSurname,
+        maternSurname,
+        phone,
+        email,
+        position,
+        company,
+        currentLanguage,
       }),
     })
     const orderData = await response.json()

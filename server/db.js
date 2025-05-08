@@ -112,11 +112,11 @@ export class RegisterModel {
     const connection = await mysql.createConnection(config)
     try {      
       const [registers] = await connection.query(
-        'UPDATE INTO SET (paypal_id_order, paypal_id_transaction) VALUES (?,?) WHERE id = ?',
+        'INSERT INTO users_vip (user_id, paypal_id_order, paypal_id_transaction) VALUES (?,?,?)',
         [
+          user_id,
           paypal_id_order,
-          paypal_id_transaction,              
-          user_id
+          paypal_id_transaction,
         ]
       )
       return registers
@@ -124,6 +124,7 @@ export class RegisterModel {
       await connection.end() // Close the connection
     }
   }
+
   static async get_user_by_id(id) {
 		const connection = await mysql.createConnection(config)
 		try {
@@ -146,7 +147,7 @@ export class RegisterModel {
       if (vipUsers.length > 0) {
         return {
           status: false,
-          error: 'Ya eres usuario VIP',
+          error: 'Ya tienes comprano una entrada con este correo electrónico intenta con otro.',
         }
       }
       

@@ -83,7 +83,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
         .text("Total:", 50, 200 + 30)
         .text(formatAmountMXN(body.total),150,200 + 30)
         .font("Helvetica-Bold")
-        .text(body.name, 300, 200)
+        .text(body.name +' '+ body.paternSurname, 300, 200)
         .font("Helvetica")
         .text(body.email, 300, 200 + 15)
         .text(body.phone, 300, 200 + 30 )
@@ -108,32 +108,29 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
         .lineTo(550, 300)
         .stroke();
         
-    doc    
-    .fontSize(10)
-    .text(body.item.name, 50, 310)
-    .text(formatAmountMXN('5000'), 330, 310 )
-    .text('1', 450, 310)
-    .text(formatAmountMXN('5000'), 0, 310, { align: "right" });
-    
-    doc
-    .strokeColor("#aaaaaa")
-    .lineWidth(1)
-    .moveTo(50, 330)
-    .lineTo(550, 330)
-    .stroke();
+    body.items.map((item, index) => {
+        doc
+        .fontSize(10)
+        .text(item.name, 50, 280 + (index + 1)*30)
+        .text(formatAmountMXN(item.price), 320, 280 + (index + 1)*30)
+        .text(1, 430, 280 + (index + 1)*30)
+        .text(formatAmountMXN(item.price * 1), 0, 280 + (index + 1)*30, { align: "right" });
+        doc
+        .strokeColor("#aaaaaa")
+        .lineWidth(1)
+        .moveTo(50, 280 + (index + 1)*30 + 20)
+        .lineTo(550, 280 + (index + 1)*30 + 20)
+        .stroke();
+    });
     
     doc.moveDown(2);    
     doc
         .fontSize(10)
-        .text('Subtotal:       $5,000', { width: 540, align: "right" });
-    doc
-        .fontSize(10)
-        .text('IVA:            $8,00 ', { width: 540, align: "right" });   
-
+        .text('Subtotal:       '+formatAmountMXN(body.total), { width: 540, align: "right" });   
     doc
         .fontSize(10)
         .font("Helvetica-Bold")
-        .text('TOTAL:          $5,800' , { width: 540, align: "right" });    
+        .text('TOTAL:          '+formatAmountMXN(body.total) , { width: 540, align: "right" });    
     
     doc.moveDown(5)
         .font("Helvetica-Bold")        
@@ -144,7 +141,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
         .text("- FOTO DEL RECIBO DE COMPRA", 55)
         .text("- INDICAR EL MÉTODO DE PAGO (TARJETA DE CREDITO O DEBITO)", 55)
         .text("- USO DE CFDI", 55)
-        .text("* FECHA MÁXIMA DE FACTURACIÓN 25 DE OCTUBRE DE 2024")
+        .text("* FECHA MÁXIMA DE FACTURACIÓN 25 DE NOVIEMBRE DE 2025")
 
     const qrMainUser = await generateQRDataURL(uuid);
     doc.addPage();
@@ -201,11 +198,11 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      .fontSize(8)
      .text('1.', 330)
      .font('Helvetica')
-     .text('Tu gafete es tu pase a la exposición de ITM 2024. Deberás portarlo en todo momento.', 345, 75, {
+     .text('Tu gafete es tu pase a la exposición de ITM 2025. Deberás portarlo en todo momento.', 345, 75, {
          width: 250,
          align: 'justify'
      })  
-     doc.text('Your badge is your access pass to ITM 2024 tradeshow. You must wear it at all times.',{
+     doc.text('Your badge is your access pass to ITM 2025 tradeshow. You must wear it at all times.',{
          width: 250,
          align: 'justify'
      })

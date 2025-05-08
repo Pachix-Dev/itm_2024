@@ -34,6 +34,7 @@ export function StepOne({ translates }) {
     handleSubmit,
     formState: { errors },
   } = useForm({})
+
   const url = new URL(window.location.href)
 
   const codigoAguascalientes = url.searchParams.get('code_invitation') || ''
