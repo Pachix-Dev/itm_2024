@@ -138,10 +138,9 @@ export function StepThree({ translates }) {
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black uppercase'
           >
             <option value=''>{translates.select_option}</option>
+            <option value='FACEBOOK'>FACEBOOK</option>
             <option value='ESPECTACULAR'>{translates.spectacular}</option>
             <option value='PAGINA WEB'>{translates.website}</option>
-            <option value='CORREO ELÉCTRONICO/MAILING'>MAILING</option>
-            <option value='FACEBOOK'>FACEBOOK</option>
             <option value='TWITTER'>TWITTER</option>
             <option value='LINKEDIN'>LINKEDIN</option>
             <option value='INSTAGRAM'>INSTAGRAM</option>
@@ -153,7 +152,8 @@ export function StepThree({ translates }) {
             <option value='TELEVISIÓN'>{translates.television}</option>
             <option value='PRENSA'>{translates.press}</option>
             <option value='ANUNCIO EN REVISTA'>{translates.magazine_ad}</option>
-            <option value='TELEMARKETING'>TELEMARKETING</option>
+            <option value='TIKTOK'>TIKTOK</option>
+            <option value='WHATSAPP'>WHATSAPP</option>
           </select>
           {errors.eventKnowledge && (
             <p className='text-[#ffe200] font-light'>

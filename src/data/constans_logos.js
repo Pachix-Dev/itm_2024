@@ -422,7 +422,7 @@ const media_2 = [
 ] 
 
 const sponsors = [
-  { src: '/img/misumi.webp', alt: 'MISUMI', link: 'http://www.misumimex.com/', width: 200 },  
+  { src: '/img/misumi_white.png', alt: 'MISUMI', link: 'http://www.misumimex.com/', width: 200 },  
   { src: '/img/mitsubishi_white.png', alt: 'Mitsubishi', link: 'https://mx.mitsubishielectric.com/fa/en/', width: 200 },  
   { src: '/img/Schneider-Electric_white.png', alt: 'Schneider', link: 'https://www.se.com/ww/en/', width: 200 },
   { src: '/img/siemens_white.png', alt: 'NSK', link: 'https://www.siemens.com/mx/', width: 200 },
