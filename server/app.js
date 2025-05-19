@@ -164,6 +164,34 @@ app.post('/complete-order', async (req, res) => {
     }
 });
 
+app.post('/free-register-student', async (req, res) => {
+    const { body } = req;
+
+    try {        
+        const data = { 
+            uuid: uuidv4(),            
+            ...body
+        };          
+        const userResponse = await RegisterModel.create_user({ ...data }); 
+        
+        if(!userResponse.status){
+            return  res.status(500).send({
+                ...userResponse
+            });
+        }                 
+        
+        return res.send({
+            ...userResponse,            
+        });                
+               
+    } catch (err) {
+        console.log(err);
+        res.status(500).send({
+            status: false,
+            message: 'hubo un error al procesar tu registro, por favor intenta mas tarde...'
+        });
+    }
+});
 /*
 
 app.post('/check-cortesia', async (req, res) => {

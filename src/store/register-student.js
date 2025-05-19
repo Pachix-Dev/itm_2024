@@ -3,13 +3,13 @@ import { persist } from "zustand/middleware";
 
 const useRegisterStudent = create( 
     persist(
-        (set) => ({     
-            step: 0,  
-            user_id: "",           
+        (set) => ({
+            step: 0,
+            user_id: "",
             name: "",
-            lastname: "",            
+            lastname: "",
             email: "",
-            phone: "",           
+            phone: "",
             company: "",
             limit_students: 0,
             students: [],
@@ -22,7 +22,7 @@ const useRegisterStudent = create(
             setEmail: (email) => set({ email }),
             setPhone: (phone) => set({ phone }),
             setCompany: (company) => set({ company }),     
-            setLimitStudents: (limit_students) => set({ limit_students }),       
+            setLimitStudents: (limit_students) => set({ limit_students }),
             setStudents: (students) => set({ students }),
           
             setCompleteRegister: (complete_register) => set({ complete_register }),
@@ -37,7 +37,7 @@ const useRegisterStudent = create(
 
             clear: () => set({ 
                 step: 0,
-                user_id: "",            
+                user_id: "",
                 name: "",
                 lastname: "",
                 email: "",
