@@ -432,12 +432,17 @@
         }
     },
     "directory": {
-        "title": "Bienvenid@ al directorio de Expositores de ITM 2024",
+        "title": "Bienvenid@ al directorio de Expositores de ITM 2025",
         "name": "Nombre (requerido)",
         "position": "Puesto (requerido)",
         "company": "Compañía (requerido)",
         "email": "Correo electrónico (requerido)",
-        "comming_soon": "Próximamente..."
+        "comming_soon": "Próximamente...",
+        "validar_txt1": "Valida tus datos",
+        "validar_txt2": "Ingresa el corre con el que te registraste",
+        "validar_txt3": "Si aún no te has registrado ingresa aquí",
+        "validar_btn1": "Validar",
+        "validar_btn2": "Registro aquí"
     },
     "gallery": {
         "title": "GALERÍA ITM",

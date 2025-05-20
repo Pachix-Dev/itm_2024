@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { directory } from '../../data/constans_directory'
+import { directory } from '../../data/constans_directory_2025.js'
 
 export function SearchExihibitor({ language }) {
   const [searchTerm, setSearchTerm] = useState(directory || [])
@@ -23,13 +23,13 @@ export function SearchExihibitor({ language }) {
         placeholder='Search exhibitor'
         onChange={(e) => searchResults(e.target.value)}
       />
-      <a href='https://www.telcel.com/empresas' target='_blank'>
+      {/* <a href='https://www.telcel.com/empresas' target='_blank'>
         <img
           src='/img/telcel_empresas_itm_2.webp'
           alt='Schneider'
           class='mt-5 w-96'
         />
-      </a>
+      </a> */}
       {searchTerm.length > 0 &&
         searchTerm.map((item, index) => (
           <div
@@ -116,8 +116,9 @@ export function SearchExihibitor({ language }) {
               </a>
               */}
               <a
-                href={`mailto:${item.webpage}`}
+                href={`${item.webpage}`}
                 className='text-lg flex items-center gap-2 hover:text-red-600'
+                target="_blank"
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -139,6 +140,7 @@ export function SearchExihibitor({ language }) {
                 {item?.facebook && (
                   <a
                     href={item.facebook}
+                    target="_blank"
                     className='text-lg flex items-center gap-2 *:hover:fill-red-600'
                   >
                     <svg
@@ -155,6 +157,7 @@ export function SearchExihibitor({ language }) {
                 {item?.instagram && (
                   <a
                     href={item.instagram}
+                    target="_blank"
                     className='text-lg flex items-center gap-2 *:hover:fill-red-600'
                   >
                     <svg
@@ -171,6 +174,7 @@ export function SearchExihibitor({ language }) {
                 {item?.linkedIn && (
                   <a
                     href={item.linkedIn}
+                    target="_blank"
                     className='text-lg flex items-center gap-2 *:hover:fill-red-600'
                   >
                     <svg
@@ -187,6 +191,7 @@ export function SearchExihibitor({ language }) {
                 {item?.x && (
                   <a
                     href={item.x}
+                    target="_blank"
                     className='text-lg flex items-center gap-2 *:hover:fill-red-600'
                   >
                     <svg
@@ -203,6 +208,7 @@ export function SearchExihibitor({ language }) {
                 {item?.youtube && (
                   <a
                     href={item.youtube}
+                    target="_blank"
                     className='text-lg flex items-center gap-2 *:hover:fill-red-600'
                   >
                     <svg

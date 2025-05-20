@@ -432,12 +432,17 @@
         }
     },
     "directory": {
-        "title": "Welcome to the ITM 2024 Directory",
+        "title": "Welcome to the ITM 2025 Directory",
         "name": "Name (required)",
         "position": "Position (required)",
         "company": "Company (required)",
         "email": "Email (required)",
-        "comming_soon": "Comming soon..."
+        "comming_soon": "Comming soon...",
+        "validar_txt1": "Validate your data",
+        "validar_txt2": "Enter the email address you registered with",
+        "validar_txt3": "If you have not registered yet, enter here",
+        "validar_btn1": "Verify",
+        "validar_btn2": "Register here"
     },
     "gallery": {
         "title": "ITM GALLERY",
