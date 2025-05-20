@@ -109,74 +109,49 @@ export class RegisterModel {
   }
 
   static async create_student ({
-      uuid,             
       name,
-      paternSurname,
-      maternSurname,
+      lastname,
       email,
       phone,
-      typeRegister,
-      genre,
-      nacionality,
-      code_invitation,
       company,
-      industry,
-      position,
-      area,
-      country,
-      municipality,
-      state,
-      city,
-      address,
-      colonia,
-      postalCode,
-      webPage,
-      phoneCompany,
-      eventKnowledge,
-      productInterest,
-      levelInfluence,
-      wannaBeExhibitor,
-      alreadyVisited,
+      students,
     }) {
       const connection = await mysql.createConnection(config)
       try {      
         const [result] = await connection.query(
-          'INSERT INTO users (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, code_invitation, company, industry, position, area, country, municipality, state, city, address, colonia, postalCode, webPage, phoneCompany, eventKnowledge, productInterest, levelInfluence, wannaBeExhibitor, alreadyVisited ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
-          [
-            uuid,             
+          'INSERT INTO docente (name, lastname, email, phone, school_name ) VALUES (?,?,?,?,?)',
+          [                         
             name,
-            paternSurname,
-            maternSurname,
+            lastname,            
             email,
             phone,
-            typeRegister,
-            genre,
-            nacionality,
-            code_invitation,
-            company,
-            industry,
-            position,
-            area,
-            country,
-            municipality,
-            state,
-            city,
-            address,
-            colonia,
-            postalCode,
-            webPage,
-            phoneCompany,
-            eventKnowledge,
-            productInterest,
-            levelInfluence,
-            wannaBeExhibitor,
-            alreadyVisited,   
+            company,             
           ]
         )
-                                
+        
+        if (result.affectedRows === 0) {
+          return {
+            status: false,
+            message: 'Error al guardar tus datos, por favor intenta de nuevo.',
+          }
+        }
+
+        const [studentsResult] = await connection.query(
+          'INSERT INTO estudiantes (id_docente, name, lastname, level_study, career ) VALUES ?',
+          [
+            
+            students.map((student) => [
+              result.insertId,
+              student.name,
+              student.lastname,
+              student.level_study,
+              student.career,              
+            ]),
+          ]
+        )
+
         return {
-          status: true,
-          uuid,
+          status: true,          
           insertId: result.insertId,
           ...result,
         }

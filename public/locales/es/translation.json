@@ -765,7 +765,11 @@
         "instructions_text_4": "4. Al confirmar tu pago, el portal de tu banco generará un comprobante digital. <strong>En el podrás verificar que se haya realizado correctamente.</strong> Conserva este comprobante de pago.",
         "instructions_text_5": "Al completar estos pasos envia un correo a <strong><a href='mailto:emmanuel.heredia@igeco.mx' target='_blank'>emmanuel.heredia@igeco.mx</a></strong> con el comprobante de pago, tu nombre completo y el correo electronico que usaste para el registro para que podamos validar tu pago y enviarte tu acceso.",
         "copy": "Copiar",
-    "copy_success": "Copiado"
+        "copy_success": "Copiado",
+        "baccalaureate": "Bachillerato",
+        "technical_career": "Carrera técnica",
+        "bachelor_s_Degree": "Licenciatura",
+        "engineering": "Ingenieria"
     },
     "thanks_page":{
         "title": "Gracias por registrarte",

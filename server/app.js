@@ -172,7 +172,7 @@ app.post('/free-register-student', async (req, res) => {
             uuid: uuidv4(),            
             ...body
         };          
-        const userResponse = await RegisterModel.create_user({ ...data }); 
+        const userResponse = await RegisterModel.create_student({ ...data }); 
         
         if(!userResponse.status){
             return  res.status(500).send({

@@ -766,7 +766,11 @@
         "instructions_text_4": "4. When you confirm your payment, your bank's portal will generate a digital receipt. <strong>You will be able to verify that the payment has been made correctly. Keep this proof of payment.</strong>",
         "instructions_text_5": "Once you have completed these steps, send an email to <strong><a href='mailto:emmanuel.heredia@igeco.mx' target='_blank'>emmanuel.heredia@igeco.mx</a></strong> with invoice of payment, your full name and the email address you used for registration so we can validate your payment and send you your access.",
         "copy": "Copy",
-        "copy_success": "Copied"
+        "copy_success": "Copied",
+        "baccalaureate": "Baccalaureate",
+        "technical_career": "Technical career",
+        "bachelor_s_Degree": "Bachelor's Degree",
+        "engineering": "Engineering"
     },
     "thanks_page":{
         "title": "Thank you for registering",
