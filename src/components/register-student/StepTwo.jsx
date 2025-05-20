@@ -2,7 +2,7 @@ import { useForm, useFieldArray } from 'react-hook-form'
 import { useRegisterStudent } from '../../store/register-student'
 import { useState } from 'react'
 
-export function StepTwo({ translates }) {
+export function StepTwo({ translates, currentLanguage }) {
   const [processing, setProcessing] = useState(false)
   const { message, setMessage } = useState()
 
@@ -61,6 +61,7 @@ export function StepTwo({ translates }) {
       }),
     })
     const json = await response.json()
+    console.log(json)
     if (json.status) {
       setProcessing(false)
       setCompleteRegister(true)
@@ -81,7 +82,7 @@ export function StepTwo({ translates }) {
       <div className='flex flex-col items-center justify-center'>
         <div className='grid grid-cols-2 gap-6'>
           {fields.map((field, idx) => (
-            <>
+            <div key={field.id} className='col-span-2'>
               <p className='font-bold text-white text-2xl mt-5'>
                 {translates.student} {idx + 1}
               </p>
@@ -221,7 +222,7 @@ export function StepTwo({ translates }) {
                   )}
                 </div>
               </div>
-            </>
+            </div>
           ))}
         </div>
         <div className='w-full flex justify-between '>

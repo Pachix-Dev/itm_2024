@@ -11,7 +11,9 @@ export function RegisterStudent({ translates, currentLanguage }) {
       <Stepper translates={translates} />
       <form className='mx-auto'>
         {step === 0 && <StepOne translates={translates} />}
-        {step === 1 && <StepTwo translates={translates} />}
+        {step === 1 && (
+          <StepTwo translates={translates} currentLanguage={currentLanguage} />
+        )}
       </form>
     </section>
   )
