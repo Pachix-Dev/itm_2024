@@ -1,14 +1,14 @@
 ---
 import i18next, { changeLanguage, t } from "i18next";
-import Layout from "../layouts/Layout.astro";
-import Confettti from "../components/shared/Confetti";
-import { Redirect } from "../components/shared/Redirect.jsx";
-import { DonwloadAccess } from "../components/register/DonwloadAccess";
-import { ProgramVip } from "../components/register/ProgramVip";
-import MarqueeSponsors from "../components/register/MarqueeSponsors.astro";
-import { sponsors } from "../data/constans_logos";
+import Layout from "../../layouts/Layout.astro";
+import Confettti from "../../components/shared/Confetti";
+import { Redirect } from "../../components/shared/Redirect.jsx";
+import { DonwloadAccess } from "../../components/register/DonwloadAccess";
+import { ProgramVip } from "../../components/register/ProgramVip";
+import MarqueeSponsors from "../../components/register/MarqueeSponsors.astro";
+import { sponsors } from "../../data/constans_logos";
 
-changeLanguage("es");
+changeLanguage("en");
 
 const currentLanguage = i18next.language;
 ---
