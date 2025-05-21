@@ -32,10 +32,11 @@
         "visitors_3_1": "Visit Oktoberfest",
         "visitors_4": "united airlines agreement",
         "past_events": "past events",
-        "itm2023": "itm 2023",
+        "directorio": "Directory 2025",
         "itm2024_1": "exhibitors directory 2024",
         "itm2024_2": "Passport ITM 2024",
         "itm2024_3": "after show report 2024",        
+        "itm2023": "itm 2023",        
         "itm2023_1": "exhibitors directory 2023",
         "itm2023_2": "Passport ITM 2023",
         "itm2023_3": "after show report 2023",
@@ -432,12 +433,17 @@
         }
     },
     "directory": {
-        "title": "Welcome to the ITM 2024 Directory",
+        "title": "Welcome to the ITM 2025 Directory",
         "name": "Name (required)",
         "position": "Position (required)",
         "company": "Company (required)",
         "email": "Email (required)",
-        "comming_soon": "Comming soon..."
+        "comming_soon": "Comming soon...",
+        "validar_txt1": "Validate your data",
+        "validar_txt2": "Enter the email address you registered with",
+        "validar_txt3": "If you have not registered yet, enter here",
+        "validar_btn1": "Verify",
+        "validar_btn2": "Register here"
     },
     "gallery": {
         "title": "ITM GALLERY",

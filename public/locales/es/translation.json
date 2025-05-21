@@ -32,10 +32,11 @@
         "visitors_3_1": "Visita Oktoberfest",
         "visitors_4": "Convenio United Airlines",
         "past_events": "EDICIONES ITM",
-        "itm2023": "itm 2023",
+        "directorio": "Directorio 2025",
         "itm2024_1": "Directorio de Expositores 2024",
         "itm2024_2": "Pasaporte ITM 2024",
         "itm2024_3": "itm Resultados 2024",
+        "itm2023": "itm 2023",        
         "itm2023_1": "Directorio de Expositores 2023",
         "itm2023_2": "Pasaporte ITM 2023",
         "itm2023_3": "itm Resultados 2023",
@@ -432,12 +433,17 @@
         }
     },
     "directory": {
-        "title": "Bienvenid@ al directorio de Expositores de ITM 2024",
+        "title": "Bienvenid@ al directorio de Expositores de ITM 2025",
         "name": "Nombre (requerido)",
         "position": "Puesto (requerido)",
         "company": "Compañía (requerido)",
         "email": "Correo electrónico (requerido)",
-        "comming_soon": "Próximamente..."
+        "comming_soon": "Próximamente...",
+        "validar_txt1": "Valida tus datos",
+        "validar_txt2": "Ingresa el corre con el que te registraste",
+        "validar_txt3": "Si aún no te has registrado ingresa aquí",
+        "validar_btn1": "Validar",
+        "validar_btn2": "Registro aquí"
     },
     "gallery": {
         "title": "GALERÍA ITM",
