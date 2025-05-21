@@ -6,7 +6,7 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
     <tbody>
         <tr>
           <td colspan="2" align="center">
-            <img src="https://industrialtransformation.mx/header-ITM-register.jpg" alt="logo" width="550">         
+            <img src="https://industrialtransformation.mx/kv_itm_2025_esp_vf.webp" alt="logo" width="550">         
           </td>
         </tr>        
         <tr>
@@ -15,7 +15,7 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
               BIENVENIDO, ${name} ${paternSurname} ${maternSurname}. <BR /> TU REGISTRO SE HA REALIZADO CON ÉXITO.
             </h2>
             <h2 style='text-align: center;'>
-              GRACIAS POR FORMAR PARTE DE <span style="color:#E42128;font-weight:bold;">INDUSTRIAL TRANSFORMATION MEXICO 2024, </span>PRODUCTOS Y SOLUCIONES PARA LA FÁBRICA INTELIGENTE.
+              GRACIAS POR FORMAR PARTE DE <span style="color:#E42128;font-weight:bold;">INDUSTRIAL TRANSFORMATION MEXICO 2025, </span>EL HOGAR DE LA INDUSTRIA NORTEAMERICANA DEL FUTURO.
             </h2>
             <div style="text-align: justify;font-size:22px;">
               Descubre las últimas tendencias, innovaciones, conocimientos, herramientas y tecnologías que traen para ti los líderes globales en <strong>Automatización, Fábrica Inteligente y Soluciones de Logística Digital,</strong> y que están transformando el futuro de la industria.                    
@@ -23,16 +23,15 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
             <div style="text-align:center;padding:20px;margin-top:25px;">
               <div style="background: #E42128;padding:20px;border-radius:20px;">
                 <a style="text-decoration:none; color: white;font-weight:bold;" href="https://industrialtransformation.mx/programa" target='_blank'>                 
-                  CONSULTA EL PROGRAMA DE EVENTOS PARALELOS A ITM 2024
+                  CONSULTA EL PROGRAMA DE EVENTOS PARALELOS A ITM 2025
                 </a>
               </div>
               <p style="margin-top:40px;margin-bottom: 40px;">
-                Te esperamos en la sexta edición de <strong>INDUSTRIAL TRANSFORMATION MEXICO del 9 al 11 de octubre, Poliforum, León, Guanajuato.</strong>
+                Te esperamos en la sexta edición de <strong>INDUSTRIAL TRANSFORMATION MEXICO del 11 al 13 de noviembre, CENTRO BANAMEX, CDMX.</strong>
               </p>
               <div style="background: #E42128;color:white;border-radius: 20px;padding:20px;">               
                <p><strong>HORARIOS:</strong></p>
-               <p>miércoles 9 y jueves 10 de  11:00 am - 7:00 pm hrs</p>
-               <p>viernes 11 de 11:00 am - 5:00 pm hrs</p>
+               <p>11 al 13 de noviembre  11:00 hrs - 19:00 hrs</p>               
               </div>
             </div>               
             <p style="font-weight:bold;font-size:20px;text-align: center;">AÑADIR AL CALENDARIO</p>
@@ -89,8 +88,8 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
           </td>
           <td style="padding:20px;" align="center">
             <div style="background: #E42128;border-radius: 20px;padding:20px;margin:auto;">
-              <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/files/Floorplan_ITM_2024_31.05.2023.pdf" target="_blank">
-                PLANO ITM 2024
+              <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/files/Floorplan-ITM-2025-16-05-2025-V4-0.pdf" target="_blank">
+                PLANO ITM 2025
               </a>
             </div>         
           </td>
