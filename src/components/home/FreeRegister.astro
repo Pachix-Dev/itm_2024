@@ -68,7 +68,7 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
   <div
     data-aos='fade-up'
     data-aos-duration='1000'
-    class='mt-20 container mx-auto py-5 px-4 grid md:grid-cols-4 gap-10 backdrop-blur-sm bg-white/10 rounded-xl uppercase'
+    class='mt-20 container mx-auto py-5 px-4 grid md:grid-cols-3 gap-10 backdrop-blur-sm bg-white/10 rounded-xl uppercase'
   >
     <a
       href={i18next.language === 'es'
@@ -132,7 +132,8 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
           d='m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25'></path>
       </svg>
     </a>
-    <a
+    {
+      /*<a
       href={`${base}/directorio-digital-2025`}
       class='text-white bg-[#484848] hover:bg-white hover:text-black font-bold flex justify-center gap-5 py-5 rounded-xl'
     >
@@ -151,6 +152,7 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
           d='m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25'></path>
       </svg>
     </a>
+    
   </div>
 </section>
 <style>
@@ -196,4 +198,6 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
   background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
   animation: rotBGimg 3.5s linear infinite;
 } */
-</style>
+    }
+  </div>
+</section>
