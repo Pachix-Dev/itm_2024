@@ -100,6 +100,7 @@
         "galleryhome":"Asi se vivio ITM 2023",
         "directory": "Directorio",
         "title-sponsors":"PATROCINADORES PLATINO",
+        "sponsor_diamond":"PATROCINADORES DIAMANTE",
         "sponsors": "Patrocinadores Platino",
         "silver": "Patrocinadores Silver",
         "experience-sponsor" :"Patrocinador de Experiencia Digital",
@@ -187,7 +188,8 @@
         "text_17": "CONOCE MÁS EVENTOS",
         "text_18": "Italian German Exhibition Company Mexico <strong>crea espacios estratégicos</strong> donde la innovación, la tecnología y la sostenibilidad convergen para transformar industria y generar nuevas oportunidades de crecimiento",
         "text_19": "Edición",
-        "text_20": "VER GALERÍA COMPLETA"
+        "text_20": "VER GALERÍA COMPLETA",
+        "exhibitor_confirmed": "Expositores Confirmados"
     },
     "aboutPage": {
         "title": "ACERCA DE ITM",

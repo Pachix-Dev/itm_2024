@@ -99,7 +99,8 @@
         "bullet_6": "IN MEDIA COVERAGE VALUE",     
         "galleryhome":"'Highlights ITM 2023",
         "directory": "Directory",
-        "title-sponsors":"SPONSORS PLATINIUM",
+        "title-sponsors":"PLATINIUM SPONSORS ",
+        "sponsor_diamond":"DIAMOND SPONSORS",
         "sponsors": "Platinum sponsors",
         "silver": "SILVER SPONSORS",
         "experience-sponsor" :"Digital Experience Sponsor",
@@ -187,7 +188,8 @@
         "text_17": "LEARN MORE ABOUT EVENTS",
         "text_18": "Italian German Exhibition Company Mexico <strong>creates strategic spaces</strong> where innovation, technology and sustainability converge to transform industry and generate new growth opportunities." ,
         "text_19": "Edition",
-        "text_20": "SEE COMPLETE GALLERY"   
+        "text_20": "SEE COMPLETE GALLERY",
+        "exhibitor_confirmed": "EXHIBITORS CONFIRMED"
     },
     "aboutPage": {
         "title": "ABOUT US ITM",
