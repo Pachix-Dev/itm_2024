@@ -20,6 +20,7 @@ export function StepFour({ translates, currentLanguage }) {
     position,
     company,
     total,
+    typeRegister,
     setCompleteRegister,
     setInvoiceDownToLoad,
     decrementStep,
@@ -90,12 +91,13 @@ export function StepFour({ translates, currentLanguage }) {
         email,
         position,
         company,
+        typeRegister,
         currentLanguage,
       }),
     })
     const orderData = await response.json()
     if (orderData.status) {
-      //clear()
+      clear()
       setCompleteRegister(true)
       setInvoiceDownToLoad(orderData?.invoice)
       currentLanguage === 'es'
@@ -131,7 +133,7 @@ export function StepFour({ translates, currentLanguage }) {
 
   return (
     <>
-      <div className='flex gap-10 '>
+      <div className='grid md:flex gap-10 '>
         <div className='w-full'>
           <div className='rounded-xl border-2 p-4 bg-white text-black'>
             <div className='flex justify-between items-center'>

@@ -94,14 +94,7 @@ const email_template = async ({ name, paternSurname, maternSurname}) => {
             </div>         
           </td>
         </tr> 
-        <tr>
-          <td style="padding:20px;" align="center">
-           <div style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
-            <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/hotels" target="_blank">
-              RESERVA AQUÍ TU HOSPEDAJE <br />CON TARIFA PREFERENCIAL
-            </a>
-           </div>           
-          </td>
+        <tr>          
           <td style="padding:20px;" align="center">
             <div style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx" target="_blank">
