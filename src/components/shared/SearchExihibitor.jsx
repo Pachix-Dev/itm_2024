@@ -47,7 +47,7 @@ export function SearchExihibitor({ language }) {
             <div className='md:col-span-2'>
               <span className='ms-[-10px] font-bold'>{item.stand_number}</span>
               <h2 className='text-2xl font-bold'>{item.name}</h2>
-              <p className='text-lg mt-2'>
+              <p className='text-lg mt-2 text-justify'>
                 {language === 'es' ? item.description : item.description_en}
               </p>
               <div className='mt-2 text-lg flex items-center gap-1'>
