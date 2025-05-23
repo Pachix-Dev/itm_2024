@@ -85,7 +85,7 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
         <tr>
           <td style="padding:20px;" align="center">
             <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
-              <a style="text-decoration:none;color:white;">
+              <a style="text-decoration:none;color:white;" href="https://igeco.mx/" target="_blank">
                 FIND OUT ABOUT ALL OUR EVENTS
               </a>
             </p>          
