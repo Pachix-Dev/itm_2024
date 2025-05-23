@@ -56,6 +56,7 @@ export function StepFour({ translates, currentLanguage }) {
       'AZ4hFSk_NoYY2zTeTvsFqPwsik-VE9OlcSedt4jh2RD77iPcvjeKEd1GtXA9qdo_5E4Kw_nYXxmkh6gH',
     currency: 'MXN',
     intent: 'capture',
+    locale: currentLanguage === 'es' ? 'es_ES' : 'en_US',
   }
 
   async function createOrder() {

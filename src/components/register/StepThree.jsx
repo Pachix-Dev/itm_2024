@@ -139,12 +139,15 @@ export function StepThree({ translates }) {
           >
             <option value=''>{translates.select_option}</option>
             <option value='FACEBOOK'>FACEBOOK</option>
-            <option value='ESPECTACULAR'>{translates.spectacular}</option>
+            <option value='INSTAGRAM'>INSTAGRAM</option>
+            <option value='WHATSAPP'>WHATSAPP</option>
+            <option value='CORREO ELECTRÓNICO'>{translates.email}</option>
+            <option value='TIKTOK'>TIKTOK</option>
+
             <option value='PAGINA WEB'>{translates.website}</option>
             <option value='TWITTER'>TWITTER</option>
             <option value='LINKEDIN'>LINKEDIN</option>
-            <option value='INSTAGRAM'>INSTAGRAM</option>
-            <option value='CORREO ELECTRÓNICO'>{translates.email}</option>
+
             <option value='INVITADO POR EXPOSITOR'>
               {translates.guest_by_exhibitor}
             </option>
@@ -152,8 +155,7 @@ export function StepThree({ translates }) {
             <option value='TELEVISIÓN'>{translates.television}</option>
             <option value='PRENSA'>{translates.press}</option>
             <option value='ANUNCIO EN REVISTA'>{translates.magazine_ad}</option>
-            <option value='TIKTOK'>TIKTOK</option>
-            <option value='WHATSAPP'>WHATSAPP</option>
+            <option value='ESPECTACULAR'>{translates.spectacular}</option>
           </select>
           {errors.eventKnowledge && (
             <p className='text-[#ffe200] font-light'>
