@@ -71,9 +71,6 @@ export function StepTwo({ translates, currentLanguage }) {
     } else {
       setProcessing(false)
       setMessage(json?.message)
-      setTimeout(() => {
-        setMessage('')
-      }, 5000)
     }
   }
 
