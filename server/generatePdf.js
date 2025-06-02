@@ -231,7 +231,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      })
      .fillColor('#1E92D0')
      .font('Helvetica-Bold')
-     .text('#ITM2025, #AMOF2025, #DroneForumX ', { continued: true })
+     .text(' #ITM2025, #AMOF2025, #DroneForumX ', { continued: true })
      .fillColor('black')
      .font('Helvetica')
      .text(' en tus posteos en redes sociales.')
