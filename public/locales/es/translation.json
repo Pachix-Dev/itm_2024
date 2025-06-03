@@ -88,7 +88,7 @@
         "leyend": "Registro con costo a partir del 9 de octubre $300 MXN",
         "registro_itm_2023": "Regístrate",
         "dateEvent": "miércoles, jueves de 11:00 am a 7:00 pm <br /> viernes de 11:00 am a 5:00 pm",
-        "date_text_cost": "El registro abrirá el 1 junio y tendrá un costo de $300 pesos con IVA incluido",
+        "date_text_cost": "Registro abierto, tiene un costo de $300 pesos con IVA incluido.",
         "highlights_ITM2022": "Industrial Transformation Mexico 2023",
         "description": "En <strong>Industrial Transformation Mexico</strong> celebramos la quinta edición como la <strong>feria líder para la transformación digital</strong> en Latinoamérica, refrendando con éxito nuestra convicción de ayudar a encaminar a México hacia la adopción de la agenda digital y tecnológica, así como la generación de conocimientos 4.0 para transitar hacia modelos de producción más eficientes, flexibles y sostenibles.<br /><br />Un año más, ITM sirvió como plataforma para abrir espacios diversos a la colaboración entre los principales exponentes de <strong>tecnologías 4.0</strong> y los actores clave de la industria a nivel global.",
         "bullet_1": "EXPOSITORES",
@@ -583,7 +583,8 @@
     "hotels":{
         "title": "Tarifas especiales en hoteles",
         "description": "Nos complace anunciar que hemos asegurado tarifas preferenciales en hoteles de calidad para que tu experiencia sea aún más cómoda y accesible.<br /><br />Ubicados estratégicamente alrededor del lugar del evento, estos hoteles ofrecen no solo comodidad, sino también la oportunidad de sumergirte completamente en la atmósfera del evento. Hemos negociado tarifas especiales para nuestros asistentes, asegurándonos de que tu estancia sea tan inolvidable como el propio evento.",
-        "code_reservation": "Codigo de reserva: HANNOVER"
+        "code_reservation": "Codigo de reserva: HANNOVER",
+        "button": "Reservar ahora"
     },
     "germanPavilion":{
         "title-exhibitor": "Forme parte del Pabellón Alemán en ITM 2024",
@@ -595,6 +596,7 @@
         "button": "Leer más"
     },
     "register":{
+        "button_register": "REGÍSTRATE AQUÍ",
         "title": "REGISTRO",
         "description": "Por favor revisa que tu información sea correcta",
         "button": "Regístrate gratis",

@@ -88,7 +88,7 @@
         "leyend": "Registration with cost from October 9th $300 MXN",
         "registro_itm_2023": "Register",
         "dateEvent": "Wednesday, Thursday from 11:00 am to 7:00 pm <br /> Friday from 11:00 am to 5:00 pm",
-        "date_text_cost": "Registration will open on June 1 and will have a cost of $300 pesos including taxes.",
+        "date_text_cost": "Registration is open and has a cost of $300 pesos including VAT.",
         "highlights_ITM2022": "Industrial Transformation Mexico 2023",
         "description": "<strong>Industrial Transformation Mexico</strong> celebrated its sixth edition as the leading trade show for digital transformation in Latin America, successfully reaffirming our conviction to help Mexico move towards the adoption of the digital and technological agenda, as well as the generation of 4.0 knowledge to move towards more efficient, flexible and sustainable production models.<br /><br /> Once again this year, ITM served as a platform to open diverse spaces for collaboration between the leading exponents of <strong>4.0 technologies</strong> and key players in the global industry.",
         "bullet_1": "EXHIBITORS",
@@ -584,7 +584,8 @@
     "hotels":{
         "title": "Special Hotel Rates",
         "description": "We are pleased to announce that we have secured preferential rates at quality hotels to make your experience even more comfortable and affordable.<br /><br />Strategically located around the event venue, these hotels offer not only comfort, but also the opportunity to fully immerse yourself in the atmosphere of the event. We have negotiated special rates for our attendees, ensuring that your stay will be as unforgettable as the event itself.",
-        "code_reservation": "Reservation code: HANNOVER"
+        "code_reservation": "Reservation code: HANNOVER",
+        "button": "Book now"
     },
     "germanPavilion":{
         "title-exhibitor": "Be part of the German Pavilion at ITM 2024",
@@ -596,6 +597,7 @@
         "button": "Read more"
     },
     "register":{
+        "button_register": "REGISTER NOW",
         "title": "Registration",
         "description": "Please check that your information is correct",
         "button": "Register for free",
