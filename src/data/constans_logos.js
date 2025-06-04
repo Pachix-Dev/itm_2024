@@ -328,7 +328,7 @@ const media_2 = [
     },
     {
       src: '/cuatrocero.webp',
-      width: 200,
+      width: 150,
       height: 125,
       alt: 'cuatro cero',
       link: 'https://cuatro-cero.mx/',
