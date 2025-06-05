@@ -340,13 +340,13 @@ const media_2 = [
       link: 'https://industria360.com.mx/',
     },
     {
-      src: '/manufacturalatam.webp',
+      src: '/img/manufacturalatamv2.webp',
       width: 180,
       alt: 'Manufactura LATAM',
       link: 'https://www.manufactura-latam.com/es',
     }, 
     {
-      src: '/metalmecanica.webp',
+      src: '/img/metalmecanica.webp',
       width: 200,
       alt: 'Metalmecánica',
       link: 'https://www.metalmecanica.com/es',
