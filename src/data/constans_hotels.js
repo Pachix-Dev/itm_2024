@@ -18,7 +18,7 @@ const hotels = [
       flyer_esp: '/files/flyer-novotel-esp.pdf',
       flyer_eng: '/files/flyer-novotel-eng.pdf'
     },
-    {
+    /*{
       src: '/img/hoteles/BARCELO_REFORMA.webp',
       name: 'Barceló México Reforma',
       address: 'Av. Paseo de la Reforma No. 1 C.P. 06030 Col. Tabacalera Ciudad de México.',
@@ -102,7 +102,7 @@ const hotels = [
       time_car: '14 min',
       start: 5,
       link: 'https://www.guestreservations.com/es/hyatt-regency-mexico-city/booking?msclkid=41bcf879b3041a05f64e904ede3ec903'
-    },
+    },*/
     
   ]
   
