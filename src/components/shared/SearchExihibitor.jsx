@@ -136,7 +136,7 @@ export function SearchExihibitor({ language }) {
                 </svg>
                 {item.webpage}
               </a>
-              <div className='mt-2 flex gap-2'>
+              <div className='mt-2 flex gap-4'>
                 {item?.facebook && (
                   <a
                     href={item.facebook}
