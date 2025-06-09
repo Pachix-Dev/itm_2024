@@ -88,7 +88,7 @@
         "leyend": "Registration with cost from October 9th $300 MXN",
         "registro_itm_2023": "Register",
         "dateEvent": "Wednesday, Thursday from 11:00 am to 7:00 pm <br /> Friday from 11:00 am to 5:00 pm",
-        "date_text_cost": "Registration will open on June 1 and will have a cost of $300 pesos including taxes.",
+        "date_text_cost": "Registration is open and has a cost of $300 pesos including VAT.",
         "highlights_ITM2022": "Industrial Transformation Mexico 2023",
         "description": "<strong>Industrial Transformation Mexico</strong> celebrated its sixth edition as the leading trade show for digital transformation in Latin America, successfully reaffirming our conviction to help Mexico move towards the adoption of the digital and technological agenda, as well as the generation of 4.0 knowledge to move towards more efficient, flexible and sustainable production models.<br /><br /> Once again this year, ITM served as a platform to open diverse spaces for collaboration between the leading exponents of <strong>4.0 technologies</strong> and key players in the global industry.",
         "bullet_1": "EXHIBITORS",
@@ -123,7 +123,7 @@
         "privacy_policy": "Privacy Policy",
         "contact": "Contact",
         "name": "Name",
-        "email": "Email",
+        "email": "EMAIL",
         "subscription": "SUBSCRIBE",
         "want-exhibitor":"I want to be an exhibitor",
         "free_register": "Free Registration",
@@ -584,7 +584,8 @@
     "hotels":{
         "title": "Special Hotel Rates",
         "description": "We are pleased to announce that we have secured preferential rates at quality hotels to make your experience even more comfortable and affordable.<br /><br />Strategically located around the event venue, these hotels offer not only comfort, but also the opportunity to fully immerse yourself in the atmosphere of the event. We have negotiated special rates for our attendees, ensuring that your stay will be as unforgettable as the event itself.",
-        "code_reservation": "Reservation code: HANNOVER"
+        "code_reservation": "Reservation code: HANNOVER",
+        "button": "Book now"
     },
     "germanPavilion":{
         "title-exhibitor": "Be part of the German Pavilion at ITM 2024",
@@ -596,6 +597,7 @@
         "button": "Read more"
     },
     "register":{
+        "button_register": "REGISTER NOW",
         "title": "Registration",
         "description": "Please check that your information is correct",
         "button": "Register for free",
@@ -770,9 +772,10 @@
         "instructions": "INSTRUCTIONS",
         "instructions_text": "1. Access your online banking.",
         "instructions_text_2": "2. Register the CLABE in your bank app. <strong>The bank must be BanBajío.</strong>",
-        "instructions_text_3": "3. Make the corresponding transfer for the exact amount of this card, otherwise the charge will be rejected..",
-        "instructions_text_4": "4. When you confirm your payment, your bank's portal will generate a digital receipt. <strong>You will be able to verify that the payment has been made correctly. Keep this proof of payment.</strong>",
-        "instructions_text_5": "Once you have completed these steps, send an email to <strong><a href='mailto:emmanuel.heredia@igeco.mx' target='_blank'>emmanuel.heredia@igeco.mx</a></strong> with invoice of payment, your full name and the email address you used for registration so we can validate your payment and send you your access.",
+        "instructions_text_3": "3. Make the transfer in the name of <strong>IGECO</strong> for the exact amount of this form, otherwise the charge will be rejected.",
+        "instructions_text_4": "4. Put in concept of the transfer <strong>ITM 2025</strong>.",
+        "instructions_text_5": "5. When you confirm your payment, your bank's portal will generate a digital receipt, <strong>you will be able to verify that the payment has been made correctly, keep this proof of payment.</strong>",
+        "instructions_text_6": "Once you have completed these steps, send an email to <strong><a href='mailto:emmanuel.heredia@igeco.mx' target='_blank'>emmanuel.heredia@igeco.mx</a></strong> with invoice of payment,  your full name, name of the event you will attend and the email address you used for registration so we can validate your payment and send you your access.",
         "copy": "Copy",
         "copy_success": "Copied",
         "baccalaureate": "Baccalaureate",
@@ -787,7 +790,7 @@
         "download_pass": "Download your pass",
         "download_invoice": "Download your invoice",
         "thanks_purchasing": "Thank you for your purchase",
-        "sucess_purchasing": "Fantastic! your purchase was successfully processed.",
+        "sucess_purchasing": "Fantastic! you already have your access to INDUSTRIAL TRANSFORMATION MEXICO, AMERICAS' MOBILITY OF THE FUTURE and DRONE INNOVATORS FORUM MX.",
         "email_sent": "You will receive a confirmation email soon!",
         "description_2": "Please go to the cashier's office with this number to pay and pick up your badge.",
         "description_3": "Thank you for registering, we will validate your information and send you a confirmation email in case you are selected (Remember that student group registration is subject to availability and confirmation, access is only for Thursday, November 13)."

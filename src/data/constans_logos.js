@@ -280,12 +280,86 @@ const alliesStrategic = [
 
 const media_1 = [
     {
-      src: '/metalmecanica.webp',
+      src: '/Energy-Commerce.webp',
+      width: 140,      
+      alt: 'energy commerce',
+      link: 'https://energyandcommerce.com.mx/',
+    },
+    {
+      src: '/img/INDUSTRY_NEWS_MEX.webp',
+      width: 120,      
+      alt: 'Industry News Mex',
+      link: 'https://www.industrynewsmx.com/',
+    },
+    {
+      src: '/img/madeinchina.webp',
+      width: 180,      
+      alt: 'MADE IN CHINA',
+      link: 'https://www.made-in-china.com/',
+    },
+    {
+      src: '/LOGO_KOKO.webp',
+      width: 120,      
+      alt: 'KOKO MËXICO',
+      link: 'https://kokomexico.com/es/home',
+    },
+    {
+      src: '/revistaconsultoria.webp',
       width: 150,
+      alt: 'revista consultora ',
+      link: 'https://revistaconsultoria.com.mx/',
+    },
+               
+]
+const media_2 = [
+    {
+      src: '/global-energy-v2.webp',   
+      width: 150,   
+      height: 70,
+      alt: 'GlobalEnergy',
+      link: 'https://globalenergy.mx/',
+    },  
+    {
+      src: '/global-industries_v2.webp',
+      width: 150,  
+      height: 70,
+      alt: 'Global industries ',
+      link: 'https://globalindustries.mx/',
+    },
+    {
+      src: '/cuatrocero.webp',
+      width: 150,
+      height: 125,
+      alt: 'cuatro cero',
+      link: 'https://cuatro-cero.mx/',
+    },
+    {
+      src: '/img/INDUSTRIA_360.webp',
+      width: 180,
+      alt: 'INDUSTRIA 360',
+      link: 'https://industria360.com.mx/',
+    },
+    {
+      src: '/img/manufacturalatamv2.webp',
+      width: 180,
+      alt: 'Manufactura LATAM',
+      link: 'https://www.manufactura-latam.com/es',
+    }, 
+    {
+      src: '/img/metalmecanica.webp',
+      width: 200,
       alt: 'Metalmecánica',
       link: 'https://www.metalmecanica.com/es',
     },
     {
+      src: '/img/cluster_industrial_color.webp',
+      width: 150,
+      height: 133,
+      alt: 'cluster industrial',
+      link: 'https://www.clusterindustrial.com.mx/',
+    },
+  /*
+  {
       src: '/airtrade_world_logo.webp',
       width: 80,      
       alt: 'Airtrade World',
@@ -305,35 +379,15 @@ const media_1 = [
       alt: 'Multimedios',
       link: 'https://grupomultimedios.com/',
     },
-    {
-      src: '/global-energy-v2.webp',   
-      width: 150,   
-      height: 70,
-      alt: 'GlobalEnergy',
-      link: 'https://globalenergy.mx/',
-    },
-    {
-      src: '/global-industries_v2.webp',
-      width: 150,  
-      height: 70,
-      alt: 'Global industries ',
-      link: 'https://globalindustries.mx/',
-    },            
-]
-const media_2 = [
+    
+    
   {
     src: '/Milenio.webp',
     width: 150,
     alt: 'Grupo Milenio',
     link: 'https://www.milenio.com/',
   },
-  {
-    src: '/revistaconsultoria.webp',
-    width: 120,
-    height: 133,
-    alt: 'revista consultora ',
-    link: 'https://revistaconsultoria.com.mx/',
-  },
+  
   {
     src: '/partner12.webp',
     width: 150,
@@ -347,32 +401,13 @@ const media_2 = [
     link: 'https://heraldodemexico.com.mx/',
   },
   {
-    src: '/manufacturalatam.webp',
-    width: 150,
-    alt: 'Manufactura LATAM',
-    link: 'https://www.manufactura-latam.com/es',
-  }, 
-  {
-    src: '/cluster.webp',
-    width: 120,
-    height: 133,
-    alt: 'cluster industrial',
-    link: 'https://www.clusterindustrial.com.mx/',
-  },
-  /*{
     src: '/dpl.webp',
     width: 200,
     height: 76,
     alt: 'dpl',
     link: 'https://dplnews.com/',
   },
-  {
-    src: '/Energy-Commerce.webp',
-    width: 200,
-    height: 70,
-    alt: 'energy commerce',
-    link: 'https://energyandcommerce.com.mx/',
-  },
+  
   {
     src: '/mexicoindustry.webp',
     width: 200,
@@ -380,12 +415,7 @@ const media_2 = [
     alt: 'mexico industry',
     link: 'https://mexicoindustry.com/',
   },
-  {
-    src: '/LOGO_KOKO.webp',
-    width: 150,      
-    alt: 'KOKO MËXICO',
-    link: 'https://kokomexico.com/es/home',
-  },
+  
   {
       src: '/vanguardia.webp',
       width: 200,
@@ -406,13 +436,7 @@ const media_2 = [
       alt: 'Directorio automotriz ',
       link: 'https://www.directorioautomotriz.com.mx/',
   },
-  {
-      src: '/cuatrocero.webp',
-      width: 200,
-      height: 125,
-      alt: 'cuatro cero',
-      link: 'https://cuatro-cero.mx/',
-  },           
+          
   {
     src: '/mexitown.webp',
     width: 200,

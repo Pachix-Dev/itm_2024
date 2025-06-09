@@ -37,7 +37,7 @@ export function StepFour({ translates, currentLanguage }) {
     : 'https://industrialtransformation.mx/server/'
 
   const [copied, setCopied] = useState(false)
-  const textToCopy = '030225900038362623'
+  const textToCopy = '030225900038110671'
 
   const handleCopy = async (event) => {
     event.preventDefault()
@@ -50,10 +50,13 @@ export function StepFour({ translates, currentLanguage }) {
     }
   }
 
+  const clien_id = import.meta.env.DEV
+    ? 'AZ4hFSk_NoYY2zTeTvsFqPwsik-VE9OlcSedt4jh2RD77iPcvjeKEd1GtXA9qdo_5E4Kw_nYXxmkh6gH'
+    : 'AVhhqptSlv4ttbc6ih1u59_PvECLJoNQWBktqSAwD60JPnWN_XiwPLS0QP9Bth_bWuAJ44SQaHIBEMxB'
+
   const style = { layout: 'vertical' }
   const initialOptions = {
-    clientId:
-      'AZ4hFSk_NoYY2zTeTvsFqPwsik-VE9OlcSedt4jh2RD77iPcvjeKEd1GtXA9qdo_5E4Kw_nYXxmkh6gH',
+    clientId: clien_id,
     currency: 'MXN',
     intent: 'capture',
     locale: currentLanguage === 'es' ? 'es_ES' : 'en_US',
@@ -242,18 +245,29 @@ export function StepFour({ translates, currentLanguage }) {
                     __html: translates.instructions_text_2,
                   }}
                 />
-                <p className='mt-2'>{translates.instructions_text_3}</p>
+                <p
+                  className='mt-2'
+                  dangerouslySetInnerHTML={{
+                    __html: translates.instructions_text_3,
+                  }}
+                />
                 <p
                   className='mt-2'
                   dangerouslySetInnerHTML={{
                     __html: translates.instructions_text_4,
                   }}
                 />
+                <p
+                  className='mt-2'
+                  dangerouslySetInnerHTML={{
+                    __html: translates.instructions_text_5,
+                  }}
+                />
 
                 <div
                   className='border-2 border-green-700 text-green-700 rounded-lg p-3 mt-5'
                   dangerouslySetInnerHTML={{
-                    __html: translates.instructions_text_5,
+                    __html: translates.instructions_text_6,
                   }}
                 />
               </div>

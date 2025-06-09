@@ -57,7 +57,7 @@ export function StepThree({ translates }) {
     { label: 'Expo Eléctrica', value: 'Expo Eléctrica' },
     { label: 'Meximold', value: 'Meximold' },
     { label: 'Fitma', value: 'Fitma' },
-    { label: 'ITMS', value: 'ITMS' },
+    { label: 'IMTS', value: 'IMTS' },
     { label: 'Hannover Messe (Alemania)', value: 'Hannover Messe (Alemania)' },
   ]
 

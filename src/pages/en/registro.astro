@@ -11,7 +11,7 @@ const registerTranslations = t("register", { returnObjects: true });
 const currentLanguage = i18next.language;
 ---
 
-<LayoutRegister title='ITM | Registro 2024'>
+<LayoutRegister title='ITM | Registro 2025'>
   <main class='py-5 grid w-full content-center container mx-auto px-4'>
     <section class='mb-10 max-w-screen-lg mx-auto'>
       <p class='text-center font-extrabold text-3xl mb-5'>
@@ -22,8 +22,8 @@ const currentLanguage = i18next.language;
     <h1 class='text-center font-extrabold text-4xl'>
       {t('register.title')}
     </h1>
-    <p class='text-center text-2xl font-bold'>
-      {t('register.description')}
+    <p class='mt-5 text-white text-xl pe-5 text-center'>
+      * {t('home.date_text_cost')}
     </p>
     <RegisterForm
       translates={registerTranslations}

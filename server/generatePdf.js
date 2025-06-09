@@ -198,11 +198,11 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      .fontSize(8)
      .text('1.', 330)
      .font('Helvetica')
-     .text('Tu gafete es tu pase a la exposición de ITM / AMOF / DRONE 2025. Deberás portarlo en todo momento.', 345, 75, {
+     .text('Tu gafete es tu pase a la exposición de ITM / AMOF / Drone Innovators Forum 2025. Deberás portarlo en todo momento.', 345, 75, {
          width: 250,
          align: 'justify'
      })  
-     doc.text(' Your badge is your access pass to ITM / AMOF / DRONE 2025 tradeshow. You must wear it at all times.',{
+     doc.text(' Your badge is your access pass to ITM / AMOF / Drone Innovators Forum 2025 tradeshow. You must wear it at all times.',{
          width: 250,
          align: 'justify'
      })
@@ -231,7 +231,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
      })
      .fillColor('#1E92D0')
      .font('Helvetica-Bold')
-     .text('#ITM2025, #AMOF2025, #DroneForumX ', { continued: true })
+     .text(' #ITM2025, #AMOF2025, #DroneForumX ', { continued: true })
      .fillColor('black')
      .font('Helvetica')
      .text(' en tus posteos en redes sociales.')
