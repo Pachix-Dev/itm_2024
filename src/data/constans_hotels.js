@@ -14,7 +14,9 @@ const hotels = [
       time_walk: '48 min',
       time_car: '10 min',
       start: 4,
-      link: 'https://all.accor.com/hotel/B5Q7/index.es.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps'
+      link: 'https://all.accor.com/hotel/B5Q7/index.es.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps',
+      flyer_esp: '/files/flyer-novotel-esp.pdf',
+      flyer_eng: '/files/flyer-novotel-eng.pdf'
     },
     {
       src: '/img/hoteles/BARCELO_REFORMA.webp',
