@@ -167,7 +167,7 @@
         "socialmedia_text_6": "EN TODAS NUESTRAS REDES",
         "summitcce": "Programa SUMMIT CCE empieza a las 9am en piso de exposición",
         "student": "Entrada para estudiantes viernes a partir de las 3:00pm",
-        "credential": "Debes presentar una credencial de empresa para tener acceso a la feria",
+        "credential": "Debes presentar una credencial de empresa para tener acceso a la feria.",
         "programCCE": "CONSULTA PROGRAMA DE CONFERENCIAS",
         "text_1": "CONVIÉRTETE EN",
         "text_2": "EXPOSITOR",
@@ -189,7 +189,8 @@
         "text_18": "Italian German Exhibition Company Mexico <strong>crea espacios estratégicos</strong> donde la innovación, la tecnología y la sostenibilidad convergen para transformar industria y generar nuevas oportunidades de crecimiento",
         "text_19": "Edición",
         "text_20": "VER GALERÍA COMPLETA",
-        "exhibitor_confirmed": "Expositores Confirmados"
+        "exhibitor_confirmed": "Expositores Confirmados",
+        "prensa": "Si eres miembro de prensa favor de enviar una solicitud al siguiente correo:"
     },
     "aboutPage": {
         "title": "ACERCA DE ITM",
@@ -218,14 +219,14 @@
     },
     "profile": {        
         "subtitle": "Conviértete en expositor",
-        "description": "ITM le permite conectar con una exclusiva red de compradores profesionales en busca de las tecnologías y soluciones más innovadoras que están transformando la industria.<br /><br />Desde 2019, <strong>Industrial Transformation México, la HANNOVER MESSE</strong> del continente americano, es la plataforma que lidera los negocios, la promoción y el avance tecnológico industrial en la región, al unir a los expositores y a los tomadores de decisión, nacionales e internacionales, más importantes del sector privado, público y académico relacionados con la Industria 4.0.",
+        "description": "ITM le permite conectar con una exclusiva red de compradores profesionales en busca de las tecnologías y soluciones más innovadoras que están transformando la industria.<br /><br />Desde 2019, <strong>Industrial Transformation MEXICO, la HANNOVER MESSE</strong> del continente americano, es la plataforma que lidera los negocios, la promoción y el avance tecnológico industrial en la región, al unir a los expositores y a los tomadores de decisión, nacionales e internacionales, más importantes del sector privado, público y académico relacionados con la Industria 4.0.",
         "why-exhibit":{
             "title":"¿POR QUÉ EXPONER?",
             "description-1":"COMPRADORES PROFESIONALES",
             "description-2":"DE MÁS DE 30 PAÍSES",
             "description-3":"PARTICIPAN EN EL PROCESO DE COMPRA",
             "text_1": "Objetivo",
-            "text_2": "Inspire con su contribución al futuro del sector",
+            "text_2": "Inspire con su contribución al futuro del sector.",
             "text_3": "Liderazgo intelectual",
             "text_4": "Marque tendencia e intercambie ideas con otros pioneros.",
             "text_5": "Atención",
@@ -578,7 +579,7 @@
         "suscribe": "Suscríbete a nuestro boletín",
         "day_1":"Miércoles y Jueves",
         "day_2":"Viernes",
-        "text_1":"<strong>Reserva tu stand y/o conviértete en patrocinador</strong><br /> de Industrial Transformation Mexico."
+        "text_1":"<strong>Reserva tu stand y/o conviértete en patrocinador</strong><br /> de Industrial Transformation MEXICO."
     },
     "hotels":{
         "title": "Tarifas especiales en hoteles",

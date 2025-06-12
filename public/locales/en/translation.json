@@ -60,7 +60,8 @@
         "media_hub_1": "cuatro cero",
         "media_hub_2": "Gallery",
         "media_hub_3": "download logos",
-        "title_exhibitors": "Exhibitors Confirmed"
+        "title_exhibitors": "Exhibitors Confirmed",
+        "prensa": "Si eres miembro de prensa favor de enviar una solicitud al siguiente correo:"
     },
     "contactForm": {
         "title": "Leave us a message",
@@ -579,7 +580,7 @@
         "suscribe": "Subscribe to our newsletter",
         "day_1":"Wednesday and Thursday",
         "day_2":"Friday",
-        "text_1":"Reserve your booth and/or become a sponsor</strong><br /> of Industrial Transformation Mexico."
+        "text_1":"Reserve your booth and/or become a sponsor</strong><br /> of Industrial Transformation MEXICO."
     },
     "hotels":{
         "title": "Special Hotel Rates",
