@@ -872,4 +872,28 @@ export const directory = [
     facebook: "https://www.facebook.com/pcedelbajio",
     instagram: "https://www.instagram.com/pcedelbajio",
   },
+  {
+    id: 38,
+    name: "PULSAR",
+    logo: "/exhibitors/pulsar.webp",
+    width: 160,
+    stand_number: "F41",
+    contact: "Luis Miguel Martinez",
+    position: "",
+    phone: "+52 811 211 2105",
+    email: "lmartinez@pulsarml.com",
+    webpage: "https://www.pulsarml.com",
+    address: "228 Hamilton Ave, Third Floor ",
+    cp: "94301",
+    city: "Palo Alto",
+    state: "California",
+    country: "United States",
+    description:
+      "Pulsar es una plataforma de tecnología 4.0 para el monitoreo de OEE en tiempo real. Impulsamos la productividad de las empresas manufactureras mediante datos precisos y confiables. Más de 100 plantas en México y EEUU confían en nosotros.",
+    description_en:
+      "Pulsar is a 4.0 technology platform for real-time OEE monitoring. We boost manufacturing productivity through accurate and reliable data. Trusted by more than 100 plants in Mexico and the US.",
+    facebook: "https://www.facebook.com/pulsarml",
+    instagram: "https://www.instagram.com/pulsar_global/",
+    youtube: "https://www.youtube.com/@pulsarglobal",
+  },
 ].sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
