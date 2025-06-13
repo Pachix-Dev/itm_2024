@@ -24,212 +24,195 @@ const hableError = (error) => {
 };
 
 export class RegisterModel {
-
-  static async create_user ({
-      uuid,             
-      name,
-      paternSurname,
-      maternSurname,
-      email,
-      phone,
-      typeRegister,
-      genre,
-      nacionality,
-      code_invitation,
-      company,
-      industry,
-      position,
-      area,
-      country,
-      municipality,
-      state,
-      city,
-      address,
-      colonia,
-      postalCode,
-      webPage,
-      phoneCompany,
-      eventKnowledge,
-      productInterest,
-      levelInfluence,
-      wannaBeExhibitor,
-      alreadyVisited,
-    }) {
-      const connection = await mysql.createConnection(config)
-      try {      
-        const [result] = await connection.query(
-          'INSERT INTO users (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, code_invitation, company, industry, position, area, country, municipality, state, city, address, colonia, postalCode, webPage, phoneCompany, eventKnowledge, productInterest, levelInfluence, wannaBeExhibitor, alreadyVisited ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
-          [
-            uuid,             
-            name,
-            paternSurname,
-            maternSurname,
-            email,
-            phone,
-            typeRegister,
-            genre,
-            nacionality,
-            code_invitation,
-            company,
-            industry,
-            position,
-            area,
-            country,
-            municipality,
-            state,
-            city,
-            address,
-            colonia,
-            postalCode,
-            webPage,
-            phoneCompany,
-            eventKnowledge,
-            productInterest,
-            levelInfluence,
-            wannaBeExhibitor,
-            alreadyVisited,   
-          ]
-        )
-                                
-        return {
-          status: true,
-          uuid,
-          insertId: result.insertId,
-          ...result,
-        }
-      }catch (error) {
-        console.log(error)
-        return hableError(error)          
-      }
-      finally {
-        await connection.end()
-      }
-  }
-
-  static async create_student ({
-      name,
-      lastname,
-      email,
-      phone,
-      company,
-      students,
-    }) {
-      const connection = await mysql.createConnection(config)
-      try {      
-        const [result] = await connection.query(
-          'INSERT INTO docente (name, lastname, email, phone, school_name ) VALUES (?,?,?,?,?)',
-          [                         
-            name,
-            lastname,            
-            email,
-            phone,
-            company,             
-          ]
-        )
-        
-        if (result.affectedRows === 0) {
-          return {
-            status: false,
-            message: 'Error al guardar tus datos, por favor intenta de nuevo.',
-          }
-        }
-
-        const [studentsResult] = await connection.query(
-          'INSERT INTO estudiantes (id_docente, name, lastname, level_study, career ) VALUES ?',
-          [
-            
-            students.map((student) => [
-              result.insertId,
-              student.name,
-              student.lastname,
-              student.level_study,
-              student.career,              
-            ]),
-          ]
-        )
-
-        return {
-          status: true,          
-          insertId: result.insertId,
-          ...result,
-        }
-      }catch (error) {
-        console.log(error)
-        return hableError(error)          
-      }
-      finally {
-        await connection.end()
-      }
-  }
-
-  static async save_order (user_id, paypal_id_order,paypal_id_transaction) {
-    const connection = await mysql.createConnection(config)
-    try {      
-      const [registers] = await connection.query(
-        'INSERT INTO users_vip (user_id, paypal_id_order, paypal_id_transaction) VALUES (?,?,?)',
+  static async create_user({
+    uuid,
+    name,
+    paternSurname,
+    maternSurname,
+    email,
+    phone,
+    typeRegister,
+    genre,
+    nacionality,
+    code_invitation,
+    company,
+    industry,
+    position,
+    area,
+    country,
+    municipality,
+    state,
+    city,
+    address,
+    colonia,
+    postalCode,
+    webPage,
+    phoneCompany,
+    eventKnowledge,
+    productInterest,
+    levelInfluence,
+    wannaBeExhibitor,
+    alreadyVisited,
+  }) {
+    const connection = await mysql.createConnection(config);
+    try {
+      const [result] = await connection.query(
+        "INSERT INTO users (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, code_invitation, company, industry, position, area, country, municipality, state, city, address, colonia, postalCode, webPage, phoneCompany, eventKnowledge, productInterest, levelInfluence, wannaBeExhibitor, alreadyVisited ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
         [
-          user_id,
-          paypal_id_order,
-          paypal_id_transaction,
+          uuid,
+          name,
+          paternSurname,
+          maternSurname,
+          email,
+          phone,
+          typeRegister,
+          genre,
+          nacionality,
+          code_invitation,
+          company,
+          industry,
+          position,
+          area,
+          country,
+          municipality,
+          state,
+          city,
+          address,
+          colonia,
+          postalCode,
+          webPage,
+          phoneCompany,
+          eventKnowledge,
+          productInterest,
+          levelInfluence,
+          wannaBeExhibitor,
+          alreadyVisited,
         ]
-      )
-      return registers
+      );
+
+      return {
+        status: true,
+        uuid,
+        insertId: result.insertId,
+        ...result,
+      };
+    } catch (error) {
+      console.log(error);
+      return hableError(error);
     } finally {
-      await connection.end() // Close the connection
+      await connection.end();
+    }
+  }
+
+  static async create_student({
+    name,
+    lastname,
+    email,
+    phone,
+    company,
+    students,
+  }) {
+    const connection = await mysql.createConnection(config);
+    try {
+      const [result] = await connection.query(
+        "INSERT INTO docente (name, lastname, email, phone, school_name ) VALUES (?,?,?,?,?)",
+        [name, lastname, email, phone, company]
+      );
+
+      if (result.affectedRows === 0) {
+        return {
+          status: false,
+          message: "Error al guardar tus datos, por favor intenta de nuevo.",
+        };
+      }
+
+      const [studentsResult] = await connection.query(
+        "INSERT INTO estudiantes (id_docente, name, lastname, level_study, career ) VALUES ?",
+        [
+          students.map((student) => [
+            result.insertId,
+            student.name,
+            student.lastname,
+            student.level_study,
+            student.career,
+          ]),
+        ]
+      );
+
+      return {
+        status: true,
+        insertId: result.insertId,
+        ...result,
+      };
+    } catch (error) {
+      console.log(error);
+      return hableError(error);
+    } finally {
+      await connection.end();
+    }
+  }
+
+  static async save_order(user_id, paypal_id_order, paypal_id_transaction) {
+    const connection = await mysql.createConnection(config);
+    try {
+      const [registers] = await connection.query(
+        "INSERT INTO users_vip (user_id, paypal_id_order, paypal_id_transaction) VALUES (?,?,?)",
+        [user_id, paypal_id_order, paypal_id_transaction]
+      );
+      return registers;
+    } finally {
+      await connection.end(); // Close the connection
     }
   }
 
   static async get_user_by_id(id) {
-		const connection = await mysql.createConnection(config)
-		try {
-
-			const [users] = await connection.query(
-				'SELECT * FROM users WHERE id = ?',
-				[id]
-			)
-			if (users.length === 0) {
-				return {
+    const connection = await mysql.createConnection(config);
+    try {
+      const [users] = await connection.query(
+        "SELECT * FROM users WHERE id = ?",
+        [id]
+      );
+      if (users.length === 0) {
+        return {
           status: false,
-				  error: 'No se encontró el usuario',
-				}
-			}            
-      
-			return {
+          error: "No se encontró el usuario",
+        };
+      }
+
+      return {
         status: true,
-				user: users[0],
-			}
-		} finally {
-			await connection.end()
-		}
-	}
-  
-  static async get_postal_code ({cp}) {
-    const connection = await mysql.createConnection(config)
-    try {      
+        user: users[0],
+      };
+    } finally {
+      await connection.end();
+    }
+  }
+
+  static async get_postal_code({ cp }) {
+    const connection = await mysql.createConnection(config);
+    try {
       const [result] = await connection.query(
-        'SELECT * FROM postal_code WHERE d_CP = ? OR d_codigo = ?',
-        [
-          cp,
-          cp
-        ]
-      )
+        "SELECT * FROM postal_code WHERE d_CP = ? OR d_codigo = ?",
+        [cp, cp]
+      );
       if (result.length === 0) {
         return {
           status: false,
-          message: 'Código postal no encontrado, por favor verifica tu código postal.',    
-        }
-      }else{
+          message:
+            "Código postal no encontrado, por favor verifica tu código postal.",
+        };
+      } else {
         return {
           status: true,
-          result
-        }                
+          result,
+        };
       }
     } finally {
-      await connection.end() // Close the connection
+      await connection.end(); // Close the connection
     }
   }
-  
-	static async save_order(user_id, paypal_id_order, paypal_id_transaction) {
+
+  static async save_order(user_id, paypal_id_order, paypal_id_transaction) {
     const connection = await mysql.createConnection(config);
     try {
       const [registers] = await connection.query(
@@ -337,7 +320,4 @@ export class RegisterModel {
       await connection.end(); // Close the connection
     }
   }
-
-  
-  
 }
