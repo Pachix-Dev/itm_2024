@@ -1,19 +1,19 @@
 ---
-import { t, changeLanguage } from "i18next";
+import i18next, { t, changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 import SelectGallery from "../../components/shared/SelectGallery.astro";
 
 changeLanguage("en");
+
+const lang = i18next.language;
+const base = i18next.language === "es" ? "" : `/${lang}`;
 ---
 
 <Layout title={`ITM 2025 | ${t('menu.visitors_1')}`}>
   <main
-    class="bg-[url('/img/bgwhyvisit.webp')] bg-cover bg-no-repeat bg-center bg-fixed pb-5 pt-5 px-5 md:px-20 lg:32"
+    class='bg-black bg-cover bg-no-repeat bg-center bg-fixed pb-5 pt-5 px-5 md:px-20 lg:32'
   >
     <section>
-      <p class='my-5 text-white text-xl pe-5 text-center'>
-        * {t('home.date_text_cost')}
-      </p>
       <h1 class='text-white text-4xl font-bold inline'>
         <svg
           class='inline h-10'
@@ -102,15 +102,57 @@ changeLanguage("en");
         </div>
       </div>
     </section>
+    <div class='text-white text-center mt-10'>
+      <p class='my-5 text-white text-xl pe-5 text-center'>
+        * {t('home.date_text_cost')}
+      </p>
+      <p class='text-lg'>
+        {t('footer.dateFooter')}
+      </p>
+      <p set:html={t('home.dateEvent')} />
+      <p class='mt-5 font-bold flex justify-center items-center gap-2 text-lg'>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          fill='none'
+          viewBox='0 0 24 24'
+          stroke-width='1.5'
+          stroke='currentColor'
+          class='size-6'
+        >
+          <path
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            d='M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'></path>
+          <path
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z'
+          ></path>
+        </svg>
+        Centro Banamex, CDMX, México
+      </p>
+      <a
+        href={`${base}/registro`}
+        class='mt-10 card p-5 hover:scale-105 ease-in-out duration-300 mx-auto w-fit'
+      >
+        <span class='text-white z-10 font-extrabold text-3xl'
+          >{t('register.button_register')}</span
+        >
+      </a>
+    </div>
+    {
+      /*  
     <section class='py-10 px-'>
       <h2 class='font-bold text-[#e8001e] text-4xl text-center pb-10'>
         {t('gallery.title')}
       </h2>
       <SelectGallery />
     </section>
-    <section>
+    */
+    }
+    <section class='mt-10'>
       <div class='pt-5'>
-        <h2 class='text-white text-2xl font-medium'>
+        <h2 class='text-white text-4xl font-medium'>
           {t('visitorProfile.buyers.title')}
         </h2>
         <p class='text-white pt-2'>{t('visitorProfile.buyers.item_1')}</p>
@@ -120,7 +162,7 @@ changeLanguage("en");
         <p class='text-white pt-2'>{t('visitorProfile.buyers.item_3')}</p>
       </div>
       <div class='pt-5'>
-        <h2 class='text-white text-2xl font-medium'>
+        <h2 class='text-white text-4xl font-medium'>
           {t('visitorProfile.industry.title')}
         </h2>
         <ul class='text-white *:pt-2'>
@@ -130,7 +172,6 @@ changeLanguage("en");
           <li>{t('visitorProfile.industry.item_4')}</li>
           <li>{t('visitorProfile.industry.item_5')}</li>
           <li>{t('visitorProfile.industry.item_6')}</li>
-          <li>{t('visitorProfile.industry.item_7')}</li>
           <li>{t('visitorProfile.industry.item_8')}</li>
           <li>{t('visitorProfile.industry.item_9')}</li>
           <li>{t('visitorProfile.industry.item_10')}</li>
@@ -142,3 +183,47 @@ changeLanguage("en");
     </section>
   </main>
 </Layout>
+<style>
+  .card {
+    width: fit-content;
+    background: #f6f6f6;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    background-image: linear-gradient(45deg, rgb(0, 183, 255), #e42128);
+    height: 30px;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .card::after {
+    content: '';
+    position: absolute;
+    background: #e42128;
+    inset: 5px;
+    border-radius: 15px;
+  }
+  /*.card:hover:before {
+    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+    animation: rotBGimg 3.5s linear infinite;
+  }*/
+</style>
