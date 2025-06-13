@@ -1,9 +1,14 @@
 interface Speaker {
     id?: string;
-    name: string;
-    position: string;
-    company: string;
+    name?: string;
+    position?: string;
+    position_en?: string;
+    company?: string;
+    bio?: string;
+    bio_en?: string;
     image?: string;
+    email?: string;
+    phone?: string;
     moderador?: boolean;
 }
 
@@ -20,13 +25,27 @@ interface Program {
 const stage_1_day_1: Program[] = [
     {
 
-        "title": "",
-        "title_en": "",
-        "description": "",
-        "description_en": "",
-        "time": "11:00 hrs",
-        "duration": "60 mins",
-        "speakers": []
+        "title": "Siemens",
+        "title_en": "Siemens",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id.",
+        "description_en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id.",
+        "time": "13:00 hrs",
+        "duration": "35 min",
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Carlos Hernandez",
+                "position": "Director de Relaciones Públicas",
+                "position_en": "Director of Public Relations",
+                "company": "IGECO",
+                "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id.",
+                "bio_en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id.",
+                "image": "/img/speakers/abigail_carrillo.webp",
+                "email": "ejemplo@gmail.com",
+                "phone": "123456789",
+                "moderador": true
+            }
+        ]
     },
     
 ]

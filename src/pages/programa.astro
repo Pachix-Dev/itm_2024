@@ -2,10 +2,15 @@
 import programs from "../data/constans_program.ts";
 import Button from "../components/schedule/Button.astro";
 import ConferenceItm from "../components/schedule/ConferenceItm.astro";
-import { t, changeLanguage } from "i18next";
+import ConferenceITM from "../components/schedule/ConferenceITM.tsx";
+import i18next, { t, changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
+import { AstroI18next } from "node_modules/astro-i18next/src";
 
 changeLanguage("es");
+
+// Usa el Record<string, string> para que puedas usar el t() sin problemas en React con TypeScript
+const translate = t("program", { returnObjects: true }) as Record<string, string>;
 ---
 
 <Layout title={`ITM | ${t('program.title')}`}>
@@ -48,9 +53,14 @@ changeLanguage("es");
             id={`program-${program.stage}-${program.day}`}
           >
             {program.conferences.map((item, key) => (
-              <ConferenceItm
+              // <ConferenceItm
+              //   item={item}
+              //   key={program.stage + '-' + program.day + '-' + key}
+              // />
+              <ConferenceITM 
                 item={item}
-                key={program.stage + '-' + program.day + '-' + key}
+                translate={translate}
+                language={i18next.language}
               />
             ))}
           </section>
