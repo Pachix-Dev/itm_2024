@@ -1,11 +1,9 @@
 ---
 import programs from "../data/constans_program.ts";
 import Button from "../components/schedule/Button.astro";
-import ConferenceItm from "../components/schedule/ConferenceItm.astro";
 import ConferenceITM from "../components/schedule/ConferenceITM.tsx";
 import i18next, { t, changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
-import { AstroI18next } from "node_modules/astro-i18next/src";
 
 changeLanguage("es");
 
@@ -61,6 +59,7 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
                 item={item}
                 translate={translate}
                 language={i18next.language}
+                client:only
               />
             ))}
           </section>
@@ -174,5 +173,5 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
     })
   }
 
-  document.addEventListener('astro:page-load', main)
+  document.addEventListener('astro:page-load', main);
 </script>

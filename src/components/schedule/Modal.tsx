@@ -21,6 +21,7 @@ type ModalProps = {
     language: string; 
   };
 
+
 const Modal = ({ isOpen, onClose, speaker, language }: ModalProps) => {
     const [vermas, setVermas] = useState(false)
 
@@ -29,18 +30,17 @@ const Modal = ({ isOpen, onClose, speaker, language }: ModalProps) => {
     const bioLang = language === 'es' ? speaker.bio ?? '' : speaker.bio_en ?? '';
 
     const newBio = bioLang.length > 700 ? bioLang.slice(0, 700) + '...' : bioLang
-
     return (
         <div className='fixed inset-0 z-[200] flex items-center justify-center bg-gray-900 bg-opacity-60 p-4'>
             <div
-                className='bg-gradient-to-t from-white to-gray-100 p-6 md:p-8 rounded-3xl shadow-xl 
-                        w-full max-w-xs sm:max-w-md md:max-w-3xl lg:max-w-7xl 
+                className='bg-gradient-to-t from-[#000014] to-[#0a3dff] p-6 md:p-8 lg:pt-4 rounded-3xl shadow-xl 
+                        w-full max-w-full  lg:max-w-7xl 
                         overflow-y-auto max-h-screen'
             >
                 <div className='flex justify-end mb-4'>
                     <button
                         onClick={onClose}
-                        className='text-gray-600 hover:text-custom-orange focus:outline-none transition-colors duration-300'
+                        className='text-zinc-50 hover:text-custom-orange focus:outline-none transition-colors duration-300'
                     >
                         <svg
                             xmlns='http://www.w3.org/2000/svg'
@@ -59,40 +59,40 @@ const Modal = ({ isOpen, onClose, speaker, language }: ModalProps) => {
                     </button>
                 </div>
 
-                <div className='grid md:flex gap-8 relative  items-center'>
-
+                <div className='grid lg:flex gap-8 relative items-center justify-items-center'>
                     <img
                         src={speaker.image}
                         alt={speaker.name}
-                        className='object-cover  w-[400px]  rounded-xl shadow-md'
+                        className='sm:object-cover lg:w-[400px] md:w-[300px]  rounded-xl shadow-md'
                     />
-                    <div className='justify-center text-center sm:text-left overflow-y-scroll max-h-[400px]'>
-                        <div className="sticky top-0 bg-[#F6F7F8] z-10 pl-3 mb-4 pb-3">
+                    <div className='justify-center text-center sm:text-left overflow-scroll max-h-[600px] p-5'>
+                        <div className="square_red_2 top-0 bg-gradient-to-t from-[#e10725] to-[#e40966] z-10 pl-3 mb-4 pb-3">
                             {speaker.company !== '' && (
-                                <div className=' w-fit bg-custom-orange text-white text-xs md:text-sm px-3 py-1 rounded-full shadow-lg'>
+                                <div className='bold w-fit bg-custom-orange text-white text-xs md:text-sm px-3 py-1 rounded-full shadow-lg outline-white'>
                                     {speaker.company}
                                 </div>
                             )}
-                            <h3 className='mt-5 text-4xl font-semibold text-custom-orange'>
+                            <h3 className='uppercase mt-3 text-4xl font-bold text-custom-orange'>
                                 {speaker.name}
                             </h3>
-                            <p className='underline text-gray-500 mt-2 text-lg'>
+                            <p className=' text-zinc-50 mt-2 text-lg'>
                                 {language === 'es' ? speaker.position : speaker.position_en}
                             </p>
                         </div>
 
-                        <p className='text-gray-700  text-base mt-3 text-justify'>
+                        <p className='text-text-zinc-50  text-base mt-3 text-justify'>
                             {vermas ? bioLang : newBio}
 
                         </p>
+                        
                         {newBio.length > 700 &&
-                            <button onClick={() => setVermas(!vermas)} className="mt-5 bg-[#B7560E] text-white font-bold px-2 py-1 rounded-md text-sm hover:bg-[#A9001B] transition-colors duration-300">
+                            <button onClick={() => setVermas(!vermas)} className="mt-5 bg-[#e10725] text-white font-bold px-2 py-1 rounded-md text-sm hover:bg-sky-500 transition-colors duration-300">
                                 {vermas ? 'ver menos...' : 'ver más...'}
                             </button>
                         }
                         <div className='mt-4 space-y-2'>
                             {speaker.email !== '' && (
-                                <p className='text-gray-600 text-sm flex items-center gap-2'>
+                                <p className='text-zinc-200 text-sm flex items-center gap-2'>
                                     <svg
                                         xmlns='http://www.w3.org/2000/svg'
                                         fill='none'
@@ -111,7 +111,7 @@ const Modal = ({ isOpen, onClose, speaker, language }: ModalProps) => {
                                 </p>
                             )}
                             {speaker.phone !== '' && (
-                                <p className='text-gray-600 text-sm flex items-center gap-2'>
+                                <p className='text-zinc-200 text-sm flex items-center gap-2'>
                                     <svg
                                         xmlns='http://www.w3.org/2000/svg'
                                         fill='none'

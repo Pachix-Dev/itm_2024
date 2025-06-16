@@ -72,12 +72,12 @@ const ProgramItem: React.FC<Props> = ({ item, translate, language }) => {
             </div>
           </div>
 
-          <p className="text-lg text-gray-500">{item.description}</p>
+          <p className="text-lg text-gray-500 text-justify">{item.description}</p>
 
           {item.speakers.length > 0 && (
             <>
               <p className="mt-2 font-extrabold">{translate.panelists}</p>
-              <ul className="mt-2 ms-2 gap-2 grid grid-cols-2">
+              <ul className="mt-2 ms-2 gap-2 grid lg:grid-cols-3 md:grid-cols-2 ">
                 {item.speakers.map((speaker) => (
                   <li key={speaker.id} className="mt-2">
                     <div className="flex items-center gap-2">
