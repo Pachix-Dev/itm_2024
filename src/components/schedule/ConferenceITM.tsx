@@ -72,7 +72,9 @@ const ProgramItem: React.FC<Props> = ({ item, translate, language }) => {
             </div>
           </div>
 
-          <p className="text-lg text-gray-500 text-justify">{item.description}</p>
+          <p className="text-lg text-gray-500 text-justify">
+            {language === 'es' ? item.description_en : item.description}
+          </p>
 
           {item.speakers.length > 0 && (
             <>
@@ -90,7 +92,7 @@ const ProgramItem: React.FC<Props> = ({ item, translate, language }) => {
                       <p>
                         {speaker.name}
                         <br />
-                        {speaker.position}
+                        {language === 'es' ? speaker.position : speaker.position_en}
                         <br />
                         {speaker.company}
                       </p>
