@@ -1,11 +1,14 @@
 ---
 import programs from "../data/constans_program.ts";
 import Button from "../components/schedule/Button.astro";
-import ConferenceItm from "../components/schedule/ConferenceItm.astro";
-import { t, changeLanguage } from "i18next";
+import ConferenceITM from "../components/schedule/ConferenceITM.tsx";
+import i18next, { t, changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
 
 changeLanguage("es");
+
+// Usa el Record<string, string> para que puedas usar el t() sin problemas en React con TypeScript
+const translate = t("program", { returnObjects: true }) as Record<string, string>;
 ---
 
 <Layout title={`ITM | ${t('program.title')}`}>
@@ -26,17 +29,17 @@ changeLanguage("es");
       </div>
       <div class='md:ml-5 *:w-full md:*:w-fit'>
         <Button id='day-1'
-          >{t('program.day')} 1<br />{t('program.day_1')}, 9 {
+          >{t('program.day')} 1<br />{t('program.day_1')}, 11 {
             t('program.month')
           }</Button
         >
         <Button id='day-2'
-          >{t('program.day')} 2<br />{t('program.day_2')}, 10 {
+          >{t('program.day')} 2<br />{t('program.day_2')}, 12 {
             t('program.month')
           }</Button
         >
         <Button id='day-3'
-          >{t('program.day')} 3<br />{t('program.day_3')}, 11 {
+          >{t('program.day')} 3<br />{t('program.day_3')}, 13 {
             t('program.month')
           }</Button
         >
@@ -48,9 +51,15 @@ changeLanguage("es");
             id={`program-${program.stage}-${program.day}`}
           >
             {program.conferences.map((item, key) => (
-              <ConferenceItm
+              // <ConferenceItm
+              //   item={item}
+              //   key={program.stage + '-' + program.day + '-' + key}
+              // />
+              <ConferenceITM 
                 item={item}
-                key={program.stage + '-' + program.day + '-' + key}
+                translate={translate}
+                language={i18next.language}
+                client:only
               />
             ))}
           </section>
@@ -164,5 +173,5 @@ changeLanguage("es");
     })
   }
 
-  document.addEventListener('astro:page-load', main)
+  document.addEventListener('astro:page-load', main);
 </script>
