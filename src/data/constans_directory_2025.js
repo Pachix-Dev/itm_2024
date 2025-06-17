@@ -1016,6 +1016,56 @@ export const directory = [
       "We provide intuitive, cloud-based CMMS solutions to help you gain full control of your maintenance. With 28+ years of experience, we support 2,500+ clients in over 100 countries.",
     linkedIn: "https://www.linkedin.com/showcase/dimo-maint-latam/",
   },
+  {
+    id: 44,
+    name: "Weidmüller México",
+    logo: "/exhibitors/weidmuller_logo.jpg",
+    width: 160,
+    stand_number: "B43",
+    contact: "Sheila Santillan ",
+    position: "",
+    phone: "+52 222 598 9291",
+    email: "sheila.santillan@weidmueller.com",
+    webpage: "https://www.weidmuller.com.mx/es/index.jsp",
+    address: "BLVD. HERMANOS SERDÁN 698",
+    cp: "72020",
+    city: "Puebla",
+    state: "Puebla",
+    country: "Mexico",
+    description:
+      "Weidmüller es líder en soluciones de conectividad industrial. Ofrece clemas, interfaces, protección eléctrica e IoT. Con presencia en México desde 1994, combina innovación, calidad y soporte local para impulsar la automatización y digitalización.",
+    description_en:
+      "Weidmüller is a leader in industrial connectivity solutions. It offers terminal blocks, interfaces, electrical protection, and IoT. Present in Mexico since 1994, it combines innovation, quality, and local support to drive automation and digitalization.",
+    facebook: "https://www.facebook.com/weidmullermexico/",
+    instagram: "https://www.instagram.com/weidmuller_mexico/",
+  },
+  {
+    id: 45,
+    name: "RITTAL",
+    logo: "/exhibitors/rital_logo.jpg",
+    width: 160,
+    stand_number: "E40",
+    contact: "Nataly Vega",
+    position: "",
+    phone: "+52 556 677 0244",
+    email: "nolascoaga@rittal.com.mx",
+    webpage: "https://www.rittal.com/mx-es/",
+    address: "Blvd. Alberto Einstein, Colonia: Santa Ana Tlapaltitlán",
+    cp: "50160",
+    city: "Toluca de Lerdo",
+    state: "Toluca",
+    country: "Mexico",
+    description:
+      "Rittal, S.A. de C.V. es la filial mexicana de la multinacional alemana Rittal GmbH & Co. KG, líder mundial en la fabricación y comercialización de envolventes metálicos para instalaciones eléctricas, de electrónica y de comunicaciones. También contamos con las mejores soluciones en gabinetes para servidores y cableado estructurado, así como soluciones para centros de datos como climatización de mediana y alta densidad, confinamiento de pasillo frío y monitoreo de condiciones ambientales del gabinete o centro de datos.",
+    description_en:
+      "Rittal, S.A. de C.V. is the Mexican subsidiary of the German multinational Rittal GmbH & Co. KG, a world leader in the manufacture and marketing of metal enclosures for electrical, electronics and communications installations. We also have the best solutions in server cabinets and structured cabling, as well as solutions for data centers such as medium and high density air conditioning, cold aisle confinement and monitoring of environmental conditions of the cabinet or data center.",
+    linkedIn: "https://www.linkedin.com/company/rittal-mx/posts/?feedView=all",
+    facebook: "https://www.facebook.com/MXRittal?platform=hootsuite#",
+    instagram:
+      "https://www.instagram.com/rittal_mx/?igshid=Y2I2MzMwZWM3ZA%3D%3D",
+    youtube: "https://www.youtube.com/channel/UCdmcrmIXykrQQPxTDtF0EyQ",
+    x: "https://x.com/i/flow/login?redirect_after_login=%2FRittalMX",
+  },
 ].sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
 
 /* 
