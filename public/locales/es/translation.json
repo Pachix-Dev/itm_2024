@@ -596,8 +596,12 @@
     },
     "sponsorships":{
         "title": "Patrocinios 2025",
+        "title_2": "Patrocinios con participación en conferencias",
         "subtitle": "Industrial Transformation Mexico",
-        "button": "Leer más"
+        "button": "Leer más",
+        "text_1": "Paquetes de Patrocinio por niveles",
+        "text_2": "Patrocinios adicionales",
+        "text_3": "Patrocinio"
     },
     "register":{
         "button_register": "REGÍSTRATE AQUÍ",
