@@ -23,7 +23,7 @@
         "exhibitors_10": "Toolkit 2023",
         "exhibitors_11": "Soy expositor",
         "exhibitors_12": "Pabellon Aleman",
-        "visitors": "Visitantes",
+        "visitors": "Visita ITM 2025",
         "visitors_0": "Pasaporte",
         "visitors_1": "¿POR QUÉ VISITARNOS?",
         "visitors_2": "Perfil del visitante",
@@ -401,9 +401,9 @@
         "toolkit_6": "Promocional ITM"
     },
     "visitorReasons": {
-        "title_1": "Por qué visitar",
-        "title_2": "¿Por qué debes visitar Industrial Transformation MEXICO?",
-        "description_1": "ITM es la Feria Líder de la Industria 4.0 en México y América Latina. Este gran evento es una plataforma donde los tomadores de decisiones a nivel global muestran, exploran y dan a conocer las nuevas tecnologías de automatización, fabricación inteligente, soluciones de logística inteligente y digital.",
+        "title_1": "¿por qué visitarnos?",
+        "title_2": "VEN A LA SÉPTIMA EDICIÓN DE LA FERIA DE LA INDUSTRIA 4.0",
+        "description_1": "ITM es la feria de la Industria 4.0 en México y América Latina, donde encontrarás  a más de 275 expositores en los sectores de logística inteligente, automatización, robotización, manufactura aditiva, fabricación inteligente, y soluciones de energía. ",
         "description_2": "No dejes pasar la oportunidad y participa en los mejores programas educativos enfocados a sectores industriales y su aplicación, además de aprovechar el espacio de intercambio de negocios.",
         "description_4": "Comience la transformación digital de su empresa.",
         "description_5": "Optimice sus procesos y resultados, genere ahorros e incremente sus ventas.",
@@ -431,7 +431,15 @@
         },
         "buyers": {
             "title": "Perfil de los compradores",
-            "item_1": "Altos directivos, consultores, responsables de la toma de decisiones, jefes de departamento, ingenieros, planificadores de fábricas, responsables de compras, gestores de sistemas, comerciantes.",
+            "item_1": "Altos directivos",
+            "item_4": "consultores", 
+            "item_5": "responsables de la toma de decisiones", 
+            "item_6": "jefes de departamento", 
+            "item_7": "ingenieros",
+            "item_8": "planificadores de fábricas",
+            "item_9": "responsables de compras", 
+            "item_10": "gestores de sistemas",
+            "item_11": "comerciantes.",
             "item_2": "Regiones:",
             "item_3": "México, América Central, América del Sur."
         }
@@ -588,7 +596,14 @@
         "description": "Nos complace anunciar que hemos asegurado tarifas preferenciales en hoteles de calidad para que tu experiencia sea aún más cómoda y accesible.<br /><br />Ubicados estratégicamente alrededor del lugar del evento, estos hoteles ofrecen no solo comodidad, sino también la oportunidad de sumergirte completamente en la atmósfera del evento. Hemos negociado tarifas especiales para nuestros asistentes, asegurándonos de que tu estancia sea tan inolvidable como el propio evento.",
         "code_reservation": "Codigo de reserva: HANNOVER",
         "button": "Reservar ahora",
-        "info": "Más información aquí"
+        "info": "Más información aquí",
+        "visitplan": "PLANEA TU VISITA A ITM",
+        "visitplan_text": "RUTAS DEL AEROPUERTO INTERNACIONAL FELIPE ÁNGELES Y AEROPUERTO INTERNACIONAL DE LA CIUDAD DE MéXICO",
+        "visitplan_text_2": "Para que tu llegada sea rápida, accesible y segura; hemos investigado los diferentes opciones de rutas de transporte hacia cada uno de los aeropuertos de la Ciudad de México.",
+        "rentcar": "RENTA DE AUTOS",
+        "autobuses": "AUTOBUSES",
+        "aifapass": "AIFAPASS - Tarifa cero en peaje",
+        "destiny": "DESTINOS TERRESTES DE FORÁNEOS"
     },
     "germanPavilion":{
         "title-exhibitor": "Forme parte del Pabellón Alemán en ITM 2024",

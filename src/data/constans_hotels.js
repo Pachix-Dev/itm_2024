@@ -15,6 +15,7 @@ const hotels = [
       time_car: '10 min',
       start: 4,
       link: 'https://all.accor.com/hotel/B5Q7/index.es.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=google+Maps',
+      googlemaps: 'https://maps.app.goo.gl/bUZZkHPrWSRQTuJz9',
       flyer_esp: '/files/flyer-novotel-esp.pdf',
       flyer_eng: '/files/flyer-novotel-eng.pdf'
     },
@@ -34,6 +35,7 @@ const hotels = [
       time_car: '20 min',
       start: 5,
       link: 'https://www.caminoreal.com/caminoreal/camino-real-polanco-mexico',
+      googlemaps: 'https://maps.app.goo.gl/fjaN2w8KtD2NAKdg7',
       flyer_esp: '/files/flyer_camino_real_esp.pdf',
       flyer_eng: '/files/flyer_camino_real_eng.pdf'
     },
@@ -53,6 +55,7 @@ const hotels = [
       time_car: '31 min',
       start: 5,
       link: 'https://www.barcelo.com/es-mx/barcelo-mexico-reforma/',
+      googlemaps: 'https://maps.app.goo.gl/BRftVfWPBzRnJZqr6',
       flyer_esp: '/files/flyer_barcelo_esp.png',
       flyer_eng: '/files/flyer_barcelo_eng.png'
     },
@@ -72,6 +75,7 @@ const hotels = [
       time_car: '8 min',
       start: 5,
       link: 'https://www.fiestamericanatravelty.com/fiesta-americana/hoteles/fiesta-americana-mexico-toreo',
+      googlemaps: 'https://maps.app.goo.gl/qjKLzygpTs72C7qe7',
       flyer_esp: '/files/flyer_fiesta_americana_esp.png',
       flyer_eng: '/files/flyer_fiesta_americana_eng.png'
     },
