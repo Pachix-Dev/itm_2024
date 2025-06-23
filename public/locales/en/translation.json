@@ -604,7 +604,8 @@
         "rentcar": "RENT A CAR",
         "autobuses": "BUS",
         "aifapass": "AIFAPASS - Zero toll rate",
-        "destiny": "LAND DESTINATIONS OF FOREIGNERS"
+        "destiny": "LAND DESTINATIONS OF FOREIGNERS",
+        "airport": "International airport"
     },
     "germanPavilion":{
         "title-exhibitor": "Be part of the German Pavilion at ITM 2024",

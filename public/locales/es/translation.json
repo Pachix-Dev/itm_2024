@@ -603,7 +603,8 @@
         "rentcar": "RENTA DE AUTOS",
         "autobuses": "AUTOBUSES",
         "aifapass": "AIFAPASS - Tarifa cero en peaje",
-        "destiny": "DESTINOS TERRESTES DE FORÁNEOS"
+        "destiny": "DESTINOS TERRESTES DE FORÁNEOS",
+        "airport": "Aeropuerto internacional"
     },
     "germanPavilion":{
         "title-exhibitor": "Forme parte del Pabellón Alemán en ITM 2024",
