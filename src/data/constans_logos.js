@@ -331,7 +331,7 @@ const media_2 = [
       width: 150,
       height: 125,
       alt: 'cuatro cero',
-      link: 'https://cuatro-cero.mx/',
+      link: 'https://cuatro-cero.com.mx/',
     },
     {
       src: '/img/INDUSTRIA_360.webp',
