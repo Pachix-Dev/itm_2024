@@ -432,14 +432,14 @@
         "buyers": {
             "title": "Perfil de los compradores",
             "item_1": "Altos directivos",
-            "item_4": "consultores", 
-            "item_5": "responsables de la toma de decisiones", 
-            "item_6": "jefes de departamento", 
-            "item_7": "ingenieros",
-            "item_8": "planificadores de fábricas",
-            "item_9": "responsables de compras", 
-            "item_10": "gestores de sistemas",
-            "item_11": "comerciantes.",
+            "item_4": "Consultores", 
+            "item_5": "Responsables de la toma de decisiones", 
+            "item_6": "Jefes de departamento", 
+            "item_7": "Ingenieros",
+            "item_8": "Planificadores de fábricas",
+            "item_9": "Responsables de compras", 
+            "item_10": "Gestores de sistemas",
+            "item_11": "Comerciantes",
             "item_2": "Regiones:",
             "item_3": "México, América Central, América del Sur."
         }

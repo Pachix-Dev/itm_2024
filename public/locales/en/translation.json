@@ -432,14 +432,14 @@
         "buyers": {
             "title": "Job levels",
             "item_1": "Senior management",
-            "item_4": "consultants", 
-            "item_5": "decision makers", 
-            "item_6": "department heads", 
-            "item_7": "engineers",
-            "item_8": "factory planners",
-            "item_9": "procurement managers", 
-            "item_10": "system managers",
-            "item_11": "traders.",
+            "item_4": "Consultants", 
+            "item_5": "Decision makers", 
+            "item_6": "Department heads", 
+            "item_7": "Engineers",
+            "item_8": "Factory planners",
+            "item_9": "Procurement managers", 
+            "item_10": "System managers",
+            "item_11": "Traders.",
             "item_2": "Regions:",
             "item_3": "Mexico, Central America, South America."
         }
