@@ -99,18 +99,21 @@ const useRegisterForm = create(
       setVerify_directory: (verify_directory) => set({ verify_directory }),
 
       addDiscount: (discount) =>
-        
         set((state) => {
-          const exists = state.items.some(item => item.id === discount.id);
+          const exists = state.items.some((item) => item.id === discount.id);
           if (exists) return state;
+
+          const exists_discount = state.items.some(
+            (item) => discount.isDiscount === item.isDiscount
+          );
+          if (exists_discount) return state;
 
           const newTotal = state.total - discount.price;
           return {
             items: [...state.items, discount],
             total: newTotal,
           };
-      }),
-
+        }),
 
       incrementStep: () =>
         set((state) => ({
@@ -181,7 +184,6 @@ const useRegisterForm = create(
             },
           ],
           total: 300,
-
         }),
     }),
     { name: "register-form-itm-v2" }
