@@ -4,6 +4,7 @@ import { useRegisterForm } from '../../store/register-form'
 export function Coupon({ currentLanguage }) {
   const [isValidCoupon, setIsValidCoupon] = useState(null)
   const [couponStatus, setCouponStatus] = useState(null)
+  const placeholder = currentLanguage === 'es' ? 'Código de descuento' : 'Code discount'
   const {
     code_cortesia,
     setCode_cortesia,
@@ -36,7 +37,7 @@ export function Coupon({ currentLanguage }) {
   const checkCoupon = async (e) => {
     e.preventDefault()
     setCode_cortesia('')
-    setCouponStatus('Aplicando código de descuento...')
+    setCouponStatus(currentLanguage === 'es' ? 'Aplicando código de descuento...' : 'Applying code discount...')
     const response = await fetch(urlbase + 'check-cortesia', {
       method: 'POST',
       headers: {
@@ -72,23 +73,24 @@ export function Coupon({ currentLanguage }) {
       } else {
 
         if(items.find(item => item.isDiscount)) {
-          setCouponStatus('Solo se puede usar un codigo de descuento a la vez...')
-          setIsValidCoupon(true)
+          setCouponStatus(currentLanguage === 'es' ? 'Solo se puede usar un codigo de descuento a la vez...' : 'Only one code discount can be used at a time...')
+          setIsValidCoupon(false)
           return
         }
 
         addDiscount({
-        id: data.result.id,
-        name: data.result.code,
-        price: total * (data.result.discount_percent / 100),
-        isDiscount: true,
+          id: data.result.id,
+          name: data.result.code,
+          name_en: data.result.code,
+          price: total * (data.result.discount_percent / 100),
+          isDiscount: true,
         })
 
-        setCouponStatus('¡Código de descuento aplicado!')
+        setCouponStatus(currentLanguage === 'es' ? '¡Código de descuento aplicado!' : 'Code discount applied!')
         setIsValidCoupon(true)
       }
     } else {
-      setCouponStatus('Código de descuento inválido o expirado.')
+      setCouponStatus(currentLanguage === 'es' ? 'Código de descuento inválido o expirado.' : 'Invalid code or expired.')
       setIsValidCoupon(false)
     }
   }
@@ -109,7 +111,7 @@ export function Coupon({ currentLanguage }) {
         <input
           type='text'
           className='w-full border-2 border-gray-300 rounded-lg px-2 py-1 focus:border-[#941E81] focus: focus:ring-[#941E81] text-black'
-          placeholder='Código de descuento'
+          placeholder={placeholder}
           value={code_cortesia}
           onChange={handleCouponChange}
         />
@@ -118,7 +120,7 @@ export function Coupon({ currentLanguage }) {
           onClick={checkCoupon}
           disabled={!code_cortesia.trim()}
         >
-          Aplicar
+          {currentLanguage === 'es' ? 'Aplicar' : 'Apply'}
         </button>
       </div>
       {couponStatus && (
