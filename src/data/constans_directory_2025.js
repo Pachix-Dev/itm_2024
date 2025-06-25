@@ -1139,6 +1139,102 @@ export const directory = [
     linkedIn: "https://www.linkedin.com/company/knipex-latinoamerica/",
     youtube: "https://www.youtube.com/channel/UCP_ERuEfdnYVWEEk4_KsS7g",
   },
+  {
+    id: 49,
+    name: "East Montgomery County Improvement District",
+    logo: "/exhibitors/emcid_color.webp",
+    width: 160,
+    stand_number: "D43",
+    contact: "Kelley Mattlage",
+    position: "",
+    phone: "+1 (281) 354 4419",
+    email: "kmattlage@emctx.com",
+    webpage: "https://www.emctx.com",
+    address: "21575 US Highway 59",
+    cp: "77357",
+    city: "New Caney",
+    state: "Texas",
+    country: "United States",
+    description:
+      "El Distrito de Mejoras del Condado de East Montgomery ofrece incentivos financieros a las empresas que se expanden dentro de nuestros límites. Nuestro parque industrial de 800 acres está cerca de dos aeropuertos internacionales y del puerto de Houston.",
+    description_en:
+      "The East Montgomery County Improvement District offers financial incentives to companies that expand within our boundaries. Our 800-acre industrial park is within minutes of two interstates, two international airports, and the Port of Houston.",
+    facebook: "https://www.facebook.com/share/1AduHVCi8j/",
+    instagram: "https://www.instagram.com/emcidtx?igsh=MWV1NTh2Y21vODNhNQ==",
+    linkedIn: "https://www.linkedin.com/company/emcidtx",
+    x: "https://x.com/emcidtx",
+  },
+  {
+    id: 50,
+    name: "Phoenix Contact",
+    logo: "/exhibitors/phoenix_contact.svg",
+    width: 200,
+    stand_number: "E52",
+    contact: "Ing. Diego España",
+    position: "",
+    phone: "+52 551 101 1380",
+    email: "despana@phoenixcontact.com.mx",
+    webpage: "https://www.phoenixcontact.com/es-mx/",
+    address: "Lago Alberto #319 Piso 9  Col. Granada ",
+    cp: "11520",
+    city: " Del. Miguel Hidalgo",
+    state: "Ciudad de México",
+    country: "México",
+    description:
+      "Phoenix Contact en México: Somos la filial en México de una gran empresa Alemana, Phoenix Contact GmbH, que desde su fundación en 1923, con el invento de la primera terminal cerámica, ha crecido hasta convertirse en una compañía líder en tecnologías de conexión, manejo y conversión de señales digitales y analógicas así cómo automatización de procesos y líneas de fabricación con nuestro conocido bus de campo Interbus. En México, nuestra meta es aparentemente sencilla: ganarnos la confianza y el favorecimiento de nuestros clientes al ofrecer soluciones con tecnología de vanguardia, de calidad mundialmente reconocida, a precios competitivos y con un respaldo de un servicio impecable y sobre todo, responsable. Somos en México una empresa joven y dinámica, que cuenta con el respaldo de una enorme experiencia acumulada a través de más de medio siglo de fabricación de productos de vanguardia así como de creación de soluciones.",
+    description_en:
+      "Phoenix Contact in Mexico: We are the Mexican subsidiary of a great German company, Phoenix Contact GmbH, which was founded in 1923, with the invention of the first ceramic terminal, has grown to become a leader in digital signaling, automation, and conversion technologies as well as manufacturing lines with our well-known Interbus field bus. In Mexico, our goal is apparently simple: gaining our clients' trust and respect by offering solutions with cutting-edge technology, world-renowned quality, competitive prices, and a reliable and top-notch service. We are in Mexico a young and dynamic company that has accumulated a long experience through the creation of high-quality products and solutions over a century of manufacturing.",
+    linkedIn:
+      "https://www.linkedin.com/company/phoenix-contact/posts/?feedView=all",
+  },
+  {
+    id: 51,
+    name: "Phoenix Contact",
+    logo: "/exhibitors/siemens.webp",
+    width: 160,
+    stand_number: "F10",
+    contact: "Valeria Rivera",
+    position: "",
+    phone: "+52 (555) 456 1271",
+    email: "valeria.rivera@siemens.com",
+    webpage:
+      "https://www.siemens.com/mx/es.html?gclid=Cj0KCQjwwae1BhC_ARIsAK4JfrxakEASxviiTYpyuqfzaG2PFPrFUT_NuYhu24msPD3Uz_zz4_IznyYaAsOxEALw_wcB&acz=1&gad_source=1",
+    address:
+      "Av. Ejército Nacional Mexicano 350, Polanco, Polanco V Secc, Miguel Hidalgo",
+    cp: "11560",
+    city: "Ciudad de México",
+    state: "Ciudad de México",
+    country: "México",
+    description:
+      "Somos una empresa de origen alemán, establecida en México en 1894. Desde fábricas más eficientes en recursos hasta edificios más inteligentes, creamos tecnología con propósito añadiendo valor real para clientes. Combinando el mundo real y digital, permitimos a los clientes seguir innovando sus industrias y mercados, ayudándoles a transformar el día a día de miles de millones de personas.",
+    description_en:
+      "We are a german company established in Mexico in 1894. From more resource-efficient factories to smarter buildings, we create technology with purpose adding real value for customers. By combining the real and digital world, we enable clients to continue innovating their industries and markets, helping them transform the daily lives of billions of people.",
+    facebook:
+      "https://www.facebook.com/Siemens.Mexico.Centroamerica?locale=es_LA",
+    instagram: "https://www.instagram.com/siemensmx/",
+  },
+  {
+    id: 52,
+    name: "TIERRA TECH",
+    logo: "/exhibitors/tierra_tech_v2.webp",
+    width: 160,
+    stand_number: "D22",
+    contact: "Jorge Gilberto Terán Moncada",
+    position: "",
+    phone: "+52 461 252 7974",
+    email: "jorge.teran@tierratech.com",
+    webpage: "www.tierratech.com",
+    address: "Martel # 550 Parque Industrial Martel",
+    cp: "66637",
+    city: "Apodaca",
+    state: "Nuevo León",
+    country: "México",
+    description:
+      "Fabricación de Equipos de Limpieza por Ultrasonido y Linea de químicos Limpiadores",
+    description_en:
+      "Manufacturing of Ultrasonic Cleaning Equipment and Line of Cleaning Chemicals",
+    linkedIn: "https://es.linkedin.com/company/tierratech",
+  },
 ].sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
 
 /* 
