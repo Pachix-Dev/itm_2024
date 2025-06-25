@@ -52,7 +52,9 @@ const ProgramItem: React.FC<Props> = ({ item, translate, language }) => {
           <div className="flex sm:flex-row flex-col border-b-2 border-b-red-500 from-[#E42128] to-[#CF1363] mt-1">
             <div className="sm:w-full w-full my-4">
               <p className="text-3xl font-bold text-primary-500">
-                {item.title}
+                {language === 'en' ?
+                item.title_en :
+                item.title}
               </p>
 
               <div className="text-lg text-gray-500 flex flex-row space-x-5 my-4">
