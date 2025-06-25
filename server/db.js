@@ -152,15 +152,18 @@ export class RegisterModel {
     }
   }
 
-  static async save_order(user_id, paypal_id_order, paypal_id_transaction) {
+  static async save_order(user_id, paypal_id_order, paypal_id_transaction, id_code = 0) {
     const connection = await mysql.createConnection(config);
     try {
       const [registers] = await connection.query(
-        "INSERT INTO users_vip (user_id, paypal_id_order, paypal_id_transaction) VALUES (?,?,?)",
-        [user_id, paypal_id_order, paypal_id_transaction]
+        "INSERT INTO users_vip (user_id, paypal_id_order, paypal_id_transaction, id_code) VALUES (?,?,?,?)",
+        [user_id, paypal_id_order, paypal_id_transaction, id_code]
       );
-      return registers;
-    } finally {
+      return registers;    
+    } catch (error) {
+      console.log(error);
+      return hableError(error);
+    }finally {
       await connection.end(); // Close the connection
     }
   }
@@ -211,19 +214,7 @@ export class RegisterModel {
       await connection.end(); // Close the connection
     }
   }
-
-  static async save_order(user_id, paypal_id_order, paypal_id_transaction) {
-    const connection = await mysql.createConnection(config);
-    try {
-      const [registers] = await connection.query(
-        "INSERT INTO users_vip (user_id, paypal_id_order, paypal_id_transaction) VALUES (?,?,?)",
-        [user_id, paypal_id_order, paypal_id_transaction]
-      );
-      return registers;
-    } finally {
-      await connection.end(); // Close the connection
-    }
-  }
+  
 
   static async get_postal_code({ cp }) {
     const connection = await mysql.createConnection(config);
@@ -278,46 +269,41 @@ export class RegisterModel {
   static async check_code_cortesia(code_cortesia) {
     const connection = await mysql.createConnection(config);
     try {
+      // Verifica si el código existe en codigos_cortesia
       const [result] = await connection.query(
-        'SELECT * FROM codigos_cortesia WHERE code = ? AND already_used = "" ',
+        'SELECT * FROM codigos_cortesia WHERE code = ?',
         [code_cortesia]
       );
+      
       if (result.length === 0) {
         return {
           status: false,
           message: "Código invalido",
         };
-      } else {
-        return {
-          status: true,
-          result,
-        };
       }
-    } finally {
-      await connection.end(); // Close the connection
-    }
-  }
-  // use code cortesia
-  static async use_code_cortesia(code_cortesia) {
-    const connection = await mysql.createConnection(config);
-    try {
-      const [result] = await connection.query(
-        'UPDATE codigos_cortesia SET already_used="si" WHERE code = ?',
-        [code_cortesia]
+
+      // Cuenta cuántas veces se ha usado el código en users_vip
+      const [countResult] = await connection.query(
+        'SELECT COUNT(*) as count FROM users_vip WHERE id_code = ?',
+        [result[0].id]
       );
-      if (result.length === 0) {
+
+      if (countResult[0].count >= result[0].max_use) {
         return {
           status: false,
           message: "Código invalido",
         };
-      } else {
-        return {
-          status: true,
-          result,
-        };
       }
+
+      return {
+        status: true,
+        result: result[0],
+      };
+
     } finally {
       await connection.end(); // Close the connection
     }
   }
+
+  
 }

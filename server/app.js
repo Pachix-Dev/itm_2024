@@ -8,6 +8,7 @@ import { email_template } from "./TemplateEmail.js";
 import { email_template_eng } from "./TemplateEmailEng.js";
 
 import {
+  generatePDF_freePass,
   generatePDFInvoice,
 } from "./generatePdf.js";
 import { Resend } from "resend";
@@ -71,15 +72,43 @@ app.post("/free-register", async (req, res) => {
   }
 });
 
-app.post("/create-order", (req, res) => {
+app.post("/create-order", async (req, res) => {
   const { body } = req;
 
-  if (body.total != 300) {
-    return res.status(500).send({
-      status: false,
-      message:
-        "Tu compra no pudo ser procesada, la información no es valida...",
-    });
+  const BASE_PRICE = 300;
+  let expectedTotal = BASE_PRICE;
+
+  // Buscar si hay un descuento en items
+  const discountItem = body.items?.find(item => item?.isDiscount); 
+  if (discountItem) {
+    // Buscar el código en la base de datos
+    const codeData = await RegisterModel.check_code_cortesia(discountItem.name);
+    if (!codeData.status) {
+      return res.status(400).send({
+        status: false,
+        message: "El código de descuento no es válido.",
+      });
+    }
+    
+    // Calcular el descuento    
+    const discount = BASE_PRICE * (codeData.result.discount_percent / 100);
+    expectedTotal = BASE_PRICE - discount;
+
+    // Validar que el total recibido sea igual al esperado
+    if (body.total !== expectedTotal) {
+      return res.status(400).send({
+        status: false,
+        message: "El total enviado no coincide con el descuento aplicado.",
+      });
+    }
+  } else {
+    // Si no hay descuento, validar que el total sea igual al precio base
+    if (body.total !== BASE_PRICE) {
+      return res.status(400).send({
+        status: false,
+        message: "Tu compra no pudo ser procesada, la información no es valida...",
+      });
+    }
   }
 
   get_access_token()
@@ -128,7 +157,7 @@ app.post("/complete-order", async (req, res) => {
         message: userResponse.error,
       });
     }
-
+  
     const access_token = await get_access_token();
     const response = await fetch(
       endpoint_url + "/v2/checkout/orders/" + req.body.orderID + "/capture",
@@ -140,6 +169,11 @@ app.post("/complete-order", async (req, res) => {
         },
       }
     );
+
+    // buscar el id del cupon de descuento si existe
+    const discountItem = body.items?.find(item => item?.isDiscount);
+    const id_code = discountItem ? discountItem.id : null;
+    
 
     const json = await response.json();
     console.log(JSON.stringify(json));
@@ -154,7 +188,8 @@ app.post("/complete-order", async (req, res) => {
         await RegisterModel.save_order(
           body.user_id,
           paypal_id_order,
-          paypal_id_transaction
+          paypal_id_transaction,
+          id_code
         );
         const pdfAtch = await generatePDFInvoice(
           paypal_id_transaction,
@@ -218,46 +253,60 @@ app.post("/free-register-student", async (req, res) => {
   }
 });
 
-/*
 app.post('/check-cortesia', async (req, res) => {
     const { body } = req;
-    const response = await RegisterModel.check_code_cortesia(body.code_cortesia);    
-    if (response.status) {
-        const userResponse = await RegisterModel.get_user_by_email(body.email);
-        if (!userResponse.status) {
-            return res.status(404).send({
-                message: userResponse.error
-            });
-        }
-        try {
-            const data = { 
-                total: 0,
-                item: body.item,
-                ...userResponse.user
-            };
-
-            await RegisterModel.save_order(data.id, body.code_cortesia, 'codigo-cortesia', data.total);
-            await RegisterModel.use_code_cortesia(body.code_cortesia);
-            const pdfAtch = await generatePDFInvoice(body.code_cortesia+'-cortesia', data, data.uuid);
-            const mailResponse = await sendEmail(data, pdfAtch, body.code_cortesia+'-cortesia');   
     
-            return res.send({
-                ...mailResponse,
-                invoice: `${body.code_cortesia+'-cortesia'}.pdf`
-            });
-        } catch (err) {
-            return res.status(500).send({
-                status: false,
-                message: 'hubo un error al procesar tu compra, por favor intenta mas tarde...'
-            });
+    const response = await RegisterModel.check_code_cortesia(body.code_cortesia);
+    
+    if (response.status) {
+      if( response.result.discount_percent === 100 ) {
+
+        const userResponse = await RegisterModel.get_user_by_id(body.user_id);        
+        
+        if (!userResponse.status) {
+          return res.status(404).send({
+            message: userResponse.error,
+          });
         }
+
+        await RegisterModel.save_order(
+          body.user_id,
+          response.result.code,
+          response.result.code,
+          response.result.id
+        );
+
+        const pdfAtch = await generatePDF_freePass(         
+          body,
+          userResponse.user.uuid
+        );
+
+        const mailResponse = await sendEmail(
+          body,
+          pdfAtch,
+          userResponse.user.uuid
+        );
+
+        return res.send({
+          ...mailResponse,
+          invoice: `${userResponse.user.uuid}.pdf`,
+          next: true,
+        });
+        
+      }
+          
+      return res.send({
+        status: true,
+        result: response.result,        
+      });
+
     } else {
         res.status(400 ).send({
             message: response.message
         });
     }
 });
-*/
+
 
 async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null) {
   try {

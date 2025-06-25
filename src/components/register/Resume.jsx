@@ -18,10 +18,13 @@ export function Resume({ currentLanguage }) {
       {items.map((item, index) => (
         <div key={index} className='p-4 relative'>
           <div className='flex justify-between gap-5'>
-            <h3 className='text-xl font-bold'>
+            <p className='text-lg font-bold'>
               {currentLanguage === 'es' ? item.name : item.name_en}
-            </h3>
-            <p className='text-2xl text-end'>{formatAmountMXN(item.price)}</p>
+            </p>
+            <p className='text-2xl'>
+              {item?.isDiscount ? '-' : ''}
+              {formatAmountMXN(item.price)}
+            </p>
           </div>
 
           <ul role='list' className='mt-5 space-y-5 my-2'>

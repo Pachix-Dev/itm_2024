@@ -147,7 +147,7 @@ export function StepOne({ translates }) {
         </div>
       </div>
 
-      <div className='grid grid-cols-3 gap-6'>
+      <div className='grid grid-cols-2 gap-6'>
         <div>
           <p className='mt-5 text-white'>
             {translates.name} <span className='text-red-600'>*</span>
@@ -254,6 +254,9 @@ export function StepOne({ translates }) {
             </p>
           )}
         </div>
+      </div>
+
+      <div className='grid grid-cols-2 gap-6'>
         <div>
           <p className='mt-5 text-white'>{translates.surname}</p>
           <div className='relative mt-2'>
@@ -305,9 +308,7 @@ export function StepOne({ translates }) {
             </p>
           )}
         </div>
-      </div>
 
-      <div className='grid grid-cols-2 gap-6'>
         <div>
           <p className='mt-5 text-white'>
             {translates.email} <span className='text-red-600'>*</span>
@@ -352,6 +353,7 @@ export function StepOne({ translates }) {
             <p className='text-[#ffe200] font-light'>{errors.email.message}</p>
           )}
         </div>
+        {/* 
         <div>
           <p className='mt-5 text-white'>{translates.code_invitation}</p>
           <div className='relative mt-2 '>
@@ -386,6 +388,7 @@ export function StepOne({ translates }) {
             </span>
           </div>
         </div>
+        */}
       </div>
       <div className='grid grid-cols-2 gap-6'>
         <div>
