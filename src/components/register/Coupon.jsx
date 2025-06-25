@@ -70,11 +70,18 @@ export function Coupon({ currentLanguage }) {
           ? (window.location.href = '/gracias-por-tu-compra')
           : (window.location.href = '/en/gracias-por-tu-compra')
       } else {
+
+        if(items.find(item => item.isDiscount)) {
+          setCouponStatus('Solo se puede usar un codigo de descuento a la vez...')
+          setIsValidCoupon(true)
+          return
+        }
+
         addDiscount({
-          id: data.result.id,
-          name: data.result.code,
-          price: total * (data.result.discount_percent / 100),
-          isDiscount: true,
+        id: data.result.id,
+        name: data.result.code,
+        price: total * (data.result.discount_percent / 100),
+        isDiscount: true,
         })
 
         setCouponStatus('¡Código de descuento aplicado!')

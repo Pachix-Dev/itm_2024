@@ -75,7 +75,15 @@ export function StepFour({ translates, currentLanguage }) {
       }),
     })
     const order = await response.json()
-    return order.id
+    if (order.id) {
+      return order.id
+    } else {
+      setProcessing(false)
+      setMessage(order?.message)
+      setTimeout(() => {
+        setMessage('')
+      }, 5000)
+    }
   }
 
   async function onApprove(data) {
