@@ -25,8 +25,8 @@ interface Program {
 const stage_1_day_1: Program[] = [
     {
 
-        "title": "Siemens",
-        "title_en": "Siemens",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "13:00 hrs",
@@ -75,8 +75,8 @@ const stage_1_day_1: Program[] = [
     },
     {
 
-        "title": "Schneider",
-        "title_en": "Schneider",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "13:40 hrs",
@@ -103,8 +103,8 @@ const stage_1_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": "Mitsubishi",
-        "title_en": "Mitsubishi",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "15:40 hrs",
@@ -143,8 +143,8 @@ const stage_1_day_1: Program[] = [
 const stage_1_day_2: Program[] = [
     {
 
-        "title": "Beckhoff",
-        "title_en": "Beckhoff",
+        "title": "The MX-System: Control cabinet-free automation",
+        "title_en": "The MX-System: Control cabinet-free automation",
         "description": "",
         "description_en": "",
         "time": "11:20 hrs",
@@ -152,8 +152,8 @@ const stage_1_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "Siemens",
-        "title_en": "Siemens",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "12:00 hrs",
@@ -161,8 +161,8 @@ const stage_1_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "AMOF",
-        "title_en": "AMOF",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "12:40 hrs",
@@ -170,8 +170,8 @@ const stage_1_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "Schneider",
-        "title_en": "Schneider",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "13:20 hrs",
@@ -197,8 +197,8 @@ const stage_1_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "Mitsubishi",
-        "title_en": "Mitsubishi",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "15:20 hrs",
@@ -246,8 +246,8 @@ const stage_1_day_2: Program[] = [
 const stage_1_day_3: Program[] = [
     {
 
-        "title": "AMOF",
-        "title_en": "AMOF",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "11:20 hrs",
@@ -255,8 +255,8 @@ const stage_1_day_3: Program[] = [
         "speakers": []
     },
     {
-        "title": "Siemens",
-        "title_en": "Siemens",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "12:00 hrs",
@@ -273,8 +273,8 @@ const stage_1_day_3: Program[] = [
         "speakers": []
     },
     {
-        "title": "Schneider",
-        "title_en": "Schneider",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "13:20 hrs",
@@ -300,8 +300,8 @@ const stage_1_day_3: Program[] = [
         "speakers": []
     },
     {
-        "title": "Mitsubishi",
-        "title_en": "Mitsubishi",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "15:20 hrs",
@@ -423,8 +423,8 @@ const stage_2_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "Mitsubishi",
-        "title_en": "Mitsubishi",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "13:00 hrs",
@@ -432,8 +432,8 @@ const stage_2_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "Panel AMOF",
-        "title_en": "Panel AMOF",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "13:50 hrs",
@@ -468,8 +468,8 @@ const stage_2_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "ITMujeres",
-        "title_en": "ITMujeres",
+        "title": "ITMujeres - A3",
+        "title_en": "A3 - ITMujeres",
         "description": "",
         "description_en": "",
         "time": "18:00 hrs",
@@ -480,8 +480,8 @@ const stage_2_day_2: Program[] = [
 
 const stage_2_day_3: Program[] = [
     {
-        "title": "Beckhoff",
-        "title_en": "Beckhoff",
+        "title": "Visión de Beckhoff en la industria",
+        "title_en": "Beckhoff Industry Vision",
         "description": "",
         "description_en": "",
         "time": "11:20 hrs",
@@ -489,8 +489,8 @@ const stage_2_day_3: Program[] = [
         "speakers": []
     },
     {
-        "title": "AMOF",
-        "title_en": "AMOF",
+        "title": "Panorama Internacional de la Movilidad Eléctrica: Caminos hacia la Descarbonización",
+        "title_en": "International Electric Mobility Panorama: Paths to Carbon Neutralization",
         "description": "",
         "description_en": "",
         "time": "12:15 hrs",
@@ -525,8 +525,8 @@ const stage_2_day_3: Program[] = [
         "speakers": []
     },
     {
-        "title": "AMOF",
-        "title_en": "AMOF",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "16:10 hrs",
