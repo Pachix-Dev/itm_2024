@@ -75,8 +75,8 @@ const stage_1_day_1: Program[] = [
     },
     {
 
-        "title": "",
-        "title_en": "",
+        "title": "Schneider",
+        "title_en": "Schneider",
         "description": "",
         "description_en": "",
         "time": "13:40 hrs",
@@ -170,8 +170,8 @@ const stage_1_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Schneider",
+        "title_en": "Schneider",
         "description": "",
         "description_en": "",
         "time": "13:20 hrs",
@@ -273,8 +273,8 @@ const stage_1_day_3: Program[] = [
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Schneider",
+        "title_en": "Schneider",
         "description": "",
         "description_en": "",
         "time": "13:20 hrs",
