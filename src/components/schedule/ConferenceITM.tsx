@@ -66,7 +66,7 @@ const ProgramItem: React.FC<Props> = ({ item, translate, language }) => {
                     item.title}
                   </p>
                   {/* Svg del horario y la duración */}
-                  <div className="text-lg text-gray-500 flex flex-row space-x-5 my-4">
+                  <div className="text-lg text-white flex flex-row space-x-5 my-4">
                     <div className="flex flex-row items-center gap-2">
                       {/* Reloj */}
                       <svg
@@ -109,7 +109,7 @@ const ProgramItem: React.FC<Props> = ({ item, translate, language }) => {
 
               </div>
 
-              <p className="text-lg text-gray-500 text-justify">
+              <p className="text-lg text-white text-justify">
                 {item.description ? (
                   language === "es" ? (
                     item.description
