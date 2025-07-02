@@ -339,8 +339,8 @@ const stage_2_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": "GIZ",
-        "title_en": "GIZ",
+        "title": "Panel de Alto Nivel de GIZ",
+        "title_en": "High Level Panel GIZ",
         "description": "",
         "description_en": "",
         "time": "13:00 hrs",

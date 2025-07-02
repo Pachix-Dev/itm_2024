@@ -1284,6 +1284,98 @@ export const directory = [
     instagram: "https://www.instagram.com/tierratechdemexico",
     facebook: "https://www.facebook.com/tierratechdemexico",
   },
+  {
+    id: 55,
+    name: "ICCX SA DE CV ",
+    logo: "/exhibitors/iccx_logo.png",
+    width: 160,
+    stand_number: "B22",
+    contact: "Olga Ramírez",
+    position: "",
+    phone: "+52 555 598 9321",
+    email: "olgaramirez@iccx.mx",
+    webpage: "https://iccx.mx",
+    address: "Insurgentes  sur 1261 int  401",
+    cp: "03740",
+    city: "CDMX",
+    state: "CDMX",
+    country: "México",
+    description:
+      "En ICCX nos especializamos en proporcionar soluciones de alta tecnología en el campo de las computadoras, periféricos, redes y conectividad de calidad industrial, diseñadas específicamente para uso crítico y especializado. Nuestro compromiso es con la innovación y la fiabilidad, ofreciendo productos que satisfacen las necesidades más exigentes de todas las industrias y aplicaciones.",
+    description_en:
+      "In ICCX we specialize in providing high-tech solutions in the field of computers, peripherals, networks, and industrial connectivity, designed specifically for critical and specialized use. Our commitment is innovation and reliability, offering products that meet the most demanding needs of all industries and applications.",
+  },
+  {
+    id: 56,
+    name: "DIRECTORIOS INDUSTRIALES",
+    logo: "/exhibitors/directorios_industriales.jpg",
+    width: 160,
+    stand_number: "N/A",
+    contact: "Laura Rosas",
+    position: "",
+    phone: "+52 55 5516 0328",
+    email: "dir@dirind.com",
+    webpage: "https://dirind.com",
+    address: "Calle 14 45",
+    cp: "03800",
+    city: "CDMX",
+    state: "CDMX",
+    country: "México",
+    description:
+      "DIRECTORIOS INDUSTRIALES es el portal de búsqueda más confiable para la difusión de productos y servicios del sector industrial.",
+    description_en:
+      "DIRECTORIOS INDUSTRIALES is the most confidential portal for the distribution of industrial products and services.",
+    facebook: "https://www.facebook.com/DirectoriosIndustriales",
+  },
+  {
+    id: 57,
+    name: "DINKLE",
+    logo: "/exhibitors/dinkle.png",
+    width: 160,
+    stand_number: "B41",
+    contact: "Sergio Gonzalez",
+    position: "",
+    phone: "+1 346 664 9214",
+    email: "sergio.gonzalez@dinkle.com",
+    webpage: "https://www.dinkle.com/en/home",
+    address:
+      "Miguel Hidalgo y Costilla 1911, Col. El, Obispado, 64060 Monterrey, N.L., Mexico",
+    cp: "64060",
+    city: "Monterrey",
+    state: "Nuevo Leon",
+    country: "México",
+    description:
+      "Dinkle Corporation es una empresa taiwanesa con más de 40 años de experiencia, especializada en la fabricación de bornes de conexión para circuitos integrados y para montaje en riel DIN. Además, ofrece soluciones para automatización, tales como fuentes de alimentación, conectores circulares, entre otros. Sus productos cumplen con normativas internacionales como UL, CE y RoHS, y están diseñados para aplicaciones en automatización industrial, energía, maquinaria y edificios inteligentes. ",
+    description_en:
+      "Dinkle Corporation is a Taiwanese company with over 40 years of experience, specialized in the manufacturing of terminal blocks for Printed Circuit Boards and for DIN rail mounting. In addition, it offers automation solutions such as power supplies, circular connectors, and more. Its products comply with international standards such as UL, CE, and RoHS, and are designed for applications in industrial automation, energy, machinery, and smart buildings.",
+    linkedIn: "https://www.linkedin.com/company/dinkle-mexico",
+  },
+  {
+    id: 58,
+    name: "Eaton",
+    logo: "/exhibitors/eaton.webp",
+    width: 160,
+    stand_number: "H34",
+    contact: "Vanessa Mota",
+    position: "",
+    phone: "(+52) 55 8503 2150",
+    email: "mktmx@eaton.com",
+    webpage: "https://www.eaton.com/mx/es-mx.html",
+    address:
+      "Torre M - Mitikah Piso 24 Av. Río Churubusco 601, Xoco, Benito Juárez",
+    cp: "3330",
+    city: "CDMX",
+    state: "CDMX",
+    country: "México",
+    description:
+      "Eaton es un empresa global de administración inteligente de energía. Ayudamos a nuestros clientes a resolver los mayores desafíos energéticos de forma segura, eficiente y sustentable, mediante nuestras soluciones y productos eléctricos.",
+    description_en:
+      "Eaton is as an intelligent power management global company, we help our customers solve their greatest power challenges safely, energy efficient and sustainably, through our industry leading electrical products and solutions. ",
+    linkedIn: "https://www.linkedin.com/company/eaton",
+    facebook: "https://www.facebook.com/eatoncorporation",
+    instagram: "https://www.instagram.com/eaton_corp/",
+    x: "https://x.com/eatoncorp",
+  },
 ].sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
 
 /* 
@@ -1292,4 +1384,6 @@ Energy & Commerce id 20 N/A
 Industry News id 21 N/A
 Made-in-China.com id 23 N/A
 NEODEN MEXICO ID 40 N/A
-El 42 tiene duplicado el stand_number*/
+El 42 tiene duplicado el stand_number
+DINKLE id 57 N/A
+*/
