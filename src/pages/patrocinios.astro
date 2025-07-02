@@ -1,5 +1,5 @@
 ---
-import { t, changeLanguage } from "i18next";
+import i18next, { t, changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
 
 changeLanguage("es");
@@ -15,14 +15,40 @@ changeLanguage("es");
       class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 2xl:gap-10'
     >
       <div class='relative bg-white border border-gray-200 rounded-lg shadow'>
-        <img class='rounded-t-lg' src='/img/patrocinio3.webp' alt='sponsor 1' />
+        <img
+          class='rounded-t-lg md:h-96 w-full object-cover'
+          src='/img/patrocinio3.webp'
+          alt='sponsor 1'
+        />
         <div class='p-5'>
           <h5 class='mb-10 text-xl font-semibold tracking-tight text-black'>
             {t('sponsorships.text_1')}
           </h5>
           <a
             class='absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5'
-            href='/files/Paquetes-de-Patrocinio-ITM-2025-vf_compressed.pdf'
+            href={i18next.language === 'en'
+              ? '/files/sponsorship_packages_ITM_2025_compressed_eng.pdf'
+              : '/files/Paquetes-de-Patrocinio-ITM-2025-vf_compressed.pdf'}
+            target='_blank'>{t('sponsorships.button')}</a
+          >
+        </div>
+      </div>
+
+      <div class='relative bg-white border border-gray-200 rounded-lg shadow'>
+        <img
+          class='rounded-t-lg md:h-96 w-full object-cover'
+          src='/img/patrocinio4.webp'
+          alt='sponsor 1'
+        />
+        <div class='p-5'>
+          <h5 class='mb-10 text-xl font-semibold tracking-tight text-black'>
+            {t('sponsorships.text_2')}
+          </h5>
+          <a
+            class='absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5'
+            href={i18next.language === 'en'
+              ? '/files/patrocinios_adicionales_V2_0_compressed_eng.pdf'
+              : '/files/patrocinios_adicionales_V2_0_compressed.pdf'}
             target='_blank'>{t('sponsorships.button')}</a
           >
         </div>
@@ -37,28 +63,40 @@ changeLanguage("es");
       class='mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 2xl:gap-10'
     >
       <div class='relative bg-white border border-gray-200 rounded-lg shadow'>
-        <img class='rounded-t-lg' src='/img/patrocinio2.webp' alt='sponsor 1' />
+        <img
+          class='rounded-t-lg md:h-96 w-full object-cover'
+          src='/img/patrocinio2.webp'
+          alt='sponsor 1'
+        />
         <div class='p-5'>
           <h5 class='mb-10 text-xl font-semibold tracking-tight text-black'>
             {t('sponsorships.text_3')} Keynote ITM 2025
           </h5>
           <a
             class='absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5'
-            href='/files/Patrocinio-Keynote-ITM-2025-vf_compressed.pdf'
+            href={i18next.language === 'en'
+              ? '/files/keynote_sponsor_ITM_2025_compressed_eng.pdf'
+              : '/files/Patrocinio-Keynote-ITM-2025-vf_compressed.pdf'}
             target='_blank'>{t('sponsorships.button')}</a
           >
         </div>
       </div>
 
       <div class='relative bg-white border border-gray-200 rounded-lg shadow'>
-        <img class='rounded-t-lg' src='/img/patrocinio1.webp' alt='sponsor 1' />
+        <img
+          class='rounded-t-lg md:h-96 w-full object-cover'
+          src='/img/patrocinio1.webp'
+          alt='sponsor 1'
+        />
         <div class='p-5'>
           <h5 class='mb-10 text-xl font-semibold tracking-tight text-black'>
             {t('sponsorships.text_3')} Transformation ITM 2025
           </h5>
           <a
             class='absolute bottom-2 bg-blue-600 rounded-lg text-white py-2 px-5'
-            href='/files/Patrocinio-Transformation-ITM-2025-vf_compressed.pdf'
+            href={i18next.language === 'en'
+              ? '/files/transformation_sponsor_ITM_2025_compressed_eng.pdf'
+              : '/files/Patrocinio-Transformation-ITM-2025-vf_compressed.pdf'}
             target='_blank'>{t('sponsorships.button')}</a
           >
         </div>
