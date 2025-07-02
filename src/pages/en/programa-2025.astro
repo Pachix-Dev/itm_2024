@@ -12,6 +12,13 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
 ---
 
 <Layout title={`ITM | ${t('program.title')}`}>
+  <video
+    class='fixed top-0 left-0 w-full h-full object-cover -z-10'
+    autoplay
+    loop
+    muted
+    playsinline
+    src='/videos/video_itm_programa.mp4'></video>
   <main class='mx-5 md:mx-16 lg:mx-32 pb-5 my-20'>
     <h1 class='text-left text-[#E42128] text-5xl font-extrabold py-5'>
       {t('program.title')}
@@ -71,7 +78,7 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
   }
 </style>
 
-<script>
+<script is:inline data-astro-rerun>
   //inicializa parámetros por default
   let currentStage = '1'
   let currentDay = '1'
@@ -93,7 +100,7 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
     if (target) target.classList.remove('hidden')
   }
 
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('astro:page-load', () => {
     const stageButtons = document.querySelectorAll('button[id^="stage-"]')
     const dayButtons = document.querySelectorAll('button[id^="day-"]')
 
