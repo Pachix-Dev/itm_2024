@@ -17,6 +17,7 @@ interface Program {
     title_en?: string;
     description: string;
     description_en?: string;
+    img?: string;
     time: string;
     duration: string;
     speakers: Speaker[];
@@ -147,6 +148,7 @@ const stage_1_day_2: Program[] = [
         "title_en": "The MX-System: Control cabinet-free automation",
         "description": "",
         "description_en": "",
+        "img": "/img/program/beckhoff.png",
         "time": "11:20 hrs",
         "duration": "35 min",
         "speakers": []
@@ -175,7 +177,7 @@ const stage_1_day_2: Program[] = [
         "description": "",
         "description_en": "",
         "time": "13:20 hrs",
-        "duration": "35 min",
+        "duration": "35 min",   
         "speakers": []
     },
     {
@@ -484,6 +486,7 @@ const stage_2_day_3: Program[] = [
         "title_en": "Beckhoff Industry Vision",
         "description": "",
         "description_en": "",
+        "img": "/img/program/beckhoff.png",
         "time": "11:20 hrs",
         "duration": "45 min",
         "speakers": []
@@ -493,13 +496,14 @@ const stage_2_day_3: Program[] = [
         "title_en": "International Electric Mobility Panorama: Paths to Carbon Neutralization",
         "description": "",
         "description_en": "",
+        "img": "/img/program/amof.png",
         "time": "12:15 hrs",
         "duration": "60 min",
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Schneider",
+        "title_en": "Schneider",
         "description": "",
         "description_en": "",
         "time": "13:20 hrs",
