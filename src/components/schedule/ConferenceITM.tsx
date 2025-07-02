@@ -53,14 +53,15 @@ const ProgramItem: React.FC<Props> = ({ item, translate, language }) => {
           <div className="flex sm:flex-row flex-col border-b-2 border-b-red-500 from-[#E42128] to-[#CF1363] mt-1">
             <div className="sm:w-full w-full my-4">
               <div className="flex flex-row space-x-5 my-4 items-center">
-                <div className="gap-2">
-                  {item.img ? 
-                  <img src={item.img} alt="logo" className="w-24 h-24 rounded-full bg-white" /> :
-                  ''
-                  } 
+                {item.img ? 
+                <div className="w-24 h-24 shrink-0">
+                  <img src={item.img} alt="logo" className="w-24 h-24 rounded-full bg-white object-cover" />
                 </div>
-                <div className="gap-2">
-                  <p className="text-3xl font-bold text-primary-500">
+                    :
+                null
+                } 
+                <div className="gap-2 ">
+                  <p className="lg:text-3xl md:text-3xl text-xl font-bold text-primary-500">
                     {language === 'en' ?
                     item.title_en :
                     item.title}
