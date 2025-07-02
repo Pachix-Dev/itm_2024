@@ -79,6 +79,46 @@ const hotels = [
       flyer_esp: '/files/flyer_fiesta_americana_esp.png',
       flyer_eng: '/files/flyer_fiesta_americana_eng.png'
     },
+    {
+      src: '/img/hoteles/fiestaInn_naucalpan.webp',
+      name: 'Fiesta Inn Naucalpan',
+      address: 'Periférico Norte, Av. Dr. Gustavo Baz esq, Alce Blanco, 53370 Naucalpan de Juárez, Méx.',
+      rate_es: '',
+      rate_en: '',
+      phone_international: '',
+      phone_mexico: '',
+      celular: '',
+      email: '',
+      cc:'',
+      code: 'HANNOVER',
+      time_walk: '50 min',
+      time_car: '21 min',
+      start: 4,
+      link: 'https://www.fiestamericanatravelty.com/fiesta-inn/hoteles/fiesta-inn-naucalpan',
+      googlemaps: 'https://maps.app.goo.gl/yGpQRtkbuBaY9qce6',
+      flyer_esp: '/files/flyer_fiesta_inn_naucalpan_esp.webp',
+      flyer_eng: '/files/flyer_fiesta_inn_naucalpan_eng.webp'
+    },
+    {
+      src: '/img/hoteles/HYATT_TOREO.webp',
+      name: 'Hyatt Regency Mexico City',
+      address: 'Campos Elíseos 204, Polanco Chapultepec, Ciudad de México 11560',
+      rate_es: '',
+      rate_en: '',
+      phone_international: '',
+      phone_mexico: '',
+      celular: '',
+      email: '',
+      cc:'',
+      code: 'HANNOVER',
+      time_walk: '59 min',
+      time_car: '25 min',
+      start: 5,
+      link: 'https://www.hyatt.com/en-US/group-booking/MEXHR/G-RQ93',
+      googlemaps: 'https://maps.app.goo.gl/inQFo3jX5AaYAn1HA',
+      flyer_esp: 'https://www.hyatt.com/en-US/group-booking/MEXHR/G-RQ93',
+      flyer_eng: 'https://www.hyatt.com/en-US/group-booking/MEXHR/G-RQ93'
+    },
     /*    
     {
       src: '/img/hoteles/KIMPTON_VIRGILIO.webp',
@@ -98,23 +138,7 @@ const hotels = [
       link: 'https://www.kimptonvirgilio.com/us/en/'
     },
     
-    {
-      src: '/img/hoteles/HYATT_TOREO.webp',
-      name: 'Hyatt Regency Mexico City',
-      address: 'Campos Elíseos 204, Polanco Chapultepec, Ciudad de México 11560',
-      rate_es: '',
-      rate_en: '',
-      phone_international: '',
-      phone_mexico: '',
-      celular: '',
-      email: '',
-      cc:'',
-      code: 'HANNOVER',
-      time_walk: '59 min',
-      time_car: '14 min',
-      start: 5,
-      link: 'https://www.guestreservations.com/es/hyatt-regency-mexico-city/booking?msclkid=41bcf879b3041a05f64e904ede3ec903'
-    },*/
+    */
     
   ]
   
