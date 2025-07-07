@@ -4,6 +4,25 @@ import fs from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import path from 'path';
+import { createCanvas } from 'canvas';
+import JsBarcode from 'jsbarcode';
+
+// Helper function to generate BarCode as a data URL
+async function generateBarcodeDataURL(text) {
+    const canvas = createCanvas(600, 150); // Tamaño real del código
+    JsBarcode(canvas, text, {
+        format: "CODE128",
+        displayValue: true,
+        width: 2,
+        height: 100,
+        fontSize: 20,
+        margin: 10,
+        textMargin: 5,
+        background: "#ffffff",
+    });
+    return canvas.toDataURL();
+}
+
 
 // Helper function to generate QR code as a data URL
 async function generateQRDataURL(text) {
@@ -334,8 +353,9 @@ async function generatePDF_freePass( body, uuid) {
     
     doc.pipe(pdfStream);             
     
-    const qrMainUser = await generateQRDataURL(uuid);
-   
+    //const qrMainUser = await generateQRDataURL(uuid);
+    const qrMainUser = await generateBarcodeDataURL(uuid);
+
     // Draw a dashed cross in the middle of the document
     const midX = doc.page.width / 2;
     const midY = doc.page.height / 2;
@@ -356,7 +376,7 @@ async function generatePDF_freePass( body, uuid) {
 
     body.typeRegister === 'VISITANTE' ? doc.image('img/header_itm_2025_final.png', 0, 0, { width: 305 }) : doc.image('img/header_itm_prensa_2025_final.png', 0, 0, { width: 305 }); 
      // aqui iria el QR con info del usuario    
-     doc.image(qrMainUser, 90, 120, { width: 120 });
+     doc.image(qrMainUser, 3, 120, { width: 300, height: 100 });
      
      doc
      .font('Helvetica-Bold')
