@@ -1474,6 +1474,51 @@ export const directory = [
       "At SUINSA, we drive industry with cutting-edge technology in automation, 3D metrology, and electrical equipment. With 10 years of experience, nationwide coverage, technical support, and fast growth, we’ve got you covered",
     facebook: "https://www.facebook.com/share/1JF2sNhg9K/?mibextid=wwXIfr",
   },
+  {
+    id: 63,
+    name: "Bricos",
+    logo: "/exhibitors/bricos.jpg",
+    width: 160,
+    stand_number: "D29",
+    contact: "Osiel Oliva",
+    position: "",
+    phone: "+52 811 909 1098",
+    email: "ooliva@bricos.com",
+    webpage: "https://www.bricos.com",
+    address: "Jose Maria Arteaga 718 Pte, Centro",
+    cp: "64000",
+    city: "Monterrey",
+    state: "Nuevo León",
+    country: "México",
+    description:
+      "Bricos es una empresa líder en soluciones eléctricas, de energía y automatización industrial, ofreciendo productos de calidad, asesoría técnica especializada y atención personalizada para impulsar proyectos del sector industrial y comercial.",
+    description_en:
+      "Bricos is a leading company in electrical, energy, and industrial automation solutions, offering high-quality products, specialized technical support, and personalized service to drive industrial and commercial projects.",
+    linkedIn: "https://www.linkedin.com/company/bricos?originalSubdomain=mx",
+  },
+  {
+    id: 64,
+    name: "GRUPO BAS",
+    logo: "/exhibitors/grupo_bas.jpeg",
+    width: 160,
+    stand_number: "D7",
+    contact: "Karen Ramírez",
+    position: "",
+    phone: "+52 449 469 7366",
+    email: "k.ramirez@b-automationservice.com",
+    webpage: "https://www.b-automationservice.com/es/",
+    address: "Aguascalientes S/N Aguascalientes",
+    cp: "20000",
+    city: "Aguascalientes",
+    state: "Aguascalientes",
+    country: "México",
+    description:
+      "Asistencia, venta y reparación de refacciones para máquinas con control numérico",
+    description_en:
+      "Assistance, sales and reparations of spare parts for CNC Machine tools.",
+    linkedIn:
+      "https://www.linkedin.com/company/automation-service-mexico-sa-de-cv/",
+  },
 ].sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
 
 /* 
