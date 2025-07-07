@@ -79,7 +79,11 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
 </style>
 
 <script is:inline data-astro-rerun>
+  document.addEventListener('DOMContentLoaded', initMyScripts);
+  document.addEventListener('astro:after-swap', initMyScripts);
+  document.addEventListener('astro:after-load', initMyScripts);
   //inicializa parámetros por default
+  function initMyScripts() {
   let currentStage = '1'
   let currentDay = '1'
   document
@@ -100,7 +104,6 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
     if (target) target.classList.remove('hidden')
   }
 
-  document.addEventListener('astro:page-load', () => {
     const stageButtons = document.querySelectorAll('button[id^="stage-"]')
     const dayButtons = document.querySelectorAll('button[id^="day-"]')
 
@@ -139,8 +142,7 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
           ?.firstElementChild?.classList.add('bg-opacity-0')
         updateView()
       })
-    })
-
+      
     updateView()
-  })
+  })}
 </script>
