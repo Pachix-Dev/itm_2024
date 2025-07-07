@@ -79,30 +79,30 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
 </style>
 
 <script is:inline data-astro-rerun>
-  document.addEventListener('DOMContentLoaded', initMyScripts);
-  document.addEventListener('astro:after-swap', initMyScripts);
-  document.addEventListener('astro:after-load', initMyScripts);
+  document.addEventListener('DOMContentLoaded', initMyScripts)
+  document.addEventListener('astro:after-swap', initMyScripts)
+  document.addEventListener('astro:after-load', initMyScripts)
   //inicializa parámetros por default
   function initMyScripts() {
-  let currentStage = '1'
-  let currentDay = '1'
-  document
-    .getElementById('stage-1')
-    ?.firstElementChild?.classList.add('bg-opacity-0')
-  document
-    .getElementById('day-1')
-    ?.firstElementChild?.classList.add('bg-opacity-0')
-
-  const updateView = () => {
-    //oculta todos los elementos del programa
+    let currentStage = '1'
+    let currentDay = '1'
     document
-      .querySelectorAll('[id^="program-"]')
-      .forEach((item) => item.classList.add('hidden'))
-    //solo muestra el seleccionado
-    const id = `program-${currentStage}-${currentDay}`
-    const target = document.getElementById(id)
-    if (target) target.classList.remove('hidden')
-  }
+      .getElementById('stage-1')
+      ?.firstElementChild?.classList.add('bg-opacity-0')
+    document
+      .getElementById('day-1')
+      ?.firstElementChild?.classList.add('bg-opacity-0')
+
+    const updateView = () => {
+      //oculta todos los elementos del programa
+      document
+        .querySelectorAll('[id^="program-"]')
+        .forEach((item) => item.classList.add('hidden'))
+      //solo muestra el seleccionado
+      const id = `program-${currentStage}-${currentDay}`
+      const target = document.getElementById(id)
+      if (target) target.classList.remove('hidden')
+    }
 
     const stageButtons = document.querySelectorAll('button[id^="stage-"]')
     const dayButtons = document.querySelectorAll('button[id^="day-"]')
@@ -142,7 +142,8 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
           ?.firstElementChild?.classList.add('bg-opacity-0')
         updateView()
       })
-      
-    updateView()
-  })}
+
+      updateView()
+    })
+  }
 </script>
