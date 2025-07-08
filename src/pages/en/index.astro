@@ -6,6 +6,7 @@ import FreeRegister from "../../components/home/FreeRegister.astro";
 import Layout from "@/layouts/Layout.astro";
 import Events from "@/components/home/Events.astro";
 import { events } from "../../data/constans_events";
+import Buyers from "@/components/home/Buyers.astro";
 
 changeLanguage("en");
 
@@ -208,6 +209,7 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
         <Sponsors />
       </div>
     </section>
+    <Buyers />
     <section class="bg-[url('/img/bg_itm_2026_3.webp')]">
       <Score />
       <div
@@ -284,7 +286,7 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
     <WhyParticipate />
     <DigitalTransformation />
     <Testimonials />
-    <Buyers />
+    
     <TestimonialVisitor />*/
     }
     {/*<SocialMedia />*/}
