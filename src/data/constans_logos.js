@@ -197,13 +197,13 @@ const alliesStrategic = [
       alt: 'comce',
       link: 'https://www.comce.org.mx/',
     },   
-    {
+    /*{
       src: '/enpact.webp',
       width: 120,
       height: 127,
       alt: 'enpact',
       link: 'https://enpact.org/',
-    },
+    },*/
     {
       src: '/ahk.webp',
       width: 250,

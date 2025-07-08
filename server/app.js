@@ -276,17 +276,17 @@ app.post("/check-cortesia", async (req, res) => {
         response.result.id
       );
 
-      const pdfAtch = await generatePDF_freePass(body, userResponse.user.uuid);
+      const pdfAtch = await generatePDF_freePass(body, userResponse.user.id);
 
       const mailResponse = await sendEmail(
         body,
         pdfAtch,
-        userResponse.user.uuid
+        userResponse.user.id
       );
 
       return res.send({
         ...mailResponse,
-        invoice: `${userResponse.user.uuid}.pdf`,
+        invoice: `${userResponse.user.id}.pdf`,
         next: true,
       });
     }
