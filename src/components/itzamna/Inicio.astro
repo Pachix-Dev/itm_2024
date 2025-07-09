@@ -5,11 +5,11 @@ import { t } from "i18next";
 <div
     class="bg-[url('./img/bg-itzamna/bg-itzamna2.png')] w-full bg-cover bg-center relative z-0"
 >
-    <div class="pt-20">
-        <div class="flex justify-between">
-            <div class="">
+    <div class="p-4">
+        <div class="flex">
+            <div class="w-fit flex flex-col justify-center">
                 <div
-                    class="bg-red-600 text-white rounded-r-full h-fit px-10 py-5"
+                    class="bg-red-600 text-white rounded-r-full h-fit px-10 py-3"
                     data-aos="fade-right"
                     data-aos-duration="3000"
                 >
@@ -21,27 +21,65 @@ import { t } from "i18next";
                     </p>
                 </div>
 
-                <div class="bg-[#00001cb3] text-white ml-3 mt-3 p-3 rounded">
-                    <p class="font-semibold text-center">
+                <div class="bg-[#00001cb3] text-white mx-16 mt-3 p-5 rounded">
+                    <p class="text-3xl font-bold text-center">
                         {t("itzamna.by")}
                     </p>
-                    <p class="font-semibold text-center">
+                    <p class="text-2xl font-semibold text-center py-5">
                         {t("itzamna.subtitle")}
                     </p>
-                    <p class="text-justify" set:html={t("itzamna.text_1")} />
+                    <p
+                        class="text-justify text-xl pb-5"
+                        set:html={t("itzamna.text_1")}
+                    />
                 </div>
             </div>
 
             <img
                 src="/img/bg-itzamna/itzamna1.png"
-                data-aos="fade-up"
+                data-aos="fade-down"
                 data-aos-duration="3000"
                 alt=""
-                class="flex justify-"
+                class="w-fit h-fit"
             />
         </div>
-        <section>
-            <div class="md:ml-5"></div>
-        </section>
+        <div class="bg-[#00001cb3] text-white mx-32 p-10 rounded">
+            <p class="text-left text-3xl uppercase font-bold pb-5">
+                {t("itzamna.what_is")}
+            </p>
+            <p
+                class="text-justify font-semibold text-xl px-5 py-3"
+                set:html={t("itzamna.text_2")}
+            />
+            <p
+                class="text-justify font-semibold text-xl px-5 py-3"
+                set:html={t("itzamna.text_3")}
+            />
+            <div class="m-4 font-semibold text-2xl font-mono">
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-2">
+                        <span class="text-green-400">✔</span>
+                        {t("itzamna.proyecto_1")}
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="text-green-400">✔</span>
+                        {t("itzamna.proyecto_2")}
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="text-green-400">✔</span>
+                        {t("itzamna.proyecto_3")}
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="text-green-400">✔</span>
+                        {t("itzamna.proyecto_4")}
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="text-green-400">✔</span>
+                        {t("itzamna.proyecto_5")}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        hola
     </div>
 </div>
