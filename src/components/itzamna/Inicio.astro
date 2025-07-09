@@ -1,0 +1,47 @@
+---
+import { t } from "i18next";
+---
+
+<div
+    class="bg-[url('./img/bg-itzamna/bg-itzamna2.png')] w-full bg-cover bg-center relative z-0"
+>
+    <div class="pt-20">
+        <div class="flex justify-between">
+            <div class="">
+                <div
+                    class="bg-red-600 text-white rounded-r-full h-fit px-10 py-5"
+                    data-aos="fade-right"
+                    data-aos-duration="3000"
+                >
+                    <p class="text-left text-5xl font-extrabold">
+                        {t("itzamna.title")}
+                    </p>
+                    <p class="text-xl font-semibold">
+                        {t("itzamna.description")}
+                    </p>
+                </div>
+
+                <div class="bg-[#00001cb3] text-white ml-3 mt-3 p-3 rounded">
+                    <p class="font-semibold text-center">
+                        {t("itzamna.by")}
+                    </p>
+                    <p class="font-semibold text-center">
+                        {t("itzamna.subtitle")}
+                    </p>
+                    <p class="text-justify" set:html={t("itzamna.text_1")} />
+                </div>
+            </div>
+
+            <img
+                src="/img/bg-itzamna/itzamna1.png"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                alt=""
+                class="flex justify-"
+            />
+        </div>
+        <section>
+            <div class="md:ml-5"></div>
+        </section>
+    </div>
+</div>
