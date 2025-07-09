@@ -13,12 +13,17 @@ import { localizePath } from "astro-i18next";
       {t("itzamna.questions")}
     </p>
     <p class="mt-10 text-center text-2xl" set:html={t("itzamna.comments")} />
-    <div>
+    <div class="flex flex-row gap-10 justify-center mt-20">
       <div>
-        <img src="/img/itzamna-logo.png" alt="itzamna logo" width="200" />
+        <img
+          src="/img/bg-itzamna/lilianmalanco.jpg"
+          alt="itzamna logo"
+          width="200"
+          class="rounded-full"
+        />
       </div>
       <div class="grid place-items-center place-content-center">
-        <p class="mt-20 text-2xl text-center">
+        <p class="text-2xl text-center">
           <strong><u>Lilian Malanco </u></strong><br />
           {t("itzamna.comments_position")}
         </p>
