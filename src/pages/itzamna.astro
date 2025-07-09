@@ -1,5 +1,54 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import { t, changeLanguage } from "i18next";
+
 changeLanguage("es");
 ---
+
+<Layout title={`ITM | ${t("itzamna.title")}`}>
+    <img
+        src="/img/bg-itzamna/bg-itzamna2.png"
+        class="w-full h-full object-fill fixed top-0 z-[-1]"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+    />
+    <div class="container py-20">
+        <div class="flex justify-between">
+            <div class="">
+                <div
+                    class="bg-red-600 text-white rounded-r-full h-fit px-10 py-5"
+                    data-aos="fade-right"
+                    data-aos-duration="3000"
+                >
+                    <p class="text-left text-5xl font-extrabold">
+                        {t("itzamna.title")}
+                    </p>
+                    <p class="text-xl font-semibold">
+                        {t("itzamna.description")}
+                    </p>
+                </div>
+
+                <div class="bg-[#00001cb3] text-white ml-3 mt-3 p-3 rounded">
+                    <p class="font-semibold text-center">{t("itzamna.by")}</p>
+                    <p class="font-semibold text-center">
+                        {t("itzamna.subtitle")}
+                    </p>
+                    <p class="font-semibold text-justify">
+                        {t("itzamna.text_1")}
+                    </p>
+                </div>
+            </div>
+
+            <img
+                src="/img/bg-itzamna/itzamna1.png"
+                data-aos="fade-left"
+                data-aos-duration="3000"
+                alt=""
+                class="flex justify-"
+            />
+        </div>
+        <section>
+            <div class="md:ml-5"></div>
+        </section>
+    </div>
+</Layout>
