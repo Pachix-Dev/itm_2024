@@ -2,6 +2,7 @@
 import LayoutItzamna from "../layouts/LayoutItzamna.astro";
 import Objetivo from "../components/itzamna/Objetivo.astro";
 import Inicio from "../components/itzamna/Inicio.astro";
+import HowParticipate from "../components/itzamna/HowParticipate.astro";
 import { t, changeLanguage } from "i18next";
 
 changeLanguage("es");
@@ -10,4 +11,5 @@ changeLanguage("es");
 <LayoutItzamna title={`ITM | ${t("itzamna.title")}`}>
   <Inicio />
   <Objetivo />
+  <HowParticipate />
 </LayoutItzamna>
