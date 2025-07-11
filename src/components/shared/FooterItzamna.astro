@@ -9,11 +9,18 @@ import { localizePath } from "astro-i18next";
   class="pt-20 bg-[url('/img/bg_itm_2026_3_v2.webp')] bg-cover bg-center bg-no-repeat"
 >
   <div class="pt-20 container mx-auto px-4 py-5 text-white">
-    <p class="text-center font-semibold text-5xl lg:text-8xl uppercase">
+    <p
+      class="text-center font-semibold text-4xl md:text-7xl lg:text-8xl uppercase"
+    >
       {t("itzamna.questions")}
     </p>
-    <p class="mt-10 text-center text-2xl" set:html={t("itzamna.comments")} />
-    <div class="flex flex-row gap-10 justify-center mt-20">
+    <p
+      class="mt-10 text-center text-xl md:text-2xl"
+      set:html={t("itzamna.comments")}
+    />
+    <div
+      class="flex flex-col md:flex-row ld:flex-row gap-10 items-center justify-center mt-20"
+    >
       <div>
         <img
           src="/img/bg-itzamna/lilianmalanco.jpg"
