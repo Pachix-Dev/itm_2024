@@ -61,18 +61,18 @@ const socialNetworks = [
 ---
 
 <section class="bg-[url('/img/bgwhyexhibitnew.webp')] bg-cover py-20">
-  <div class="flex justify-end mb-10">
+  <div class="flex justify-end mb-10 pl-5">
     <p
       class="text-center text-white text-4xl bg-red-600 rounded-tl-[40px] rounded-bl-[40px] w-full max-w-4xl py-4 px-8 uppercase font-bold"
     >
       {t("itzamna.how_to_participate")}
     </p>
   </div>
-  <div class="flex flex-col space-y-7 items-center max-w-4xl mx-auto">
+  <div class="flex flex-col space-y-7 items-center max-w-4xl mx-auto px-5">
     {
       steps.map((step) => (
         <>
-          <div class="flex items-start w-full">
+          <div class="flex items-center w-full">
             <div class="flex-shrink-0 mr-6">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@ const socialNetworks = [
                 </h2>
                 {step.hasDesc && (
                   <>
-                    <p class="text-gray-400 flex text-lg items-center gap-2">
+                    <p class="text-gray-400 flex flex-wrap text-lg items-center gap-2">
                       {t(`itzamna.desc_${step.id}`)}
                       {step.id === 1 && (
                         <>

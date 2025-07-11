@@ -1,23 +1,95 @@
 ---
 import { t } from "i18next";
 import Dates from "../itzamna/Dates.astro";
+
+const objetivos = [
+  {
+    id: 1,
+    img: "itzamna_obj1.webp",
+    color: "bg-blue-500/40",
+  },
+  {
+    id: 2,
+    img: "itzamna_obj2.webp",
+    color: "bg-red-500/40",
+  },
+  {
+    id: 3,
+    img: "itzamna_obj3.webp",
+    color: "bg-blue-500/40",
+  },
+  {
+    id: 4,
+    img: "itzamna_obj4.webp",
+    color: "bg-red-500/40",
+  },
+  {
+    id: 5,
+    img: "itzamna_obj5.webp",
+    color: "bg-blue-500/40",
+  },
+  {
+    id: 6,
+    img: "itzamna_obj6.webp",
+    color: "bg-red-500/40",
+  },
+  {
+    id: 7,
+    img: "itzamna_obj7.webp",
+    color: "bg-blue-500/40",
+  },
+  {
+    id: 8,
+    img: "itzamna_obj8.webp",
+    color: "bg-red-500/40",
+  },
+  {
+    id: 9,
+    img: "itzamna_obj9.webp",
+    color: "bg-blue-500/40",
+  },
+];
 ---
 
 <section class="bg-[url('/img/bgcontactos.webp')] bg-cover py-20 text-white">
   <div
-    class="grid grid-center place-items-center my-3 square_blue w-[500px] font-bold text-2xl md:text-6xl px-4 mx-auto"
+    class="grid place-items-center my-3 square_blue w-full max-w-[500px] font-bold text-xl sm:text-2xl md:text-4xl lg:text-6xl px-4 mx-auto"
   >
     <h2 class="text-center text-5xl font-bold my-10">
       {t("itzamna.objetivo")}
     </h2>
   </div>
-  <p class="text-center text-2xl mx-20 mt-12">
+  <p class="mx-5 text-center text-2xl md:mx-20 mt-12">
     {t("itzamna.objetivo_desc")}
   </p>
   <div
-    class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 mt-10 mb-32 mx-20 text-lg"
+    class="mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 mb-32 md:mx-20 text-lg"
   >
-    <div class="bg-blue-500/40 rounded-md p-7 text-justify">
+    {
+      objetivos.map((objetivo) => (
+        <div class="group w-full h-80 [perspective:1000px]">
+          <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+            {/* Frente (imagen) */}
+            <div class="absolute inset-0 backface-hidden">
+              <img
+                src={`/img/bg-itzamna/${objetivo.img}`}
+                alt="Imagen de frente"
+                class="w-full h-full object-cover rounded-xl"
+                loading="lazy"
+              />
+            </div>
+
+            {/* Reverso (texto) */}
+            <div
+              class={`absolute inset-0 backface-hidden [transform:rotateY(180deg)] ${objetivo.color} rounded-md p-7 text-justify flex items-center`}
+            >
+              <p>{t(`itzamna.objetivo_${objetivo.id}`)}</p>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+    <!-- <div class="bg-blue-500/40 rounded-md p-7 text-justify">
       {t("itzamna.objetivo_1")}
     </div>
     <div class="bg-blue-500/40 rounded-md p-7 text-justify">
@@ -43,10 +115,10 @@ import Dates from "../itzamna/Dates.astro";
     </div>
     <div class="bg-blue-500/40 rounded-md p-7 text-justify">
       {t("itzamna.objetivo_9")}
-    </div>
+    </div> -->
   </div>
   <div
-    class="grid grid-center place-items-center my-3 square_blue w-[500px] font-bold text-2xl md:text-6xl px-4 mx-auto"
+    class="grid place-items-center my-3 square_blue w-full max-w-[500px] font-bold text-xl sm:text-2xl md:text-4xl lg:text-6xl px-4 mx-auto"
   >
     <h2 class="text-center text-5xl font-bold my-5">
       {t("itzamna.dates")}
@@ -54,3 +126,9 @@ import Dates from "../itzamna/Dates.astro";
   </div>
   <Dates />
 </section>
+
+<style>
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+</style>
