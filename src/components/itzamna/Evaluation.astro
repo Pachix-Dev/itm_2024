@@ -3,18 +3,22 @@ import { t } from "i18next";
 ---
 
 <div
-    class="bg-[url('/img/bg-itzamna/bg-itzamna3.webp')] p-4 w-full h-auto bg-cover bg-center relative z-0"
+    class="bg-[url('/img/bg-itzamna/bg-itzamna3.webp')] lg:p-4 p-2 w-full h-auto bg-cover bg-center relative z-0"
 >
-    <div class="py-16 grid justify-items-center">
-        <div class="square_blue w-1/2">
+    <div
+        class="py-16 grid justify-items-center"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+    >
+        <div class="square_blue lg:w-1/2 w-fit m-1">
             <p class="text-4xl font-bold uppercase font-sans p-0">
                 {t("itzamna.evaluation")}
             </p>
             {t("itzamna.evaluation_desc")}
         </div>
-        <div class="p-2 m-2">
-            <div class="grid grid-cols-5 text-xl">
-                <div class="bg-[#363678b3] p-2 m-2 rounded">
+        <div class="lg:p-2 lg:m-2 p-0 m-1">
+            <div class="grid lg:grid-cols-5 grid-cols-1 text-xl">
+                <div class="bg-[#363678b3] lg:p-2 m-2 p-0 rounded">
                     <p class="grid justify-items-center text-center">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +38,7 @@ import { t } from "i18next";
                         {t("itzamna.evaluation_1")}
                     </p>
                 </div>
-                <div class="bg-[#363678b3] p-2 m-2 rounded">
+                <div class="bg-[#363678b3] lg:p-2 m-2 p-0 rounded">
                     <p class="grid justify-items-center text-center">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +57,7 @@ import { t } from "i18next";
                         {t("itzamna.evaluation_2")}
                     </p>
                 </div>
-                <div class="bg-[#363678b3] p-2 m-3 rounded">
+                <div class="bg-[#363678b3] lg:p-2 m-2 p-0 rounded">
                     <p class="grid justify-items-center text-center">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +77,7 @@ import { t } from "i18next";
                         {t("itzamna.evaluation_3")}
                     </p>
                 </div>
-                <div class="bg-[#363678b3] p-2 m-3 rounded">
+                <div class="bg-[#363678b3] lg:p-2 m-2 p-0 rounded">
                     <p class="grid justify-items-center text-center">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +97,7 @@ import { t } from "i18next";
                         {t("itzamna.evaluation_4")}
                     </p>
                 </div>
-                <div class="bg-[#363678b3] p-2 m-3 rounded">
+                <div class="bg-[#363678b3] lg:p-2 m-2 p-0 rounded">
                     <p class="grid justify-items-center text-center">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -117,39 +121,43 @@ import { t } from "i18next";
         </div>
     </div>
 
-    <div class="text-2xl">
-        <div class="flex">
-            <div class="m-3">
+    <div class="text-2xl" data-aos="fade-up" data-aos-duration="3000">
+        <div class="lg:flex grid">
+            <div class="lg:m-3 m-0">
                 <p
-                    class="square_red_2 text-3xl font-extrabold uppercase py-3 mx-6"
+                    class="square_red_2 text-3xl font-extrabold uppercase py-3 lg:mx-6 mx-0"
                 >
                     {t("itzamna.committee")}
                 </p>
-                <p class="mx-10 my-3 p-3 bg-[#363678b3] font-mono">
+                <p class="lg:mx-10 mx-2 my-3 p-3 bg-[#363678b3] font-mono">
                     {t("itzamna.committee_desc")}
                 </p>
             </div>
-            <div class="m-5">
+            <div class="lg:m-5 m-0">
                 <p
-                    class="square_red_2 text-3xl font-extrabold uppercase py-3 mx-6"
+                    class="square_red_2 text-3xl font-extrabold uppercase py-3 lg:mx-6 mx-0"
                 >
                     {t("itzamna.finalists")}
                 </p>
-                <p class="mx-10 my-3 p-3 bg-[#363678b3] font-mono">
+                <p class="lg:mx-10 mx-2 my-3 p-3 bg-[#363678b3] font-mono">
                     {t("itzamna.finalists_desc")}
                 </p>
             </div>
         </div>
         <div class="">
-            <p class="square_red_2 text-5xl font-extrabold uppercase py-3 mx-6">
+            <p
+                class="square_red_2 lg:text-5xl text-4xl font-extrabold uppercase py-3 lg:mx-6 mx-0"
+            >
                 {t("itzamna.Awards")}
             </p>
-            <div class="mx-10 bg-[#363678b3] font-mono flex">
+            <div
+                class="lg:mx-10 mx-2 mt-4 bg-[#363678b3] font-mono lg:flex grid"
+            >
                 <div class="w-fit m-5">
                     <p>{t("itzamna.awards_desc")}</p>
                 </div>
-                <div class="m-5">
-                    <div class="flex">
+                <div class="lg:m-5 m-0">
+                    <div class="flex text-2xl">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
