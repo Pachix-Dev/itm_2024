@@ -1,274 +1,581 @@
-import { useForm, useFieldArray } from 'react-hook-form'
-import { useRegisterStudent } from '../../store/register-student'
-import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { useRegisterStudent } from '../../store/register-student.js'
+import { countries } from '../../data/list_countries.js'
+import { useEffect, useState } from 'react'
 
-export function StepTwo({ translates, currentLanguage }) {
-  const [processing, setProcessing] = useState(false)
-  const { message, setMessage } = useState()
-
+export function StepTwo({ translates }) {
   const {
-    name,
-    lastname,
-    email,
-    phone,
     company,
-    limit_students,
-    students,
-    setCompleteRegister,
+    area,
+    address,
+    country,
+    state,
+    municipality,
+    city,
+    colonia,
+    colonias,
+    postalCode,
+    webPage,
+    phoneCompany,
+    setCompany,
+    setCountry,
+    setPostalCode,
+    setMunicipality,
+    setState,
+    setCity,
+    setColonia,
+    setColonias,
+    setArea,
+    setAddress,
+    setWebPage,
+    setPhoneCompany,
+    incrementStep,
     decrementStep,
-    setStudents,
   } = useRegisterStudent()
+
   const {
     register,
-    control,
     handleSubmit,
     formState: { errors },
+    setValue,
   } = useForm({
     defaultValues: {
-      students: Array.from(
-        { length: limit_students },
-        (_, i) =>
-          students[i] || { name: '', lastname: '', level_study: '', career: '' }
-      ),
+      state,
+      municipality,
+      city,
+      colonia,
     },
   })
 
-  const { fields } = useFieldArray({
-    control,
-    name: 'students',
-  })
-
-  const urlbase = import.meta.env.DEV
-    ? 'http://localhost:3010/'
-    : 'https://industrialtransformation.mx/server/'
-
-  const onSubmit = async (data) => {
-    setStudents(data.students)
-    setProcessing(true)
-    const response = await fetch(urlbase + 'free-register-student', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name,
-        lastname,
-        email,
-        phone,
-        company,
-        limit_students,
-        students,
-      }),
-    })
-    const json = await response.json()
-    console.log(json)
-    if (json.status) {
-      setProcessing(false)
-      setCompleteRegister(true)
-      currentLanguage === 'es'
-        ? (window.location.href = '/gracias-por-tu-registro-estudiante')
-        : (window.location.href = '/en/gracias-por-tu-registro-estudiante')
-    } else {
-      setProcessing(false)
-      setMessage(json?.message)
+  useEffect(() => {
+    setValue('state', state)
+    setValue('municipality', municipality)
+    setValue('city', city)
+    setValue('colonia', colonia)
+  }, [state, municipality, city, colonia, setValue])
+  const [messagePostalCode, setMessagePostalCode] = useState('')
+  const urlbase = 'https://industrialtransformation.mx/server/'
+  //const urlbase = 'http://localhost:3010/'
+  const handlePostalCode = async (e) => {
+    setPostalCode(e)
+    if (e.length === 5 && country === 'Mexico') {
+      const res = await fetch(urlbase + `get-postalcode/${e}`)
+      const data = await res.json()
+      if (data.status) {
+        setMessagePostalCode('')
+        setPostalCode(e)
+        setMunicipality(data.records[0].D_mnpio)
+        setState(data.records[0].d_estado)
+        setCity(
+          data.records[0].d_ciudad === ''
+            ? data.records[0].d_estado
+            : data.records[0].d_ciudad
+        )
+        setColonias(data.records.map((record) => record.d_asenta))
+        setColonia('')
+      } else {
+        setMessagePostalCode(translates.no_postal_code_valid)
+        setMunicipality('')
+        setState('')
+        setCity('')
+        setColonias([])
+        setColonia('')
+      }
+    }
+    if (e.length > 5 && country === 'Mexico') {
+      setMessagePostalCode(translates.no_postal_code_valid)
+      setMunicipality('')
+      setState('')
+      setCity('')
+      setColonias([])
+      setColonia('')
     }
   }
 
+  const isDisabled =
+    country === 'Mexico'
+      ? 'w-full rounded-lg bg-gray-600 border border-gray-200 p-4 pe-12 text-sm shadow-sm'
+      : 'w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
+
   return (
     <>
-      <div className='flex flex-col items-center justify-center'>
-        <div className='grid grid-cols-2 gap-6'>
-          {fields.map((field, idx) => (
-            <div key={field.id} className='col-span-2'>
-              <p className='font-bold text-white text-2xl mt-5'>
-                {translates.student} {idx + 1}
-              </p>
-              <div key={field.id} className='col-span-2 flex gap-6 flex-wrap'>
-                <div>
-                  <p className='mt-5 text-white'>
-                    {translates.name} <span className='text-red-600'>*</span>
-                  </p>
-                  <div className='relative mt-2'>
-                    <input
-                      type='text'
-                      {...register(`students.${idx}.name`, {
-                        required: `${translates.requiered}`,
-                        minLength: {
-                          value: 3,
-                          message: `${translates.min_char}`,
-                        },
-                        maxLength: {
-                          value: 15,
-                          message: `${translates.max_char}`,
-                        },
-                        pattern: {
-                          value:
-                            /^[a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõÃÕçÇñÑ ]+$/,
-                          message: `${translates.numbers_symbols}`,
-                        },
-                      })}
-                      className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-                      placeholder={translates.placeholder_name}
-                      autoComplete='name'
-                    />
-                  </div>
-                  {errors.students?.[idx]?.name && (
-                    <p className='text-[#ffe200] font-light'>
-                      {errors.students[idx].name.message}
-                    </p>
-                  )}
-                </div>
-                <div>
-                  <p className='mt-5 text-white'>
-                    {translates.lastname_2}{' '}
-                    <span className='text-red-600'>*</span>
-                  </p>
-                  <div className='relative mt-2'>
-                    <input
-                      type='text'
-                      {...register(`students.${idx}.lastname`, {
-                        required: `${translates.requiered}`,
-                        minLength: {
-                          value: 3,
-                          message: `${translates.min_char}`,
-                        },
-                        maxLength: {
-                          value: 15,
-                          message: `${translates.max_char}`,
-                        },
-                        pattern: {
-                          value:
-                            /^[a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõÃÕçÇñÑ ]+$/,
-                          message: `${translates.numbers_symbols}`,
-                        },
-                      })}
-                      className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-                      placeholder={translates.lastname_2}
-                      autoComplete='lastname'
-                    />
-                  </div>
-                  {errors.students?.[idx]?.lastname && (
-                    <p className='text-[#ffe200] font-light'>
-                      {errors.students[idx].lastname.message}
-                    </p>
-                  )}
-                </div>
-                <div>
-                  <p className='mt-5 text-white'>
-                    {translates.level_study}{' '}
-                    <span className='text-red-600'>*</span>
-                  </p>
-                  <div className='relative mt-2'>
-                    <select
-                      {...register(`students.${idx}.level_study`, {
-                        required: `${translates.requiered}`,
-                      })}
-                      className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm *:text-black'
-                      defaultValue=''
-                    >
-                      <option value='' disabled>
-                        Seleccione una opción
-                      </option>
-                      <option value='Bachillerato'>
-                        {translates.baccalaureate}
-                      </option>
-                      <option value='Carrera técnica'>
-                        {translates.technical_career}
-                      </option>
-                      <option value='Licenciatura'>
-                        {translates.bachelor_s_Degree}
-                      </option>
-                      <option value='Ingenieria'>
-                        {translates.engineering}
-                      </option>
-                    </select>
-                  </div>
-                  {errors.students?.[idx]?.level_study && (
-                    <p className='text-[#ffe200] font-light'>
-                      {errors.students[idx].level_study.message}
-                    </p>
-                  )}
-                </div>
-                <div>
-                  <p className='mt-5 text-white'>
-                    {translates.career} <span className='text-red-600'>*</span>
-                  </p>
-                  <div className='relative mt-2'>
-                    <input
-                      type='text'
-                      {...register(`students.${idx}.career`, {
-                        required: `${translates.requiered}`,
-                        minLength: {
-                          value: 2,
-                          message: `${translates.min_char}`,
-                        },
-                        maxLength: {
-                          value: 30,
-                          message: `${translates.max_char}`,
-                        },
-                      })}
-                      className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-                      placeholder={translates.placeholder_career || 'Carrera'}
-                      autoComplete='off'
-                    />
-                  </div>
-                  {errors.students?.[idx]?.career && (
-                    <p className='text-[#ffe200] font-light'>
-                      {errors.students[idx].career.message}
-                    </p>
-                  )}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className='w-full flex justify-between '>
-          <button
-            type='button'
-            className='px-3 py-2 bg-[#E42128] hover:bg-red-700 rounded-2xl text-white font-bold mt-5'
-            onClick={decrementStep}
-          >
-            {translates.back}
-          </button>
-          <button
-            onClick={handleSubmit(onSubmit)}
-            type='submit'
-            className='px-3 py-2 bg-[#E42128] hover:bg-red-700 rounded-2xl text-white font-bold mt-5'
-          >
-            {translates.finish}
-          </button>
-        </div>
-      </div>
-      {message && (
-        <p className='mt-5 text-red-600 font-bold text-center'>{message}</p>
-      )}
-      {processing && (
-        <div className='absolute top-0 left-0 bg-gray-400 bg-opacity-85 z-[999] w-full h-full px-4'>
-          <div role='status' className='grid place-items-center w-full h-full'>
-            <p className='text-center flex gap-2'>
+      <div className='grid md:grid-cols-2 gap-6 mt-10'>
+        <div>
+          <p className='text-white'>
+            {translates.institute} <span className='text-red-600'>*</span>
+          </p>
+          <div className='relative mt-2'>
+            <input
+              type='text'
+              {...register('company', {
+                required: `${translates.requiered}`,
+                onChange: (e) => setCompany(e.target.value),
+              })}
+              name='company'
+              id='company'
+              className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
+              placeholder={translates.placeholder_company_name}
+              autoComplete='company'
+              defaultValue={company}
+            />
+            <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
               <svg
-                aria-hidden='true'
-                className='w-8 h-8 text-gray-200 animate-spin fill-blue-600'
-                viewBox='0 0 100 101'
-                fill='none'
                 xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='h-4 w-4 text-gray-400'
               >
                 <path
-                  d='M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z'
-                  fill='currentColor'
-                />
-                <path
-                  d='M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z'
-                  fill='currentFill'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21'
                 />
               </svg>
-              <span className='font-bold text-white text-2xl'>
-                Estamos procesando la información por favor espere...
-              </span>
+            </span>
+          </div>
+          {errors.company && (
+            <p className='text-[#ffe200] font-light'>
+              {errors.company.message}
             </p>
+          )}
+        </div>
+        <div>
+          <p className='font-semibold text-white'>
+            {translates.nivel_educativo} <span className='text-red-600'>*</span>
+          </p>
+          <select
+            {...register('area', {
+              required: `${translates.requiered}`,
+              onChange: (e) => setArea(e.target.value),
+            })}
+            defaultValue={area}
+            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black uppercase'
+          >
+            <option value=''>{translates.select_option}</option>
+            <option value={translates.area_1}>{translates.area_1}</option>
+            <option value={translates.area_2}>{translates.area_2}</option>
+            <option value={translates.area_3}>{translates.area_3}</option>
+            <option value={translates.area_4}>{translates.area_4}</option>
+          </select>
+          {errors.area && (
+            <p className='text-[#ffe200] font-light'>{errors.area.message}</p>
+          )}
+        </div>
+      </div>
+
+      <div className='mt-3'>
+        <p className='text-white'>
+          {translates.adrdress} <span className='text-red-600'>*</span>
+        </p>
+        <div className='relative mt-2'>
+          <input
+            type='text'
+            {...register('address', {
+              required: `${translates.requiered}`,
+              onChange: (e) => setAddress(e.target.value),
+            })}
+            name='address'
+            id='address'
+            className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
+            placeholder={translates.placeholder_address}
+            autoComplete='address'
+            defaultValue={address}
+          />
+          <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              strokeWidth={1.5}
+              stroke='currentColor'
+              className='h-4 w-4 text-gray-400'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                d='M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'
+              />
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z'
+              />
+            </svg>
+          </span>
+        </div>
+        {errors.address && (
+          <p className='text-[#ffe200] font-light'>{errors.address.message}</p>
+        )}
+      </div>
+      <div className='grid md:grid-cols-2 gap-6 mt-5'>
+        <div>
+          <p className='font-semibold text-white'>
+            {translates.country} <span className='text-red-600'>*</span>
+          </p>
+          <select
+            {...register('country', {
+              required: `${translates.requiered}`,
+              onChange: (e) => setCountry(e.target.value),
+            })}
+            defaultValue={country}
+            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
+          >
+            <option value=''>{translates.select_option}</option>
+            {countries.map((country) => (
+              <option key={country.code} value={country.name}>
+                {country.name}
+              </option>
+            ))}
+          </select>
+          {errors.country && (
+            <p className='text-[#ffe200] font-light'>
+              {errors.country.message}
+            </p>
+          )}
+        </div>
+        <div>
+          <p className='text-white'>
+            {translates.postal_code} <span className='text-red-600'>*</span>
+          </p>
+          <div className='relative mt-2'>
+            <input
+              type='text'
+              {...register('postalCode', {
+                required: `${translates.requiered}`,
+                onChange: (e) => handlePostalCode(e.target.value),
+              })}
+              name='postalCode'
+              id='postalCode'
+              className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
+              placeholder={translates.placeholder_postal_code}
+              autoComplete='postalCode'
+              defaultValue={postalCode}
+            />
+            <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='h-4 w-4 text-gray-400'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'
+                />
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z'
+                />
+              </svg>
+            </span>
+          </div>
+
+          <p className='text-[#ffe200] font-light'>{messagePostalCode}</p>
+
+          {errors.postalCode && (
+            <p className='text-[#ffe200] font-light'>
+              {errors.postalCode.message}
+            </p>
+          )}
+        </div>
+      </div>
+
+      <div className='grid md:grid-cols-2 gap-6 mt-5'>
+        <div>
+          <p className='text-white'>
+            {translates.state} <span className='text-red-600'>*</span>
+          </p>
+          <div className='relative mt-2'>
+            <input
+              type='text'
+              {...register('state', {
+                required: `${translates.requiered}`,
+                onChange: (e) => setState(e.target.value),
+                value: state,
+              })}
+              className={isDisabled}
+              placeholder={translates.placeholder_state}
+              disabled={country === 'Mexico'}
+            />
+            <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='h-4 w-4 text-gray-400'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z'
+                />
+              </svg>
+            </span>
+          </div>
+          {errors.state && (
+            <p className='text-[#ffe200] font-light'>{errors.state.message}</p>
+          )}
+        </div>
+        <div>
+          <p className='text-white'>
+            {translates.municipality} <span className='text-red-600'>*</span>
+          </p>
+          <div className='relative mt-2'>
+            <input
+              type='text'
+              {...register('municipality', {
+                required: `${translates.requiered}`,
+                onChange: (e) => setMunicipality(e.target.value),
+              })}
+              name='municipality'
+              id='municipality'
+              className={isDisabled}
+              placeholder={translates.placeholder_municipality}
+              autoComplete='municipality'
+              disabled={country === 'Mexico'}
+            />
+            <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='h-4 w-4 text-gray-400'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z'
+                />
+              </svg>
+            </span>
+          </div>
+          {errors.municipality && (
+            <p className='text-[#ffe200] font-light'>
+              {errors.municipality.message}
+            </p>
+          )}
+        </div>
+      </div>
+      <div className='grid md:grid-cols-2 gap-6 mt-5'>
+        <div>
+          <p className='text-white'>
+            {translates.colony}
+            {country === 'Mexico' ? (
+              <span className='text-red-600'>*</span>
+            ) : (
+              ''
+            )}
+          </p>
+          <div className='relative mt-2'>
+            {country === 'Mexico' ? (
+              <select
+                {...register('colonia', {
+                  required: `${translates.requiered}`,
+                  onChange: (e) => setColonia(e.target.value),
+                })}
+                className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
+              >
+                <option value=''>{translates.select_option}</option>
+                {colonias.length > 0 &&
+                  colonias.map((colonia) => (
+                    <option key={colonia} value={colonia}>
+                      {colonia}
+                    </option>
+                  ))}
+              </select>
+            ) : (
+              <input
+                type='text'
+                {...register('colonia', {
+                  onChange: (e) => setColonia(e.target.value),
+                })}
+                name='colonia'
+                id='colonia'
+                className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
+                placeholder={translates.placeholder_colony}
+                autoComplete='colonia'
+                defaultValue={colonia}
+              />
+            )}
+            <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='h-4 w-4 text-gray-400'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z'
+                />
+              </svg>
+            </span>
+          </div>
+          {errors.colonia && (
+            <p className='text-[#ffe200] font-light'>
+              {errors.colonia.message}
+            </p>
+          )}
+        </div>
+        <div>
+          <p className='text-white'>
+            {translates.city} <span className='text-red-600'>*</span>
+          </p>
+          <div className='relative mt-2'>
+            <input
+              type='text'
+              {...register('city', {
+                required: `${translates.requiered}`,
+                onChange: (e) => setCity(e.target.value),
+              })}
+              name='city'
+              id='city'
+              className={isDisabled}
+              placeholder={translates.placeholder_city}
+              autoComplete='city'
+              {...(city && { defaultValue: city })}
+              disabled={country === 'Mexico'}
+            />
+            <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='h-4 w-4 text-gray-400'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z'
+                />
+              </svg>
+            </span>
+          </div>
+          {errors.city && (
+            <p className='text-[#ffe200] font-light'>{errors.city.message}</p>
+          )}
+        </div>
+      </div>
+
+      <div className='grid md:grid-cols-2 gap-6 mt-5'>
+        <div>
+          <p className='text-white'>{translates.website}</p>
+          <div className='relative mt-2'>
+            <input
+              type='text'
+              onChange={(e) => setWebPage(e.target.value)}
+              name='webPage'
+              id='webPage'
+              className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
+              placeholder={translates.placeholder_website}
+              autoComplete='webPage'
+              defaultValue={webPage}
+            />
+            <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='h-4 w-4 text-gray-400'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418'
+                />
+              </svg>
+            </span>
           </div>
         </div>
-      )}
+        <div>
+          <p className='text-white'>{translates.phone} </p>
+          <div className='relative mt-2'>
+            <input
+              type='tel'
+              {...register('phoneCompany', {
+                pattern: {
+                  value: /^[0-9+]+$/,
+                  message: `${translates.no_phone_valid}`,
+                },
+                onChange: (e) => setPhoneCompany(e.target.value),
+              })}
+              name='phoneCompany'
+              id='phoneCompany'
+              className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
+              placeholder={translates.phone}
+              autoComplete='phoneCompany'
+              defaultValue={phoneCompany}
+            />
+            <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='h-4 w-4 text-gray-400'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z'
+                />
+              </svg>
+            </span>
+          </div>
+          {errors.phoneCompany && (
+            <p className='text-[#ffe200] font-light'>
+              {errors.phoneCompany.message}
+            </p>
+          )}
+        </div>
+      </div>
+
+      <div className='flex justify-between'>
+        <button
+          className='px-3 py-2 bg-[#E42128] hover:bg-red-700 rounded-2xl text-white font-bold mt-5 flex gap-2'
+          onClick={decrementStep}
+        >
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            strokeWidth={1.5}
+            stroke='currentColor'
+            className='size-6'
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18'
+            />
+          </svg>
+          {translates.back}
+        </button>
+        <button
+          className='px-3 py-2 bg-[#E42128] hover:bg-red-700 rounded-2xl text-white font-bold mt-5 flex gap-2'
+          onClick={handleSubmit(incrementStep)}
+        >
+          {translates.continue}
+        </button>
+      </div>
     </>
   )
 }

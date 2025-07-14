@@ -13,7 +13,7 @@ async function generateBarcodeDataURL(text) {
     JsBarcode(canvas, text, {
         format: "CODE128",
         displayValue: true,
-        width: 2,
+        width: 1.5,
         height: 100,
         fontSize: 20,
         margin: 10,
@@ -162,7 +162,9 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
         .text("- USO DE CFDI", 55)
         .text("* FECHA MÁXIMA DE FACTURACIÓN 25 DE NOVIEMBRE DE 2025")
 
-    const qrMainUser = await generateQRDataURL(uuid);
+    const textQr = body.typeRegister === 'VISITANTE' ? '@ITM _VIS'+body.user_id+'||||' : '@ITM_PRE'+body.user_id+'||||';
+
+    const qrMainUser = await generateQRDataURL(textQr);
     doc.addPage();
     // Draw a dashed cross in the middle of the document
     const midX = doc.page.width / 2;
@@ -353,8 +355,10 @@ async function generatePDF_freePass( body, uuid) {
     
     doc.pipe(pdfStream);             
     
-    //const qrMainUser = await generateQRDataURL(uuid);
-    const qrMainUser = await generateBarcodeDataURL(uuid);
+    
+    const textQr = body.typeRegister === 'VISITANTE' ? '@ITM _VIS'+body.user_id+'||||' : '@ITM_PRE'+body.user_id+'||||';
+    const qrMainUser = await generateQRDataURL(textQr);
+    
 
     // Draw a dashed cross in the middle of the document
     const midX = doc.page.width / 2;
@@ -376,7 +380,7 @@ async function generatePDF_freePass( body, uuid) {
 
     body.typeRegister === 'VISITANTE' ? doc.image('img/header_itm_2025_final.png', 0, 0, { width: 305 }) : doc.image('img/header_itm_prensa_2025_final.png', 0, 0, { width: 305 }); 
      // aqui iria el QR con info del usuario    
-     doc.image(qrMainUser, 3, 120, { width: 300, height: 100 });
+     doc.image(qrMainUser, 90, 120, { width: 120 });
      
      doc
      .font('Helvetica-Bold')
@@ -532,6 +536,192 @@ async function generatePDF_freePass( body, uuid) {
     return pdfSave;
 }
 
+async function generatePDF_freePass_student( body, insertId, uuid) {
 
+    const __filename = fileURLToPath(import.meta.url);
+    const __dirname = dirname(__filename);
 
-export { generatePDFInvoice, generatePDF_freePass, generateQRDataURL };
+    const outputPath = path.resolve(__dirname, '../invoices');
+    const pdfSave = path.join(outputPath, `${uuid}.pdf`);
+
+    const doc = new PDFDocument();
+    const pdfStream = fs.createWriteStream(pdfSave);            
+    
+    doc.pipe(pdfStream);             
+    
+    
+    const textQr = '@ITM_EST'+insertId+'||||';
+
+    const qrMainUser = await generateQRDataURL(textQr);
+    
+
+    // Draw a dashed cross in the middle of the document
+    const midX = doc.page.width / 2;
+    const midY = doc.page.height / 2;
+ 
+     doc.save();
+     doc.lineWidth(2);
+     doc.dash(5, { space: 5 });
+ 
+     // Vertical dashed line
+     doc.moveTo(midX, 0)
+         .lineTo(midX, doc.page.height)
+         .stroke();
+     // Horizontal dashed line
+     doc.moveTo(0, midY)
+         .lineTo(doc.page.width, midY)
+         .stroke();
+     doc.restore();
+
+    doc.image('img/header_itm_2025_final.png', 0, 0, { width: 305 });
+     // aqui iria el QR con info del usuario    
+     doc.image(qrMainUser, 90, 120, { width: 120 });
+     
+     doc
+     .font('Helvetica-Bold')
+     .fontSize(18)
+     .text(body.name, 30, 240)
+     .text(body.paternSurname,)
+     .fontSize(12)
+     .font('Helvetica')
+     .text(body.position)
+     .moveDown(0.5)
+     .text(body.company);
+
+     doc.image('img/gafete_estudiante.jpg', 0, 328, { width: 305 });
+
+     doc
+     .font('Helvetica-Bold')
+     .fontSize(17)
+     .text('INSTRUCCIONES PARA TU VISITA', 310, 10, {
+         width: 300,
+         align: 'center'
+     })
+     .moveDown(0.2);
+ 
+     doc.text(' GUIDELINES FOR YOUR VISIT', {
+         width: 300,
+         align: 'center'
+     }).moveDown(1);
+     
+     doc.font('Helvetica-Bold')
+     .fontSize(8)
+     .text('1.', 330)
+     .font('Helvetica')
+     .text('Tu gafete es tu pase a la exposición de ITM / AMOF / Drone Innovators Forum 2025. Deberás portarlo en todo momento.', 345, 75, {
+         width: 250,
+         align: 'justify'
+     })  
+     doc.text(' Your badge is your access pass to ITM / AMOF / Drone Innovators Forum 2025 tradeshow. You must wear it at all times.',{
+         width: 250,
+         align: 'justify'
+     })
+     .moveDown(1); 
+ 
+     doc.font('Helvetica-Bold')
+     .fontSize(8)
+     .text('2.', 330)
+     .font('Helvetica')
+     .text('El gafete es personal e intransferible. Por motivos de seguridad, podemos solicitarte al ingreso de la exposición una identificación con fotografía.', 345, 120, {
+         width: 250,
+         align: 'justify'
+     })
+     .text('The badge is personal and non-transferable. For security reasons, we may ask for an ID with picture at the entrance of the exhibition.', {
+         width: 250,
+         align: 'justify'
+     })
+     .moveDown(1); 
+     doc.font('Helvetica-Bold')
+     .fontSize(8)
+     .text('3.', 330)
+     .font('Helvetica')
+     .text('Disfruta tu visita y utiliza el hashtag', 345, 175, {
+         width: 250,    
+         continued: true
+     })
+     .fillColor('#1E92D0')
+     .font('Helvetica-Bold')
+     .text(' #ITM2025, #AMOF2025, #DroneForumX ', { continued: true })
+     .fillColor('black')
+     .font('Helvetica')
+     .text(' en tus posteos en redes sociales.')
+     .text('Enjoy your visit and use the hashtag', {
+         width: 250,    
+         continued: true
+     })
+     .fillColor('#1E92D0')
+     .font('Helvetica-Bold')
+     .text(' #ITM2025, #AMOF2025, #DroneForumX ', { continued: true })
+     .fillColor('black')
+     .font('Helvetica')
+     .text(' on your social media posts.')
+     .moveDown(2);
+     
+     doc
+     .font('Helvetica-Bold')
+     .text('HORARIOS / SCHEDULE',{
+         width: 250,    
+         align: 'center'
+     })
+     .moveDown(1)     
+     .text('Este acceso solo es valido para el dia/This access is only valid for the day', 330, 250, {
+         width: 250,    
+         align: 'center'
+     })
+     
+     .text('Jueves / Thursday  13:00 am – 17:00 hrs', 330, 270, {
+         width: 250,    
+         align: 'center'
+     })
+     .moveDown(1)
+     .text('ITALIAN GERMAN EXHIBITION COMPANY MEXICO', {
+         width: 250,    
+         align: 'center'
+     });
+ 
+     doc.image('img/footer2_itm_2025_final.png', 307, 328, { width: 305 });
+              
+     doc.save();
+     // Rotate and draw some text
+     doc.rotate(180, {origin: [150, 305]})
+     .fillColor('red')  
+     .fontSize(20)
+     .text('AVISO / DISCLAIMER', 15, -140, {
+         width: 250,
+         align: 'center'
+     
+     })
+     .moveDown(1)
+     .fillColor('black')  
+     .fontSize(12)
+     .text('Agilice su entrada imprimiendo su acreditación o llevando este documento en su teléfono móvil. Speed up your entrance by printing your badge or carrying this document on your cell phone.', {
+         width: 250,
+         align: 'justify'
+     
+     })
+     .moveDown(1)
+     .text('El gafete es personal e intransferible y se imprimirá una sola vez en el módulo de registro digital. The badge is personal and non-transferable and will be printed once at the digital registration module.', {
+         width: 250,
+         align: 'justify'
+     
+     })
+     .moveDown(1)
+     
+ 
+     doc.fontSize(14)
+     .text('BADGE FOLDING / PLEGADO DE GAFETE', -360, -140, {
+         width: 400,
+         align: 'center'
+     });
+ 
+     doc.rotate(180, {origin: [-170, 50]})
+     .image('img/indicaciones_ITM.jpg', -330, -100, { width: 305 });
+ 
+     // Restore the previous state to avoid rotating everything else
+     doc.restore();       
+
+    doc.end();
+    return pdfSave;
+}
+
+export { generatePDFInvoice, generatePDF_freePass, generatePDF_freePass_student, generateQRDataURL };

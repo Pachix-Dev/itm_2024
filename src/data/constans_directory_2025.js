@@ -97,7 +97,7 @@ export const directory = [
   {
     id: 5,
     name: "BECKHOFF AUTOMATION",
-    logo: "/exhibitors/beckhoff.webp",
+    logo: "/exhibitors/beckhoff_nuevo.webp",
     width: 160,
     stand_number: "F22",
     contact: "Alejandro Cruz Álvarez",

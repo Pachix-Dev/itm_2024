@@ -1,23 +1,26 @@
 import { useForm } from 'react-hook-form'
 import { useRegisterStudent } from '../../store/register-student'
 import PhoneInputWithCountry from 'react-phone-number-input/react-hook-form'
+import { countries } from '../../data/list_countries'
 import 'react-phone-number-input/style.css'
 import './Form.css'
 
 export function StepOne({ translates }) {
   const {
     name,
-    lastname,
+    paternSurname,
+    maternSurname,
     email,
     phone,
-    company,
-    limit_students,
-    setLimitStudents,
-    setCompany,
+    genre,
+    nacionality,
     setName,
-    setLastname,
+    setPaternSurname,
+    setMaternSurname,
     setEmail,
     setPhone,
+    setGenre,
+    setNacionality,
     incrementStep,
   } = useRegisterStudent()
 
@@ -30,6 +33,88 @@ export function StepOne({ translates }) {
 
   return (
     <>
+      <div className='grid md:grid-cols-2 gap-6 mt-10'>
+        <div>
+          <p className='mb-4 font-semibold text-white'>
+            {translates.genre} <span className='text-red-600'>*</span>
+          </p>
+          <ul className='items-center w-full text-sm font-medium text-white bg-gray-700 border border-gray-600 rounded-lg sm:flex'>
+            <li className='w-full border-b border-gray-200 sm:border-b-0 sm:border-r 0'>
+              <div className='flex items-center ps-3'>
+                <input
+                  id='horizontal-list-radio-license'
+                  type='radio'
+                  value='Hombre'
+                  checked={genre === 'Hombre'}
+                  className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500'
+                  {...register('radio', {
+                    required: `${translates.requiered}`,
+                    onChange: (e) => {
+                      setGenre(e.target.value)
+                    },
+                  })}
+                />
+                <label
+                  htmlFor='horizontal-list-radio-license'
+                  className='w-full py-3 ms-2 text-sm font-medium text-white '
+                >
+                  {translates.genre_1}
+                </label>
+              </div>
+            </li>
+            <li className='w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600'>
+              <div className='flex items-center ps-3'>
+                <input
+                  id='horizontal-list-radio-id'
+                  type='radio'
+                  value='Mujer'
+                  checked={genre === 'Mujer'}
+                  className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500'
+                  {...register('radio', {
+                    required: `${translates.requiered}`,
+                    onChange: (e) => {
+                      setGenre(e.target.value)
+                    },
+                  })}
+                />
+                <label
+                  htmlFor='horizontal-list-radio-id'
+                  className='w-full py-3 ms-2 text-sm font-medium text-white '
+                >
+                  {translates.genre_2}
+                </label>
+              </div>
+            </li>
+            <li className='w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600'>
+              <div className='flex items-center ps-3'>
+                <input
+                  id='horizontal-list-radio-id2'
+                  type='radio'
+                  value='Prefiero no decirlo'
+                  checked={genre === 'Prefiero no decirlo'}
+                  className='w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500'
+                  {...register('radio', {
+                    required: `${translates.requiered}`,
+                    onChange: (e) => {
+                      setGenre(e.target.value)
+                    },
+                  })}
+                />
+                <label
+                  htmlFor='horizontal-list-radio-id2'
+                  className='w-full py-3 ms-2 text-sm font-medium text-white '
+                >
+                  {translates.genre_3}
+                </label>
+              </div>
+            </li>
+          </ul>
+          {errors.radio && (
+            <p className='text-[#ffe200] font-light'>{errors.radio.message}</p>
+          )}
+        </div>
+      </div>
+
       <div className='grid grid-cols-2 gap-6'>
         <div>
           <p className='mt-5 text-white'>
@@ -85,12 +170,12 @@ export function StepOne({ translates }) {
         </div>
         <div>
           <p className='mt-5 text-white'>
-            {translates.lastname_2} <span className='text-red-600'>*</span>
+            {translates.lastname} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2'>
             <input
               type='text'
-              {...register('lastname', {
+              {...register('paternSurname', {
                 required: `${translates.requiered}`,
                 minLength: {
                   value: 3,
@@ -105,14 +190,14 @@ export function StepOne({ translates }) {
                     /^[a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõÃÕçÇñÑ ]+$/,
                   message: `${translates.numbers_symbols}`,
                 },
-                onChange: (e) => setLastname(e.target.value),
+                onChange: (e) => setPaternSurname(e.target.value),
               })}
-              name='lastname'
-              id='lastname'
+              name='paternSurname'
+              id='paternSurname'
               className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
               placeholder={translates.placeholder_lastname}
-              autoComplete='lastname'
-              defaultValue={lastname}
+              autoComplete='paternSurname'
+              defaultValue={paternSurname}
             />
             <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
               <svg
@@ -131,9 +216,9 @@ export function StepOne({ translates }) {
               </svg>
             </span>
           </div>
-          {errors.lastname && (
+          {errors.paternSurname && (
             <p className='text-[#ffe200] font-light'>
-              {errors.lastname.message}
+              {errors.paternSurname.message}
             </p>
           )}
         </div>
@@ -141,7 +226,59 @@ export function StepOne({ translates }) {
 
       <div className='grid grid-cols-2 gap-6'>
         <div>
-          <p className='mt-5 text-white'>
+          <p className='mt-5 text-white'>{translates.surname}</p>
+          <div className='relative mt-2'>
+            <input
+              type='text'
+              {...register('maternSurname', {
+                minLength: {
+                  value: 3,
+                  message: `${translates.min_char}`,
+                },
+                maxLength: {
+                  value: 15,
+                  message: `${translates.max_char}`,
+                },
+                pattern: {
+                  value:
+                    /^[a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõÃÕçÇñÑ ]+$/,
+                  message: `${translates.numbers_symbols}`,
+                },
+                onChange: (e) => setMaternSurname(e.target.value),
+              })}
+              name='maternSurname'
+              id='maternSurname'
+              className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
+              placeholder={translates.placeholder_surname}
+              autoComplete='maternSurname'
+              defaultValue={maternSurname}
+            />
+            <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                strokeWidth={1.5}
+                stroke='currentColor'
+                className='h-4 w-4 text-gray-400'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  d='M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'
+                />
+              </svg>
+            </span>
+          </div>
+          {errors.maternSurname && (
+            <p className='text-[#ffe200] font-light'>
+              {errors.maternSurname.message}
+            </p>
+          )}
+        </div>
+
+        <div>
+          <p className='mt-5 text-white lowercase'>
             {translates.email} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2 '>
@@ -184,60 +321,6 @@ export function StepOne({ translates }) {
             <p className='text-[#ffe200] font-light'>{errors.email.message}</p>
           )}
         </div>
-        <div>
-          <p className='mt-5 text-white'>
-            {translates.institute} <span className='text-red-600'>*</span>
-          </p>
-          <div className='relative mt-2'>
-            <input
-              type='text'
-              {...register('company', {
-                required: `${translates.requiered}`,
-                minLength: {
-                  value: 3,
-                  message: `${translates.min_char}`,
-                },
-                maxLength: {
-                  value: 15,
-                  message: `${translates.max_char}`,
-                },
-                pattern: {
-                  value:
-                    /^[a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙäëïöüÄËÏÖÜâêîôûÂÊÎÔÛãõÃÕçÇñÑ ]+$/,
-                  message: `${translates.numbers_symbols}`,
-                },
-                onChange: (e) => setCompany(e.target.value),
-              })}
-              name='company'
-              id='company'
-              className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-              placeholder={translates.placeholder_institute}
-              autoComplete='company'
-              defaultValue={company}
-            />
-            <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                strokeWidth={1.5}
-                stroke='currentColor'
-                className='h-4 w-4 text-gray-400'
-              >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21'
-                />
-              </svg>
-            </span>
-          </div>
-          {errors.company && (
-            <p className='text-[#ffe200] font-light'>
-              {errors.company.message}
-            </p>
-          )}
-        </div>
       </div>
       <div className='grid grid-cols-2 gap-6'>
         <div>
@@ -261,50 +344,26 @@ export function StepOne({ translates }) {
         </div>
         <div>
           <p className='mt-5 text-white'>
-            {translates.number_student} <span className='text-red-600'>*</span>
+            {translates.nacionality} <span className='text-red-600'>*</span>
           </p>
-          <div className='relative mt-2'>
-            <input
-              type='number'
-              {...register('limit_students', {
-                required: `${translates.requiered}`,
-                min: {
-                  value: 1,
-                  message: `${translates.min_student}`,
-                },
-                max: {
-                  value: 40,
-                  message: `${translates.max_student}`,
-                },
-                onChange: (e) => setLimitStudents(e.target.value),
-              })}
-              name='limit_students'
-              id='limit_students'
-              className='w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm shadow-sm'
-              placeholder={translates.placeholder_number_student}
-              autoComplete='limit_students'
-              defaultValue={limit_students}
-            />
-            <span className='absolute inset-y-0 end-0 grid place-content-center px-4'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                strokeWidth={1.5}
-                stroke='currentColor'
-                className='h-4 w-4 text-gray-400'
-              >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'
-                />
-              </svg>
-            </span>
-          </div>
-          {errors.limit_students && (
+          <select
+            {...register('nacionality', {
+              required: `${translates.requiered}`,
+              onChange: (e) => setNacionality(e.target.value),
+            })}
+            defaultValue={nacionality}
+            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm *:text-black'
+          >
+            <option value=''>{translates.select_option}</option>
+            {countries.map((country, index) => (
+              <option key={index} value={country.name}>
+                {country.name}
+              </option>
+            ))}
+          </select>
+          {errors.nacionality && (
             <p className='text-[#ffe200] font-light'>
-              {errors.limit_students.message}
+              {errors.nacionality.message}
             </p>
           )}
         </div>

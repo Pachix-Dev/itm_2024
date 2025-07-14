@@ -7,7 +7,7 @@ import { RegisterModel } from "./db.js";
 import { email_template } from "./TemplateEmail.js";
 import { email_template_eng } from "./TemplateEmailEng.js";
 
-import { generatePDF_freePass, generatePDFInvoice } from "./generatePdf.js";
+import { generatePDF_freePass, generatePDF_freePass_student, generatePDFInvoice } from "./generatePdf.js";
 import { Resend } from "resend";
 
 const { json } = pkg;
@@ -234,16 +234,30 @@ app.post("/free-register-student", async (req, res) => {
       ...body,
     };
     const userResponse = await RegisterModel.create_student({ ...data });
-
+    console.log(userResponse);
     if (!userResponse.status) {
       return res.status(500).send({
         ...userResponse,
       });
     }
 
+    const pdfAtch = await generatePDF_freePass_student(        
+          body,
+          userResponse.insertId,
+          data.uuid
+        );
+
+    const mailResponse = await sendEmail(
+      body,
+      pdfAtch,
+      data.uuid
+    );
+
     return res.send({
-      ...userResponse,
+      ...mailResponse,
+      invoice: `${data.uuid}.pdf`,
     });
+    
   } catch (err) {
     console.log(err);
     res.status(500).send({
@@ -281,12 +295,12 @@ app.post("/check-cortesia", async (req, res) => {
       const mailResponse = await sendEmail(
         body,
         pdfAtch,
-        userResponse.user.id
+        userResponse.user.uuid
       );
 
       return res.send({
         ...mailResponse,
-        invoice: `${userResponse.user.id}.pdf`,
+        invoice: `${userResponse.user.uuid}.pdf`,
         next: true,
       });
     }

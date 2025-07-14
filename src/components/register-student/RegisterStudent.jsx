@@ -2,6 +2,7 @@ import { useRegisterStudent } from '../../store/register-student'
 import { StepTwo } from './StepTwo'
 import { StepOne } from './StepOne'
 import { Stepper } from './Stepper'
+import { StepThree } from './StepThree'
 
 export function RegisterStudent({ translates, currentLanguage }) {
   const { step } = useRegisterStudent()
@@ -13,6 +14,12 @@ export function RegisterStudent({ translates, currentLanguage }) {
         {step === 0 && <StepOne translates={translates} />}
         {step === 1 && (
           <StepTwo translates={translates} currentLanguage={currentLanguage} />
+        )}
+        {step === 2 && (
+          <StepThree
+            translates={translates}
+            currentLanguage={currentLanguage}
+          />
         )}
       </form>
     </section>

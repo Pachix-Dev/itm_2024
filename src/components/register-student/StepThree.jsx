@@ -1,9 +1,9 @@
 import { useForm } from 'react-hook-form'
-import { useRegisterForm } from '../../store/register-form'
+import { useRegisterStudent } from '../../store/register-student'
 import { MultiSelect } from 'react-multi-select-component'
 import { useState } from 'react'
 
-export function StepThree({ translates }) {
+export function StepThree({ currentLanguage, translates }) {
   const {
     name,
     paternSurname,
@@ -34,13 +34,12 @@ export function StepThree({ translates }) {
     alreadyVisited,
     setEventKnowledge,
     setProductInterest,
-    setLevelInfluence,
-    setWannaBeExhibitor,
     setAlreadyVisited,
-    incrementStep,
+    setCompleteRegister,
+    setInvoiceDownToLoad,
+    clear,
     decrementStep,
-    setUser_id,
-  } = useRegisterForm()
+  } = useRegisterStudent()
 
   const options = [
     { label: 'Expo Manufactura', value: 'Expo Manufactura' },
@@ -76,7 +75,7 @@ export function StepThree({ translates }) {
 
   async function saveUser() {
     setProcessing(true)
-    const response = await fetch(urlbase + 'free-register', {
+    const response = await fetch(urlbase + 'free-register-student', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -111,15 +110,20 @@ export function StepThree({ translates }) {
         alreadyVisited: alreadyVisited.map((item) => item.value).join(),
       }),
     })
-    const json = await response.json()
-    console.log(json)
-    if (json.status) {
-      setProcessing(false)
-      setUser_id(json.insertId)
-      incrementStep()
+    const orderData = await response.json()
+    if (orderData.status) {
+      clear()
+      setCompleteRegister(true)
+      setInvoiceDownToLoad(orderData?.invoice)
+      currentLanguage === 'es'
+        ? (window.location.href = '/gracias-por-tu-registro-estudiante')
+        : (window.location.href = '/en/gracias-por-tu-registro-estudiante')
     } else {
       setProcessing(false)
-      setMessage(json.message)
+      setMessage(orderData?.message)
+      setTimeout(() => {
+        setMessage('')
+      }, 5000)
     }
   }
 
@@ -191,60 +195,7 @@ export function StepThree({ translates }) {
           )}
         </div>
       </div>
-      <div className='grid md:grid-cols-2 gap-6 mt-5'>
-        <div>
-          <p className='font-semibold text-white'>
-            {translates.level_influence} <span className='text-red-600'>*</span>
-          </p>
-          <select
-            {...register('levelInfluence', {
-              required: `${translates.requiered}`,
-              onChange: (e) => setLevelInfluence(e.target.value),
-            })}
-            defaultValue={levelInfluence}
-            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black uppercase'
-          >
-            <option value=''>{translates.select_option}</option>
-            <option value='APRUEBO COMPRAS'>
-              {translates.approve_purchases}
-            </option>
-            <option value='EVALUO O RECOMIENDO PROVEEDOR'>
-              {translates.test_recomend}
-            </option>
-            <option value='NO TENGO DECISIÓN EN COMPRAS'>
-              {translates.not_decide}
-            </option>
-          </select>
-          {errors.levelInfluence && (
-            <p className='text-[#ffe200] font-light'>
-              {errors.levelInfluence.message}
-            </p>
-          )}
-        </div>
-        <div>
-          <p className='font-semibold text-white'>
-            {translates.wanna_be_exhibitor}{' '}
-            <span className='text-red-600'>*</span>
-          </p>
-          <select
-            {...register('wannaBeExhibitor', {
-              required: `${translates.requiered}`,
-              onChange: (e) => setWannaBeExhibitor(e.target.value),
-            })}
-            defaultValue={wannaBeExhibitor}
-            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black uppercase'
-          >
-            <option value=''>{translates.select_option}</option>
-            <option value='SI'>{translates.yes}</option>
-            <option value='NO'>{translates.no}</option>
-          </select>
-          {errors.wannaBeExhibitor && (
-            <p className='text-[#ffe200] font-light'>
-              {errors.wannaBeExhibitor.message}
-            </p>
-          )}
-        </div>
-      </div>
+
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
         <div>
           <p className='font-semibold text-white'>

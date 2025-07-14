@@ -1,22 +1,20 @@
 ---
-import i18next, { changeLanguage, t } from "i18next";
-import Layout from "../../layouts/Layout.astro";
+import { changeLanguage, t } from "i18next";
+import LayoutStudent from "../../layouts/Layout.astro";
 import Confettti from "../../components/shared/Confetti";
-import { Redirect } from "../../components/shared/Redirect.jsx";
-import { DonwloadAccess } from "../../components/register/DonwloadAccess";
-import { ProgramVip } from "../../components/register/ProgramVip";
+import { Redirect } from "../../components/register-student/Redirect.jsx";
+import { DonwloadAccess } from "../../components/register-student/DonwloadAccess.jsx";
 import MarqueeSponsors from "../../components/register/MarqueeSponsors.astro";
 import { sponsors } from "../../data/constans_logos";
 
 changeLanguage("en");
-
-const currentLanguage = i18next.language;
 ---
 
-<Layout title='ITM  | Gracias por contactarnos'>
+<LayoutStudent title='ITM  | Gracias por tu registro de estudiante'>
+  <Redirect client:only='react' />
   <div class='w-screen h-full p-5 lg:p-20 bg-black'>
     <div
-      class='rounded-lg px-4 ecomondo-bloq-1 w-full h-full shadow-2xl text-white flex flex-col items-center justify-center relative'
+      class='rounded-lg px-4 w-full h-full shadow-2xl text-white flex flex-col items-center justify-center relative'
     >
       <Confettti client:visible />
 
@@ -33,15 +31,12 @@ const currentLanguage = i18next.language;
             src='/img/Logo_ITM.webp'
             alt='ecomondo feria de sustentabilidad'
           />
-          {
-            /* <p
-            class='font-bold text-center'
-            set:html={t('thanks_page.description')}
-          />*/
-          }
-          <p
-            class='font-bold text-center text-xl'
-            set:html={t('thanks_page.description_3')}
+          <p class='text-center text-2xl font-bold'>
+            {t('register.description_student')}
+          </p>
+          <DonwloadAccess
+            client:only='react'
+            text={t('thanks_page.download_pass')}
           />
         </div>
       </div>
@@ -53,7 +48,7 @@ const currentLanguage = i18next.language;
       <MarqueeSponsors partners={sponsors} isLeftToRight />
     </section>
   </div>
-</Layout>
+</LayoutStudent>
 <style>
   .box {
     color: white;

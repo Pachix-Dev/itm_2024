@@ -310,7 +310,7 @@ export function StepOne({ translates }) {
         </div>
 
         <div>
-          <p className='mt-5 text-white'>
+          <p className='mt-5 text-white lowercase'>
             {translates.email} <span className='text-red-600'>*</span>
           </p>
           <div className='relative mt-2 '>

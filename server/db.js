@@ -105,18 +105,69 @@ export class RegisterModel {
   }
 
   static async create_student({
+    uuid,
     name,
-    lastname,
+    paternSurname,
+    maternSurname,
     email,
     phone,
+    typeRegister,
+    genre,
+    nacionality,
+    code_invitation,
     company,
-    students,
+    industry,
+    position,
+    area,
+    country,
+    municipality,
+    state,
+    city,
+    address,
+    colonia,
+    postalCode,
+    webPage,
+    phoneCompany,
+    eventKnowledge,
+    productInterest,
+    levelInfluence,
+    wannaBeExhibitor,
+    alreadyVisited,
   }) {
     const connection = await mysql.createConnection(config);
     try {
       const [result] = await connection.query(
-        "INSERT INTO docente (name, lastname, email, phone, school_name ) VALUES (?,?,?,?,?)",
-        [name, lastname, email, phone, company]
+        "INSERT INTO users_students (uuid, name, paternSurname, maternSurname, email, phone, typeRegister, genre, nacionality, code_invitation, company, industry, position, area, country, municipality, state, city, address, colonia, postalCode, webPage, phoneCompany, eventKnowledge, productInterest, levelInfluence, wannaBeExhibitor, alreadyVisited ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+        [
+          uuid,
+          name,
+          paternSurname,
+          maternSurname,
+          email,
+          phone,
+          typeRegister,
+          genre,
+          nacionality,
+          code_invitation,
+          company,
+          industry,
+          position,
+          area,
+          country,
+          municipality,
+          state,
+          city,
+          address,
+          colonia,
+          postalCode,
+          webPage,
+          phoneCompany,
+          eventKnowledge,
+          productInterest,
+          levelInfluence,
+          wannaBeExhibitor,
+          alreadyVisited,
+        ]
       );
 
       if (result.affectedRows === 0) {
@@ -126,21 +177,11 @@ export class RegisterModel {
         };
       }
 
-      const [studentsResult] = await connection.query(
-        "INSERT INTO estudiantes (id_docente, name, lastname, level_study, career ) VALUES ?",
-        [
-          students.map((student) => [
-            result.insertId,
-            student.name,
-            student.lastname,
-            student.level_study,
-            student.career,
-          ]),
-        ]
-      );
+      
 
       return {
         status: true,
+        uuid,
         insertId: result.insertId,
         ...result,
       };

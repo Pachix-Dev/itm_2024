@@ -1,6 +1,6 @@
 ---
 import i18next, { changeLanguage, t } from "i18next";
-import LayoutRegister from "../layouts/LayoutRegister.astro";
+import LayoutStudent from "../layouts/LayoutStudent.astro";
 import { sponsors } from "../data/constans_logos.js";
 import MarqueeSponsors from "../components/register/MarqueeSponsors.astro";
 import { RegisterStudent } from "@/components/register-student/RegisterStudent.jsx";
@@ -11,7 +11,7 @@ const registerTranslations = t("register", { returnObjects: true });
 const currentLanguage = i18next.language;
 ---
 
-<LayoutRegister title='ITM | Registro grupo estudiantes 2025'>
+<LayoutStudent title='ITM | registro estudiantes'>
   <main class='py-5 grid w-full content-center container mx-auto px-4 relative'>
     <section class='mb-10 max-w-screen-lg mx-auto'>
       <p class='text-center font-extrabold text-3xl mb-5'>
@@ -23,7 +23,7 @@ const currentLanguage = i18next.language;
       {t('register.title')}
     </h1>
     <p class='text-center text-2xl font-bold'>
-      {t('register.description')}
+      {t('register.description_student')}
     </p>
     <RegisterStudent
       translates={registerTranslations}
@@ -31,7 +31,7 @@ const currentLanguage = i18next.language;
       client:only='react'
     />
   </main>
-</LayoutRegister>
+</LayoutStudent>
 <style>
   body {
     background-color: #111827;

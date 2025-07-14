@@ -4,7 +4,8 @@ import { useRegisterForm } from '../../store/register-form'
 export function Coupon({ currentLanguage }) {
   const [isValidCoupon, setIsValidCoupon] = useState(null)
   const [couponStatus, setCouponStatus] = useState(null)
-  const placeholder = currentLanguage === 'es' ? 'Código de descuento' : 'Code discount'
+  const placeholder =
+    currentLanguage === 'es' ? 'Código de descuento' : 'Code discount'
   const {
     code_cortesia,
     setCode_cortesia,
@@ -37,7 +38,11 @@ export function Coupon({ currentLanguage }) {
   const checkCoupon = async (e) => {
     e.preventDefault()
     setCode_cortesia('')
-    setCouponStatus(currentLanguage === 'es' ? 'Aplicando código de descuento...' : 'Applying code discount...')
+    setCouponStatus(
+      currentLanguage === 'es'
+        ? 'Aplicando código de descuento...'
+        : 'Applying code discount...'
+    )
     const response = await fetch(urlbase + 'check-cortesia', {
       method: 'POST',
       headers: {
@@ -71,9 +76,12 @@ export function Coupon({ currentLanguage }) {
           ? (window.location.href = '/gracias-por-tu-compra')
           : (window.location.href = '/en/gracias-por-tu-compra')
       } else {
-
-        if(items.find(item => item.isDiscount)) {
-          setCouponStatus(currentLanguage === 'es' ? 'Solo se puede usar un codigo de descuento a la vez...' : 'Only one code discount can be used at a time...')
+        if (items.find((item) => item.isDiscount)) {
+          setCouponStatus(
+            currentLanguage === 'es'
+              ? 'Solo se puede usar un codigo de descuento a la vez...'
+              : 'Only one code discount can be used at a time...'
+          )
           setIsValidCoupon(false)
           return
         }
@@ -86,11 +94,19 @@ export function Coupon({ currentLanguage }) {
           isDiscount: true,
         })
 
-        setCouponStatus(currentLanguage === 'es' ? '¡Código de descuento aplicado!' : 'Code discount applied!')
+        setCouponStatus(
+          currentLanguage === 'es'
+            ? '¡Código de descuento aplicado!'
+            : 'Code discount applied!'
+        )
         setIsValidCoupon(true)
       }
     } else {
-      setCouponStatus(currentLanguage === 'es' ? 'Código de descuento inválido o expirado.' : 'Invalid code or expired.')
+      setCouponStatus(
+        currentLanguage === 'es'
+          ? 'Código de descuento inválido o expirado.'
+          : 'Invalid code or expired.'
+      )
       setIsValidCoupon(false)
     }
   }
