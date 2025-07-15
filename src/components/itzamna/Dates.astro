@@ -1,97 +1,71 @@
 ---
-import { t } from "i18next";
+// ...import...
+import { t } from 'i18next'
 ---
-
-<div class="overflow-x-auto" data-aos="fade-up" data-aos-duration="3000">
-  <ul
-    class="timeline timeline-vertical lg:timeline-horizontal justify-center mt-10 mb-16 text-center text-lg"
-  >
-    <li class="min-h-[125px]">
-      <div class="timeline-start timeline-box text-xl square_red">
-        {t("itzamna.etapa_1")}
+<div class="overflow-x-auto py-10 container mx-auto">
+  <div class="w-full max-w-[1100px] mx-auto">
+    <!-- Timeline Responsive -->
+    <div class="flex flex-col lg:hidden">
+      {[1,2,3,4].map((i, idx) => (
+        <div class="flex flex-row items-center gap-4">
+          <!-- Etiqueta roja -->
+          <div class="bg-red-600 text-white italic font-semibold rounded-lg px-6 py-2 text-lg shadow min-w-[180px] text-center flex-1">
+            {t(`itzamna.etapa_${i}`)}
+          </div>
+          <!-- Línea y check -->
+          <div class="flex flex-col items-center">
+            {idx !== 0 && <div class="w-1 h-8 bg-white"></div>}
+            <div class="w-8 h-8 bg-white border-4 border-black rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 20 20" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            {idx !== 3 && <div class="w-1 h-8 bg-white"></div>}
+          </div>
+          <!-- Fecha -->
+          <div class="flex-1 min-w-[120px]">
+            <div class="font-bold text-xl text-white text-center" set:html={t(`itzamna.date_${i}`)} />
+          </div>
+        </div>
+      ))}
+    </div>
+    <!-- Timeline horizontal para escritorio -->
+    <div class="hidden lg:block">
+      <!-- Etiquetas rojas -->
+      <div class="flex flex-row gap-x-4 mb-8 justify-between">
+        <div class="bg-red-600 text-white italic font-semibold rounded-lg px-6 py-2 text-lg shadow text-center min-w-[220px]">{t('itzamna.etapa_1')}</div>
+        <div class="bg-red-600 text-white italic font-semibold rounded-lg px-6 py-2 text-lg shadow text-center min-w-[220px]">{t('itzamna.etapa_2')}</div>
+        <div class="bg-red-600 text-white italic font-semibold rounded-lg px-6 py-2 text-lg shadow text-center min-w-[220px]">{t('itzamna.etapa_3')}</div>
+        <div class="bg-red-600 text-white italic font-semibold rounded-lg px-6 py-2 text-lg shadow text-center min-w-[220px]">{t('itzamna.etapa_4')}</div>
       </div>
-      <div class="timeline-middle">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          class="h-8 w-8"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-            clip-rule="evenodd"></path>
-        </svg>
+      <!-- Línea y checks -->
+      <div class="relative w-full flex flex-row items-center justify-between" style="height: 56px;">
+        <div class="absolute left-[12.5%] right-[12.5%] top-1/2 h-1 bg-white z-0" style="transform: translateY(-50%);"></div>
+        {[1,2,3,4].map(() => (
+          <div class="relative z-10 flex flex-col items-center w-1/4">
+            <div class="w-8 h-8 bg-white border-4 border-black rounded-full flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 20 20" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+          </div>
+        ))}
       </div>
-      <div class="timeline-end font-semibold">
-        <p set:html={t("itzamna.date_1")} />
+      <!-- Fechas -->
+      <div class="flex flex-row gap-x-4 mt-8 w-full justify-between">
+        <div class="flex flex-col items-center min-w-[220px]">
+          <div class="font-bold text-xl text-center text-white" set:html={t('itzamna.date_1')} />
+        </div>
+        <div class="flex flex-col items-center min-w-[220px]">
+          <div class="font-bold text-xl text-center text-white" set:html={t('itzamna.date_2')} />
+        </div>
+        <div class="flex flex-col items-center min-w-[220px]">
+          <div class="font-bold text-xl text-center text-white" set:html={t('itzamna.date_3')} />
+        </div>
+        <div class="flex flex-col items-center min-w-[220px]">
+          <div class="font-bold text-xl text-center text-white" set:html={t('itzamna.date_4')} />
+        </div>
       </div>
-      <hr />
-    </li>
-    <li class="min-h-[125px]">
-      <hr />
-      <div class="timeline-start timeline-box text-xl square_red">
-        {t("itzamna.etapa_2")}
-      </div>
-      <div class="timeline-middle">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          class="h-8 w-8"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-            clip-rule="evenodd"></path>
-        </svg>
-      </div>
-      <div class="timeline-end font-semibold">
-        <p set:html={t("itzamna.date_2")} />
-      </div>
-      <hr />
-    </li>
-    <li class="min-h-[125px]">
-      <hr />
-      <div class="timeline-start timeline-box text-xl square_red">
-        {t("itzamna.etapa_3")}
-      </div>
-      <div class="timeline-middle">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          class="h-8 w-8"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-            clip-rule="evenodd"></path>
-        </svg>
-      </div>
-      <div class="timeline-end font-semibold">{t("itzamna.date_3")}</div>
-      <hr />
-    </li>
-    <li class="min-h-[125px]">
-      <hr />
-      <div class="timeline-start timeline-box text-xl square_red">
-        {t("itzamna.etapa_4")}
-      </div>
-      <div class="timeline-middle">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-          class="h-8 w-8"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-            clip-rule="evenodd"></path>
-        </svg>
-      </div>
-      <div class="timeline-end font-semibold">{t("itzamna.date_4")}</div>
-      <hr />
-    </li>
-  </ul>
+    </div>
+  </div>
 </div>
