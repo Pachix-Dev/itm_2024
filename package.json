@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "axios": "^1.7.2",
+    "daisyui": "^5.0.46",
     "xlsx": "^0.18.5"
   }
 }
