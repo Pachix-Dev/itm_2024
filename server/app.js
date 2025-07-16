@@ -6,7 +6,6 @@ import { v4 as uuidv4 } from "uuid";
 import { RegisterModel } from "./db.js";
 import { email_template } from "./TemplateEmail.js";
 import { email_template_eng } from "./TemplateEmailEng.js";
-
 import { generatePDF_freePass, generatePDF_freePass_student, generatePDFInvoice } from "./generatePdf.js";
 import { Resend } from "resend";
 
