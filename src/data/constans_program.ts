@@ -350,8 +350,8 @@ const stage_2_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": "Cumbre de Desarrollo Industrial Sostenible: Inauguración",
-        "title_en": "Sustainable Industrial Development Summit: Opening",
+        "title": "Inauguración Cumbre de Desarrollo Industrial Sostenible",
+        "title_en": "Opening of the Sustainable Industrial Development Summit",
         "description": "",
         "description_en": "",
         "time": "14:15 hrs",
@@ -368,21 +368,21 @@ const stage_2_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": "Cumbre de Desarrollo Industrial Sostenible: Sesión: IA y ecosistemas de innovación: Acelerar la competitividad industrial y las cadenas de valor",
+        "title": "Cumbre de Desarrollo Industrial Sostenible: Sesión: IA y ecosistemas de innovación: Acelerar la competitividad industrial y las cadenas de valor sostenibles",
         "title_en": "Sustainable Industrial Development Summit: Session: AI and innovation ecosystems: Accelerating industrial competitiveness and sustainable value chains",
         "description": "",
         "description_en": "",
         "time": "16:00 hrs",
-        "duration": "60 min",
+        "duration": "70 min",
         "speakers": []
     },
     {
-        "title": "Cumbre de Desarrollo Industrial Sostenible: Sesión: Clausura y Firma del MoU para la implementación de la Estrategia de Desarrollo Industrial Sostenible 2030 de la Región Centro-Bajío-Oeste",
-        "title_en": "Summit on Sustainable Industrial Development: Session: Closing and Signing of the MoU for the implementation of the 2030 Strategy for Sustainable Industrial Development in the Central-Bajío-Oeste Region",
+        "title": "Clausura Cumbre de Desarrollo Industrial Sostenible",
+        "title_en": "Closing of the Sustainable Industrial Development Summit",
         "description": "",
         "description_en": "",
         "time": "17:00 hrs",
-        "duration": "15 min",
+        "duration": "5 min",
         "speakers": []
     },
     {
