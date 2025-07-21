@@ -1,42 +1,42 @@
 ---
-import i18next, { t } from "i18next";
-import { LanguageSelector } from "astro-i18next/components";
+import i18next, { t } from 'i18next'
+import { LanguageSelector } from 'astro-i18next/components'
 // @ts-ignore
-import { localizePath } from "astro-i18next";
+import { localizePath } from 'astro-i18next'
 ---
 
 <footer
   class="pt-20 bg-[url('/img/bg_itm_2026_3_v2.webp')] bg-cover bg-center bg-no-repeat"
 >
-  <div class="pt-20 container mx-auto px-4 py-5 text-white">
-    <p class="text-center font-semibold text-6xl lg:text-9xl uppercase">
-      {t("menu.exhibitors_1")}
+  <div class='pt-20 container mx-auto px-4 py-5 text-white'>
+    <p class='text-center font-semibold text-6xl lg:text-9xl uppercase'>
+      {t('menu.exhibitors_1')}
     </p>
-    <p class="mt-20 text-center text-2xl" set:html={t("footer.text_1")} />
-    <div class="grid place-items-center place-content-center">
-      <p class="mt-10 text-2xl text-center">
+    <p class='mt-20 text-center text-2xl' set:html={t('footer.text_1')} />
+    <div class='grid place-items-center place-content-center'>
+      <p class='mt-10 text-2xl text-center'>
         <strong><u>Eder Raúl Rangel Déziga</u></strong><br />
         Tel. +52 55 7028 3335 ext. 809
       </p>
       <a
-        class="text-xl hover:text-blue-600 italic"
-        href="mailto:eder.rangel@igeco.mx"
+        class='text-xl hover:text-blue-600 italic'
+        href='mailto:eder.rangel@igeco.mx'
       >
         eder.rangel@igeco.mx
       </a>
       <a
-        href="https://wa.me/5578618883?text=Hola%2C%20estoy%20interesado%20en%20participar%20en%20ITM%202025."
-        class="flex gap-4 hover:text-blue-600 font-bold mt-2"
+        href='https://wa.me/5578618883?text=Hola%2C%20estoy%20interesado%20en%20participar%20en%20ITM%202025.'
+        class='flex gap-4 hover:text-blue-600 font-bold mt-2'
       >
         <svg
-          role="img"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          stroke="currentColor"
+          role='img'
+          viewBox='0 0 24 24'
+          xmlns='http://www.w3.org/2000/svg'
+          width='24'
+          height='24'
+          stroke='currentColor'
           ><title>WhatsApp</title><path
-            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+            d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z'
           ></path></svg
         >
         5578618883
@@ -60,150 +60,128 @@ import { localizePath } from "astro-i18next";
   </div>
 
   <div
-    class="mt-20 pt-20 flex container mx-auto px-4 h-fit flex-col md:flex-row items-end gap-5"
+    class='mt-20 pt-20 flex container mx-auto px-4 h-fit flex-col md:flex-row items-end gap-5'
   >
-    <div class="w-full md:w-2/6 pt-4 md:pt-0 text-white text-right">
+    <div class='w-full md:w-2/6 pt-4 md:pt-0 text-white text-right'>
       <div>
-        <h4 class="font-bold text-3xl">ITM 2025</h4>
-        <p class="text-lg">
-          {t("footer.dateFooter")}
+        <h4 class='font-bold text-3xl'>ITM 2025</h4>
+        <p class='text-lg'>
+          {t('footer.dateFooter')}
         </p>
 
-        <p set:html={t("home.dateEvent")} />
+        <p set:html={t('home.dateEvent')} />
 
-        <p class="font-bold">Centro Banamex, CDMX, México</p>
+        <p class='font-bold'>Centro Banamex, CDMX, México</p>
       </div>
     </div>
-    <div class="w-full md:w-4/6">
+    <div class='w-full md:w-4/6'>
       <iframe
-        class="h-[500px] w-full md:w-[98%]"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.3692268713003!2d-99.22427789999999!3d19.439641399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2022fe7df043d%3A0xa5ca82b410bf9d12!2sCentro%20Banamex%2C%20Av.%20del%20Conscripto%2C%20Lomas%20de%20Sotelo%2C%20Hip%C3%B3dromo%20de%20las%20Am%C3%A9ricas%2C%20Miguel%20Hidalgo%2C%2011610%20Naucalpan%20de%20Ju%C3%A1rez%2C%20CDMX!5e0!3m2!1ses!2smx!4v1742923809022!5m2!1ses!2smx"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="mapa igeco"></iframe>
+        class='h-[500px] w-full md:w-[98%]'
+        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.3692268713003!2d-99.22427789999999!3d19.439641399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2022fe7df043d%3A0xa5ca82b410bf9d12!2sCentro%20Banamex%2C%20Av.%20del%20Conscripto%2C%20Lomas%20de%20Sotelo%2C%20Hip%C3%B3dromo%20de%20las%20Am%C3%A9ricas%2C%20Miguel%20Hidalgo%2C%2011610%20Naucalpan%20de%20Ju%C3%A1rez%2C%20CDMX!5e0!3m2!1ses!2smx!4v1742923809022!5m2!1ses!2smx'
+        loading='lazy'
+        referrerpolicy='no-referrer-when-downgrade'
+        title='mapa igeco'></iframe>
     </div>
   </div>
   <div
-    class="mt-20 w-full flex flex-wrap py-6 items-center justify-center gap-5"
+    class='mt-20 w-full flex flex-wrap py-6 items-center justify-center gap-5'
   >
-    <img src="/img/itm_white.png" alt="itm logo" width="200" />
-    <img src="/img/igeco_bn.webp" alt="igeco logo" width="250" />
+    <img src='/img/itm_white.png' alt='itm logo' width='200' />
+    <img src='/img/igeco_bn.webp' alt='igeco logo' width='250' />
     <img
-      src="/img/deutsche_messe_bn.webp"
-      alt="deutsche messe logo"
-      width="300"
+      src='/img/deutsche_messe_bn.webp'
+      alt='deutsche messe logo'
+      width='300'
     />
   </div>
-  <div class="flex justify-center gap-4 py-10 md:py-14">
-    <a href="https://www.facebook.com/Indtransmex/" target="_blank"
+  <div class='flex justify-center gap-4 py-10 md:py-14'>
+    <a href='https://www.facebook.com/Indtransmex/' target='_blank'
       ><svg
-        fill="white"
-        class="w-6 h-6 md:w-8 md:h-8"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+        fill='white'
+        class='w-6 h-6 md:w-8 md:h-8'
+        role='img'
+        viewBox='0 0 24 24'
+        xmlns='http://www.w3.org/2000/svg'
         ><title>Facebook</title><path
-          d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+          d='M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z'
         ></path></svg
       ></a
     >
     <a
-      href="https://www.linkedin.com/company/industrial-transformation-mexico/"
-      target="_blank"
+      href='https://www.linkedin.com/company/industrial-transformation-mexico/'
+      target='_blank'
       ><svg
-        fill="white"
-        class="w-6 h-6 md:w-8 md:h-8"
-        viewBox="0 0 32 32"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
-          id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+        fill='white'
+        class='w-6 h-6 md:w-8 md:h-8'
+        viewBox='0 0 32 32'
+        version='1.1'
+        xmlns='http://www.w3.org/2000/svg'
+        ><g id='SVGRepo_bgCarrier' stroke-width='0'></g><g
+          id='SVGRepo_tracerCarrier'
+          stroke-linecap='round'
+          stroke-linejoin='round'></g><g id='SVGRepo_iconCarrier'>
           <title>linkedin</title>
           <path
-            d="M28.778 1.004h-25.56c-0.008-0-0.017-0-0.027-0-1.199 0-2.172 0.964-2.186 2.159v25.672c0.014 1.196 0.987 2.161 2.186 2.161 0.010 0 0.019-0 0.029-0h25.555c0.008 0 0.018 0 0.028 0 1.2 0 2.175-0.963 2.194-2.159l0-0.002v-25.67c-0.019-1.197-0.994-2.161-2.195-2.161-0.010 0-0.019 0-0.029 0h0.001zM9.9 26.562h-4.454v-14.311h4.454zM7.674 10.293c-1.425 0-2.579-1.155-2.579-2.579s1.155-2.579 2.579-2.579c1.424 0 2.579 1.154 2.579 2.578v0c0 0.001 0 0.002 0 0.004 0 1.423-1.154 2.577-2.577 2.577-0.001 0-0.002 0-0.003 0h0zM26.556 26.562h-4.441v-6.959c0-1.66-0.034-3.795-2.314-3.795-2.316 0-2.669 1.806-2.669 3.673v7.082h-4.441v-14.311h4.266v1.951h0.058c0.828-1.395 2.326-2.315 4.039-2.315 0.061 0 0.121 0.001 0.181 0.003l-0.009-0c4.5 0 5.332 2.962 5.332 6.817v7.855z"
+            d='M28.778 1.004h-25.56c-0.008-0-0.017-0-0.027-0-1.199 0-2.172 0.964-2.186 2.159v25.672c0.014 1.196 0.987 2.161 2.186 2.161 0.010 0 0.019-0 0.029-0h25.555c0.008 0 0.018 0 0.028 0 1.2 0 2.175-0.963 2.194-2.159l0-0.002v-25.67c-0.019-1.197-0.994-2.161-2.195-2.161-0.010 0-0.019 0-0.029 0h0.001zM9.9 26.562h-4.454v-14.311h4.454zM7.674 10.293c-1.425 0-2.579-1.155-2.579-2.579s1.155-2.579 2.579-2.579c1.424 0 2.579 1.154 2.579 2.578v0c0 0.001 0 0.002 0 0.004 0 1.423-1.154 2.577-2.577 2.577-0.001 0-0.002 0-0.003 0h0zM26.556 26.562h-4.441v-6.959c0-1.66-0.034-3.795-2.314-3.795-2.316 0-2.669 1.806-2.669 3.673v7.082h-4.441v-14.311h4.266v1.951h0.058c0.828-1.395 2.326-2.315 4.039-2.315 0.061 0 0.121 0.001 0.181 0.003l-0.009-0c4.5 0 5.332 2.962 5.332 6.817v7.855z'
           ></path>
         </g></svg
       ></a
     >
-    <a href="https://twitter.com/Indtransmex" target="_blank"
+    <a href='https://twitter.com/Indtransmex' target='_blank'
       ><svg
-        fill="white"
-        class="w-6 h-6 md:w-8 md:h-8"
-        viewBox="0 0 24 24"
-        aria-hidden="true"
+        fill='white'
+        class='w-6 h-6 md:w-8 md:h-8'
+        viewBox='0 0 24 24'
+        aria-hidden='true'
         ><title>Twitter</title><g
           ><path
-            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+            d='M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z'
           ></path></g
         ></svg
       ></a
     >
     <a
-      href="https://www.instagram.com/industrial_transformation_mx/"
-      target="_blank"
+      href='https://www.instagram.com/industrial_transformation_mx/'
+      target='_blank'
     >
       <svg
-        fill="white"
-        class="w-6 h-6 md:w-8 md:h-8"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+        fill='white'
+        class='w-6 h-6 md:w-8 md:h-8'
+        role='img'
+        viewBox='0 0 24 24'
+        xmlns='http://www.w3.org/2000/svg'
         ><title>Instagram</title><path
-          d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+          d='M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z'
         ></path>
       </svg>
     </a>
-    <a href="https://www.tiktok.com/@itmbyhannovermesse" target="_blank">
+    <a href='https://www.tiktok.com/@itmbyhannovermesse' target='_blank'>
       <svg
-        fill="white"
-        class="w-6 h-6 md:w-8 md:h-8"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+        fill='white'
+        class='w-6 h-6 md:w-8 md:h-8'
+        role='img'
+        viewBox='0 0 24 24'
+        xmlns='http://www.w3.org/2000/svg'
         ><title>TikTok</title><path
-          d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+          d='M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z'
         ></path></svg
       >
     </a>
   </div>
   <div
-    class="mx-5 mt-6 md:mx-20 border-t-2 border-b-2 border-white py-2 flex items-center justify-between text-white"
+    class='mx-5 mt-6 md:mx-20 border-t-2 border-b-2 border-white py-5 flex items-center justify-between text-white'
   >
-    <p class="font-bold">Italian German Exhibition Company</p>
-    <div class="flex items-center">
-      {
-        i18next.language === "en" ? (
-          <img
-            src="/img/flag-us.svg"
-            alt="us flag"
-            class="h-6 w-6 rounded-full mr-2"
-          />
-        ) : (
-          <img
-            src="/img/flag-mexico.svg"
-            alt="México flag"
-            class="h-6 w-6 rounded-full mr-2"
-          />
-        )
-      }
-      <LanguageSelector
-        showFlag={true}
-        aria-label="Select language"
-        class="block w-full p-2.5 rounded-lg bg-gray-700 border-gray-600 placeholder-gray-400 text-white text-xs lg:text-base focus:ring-blue-500 focus:border-blue-500"
-      />
-    </div>
+    <p class='font-bold'>Italian German Exhibition Company</p>
   </div>
-  <div class="mx-5 md:mx-20 py-10 font-bold text-white">
+  <div class='mx-5 md:mx-20 py-10 font-bold text-white'>
     <a
-      class="hover:text-[#e8001e]"
-      href="https://igeco.mx/aviso-de-privacidad"
-      target="_blank">{t("home.privacy_policy")}</a
+      class='hover:text-[#e8001e]'
+      href='https://igeco.mx/aviso-de-privacidad'
+      target='_blank'>{t('home.privacy_policy')}</a
     >
-    <p class="inline">|</p>
-    <a class="hover:text-[#e8001e]" href={localizePath("/contacto")}
-      >{t("home.contact")}</a
+    <p class='inline'>|</p>
+    <a class='hover:text-[#e8001e]' href={localizePath('/contacto')}
+      >{t('home.contact')}</a
     >
   </div>
 </footer>

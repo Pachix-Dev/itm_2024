@@ -162,7 +162,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
         .text("- USO DE CFDI", 55)
         .text("* FECHA MÁXIMA DE FACTURACIÓN 25 DE NOVIEMBRE DE 2025")
 
-    const textQr = body.typeRegister === 'VISITANTE' ? '@ITM _VIS'+body.user_id+'||||' : '@ITM_PRE'+body.user_id+'||||';
+    const textQr = body.typeRegister === 'VISITANTE' ? '@ITM_VIS'+body.user_id+'||||' : '@ITM_PRE'+body.user_id+'||||';
 
     const qrMainUser = await generateQRDataURL(textQr);
     doc.addPage();
@@ -356,7 +356,7 @@ async function generatePDF_freePass( body, uuid) {
     doc.pipe(pdfStream);             
     
     
-    const textQr = body.typeRegister === 'VISITANTE' ? '@ITM _VIS'+body.user_id+'||||' : '@ITM_PRE'+body.user_id+'||||';
+    const textQr = body.typeRegister === 'VISITANTE' ? '@ITM_VIS'+body.user_id+'||||' : '@ITM_PRE'+body.user_id+'||||';
     const qrMainUser = await generateQRDataURL(textQr);
     
 
