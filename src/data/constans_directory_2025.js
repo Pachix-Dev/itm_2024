@@ -1840,6 +1840,53 @@ export const directory = [
       "Movi Ruedas offers solutions for safe and efficient material handling, providing wheels, casters, and ball transfer units from leading brands such as Alwayse, Caster Connection, Räder Vogel, and Foot Master.",
     instagram: "https://www.instagram.com/odoo.official/",
   },
+  {
+    id: 79,
+    name: "3D MARKET",
+    logo: "/exhibitors/logo3DM.webp",
+    width: 160,
+    stand_number: "G16",
+    contact: "Cynthia Sosa",
+    position: "",
+    phone: "55 4568 7638",
+    email: "SOSA@3DMARKET.MX",
+    webpage: "https://www.3dmarket.mx/",
+    address: "Av. Ejército Republicano #121, piso: último PH, Col. Carretas",
+    cp: " 76050",
+    city: "Querétaro",
+    state: "Querétaro",
+    country: "México",
+    description:
+      "3D Market, fundada en 2014 en México, es líder en manufactura aditiva. Especializada en impresoras 3D, escáneres, filamentos y servicios industriales, ofrece entrega inmediata, soporte técnico profesional, capacitación y atención personalizada en toda Latinoamérica",
+    description_en:
+      "3D Market, founded in 2014 in Mexico, is a leader in custom manufacturing. Specialized in 3D printers, scanners, filaments and industrial services, it offers immediate delivery, professional technical support, customized training and personalized attention in all Latin America",
+    youtube: "https://www.youtube.com/channel/UCDPuyq9rdNXFDkyMO0sWziA",
+    instagram: "https://www.instagram.com/3dmarketmx/",
+    facebook: "https://www.facebook.com/3dmarketmx",
+  },
+  {
+    id: 80,
+    name: "HTD VPINSTRUMENTS",
+    logo: "/exhibitors/Logotipo HTD.webp",
+    width: 160,
+    stand_number: "D34",
+    contact: "Maria Fernanda Nuñez Candiani",
+    position: "",
+    phone: "+52 4421389240",
+    email: "mfnunez@htd.com.mx",
+    webpage: "http://www.htd.com.mx",
+    address: "Av. México Lote 9A Manz 38 Ejidos San Miguel Chalma",
+    cp: " 52928",
+    city: "Atizapan de Zaragoza",
+    state: "Edo. de México",
+    country: "México",
+    description:
+      "HTD es una empresa Mexicana que distribuye tecnología y servicios en México: monitoreo y datos con VPInstruments, filtración con Donaldson, tubería de aluminio con Aircom y auditorias de aire comprimido junto a The Analysts.",
+    description_en:
+      "HTD is a Mexican company that distributes technology and services in México: monitoring and data with VPInstruments, filtration with Donaldson, aluminum piping with Aircom, and compressed air audits in partnership with The Analysts.",
+    linkedIn:
+      "https://www.linkedin.com/company/htd-representaciones-industriales",
+  },
 ].sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
 
 /* 
