@@ -3,15 +3,15 @@ import { t } from "i18next";
 ---
 
 <div
-    class="bg-[url('/img/bg-itzamna/bg-itzamna3.webp')] lg:p-4 p-2 w-full h-auto bg-cover bg-center relative z-0"
+    class="bg-gradient-to-b from-[#200F0E] via-[#1A202C] to-[#6B2638] lg:p-4 p-2 w-full h-auto bg-cover bg-center relative z-0"
 >
     <div
-        class="py-16 grid justify-items-center"
+        class="py-16 grid justify-items-center text-white"
         data-aos="fade-up"
         data-aos-duration="3000"
     >
         <div class="square_blue lg:w-1/2 w-fit m-1">
-            <p class="text-4xl font-bold uppercase font-sans p-0">
+            <p class="text-4xl font-bold uppercase p-0">
                 {t("itzamna.evaluation")}
             </p>
             {t("itzamna.evaluation_desc")}
@@ -129,7 +129,7 @@ import { t } from "i18next";
                 >
                     {t("itzamna.committee")}
                 </p>
-                <p class="lg:mx-10 mx-2 my-3 p-3 bg-[#363678b3] font-mono">
+                <p class="lg:mx-10 mx-2 my-3 p-3 bg-[#363678b3]">
                     {t("itzamna.committee_desc")}
                 </p>
             </div>
@@ -139,7 +139,7 @@ import { t } from "i18next";
                 >
                     {t("itzamna.finalists")}
                 </p>
-                <p class="lg:mx-10 mx-2 my-3 p-3 bg-[#363678b3] font-mono">
+                <p class="lg:mx-10 mx-2 my-3 p-3 bg-[#363678b3]">
                     {t("itzamna.finalists_desc")}
                 </p>
             </div>
@@ -150,14 +150,12 @@ import { t } from "i18next";
             >
                 {t("itzamna.Awards")}
             </p>
-            <div
-                class="lg:mx-10 mx-2 mt-4 bg-[#363678b3] font-mono lg:flex grid"
-            >
+            <div class="lg:mx-10 mx-2 mt-4 bg-[#363678b3] lg:flex grid">
                 <div class="w-fit m-5">
                     <p>{t("itzamna.awards_desc")}</p>
                 </div>
                 <div class="lg:m-5 m-0">
-                    <div class="flex text-2xl">
+                    <div class="flex text-xl">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -172,7 +170,7 @@ import { t } from "i18next";
                                 d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
                             ></path>
                         </svg>
-                        <p class="flex font-semibold">
+                        <p class="flex">
                             {t("itzamna.awards_1")}
                         </p>
                     </div>
@@ -183,7 +181,7 @@ import { t } from "i18next";
                             viewBox="0 0 24 24"
                             stroke-width="1.5"
                             stroke="currentColor"
-                            class="size-16 mx-3"
+                            class="size-24 mx-3"
                         >
                             <path
                                 stroke-linecap="round"
@@ -196,8 +194,13 @@ import { t } from "i18next";
                                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
                             ></path>
                         </svg>
-                        <p class="flex font-semibold">
+                        <p class="">
                             {t("itzamna.awards_2")}
+                            <a
+                                class="text-blue-400"
+                                href="https://www.google.com/maps/place/Pabellon+Escénico/@19.4227568,-99.1949748,1469m/data=!3m1!1e3!4m15!1m8!3m7!1s0x85d201004aa0fe5b:0x3857176b007d6994!2sPabellon+Escénico!8m2!3d19.4236882!4d-99.1930243!10e1!16s%2Fg%2F11ldryklr1!3m5!1s0x85d201004aa0fe5b:0x3857176b007d6994!8m2!3d19.4236882!4d-99.1930243!16s%2Fg%2F11ldryklr1?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
+                                >{t("itzamna.btn_map")}</a
+                            >
                         </p>
                     </div>
                 </div>
