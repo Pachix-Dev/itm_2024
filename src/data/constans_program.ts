@@ -26,8 +26,8 @@ interface Program {
 const stage_1_day_1: Program[] = [
     {
 
-        "title": "",
-        "title_en": "",
+        "title": "Siemens",
+        "title_en": "Siemens",
         "description": "",
         "description_en": "",
         "time": "13:00 hrs",
@@ -86,8 +86,8 @@ const stage_1_day_1: Program[] = [
     },
     {
 
-        "title": "",
-        "title_en": "",
+        "title": "Telcel",
+        "title_en": "Telcel",
         "description": "",
         "description_en": "",
         "time": "14:20 hrs",
@@ -332,13 +332,27 @@ const stage_2_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": "Keynote Siemens",
-        "title_en": "Keynote Siemens",
+        "title": " Siemens",
+        "title_en": " Siemens",
         "description": "",
         "description_en": "",
         "time": "12:30 hrs",
         "duration": "30 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Alejandro Preinfalk",
+                "position": "",
+                "position_en": "",
+                "company": "",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/alejandro_preinfalk.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "Panel de Alto Nivel de GIZ",
@@ -365,7 +379,34 @@ const stage_2_day_1: Program[] = [
         "description_en": "",
         "time": "14:45 hrs",
         "duration": "75 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Takaaki Kuga",
+                "position": "Presidente",
+                "position_en": "President",
+                "company": "Cámara de Comercio e Industria Japonesa de México",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/takaaki-kuga.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Hans Blomeier",
+                "position": "Presidente en México",
+                "position_en": "President in Mexico",
+                "company": "Konrad Adenauer Foundation",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/hans_blomeier.webp",
+                "email": "",
+                "phone": "",
+                "moderador": true
+            },
+        ]
     },
     {
         "title": "Cumbre de Desarrollo Industrial Sostenible: Sesión: IA y ecosistemas de innovación: Acelerar la competitividad industrial y las cadenas de valor sostenibles",
@@ -374,7 +415,21 @@ const stage_2_day_1: Program[] = [
         "description_en": "",
         "time": "16:00 hrs",
         "duration": "70 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Germán Bonilla Bermúdez",
+                "position": "",
+                "position_en": "",
+                "company": "Asociación para el Desarrollo Industrial Sostenible Alianza Alemania-Pacífico (PAGSID)-un proyecto de cooperación de la Federación de Industrias Alemanas (BDI)",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/german_bonilla_bermudez.webp",
+                "email": "",
+                "phone": "",
+                "moderador": true
+            },
+        ]
     },
     {
         "title": "Clausura Cumbre de Desarrollo Industrial Sostenible",
@@ -443,8 +498,8 @@ const stage_2_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Siemens",
+        "title_en": "Siemens",
         "description": "",
         "description_en": "",
         "time": "15:00 hrs",
@@ -489,13 +544,39 @@ const stage_2_day_3: Program[] = [
         "img": "/img/program/beckhoff.png",
         "time": "11:20 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Pablo Fernandes ",
+                "position": "Especialista de producto",
+                "position_en": " Product Specialist",
+                "company": "Beckhoff",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/default.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            }, {
+                "id": "2",
+                "name": "Adrián Beas ",
+                "position": "Especialista de producto",
+                "position_en": " Product Specialist",
+                "company": "Beckhoff",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/default.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "Panorama Internacional de la Movilidad Eléctrica: Caminos hacia la Descarbonización",
         "title_en": "International Electric Mobility Panorama: Paths to Carbon Neutralization",
-        "description": "",
-        "description_en": "",
+        "description": "El panel reunirá a especialistas internacionales para reflexionar sobre enfoques, retos y avances en la implementación de la movilidad eléctrica. La conversación abordará temas estratégicos como políticas públicas, esquemas de colaboración público-privada, incentivos, infraestructura de carga y experiencias prácticas.",
+        "description_en": "The panel will bring together international specialists to reflect on approaches, challenges and advances in the implementation of electric mobility. The conversation will address strategic issues such as public policies, public-private collaboration schemes, incentives, charging infrastructure and practical experiences.",
         "img": "/img/program/amof.png",
         "time": "12:15 hrs",
         "duration": "60 min",
@@ -507,29 +588,30 @@ const stage_2_day_3: Program[] = [
         "description": "",
         "description_en": "",
         "time": "13:20 hrs",
+        "duration": "45 min",
+        "speakers": []
+    },
+    {
+        "title": "",
+        "title_en": "",
+        "description": "",
+        "description_en": "",
+        "time": "14:10 hrs",
+        "duration": "45 min",
+        "speakers": []
+    },
+    {
+        "title": "Inteligente, sostenible, circular: la tecnología como facilitadora de la economía circular",
+        "title_en": " Intelligent, sustainable, circular: technology as facilitator of the circular economy",
+        "description": "",
+        "description_en": "",
+        "img": "/img/program/sellocamexa.webp",
+        "time": "15:00 hrs",
         "duration": "60 min",
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
-        "description": "",
-        "description_en": "",
-        "time": "14:30 hrs",
-        "duration": "45 min",
-        "speakers": []
-    },
-    {
-        "title": "",
-        "title_en": "",
-        "description": "",
-        "description_en": "",
-        "time": "15:20 hrs",
-        "duration": "45 min",
-        "speakers": []
-    },
-    {
-        "title": "",
+        "title": "Misumi",
         "title_en": "",
         "description": "",
         "description_en": "",
