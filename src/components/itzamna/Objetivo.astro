@@ -1,81 +1,81 @@
 ---
-import { t } from "i18next";
-import Dates from "../itzamna/Dates.astro";
+import { t } from 'i18next'
+import Dates from '../itzamna/Dates.astro'
 
 const objetivos = [
   {
     id: 1,
-    img: "itzamna_obj1.webp",
-    color: "bg-blue-500/40",
+    img: 'itzamna_obj1.webp',
+    color: 'bg-blue-500/40',
   },
   {
     id: 2,
-    img: "itzamna_obj2.webp",
-    color: "bg-red-500/40",
+    img: 'itzamna_obj2.webp',
+    color: 'bg-red-500/40',
   },
   {
     id: 3,
-    img: "itzamna_obj3.webp",
-    color: "bg-blue-500/40",
+    img: 'itzamna_obj3.webp',
+    color: 'bg-blue-500/40',
   },
   {
     id: 4,
-    img: "itzamna_obj4.webp",
-    color: "bg-red-500/40",
+    img: 'itzamna_obj4.webp',
+    color: 'bg-red-500/40',
   },
   {
     id: 5,
-    img: "itzamna_obj5.webp",
-    color: "bg-blue-500/40",
+    img: 'itzamna_obj5.webp',
+    color: 'bg-blue-500/40',
   },
   {
     id: 6,
-    img: "itzamna_obj6.webp",
-    color: "bg-red-500/40",
+    img: 'itzamna_obj6.webp',
+    color: 'bg-red-500/40',
   },
   {
     id: 7,
-    img: "itzamna_obj7.webp",
-    color: "bg-blue-500/40",
+    img: 'itzamna_obj7.webp',
+    color: 'bg-blue-500/40',
   },
   {
     id: 8,
-    img: "itzamna_obj8.webp",
-    color: "bg-red-500/40",
+    img: 'itzamna_obj8.webp',
+    color: 'bg-red-500/40',
   },
   {
     id: 9,
-    img: "itzamna_obj9.webp",
-    color: "bg-blue-500/40",
+    img: 'itzamna_obj9.webp',
+    color: 'bg-blue-500/40',
   },
-];
+]
 ---
 
 <section class="bg-[url('/img/bgcontactos.webp')] bg-contain py-20 text-white">
-  <div data-aos="fade-up" data-aos-duration="3000">
+  <div data-aos='fade-up' data-aos-duration='3000'>
     <div
-      class="grid place-items-center my-3 square_blue w-3/4 lg:w-full max-w-[500px] font-bold text-xl sm:text-2xl md:text-4xl lg:text-6xl px-4 mx-auto"
+      class='grid place-items-center my-3 square_blue w-3/4 lg:w-full max-w-[500px] font-bold text-xl sm:text-2xl md:text-4xl lg:text-6xl px-4 mx-auto'
     >
-      <h2 class="text-center text-5xl font-bold my-10">
-        {t("itzamna.objetivo")}
+      <h2 class='text-center text-5xl font-bold my-10'>
+        {t('itzamna.objetivo')}
       </h2>
     </div>
-    <p class="mx-5 text-center text-2xl md:mx-20 mt-12">
-      {t("itzamna.objetivo_desc")}
+    <p class='mx-5 text-center text-2xl md:mx-20 mt-12'>
+      {t('itzamna.objetivo_desc')}
     </p>
     <div
-      class="mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 mb-32 md:mx-20 text-lg"
+      class='mx-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 mb-32 md:mx-20 text-lg'
     >
       {
         objetivos.map((objetivo) => (
-          <div class="group w-full h-80 [perspective:1000px]">
-            <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              <div class="absolute inset-0 backface-hidden">
+          <div class='group w-full h-80 [perspective:1000px]'>
+            <div class='relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
+              <div class='absolute inset-0 backface-hidden'>
                 <img
                   src={`/img/bg-itzamna/${objetivo.img}`}
-                  alt="Imagen de frente"
-                  class="w-full h-full object-cover rounded-xl"
-                  loading="lazy"
+                  alt='Imagen de frente'
+                  class='w-full h-full object-cover rounded-xl'
+                  loading='lazy'
                 />
               </div>
 
@@ -90,15 +90,20 @@ const objetivos = [
       }
     </div>
     <div
-      class="grid place-items-center my-3 square_blue w-3/4 lg:w-full max-w-[500px] font-bold text-xl sm:text-2xl md:text-4xl lg:text-6xl px-4 mx-auto"
-      data-aos="fade-up"
-      data-aos-duration="3000"
+      class='grid place-items-center my-3 square_blue w-3/4 lg:w-full max-w-[500px] font-bold text-xl sm:text-2xl md:text-4xl lg:text-6xl px-4 mx-auto'
+      data-aos='fade-up'
+      data-aos-duration='3000'
     >
-      <h2 class="text-center text-4xl lg:text-5xl font-bold my-5">
-        {t("itzamna.dates")}
+      <h2 class='text-center text-4xl lg:text-5xl font-bold my-5'>
+        {t('itzamna.dates')}
       </h2>
     </div>
     <Dates />
+    <div class='mt-10 container mx-auto px-4 rounded-xl'>
+      <lite-youtube
+        videoid='bDbopxY7v5A'
+        class='shadow-2xl shadow-white/10 rounded-lg md:h-96'></lite-youtube>
+    </div>
   </div>
 </section>
 

@@ -10,10 +10,13 @@ import Prize from "@/components/itzamna/Prize.astro";
 changeLanguage("en");
 ---
 
-<LayoutItzamna title={`ITM | ${t("itzamna.title")}`}>
+<LayoutItzamna title={`ITM | ${t('itzamna.title')}`}>
   <Inicio />
   <Objetivo />
   <HowParticipate />
   <Evaluation />
   <Prize />
 </LayoutItzamna>
+<script>
+  import '@justinribeiro/lite-youtube'
+</script>
