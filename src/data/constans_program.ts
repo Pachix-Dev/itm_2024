@@ -24,7 +24,7 @@ interface Program {
 }
 
 const stage_1_day_1: Program[] = [
-    {
+    /*{
 
         "title": "Siemens",
         "title_en": "Siemens",
@@ -32,7 +32,7 @@ const stage_1_day_1: Program[] = [
         "description_en": "",
         "time": "13:00 hrs",
         "duration": "35 min",
-        "speakers": [/*
+        "speakers": [
             {
                 "id": "1",
                 "name": "Carlos Hernandez",
@@ -71,9 +71,9 @@ const stage_1_day_1: Program[] = [
                 "email": "ejemplo@gmail.com",
                 "phone": "123456789",
                 "moderador": true
-            }*/
+            }
         ]
-    },
+    },*/
     {
 
         "title": "Schneider",
@@ -331,7 +331,7 @@ const stage_2_day_1: Program[] = [
         "duration": "60 min",
         "speakers": []
     },
-    {
+    /*{
         "title": " Siemens",
         "title_en": " Siemens",
         "description": "",
@@ -353,7 +353,7 @@ const stage_2_day_1: Program[] = [
                 "moderador": false
             },
         ]
-    },
+    },*/
     {
         "title": "Panel de Alto Nivel de GIZ",
         "title_en": "High Level Panel GIZ",
@@ -497,7 +497,7 @@ const stage_2_day_2: Program[] = [
         "duration": "60 min",
         "speakers": []
     },
-    {
+    /*{
         "title": "Siemens",
         "title_en": "Siemens",
         "description": "",
@@ -505,7 +505,7 @@ const stage_2_day_2: Program[] = [
         "time": "15:00 hrs",
         "duration": "45 min",
         "speakers": []
-    },
+    },*/
     {
         "title": "ITMujeres",
         "title_en": "ITMujeres",
