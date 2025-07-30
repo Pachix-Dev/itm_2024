@@ -143,13 +143,15 @@ const ProgramItem: React.FC<Props> = ({ item, translate, language }) => {
                             alt={speaker.name}
                           />
                           <p>
-                            {speaker.name}
-                            <br />
-                            {language === "es"
-                              ? speaker.position
-                              : speaker.position_en}
-                            <br />
-                            {speaker.company}
+                            <span className="font-bold">{speaker.name}</span>
+                            <br></br>
+                            <span>
+                              {language === "es"
+                                ? speaker.position
+                                : speaker.position_en}
+                            </span>
+                            <br></br>
+                            <span className="italic">{speaker.company}</span>
                           </p>
                         </div>
                       </li>

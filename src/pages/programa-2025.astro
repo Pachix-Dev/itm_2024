@@ -11,50 +11,50 @@ changeLanguage("es");
 const translate = t("program", { returnObjects: true }) as Record<string, string>;
 ---
 
-<Layout title={`ITM | ${t('program.title')}`}>
+<Layout title={`ITM | ${t("program.title")}`}>
   <video
-    class='fixed top-0 left-0 w-full h-full object-cover -z-10'
+    class="fixed top-0 left-0 w-full h-full object-cover -z-10"
     autoplay
     loop
     muted
     playsinline
-    src='/videos/video_itm_programa.mp4'></video>
-  <main class='mx-5 md:mx-16 lg:mx-32 pb-5 my-20'>
-    <h1 class='text-left text-[#E42128] text-5xl font-extrabold py-5'>
-      {t('program.title')}
+    src="/videos/video_itm_programa.mp4"></video>
+  <main class="mx-5 md:mx-16 lg:mx-32 pb-5 my-20">
+    <h1 class="text-left text-[#E42128] text-5xl font-extrabold py-5">
+      {t("program.title")}
     </h1>
-    <p class='italic mb-5 text-lg'>* {t('program.changes')}</p>
+    <p class="italic mb-5 text-lg">* {t("program.changes")}</p>
     <section>
-      <h3 class='text-3xl pb-3'>{t('program.stages')}</h3>
-      <div class='md:ml-5'>
-        <Button id='stage-1'>Transformation Area</Button>
-        <Button id='stage-2'>Leaders of Tomorrow Arena</Button>
+      <h3 class="text-3xl pb-3">{t("program.stages")}</h3>
+      <div class="md:ml-5">
+        <Button id="stage-1">Transformation Area</Button>
+        <Button id="stage-2">Leaders of Tomorrow Arena</Button>
       </div>
       <div
-        class='w-full bg-gradient-to-br from-[#E42128] to-[#CF1363] h-[1px] mt-1 mb-3 rounded-sm'
+        class="w-full bg-gradient-to-br from-[#E42128] to-[#CF1363] h-[1px] mt-1 mb-3 rounded-sm"
       >
       </div>
-      <div class='md:ml-5 *:w-full md:*:w-fit'>
-        <Button id='day-1'
-          >{t('program.day')} 1<br />{t('program.day_1')}, 11 {
-            t('program.month')
+      <div class="md:ml-5 *:w-full md:*:w-fit">
+        <Button id="day-1"
+          >{t("program.day")} 1<br />{t("program.day_1")}, 11 {
+            t("program.month")
           }</Button
         >
-        <Button id='day-2'
-          >{t('program.day')} 2<br />{t('program.day_2')}, 12 {
-            t('program.month')
+        <Button id="day-2"
+          >{t("program.day")} 2<br />{t("program.day_2")}, 12 {
+            t("program.month")
           }</Button
         >
-        <Button id='day-3'
-          >{t('program.day')} 3<br />{t('program.day_3')}, 13 {
-            t('program.month')
+        <Button id="day-3"
+          >{t("program.day")} 3<br />{t("program.day_3")}, 13 {
+            t("program.month")
           }</Button
         >
       </div>
       {
         programs.map((program) => (
           <section
-            class='mt-5 hidden'
+            class="mt-5 hidden"
             id={`program-${program.stage}-${program.day}`}
           >
             {program.conferences.map((item) => (
@@ -80,67 +80,67 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
 
 <script is:inline data-astro-rerun>
   //inicializa parámetros por default
-  let currentStage = '1'
-  let currentDay = '1'
+  let currentStage = "1";
+  let currentDay = "1";
   document
-    .getElementById('stage-1')
-    ?.firstElementChild?.classList.add('bg-opacity-0')
+    .getElementById("stage-1")
+    ?.firstElementChild?.classList.add("bg-opacity-0");
   document
-    .getElementById('day-1')
-    ?.firstElementChild?.classList.add('bg-opacity-0')
+    .getElementById("day-1")
+    ?.firstElementChild?.classList.add("bg-opacity-0");
 
   const updateView = () => {
     //oculta todos los elementos del programa
     document
       .querySelectorAll('[id^="program-"]')
-      .forEach((item) => item.classList.add('hidden'))
+      .forEach((item) => item.classList.add("hidden"));
     //solo muestra el seleccionado
-    const id = `program-${currentStage}-${currentDay}`
-    const target = document.getElementById(id)
-    if (target) target.classList.remove('hidden')
-  }
+    const id = `program-${currentStage}-${currentDay}`;
+    const target = document.getElementById(id);
+    if (target) target.classList.remove("hidden");
+  };
 
-  document.addEventListener('astro:page-load', () => {
-    const stageButtons = document.querySelectorAll('button[id^="stage-"]')
-    const dayButtons = document.querySelectorAll('button[id^="day-"]')
+  document.addEventListener("astro:page-load", () => {
+    const stageButtons = document.querySelectorAll('button[id^="stage-"]');
+    const dayButtons = document.querySelectorAll('button[id^="day-"]');
 
     stageButtons.forEach((btn) => {
       //al stage clickeado se agrega la opacidad del fondo a 0
-      btn.addEventListener('click', () => {
-        currentStage = btn.id.split('-')[1]
+      btn.addEventListener("click", () => {
+        currentStage = btn.id.split("-")[1];
         document
-          .getElementById('stage-1')
-          ?.firstElementChild?.classList.remove('bg-opacity-0')
+          .getElementById("stage-1")
+          ?.firstElementChild?.classList.remove("bg-opacity-0");
         document
-          .getElementById('stage-2')
-          ?.firstElementChild?.classList.remove('bg-opacity-0')
+          .getElementById("stage-2")
+          ?.firstElementChild?.classList.remove("bg-opacity-0");
         document
           .getElementById(`stage-${currentStage}`)
-          ?.firstElementChild?.classList.add('bg-opacity-0')
-        updateView()
-      })
-    })
+          ?.firstElementChild?.classList.add("bg-opacity-0");
+        updateView();
+      });
+    });
 
     dayButtons.forEach((btn) => {
       //al día clickeado se agrega la opacidad del fondo a 0
-      btn.addEventListener('click', () => {
-        currentDay = btn.id.split('-')[1]
+      btn.addEventListener("click", () => {
+        currentDay = btn.id.split("-")[1];
         document
-          .getElementById('day-1')
-          ?.firstElementChild?.classList.remove('bg-opacity-0')
+          .getElementById("day-1")
+          ?.firstElementChild?.classList.remove("bg-opacity-0");
         document
-          .getElementById('day-2')
-          ?.firstElementChild?.classList.remove('bg-opacity-0')
+          .getElementById("day-2")
+          ?.firstElementChild?.classList.remove("bg-opacity-0");
         document
-          .getElementById('day-3')
-          ?.firstElementChild?.classList.remove('bg-opacity-0')
+          .getElementById("day-3")
+          ?.firstElementChild?.classList.remove("bg-opacity-0");
         document
           .getElementById(`day-${currentDay}`)
-          ?.firstElementChild?.classList.add('bg-opacity-0')
-        updateView()
-      })
-    })
+          ?.firstElementChild?.classList.add("bg-opacity-0");
+        updateView();
+      });
+    });
 
-    updateView()
-  })
+    updateView();
+  });
 </script>

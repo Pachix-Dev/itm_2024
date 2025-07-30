@@ -29,6 +29,7 @@ const Modal = ({ isOpen, onClose, speaker, language }: ModalProps) => {
   const bioLang = language === "es" ? speaker.bio ?? "" : speaker.bio_en ?? "";
 
   const newBio = bioLang.length > 700 ? bioLang.slice(0, 700) + "..." : bioLang;
+  const safeHtml = vermas ? bioLang ?? "" : newBio ?? "";
   return (
     <div className="fixed inset-0 z-[200] flex items-center justify-center bg-gray-900 bg-opacity-60 p-4">
       <div
@@ -67,7 +68,7 @@ const Modal = ({ isOpen, onClose, speaker, language }: ModalProps) => {
           <div className="justify-center text-center sm:text-left overflow-scroll max-h-[600px] p-5">
             <div className="square_red_2 top-0 bg-gradient-to-t from-[#e10725] to-[#e40966] z-10 pl-3 mb-4 pb-3">
               {speaker.company !== "" && (
-                <div className="bold w-fit bg-custom-orange text-white text-xs md:text-sm px-3 py-1 rounded-full shadow-lg outline-white">
+                <div className="text-center bold w-fit bg-custom-orange text-white text-xs md:text-sm px-3 py-1 rounded-full shadow-lg outline-white">
                   {speaker.company}
                 </div>
               )}
@@ -78,10 +79,14 @@ const Modal = ({ isOpen, onClose, speaker, language }: ModalProps) => {
                 {language === "es" ? speaker.position : speaker.position_en}
               </p>
             </div>
-
-            <p className="text-text-zinc-50  text-base mt-3 text-justify">
-              {vermas ? bioLang : newBio}
-            </p>
+            {speaker.bio ? (
+              <p
+                className="text-text-zinc-50  text-base mt-3 text-justify"
+                dangerouslySetInnerHTML={{ __html: safeHtml }}
+              ></p>
+            ) : (
+              "La descripción aún no está disponible. ¡Mantente al tanto, pronto la publicaremos!"
+            )}
 
             {newBio.length > 700 && (
               <button
