@@ -1887,6 +1887,76 @@ export const directory = [
     linkedIn:
       "https://www.linkedin.com/company/htd-representaciones-industriales",
   },
+  {
+    id: 81,
+    name: "Nippon Bearing (NB)",
+    logo: "/exhibitors/nippo.webp",
+    width: 160,
+    stand_number: "F15",
+    contact: "Jose Ortiz",
+    position: "",
+    phone: "+528124289672",
+    email: "jose@nbcorporation.com",
+    webpage: "http://www.nbcorporation.com",
+    address: "930 Muirfield Drive",
+    cp: " 60133",
+    city: "Hanover Park",
+    state: "IL",
+    country: "United States",
+    description:
+      "Nippon Bearing (NB) está atendiendo las necesidades del mercado con nuestras tres fortalezas clave: Proporcionar productos de calidad estable y de alto nivel, diseñar productos para satisfacer las necesidades del cliente y ofrecer una amplia gama de productos.  A lo largo de los años, hemos proporcionado productos de nuestra extensa línea, SLIDE BUSH (bujes embalados) y SLIDE WAY (guías de rodillos cruzados) como nuestros productos representativos, para ser utilizados en diversas situaciones manteniendo la calidad de los productos. Estos productos se han utilizado en una amplia variedad de industrias, incluyendo semiconductores, médicos/farmacéuticos, automatización de fábricas FA e infraestructura de transporte. Nuestra gama de productos incluye: Bujes embalados, metricos norma JIS y DIN, bujes en pulgadas Ball splines o flechas antigiro Slide Way o mesas deslizantes Actuadores  Mecánicos BG's Gonio Way: Guías curvas Bujes de carrera limitado / bujes rotativos Bujes Top Ball :",
+    description_en:
+      "Nippon Bearing (NB) is providing quality products to the market with our three key strengths: Providing quality and high-level products, designing products to meet the needs of the customer and offering a wide range of products. Over the years, we have provided our extensive line of products, SLIDE BUSH (wrapped bushes) and SLIDE WAY (cross-slide guides) as our representative products, to be used in various situations, maintaining the quality of the products. These products have been used in a wide variety of industries, including semiconductors, medical/pharmaceuticals, automated factories, FA, and transportation infrastructure. Our product range includes: Wrapped bushes, metric JIS and DIN, ball splines or anti-giro slide way or rolling balls: Actuators Mechanical BG's Gonio Way: Curved bushes, bushes rotating, Rolling ball:",
+    linkedIn: "https://www.linkedin.com/company/nb-corporation",
+    facebook: "https://www.facebook.com/NipponBearing/timeline/#,",
+    x: "https://x.com/nipponbearing",
+    youtube: "https://www.youtube.com/channel/UC0n-DX5w32k_l0lC7gEkJWg",
+  },
+  {
+    id: 82,
+    name: "CKD MEXICO",
+    logo: "/exhibitors/ckdmex.svg",
+    width: 160,
+    stand_number: "D46",
+    contact: "Arturo Pineda",
+    position: "",
+    phone: "+52 442 338 2599",
+    email: "apineda@ckdmex.com.mx",
+    webpage: "https://www.ckdmex.com.mx",
+    address: "Cerrada la Noria 200, Interior 01, Puerto de Aguirre",
+    cp: "76220",
+    city: "Querétaro",
+    state: "Querétaro",
+    country: "México",
+    description:
+      "Empresa dedicada a dar soluciones sobre la automatizacion, utilizando productos de alta calidad japonesa y con capacidad especializada en consultas personales",
+    description_en:
+      "Company dedicated to providing automation solutions, using high-quality Japanese products and with specialized capability in personal consultations.",
+  },
+  {
+    id: 83,
+    name: "Rackart Del Norte",
+    logo: "/exhibitors/RACKART.png",
+    width: 160,
+    stand_number: "C34",
+    contact: "Ariana Servín",
+    position: "",
+    phone: "+52 (818) 370 7011",
+    email: "marketing@rackart.com",
+    webpage: "https://www.rackart.com",
+    address: "Av Raúl Rangel Frías 2850, Loma Bonita",
+    cp: "64250",
+    city: "Monterrey",
+    state: "Nuevo León",
+    country: "México",
+    description:
+      "En Rackart® somos una empresa mexicana fundada en Monterrey, Nuevo León, especializada en el diseño, fabricación, comercialización e instalación de equipos, materiales y accesorios para el manejo y almacenamiento de materiales en la industria. Nuestro objetivo principal es optimizar los procesos de nuestros clientes, ofreciendo soluciones que cumplen con las especificaciones requeridas y brindan la mejor propuesta en costo, beneficio, calidad y tiempo de entrega para sus aplicaciones. ",
+    description_en:
+      "At Rackart® we are a Mexican company founded in Monterrey, Nuevo Leon, specializing in the design, manufacture, marketing, and installation of equipment, materials, and accessories for the handling and storage of materials in industry. Our main objective is to optimize our customers' processes, offering solutions that meet the required specifications and provide the best proposal in terms of cost, benefit, quality, and delivery time for their applications.",
+    instagram: "https://www.instagram.com/rackartdelnorte/",
+    facebook:
+      "https://www.facebook.com/people/Rackart-del-Norte/100063620019653/",
+  },
 ].sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
 
 /* 
