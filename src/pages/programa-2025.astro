@@ -8,10 +8,7 @@ import Layout from "../layouts/Layout.astro";
 changeLanguage("es");
 
 // Usa el Record<string, string> para que puedas usar el t() sin problemas en React con TypeScript
-const translate = t("program", { returnObjects: true }) as Record<
-  string,
-  string
->;
+const translate = t("program", { returnObjects: true }) as Record<string, string>;
 ---
 
 <Layout title={`ITM | ${t("program.title")}`}>
