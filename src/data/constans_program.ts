@@ -1,5 +1,5 @@
 interface Speaker {
-    id?: number;
+    id?: string;
     name?: string;
     position?: string;
     position_en?: string;
@@ -114,7 +114,7 @@ const stage_1_day_2: Program[] = [
         "duration": "35 min",
         "speakers": [
             {
-                "id": 1,
+                "id": "1",
                 "name": "Giovanni Muciño",
                 "position": "Especialista de producto",
                 "position_en": " Product Specialist",
@@ -316,7 +316,7 @@ const stage_2_day_1: Program[] = [
         "duration": "30 min",
         "speakers": [
             {
-                "id": 1,
+                "id": "1",
                 "name": "Alejandro Preinfalk",
                 "position": "",
                 "position_en": "",
@@ -357,7 +357,7 @@ const stage_2_day_1: Program[] = [
         "duration": "75 min",
         "speakers": [
             {
-                "id": 1,
+                "id": "1",
                 "name": "Takaaki Kuga",
                 "position": "Presidente",
                 "position_en": "President",
@@ -370,7 +370,7 @@ const stage_2_day_1: Program[] = [
                 "moderador": false
             },
             {
-                "id": 2,
+                "id": "2",
                 "name": "Hans Blomeier",
                 "position": "Presidente en México",
                 "position_en": "President in Mexico",
@@ -393,7 +393,7 @@ const stage_2_day_1: Program[] = [
         "duration": "70 min",
         "speakers": [
             {
-                "id": 1,
+                "id": "1",
                 "name": "Germán Bonilla Bermúdez",
                 "position": "",
                 "position_en": "",
@@ -406,7 +406,7 @@ const stage_2_day_1: Program[] = [
                 "moderador": true
             },
             {
-                "id": 2,
+                "id": "2",
                 "name": "Oliver Hanisch ",
                 "position": "CEO",
                 "position_en": "CEO",
@@ -419,7 +419,7 @@ const stage_2_day_1: Program[] = [
                 "moderador": false
             },
             {
-                "id": 3,
+                "id": "3",
                 "name": "Nanghelly Silva Anzaldúa ",
                 "position": "Presidenta de la Comisión de Innovación",
                 "position_en": "President of the Innovation Committee",
@@ -432,7 +432,7 @@ const stage_2_day_1: Program[] = [
                 "moderador": false
             },
             {
-                "id": 4,
+                "id": "4",
                 "name": "René Freudenberg ",
                 "position": "CEO",
                 "position_en": "CEO",
@@ -561,7 +561,7 @@ const stage_2_day_3: Program[] = [
         "duration": "45 min",
         "speakers": [
             {
-                "id": 1,
+                "id": "1",
                 "name": "Pablo Fernandes ",
                 "position": "Especialista de producto",
                 "position_en": " Product Specialist",
@@ -573,7 +573,7 @@ const stage_2_day_3: Program[] = [
                 "phone": "",
                 "moderador": false
             }, {
-                "id": 2,
+                "id": "2",
                 "name": "Adrián Beas ",
                 "position": "Especialista de producto",
                 "position_en": " Product Specialist",
@@ -597,7 +597,7 @@ const stage_2_day_3: Program[] = [
         "duration": "60 min",
         "speakers": [
             {
-                "id": 1,
+                "id": "1",
                 "name": "Hugo Isaak",
                 "position": "Miembro del Grupo Global de Expertos en Smart Cities",
                 "position_en": "Member of the Global Experts Group on Smart Cities",
@@ -610,7 +610,7 @@ const stage_2_day_3: Program[] = [
                 "moderador": true
             },
             {
-                "id": 2,
+                "id": "2",
                 "name": "Rodrigo Salcedo",
                 "position": "Presidente",
                 "position_en": "President",
@@ -651,7 +651,7 @@ const stage_2_day_3: Program[] = [
         "duration": "60 min",
         "speakers": [
             {
-                "id": 1,
+                "id": "1",
                 "name": "Andreas Müller",
                 "position": "Director Adjunto",
                 "position_en": "Director Adjunct",
@@ -664,7 +664,7 @@ const stage_2_day_3: Program[] = [
                 "moderador": true
             },
             {
-                "id": 2,
+                "id": "2",
                 "name": "Denisse Carolina Navarro Rodriguez",
                 "position": "Oficial Nacional y Representante Adjunta",
                 "position_en": " National Official and Adjunct Representative",
@@ -677,7 +677,7 @@ const stage_2_day_3: Program[] = [
                 "moderador": false
             },
             {
-                "id": 3,
+                "id": "3",
                 "name": "Alejandro Rodriguez",
                 "position": "Sustainability Portfolio Leader Siemens México, Centro America y el Caribe",
                 "position_en": "Sustainability Portfolio Leader Siemens México, Centro America y el Caribe",
@@ -690,7 +690,7 @@ const stage_2_day_3: Program[] = [
                 "moderador": false
             },
             {
-                "id": 4,
+                "id": "4",
                 "name": "Miriam Macías Solis ",
                 "position": "Directora para México y América Latina del Centro Mexicano de Ecología Industrial",
                 "position_en": "Director for Mexico and Latin America of the Mexican Center for Industrial Ecology",
