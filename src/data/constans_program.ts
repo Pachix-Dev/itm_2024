@@ -239,15 +239,15 @@ const stage_1_day_2: Program[] = [
         "duration": "35 min",
         "speakers": []
     },
-    {
-        "title": "Misumi",
-        "title_en": "Misumi",
-        "description": "",
-        "description_en": "",
-        "time": "17:20 hrs",
-        "duration": "35 min",
-        "speakers": []
-    },
+    // {
+    //     "title": "Misumi",
+    //     "title_en": "Misumi",
+    //     "description": "",
+    //     "description_en": "",
+    //     "time": "17:20 hrs",
+    //     "duration": "35 min",
+    //     "speakers": []
+    // },
     {
         "title": "",
         "title_en": "",
@@ -279,15 +279,15 @@ const stage_1_day_3: Program[] = [
         "duration": "35 min",
         "speakers": []
     },
-    {
-        "title": "Misumi",
-        "title_en": "Misumi",
-        "description": "",
-        "description_en": "",
-        "time": "12:40 hrs",
-        "duration": "35 min",
-        "speakers": []
-    },
+    // {
+    //     "title": "Misumi",
+    //     "title_en": "Misumi",
+    //     "description": "",
+    //     "description_en": "",
+    //     "time": "12:40 hrs",
+    //     "duration": "35 min",
+    //     "speakers": []
+    // },
     {
         "title": "Schneider",
         "title_en": "Schneider",
@@ -370,10 +370,10 @@ const stage_2_day_1: Program[] = [
         ]
     },*/
     {
-        "title": "Panel de Alto Nivel de GIZ",
-        "title_en": "High Level Panel GIZ",
-        "description": "",
-        "description_en": "",
+        "title": "GIZ México",
+        "title_en": "GIZ Mexico",
+        "description": "Panel de Alto Nivel",
+        "description_en": "High Level Panel",
         "time": "13:00 hrs",
         "duration": "60 min",
         "speakers": []
@@ -401,9 +401,9 @@ const stage_2_day_1: Program[] = [
                 "position": "Presidente",
                 "position_en": "President",
                 "company": "Cámara de Comercio e Industria Japonesa de México",
-                "bio": "",
-                "bio_en": "",
-                "image": "/img/speakers/takaaki-kuga.webp",
+                "bio": "Takaaki Kuga, actual Presidente de Toyota Motor México y de la Cámara Japonesa de Comercio en México, cuenta con más de 30 años de trayectoria internacional en la industria automotriz. Es licenciado en Economía Monetaria Internacional por la Universidad Sophia en Tokio y ha trabajado en Asia, América del Norte y América Latina. Inició su carrera en Mitsui & Co., destacándose en comercio exterior y logística, y más tarde en Bavaria S.A. en Colombia, donde también cursó un MBA.<br><br>En 2004 se integró a Toyota, liderando proyectos estratégicos en EE. UU., México y Japón, como la colaboración Toyota-Mazda en Salamanca. En México ha sido pieza clave en la consolidación operativa de Toyota, incluyendo el arranque de la planta en Guanajuato. Su visión global, liderazgo intercultural y profundo conocimiento del sector lo posicionan como una figura clave en el fortalecimiento de la industria automotriz y las relaciones bilaterales entre Japón y México.",
+                "bio_en": "Takaaki Kuga, current President of Toyota Motor Mexico and the Japanese Chamber of Commerce in Mexico, has more than 30 years of international experience in the automotive industry. He holds a degree in International Monetary Economics from Sophia University in Tokyo and has worked in Asia, North America and Latin America. He began his career at Mitsui & Co., excelling in foreign trade and logistics, and later at Bavaria S.A. in Colombia, where he also completed an MBA.<br><br>In 2004 he joined Toyota, leading strategic projects in the USA. Mexico and Japan, such as the Toyota-Mazda collaboration in Salamanca. In Mexico it has been a key part of the operational consolidation of Toyota, including the start-up of the plant in Guanajuato. His global vision, intercultural leadership and deep knowledge of the sector position him as a key figure in strengthening the automotive industry and bilateral relations between Japan and Mexico.",
+                "image": "/img/speakers/Taakaki_Kuga.jpg",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -450,11 +450,11 @@ const stage_2_day_1: Program[] = [
                 "position": "CEO",
                 "position_en": "CEO",
                 "company": "Campus Founders - Heilbronn",
-                "bio": "",
-                "bio_en": "",
-                "image": "/img/speakers/default.webp",
-                "email": "",
-                "phone": "",
+                "bio": "Oliver Hanisch es una figura prominente en el ecosistema de startups alemán, reconocido principalmente por su papel como CEO de Campus Founders gGmbH.<br><br>Hanisch es cofundador y director ejecutivo de Campus Founders, una organización dedicada a apoyar y fomentar el espíritu empresarial. Su experiencia se centra en liderazgo, recaudación de fondos, estrategia, ventas y relaciones con inversores. <br><br>Antes de Campus Founders, fundó Bed|n|Build, lo que demuestra su historial como emprendedor. Participa activamente como mentor en German Accelerator, brindando orientación a nuevas empresas. Es considerado un experto en startups y ecosistemas de startups, y es un orador solicitado en eventos como Heilbronn Slush'D.<br><br>Oliver Hanisch es un líder experimentado y un defensor del espíritu empresarial, con un historial comprobado de apoyo a las nuevas empresas y el fomento de la innovación.",
+                "bio_en": "Oliver Hanisch is a prominent figure in the German startup ecosystem, best known for his role as CEO of Campus Founders gGmbH. <br><br>Hanisch is co-founder and executive director of Campus Founders, an organization dedicated to supporting and fostering entrepreneurship. His expertise focuses on leadership, fundraising, strategy, sales and investor relations. <br><br>Prior to Campus Founders, he founded Bed|n|Build, proving his track record as an entrepreneur. Actively participates as a mentor in the German Accelerator, providing guidance to start-ups. He is considered an expert on startups and startup ecosystems, and is a sought-after speaker at events such as Heilbronn Slush’D.<br><br>Oliver Hanisch is an experienced leader and advocate of entrepreneurship, With a proven track record of supporting new businesses and fostering innovation.                ",
+                "image": "/img/speakers/Oliver_Hanisch.jpg",
+                "email": "oliver@campusfounders.de",
+                "phone": "+49 (173) 355 3013",
                 "moderador": false
             },
             {
@@ -463,11 +463,11 @@ const stage_2_day_1: Program[] = [
                 "position": "Presidenta de la Comisión de Innovación",
                 "position_en": "President of the Innovation Committee",
                 "company": "Consejo Coordinador Empresarial",
-                "bio": "",
-                "bio_en": "",
-                "image": "/img/speakers/default.webp",
-                "email": "",
-                "phone": "",
+                "bio": "Ingeniera Industrial, egresada de la Universidad de Guadalajara. Maestra en Negocios por la Universidad de Offenburg, Alemania. Design Thinker certificada por el Centro de Estudios de Innovación de Monterrey y la World Design Organization. Es fundadora y directora de una Oficina de Transferencia Tecnológica y un espacio dedicado al impulso de la innovación, desarrollo tecnológico y emprendimiento en la ciudad de Uruapan.<br><br> Cuenta con más de quince años de experiencia profesional en la gestión de proyectos de innovación y desarrollo tecnológico con enfoque de triple hélice. Actualmente es presidenta de la Comisión de Innovación y Desarrollo del Consejo Cordinador Empresarial (CCE).",
+                "bio_en": "Industrial Engineer, graduated from the University of Guadalajara. Master in Business at the University of Offenburg, Germany. Design Thinker certified by the Monterrey Center for Innovation Studies and the World Design Organization. She is the founder and director of an Office for Technology Transfer and a space dedicated to the promotion of innovation, Technological development and entrepreneurship in the city of Uruapan.<br><br> He has more than fifteen years of professional experience in managing innovation projects and technological development with a triple helix approach. Currently chair the Innovation and Development Commission of the Business Coordinating Council (CCE).",
+                "image": "/img/speakers/Nanghelly_Silva_Anzaldúa_CCE.jpg",
+                "email": "nanghelly@gmail.com",
+                "phone": "+52 452 105 7336",
                 "moderador": false
             },
             {
@@ -476,11 +476,11 @@ const stage_2_day_1: Program[] = [
                 "position": "CEO",
                 "position_en": "CEO",
                 "company": "Interlub Group Mexico",
-                "bio": "",
-                "bio_en": "",
-                "image": "/img/speakers/default.webp",
-                "email": "",
-                "phone": "",
+                "bio": "René estudió Administración de Empresas en Alemania y obtuvo su MBA de la universidad<br><br>TiasNimbas Business School, Los Países Bajos. Luego ganó valiosa experiencia internacional trabajando para Continental AG en Alemania, Bélgica, Inglaterra y España.<br><br>En 2004 se incorporó a Interlub Group, el negocio familiar iniciado por su padre en 1984. En 2005 trabajó en la expansión de una de las unidades de negocio en Brasil y en 2006 asumió el cargo de Director General de la compañía. Desde haber tomado el liderazgo de la compañía en 2006, la compañía obtuvo en tres ocasiones honores presidenciales por sus contribuciones valiosas en las ciencias (Premio Nacional de Tecnología e Innovación 2019), por la particular forma de crear valor para sus clientes (Premio Nacional de Calidad 2017) y por las exportaciones de México (Premio Nacional de Exportación 2016).<br><br>René además es presidente del Consejo Directivo del Instituto para el Fomento a la Calidad y forma parte del Consejo del Colegio Alemán Guadalajara, del Consejo de Fundación Marisa y del Consejo de Mentores Endeavor, y también fue presidente del Capítulo de Guadalajara de Enlace+ (Tec de Monterrey).",
+                "bio_en": "René studied Business Administration in Germany and earned his MBA from the university<br><br>TiasNimbas Business School, The Netherlands. He then gained valuable international experience working for Continental AG in Germany, Belgium, England and Spain.<br><br>In 2004 he joined Interlub Group, the family business started by his father in 1984. In 2005 he worked on the expansion of one of the business units in Brazil and in 2006 took over as CEO of the company. Since taking the company’s leadership in 2006, the company has won three presidential honors for its valuable contributions to science (National Technology and Innovation Award 2019), for particular way of creating value for its customers (National Quality Award 2017) and for the exports of Mexico (National Export Award 2016). <br><br>René is also Chairman of the Board of Directors of the Institute for the Promotion of Quality and is a member of the Board of the German College Guadalajara, the Board of the Marisa Foundation and the Board of Mentors Endeavor, and was also president of the Guadalajara Chapter of Link+  (Monterrey Technology).",
+                "image": "/img/speakers/René_Freudenberg.jpg",
+                "email": "rene.freudenberg@interlub.com",
+                "phone": "+52 33 1043 1573",
                 "moderador": false
             },
         ]
@@ -638,9 +638,9 @@ const stage_2_day_3: Program[] = [
             {
                 "id": 1,
                 "name": "Hugo Isaak",
-                "position": "CEO",
-                "position_en": "CEO",
-                "company": "Neurabitat",
+                "position": "Miembro del Grupo Global de Expertos en Smart Cities",
+                "position_en": "Member of the Global Experts Group on Smart Cities",
+                "company": "ONU-Hábitat",
                 "bio": "El Dr. Hugo Isaak es un líder reconocido en ciudades inteligentes y desarrollo urbano sostenible. Su formación académica incluye un doctorado en Administración Pública por la Universidad Anáhuac y la Universidad de París-Sorbona, con especialización en Urbanismo, Medio Ambiente, Economía, Desarrollo Sostenible e Inteligencia Artificial.<br><br>Experiencia Profesional: El Dr. Isaak ha desempeñado roles clave en el sector público y privado, incluyendo su nombramiento en el Grupo Global de Expertos de Smart Cities de la ONU-Hábitat, donde lidera las Guías para el Desarrollo de Ciudades Inteligentes centradas en las personas. Es fundador y CEO de 'Neurabitat', un proyecto que utiliza inteligencia artificial y análisis de datos para mejorar la interacción entre las ciudades y sus habitantes.<br><br>En la Secretaría de Relaciones Exteriores (SRE), fue Coordinador Internacional General Urbano y autor del proyecto ICI (Interconectando Ciudades Inteligentes), contribuyendo a políticas públicas sostenibles. Destacan sus negociaciones para extender el mandato de México como Presidente de la Asamblea de la ONU-Hábitat hasta 2025 y la asignación y próxima celebración del Día Mundial del Hábitat en Querétaro. <br><br><br><br>Visión y Futuro: El Dr. Isaak está comprometido con la creación de ciudades más inteligentes y sostenibles. Su visión incluye Centros de Innovación de la Ciudad Inteligente y Agencias de Transformación Digital en México y LATAM, integrando tecnologías emergentes para beneficiar a todos los ciudadanos y promover la sostenibilidad. <br><br>En resumen, el Dr. Hugo Isaak es una figura influyente con una trayectoria ejemplar y una visión clara hacia un futuro más sostenible e inclusivo.",
                 "bio_en": "Dr. Hugo Isaak is a recognized leader in smart cities and sustainable urban development. His academic background includes a PhD in Public Administration from the University of Anáhuac and the University of Paris-Sorbonne, with specialization in Urbanism, Environment, Economy, Sustainable Development and Artificial Intelligence.<br><br>Professional Experience: Dr. Isaak has played key roles in the public and private sectors, including his appointment to UN-Habitat’s Global Expert Group on Smart Cities, where he leads the people-centred Guides for the Development of Smart Cities. He is the founder and CEO of 'Neurabitat', a project that uses artificial intelligence and data analysis to improve interaction between cities and their inhabitants.<br><br>In the Foreign Relations Secretariat (SRE), he was the Urban General International Coordinator and author of the ICI project (Interconnecting Smart Cities), contributing to sustainable public policies. They highlight their negotiations to extend the mandate of Mexico as President of the UN AssemblyHabitat until 2025 and the allocation and upcoming celebration of World Habitat Day in Querétaro. <br><br>Vision and Future: Dr. Isaak is committed to creating smarter, more sustainable cities. His vision includes Smart City Innovation Centers and Digital Transformation Agencies in Mexico and LATAM, Integrating emerging technologies to benefit all citizens and promote sustainability. <br><br>In short, Dr. Hugo Isaak is an influential figure with an exemplary track record and a clear vision for a more sustainable and inclusive future.",
                 "image": "/img/speakers/Hugo_Isaak.jpeg",
@@ -697,7 +697,7 @@ const stage_2_day_3: Program[] = [
                 "company": "CAMEXA",
                 "bio": "",
                 "bio_en": "",
-                "image": "/img/speakers/default.webp",
+                "image": "/img/speakers/Andreas_Muller.jpg",
                 "email": "a.mueller@ahkmexiko.com.mx",
                 "phone": "",
                 "moderador": true
@@ -710,7 +710,7 @@ const stage_2_day_3: Program[] = [
                 "company": "UNIDO",
                 "bio": "",
                 "bio_en": "",
-                "image": "/img/speakers/default.webp",
+                "image": "/img/speakers/Denisse_Navarro_UNIDO.jpeg",
                 "email": "D.NAVARRO-RODRIGUEZ@UNIDO.ORG",
                 "phone": "",
                 "moderador": false
@@ -723,7 +723,7 @@ const stage_2_day_3: Program[] = [
                 "company": "SIEMENS",
                 "bio": "",
                 "bio_en": "",
-                "image": "/img/speakers/default.webp",
+                "image": "/img/speakers/Alejandro_Rodriguez.jpg",
                 "email": "alejandro.rodriguez@siemens.com",
                 "phone": "",
                 "moderador": false
@@ -731,12 +731,12 @@ const stage_2_day_3: Program[] = [
             {
                 "id": 4,
                 "name": "Miriam Macías Solis ",
-                "position": "Directora para México y América Latina del Centro Mexicano de Ecología Industrial CMEI",
-                "position_en": "Director for Mexico and Latin America of the Mexican Center for Industrial Ecology CMEI",
+                "position": "Directora para México y América Latina del Centro Mexicano de Ecología Industrial",
+                "position_en": "Director for Mexico and Latin America of the Mexican Center for Industrial Ecology",
                 "company": "CMEI",
                 "bio": "",
                 "bio_en": "",
-                "image": "/img/speakers/default.webp",
+                "image": "/img/speakers/Miriam_Macías.jpeg",
                 "email": "m.macias@cmei.org.mx",
                 "phone": "",
                 "moderador": false
