@@ -1,67 +1,71 @@
 ---
-import { t } from 'i18next'
-import { alliesStrategic, media_1 } from '../../data/constans_logos'
-import { directory } from '../../data/constans_directory_2025'
-import { media_2 } from '../../data/constans_logos'
+import { t } from "i18next";
+import {
+  alliesStrategic,
+  media_1,
+  media_2,
+  media_3,
+} from "../../data/constans_logos";
+import { directory } from "../../data/constans_directory_2025";
 ---
 
-<div class='relative'>
+<div class="relative">
   <img
-    data-aos='fade-right'
-    data-aos-duration='1000'
-    src='/img/e_azul.webp'
-    alt='logo ITM'
-    class='w-40 absolute z-0'
+    data-aos="fade-right"
+    data-aos-duration="1000"
+    src="/img/e_azul.webp"
+    alt="logo ITM"
+    class="w-40 absolute z-0"
   />
   <img
-    data-aos='fade-left'
-    data-aos-duration='1500'
-    src='/img/e_rojo.webp'
-    alt='logo ITM'
-    class='w-60 absolute z-0 right-20 top-72'
+    data-aos="fade-left"
+    data-aos-duration="1500"
+    src="/img/e_rojo.webp"
+    alt="logo ITM"
+    class="w-60 absolute z-0 right-20 top-72"
   />
   <div
-    class='container mx-auto px-4 py-10 text-center text-[#6C757D] font-bold uppercase relative z-10'
+    class="container mx-auto px-4 py-10 text-center text-[#6C757D] font-bold uppercase relative z-10"
   >
     <!-- PATROCINADORES PLATINO  -->
     <div
-      class='mt-20 text-center text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto'
-      data-aos='fade-up'
-      data-aos-duration='1200'
+      class="mt-20 text-center text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto"
+      data-aos="fade-up"
+      data-aos-duration="1200"
     >
-      {t('home.title-sponsors')}
+      {t("home.title-sponsors")}
     </div>
     <div
-      class='mt-5 flex flex-wrap justify-center gap-6 *:bg-white *:rounded-lg *:shadow-lg *:p-2 *:flex *:items-center'
-      data-aos='fade-up'
-      data-aos-duration='1500'
+      class="mt-5 flex flex-wrap justify-center gap-6 *:bg-white *:rounded-lg *:shadow-lg *:p-2 *:flex *:items-center"
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
-      <a href='http://www.misumimex.com/' target='_blank' rel='noreferrer'>
+      <a href="http://www.misumimex.com/" target="_blank" rel="noreferrer">
         <img
-          src='/img/misumi.webp'
-          width='180'
-          alt='patrocinador ITM MISUMI'
-          loading='lazy'
+          src="/img/misumi.webp"
+          width="180"
+          alt="patrocinador ITM MISUMI"
+          loading="lazy"
         />
       </a>
-      <a href='https://www.se.com/ww/en/' target='_blank' rel='noreferrer'>
+      <a href="https://www.se.com/ww/en/" target="_blank" rel="noreferrer">
         <img
-          src='/img/logoSchneider.webp'
-          width='180'
-          alt='patrocinador ITM schneider electric'
-          loading='lazy'
+          src="/img/logoSchneider.webp"
+          width="180"
+          alt="patrocinador ITM schneider electric"
+          loading="lazy"
         />
       </a>
       <a
-        href='https://www.siemens.com/mx/es.html'
-        target='_blank'
-        rel='noreferrer'
+        href="https://www.siemens.com/mx/es.html"
+        target="_blank"
+        rel="noreferrer"
       >
         <img
-          src='/img/siemens.webp'
-          width='200'
-          alt='patrocinador ITM schneider electric'
-          loading='lazy'
+          src="/img/siemens.webp"
+          width="200"
+          alt="patrocinador ITM schneider electric"
+          loading="lazy"
         />
       </a>
       {
@@ -85,47 +89,47 @@ import { media_2 } from '../../data/constans_logos'
 
     <!-- PATROCINADORES DIAMANTE  -->
     <div
-      class='mt-20 text-center text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto'
-      data-aos='fade-up'
-      data-aos-duration='1200'
+      class="mt-20 text-center text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto"
+      data-aos="fade-up"
+      data-aos-duration="1200"
     >
-      {t('home.sponsor_diamond')}
+      {t("home.sponsor_diamond")}
     </div>
     <div
-      class='mt-5 flex flex-wrap justify-center gap-6 *:bg-white *:rounded-lg *:shadow-lg *:p-2 *:flex *:items-center'
-      data-aos='fade-up'
-      data-aos-duration='1500'
+      class="mt-5 flex flex-wrap justify-center gap-6 *:bg-white *:rounded-lg *:shadow-lg *:p-2 *:flex *:items-center"
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
       <a
-        href='https://www.beckhoff.com/es-mx/'
-        target='_blank'
-        rel='noreferrer'
+        href="https://www.beckhoff.com/es-mx/"
+        target="_blank"
+        rel="noreferrer"
       >
         <img
-          src='/exhibitors/beckhoff_nuevo.webp'
-          width='250'
-          alt='patrocinador ITM MISUMI'
-          loading='lazy'
+          src="/exhibitors/beckhoff_nuevo.webp"
+          width="250"
+          alt="patrocinador ITM MISUMI"
+          loading="lazy"
         />
       </a>
     </div>
 
     <!-- EXPOSITORES CONFIRMADOS  -->
     <div
-      class='mt-20 text-center text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto'
-      data-aos='fade-up'
-      data-aos-duration='1500'
+      class="mt-20 text-center text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto"
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
-      {t('home.exhibitor_confirmed')}
+      {t("home.exhibitor_confirmed")}
     </div>
     <div
-      class='mt-5 grid grid-cols-[repeat(auto-fit,_minmax(150px,_max-content))] justify-center *:grid *:place-items-center *:w-full *:h-full gap-6 *:bg-white *:rounded-lg *:shadow-lg *:p-1'
-      data-aos='fade-up'
-      data-aos-duration='1500'
+      class="mt-5 grid grid-cols-[repeat(auto-fit,_minmax(150px,_max-content))] justify-center *:grid *:place-items-center *:w-full *:h-full gap-6 *:bg-white *:rounded-lg *:shadow-lg *:p-1"
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
       {
         directory.map((exhibitor) => (
-          <a href={exhibitor.webpage} target='_blank' rel='noreferrer'>
+          <a href={exhibitor.webpage} target="_blank" rel="noreferrer">
             <img
               src={exhibitor.logo}
               alt={exhibitor.name}
@@ -135,25 +139,25 @@ import { media_2 } from '../../data/constans_logos'
         ))
       }
     </div>
-    <p class='text-right font-extrabold text-2xl uppercase text-white'>
-      {t('home.others')}...
+    <p class="text-right font-extrabold text-2xl uppercase text-white">
+      {t("home.others")}...
     </p>
     <!-- ALIADOS ESTRATEGICOS  -->
     <div
-      class='mt-20 text-center text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto'
-      data-aos='fade-up'
-      data-aos-duration='1500'
+      class="mt-20 text-center text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto"
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
-      {t('home.strategic_allies')}
+      {t("home.strategic_allies")}
     </div>
     <div
-      class='mt-5 grid grid-cols-[repeat(auto-fit,_minmax(150px,_max-content))] justify-center *:grid *:place-items-center *:w-full *:h-full gap-6 *:bg-white *:rounded-lg *:shadow-lg *:p-1'
-      data-aos='fade-up'
-      data-aos-duration='1500'
+      class="mt-5 grid grid-cols-[repeat(auto-fit,_minmax(150px,_max-content))] justify-center *:grid *:place-items-center *:w-full *:h-full gap-6 *:bg-white *:rounded-lg *:shadow-lg *:p-1"
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
       {
         alliesStrategic.map((ally, index) => (
-          <a href={ally.link} target='_blank' rel='noreferrer'>
+          <a href={ally.link} target="_blank" rel="noreferrer">
             <img src={ally.src} alt={ally.alt} width={ally.width} />
           </a>
         ))
@@ -162,20 +166,20 @@ import { media_2 } from '../../data/constans_logos'
 
     <!-- SOCIOS DE MEDIOS PLATINO  -->
     <div
-      class='mt-20 text-center text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto'
-      data-aos='fade-up'
-      data-aos-duration='1500'
+      class="mt-20 text-center text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto"
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
-      {t('home.platinum_media')}
+      {t("home.platinum_media")}
     </div>
     <div
-      class='mt-5 grid grid-cols-[repeat(auto-fit,_minmax(150px,_max-content))] justify-center *:grid *:place-items-center *:w-full *:h-full gap-6 *:bg-white *:rounded-lg *:shadow-lg *:p-2'
-      data-aos='fade-up'
-      data-aos-duration='1500'
+      class="mt-5 grid grid-cols-[repeat(auto-fit,_minmax(150px,_max-content))] justify-center *:grid *:place-items-center *:w-full *:h-full gap-6 *:bg-white *:rounded-lg *:shadow-lg *:p-2"
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
       {
         media_2.map((ally, index) => (
-          <a href={ally.link} target='_blank' rel='noreferrer'>
+          <a href={ally.link} target="_blank" rel="noreferrer">
             <img src={ally.src} alt={ally.alt} width={ally.width} />
           </a>
         ))
@@ -184,20 +188,42 @@ import { media_2 } from '../../data/constans_logos'
 
     <!-- SOCIOS DE MEDIOS ORO  -->
     <div
-      class='mt-20 text-center text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto'
-      data-aos='fade-up'
-      data-aos-duration='1500'
+      class="mt-20 text-center text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto"
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
-      {t('home.gold_media_partners')}
+      {t("home.gold_media_partners")}
     </div>
     <div
-      class='mt-5 grid grid-cols-[repeat(auto-fit,_minmax(150px,_max-content))] justify-center *:grid *:place-items-center *:w-full *:h-full gap-6 *:bg-white *:rounded-lg *:shadow-lg *:p-2'
-      data-aos='fade-up'
-      data-aos-duration='1500'
+      class="mt-5 grid grid-cols-[repeat(auto-fit,_minmax(150px,_max-content))] justify-center *:grid *:place-items-center *:w-full *:h-full gap-6 *:bg-white *:rounded-lg *:shadow-lg *:p-2"
+      data-aos="fade-up"
+      data-aos-duration="1500"
     >
       {
         media_1.map((ally, index) => (
-          <a href={ally.link} target='_blank' rel='noreferrer'>
+          <a href={ally.link} target="_blank" rel="noreferrer">
+            <img src={ally.src} alt={ally.alt} width={ally.width} />
+          </a>
+        ))
+      }
+    </div>
+
+    <!-- SOCIOS DE MEDIOS SILVER  -->
+    <div
+      class="mt-20 text-center text-3xl xl:text-4xl py-3 px-5 uppercase text-white w-fit mx-auto"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      {t("home.silver_media_partners")}
+    </div>
+    <div
+      class="mt-5 grid grid-cols-[repeat(auto-fit,_minmax(150px,_max-content))] justify-center *:grid *:place-items-center *:w-full *:h-full gap-6 *:bg-white *:rounded-lg *:shadow-lg *:p-2"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      {
+        media_3.map((ally, index) => (
+          <a href={ally.link} target="_blank" rel="noreferrer">
             <img src={ally.src} alt={ally.alt} width={ally.width} />
           </a>
         ))

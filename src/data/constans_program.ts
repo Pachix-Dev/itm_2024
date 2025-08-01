@@ -24,64 +24,25 @@ interface Program {
 }
 //Transformation Area
 const stage_1_day_1: Program[] = [
-    /*{
+    {
 
-        "title": "Siemens",
-        "title_en": "Siemens",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "13:00 hrs",
-        "duration": "35 min",
+        "duration": "45 min",
         "speakers": [
-            {
-                "id": "1",
-                "name": "Carlos Hernandez",
-                "position": "Director de Relaciones Públicas",
-                "position_en": "Director of Public Relations",
-                "company": "IGECO",
-                "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id.",
-                "bio_en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id.",
-                "image": "/img/speakers/benjamin_najar_jr.webp",
-                "email": "ejemplo@gmail.com",
-                "phone": "123456789",
-                "moderador": true
-            },
-            {
-                "id": "2",
-                "name": "Valentina González",
-                "position": "Directora de Asociaciones",
-                "position_en": "Association Director",
-                "company": "Telmex",
-                "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id.",
-                "bio_en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id.",
-                "image": "/img/speakers/abigail_carrillo.webp",
-                "email": "ejemplo@gmail.com",
-                "phone": "123456789",
-                "moderador": true
-            },
-            {
-                "id": "3",
-                "name": "Alexander Murphy",
-                "position": "CEO",
-                "position_en": "CEO",
-                "company": "AeroVironment",
-                "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id.",
-                "bio_en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat varius ex vel fermentum. Cras eu ex odio. Maecenas imperdiet dignissim magna quis sollicitudin. Etiam porttitor ligula ac neque egestas, nec blandit massa ullamcorper. Nam faucibus, felis at cursus gravida, leo tellus mollis sapien, at fringilla neque nibh a metus. Curabitur rhoncus orci ac ante efficitur facilisis. Etiam porttitor eros a malesuada pellentesque. Aenean nec semper ipsum. Donec pulvinar dapibus urna. Maecenas dignissim sollicitudin metus, quis convallis justo bibendum id.",
-                "image": "/img/speakers/raul_sanchez.webp",
-                "email": "ejemplo@gmail.com",
-                "phone": "123456789",
-                "moderador": true
-            }
         ]
-    },*/
+    },
     {
 
         "title": "Schneider",
         "title_en": "Schneider",
         "description": "",
         "description_en": "",
-        "time": "13:40 hrs",
-        "duration": "35 min",
+        "time": "13:50 hrs",
+        "duration": "45 min",
         "speakers": []
     },
     {
@@ -90,7 +51,7 @@ const stage_1_day_1: Program[] = [
         "title_en": "Telcel",
         "description": "",
         "description_en": "",
-        "time": "14:20 hrs",
+        "time": "14:40 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -99,7 +60,7 @@ const stage_1_day_1: Program[] = [
         "title_en": "",
         "description": "",
         "description_en": "",
-        "time": "15:00 hrs",
+        "time": "15:20 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -108,7 +69,7 @@ const stage_1_day_1: Program[] = [
         "title_en": "",
         "description": "",
         "description_en": "",
-        "time": "15:40 hrs",
+        "time": "16:00 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -117,16 +78,7 @@ const stage_1_day_1: Program[] = [
         "title_en": "",
         "description": "",
         "description_en": "",
-        "time": "16:20 hrs",
-        "duration": "35 min",
-        "speakers": []
-    },
-    {
-        "title": "Misumi",
-        "title_en": "Misumi",
-        "description": "",
-        "description_en": "",
-        "time": "17:00 hrs",
+        "time": "16:40 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -135,7 +87,16 @@ const stage_1_day_1: Program[] = [
         "title_en": "",
         "description": "",
         "description_en": "",
-        "time": "17:40 hrs",
+        "time": "17:20 hrs",
+        "duration": "45 min",
+        "speakers": []
+    },
+    {
+        "title": "",
+        "title_en": "",
+        "description": "",
+        "description_en": "",
+        "time": "16:10 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -173,7 +134,7 @@ const stage_1_day_2: Program[] = [
         "description": "",
         "description_en": "",
         "time": "12:00 hrs",
-        "duration": "35 min",
+        "duration": "45 min",
         "speakers": []
     },
     {
@@ -181,7 +142,7 @@ const stage_1_day_2: Program[] = [
         "title_en": "",
         "description": "",
         "description_en": "",
-        "time": "12:40 hrs",
+        "time": "12:50 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -190,8 +151,8 @@ const stage_1_day_2: Program[] = [
         "title_en": "Schneider",
         "description": "",
         "description_en": "",
-        "time": "13:20 hrs",
-        "duration": "35 min",   
+        "time": "13:30 hrs",
+        "duration": "45 min",   
         "speakers": []
     },
     {
@@ -199,7 +160,7 @@ const stage_1_day_2: Program[] = [
         "title_en": "",
         "description": "",
         "description_en": "",
-        "time": "14:00 hrs",
+        "time": "14:20 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -208,7 +169,7 @@ const stage_1_day_2: Program[] = [
         "title_en": "",
         "description": "",
         "description_en": "",
-        "time": "14:40 hrs",
+        "time": "15:00 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -217,7 +178,7 @@ const stage_1_day_2: Program[] = [
         "title_en": "",
         "description": "",
         "description_en": "",
-        "time": "15:20 hrs",
+        "time": "15:40 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -226,7 +187,7 @@ const stage_1_day_2: Program[] = [
         "title_en": "",
         "description": "",
         "description_en": "",
-        "time": "16:00 hrs",
+        "time": "16:20 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -235,7 +196,7 @@ const stage_1_day_2: Program[] = [
         "title_en": "",
         "description": "",
         "description_en": "",
-        "time": "16:40 hrs",
+        "time": "17:00 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -244,8 +205,8 @@ const stage_1_day_2: Program[] = [
     //     "title_en": "Misumi",
     //     "description": "",
     //     "description_en": "",
-    //     "time": "17:20 hrs",
-    //     "duration": "35 min",
+    //     "time": "17:40 hrs",
+    //     "duration": "45 min",
     //     "speakers": []
     // },
     {
@@ -253,8 +214,8 @@ const stage_1_day_2: Program[] = [
         "title_en": "",
         "description": "",
         "description_en": "",
-        "time": "18:00 hrs",
-        "duration": "35 min",
+        "time": "18:30 hrs",
+        "duration": "30 min",
         "speakers": []
     },
 ]
@@ -276,7 +237,7 @@ const stage_1_day_3: Program[] = [
         "description": "",
         "description_en": "",
         "time": "12:00 hrs",
-        "duration": "35 min",
+        "duration": "45 min",
         "speakers": []
     },
     // {
@@ -284,8 +245,8 @@ const stage_1_day_3: Program[] = [
     //     "title_en": "Misumi",
     //     "description": "",
     //     "description_en": "",
-    //     "time": "12:40 hrs",
-    //     "duration": "35 min",
+    //     "time": "12:50 hrs",
+    //     "duration": "45 min",
     //     "speakers": []
     // },
     {
@@ -293,7 +254,16 @@ const stage_1_day_3: Program[] = [
         "title_en": "Schneider",
         "description": "",
         "description_en": "",
-        "time": "13:20 hrs",
+        "time": "13:40 hrs",
+        "duration": "45 min",
+        "speakers": []
+    },
+    {
+        "title": "",
+        "title_en": "",
+        "description": "",
+        "description_en": "",
+        "time": "14:30 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -302,7 +272,7 @@ const stage_1_day_3: Program[] = [
         "title_en": "",
         "description": "",
         "description_en": "",
-        "time": "14:00 hrs",
+        "time": "15:10 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -311,7 +281,7 @@ const stage_1_day_3: Program[] = [
         "title_en": "",
         "description": "",
         "description_en": "",
-        "time": "14:40 hrs",
+        "time": "15:50 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -320,17 +290,8 @@ const stage_1_day_3: Program[] = [
         "title_en": "",
         "description": "",
         "description_en": "",
-        "time": "15:20 hrs",
-        "duration": "35 min",
-        "speakers": []
-    },
-    {
-        "title": "",
-        "title_en": "",
-        "description": "",
-        "description_en": "",
-        "time": "16:00 hrs",
-        "duration": "35 min",
+        "time": "16:30 hrs",
+        "duration": "30 min",
         "speakers": []
     },
 ]
@@ -388,8 +349,8 @@ const stage_2_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": "Cumbre de Desarrollo Industrial Sostenible: Sesión Geopolítica y resistencia de las cadenas de valor: Diversificación de los vínculos comerciales mundiales",
-        "title_en": "Sustainable Industrial Development Summit: Session Geopolitics and Value Chain Resilience: Diversifying Global Trade Linkages",
+        "title": "Cumbre de Desarrollo Industrial Sostenible: Panel: Geopolítica y resiliencia de las cadenas de valor: diversificando los vínculos comerciales globales",
+        "title_en": "Sustainable Industrial Development Summit: Panel: Geopolitics and Value Chain Resilience: Diversifying Global Trade Linkages",
         "description": "",
         "description_en": "",
         "time": "14:45 hrs",
@@ -426,8 +387,8 @@ const stage_2_day_1: Program[] = [
     {
         "title": "Cumbre de Desarrollo Industrial Sostenible: Sesión: IA y ecosistemas de innovación: Acelerar la competitividad industrial y las cadenas de valor sostenibles",
         "title_en": "Sustainable Industrial Development Summit: Session: AI and innovation ecosystems: Accelerating industrial competitiveness and sustainable value chains",
-        "description": "",
-        "description_en": "",
+        "description": "La inteligencia artificial (IA) está redefiniendo la competitividad industrial y los modelos de negocio sostenibles. Este panel reunirá a líderes del sector académico, empresarial y de emprendimiento tecnológico para explorar cómo los ecosistemas de innovación pueden potenciar la adopción de IA en la industria, fortalecer cadenas de valor y generar impactos sostenibles. Desde el caso de Heilbronn (Alemania) como hub global de innovación, hasta experiencias mexicanas en liderazgo académico, transformación empresarial y políticas públicas, este diálogo busca inspirar nuevas alianzas para acelerar la transición hacia un futuro industrial más inteligente, inclusivo y resiliente.", 
+        "description_en": "The AI revolution is redefining industrial competitiveness and sustainable business models. This panel will bring together leading academic, corporate and technology-driven leaders to explore how innovation ecosystems can accelerate the adoption of AI in the industry, strengthen value chains and generate sustainable impacts. From the case of Heilbronn (Germany) as a global hub for innovation, to Mexican experiences in academic leadership, transformational leadership and public policy, this dialogue seeks to inspire new alliances to accelerate the transition to a more intelligent, inclusive and resilient future.",
         "time": "16:00 hrs",
         "duration": "70 min",
         "speakers": [
@@ -490,7 +451,7 @@ const stage_2_day_1: Program[] = [
         "title_en": "Closing of the Sustainable Industrial Development Summit",
         "description": "",
         "description_en": "",
-        "time": "17:00 hrs",
+        "time": "17:10 hrs",
         "duration": "5 min",
         "speakers": []
     },
