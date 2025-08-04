@@ -1957,6 +1957,77 @@ export const directory = [
     facebook:
       "https://www.facebook.com/people/Rackart-del-Norte/100063620019653/",
   },
+  {
+    id: 84,
+    name: "Revista Kokó México",
+    logo: "/exhibitors/koko_logo.png",
+    width: 160,
+    stand_number: "N/A",
+    contact: "Ma Eunice Mendoza Barajas",
+    position: "",
+    phone: "+52 477 890 06 44",
+    email: "scprimeraplana@gmail.com",
+    webpage: "https://kokomexico.com/es/home",
+    address: "PEDREGAL DEL CARMEN, PASEO DE LAS LUCIERNAGAS 108",
+    cp: "37299",
+    city: "León",
+    state: "Guanajuato",
+    country: "México",
+    description:
+      "Kokó México es una revista bilingüe (japonés-español) que conecta a las comunidades empresariales de Japón y México, ofreciendo contenido editorial y visibilidad estratégica en plataformas impresas y digitales.",
+    description_en:
+      "Kokó México is a bilingual (Japanese-Spanish) magazine that connects business communities from Japan and Mexico, offering editorial content and strategic visibility through print and digital platforms.",
+    instagram: "https://instagram.com/revistakokomexico",
+    facebook: "https://www.facebook.com/kokoenmexico",
+    x: "https://x.com/kokoenmexico",
+  },
+  {
+    id: 85,
+    name: "Mexico Industry",
+    logo: "/exhibitors/mexico_industry.png",
+    width: 160,
+    stand_number: "N/A",
+    contact: "Daniel Cespedes",
+    position: "",
+    phone: "+52 557 911 4565",
+    email: "daniel.cespedes@mexicoindustry.com",
+    webpage: "https://mexicoindustry.com",
+    address: "Rio Alamo #1245, Col. Longoria, Reynosa, Tam",
+    cp: "37299",
+    city: "CDMX",
+    state: "CDMX",
+    country: "México",
+    description:
+      "Somos una completa plataforma de comunicación que cuenta con una publicación impresa y diferentes canales digitales que nos permiten ofrecer a nuestros lectores y usuarios, una amplia variedad de información sobre los principales sectores industriales del país y el mundo, el desarrollo de nuevas inversiones y contenido especializado para la toma de decisiones estratégicas.",
+    description_en:
+      "We are a comprehensive communications platform with a print publication and various digital channels that allow us to offer our readers and users a wide variety of information on the country's and global key industrial sectors, the development of new investments, and specialized content for strategic decision-making.",
+    linkedIn: "https://www.linkedin.com/company/24993055/",
+    facebook: "https://www.facebook.com/mexicoindustry/",
+    x: "https://x.com/mexicoindustry",
+    youtube: "https://www.youtube.com/channel/UCz4FL7S9gRGykfKwn9QyTbg",
+  },
+  {
+    id: 86,
+    name: "Manufactura Latam",
+    logo: "/exhibitors/manufacturalatam.png",
+    width: 160,
+    stand_number: "A28",
+    contact: "Joan Montoya",
+    position: "",
+    phone: "+57 320 391 8070",
+    email: "joan.montoya@axiomab2b.com",
+    webpage: "https://www.manufactura-latam.com/",
+    address: "2155 Coral Way Miami, FL 33145 EEUU",
+    cp: "110110",
+    city: "BOGOTA D.C.",
+    state: "CUNDINAMARCA",
+    country: "Colombia",
+    description:
+      "Manufactura Latam y Metalmecánica son medios B2B que conectan industrias de manufactura y metalmecánica en LATAM con proveedores, ofreciendo contenidos, eventos y soluciones para impulsar la innovación.",
+    description_en:
+      "Manufactura Latam and Metalmecánica are B2B media connecting manufacturing and metalworking industries in LATAM with suppliers, offering content, events, and solutions to drive innovation.",
+    linkedIn: "https://www.linkedin.com/showcase/manufacturalatamb2b",
+  },
 ].sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
 
 /* 
@@ -1967,4 +2038,6 @@ Made-in-China.com id 23 N/A
 NEODEN MEXICO ID 40 N/A
 El 42 tiene duplicado el stand_number
 DINKLE id 57 N/A
+Revista Kokó México id 84 N/A
+Mexico Industry id 85 N/A [QUEDA PENDIENTE]
 */
