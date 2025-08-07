@@ -294,6 +294,13 @@ const alliesStrategic = [
     alt: "cci-france",
     link: "https://www.franciamexico.com/",
   },
+  {
+    src: "/img/Amiti_PMS.webp",
+    width: 200,
+    height: 106,
+    alt: "Amiti",
+    link: "https://amiti.org.mx/",
+  },
 ];
 
 const media_1 = [
