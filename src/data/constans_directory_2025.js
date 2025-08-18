@@ -357,7 +357,7 @@ export const directory = [
   {
     id: 16,
     name: "Ideas Industry",
-    logo: "/exhibitors/ideasIndustry.png",
+    logo: "/img/logoideas.webp",
     width: 160,
     stand_number: "C28",
     contact: "Azucena Morales",
