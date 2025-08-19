@@ -79,6 +79,7 @@
     },
     "home": {
         "proximo": "Próximamente...",
+        "register_student": "Registro de Estudiantes",
         "days": "días",
         "hours": "horas",
         "minutes": "minutos",

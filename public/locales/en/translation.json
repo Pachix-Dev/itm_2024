@@ -80,6 +80,7 @@
     },
     "home": {
         "proximo": "Comming soon...",
+        "register_student": "Student Registration",
         "days": "days",
         "hours": "hours",
         "minutes": "minutes",
