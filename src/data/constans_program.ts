@@ -666,8 +666,8 @@ const stage_2_day_3: Program[] = [
             {
                 "id": "2",
                 "name": "Denisse Navarro",
-                "position": "Oficial Nacional y Representante Adjunta",
-                "position_en": " National Official and Adjunct Representative",
+                "position": "",
+                "position_en": " ",
                 "company": "UNIDO",
                 "bio": "Ingeniera ambiental, obtuvo su maestría en Ecología Industrial en la Universidad Tecnológica de Chalmers en Suecia y en la Universidad de Graz en Austria. Tiene experiencia como experta internacional en el campo del desarrollo industrial de la Organización de las Naciones Unidas para el Desarrollo Industrial (ONUDI); centrándose en la gestión y diseño de proyectos estratégicos para programas de cooperación internacional y desarrollo en América Latina y el Caribe. También ha trabajado para el sector privado en el desarrollo de capacidades para la formulación de políticas industriales basadas en la evidencia. En los últimos años ha apoyado la ejecución de proyectos de la ONUDI en la región de América del Sur para el desarrollo del sector privado. Actualmente la Sra. Navarro es Oficial Nacional de Programa y Representante Adjunta de la Oficina Regional de ONUDI en México.",
                 "bio_en": "Environmental engineer, obtained her master's degree in Industrial Ecology from the Chalmers University of Technology in Sweden and the University of Graz in Austria. She has experience as an international expert in the field of industrial development of the United Nations Industrial Development Organization (UNIDO); focusing on the management and design of strategic projects for international cooperation and development programs in Latin America and the Caribbean. She has also worked for the private sector in capacity development for evidence-based industrial policy formulation. In recent years, she has supported the implementation of UNIDO projects in the South American region for private sector development. Currently, Ms. Navarro is National Program Officer and Deputy Representative of the UNIDO Regional Office in Mexico.",
@@ -679,8 +679,8 @@ const stage_2_day_3: Program[] = [
             {
                 "id": "3",
                 "name": "Alejandro Rodriguez",
-                "position": "Sustainability Portfolio Leader Siemens México, Centro America y el Caribe",
-                "position_en": "Sustainability Portfolio Leader Siemens México, Centro America y el Caribe",
+                "position": "",
+                "position_en": "",
                 "company": "SIEMENS",
                 "bio": "Ing. Eléctrico Electrónico por la Facultad de Ingeniería de la Universidad Nacional Autónoma de México. Cuenta con más de 10 años de experiencia en Manejo de Energía y Sustentabilidad. Ha ocupado diversos roles en Latinoamerica con experiencia en proyectos de Eficiencia Energética, Generación Distribuida, Automatización y Digitaización. Hoy desempeña el rol de Líder de Portafolio de Sustentabilidad en la División de Digital Industries para Siemens Mexico y Centro América enfocado en soluciones de sostenibilidad a través de la digitalización.",
                 "bio_en": "Electrical and Electronic Engineer from the Faculty of Engineering of the National Autonomous University of Mexico. He has more than 10 years of experience in Energy Management and Sustainability. He has held various roles in Latin America with experience in Energy Efficiency, Distributed Generation, Automation, and Digitization projects. Today he serves as the Sustainability Portfolio Leader in the Digital Industries Division for Siemens Mexico and Central America focused on sustainability solutions through digitalization.",
@@ -692,8 +692,8 @@ const stage_2_day_3: Program[] = [
             {
                 "id": "4",
                 "name": "Miriam Macías Solis ",
-                "position": "Directora para México y América Latina del Centro Mexicano de Ecología Industrial",
-                "position_en": "Director for Mexico and Latin America of the Mexican Center for Industrial Ecology",
+                "position": "",
+                "position_en": "",
                 "company": "CMEI",
                 "bio": "Especialista senior con 20 años de experiencia en cambio climático, sostenibilidad corporativa, economía circular, transición energética y descarbonización. Ha trabajado en mitigación y cuantificación de Gases de Efecto Invernadero (GEI), sistemas MRV y M&E, energías renovables, eficiencia energética, estrategias LT-LEDS, bioseguridad, gestión de riesgos, residuos, género y producción agroalimentaria sostenible. Académica en la UNAM y el Tecnológico de Monterrey, ha colaborado con diversas instituciones nacionales e internacionales del sector público y privado, como SENER, SEMARNAT, SHCP, FIRA, INECC, EPA, GIZ, FAO, BID, Banco Mundial, CONCAMIN y COPARMEX. Su experiencia se centra en el desarrollo e implementación de políticas y proyectos que promueven un desarrollo sostenible y bajas emisiones de carbono, integrando enfoques técnicos, ambientales y sociales.",
                 "bio_en": "Senior specialist with 20 years of experience in climate change, corporate sustainability, circular economy, energy transition and decarbonization. She has worked on mitigation and quantification of Greenhouse Gases (GHG), MRV and M&E systems, renewable energies, energy efficiency, LT-LEDS strategies, biosecurity, risk management",
