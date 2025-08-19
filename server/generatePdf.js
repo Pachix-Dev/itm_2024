@@ -293,7 +293,7 @@ async function generatePDFInvoice(paypal_id_transaction, body, uuid) {
          align: 'center'
      });
  
-     body.typeRegister === 'VISITANTE' ? doc.image('img/footer2_itm_2025_final.png', 307, 328, { width: 305 }) : doc.image('img/gafete_prensa_2025_footer_2.png', 307, 328, { width: 305 }); 
+     body.typeRegister === 'VISITANTE' ? doc.image('img/footer2_itm_2025_final_v.png', 307, 328, { width: 305 }) : doc.image('img/gafete_prensa_2025_footer_2_v.png', 307, 328, { width: 305 }); 
               
      doc.save();
      // Rotate and draw some text
@@ -487,7 +487,7 @@ async function generatePDF_freePass( body, uuid) {
          align: 'center'
      });
  
-     body.typeRegister === 'VISITANTE' ? doc.image('img/footer2_itm_2025_final.png', 307, 328, { width: 305 }) : doc.image('img/gafete_prensa_2025_footer_2.png', 307, 328, { width: 305 });
+     body.typeRegister === 'VISITANTE' ? doc.image('img/footer2_itm_2025_final_v.png', 307, 328, { width: 305 }) : doc.image('img/gafete_prensa_2025_footer_2_v.png', 307, 328, { width: 305 });
               
      doc.save();
      // Rotate and draw some text
@@ -573,7 +573,7 @@ async function generatePDF_freePass_student( body, insertId, uuid) {
          .stroke();
      doc.restore();
 
-    doc.image('img/header_itm_2025_final.png', 0, 0, { width: 305 });
+    doc.image('img/header_itm_students.png', 0, 0, { width: 305 });
      // aqui iria el QR con info del usuario    
      doc.image(qrMainUser, 90, 120, { width: 120 });
      
@@ -664,12 +664,12 @@ async function generatePDF_freePass_student( body, insertId, uuid) {
          align: 'center'
      })
      .moveDown(1)     
-     .text('Este acceso solo es valido para el dia/This access is only valid for the day', 330, 250, {
+     .text('Este acceso solo es valido para el dia 13 de noviembre/This access is only valid for the day November 13th', 330, 250, {
          width: 250,    
          align: 'center'
      })
      
-     .text('Jueves / Thursday  13:00 am – 17:00 hrs', 330, 270, {
+     .text('Jueves / Thursday  15:00 hrs – 17:00 hrs', 330, 270, {
          width: 250,    
          align: 'center'
      })
@@ -679,7 +679,7 @@ async function generatePDF_freePass_student( body, insertId, uuid) {
          align: 'center'
      });
  
-     doc.image('img/footer2_itm_2025_final.png', 307, 328, { width: 305 });
+     doc.image('img/footer2_itm_2025_final_v.png', 307, 328, { width: 305 });
               
      doc.save();
      // Rotate and draw some text
