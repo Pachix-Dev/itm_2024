@@ -26,8 +26,8 @@ interface Program {
 const stage_1_day_1: Program[] = [
     {
 
-        "title": "",
-        "title_en": "",
+        "title": "Siemens",
+        "title_en": "Siemens",
         "description": "",
         "description_en": "",
         "time": "13:00 hrs",
@@ -56,12 +56,12 @@ const stage_1_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Misumi",
+        "title_en": "Misumi",
         "description": "",
         "description_en": "",
         "time": "15:20 hrs",
-        "duration": "35 min",
+        "duration": "45 min",
         "speakers": []
     },
     {
@@ -129,8 +129,8 @@ const stage_1_day_2: Program[] = [
         ]
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Siemens",
+        "title_en": "Siemens",
         "description": "",
         "description_en": "",
         "time": "12:00 hrs",
@@ -200,15 +200,15 @@ const stage_1_day_2: Program[] = [
         "duration": "35 min",
         "speakers": []
     },
-    // {
-    //     "title": "Misumi",
-    //     "title_en": "Misumi",
-    //     "description": "",
-    //     "description_en": "",
-    //     "time": "17:40 hrs",
-    //     "duration": "45 min",
-    //     "speakers": []
-    // },
+    {
+        "title": "Misumi",
+         "title_en": "Misumi",
+        "description": "",
+         "description_en": "",
+         "time": "17:40 hrs",
+         "duration": "45 min",
+        "speakers": []
+    },
     {
         "title": "",
         "title_en": "",
@@ -232,23 +232,23 @@ const stage_1_day_3: Program[] = [
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Siemens",
+        "title_en": "Siemens",
         "description": "",
         "description_en": "",
         "time": "12:00 hrs",
         "duration": "45 min",
         "speakers": []
     },
-    // {
-    //     "title": "Misumi",
-    //     "title_en": "Misumi",
-    //     "description": "",
-    //     "description_en": "",
-    //     "time": "12:50 hrs",
-    //     "duration": "45 min",
-    //     "speakers": []
-    // },
+    {
+        "title": "Misumi",
+        "title_en": "Misumi",
+        "description": "",
+        "description_en": "",
+         "time": "12:50 hrs",
+         "duration": "45 min",
+         "speakers": []
+    },
     {
         "title": "Schneider",
         "title_en": "Schneider",
@@ -333,8 +333,8 @@ const stage_2_day_1: Program[] = [
     {
         "title": "GIZ México",
         "title_en": "GIZ Mexico",
-        "description": "Panel de Alto Nivel",
-        "description_en": "High Level Panel",
+        "description": "",
+        "description_en": "",
         "time": "13:00 hrs",
         "duration": "60 min",
         "speakers": []
@@ -371,7 +371,7 @@ const stage_2_day_1: Program[] = [
             },
             {
                 "id": "2",
-                "name": "Hans Blomeier",
+                "name": "Hans Blomeier - Moderador",
                 "position": "Presidente en México",
                 "position_en": "President in Mexico",
                 "company": "Konrad Adenauer Foundation",
@@ -385,7 +385,7 @@ const stage_2_day_1: Program[] = [
         ]
     },
     {
-        "title": "Cumbre de Desarrollo Industrial Sostenible: Sesión: IA y ecosistemas de innovación: Acelerar la competitividad industrial y las cadenas de valor sostenibles",
+        "title": "Cumbre de Desarrollo Industrial Sostenible: Sesión: IA y ecosistemas de innovación: Acelerando la competitividad industrial y las cadenas de valor sostenibles",
         "title_en": "Sustainable Industrial Development Summit: Session: AI and innovation ecosystems: Accelerating industrial competitiveness and sustainable value chains",
         "description": "La inteligencia artificial (IA) está redefiniendo la competitividad industrial y los modelos de negocio sostenibles. Este panel reunirá a líderes del sector académico, empresarial y de emprendimiento tecnológico para explorar cómo los ecosistemas de innovación pueden potenciar la adopción de IA en la industria, fortalecer cadenas de valor y generar impactos sostenibles. Desde el caso de Heilbronn (Alemania) como hub global de innovación, hasta experiencias mexicanas en liderazgo académico, transformación empresarial y políticas públicas, este diálogo busca inspirar nuevas alianzas para acelerar la transición hacia un futuro industrial más inteligente, inclusivo y resiliente.", 
         "description_en": "The AI revolution is redefining industrial competitiveness and sustainable business models. This panel will bring together leading academic, corporate and technology-driven leaders to explore how innovation ecosystems can accelerate the adoption of AI in the industry, strengthen value chains and generate sustainable impacts. From the case of Heilbronn (Germany) as a global hub for innovation, to Mexican experiences in academic leadership, transformational leadership and public policy, this dialogue seeks to inspire new alliances to accelerate the transition to a more intelligent, inclusive and resilient future.",
@@ -414,8 +414,8 @@ const stage_2_day_1: Program[] = [
                 "bio": "Oliver Hanisch es una figura prominente en el ecosistema de startups alemán, reconocido principalmente por su papel como CEO de Campus Founders gGmbH.<br><br>Hanisch es cofundador y director ejecutivo de Campus Founders, una organización dedicada a apoyar y fomentar el espíritu empresarial. Su experiencia se centra en liderazgo, recaudación de fondos, estrategia, ventas y relaciones con inversores. <br><br>Antes de Campus Founders, fundó Bed|n|Build, lo que demuestra su historial como emprendedor. Participa activamente como mentor en German Accelerator, brindando orientación a nuevas empresas. Es considerado un experto en startups y ecosistemas de startups, y es un orador solicitado en eventos como Heilbronn Slush'D.<br><br>Oliver Hanisch es un líder experimentado y un defensor del espíritu empresarial, con un historial comprobado de apoyo a las nuevas empresas y el fomento de la innovación.",
                 "bio_en": "Oliver Hanisch is a prominent figure in the German startup ecosystem, best known for his role as CEO of Campus Founders gGmbH. <br><br>Hanisch is co-founder and executive director of Campus Founders, an organization dedicated to supporting and fostering entrepreneurship. His expertise focuses on leadership, fundraising, strategy, sales and investor relations. <br><br>Prior to Campus Founders, he founded Bed|n|Build, proving his track record as an entrepreneur. Actively participates as a mentor in the German Accelerator, providing guidance to start-ups. He is considered an expert on startups and startup ecosystems, and is a sought-after speaker at events such as Heilbronn Slush’D.<br><br>Oliver Hanisch is an experienced leader and advocate of entrepreneurship, With a proven track record of supporting new businesses and fostering innovation.                ",
                 "image": "/img/speakers/Oliver_Hanisch.jpg",
-                "email": "oliver@campusfounders.de",
-                "phone": "+49 (173) 355 3013",
+                "email": "",
+                "phone": "",
                 "moderador": false
             },
             {
@@ -427,8 +427,8 @@ const stage_2_day_1: Program[] = [
                 "bio": "Ingeniera Industrial, egresada de la Universidad de Guadalajara. Maestra en Negocios por la Universidad de Offenburg, Alemania. Design Thinker certificada por el Centro de Estudios de Innovación de Monterrey y la World Design Organization. Es fundadora y directora de una Oficina de Transferencia Tecnológica y un espacio dedicado al impulso de la innovación, desarrollo tecnológico y emprendimiento en la ciudad de Uruapan.<br><br> Cuenta con más de quince años de experiencia profesional en la gestión de proyectos de innovación y desarrollo tecnológico con enfoque de triple hélice. Actualmente es presidenta de la Comisión de Innovación y Desarrollo del Consejo Cordinador Empresarial (CCE).",
                 "bio_en": "Industrial Engineer, graduated from the University of Guadalajara. Master in Business at the University of Offenburg, Germany. Design Thinker certified by the Monterrey Center for Innovation Studies and the World Design Organization. She is the founder and director of an Office for Technology Transfer and a space dedicated to the promotion of innovation, Technological development and entrepreneurship in the city of Uruapan.<br><br> He has more than fifteen years of professional experience in managing innovation projects and technological development with a triple helix approach. Currently chair the Innovation and Development Commission of the Business Coordinating Council (CCE).",
                 "image": "/img/speakers/Nanghelly_Silva_Anzaldúa_CCE.jpg",
-                "email": "nanghelly@gmail.com",
-                "phone": "+52 452 105 7336",
+                "email": "",
+                "phone": "",
                 "moderador": false
             },
             {
@@ -440,8 +440,8 @@ const stage_2_day_1: Program[] = [
                 "bio": "René estudió Administración de Empresas en Alemania y obtuvo su MBA de la universidad<br><br>TiasNimbas Business School, Los Países Bajos. Luego ganó valiosa experiencia internacional trabajando para Continental AG en Alemania, Bélgica, Inglaterra y España.<br><br>En 2004 se incorporó a Interlub Group, el negocio familiar iniciado por su padre en 1984. En 2005 trabajó en la expansión de una de las unidades de negocio en Brasil y en 2006 asumió el cargo de Director General de la compañía. Desde haber tomado el liderazgo de la compañía en 2006, la compañía obtuvo en tres ocasiones honores presidenciales por sus contribuciones valiosas en las ciencias (Premio Nacional de Tecnología e Innovación 2019), por la particular forma de crear valor para sus clientes (Premio Nacional de Calidad 2017) y por las exportaciones de México (Premio Nacional de Exportación 2016).<br><br>René además es presidente del Consejo Directivo del Instituto para el Fomento a la Calidad y forma parte del Consejo del Colegio Alemán Guadalajara, del Consejo de Fundación Marisa y del Consejo de Mentores Endeavor, y también fue presidente del Capítulo de Guadalajara de Enlace+ (Tec de Monterrey).",
                 "bio_en": "René studied Business Administration in Germany and earned his MBA from the university<br><br>TiasNimbas Business School, The Netherlands. He then gained valuable international experience working for Continental AG in Germany, Belgium, England and Spain.<br><br>In 2004 he joined Interlub Group, the family business started by his father in 1984. In 2005 he worked on the expansion of one of the business units in Brazil and in 2006 took over as CEO of the company. Since taking the company’s leadership in 2006, the company has won three presidential honors for its valuable contributions to science (National Technology and Innovation Award 2019), for particular way of creating value for its customers (National Quality Award 2017) and for the exports of Mexico (National Export Award 2016). <br><br>René is also Chairman of the Board of Directors of the Institute for the Promotion of Quality and is a member of the Board of the German College Guadalajara, the Board of the Marisa Foundation and the Board of Mentors Endeavor, and was also president of the Guadalajara Chapter of Link+  (Monterrey Technology).",
                 "image": "/img/speakers/René_Freudenberg.jpg",
-                "email": "rene.freudenberg@interlub.com",
-                "phone": "+52 33 1043 1573",
+                "email": "",
+                "phone": "",
                 "moderador": false
             },
         ]
@@ -494,15 +494,15 @@ const stage_2_day_2: Program[] = [
         "duration": "45 min",
         "speakers": []
     },
-    {
-        "title": "",
-        "title_en": "",
+    /*{
+        "title": "Siemens",
+        "title_en": "Siemens",
         "description": "",
         "description_en": "",
         "time": "13:00 hrs",
         "duration": "45 min",
         "speakers": []
-    },
+    },*/
     {
         "title": "",
         "title_en": "",
@@ -512,7 +512,7 @@ const stage_2_day_2: Program[] = [
         "duration": "60 min",
         "speakers": []
     },
-    /*{
+    {
         "title": "Siemens",
         "title_en": "Siemens",
         "description": "",
@@ -520,7 +520,7 @@ const stage_2_day_2: Program[] = [
         "time": "15:00 hrs",
         "duration": "45 min",
         "speakers": []
-    },*/
+    },
     {
         "title": "ITMujeres",
         "title_en": "ITMujeres",
@@ -598,7 +598,7 @@ const stage_2_day_3: Program[] = [
         "speakers": [
             {
                 "id": "1",
-                "name": "Hugo Isaak",
+                "name": "Hugo Isaak - Moderador",
                 "position": "Miembro del Grupo Global de Expertos en Smart Cities",
                 "position_en": "Member of the Global Experts Group on Smart Cities",
                 "company": "ONU-Hábitat",
@@ -652,14 +652,14 @@ const stage_2_day_3: Program[] = [
         "speakers": [
             {
                 "id": "1",
-                "name": "Andreas Müller",
+                "name": "Andreas Müller - Moderador",
                 "position": "",
                 "position_en": "",
                 "company": "CAMEXA",
                 "bio": "Estudió Idiomas, Economía y Cultura Hispanoamericana en las universidades de Passau (Alemania) y Concepción (Chile). Vive en México desde 2003, donde trabajó en la Embajada de Austria y luego en la Delegación de la UE, dando seguimiento al TLCUEM. Desde 2011 es Subdirector de CAMEXA. Ha asesorado al CCE, SEP, COPARMEX y CONOCER en la implementación y expansión de la educación dual. Fue presidente del Comité de Energías Renovables del CONOCER y ha impulsado estándares en fotovoltaica, electromovilidad y desarrollo sostenible. Es asesor estratégico de la DIHK para la formación dual y desde 2022 vicepresidente de la Comisión México 4.0 de CONCAMIN. Desde 2024 lidera el proyecto IntegralVET (BMBF) y en 2025 fue nombrado presidente del Consejo Consultivo de la Alliance for Integrity.",
                 "bio_en": "Studied Languages, Economics and Hispanic American Culture at the universities of Passau (Germany) and Concepción (Chile). He has lived in Mexico since 2003, where he worked at the Austrian Embassy and then at the EU Delegation, following up on the TLCUEM. Since 2011 he has been Deputy Director of CAMEXA. He has advised the CCE, SEP, COPARMEX and CONOCER on the implementation and expansion of dual education. He was president of the Renewable Energies Committee of CONOCER and has promoted standards in photovoltaics, electromobility and sustainable development. He is a strategic advisor to the DIHK for dual training and since 2022 has been vice president of the Mexico 4.0 Commission of CONCAMIN. Since 2024 he has led the IntegralVET (BMBF) project and in 2025 was appointed president of the Advisory Council of the Alliance for Integrity.",
                 "image": "/img/speakers/Andreas_Muller.jpg",
-                "email": "a.mueller@ahkmexiko.com.mx",
+                "email": "",
                 "phone": "",
                 "moderador": true
             },
@@ -672,33 +672,33 @@ const stage_2_day_3: Program[] = [
                 "bio": "Ingeniera ambiental, obtuvo su maestría en Ecología Industrial en la Universidad Tecnológica de Chalmers en Suecia y en la Universidad de Graz en Austria. Tiene experiencia como experta internacional en el campo del desarrollo industrial de la Organización de las Naciones Unidas para el Desarrollo Industrial (ONUDI); centrándose en la gestión y diseño de proyectos estratégicos para programas de cooperación internacional y desarrollo en América Latina y el Caribe. También ha trabajado para el sector privado en el desarrollo de capacidades para la formulación de políticas industriales basadas en la evidencia. En los últimos años ha apoyado la ejecución de proyectos de la ONUDI en la región de América del Sur para el desarrollo del sector privado. Actualmente la Sra. Navarro es Oficial Nacional de Programa y Representante Adjunta de la Oficina Regional de ONUDI en México.",
                 "bio_en": "Environmental engineer, obtained her master's degree in Industrial Ecology from the Chalmers University of Technology in Sweden and the University of Graz in Austria. She has experience as an international expert in the field of industrial development of the United Nations Industrial Development Organization (UNIDO); focusing on the management and design of strategic projects for international cooperation and development programs in Latin America and the Caribbean. She has also worked for the private sector in capacity development for evidence-based industrial policy formulation. In recent years, she has supported the implementation of UNIDO projects in the South American region for private sector development. Currently, Ms. Navarro is National Program Officer and Deputy Representative of the UNIDO Regional Office in Mexico.",
                 "image": "/img/speakers/Denisse_Navarro_UNIDO.jpeg",
-                "email": "D.NAVARRO-RODRIGUEZ@UNIDO.ORG",
+                "email": "",
                 "phone": "",
                 "moderador": false
             },
             {
                 "id": "3",
-                "name": "Alejandro Rodriguez",
+                "name": "Alejandro Rodríguez",
                 "position": "",
                 "position_en": "",
                 "company": "SIEMENS",
                 "bio": "Ing. Eléctrico Electrónico por la Facultad de Ingeniería de la Universidad Nacional Autónoma de México. Cuenta con más de 10 años de experiencia en Manejo de Energía y Sustentabilidad. Ha ocupado diversos roles en Latinoamerica con experiencia en proyectos de Eficiencia Energética, Generación Distribuida, Automatización y Digitaización. Hoy desempeña el rol de Líder de Portafolio de Sustentabilidad en la División de Digital Industries para Siemens Mexico y Centro América enfocado en soluciones de sostenibilidad a través de la digitalización.",
                 "bio_en": "Electrical and Electronic Engineer from the Faculty of Engineering of the National Autonomous University of Mexico. He has more than 10 years of experience in Energy Management and Sustainability. He has held various roles in Latin America with experience in Energy Efficiency, Distributed Generation, Automation, and Digitization projects. Today he serves as the Sustainability Portfolio Leader in the Digital Industries Division for Siemens Mexico and Central America focused on sustainability solutions through digitalization.",
                 "image": "/img/speakers/Alejandro_Rodriguez.jpg",
-                "email": "alejandro.rodriguez@siemens.com",
+                "email": "",
                 "phone": "",
                 "moderador": false
             },
             {
                 "id": "4",
-                "name": "Miriam Macías Solis ",
+                "name": "Miriam Macías",
                 "position": "",
                 "position_en": "",
                 "company": "CMEI",
                 "bio": "Especialista senior con 20 años de experiencia en cambio climático, sostenibilidad corporativa, economía circular, transición energética y descarbonización. Ha trabajado en mitigación y cuantificación de Gases de Efecto Invernadero (GEI), sistemas MRV y M&E, energías renovables, eficiencia energética, estrategias LT-LEDS, bioseguridad, gestión de riesgos, residuos, género y producción agroalimentaria sostenible. Académica en la UNAM y el Tecnológico de Monterrey, ha colaborado con diversas instituciones nacionales e internacionales del sector público y privado, como SENER, SEMARNAT, SHCP, FIRA, INECC, EPA, GIZ, FAO, BID, Banco Mundial, CONCAMIN y COPARMEX. Su experiencia se centra en el desarrollo e implementación de políticas y proyectos que promueven un desarrollo sostenible y bajas emisiones de carbono, integrando enfoques técnicos, ambientales y sociales.",
                 "bio_en": "Senior specialist with 20 years of experience in climate change, corporate sustainability, circular economy, energy transition and decarbonization. She has worked on mitigation and quantification of Greenhouse Gases (GHG), MRV and M&E systems, renewable energies, energy efficiency, LT-LEDS strategies, biosecurity, risk management",
                 "image": "/img/speakers/Miriam_Macías.jpeg",
-                "email": "m.macias@cmei.org.mx",
+                "email": "",
                 "phone": "",
                 "moderador": false
             },
