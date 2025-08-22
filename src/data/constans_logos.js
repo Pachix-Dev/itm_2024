@@ -301,6 +301,14 @@ const alliesStrategic = [
     alt: "Amiti",
     link: "https://amiti.org.mx/",
   },
+  {
+    src: "/img/Logo_EGB.webp",
+    width: 200,
+    height: 106,
+    alt: "Amiti",
+    link: "https://www.elgranbajionetwork.com/",
+  },
+  
 ];
 
 const media_1 = [
