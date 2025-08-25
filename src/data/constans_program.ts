@@ -56,8 +56,8 @@ const stage_1_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": "Misumi",
-        "title_en": "Misumi",
+        "title": "",
+        "title_en": "",
         "description": "",
         "description_en": "",
         "time": "15:20 hrs",
@@ -83,8 +83,8 @@ const stage_1_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Misumi",
+        "title_en": "Misumi",
         "description": "",
         "description_en": "",
         "time": "17:20 hrs",
@@ -92,11 +92,11 @@ const stage_1_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
-        "description": "",
-        "description_en": "",
-        "time": "16:10 hrs",
+        "title": "Presentación de la guía de aplicación – Potenciando la innovación 5G: Casos de uso y recomendaciones de aplicación industrial en México Transformation",
+        "title_en": "Presentation of the application guide - Empowering 5G innovation: Use cases and recommendations for industrial application in Mexico Transformation",
+        "description": "Presentar recomendaciones y buenas prácticas identificadas en la nueva guía 5G sobre aplicación industrial y generar un diálogo abierto entre representantes del sector público, privado, académico y sociedad civil sobre la aplicación de 5G en sectores industriales. Para hacer un llamado a la acción a distintos sectores del ecosistema digital y fomentar una implementación efectiva y colaborativa de esta tecnología. ",
+        "description_en": "Present recommendations and best practices identified in the new 5G guide on industrial application and generate an open dialogue between representatives of the public, private, academic and civil society sectors on the application of 5G in industrial sectors. To call for action to different sectors of the digital ecosystem and promote effective and collaborative implementation of this technology.",
+        "time": "18:10 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -183,10 +183,10 @@ const stage_1_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
-        "description": "",
-        "description_en": "",
+        "title": "OPC UA: Clave para la Competitividad y la Sostenibilidad Industrial en México",
+        "title_en": "OPC UA: Key to Competitiveness and Industrial Sustainability in Mexico",
+        "description": "Explorar el potencial de OPC UA (Open Platform Communications Unified Architecture) como estándar clave para la interoperabilidad en la Industria 4.0, analizando cómo su adopción puede mejorar la competitividad de las empresas mexicanas, optimizar el uso de recursos y facilitar la transición hacia procesos industriales más sostenibles.",
+        "description_en": "Explore the potential of OPC UA (Open Platform Communications Unified Architecture) as a key standard for interoperability in Industry 4.0, analyzing how its adoption can improve the competitiveness of Mexican companies, optimize resource use, and facilitate the transition to more sustainable industrial processes.",
         "time": "16:20 hrs",
         "duration": "35 min",
         "speakers": []
