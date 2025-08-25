@@ -302,7 +302,7 @@ const alliesStrategic = [
     link: "https://amiti.org.mx/",
   },
   {
-    src: "/img/Logo_EGB.webp",
+    src: "/img/Logo_EGBv2.webp",
     width: 200,
     height: 106,
     alt: "Amiti",
