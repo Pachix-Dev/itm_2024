@@ -307,7 +307,7 @@ const stage_2_day_1: Program[] = [
         "duration": "60 min",
         "speakers": []
     },
-    /*{
+    {
         "title": " Siemens",
         "title_en": " Siemens",
         "description": "",
@@ -329,12 +329,12 @@ const stage_2_day_1: Program[] = [
                 "moderador": false
             },
         ]
-    },*/
+    },
     {
         "title": "GIZ México",
         "title_en": "GIZ Mexico",
-        "description": "",
-        "description_en": "",
+        "description": "Abrir una conversación estratégica sobre cómo la convergencia entre innovación tecnológica, sostenibilidad e inteligencia artificial generativa está redefiniendo el futuro industrial y el impacto que tiene en los diferentes sectores (público, privado, gobiernos locales y cooperación internacional), y cómo pueden contribuir al desarrollo económico sostenible de economías como México y Alemania.",
+        "description_en": "Open a strategic conversation about how the convergence of technological innovation, sustainability, and generative artificial intelligence is redefining the industrial future and its impact on different sectors (public, private, local governments, and international cooperation), and how they can contribute to the sustainable economic development of economies like Mexico and Germany.",
         "time": "13:00 hrs",
         "duration": "60 min",
         "speakers": []
@@ -391,20 +391,7 @@ const stage_2_day_1: Program[] = [
         "description_en": "The AI revolution is redefining industrial competitiveness and sustainable business models. This panel will bring together leading academic, corporate and technology-driven leaders to explore how innovation ecosystems can accelerate the adoption of AI in the industry, strengthen value chains and generate sustainable impacts. From the case of Heilbronn (Germany) as a global hub for innovation, to Mexican experiences in academic leadership, transformational leadership and public policy, this dialogue seeks to inspire new alliances to accelerate the transition to a more intelligent, inclusive and resilient future.",
         "time": "16:00 hrs",
         "duration": "70 min",
-        "speakers": [
-            {
-                "id": "1",
-                "name": "Germán Bonilla Bermúdez",
-                "position": "",
-                "position_en": "",
-                "company": "Asociación para el Desarrollo Industrial Sostenible Alianza Alemania-Pacífico (PAGSID)-un proyecto de cooperación de la Federación de Industrias Alemanas (BDI)",
-                "bio": "Maestro en Ciencias en Ingeniería de Sistemas de Producción por la RWTH Aachen University (Alemania) e Ingeniero Mecánico Administrador por el Tecnológico de Monterrey. Ha sido profesor en el Tecnológico de Monterrey y consultor para empresas extranjeras en proyectos de inversión en México y para PyMEs en proyectos de planeación estratégica, innovación, gestión de la tecnología e industria 4.0.<br><br> Cuenta con más de 10 años de experiencia en proyectos de cooperación internacional con enfoque en desarrollo sostenible, innovación y educación, siendo su área de especialización la cooperación económica y desarrollo entre Alemania y la Alianza del Pacífico. Actualmente es Coordinador del proyecto Asociación para el Desarrollo Industrial Sostenible Alemania - Alianza del Pacífico (PAGSID) de la Confederación de la Industria Alemana (BDI).",
-                "bio_en": "Master of Science in Production Systems Engineering from the RWTH Aachen University (Germany) and Managing Mechanical Engineer from the Tecnológico de Monterrey. He has been a professor at the Tecnológico de Monterrey and consultant for foreign companies in investment projects in Mexico and for SMEs in strategic planning, innovation, technology management and industry 4.0 projects. <br><br>He has more than 10 years of experience in international cooperation projects focusing on sustainable development, innovation and education, his area of expertise being economic and development cooperation between Germany and the Pacific Alliance. Currently project coordinator of the Association for Sustainable Industrial Development Germany - Pacific Alliance (PAGSID) of the Confederation of German Industry (BDI).", 
-                "image": "/img/speakers/german_bonilla_bermudez.webp",
-                "email": "",
-                "phone": "",
-                "moderador": true
-            },
+        "speakers": [            
             {
                 "id": "2",
                 "name": "Oliver Hanisch ",
@@ -444,6 +431,19 @@ const stage_2_day_1: Program[] = [
                 "phone": "",
                 "moderador": false
             },
+            {
+                "id": "1",
+                "name": "Germán Bonilla Bermúdez - Moderador",
+                "position": "Coordinador",
+                "position_en": "Coordinator",
+                "company": "Asociación para el Desarrollo Industrial Sostenible Alianza Alemania-Pacífico (PAGSID)-un proyecto de cooperación de la Federación de Industrias Alemanas (BDI)",
+                "bio": "Maestro en Ciencias en Ingeniería de Sistemas de Producción por la RWTH Aachen University (Alemania) e Ingeniero Mecánico Administrador por el Tecnológico de Monterrey. Ha sido profesor en el Tecnológico de Monterrey y consultor para empresas extranjeras en proyectos de inversión en México y para PyMEs en proyectos de planeación estratégica, innovación, gestión de la tecnología e industria 4.0.<br><br> Cuenta con más de 10 años de experiencia en proyectos de cooperación internacional con enfoque en desarrollo sostenible, innovación y educación, siendo su área de especialización la cooperación económica y desarrollo entre Alemania y la Alianza del Pacífico. Actualmente es Coordinador del proyecto Asociación para el Desarrollo Industrial Sostenible Alemania - Alianza del Pacífico (PAGSID) de la Confederación de la Industria Alemana (BDI).",
+                "bio_en": "Master of Science in Production Systems Engineering from the RWTH Aachen University (Germany) and Managing Mechanical Engineer from the Tecnológico de Monterrey. He has been a professor at the Tecnológico de Monterrey and consultant for foreign companies in investment projects in Mexico and for SMEs in strategic planning, innovation, technology management and industry 4.0 projects. <br><br>He has more than 10 years of experience in international cooperation projects focusing on sustainable development, innovation and education, his area of expertise being economic and development cooperation between Germany and the Pacific Alliance. Currently project coordinator of the Association for Sustainable Industrial Development Germany - Pacific Alliance (PAGSID) of the Confederation of German Industry (BDI).", 
+                "image": "/img/speakers/german_bonilla_bermudez.webp",
+                "email": "",
+                "phone": "",
+                "moderador": true
+            },
         ]
     },
     {
@@ -456,13 +456,27 @@ const stage_2_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
-        "description": "",
-        "description_en": "",
+        "title": "Cadenas que Conectan el Futuro: Fortaleciendo la Movilidad Regional ",
+        "title_en": "Chains that Connect the Future: Strengthening Regional Mobility",
+        "description": "En un contexto global de disrupciones y oportunidades como el nearshoring, Norteamérica enfrenta el reto de consolidarse como un bloque competitivo en movilidad. Esta conferencia aborda cómo el desarrollo de proveedores, la integración efectiva de la cadena de suministro y la colaboración trinacional son claves para fortalecer la autonomía industrial. A través de iniciativas como el PDP INA–IFC, México se posiciona como motor del cambio, impulsando innovación, talento y sostenibilidad desde la base productiva. La Industria Nacional de Autopartes propone una visión regional donde los proveedores locales son protagonistas del futuro automotriz.",
+        "description_en": "In a global context shaped by disruption and nearshoring opportunities, North America must strengthen its position as a competitive mobility hub. This keynote explores how supplier development, integrated value chains, and trinational collaboration are key to achieving industrial resilience. Through initiatives like the INA–IFC Supplier Development Program, Mexico is emerging as a driver of innovation, sustainability, and talent. Representing over 700 manufacturing plants, INA presents a regional vision where local suppliers are not just part of the value chain—they are central to shaping the future of the North American automotive industry.",
         "time": "17:30 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Francisco González",
+                "position": "Presidente Ejecutivo",
+                "position_en": "Executive President",
+                "company": "INA",
+                "bio": "Francisco N. González Díaz es Presidente Ejecutivo de la Industria Nacional de Autopartes, A.C., donde representa a más de 700 plantas manufactureras en México. Tiene más de 20 años de experiencia promoviendo a México y su industria. Ha sido Director General de Bancomext y ProMéxico, así como Embajador de México en Alemania. En el ámbito privado, participa como empresario en los sectores salud, comercio exterior, turismo y finanzas. Es licenciado en Administración de Empresas por el ITAM y cuenta con una maestría en Administración por el Tecnológico de Monterrey.",
+                "bio_en": "Francisco N. González Díaz is the Executive President of the National Auto Parts Industry, A.C., where he represents more than 700 manufacturing plants in Mexico. He has more than 20 years of experience promoting Mexico and its industry. He has been General Director of Bancomext and ProMéxico, as well as Ambassador of Mexico in Germany. In the private sector, he participates as an entrepreneur in the health, foreign trade, tourism and finance sectors. He has a degree in Business Administration from ITAM and a master's degree in Administration from the Tecnológico de Monterrey.",
+                "image": "/img/speakers/francisco_gonzalez_diaz_new.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "Misumi",
