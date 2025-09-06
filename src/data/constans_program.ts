@@ -28,17 +28,31 @@ const stage_1_day_1: Program[] = [
 
         "title": "Siemens",
         "title_en": "Siemens",
-        "description": "",
-        "description_en": "",
+        "description": "La transformación energética está redefiniendo el futuro industrial. Hoy, la transición digital nos invita a repensar cómo generamos, distribuimos y utilizamos la energía, colocando la eficiencia energética y la gestión de datos en el centro de la estrategia. En esta charla exploraremos cómo Siemens ha apostado por integrar electrificación y digitalización para habilitar operaciones más sostenibles, resilientes y competitivas. Más que un cambio tecnológico, se trata de un cambio de visión: construir un modelo integral de energía inteligente que permita a la industria mexicana liderar la transición hacia un futuro más eficiente y sostenible.",
+        "description_en": "The energy transformation is redefining the industrial future. Today, the digital transition invites us to rethink how we generate, distribute and use energy, placing energy efficiency and data management at the center of the strategy. In this talk we will explore how Siemens has bet on integrating electrification and digitalization to enable more sustainable, resilient and competitive operations. More than a technological change, it is a change of vision: building a comprehensive smart energy model that allows the Mexican industry to lead the transition to a more efficient and sustainable future.",
         "time": "13:00 hrs",
         "duration": "45 min",
         "speakers": [
+            {
+                "id": "1",
+                "name": "Alejandra Paola Matus",
+                "position": "Power Utilities Manager",
+                "position_en": "President & CEO",
+                "company": "Siemens",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/alejandrapaolamaturs.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
         ]
+
     },
     {
 
-        "title": "Schneider",
-        "title_en": "Schneider",
+        "title": "Soluciones que Impulsan Resultados: Digitalización y Eficiencia en la Industria 4.0",
+        "title_en": "Solutions that Drive Results: Digitalization and Efficiency in Industry 4.0",
         "description": "",
         "description_en": "",
         "time": "13:50 hrs",
@@ -83,20 +97,34 @@ const stage_1_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": "Misumi",
-        "title_en": "Misumi",
-        "description": "",
-        "description_en": "",
-        "time": "17:20 hrs",
+        "title": "De la idea a la máquina: cómo acelerar proyectos industriales con MISUMI",
+        "title_en": "From idea to machine: how to accelerate industrial projects with MISUMI",
+        "description": "Antonio Briseño, presentará cómo la plataforma digital de MISUMI, junto con innovaciones como MISUMI Complete, que utiliza inteligencia artificial para encontrar rápidamente los componentes adecuados, y Chatsumi, el chatbot que agiliza pedidos y consultas, está transformando la manera en que la industria diseña, fabrica y mantiene sus equipos. Una charla con enfoque práctico y comercial que mostrará cómo acceder a millones de componentes con mayor velocidad, precisión y confiabilidad en cada proyecto.",
+        "description_en": "Antonio Briseño will present how MISUMI's digital platform, along with innovations like MISUMI Complete, which uses artificial intelligence to quickly find the right components, and Chatsumi, the chatbot that streamlines orders and inquiries, is transforming the way industry designs, manufactures and maintains its equipment. A talk with a practical and commercial focus that will show how to access millions of components with greater speed, accuracy and reliability in each project.",
+        "time": "18:05 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Antonio Briseño",
+                "position": "Lider de Soporte Técnico",
+                "position_en": "Technical Support Leader",
+                "company": "MISUMI MEXICO",
+                "bio": "Con sólida experiencia en atención a clientes industriales, Antonio Briseño se especializa en conectar a ingenieros e integradores con soluciones que impulsan sus proyectos. Su liderazgo está orientado a mostrar el valor de las plataformas digitales y el soporte local que distingue a la compañía. Convencido de que la velocidad, la precisión y la confiabilidad son factores decisivos para transformar ideas en resultados, su visión está enfocada en la eficiencia y la experiencia del usuario, su trabajo conecta la tecnología con las necesidades reales de la industria.",
+                "bio_en": "With solid experience in serving industrial clients, Antonio Briseño specializes in connecting engineers and integrators with solutions that drive their projects. His leadership is focused on showcasing the value of digital platforms and the local support that distinguishes the company. Convinced that speed, accuracy, and reliability are decisive factors in transforming ideas into results, his vision is focused on efficiency and user experience, his work connects technology with the real needs of the industry.",
+                "image": "/img/speakers/Antonio_Briseño.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "Presentación de la guía de aplicación – Potenciando la innovación 5G: Casos de uso y recomendaciones de aplicación industrial en México Transformation",
         "title_en": "Presentation of the application guide - Empowering 5G innovation: Use cases and recommendations for industrial application in Mexico Transformation",
         "description": "Presentar recomendaciones y buenas prácticas identificadas en la nueva guía 5G sobre aplicación industrial y generar un diálogo abierto entre representantes del sector público, privado, académico y sociedad civil sobre la aplicación de 5G en sectores industriales. Para hacer un llamado a la acción a distintos sectores del ecosistema digital y fomentar una implementación efectiva y colaborativa de esta tecnología. ",
         "description_en": "Present recommendations and best practices identified in the new 5G guide on industrial application and generate an open dialogue between representatives of the public, private, academic and civil society sectors on the application of 5G in industrial sectors. To call for action to different sectors of the digital ecosystem and promote effective and collaborative implementation of this technology.",
-        "time": "18:10 hrs",
+        "time": "19:00 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -105,23 +133,36 @@ const stage_1_day_1: Program[] = [
 const stage_1_day_2: Program[] = [
     {
 
-        "title": "The MX-System: Control cabinet-free automation",
-        "title_en": "The MX-System: Control cabinet-free automation",
-        "description": "",
-        "description_en": "",
+        "title": "Sistemas de Visión Industrial para una Automatización Mejorada",
+        "title_en": "Industrial Vision Systems for Enhanced Automation",
+        "description": "Descubre cómo Beckhoff Vision revoluciona la automatización industrial integrando visión, control, movimiento y PLC en una sola plataforma - Sin hardware ni software adicional: todo se sincroniza en tiempo real con los procesos de máquina - Soluciones escalables y de alto rendimiento: cámaras, óptica e iluminación industrial listas para cualquier entorno. - Integración total - elimina barreras entre visión y automatización, simplificando la ingeniería y operación - Procesos más precisos y ágiles: optimiza producción, calidad y eficiencia industrial - Innovación aplicada: habilita nuevas posibilidades para sistemas industriales avanzados - Con Beckhoff, la visión industrial se vuelve inteligente, unificada y potente.",
+        "description_en": "Discover how Beckhoff Vision revolutionizes industrial automation by integrating vision, control, motion, and PLC into a single platform - No additional hardware or software: everything synchronizes in real time with machine processes - Scalable and high-performance solutions: cameras, optics, and industrial lighting ready for any environment. - Total integration - eliminates barriers between vision and automation, simplifying engineering and operation - More precise and agile processes: optimizes production, quality, and industrial efficiency - Applied innovation: enables new possibilities for advanced industrial systems - With Beckhoff, industrial vision becomes intelligent, unified, and powerful.",
         "img": "/img/program/beckhoff.png",
         "time": "11:20 hrs",
         "duration": "35 min",
         "speakers": [
             {
                 "id": "1",
-                "name": "Giovanni Muciño",
-                "position": "Especialista de producto",
-                "position_en": " Product Specialist",
-                "company": "Beckhoff",
-                "bio": "",
+                "name": "Adrián Ismael Beas Mora ",
+                "position": "Ingeniero Especialista de Producto – I/O",
+                "position_en": "Engineer Product Specialist – I/O",
+                "company": "Beckhoff Automation SA de CV",
+                "bio": "Egresado del Centro de Enseñanza Técnica Industrial (CETI), consolidó su formación en control, automatización e integración de sistemas. Ingeniero en Mecatrónica y Especialista de Producto en I/O en Beckhoff Automation, apasionado por llevar la automatización al siguiente nivel. Ha complementado su trayectoria con capacitaciones internacionales en España y Estados Unidos, especializándose en el amplio campo de los módulos I/O y los buses de campo. Su enfoque combina innovación tecnológica con experiencia práctica en entornos productivos. Ha participado en proyectos innovadores con importantes empresas del sector automotriz, implementando soluciones que integran procesamiento de imágenes, programación de algoritmos y tecnologías de control avanzado para lograr una producción más ágil y precisa.",
+                "bio_en": "A graduate of the Centro de Enseñanza Técnica Industrial (CETI), he consolidated his training in control, automation and systems integration. Engineer in Mechatronics and Product Specialist in I/O at Beckhoff Automation, passionate about taking automation to the next level. He has complemented his career with international training in Spain and the United States, specializing in the broad field of I/O modules and field buses. His approach combines technological innovation with practical experience in production environments. He has participated in innovative projects with major companies in the automotive sector, implementing solutions that integrate image processing, algorithm programming and advanced control technologies to achieve more agile and precise production.",
+                "image": "/img/speakers/Adrián_Beas.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Pablo Fernandez Olvera ",
+                "position": "Ingeniero Especialista de Producto – Visión",
+                "position_en": "Engineer Product Specialist – Vision",
+                "company": "Beckhoff Automation SA de CV",
+                "bio": "Egresado de la ESIME Zacatenco del IPN como Ingeniero en Comunicaciones y Electrónica. Ha fortalecido su formación en tecnologías de visión industrial con capacitaciones internacionales en Alemania y España, especializándose en TwinCAT Vision, sistemas XTS y soluciones de automatización Beckhoff. Actualmente se desempeña como Especialista de Producto en Visión Industrial en Beckhoff Automation. Su enfoque combina innovación tecnológica con un sólido dominio en procesamiento de imágenes, control de movimiento y automatización avanzada. Impulsa en México la adopción de TwinCAT Vision y las soluciones de automatización de Beckhoff como un pilar estratégico en la transformación digital de la industria, ofreciendo a las empresas herramientas que marcan la diferencia en su camino hacia la fábrica inteligente.",
                 "bio_en": "",
-                "image": "/img/speakers/default.webp",
+                "image": "/img/speakers/Pablo_Fernández.webp",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -138,8 +179,8 @@ const stage_1_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Roue",
+        "title_en": "Roue",
         "description": "",
         "description_en": "",
         "time": "12:50 hrs",
@@ -147,10 +188,10 @@ const stage_1_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "Schneider",
-        "title_en": "Schneider",
-        "description": "",
-        "description_en": "",
+        "title": "Del Reto a la Solución: Cómo la Automatización Revoluciona el Negocio ",
+        "title_en": "From Challenge to Solution: How Automation is Revolutionizing Business",
+        "description": "¿Cómo enfrentas los desafíos más grandes de tu sector? En esta sesión, te llevaremos en un viaje desde el problema hasta la solución, mostrando cómo la automatización y la tecnología de colaboración se han convertido en la clave para una productividad sin precedentes y un futuro más sostenible.",
+        "description_en": "How do you face the biggest challenges in your sector? In this session, we will take you on a journey from problem to solution, showing how automation and collaborative technology have become the key to unprecedented productivity and a more sustainable future.",
         "time": "13:30 hrs",
         "duration": "45 min",   
         "speakers": []
@@ -201,13 +242,27 @@ const stage_1_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "Misumi",
-         "title_en": "Misumi",
-        "description": "",
-         "description_en": "",
-         "time": "17:40 hrs",
+        "title": "De la idea a la máquina: cómo acelerar proyectos industriales con MISUMI",
+         "title_en": "From idea to machine: how to accelerate industrial projects with MISUMI",
+        "description": "Antonio Briseño, presentará cómo la plataforma digital de MISUMI, junto con innovaciones como MISUMI Complete, que utiliza inteligencia artificial para encontrar rápidamente los componentes adecuados, y Chatsumi, el chatbot que agiliza pedidos y consultas, está transformando la manera en que la industria diseña, fabrica y mantiene sus equipos. Una charla con enfoque práctico y comercial que mostrará cómo acceder a millones de componentes con mayor velocidad, precisión y confiabilidad en cada proyecto.",
+         "description_en": "Antonio Briseño will present how MISUMI's digital platform, along with innovations like MISUMI Complete, which uses artificial intelligence to quickly find the right components, and Chatsumi, the chatbot that streamlines orders and inquiries, is transforming the way industry designs, manufactures and maintains its equipment. A talk with a practical and commercial focus that will show how to access millions of components with greater speed, accuracy and reliability in each project.",
+         "time": "17:30 hrs",
          "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Antonio Briseño",
+                "position": "Lider de Soporte Técnico",
+                "position_en": "Technical Support Leader",
+                "company": "MISUMI MEXICO",
+                "bio": "Con sólida experiencia en atención a clientes industriales, Antonio Briseño se especializa en conectar a ingenieros e integradores con soluciones que impulsan sus proyectos. Su liderazgo está orientado a mostrar el valor de las plataformas digitales y el soporte local que distingue a la compañía. Convencido de que la velocidad, la precisión y la confiabilidad son factores decisivos para transformar ideas en resultados, su visión está enfocada en la eficiencia y la experiencia del usuario, su trabajo conecta la tecnología con las necesidades reales de la industria.",
+                "bio_en": "With solid experience in serving industrial clients, Antonio Briseño specializes in connecting engineers and integrators with solutions that drive their projects. His leadership is focused on showcasing the value of digital platforms and the local support that distinguishes the company. Convinced that speed, accuracy, and reliability are decisive factors in transforming ideas into results, his vision is focused on efficiency and user experience, his work connects technology with the real needs of the industry.",
+                "image": "/img/speakers/Antonio_Briseño.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "",
@@ -241,19 +296,33 @@ const stage_1_day_3: Program[] = [
         "speakers": []
     },
     {
-        "title": "Misumi",
-        "title_en": "Misumi",
-        "description": "",
-        "description_en": "",
+        "title": "De la idea a la máquina: cómo acelerar proyectos industriales con MISUMI",
+        "title_en": "From Idea to Machine: How to Accelerate Industrial Projects with MISUMI",
+        "description": "Antonio Briseño, presentará cómo la plataforma digital de MISUMI, junto con innovaciones como MISUMI Complete, que utiliza inteligencia artificial para encontrar rápidamente los componentes adecuados, y Chatsumi, el chatbot que agiliza pedidos y consultas, está transformando la manera en que la industria diseña, fabrica y mantiene sus equipos. Una charla con enfoque práctico y comercial que mostrará cómo acceder a millones de componentes con mayor velocidad, precisión y confiabilidad en cada proyecto.",
+        "description_en": "Antonio Briseño will present how MISUMI's digital platform, along with innovations like MISUMI Complete, which uses artificial intelligence to quickly find the right components, and Chatsumi, the chatbot that streamlines orders and inquiries, is transforming the way industry designs, manufactures and maintains its equipment. A talk with a practical and commercial focus that will show how to access millions of components with greater speed, accuracy and reliability in each project.",
          "time": "12:50 hrs",
          "duration": "45 min",
-         "speakers": []
+         "speakers": [
+            {
+                "id": "1",
+                "name": "Antonio Briseño",
+                "position": "Lider de Soporte Técnico",
+                "position_en": "Technical Support Leader",
+                "company": "MISUMI MEXICO",
+                "bio": "Con sólida experiencia en atención a clientes industriales, Antonio Briseño se especializa en conectar a ingenieros e integradores con soluciones que impulsan sus proyectos. Su liderazgo está orientado a mostrar el valor de las plataformas digitales y el soporte local que distingue a la compañía. Convencido de que la velocidad, la precisión y la confiabilidad son factores decisivos para transformar ideas en resultados, su visión está enfocada en la eficiencia y la experiencia del usuario, su trabajo conecta la tecnología con las necesidades reales de la industria.",
+                "bio_en": "With solid experience in serving industrial clients, Antonio Briseño specializes in connecting engineers and integrators with solutions that drive their projects. His leadership is focused on showcasing the value of digital platforms and the local support that distinguishes the company. Convinced that speed, accuracy, and reliability are decisive factors in transforming ideas into results, his vision is focused on efficiency and user experience, his work connects technology with the real needs of the industry.",
+                "image": "/img/speakers/Antonio_Briseño.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+         ]
     },
     {
-        "title": "Schneider",
-        "title_en": "Schneider",
-        "description": "",
-        "description_en": "",
+        "title": "Digitalizando con Impacto: Eficiencia, Conectividad y Ciberseguridad ",
+        "title_en": "Digitizing with Impact: Efficiency, Connectivity and Cybersecurity",
+        "description": "En un mundo cada vez más conectado, la digitalización es la clave del éxito. Pero, ¿cómo garantizar la seguridad? Este panel revelará cómo las soluciones digitales de Schneider Electric no solo optimizan la eficiencia operativa, sino que también protegen tu negocio de los desafíos de la ciberseguridad, asegurando un crecimiento confiable y escalable.",
+        "description_en": "In an increasingly connected world, digitization is the key to success. But how to ensure security? This panel will reveal how Schneider Electric's digital solutions not only optimize operational efficiency but also protect your business from cybersecurity challenges, ensuring reliable and scalable growth.",
         "time": "13:40 hrs",
         "duration": "45 min",
         "speakers": []
@@ -308,19 +377,19 @@ const stage_2_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": " Siemens",
-        "title_en": " Siemens",
-        "description": "",
-        "description_en": "",
+        "title": " Transformación digital acelerada por la Inteligencia Artificial",
+        "title_en": " Digital transformation accelerated by Artificial Intelligence",
+        "description": "En Siemens creemos que la inteligencia artificial industrial no reemplaza al ser humano, lo potencia. A través de soluciones como el Copiloto Industrial, estamos transformando la manufactura y las infraestructuras, optimizando procesos, acelerando la toma de decisiones y mejorando la eficiencia operativa. Mostraremos ejemplos reales como inspección visual automatizada y simulaciones en el metaverso industrial, donde la colaboración entre personas y tecnología impulsa la productividad, la sostenibilidad y la resiliencia. Esta ponencia refleja cómo estamos construyendo el futuro de la industria, juntos.",
+        "description_en": "At Siemens, we believe that industrial artificial intelligence does not replace humans, it empowers them. Through solutions like the Industrial Copilot, we are transforming manufacturing and infrastructures, optimizing processes, accelerating decision-making, and improving operational efficiency. We will showcase real examples such as automated visual inspection and simulations in the industrial metaverse, where collaboration between people and technology drives productivity, sustainability, and resilience. This presentation reflects how we are building the future of industry, together.",
         "time": "12:30 hrs",
         "duration": "30 min",
         "speakers": [
             {
                 "id": "1",
                 "name": "Alejandro Preinfalk",
-                "position": "",
-                "position_en": "",
-                "company": "",
+                "position": "Presidente & CEO",
+                "position_en": "President & CEO",
+                "company": "Siemens México, Centroamérica y el Caribe",
                 "bio": "",
                 "bio_en": "",
                 "image": "/img/speakers/alejandro_preinfalk.webp",
@@ -331,8 +400,8 @@ const stage_2_day_1: Program[] = [
         ]
     },
     {
-        "title": "GIZ México",
-        "title_en": "GIZ Mexico",
+        "title": "Panel de alto nivel de GIZ Mexico",
+        "title_en": "GIZ Mexico High-Level Panel",
         "description": "Abrir una conversación estratégica sobre cómo la convergencia entre innovación tecnológica, sostenibilidad e inteligencia artificial generativa está redefiniendo el futuro industrial y el impacto que tiene en los diferentes sectores (público, privado, gobiernos locales y cooperación internacional), y cómo pueden contribuir al desarrollo económico sostenible de economías como México y Alemania.",
         "description_en": "Open a strategic conversation about how the convergence of technological innovation, sustainability, and generative artificial intelligence is redefining the industrial future and its impact on different sectors (public, private, local governments, and international cooperation), and how they can contribute to the sustainable economic development of economies like Mexico and Germany.",
         "time": "13:00 hrs",
@@ -350,7 +419,7 @@ const stage_2_day_1: Program[] = [
     },
     {
         "title": "Cumbre de Desarrollo Industrial Sostenible: Panel: Geopolítica y resiliencia de las cadenas de valor: diversificando los vínculos comerciales globales",
-        "title_en": "Sustainable Industrial Development Summit: Panel: Geopolitics and Value Chain Resilience: Diversifying Global Trade Linkages",
+        "title_en": "Sustainable Industrial Development Summit: Panel: Geopolitics and supply chain resilience: diversifying global trade links",
         "description": "",
         "description_en": "",
         "time": "14:45 hrs",
@@ -378,6 +447,19 @@ const stage_2_day_1: Program[] = [
                 "bio": "Hans Blomeier es ingeniero agrónomo de la Universidad de Kassel y ha sido el  representante de las oficinas de la Fundación Konrad Adenauer (KAS) en diversos países, entre ellos Perú, Argentina, Chile, Uruguay, además de Reino Unido y la República de Irlanda.<br><br> Ha sido jefe del departamento de América Latina en la oficina central de la KAS. El Ing. Blomeier es autor de numerosos artículos de análisis político, así como editor y co-autor de publicaciones (libros y revistas) de la KAS relacionados con la cooperación internacional, así como el desarrollo político y económico en los países a los que fue destinado. Actualmente es el representante de la KAS México desde mayo de 2018.",
                 "bio_en": "Hans Blomeier is an agricultural engineer at the University of Kassel and has represented the offices of the Konrad Adenauer Foundation (KAS) in several countries, including Peru, Argentina, Chile, Uruguay, as well as the United Kingdom and the Republic of Ireland. <br><br>He has been head of the Latin America department at KAS headquarters. Ing. Blomeier is the author of numerous political analysis articles, as well as editor and co-author of KAS publications (books and magazines) related to international cooperation as well as political and economic development in the countries where he was posted. Currently he is the representative of KAS Mexico since May 2018.",
                 "image": "/img/speakers/hans_blomeier.webp",
+                "email": "",
+                "phone": "",
+                "moderador": true
+            },
+            {
+                "id": "3",
+                "name": "Jeff Burnstein",
+                "position": "Presidente",
+                "position_en": "President",
+                "company": "Association for Advancing Automation",
+                "bio": "Jeff Burnstein es el Presidente de la Association for Advancing Automation (A3), el principal grupo comercial de América del Norte que representa a más de 1,400 empresas globales dedicadas a la robótica, inteligencia artificial, visión, control de movimiento y tecnologías relacionadas con la automatización. Burnstein se unió a la asociación en 1983 y ha ocupado diversos cargos directivos, culminando con su nombramiento como Presidente en 2007. Es un frecuente comentarista sobre temas de automatización ante la prensa, el público y los responsables de políticas, y participa regularmente como ponente en conferencias internacionales sobre temas como las últimas tendencias en automatización, el impacto de la automatización en los empleos y el futuro de la automatización más allá del piso de fábrica. En 2023 recibió el Engelberger Robotics Award for Leadership, ampliamente considerado el “Premio Nobel de la Robótica”.",
+                "bio_en": "Jeff Burnstein is the President of the Association for Advancing Automation (A3), the leading North American trade group representing over 1400 global companies involved in robotics, artificial intelligence, vision, motion control and related automation technologies. Burnstein joined the association in 1983 and has held a variety of senior positions, culminating in his promotion to President in 2007.  He is a frequent commentator on automation issues to the press, public and policy makers, and regularly speaks at global conferences on topics such the latest automation trends, the impact of automation on jobs and the future of automation beyond the factory floor. In 2023 he received the Engelberger Robotics Award for Leadership, widely considered the “Nobel Prize of Robotics.”",
+                "image": "/img/speakers/jeff_burnstein.webp",
                 "email": "",
                 "phone": "",
                 "moderador": true
@@ -479,13 +561,27 @@ const stage_2_day_1: Program[] = [
         ]
     },
     {
-        "title": "Misumi",
-        "title_en": "Misumi",
-        "description": "",
-        "description_en": "",
+        "title": "MISUMI: Innovación que transforma el tiempo en valor",
+        "title_en": "MISUMI: Innovation that transforms time into value",
+        "description": "Akitake Kato, presidente de MISUMI México, compartirá cómo la compañía se ha consolidado como un aliado estratégico para ingenieros, integradores y especialistas en MRO. Con un portafolio de más de 20 millones de componentes y herramientas como MISUMI Complete, que emplea inteligencia artificial para acelerar la búsqueda y selección de piezas, y un asistente digital que simplifica la experiencia de compra, MISUMI ofrece soluciones que ayudan a reducir tiempos y enfocar los recursos en lo que realmente genera valor. Estas innovaciones son especialmente relevantes en el marco de la industria 4.0 y 5.0 donde la digitalización, la velocidad y la tecnología centrada en el ser humano definen la competitividad. ",
+        "description_en": "Akitake Kato, president of MISUMI Mexico, will share how the company has established itself as a strategic ally for engineers, integrators and MRO specialists. With a portfolio of more than 20 million components and tools such as MISUMI Complete, which uses artificial intelligence to speed up the search and selection of parts, and a digital assistant that simplifies the purchasing experience, MISUMI offers solutions that help reduce time and focus resources on what really generates value. These innovations are especially relevant in the framework of Industry 4.0 and 5.0 where digitization, speed and human-centered technology define competitiveness.",
         "time": "18:15 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Akitake Kato",
+                "position": "Presidente",
+                "position_en": "President",
+                "company": "MISUMI México",
+                "bio": "Akitake Kato, presidente de MISUMI México, compartirá cómo la compañía se ha consolidado como un aliado estratégico para ingenieros, integradores y especialistas en MRO. Con un portafolio de más de 20 millones de componentes y herramientas como MISUMI Complete, que emplea inteligencia artificial para acelerar la búsqueda y selección de piezas, y un asistente digital que simplifica la experiencia de compra, MISUMI ofrece soluciones que ayudan a reducir tiempos y enfocar los recursos en lo que realmente genera valor. Estas innovaciones son especialmente relevantes en el marco de la industria 4.0 y 5.0 donde la digitalización, la velocidad y la tecnología centrada en el ser humano definen la competitividad. ",
+                "bio_en": "Akitake Kato lidera MISUMI México con una visión enfocada en la innovación y la digitalización de la industria. Con más de dos décadas de experiencia en el sector, ha impulsado la expansión de la compañía en el país, fortaleciendo la cercanía con clientes y la eficiencia operativa. Su liderazgo se distingue por integrar soluciones tecnológicas como plataformas digitales y servicios basados en inteligencia artificial, que permiten a ingenieros y fabricantes reducir tiempos y elevar su productividad.",
+                "image": "/img/speakers/Akitake_Kato.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
 ]
 
@@ -500,10 +596,10 @@ const stage_2_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "Schneider",
-        "title_en": "Schneider",
-        "description": "",
-        "description_en": "",
+        "title": "Del Aula a la Industria: El Viaje del Talento que Transforma",
+        "title_en": "Del Aula a la Industria: El Viaje del Talento que Transforma",
+        "description": "¿Sueñas con hacer un impacto real en el mundo? Descubre cómo tu talento puede transformar la industria. Conoce historias inspiradoras de quienes han hecho la transición del aula al mundo laboral para convertirse en líderes que están definiendo el futuro.",
+        "description_en": "Do you dream of making a real impact in the world? Discover how your talent can transform the industry. Hear inspiring stories from those who have made the transition from classroom to workplace to become leaders who are shaping the future.",
         "time": "12:10 hrs",
         "duration": "45 min",
         "speakers": []
@@ -527,10 +623,10 @@ const stage_2_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "Siemens",
-        "title_en": "Siemens",
-        "description": "",
-        "description_en": "",
+        "title": "Inteligencia Urbana: datos simples, soluciones sofisticadas",
+        "title_en": "Urban Intelligence: simple data, sophisticated solutions",
+        "description": "En Siemens impulsamos el desarrollo de ciudades inteligentes mediante inteligencia artificial, electrificación inteligente y automatización energética. Estas tecnologías permiten operar edificios inteligentes, redes eléctricas avanzadas y sistemas de datos que hacen a las comunidades más resilientes, sostenibles y eficientes. Mostraremos cómo la IA potencia la toma de decisiones humanas, y cómo nuestras soluciones permiten gestionar recursos críticos en tiempo real. Esta ponencia presentará casos concretos donde la tecnología y la colaboración humana están transformando la vida urbana.",
+        "description_en": "At Siemens, we drive the development of smart cities through artificial intelligence, smart electrification and energy automation. These technologies enable the operation of smart buildings, advanced power grids and data systems that make communities more resilient, sustainable and efficient. We will show how AI enhances human decision-making, and how our solutions enable the management of critical resources in real time. This presentation will showcase concrete cases where technology and human collaboration are transforming urban life.",
         "time": "15:00 hrs",
         "duration": "45 min",
         "speakers": []
@@ -566,15 +662,15 @@ const stage_2_day_2: Program[] = [
 
 const stage_2_day_3: Program[] = [
     {
-        "title": "Visión de Beckhoff en la industria",
-        "title_en": "Beckhoff Industry Vision",
+        "title": "Beckhoff",
+        "title_en": "Beckhoff",
         "description": "",
         "description_en": "",
         "img": "/img/program/beckhoff.png",
         "time": "11:20 hrs",
         "duration": "45 min",
         "speakers": [
-            {
+            /*{
                 "id": "1",
                 "name": "Pablo Fernandes ",
                 "position": "Especialista de producto",
@@ -598,7 +694,7 @@ const stage_2_day_3: Program[] = [
                 "email": "",
                 "phone": "",
                 "moderador": false
-            },
+            },*/
         ]
     },
     {
@@ -639,10 +735,10 @@ const stage_2_day_3: Program[] = [
         ]
     },
     {
-        "title": "Schneider",
-        "title_en": "Schneider",
-        "description": "",
-        "description_en": "",
+        "title": "80 años de automatización: De lo analógico a lo inteligente",
+        "title_en": "80 years of automation: From analog to intelligent",
+        "description": "Únete a un viaje a través del tiempo que revela la evolución de la automatización en México. Desde los sistemas analógicos hasta las soluciones digitales más avanzadas, descubre cómo la innovación ha marcado la historia industrial del país y cómo tu visión y talento pueden ayudar a escribir el próximo capítulo.",
+        "description_en": "Join a journey through time that reveals the evolution of automation in Mexico. From analog systems to the most advanced digital solutions, discover how innovation has marked the industrial history of the country and how your vision and talent can help write the next chapter.",
         "time": "13:20 hrs",
         "duration": "45 min",
         "speakers": []
@@ -719,13 +815,27 @@ const stage_2_day_3: Program[] = [
         ]
     },
     {
-        "title": "Misumi",
-        "title_en": "",
-        "description": "",
-        "description_en": "",
+        "title": "El futuro industrial se diseña hoy: MISUMI, innovación, digitalización y talento en México",
+        "title_en": "The industrial future is designed today: MISUMI, innovation, digitalization and talent in Mexico",
+        "description": "Carlos Orozco, Director de Ventas de MISUMI México, abordará la relevancia de la digitalización y la innovación en la industria mexicana. Con ejemplos concretos como MISUMI Complete, que integra inteligencia artificial para simplificar la búsqueda de componentes y acelerar el diseño de soluciones, y Chatsumi, que optimiza la comunicación y gestión de pedidos, MISUMI muestra cómo la tecnología puede integrarse de forma práctica para hacer más eficiente cada proceso. Una conferencia que invita a reflexionar sobre cómo la innovación y el talento impulsan la competitividad en la industria actual.",
+        "description_en": "Carlos Orozco, Sales Director of MISUMI Mexico, will address the relevance of digitization and innovation in the Mexican industry. With concrete examples such as MISUMI Complete, which integrates artificial intelligence to simplify component search and speed up solution design, and Chatsumi, which optimizes communication and order management, MISUMI shows how technology can be integrated in a practical way to make each process more efficient. A conference that invites reflection on how innovation and talent drive competitiveness in today's industry.",
         "time": "16:10 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Carlos Orozco",
+                "position": "Director Comercial",
+                "position_en": "Sales Director",
+                "company": "MISUMI MÉXICO",
+                "bio": "Carlos Orozco cuenta con amplia trayectoria en ventas estratégicas y desarrollo de negocios en el sector industrial. Su enfoque está en acompañar a los clientes en la adopción de soluciones digitales que simplifiquen procesos y fortalezcan la competitividad de las empresas. Al frente del equipo comercial de MISUMI México, ha consolidado relaciones con clientes de diversos sectores, posicionando a la compañía como un socio confiable en la automatización, digitalización y suministro de componentes.",
+                "bio_en": "Carlos Orozco has extensive experience in strategic sales and business development in the industrial sector. His focus is on supporting clients in adopting digital solutions that simplify processes and strengthen the competitiveness of companies. Leading the sales team at MISUMI Mexico, he has built relationships with clients from various sectors, positioning the company as a trusted partner in automation, digitalization, and component supply.",
+                "image": "/img/speakers/carlos_orozco.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
 ]
 
