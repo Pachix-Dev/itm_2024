@@ -329,9 +329,10 @@ app.post("/check-cortesia", async (req, res) => {
 async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null) {
   try {
     const emailContent =
-      data.currentLanguage === "es"
-        ? await email_template({ ...data })
-        : await email_template_eng({ ...data });
+      data.currentLanguage === "en"
+        ? await email_template_eng({ ...data })
+        : await email_template({ ...data });
+        
     await resend.emails.send({
       from: "ITM 2025 <noreply@industrialtransformation.mx>",
       to: data.email,
