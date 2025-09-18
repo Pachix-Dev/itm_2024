@@ -186,7 +186,7 @@ const useRegisterForm = create(
           total: 300,
         }),
     }),
-    { name: "register-form-itm-v2" }
+    { name: "register-form-itm-v2-free" }
   )
 );
 
