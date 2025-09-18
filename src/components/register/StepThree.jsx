@@ -3,7 +3,7 @@ import { useRegisterForm } from '../../store/register-form'
 import { MultiSelect } from 'react-multi-select-component'
 import { useState } from 'react'
 
-export function StepThree({ translates }) {
+export function StepThree({ translates, currentLanguage }) {
   const {
     name,
     paternSurname,
@@ -40,6 +40,9 @@ export function StepThree({ translates }) {
     incrementStep,
     decrementStep,
     setUser_id,
+    clear,
+    setCompleteRegister,
+    setInvoiceDownToLoad,
   } = useRegisterForm()
 
   const options = [
@@ -109,17 +112,33 @@ export function StepThree({ translates }) {
         levelInfluence,
         wannaBeExhibitor,
         alreadyVisited: alreadyVisited.map((item) => item.value).join(),
+        currentLanguage,
       }),
     })
     const json = await response.json()
     console.log(json)
-    if (json.status) {
+    /*if (json.status) {
       setProcessing(false)
       setUser_id(json.insertId)
       incrementStep()
     } else {
       setProcessing(false)
       setMessage(json.message)
+    }*/
+
+    if (json.status) {
+      clear()
+      setCompleteRegister(true)
+      setInvoiceDownToLoad(json?.invoice)
+      currentLanguage === 'es'
+        ? (window.location.href = '/gracias-por-tu-compra')
+        : (window.location.href = '/en/gracias-por-tu-compra')
+    } else {
+      setProcessing(false)
+      setMessage(json?.message)
+      setTimeout(() => {
+        setMessage('')
+      }, 5000)
     }
   }
 

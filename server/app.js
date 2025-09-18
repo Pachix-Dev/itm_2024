@@ -45,19 +45,30 @@ app.post("/free-register", async (req, res) => {
   try {
     const data = {
       uuid: uuidv4(),
-      ...body,
+      ...body,      
     };
+
     const userResponse = await RegisterModel.create_user({ ...data });
+    
 
     if (!userResponse.status) {
       return res.status(500).send({
         ...userResponse,
       });
     }
+    
+    data.user_id = userResponse.insertId;
+
+    const pdfAtch = await generatePDF_freePass(data, data.uuid );
+    const mailResponse = await sendEmail(data, pdfAtch, data.uuid);
 
     return res.send({
-      ...userResponse,
+        invoice:  `${data.uuid}.pdf`,
+        ...mailResponse,
     });
+    /*return res.send({
+      ...userResponse,
+    });*/
   } catch (err) {
     console.log(err);
     res.status(500).send({

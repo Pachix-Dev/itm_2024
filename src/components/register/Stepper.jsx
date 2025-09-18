@@ -71,6 +71,7 @@ export function Stepper({ translates }) {
             </span>
           </span>
         </li>
+        {/* 
         <li className={`${step >= 3 ? 'text-[#E42128]' : ''} `}>
           <span className="flex items-center after:content-['/'] sm:after:hidden after:mx-2 after:text-gray-200">
             {step >= 1 ? (
@@ -91,6 +92,7 @@ export function Stepper({ translates }) {
             </span>
           </span>
         </li>
+        */}
       </ol>
     </div>
   )
