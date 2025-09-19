@@ -26,8 +26,8 @@ interface Program {
 const stage_1_day_1: Program[] = [
     {
 
-        "title": "Siemens",
-        "title_en": "Siemens",
+        "title": "El viaje de la energía hacia la era digital",
+        "title_en": "The energy journey to the digital age",
         "description": "La transformación energética está redefiniendo el futuro industrial. Hoy, la transición digital nos invita a repensar cómo generamos, distribuimos y utilizamos la energía, colocando la eficiencia energética y la gestión de datos en el centro de la estrategia. En esta charla exploraremos cómo Siemens ha apostado por integrar electrificación y digitalización para habilitar operaciones más sostenibles, resilientes y competitivas. Más que un cambio tecnológico, se trata de un cambio de visión: construir un modelo integral de energía inteligente que permita a la industria mexicana liderar la transición hacia un futuro más eficiente y sostenible.",
         "description_en": "The energy transformation is redefining the industrial future. Today, the digital transition invites us to rethink how we generate, distribute and use energy, placing energy efficiency and data management at the center of the strategy. In this talk we will explore how Siemens has bet on integrating electrification and digitalization to enable more sustainable, resilient and competitive operations. More than a technological change, it is a change of vision: building a comprehensive smart energy model that allows the Mexican industry to lead the transition to a more efficient and sustainable future.",
         "time": "13:00 hrs",
@@ -39,8 +39,8 @@ const stage_1_day_1: Program[] = [
                 "position": "Power Utilities Manager",
                 "position_en": "President & CEO",
                 "company": "Siemens",
-                "bio": "",
-                "bio_en": "",
+                "bio": "La Ingeniera Alejandra Paola Matus Sánchez es egresada de la Universidad Autónoma de Baja California Sur, especializada en Ciencias Ambientales, energías renovables y sustentabilidad. Con más de ocho años de experiencia en el sector energético, actualmente se desempeña como Gerente de Proyectos de Generación en Siemens, liderando iniciativas clave para la transición energética en México. Ha colaborado en proyectos estatales, federales y privados, y ha participado activamente en foros nacionales e internacionales enfocados en innovación tecnológica y energías limpias. En este panel, compartirá su visión sobre el papel estratégico de proyectos de generación renovable, destacando su importancia para fortalecer una matriz energética más sostenible y resiliente.",
+                "bio_en": "Engineer Alejandra Paola Matus Sánchez graduated from the Autonomous University of Baja California Sur, specializing in Environmental Sciences, renewable energies and sustainability. With more than eight years of experience in the energy sector, she currently serves as Project Manager for Generation at Siemens, leading key initiatives for the energy transition in Mexico. She has collaborated on state, federal and private projects, and has actively participated in national and international forums focused on technological innovation and clean energies. In this panel, she will share her vision on the strategic role of renewable generation projects, highlighting their importance in strengthening a more sustainable and resilient energy matrix.",
                 "image": "/img/speakers/alejandrapaolamaturs.webp",
                 "email": "",
                 "phone": "",
@@ -57,7 +57,47 @@ const stage_1_day_1: Program[] = [
         "description_en": "",
         "time": "13:50 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Juan José Rodríguez ",
+                "position": "Sales Distribution Engineer Team Leader",
+                "position_en": "Sales Distribution Engineer Team Leader",
+                "company": "Schneider Electric",
+                "bio": "Juan José Rodríguez cuenta con más de 14 años de experiencia en el sector eléctrico, desarrollando su carrera en diversas áreas estratégicas dentro de Schneider Electric. Ha desempeñado funciones como ingeniero de aplicaciones en media y baja tensión, y ha liderado exitosamente posiciones comerciales clave. Su enfoque se centra en el desarrollo de negocios, planificación, marketing y ventas, con una clara orientación a fortalecer canales de distribución y sectores estratégicos.",
+                "bio_en": "Juan José Rodríguez has over 14 years of experience in the electrical sector, developing his career in various strategic areas within Schneider Electric. He has served as an applications engineer in medium and low voltage, and has successfully led key commercial positions. His focus is on business development, planning, marketing and sales, with a clear orientation to strengthen distribution channels and strategic sectors.",
+                "image": "/img/juanjoseRodriguez.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Juan José Rodríguez ",
+                "position": "Future Offer Manager ",
+                "position_en": "Future Offer Manager",
+                "company": "Schneider Electric",
+                "bio": "Leonardo Fernandez, Cuenta con una sólida formación en ingeniería y experiencia en gestión de productos, desarrollo de negocios y transformación digital. Trabaja en estrecha colaboración con equipos globales, clientes y socios estratégicos para acelerar la adopción de tecnologías disruptivas. Lidera el desarrollo de nuevas soluciones en Schneider Electric, anticipando tendencias del mercado y alineando la innovación con las necesidades del cliente. Consejero de la sección de Electromobilidad en CANAME",
+                "bio_en": "Leonardo Fernandez has a solid engineering background and experience in product management, business development and digital transformation. He works closely with global teams, customers and strategic partners to accelerate the adoption of disruptive technologies. He leads the development of new solutions at Schneider Electric, anticipating market trends and aligning innovation with customer needs. Advisor to the Electromobility section at CANAME",
+                "image": "/img/speakers/LeonardoFernandez.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "3",
+                "name": "Oliver Castellanos ",
+                "position": "System & Architecture Engineer Senior",
+                "position_en": "System & Architecture Engineer Senior",
+                "company": "Schneider Electric",
+                "bio": "Oliver Castellanos Ingeniero Mecatrónico egresado de la Universidad Marista. Ha trabajado en diseño, ejecución y supervisión de proyectos automatización y aire acondicionado con DCI, y Hubard y Bourlon, esta última ahora CICSA de Grupo Carso. Actualmente, se desempeña como Solution Architect de Automatización de Edificios Control de acceso, Medición y Scadas Eléctricos  se encarga de impartir las certificaciones de estas soluciones. Es miembro asociado de la ASHRAE Capítulo Monterrey.",
+                "bio_en": "Oliver Castellanos is a Mechatronics Engineer graduated from Universidad Marista. He has worked in the design, execution and supervision of automation and air conditioning projects with DCI, and Hubard y Bourlon, the latter now CICSA of Grupo Carso. Currently, he serves as Building Automation Solution Architect Access Control, Measurement and Electrical Scadas he is responsible for imparting the certifications of these solutions. He is an associate member of ASHRAE Monterrey Chapter.",
+                "image": "/img/speakers/Oliver_Castellanos.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
 
@@ -67,7 +107,21 @@ const stage_1_day_1: Program[] = [
         "description_en": "",
         "time": "14:40 hrs",
         "duration": "35 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Alejandro Gutiérrez Olvera",
+                "position": "Subdirector de MKT CX Empresarial y Medios",
+                "position_en": "Deputy Director of MKT CX Business and Media",
+                "company": "Schneider Electric",
+                "bio": "Alejandro ha construido una sólida trayectoria en América Latina y el Caribe angloparlante, ocupando cargos directivos en marketing, ventas, operaciones y desarrollo de negocios, con un historial comprobado de resultados. Actualmente impulsa la transformación de Telcel hacia una empresa digital, integrando su experiencia en productos de consumo y tecnología para ofrecer un enfoque holístico al cliente. Es Ingeniero Mecánico y Eléctrico con especialidad en Ingeniería Industrial por la Universidad Panamericana, y cuenta con dos maestrías en Administración de Empresas: Finanzas en la Universidad Anáhuac y Negociaciones Internacionales en Thunderbird School of Global Management. Es socio fundador y consejero en Prestigos, reconocida por Wayra de Telefónica. Ha participado en paneles sobre marketing digital como IMS Immersion Day, Twitter for Leaders y Headways Leaders Lectures.",
+                "bio_en": "Alejandro has built a solid career in Latin America and English-speaking Caribbean, holding leadership positions in marketing, sales, operations and business development, with a proven track record of results. He is currently driving Telcel's transformation into a digital company, integrating his experience in consumer products and technology to offer a holistic approach to the customer. He is a Mechanical and Electrical Engineer with a specialty in Industrial Engineering from Universidad Panamericana, and has two master's degrees in Business Administration: Finance from Universidad Anáhuac and International Negotiations from Thunderbird School of Global Management. He is a founding partner and advisor at Prestigos, recognized by Wayra from Telefónica. He has participated in panels on digital marketing such as IMS Immersion Day, Twitter for Leaders and Headways Leaders Lectures.",
+                "image": "/img/speakers/AlejandroGutiérrezOlvera.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "",
@@ -79,8 +133,8 @@ const stage_1_day_1: Program[] = [
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Mitsubishi",
+        "title_en": "Mitsubishi",
         "description": "",
         "description_en": "",
         "time": "16:00 hrs",
@@ -101,7 +155,7 @@ const stage_1_day_1: Program[] = [
         "title_en": "From idea to machine: how to accelerate industrial projects with MISUMI",
         "description": "Antonio Briseño, presentará cómo la plataforma digital de MISUMI, junto con innovaciones como MISUMI Complete, que utiliza inteligencia artificial para encontrar rápidamente los componentes adecuados, y Chatsumi, el chatbot que agiliza pedidos y consultas, está transformando la manera en que la industria diseña, fabrica y mantiene sus equipos. Una charla con enfoque práctico y comercial que mostrará cómo acceder a millones de componentes con mayor velocidad, precisión y confiabilidad en cada proyecto.",
         "description_en": "Antonio Briseño will present how MISUMI's digital platform, along with innovations like MISUMI Complete, which uses artificial intelligence to quickly find the right components, and Chatsumi, the chatbot that streamlines orders and inquiries, is transforming the way industry designs, manufactures and maintains its equipment. A talk with a practical and commercial focus that will show how to access millions of components with greater speed, accuracy and reliability in each project.",
-        "time": "18:05 hrs",
+        "time": "17:20 hrs",
         "duration": "45 min",
         "speakers": [
             {
@@ -124,7 +178,7 @@ const stage_1_day_1: Program[] = [
         "title_en": "Presentation of the application guide - Empowering 5G innovation: Use cases and recommendations for industrial application in Mexico Transformation",
         "description": "Presentar recomendaciones y buenas prácticas identificadas en la nueva guía 5G sobre aplicación industrial y generar un diálogo abierto entre representantes del sector público, privado, académico y sociedad civil sobre la aplicación de 5G en sectores industriales. Para hacer un llamado a la acción a distintos sectores del ecosistema digital y fomentar una implementación efectiva y colaborativa de esta tecnología. ",
         "description_en": "Present recommendations and best practices identified in the new 5G guide on industrial application and generate an open dialogue between representatives of the public, private, academic and civil society sectors on the application of 5G in industrial sectors. To call for action to different sectors of the digital ecosystem and promote effective and collaborative implementation of this technology.",
-        "time": "19:00 hrs",
+        "time": "18:10 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -161,7 +215,7 @@ const stage_1_day_2: Program[] = [
                 "position_en": "Engineer Product Specialist – Vision",
                 "company": "Beckhoff Automation SA de CV",
                 "bio": "Egresado de la ESIME Zacatenco del IPN como Ingeniero en Comunicaciones y Electrónica. Ha fortalecido su formación en tecnologías de visión industrial con capacitaciones internacionales en Alemania y España, especializándose en TwinCAT Vision, sistemas XTS y soluciones de automatización Beckhoff. Actualmente se desempeña como Especialista de Producto en Visión Industrial en Beckhoff Automation. Su enfoque combina innovación tecnológica con un sólido dominio en procesamiento de imágenes, control de movimiento y automatización avanzada. Impulsa en México la adopción de TwinCAT Vision y las soluciones de automatización de Beckhoff como un pilar estratégico en la transformación digital de la industria, ofreciendo a las empresas herramientas que marcan la diferencia en su camino hacia la fábrica inteligente.",
-                "bio_en": "",
+                "bio_en": "A graduate of ESIME Zacatenco of the IPN as an Engineer in Communications and Electronics. He has strengthened his training in industrial vision technologies with international training in Germany and Spain, specializing in TwinCAT Vision, XTS systems and Beckhoff automation solutions. He currently serves as Product Specialist in Industrial Vision at Beckhoff Automation. His approach combines technological innovation with a solid mastery in image processing, motion control and advanced automation. He promotes in Mexico the adoption of TwinCAT Vision and Beckhoff's automation solutions as a strategic pillar in the digital transformation of the industry, offering companies tools that make a difference on their way to the smart factory.",
                 "image": "/img/speakers/Pablo_Fernández.webp",
                 "email": "",
                 "phone": "",
@@ -170,13 +224,27 @@ const stage_1_day_2: Program[] = [
         ]
     },
     {
-        "title": "Siemens",
-        "title_en": "Siemens",
-        "description": "",
-        "description_en": "",
+        "title": "El camino hacia la planta autónoma",
+        "title_en": "The Road to the Autonomous Plant",
+        "description": "Explora cómo la digitalización, la automatización y la inteligencia artificial transforman la producción industrial. A través de casos y experiencias reales, se aborda la evolución de las plantas hacia modelos más flexibles, conectados y autosuficientes, donde humanos y máquinas colaboran en un ecosistema inteligente y sostenible.",
+        "description_en": "Explore how digitalization, automation, and artificial intelligence are transforming industrial production. Through real cases and experiences, the evolution of plants towards more flexible, connected, and self-sufficient models is addressed, where humans and machines collaborate in an intelligent and sustainable ecosystem.",
         "time": "12:00 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Gilberto Coxa",
+                "position": "Sales Specialists Manager en Siemens Digital Industries",
+                "position_en": "Sales Specialists Manager en Siemens Digital Industries",
+                "company": "Siemens México, Centroamérica y el Caribe",
+                "bio": "Gilberto Coxca es Sales Specialists Manager en Siemens Digital Industries, responsable de liderar un equipo nacional enfocado en el portafolio de Automatización Discreta (DI AUT). Su misión combina liderazgo de alto impacto con expertise técnico, impulsando el crecimiento de negocio mediante estrategias de ventas consultivas, desarrollo de talento y posicionamiento tecnológico en mercados clave. Con trayectoria en automatización, robótica y transformación digital, ha consolidado alianzas estratégicas y liderado proyectos que integran IT/OT para acercar a la industria hacia modelos más flexibles, eficientes y sostenibles.",
+                "bio_en": "Gilberto Coxca is Sales Specialists Manager at Siemens Digital Industries, responsible for leading a national team focused on the Discrete Automation (DI AUT) portfolio. His mission combines high-impact leadership with technical expertise, driving business growth through consultative sales strategies, talent development, and technological positioning in key markets. With a background in automation, robotics, and digital transformation, he has consolidated strategic alliances and led projects that integrate IT/OT to bring the industry closer to more flexible, efficient, and sustainable models.",
+                "image": "/img/speakers/Gilberto_Coxa.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            }
+        ]
     },
     {
         "title": "Roue",
@@ -194,7 +262,47 @@ const stage_1_day_2: Program[] = [
         "description_en": "How do you face the biggest challenges in your sector? In this session, we will take you on a journey from problem to solution, showing how automation and collaborative technology have become the key to unprecedented productivity and a more sustainable future.",
         "time": "13:30 hrs",
         "duration": "45 min",   
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Mayra Gaxiola",
+                "position": "Business Developer Manager",
+                "position_en": "Sales Specialists Manager en Siemens Digital Industries",
+                "company": "Schneider Electric",
+                "bio": "Mayra Gaxiola Ingeniero Industrial y de Sistemas por parte del Tecnológico de Monterrey cuenta con una sólida experiencia en desarrollo de negocios, transformación digital y soluciones inteligentes para la industria. En su rol como Industrial Automation Business Developer Manager en Schneider Electric México, lidera la identificación de oportunidades estratégicas, la creación de propuestas de valor y la implementación de soluciones tecnológicas que optimizan la eficiencia operativa de sus clientes",
+                "bio_en": "Mayra Gaxiola, Industrial and Systems Engineer from Tecnológico de Monterrey, has solid experience in business development, digital transformation, and smart solutions for the industry. In her role as Industrial Automation Business Developer Manager at Schneider Electric Mexico, she leads the identification of strategic opportunities, the creation of value propositions, and the implementation of technological solutions that optimize the operational efficiency of her clients.",
+                "image": "/img/speakers/Mayra_Gaxiola.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Irving Salgado",
+                "position": "Business Depeloper",
+                "position_en": "Sales Specialists Manager en Siemens Digital Industries",
+                "company": "Schneider Electric",
+                "bio": "Irving Salgado Ingeniero en Control y Automatización con amplia experiencia en BMS, enfocado en el ahorro energético y la optimización de sistemas HVAC, iluminación e hidráulicos. Actualmente es Building Automation Business Developer para Schneider Electric, promoviendo la automatización y eficiencia energética. Tiene experiencia en control de acceso, CCTV, detección de incendios y monitoreo de energía, y ha supervisado equipos y proyectos.",
+                "bio_en": "Irving Salgado, Control and Automation Engineer with extensive experience in BMS, focused on energy savings and optimization of HVAC, lighting and hydraulic systems. He is currently Building Automation Business Developer for Schneider Electric, promoting automation and energy efficiency. He has experience in access control, CCTV, fire detection and energy monitoring, and has supervised teams and projects.",
+                "image": "/img/speakers/Irving_Salgado.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "3",
+                "name": "Abigail Carrillo",
+                "position": "Business Depeloper",
+                "position_en": "Sales Specialists Manager en Siemens Digital Industries",
+                "company": "Schneider Electric",
+                "bio": "Abigail Carrillo Ingeniera mecánica por la Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Nacional, con estudios en automatización industrial en la Universidad Tecnológica de Troyes, Francia. Actualmente es desarrolladora de negocios de equipos de medición de potencia, software de control, monitoreo y eficiencia energética para Schneider Electric México.",
+                "bio_en": "Abigail Carrillo is a mechanical engineer from the Escuela Superior de Ingeniería Mecánica y Eléctrica of the Instituto Politécnico Nacional, with studies in industrial automation at the University of Technology of Troyes, France. She is currently a business developer for power measurement equipment, control software, monitoring and energy efficiency for Schneider Electric Mexico.",
+                "image": "/img/speakers/abigail_carrillo.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            }
+        ]
     },
     {
         "title": "",
@@ -224,13 +332,15 @@ const stage_1_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "OPC UA: Clave para la Competitividad y la Sostenibilidad Industrial en México",
-        "title_en": "OPC UA: Key to Competitiveness and Industrial Sustainability in Mexico",
-        "description": "Explorar el potencial de OPC UA (Open Platform Communications Unified Architecture) como estándar clave para la interoperabilidad en la Industria 4.0, analizando cómo su adopción puede mejorar la competitividad de las empresas mexicanas, optimizar el uso de recursos y facilitar la transición hacia procesos industriales más sostenibles.",
-        "description_en": "Explore the potential of OPC UA (Open Platform Communications Unified Architecture) as a key standard for interoperability in Industry 4.0, analyzing how its adoption can improve the competitiveness of Mexican companies, optimize resource use, and facilitate the transition to more sustainable industrial processes.",
-        "time": "16:20 hrs",
-        "duration": "35 min",
-        "speakers": []
+        "title": "El Lenguaje Global de Producción como motor de la transformación industrial en México",
+        "title_en": "The Global Production Language as a driver of industrial transformation in Mexico",
+        "description": "Explorar el potencial de OPC UA (Open Platform Communications Unified Architecture) como estándar clave para la interoperabilidad en la Industria 4.0, analizando cómo su adopción puede mejorar la competitividad de las empresas mexicanas, optimizar el uso de recursos y facilitar la transición hacia procesos industriales más sostenibles. ",
+        "description_en": "Explore the potential of OPC UA (Open Platform Communications Unified Architecture) as a key standard for interoperability in Industry 4.0, analyzing how its adoption can improve the competitiveness of Mexican companies, optimize resource use and facilitate the transition to more sustainable industrial processes.",
+        "time": "16:00 hrs",
+        "duration": "45 min",
+        "speakers": [
+            
+        ]
     },
     {
         "title": "",
