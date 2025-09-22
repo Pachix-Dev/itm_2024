@@ -339,7 +339,45 @@ const stage_1_day_2: Program[] = [
         "time": "16:00 hrs",
         "duration": "45 min",
         "speakers": [
-            
+            {
+                "id": "1",
+                "name": "Lilia de Diego Correa - Moderador",
+                "position": "Asesora Técnica",
+                "position_en": "Technical Advisor",
+                "company": "Cooperación Técnica Alemana",
+                "bio": "Lilia de Diego es asesora del Proyecto Global de Infraestructura de la Calidad (GPQI), iniciativa del Ministerio Federal de Economía y Energía de Alemania (BMWE), donde desde 2019 facilita el Diálogo Mexicano-Alemán en Infraestructura de la Calidad. Con más de seis años de experiencia en este ámbito, ha trabajado de cerca con representantes del sector industrial y autoridades mexicanas para promover la adopción de estándares internacionales, mejorar la competitividad y facilitar el comercio a través de una infraestructura de la calidad sólida. Desde 2017 colabora con la Cooperación Técnica Alemana (GIZ), impulsando temas clave como la ciberseguridad industrial y la transformación digital bajo el enfoque de Industria 4.0, con un fuerte compromiso con la innovación, la sostenibilidad y la colaboración público-privada. Es licenciada en Relaciones Internacionales por la UNAM, maestra en Estudios Regionales por el Instituto Mora y especialista en Gobernanza Global por el Instituto Alemán para el Desarrollo y la Sustentabilidad (IDOS) en Bonn, Alemania.",
+                "bio_en": "Lilia de Diego is an advisor to the Global Quality Infrastructure Project (GPQI), an initiative of the German Federal Ministry for Economic Affairs and Energy (BMWE), where since 2019 she has facilitated the Mexican-German Dialogue on Quality Infrastructure. With more than six years of experience in this field, she has worked closely with representatives of the industrial sector and Mexican authorities to promote the adoption of international standards, improve competitiveness and facilitate trade through a solid quality infrastructure. Since 2017 she has collaborated with the German Technical Cooperation (GIZ), promoting key issues such as industrial cybersecurity and digital transformation under the Industry 4.0 approach, with a strong commitment to innovation, sustainability and public-private collaboration. She holds a degree in International Relations from UNAM, a master's degree in Regional Studies from Instituto Mora and is a specialist in Global Governance from the German Institute for Development and Sustainability (IDOS) in Bonn, Germany.",
+                "image": "/img/speakers/liliade_diego.webp",
+                "email": "",
+                "phone": "",
+                "moderador": true
+            },
+            {
+                "id": "2",
+                "name": "Eric Schmidt",
+                "position": "Referente del Ecosistema de Interoperabilidad",
+                "position_en": "Interoperability Ecosystem Reference",
+                "company": "VDMA",
+                "bio": "Es responsable de las actividades de armonización de la interoperabilidad del ecosistema en VDMA en las áreas de OPC UA, Asset Administration Shell (AAS) y Data Spaces. Este ámbito también incluye el desarrollo del denominado “Lenguaje Global de Producción”, en el que colaboran más de 600 empresas a nivel mundial. Gracias a su estrecha colaboración con numerosas compañías del sector internacional de la maquinaria y la ingeniería de plantas, es un valioso punto de contacto en temas de estandarización de OPC UA, AAS y producción inteligente, representando sus intereses y requerimientos dentro del ecosistema de la Industria 4.0. Antes de incorporarse a VDMA, el Sr. Schmidt estudió ingeniería mecánica y fue investigador asociado en la Universidad Técnica de Darmstadt, donde se especializó en producción en red y en el monitoreo de condiciones de herramientas basado en inteligencia artificial",
+                "bio_en": "He is responsible for interoperability harmonization activities of the ecosystem at VDMA in the areas of OPC UA, Asset Administration Shell (AAS) and Data Spaces. This scope also includes the development of the so-called “Global Production Language”, in which more than 600 companies worldwide collaborate. Thanks to his close collaboration with numerous companies in the international machinery and plant engineering sector, he is a valuable point of contact on issues of OPC UA standardization, AAS and smart production, representing their interests and requirements within the Industry 4.0 ecosystem. Before joining VDMA, Mr. Schmidt studied mechanical engineering and was an associate researcher at the Technical University of Darmstadt, where he specialized in networked production and AI-based tool condition monitoring.",
+                "image": "/img/speakers/Eric_Schmidt.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "3",
+                "name": "Adrián Rossano",
+                "position": "CEO, Geckko Telekom Vicepresidente de Innovación, CANACINTRA Puebla",
+                "position_en": "CEO, Geckko Telekom Vice President of Innovation, CANACINTRA Puebla",
+                "company": "",
+                "bio": "Adrián Rossano Camacho es Licenciado en Administración de Empresas por la Benemérita Universidad Autónoma de Puebla (BUAP) y ha complementado su formación con estudios en innovación, tecnología y transformación digital en instituciones de prestigio internacional como el IESDE, el MIT Media Lab, la Harvard Business School, la UPAEP y Google. Actualmente se desempeña como CEO de Geckko Telekom y Vicepresidente de Innovación de CANACINTRA Puebla, organismo en el que ha ocupado distintos cargos de liderazgo, entre ellos Presidente del Sector TI, Consejero Nacional, Vicepresidente de Sectores, Presidente del Comité de Innovación en Puebla, miembro del Comité Nacional de Innovación y Presidente de la Comisión de Industria 4.0 de CANACINTRA Nacional. Su trayectoria ha sido reconocida por organismos como el Smart City Expo World Congress, FIRA Barcelona Internacional, la Secretaría de Economía, Unincube Empresas UPAEP y el Gobierno del Estado de Puebla.",
+                "bio_en": "Adrián Rossano Camacho holds a degree in Business Administration from the Benemérita Universidad Autónoma de Puebla (BUAP) and has complemented his education with studies in innovation, technology, and digital transformation at prestigious international institutions such as IESDE, MIT Media Lab, Harvard Business School, UPAEP, and Google. He currently serves as CEO of Geckko Telekom and Vice President of Innovation at CANACINTRA Puebla, an organization where he has held various leadership positions, including President of the IT Sector, National Advisor, Vice President of Sectors, President of the Innovation Committee in Puebla, member of the National Innovation Committee, and President of the Industry 4.0 Commission of CANACINTRA Nacional. His career has been recognized by organizations such as the Smart City Expo World Congress, FIRA Barcelona International, the Ministry of Economy, Unincube Empresas UPAEP, and the Government of the State of Puebla.",
+                "image": "/img/speakers/Adrián_Rossano.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            }
         ]
     },
     {
@@ -397,13 +435,27 @@ const stage_1_day_3: Program[] = [
         "speakers": []
     },
     {
-        "title": "Siemens",
-        "title_en": "Siemens",
-        "description": "",
-        "description_en": "",
+        "title": "Blindaje digital para la industria 4.0: el enfoque de Siemens en ciberseguridad",
+        "title_en": "Digital Shielding for Industry 4.0: Siemens' Approach to Cybersecurity",
+        "description": "En esta conferencia descubrirás cómo Siemens está liderando la protección de la industria 4.0 a través de un enfoque integral de ciberseguridad industrial. Conocerás su mapa de ruta estratégico, las soluciones tecnológicas que están transformando la seguridad operativa y casos de éxito reales que demuestran cómo se puede blindar la infraestructura crítica sin comprometer la productividad. Si trabajas en sectores industriales, tecnología o gestión de riesgos, esta sesión te dará una visión clara de cómo anticiparse a las amenazas digitales en entornos cada vez más conectados.",
+        "description_en": "In this conference, you will discover how Siemens is leading the protection of Industry 4.0 through a comprehensive approach to industrial cybersecurity. You will learn about its strategic roadmap, the technological solutions that are transforming operational security, and real success stories that demonstrate how critical infrastructure can be shielded without compromising productivity. If you work in industrial sectors, technology, or risk management, this session will provide you with a clear view of how to anticipate digital threats in increasingly connected environments.",
         "time": "12:00 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Melisa Cuevas",
+                "position": "Manager de Negocio",
+                "position_en": "Business Manager",
+                "company": "Siemens México, Centroamérica y el Caribe",
+                "bio": "Con sólida experiencia en atención a clientes industriales, Antonio Briseño se especializa en conectar a ingenieros e integradores con soluciones que impulsan sus proyectos. Su liderazgo está orientado a mostrar el valor de las plataformas digitales y el soporte local que distingue a la compañía. Convencido de que la velocidad, la precisión y la confiabilidad son factores decisivos para transformar ideas en resultados, su visión está enfocada en la eficiencia y la experiencia del usuario, su trabajo conecta la tecnología con las necesidades reales de la industria.",
+                "bio_en": "With solid experience in serving industrial clients, Antonio Briseño specializes in connecting engineers and integrators with solutions that drive their projects. His leadership is focused on showcasing the value of digital platforms and the local support that distinguishes the company. Convinced that speed, accuracy, and reliability are decisive factors in transforming ideas into results, his vision is focused on efficiency and user experience, his work connects technology with the real needs of the industry.",
+                "image": "/img/speakers/Melisa_Cuevas.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "De la idea a la máquina: cómo acelerar proyectos industriales con MISUMI",
@@ -435,7 +487,47 @@ const stage_1_day_3: Program[] = [
         "description_en": "In an increasingly connected world, digitization is the key to success. But how to ensure security? This panel will reveal how Schneider Electric's digital solutions not only optimize operational efficiency but also protect your business from cybersecurity challenges, ensuring reliable and scalable growth.",
         "time": "13:40 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Roger Roa",
+                "position": "Cybersecurity Business Consultant Lead",
+                "position_en": "Cybersecurity Business Consultant Lead",
+                "company": "Schneider Electric",
+                "bio": "Roger Roa Ingeniero Eléctrico por parte de la Universidad de loa Andes, lidera la consultoría de ciberseguridad en Schneider Electric, guiando a clientes en la protección de sus infraestructuras críticas mediante soluciones digitales seguras y alineadas con estándares internacionales. Su enfoque estratégico y técnico permite identificar riesgos, diseñar arquitecturas seguras y fortalecer la resiliencia operativa en entornos industriales.",
+                "bio_en": "Roger Roa, Electrical Engineer from the University of the Andes, leads cybersecurity consulting at Schneider Electric, guiding clients in protecting their critical infrastructures through secure digital solutions aligned with international standards. His strategic and technical approach allows him to identify risks, design secure architectures, and strengthen operational resilience in industrial environments.",
+                "image": "/img/speakers/Roger_Roa.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Belem Castañeda",
+                "position": "Ofter Category Manager Services",
+                "position_en": "Ofter Category Manager Services",
+                "company": "Schneider Electric",
+                "bio": "Belem Castañeda Egresada de la carrera de Ingeniería Industrial del Instituto Politécnico Nacional, es responsable de gestionar y desarrollar el portafolio de servicios dentro de Schneider Electric, alineando las ofertas con las necesidades del mercado y la estrategia de negocio. Su enfoque combina análisis de mercado, innovación y colaboración con equipos comerciales para impulsar soluciones de alto valor para los clientes.",
+                "bio_en": "Belem Castañeda, a graduate of Industrial Engineering from the Instituto Politécnico Nacional, is responsible for managing and developing the service portfolio within Schneider Electric, aligning offerings with market needs and business strategy. Her approach combines market analysis, innovation, and collaboration with commercial teams to drive high-value solutions for clients.",
+                "image": "/img/speakers/Belem_Castañeda.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "3",
+                "name": "Sharon Álvarez",
+                "position": "Business Developer",
+                "position_en": "Business Developer",
+                "company": "Schneider Electric",
+                "bio": "Sharon Álvarez Ingeniera en Robótica Industrial por el Instituto Politécnico Nacional, con más de 11 años de experiencia dedicada a Infraestructura para Datacenter, con especialidad en sistemas de Aire Acondicionado de Precisión. Certificada en instalaciones de Sistemas de Aire Acondicionado Industrial por TECA y en Diseño de Centros de Datos por UPTIME y por ICREA ",
+                "bio_en": "Sharon Álvarez, Industrial Robotics Engineer from the Instituto Politécnico Nacional, with over 11 years of experience dedicated to Data Center Infrastructure, specializing in Precision Air Conditioning systems. Certified in Industrial Air Conditioning Systems installations by TECA and in Data Center Design by UPTIME and ICREA.",
+                "image": "/img/speakers/Sharon_Álvarez.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "",
@@ -447,13 +539,40 @@ const stage_1_day_3: Program[] = [
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
-        "description": "",
-        "description_en": "",
-        "time": "15:10 hrs",
+        "title": "Manufactura inteligente: Tecnología, estrategia y talento para lograr una operación superproductiva",
+        "title_en": "Smart Manufacturing: Technology, Strategy, and Talent for Achieving a Superproductive Operation    ",
+        "description": "En esta sesión revelaremos los principios que distinguen a las empresas altamente productivas, basándonos en hallazgos del estudio Cómo lograr lo posible, destacando datos locales de manufactura industrial. Exploraremos cómo tecnologías avanzadas —IA generativa, RPA y minería de procesos— están redefiniendo la manufactura moderna y compartiremos estrategias prácticas para convertir el piso de producción en una operación ágil, conectada y preparada para el futuro.",
+        "description_en": "In this session, we will reveal the principles that distinguish highly productive companies, based on findings from the study How to Achieve the Possible, highlighting local data from industrial manufacturing. We will explore how advanced technologies — generative AI, RPA, and process mining — are redefining modern manufacturing and share practical strategies to turn the production floor into an agile, connected, and future-ready operation.",
+        "time": "15:20 hrs",
         "duration": "35 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Cecilia Hermida",
+                "position": "Country Manager",
+                "position_en": "Country Manager",
+                "company": "Infor",
+                "bio": "Cecilia es una ejecutiva especializada en ventas estratégicas y transformación digital, con experiencia en la implementación de soluciones tecnológicas para diversas industrias en América Latina. Como Country Manager de Infor, su misión es consolidar el liderazgo de la compañía en la región mediante un portafolio especializado y un enfoque profundamente centrado en el cliente.",
+                "bio_en": "Cecilia is an executive specialized in strategic sales and digital transformation, with experience in implementing technological solutions for various industries in Latin America. As Country Manager of Infor, her mission is to consolidate the company's leadership in the region through a specialized portfolio and a deeply customer-centric approach.",
+                "image": "/img/speakers/Cecilia_Hermida.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Laura Cortés",
+                "position": "Consultora de Soluciones",
+                "position_en": "Solutions Consultant",
+                "company": "Infor",
+                "bio": "Laura es consultora de soluciones en Infor México, con más de 14 años de experiencia en logística y cadena de suministro. Ha acompañado a empresas de manufactura, retail y distribución en su transformación digital, impulsando productividad, trazabilidad y eficiencia operativa. Su misión es conectar visión de negocio y tecnología mediante demostraciones de soluciones en la nube, facilitando que los equipos ejecutivos visualicen beneficios tangibles y adopten tecnologías como IA, RPA y analítica avanzada para lograr operaciones más ágiles y competitivas.",
+                "bio_en": "Laura is a solutions consultant at Infor Mexico, with over 14 years of experience in logistics and supply chain. She has supported manufacturing, retail, and distribution companies in their digital transformation, driving productivity, traceability, and operational efficiency. Her mission is to connect business vision and technology through cloud solution demonstrations, enabling executive teams to visualize tangible benefits and adopt technologies such as AI, RPA, and advanced analytics to achieve more agile and competitive operations.",
+                "image": "/img/speakers/Laura_Córtes.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "",
@@ -500,8 +619,8 @@ const stage_2_day_1: Program[] = [
                 "position": "Presidente & CEO",
                 "position_en": "President & CEO",
                 "company": "Siemens México, Centroamérica y el Caribe",
-                "bio": "",
-                "bio_en": "",
+                "bio": "Alejandro tiene una amplia experiencia de más de 30 años en Siemens, a nivel mundial. Ha ocupado diversos cargos directivos en Costa Rica, Alemania, Rusia, Guatemala y México.  Tiene una Licenciatura en Ingeniería Eléctrica de la Universidad de Costa Rica, así como diversos cursos de posgrado de Harvard, MIT, Stanford, la Universidad de Michigan y Singularity University. Es presidente de la Comisión México 4.0: Innovación Industrial y Digitalización de la Confederación de Cámaras Industriales de los Estados Unidos Mexicanos (CONCAMIN), expresidente de la Cámara México-Alemana de Comercio e Industria (CAMEXA), miembro del Consejo de Empresas Globales (CEG), mentor y panelista de Endeavor y miembro del consejo de la Asociación para América Latina en Alemania.",
+                "bio_en": "Alejandro has extensive experience of over 30 years at Siemens, worldwide. He has held various management positions in Costa Rica, Germany, Russia, Guatemala, and Mexico. He holds a Bachelor's degree in Electrical Engineering from the University of Costa Rica, as well as various postgraduate courses from Harvard, MIT, Stanford, the University of Michigan, and Singularity University. He is president of the Mexico 4.0 Commission: Industrial Innovation and Digitalization of the Confederation of Industrial Chambers of the United Mexican States (CONCAMIN), former president of the Mexico-Germany Chamber of Commerce and Industry (CAMEXA), member of the Council of Global Companies (CEG), mentor and panelist at Endeavor, and member of the board of the Association for Latin America in Germany.",
                 "image": "/img/speakers/alejandro_preinfalk.webp",
                 "email": "",
                 "phone": "",
@@ -510,8 +629,8 @@ const stage_2_day_1: Program[] = [
         ]
     },
     {
-        "title": "Panel de alto nivel de GIZ Mexico",
-        "title_en": "GIZ Mexico High-Level Panel",
+        "title": "Ecosistemas de innovación: el poder de las alianzas para el desarrollo industrial",
+        "title_en": "Innovation Ecosystems: The Power of Partnerships for Industrial Development",
         "description": "Abrir una conversación estratégica sobre cómo la convergencia entre innovación tecnológica, sostenibilidad e inteligencia artificial generativa está redefiniendo el futuro industrial y el impacto que tiene en los diferentes sectores (público, privado, gobiernos locales y cooperación internacional), y cómo pueden contribuir al desarrollo económico sostenible de economías como México y Alemania.",
         "description_en": "Open a strategic conversation about how the convergence of technological innovation, sustainability, and generative artificial intelligence is redefining the industrial future and its impact on different sectors (public, private, local governments, and international cooperation), and how they can contribute to the sustainable economic development of economies like Mexico and Germany.",
         "time": "13:00 hrs",
@@ -536,19 +655,6 @@ const stage_2_day_1: Program[] = [
         "duration": "75 min",
         "speakers": [
             {
-                "id": "1",
-                "name": "Takaaki Kuga",
-                "position": "Presidente",
-                "position_en": "President",
-                "company": "Cámara de Comercio e Industria Japonesa de México",
-                "bio": "Takaaki Kuga, actual Presidente de Toyota Motor México y de la Cámara Japonesa de Comercio en México, cuenta con más de 30 años de trayectoria internacional en la industria automotriz. Es licenciado en Economía Monetaria Internacional por la Universidad Sophia en Tokio y ha trabajado en Asia, América del Norte y América Latina. Inició su carrera en Mitsui & Co., destacándose en comercio exterior y logística, y más tarde en Bavaria S.A. en Colombia, donde también cursó un MBA.<br><br>En 2004 se integró a Toyota, liderando proyectos estratégicos en EE. UU., México y Japón, como la colaboración Toyota-Mazda en Salamanca. En México ha sido pieza clave en la consolidación operativa de Toyota, incluyendo el arranque de la planta en Guanajuato. Su visión global, liderazgo intercultural y profundo conocimiento del sector lo posicionan como una figura clave en el fortalecimiento de la industria automotriz y las relaciones bilaterales entre Japón y México.",
-                "bio_en": "Takaaki Kuga, current President of Toyota Motor Mexico and the Japanese Chamber of Commerce in Mexico, has more than 30 years of international experience in the automotive industry. He holds a degree in International Monetary Economics from Sophia University in Tokyo and has worked in Asia, North America and Latin America. He began his career at Mitsui & Co., excelling in foreign trade and logistics, and later at Bavaria S.A. in Colombia, where he also completed an MBA.<br><br>In 2004 he joined Toyota, leading strategic projects in the USA. Mexico and Japan, such as the Toyota-Mazda collaboration in Salamanca. In Mexico it has been a key part of the operational consolidation of Toyota, including the start-up of the plant in Guanajuato. His global vision, intercultural leadership and deep knowledge of the sector position him as a key figure in strengthening the automotive industry and bilateral relations between Japan and Mexico.",
-                "image": "/img/speakers/Taakaki_Kuga.jpg",
-                "email": "",
-                "phone": "",
-                "moderador": false
-            },
-            {
                 "id": "2",
                 "name": "Hans Blomeier - Moderador",
                 "position": "Presidente en México",
@@ -561,6 +667,20 @@ const stage_2_day_1: Program[] = [
                 "phone": "",
                 "moderador": true
             },
+            {
+                "id": "1",
+                "name": "Takaaki Kuga",
+                "position": "Presidente",
+                "position_en": "President",
+                "company": "Cámara de Comercio e Industria Japonesa de México",
+                "bio": "Takaaki Kuga, actual Presidente de Toyota Motor México y de la Cámara Japonesa de Comercio en México, cuenta con más de 30 años de trayectoria internacional en la industria automotriz. Es licenciado en Economía Monetaria Internacional por la Universidad Sophia en Tokio y ha trabajado en Asia, América del Norte y América Latina. Inició su carrera en Mitsui & Co., destacándose en comercio exterior y logística, y más tarde en Bavaria S.A. en Colombia, donde también cursó un MBA.<br><br>En 2004 se integró a Toyota, liderando proyectos estratégicos en EE. UU., México y Japón, como la colaboración Toyota-Mazda en Salamanca. En México ha sido pieza clave en la consolidación operativa de Toyota, incluyendo el arranque de la planta en Guanajuato. Su visión global, liderazgo intercultural y profundo conocimiento del sector lo posicionan como una figura clave en el fortalecimiento de la industria automotriz y las relaciones bilaterales entre Japón y México.",
+                "bio_en": "Takaaki Kuga, current President of Toyota Motor Mexico and the Japanese Chamber of Commerce in Mexico, has more than 30 years of international experience in the automotive industry. He holds a degree in International Monetary Economics from Sophia University in Tokyo and has worked in Asia, North America and Latin America. He began his career at Mitsui & Co., excelling in foreign trade and logistics, and later at Bavaria S.A. in Colombia, where he also completed an MBA.<br><br>In 2004 he joined Toyota, leading strategic projects in the USA. Mexico and Japan, such as the Toyota-Mazda collaboration in Salamanca. In Mexico it has been a key part of the operational consolidation of Toyota, including the start-up of the plant in Guanajuato. His global vision, intercultural leadership and deep knowledge of the sector position him as a key figure in strengthening the automotive industry and bilateral relations between Japan and Mexico.",
+                "image": "/img/speakers/Taakaki_Kuga.jpg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            
             {
                 "id": "3",
                 "name": "Jeff Burnstein",
@@ -583,8 +703,21 @@ const stage_2_day_1: Program[] = [
         "description_en": "The AI revolution is redefining industrial competitiveness and sustainable business models. This panel will bring together leading academic, corporate and technology-driven leaders to explore how innovation ecosystems can accelerate the adoption of AI in the industry, strengthen value chains and generate sustainable impacts. From the case of Heilbronn (Germany) as a global hub for innovation, to Mexican experiences in academic leadership, transformational leadership and public policy, this dialogue seeks to inspire new alliances to accelerate the transition to a more intelligent, inclusive and resilient future.",
         "time": "16:00 hrs",
         "duration": "70 min",
-        "speakers": [            
+        "speakers": [   
             {
+                "id": "1",
+                "name": "Germán Bonilla Bermúdez - Moderador",
+                "position": "Coordinador",
+                "position_en": "Coordinator",
+                "company": "Asociación para el Desarrollo Industrial Sostenible Alianza Alemania-Pacífico (PAGSID)-un proyecto de cooperación de la Federación de Industrias Alemanas (BDI)",
+                "bio": "Maestro en Ciencias en Ingeniería de Sistemas de Producción por la RWTH Aachen University (Alemania) e Ingeniero Mecánico Administrador por el Tecnológico de Monterrey. Ha sido profesor en el Tecnológico de Monterrey y consultor para empresas extranjeras en proyectos de inversión en México y para PyMEs en proyectos de planeación estratégica, innovación, gestión de la tecnología e industria 4.0.<br><br> Cuenta con más de 10 años de experiencia en proyectos de cooperación internacional con enfoque en desarrollo sostenible, innovación y educación, siendo su área de especialización la cooperación económica y desarrollo entre Alemania y la Alianza del Pacífico. Actualmente es Coordinador del proyecto Asociación para el Desarrollo Industrial Sostenible Alemania - Alianza del Pacífico (PAGSID) de la Confederación de la Industria Alemana (BDI).",
+                "bio_en": "Master of Science in Production Systems Engineering from the RWTH Aachen University (Germany) and Managing Mechanical Engineer from the Tecnológico de Monterrey. He has been a professor at the Tecnológico de Monterrey and consultant for foreign companies in investment projects in Mexico and for SMEs in strategic planning, innovation, technology management and industry 4.0 projects. <br><br>He has more than 10 years of experience in international cooperation projects focusing on sustainable development, innovation and education, his area of expertise being economic and development cooperation between Germany and the Pacific Alliance. Currently project coordinator of the Association for Sustainable Industrial Development Germany - Pacific Alliance (PAGSID) of the Confederation of German Industry (BDI).", 
+                "image": "/img/speakers/german_bonilla_bermudez.webp",
+                "email": "",
+                "phone": "",
+                "moderador": true
+            },         
+            /*{
                 "id": "2",
                 "name": "Oliver Hanisch ",
                 "position": "CEO",
@@ -596,7 +729,7 @@ const stage_2_day_1: Program[] = [
                 "email": "",
                 "phone": "",
                 "moderador": false
-            },
+            },*/
             {
                 "id": "3",
                 "name": "Nanghelly Silva Anzaldúa ",
@@ -623,19 +756,7 @@ const stage_2_day_1: Program[] = [
                 "phone": "",
                 "moderador": false
             },
-            {
-                "id": "1",
-                "name": "Germán Bonilla Bermúdez - Moderador",
-                "position": "Coordinador",
-                "position_en": "Coordinator",
-                "company": "Asociación para el Desarrollo Industrial Sostenible Alianza Alemania-Pacífico (PAGSID)-un proyecto de cooperación de la Federación de Industrias Alemanas (BDI)",
-                "bio": "Maestro en Ciencias en Ingeniería de Sistemas de Producción por la RWTH Aachen University (Alemania) e Ingeniero Mecánico Administrador por el Tecnológico de Monterrey. Ha sido profesor en el Tecnológico de Monterrey y consultor para empresas extranjeras en proyectos de inversión en México y para PyMEs en proyectos de planeación estratégica, innovación, gestión de la tecnología e industria 4.0.<br><br> Cuenta con más de 10 años de experiencia en proyectos de cooperación internacional con enfoque en desarrollo sostenible, innovación y educación, siendo su área de especialización la cooperación económica y desarrollo entre Alemania y la Alianza del Pacífico. Actualmente es Coordinador del proyecto Asociación para el Desarrollo Industrial Sostenible Alemania - Alianza del Pacífico (PAGSID) de la Confederación de la Industria Alemana (BDI).",
-                "bio_en": "Master of Science in Production Systems Engineering from the RWTH Aachen University (Germany) and Managing Mechanical Engineer from the Tecnológico de Monterrey. He has been a professor at the Tecnológico de Monterrey and consultant for foreign companies in investment projects in Mexico and for SMEs in strategic planning, innovation, technology management and industry 4.0 projects. <br><br>He has more than 10 years of experience in international cooperation projects focusing on sustainable development, innovation and education, his area of expertise being economic and development cooperation between Germany and the Pacific Alliance. Currently project coordinator of the Association for Sustainable Industrial Development Germany - Pacific Alliance (PAGSID) of the Confederation of German Industry (BDI).", 
-                "image": "/img/speakers/german_bonilla_bermudez.webp",
-                "email": "",
-                "phone": "",
-                "moderador": true
-            },
+            
         ]
     },
     {
@@ -712,17 +833,44 @@ const stage_2_day_2: Program[] = [
         "description_en": "Do you dream of making a real impact in the world? Discover how your talent can transform the industry. Hear inspiring stories from those who have made the transition from classroom to workplace to become leaders who are shaping the future.",
         "time": "12:10 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Mónica Zavaleta",
+                "position": "Offer Category Manager Service",
+                "position_en": "Offer Category Manager Service",
+                "company": "Schneider Electric",
+                "bio": "Mónica Zavaleta: Egresada de la Universidad Nacional Autónoma de México de la Ingeniera Eléctrica Electrónica, apasionada en el desarrollo de soluciones energéticas inteligentes, con más de 4 de experiencia en el sector de tecnología y servicios de energía. Actualmente se desempeña como Developer Manager for Secure Power Services en Schneider Electric México, donde impulsa la innovación y la transformación digital en servicios críticos de energía.",
+                "bio_en": "Mónica Zavaleta: Graduate of the National Autonomous University of Mexico in Electrical and Electronic Engineering, passionate about the development of intelligent energy solutions, with more than 4 years of experience in the technology and energy services sector. She currently serves as Developer Manager for Secure Power Services at Schneider Electric Mexico, where she drives innovation and digital transformation in critical energy services.",
+                "image": "/img/speakers/Mónica_Zavaleta.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Paulina Arellano",
+                "position": "Operational Offer Manager ",
+                "position_en": "Operational Offer Manager ",
+                "company": "Schneider Electric",
+                "bio": "Paulina Arellano: Egresada de la licenciatura de Marketing y comunicación por parte del Tecnológico de Monterrey. Cuenta con experiencia en áreas como gestión de proyectos, análisis de mercado y desarrollo comercial. Actualmente se desempeña como Operational Offer Manager en Schneider Electric México, donde lidera la estrategia y ejecución de ofertas operativas para soluciones de energía segura y sostenible.",
+                "bio_en": "Paulina Arellano: Graduate of the Marketing and Communication degree from the Tecnológico de Monterrey. She has experience in areas such as project management, market analysis and business development. She currently serves as Operational Offer Manager at Schneider Electric Mexico, where she leads the strategy and execution of operational offers for secure and sustainable energy solutions.",
+                "image": "/img/speakers/Paulina_Arellano.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
-    /*{
-        "title": "Siemens",
-        "title_en": "Siemens",
+    {
+        "title": "Mitsubishi",
+        "title_en": "Mitsubishi",
         "description": "",
         "description_en": "",
         "time": "13:00 hrs",
         "duration": "45 min",
         "speakers": []
-    },*/
+    },
     {
         "title": "",
         "title_en": "",
@@ -739,7 +887,21 @@ const stage_2_day_2: Program[] = [
         "description_en": "At Siemens, we drive the development of smart cities through artificial intelligence, smart electrification and energy automation. These technologies enable the operation of smart buildings, advanced power grids and data systems that make communities more resilient, sustainable and efficient. We will show how AI enhances human decision-making, and how our solutions enable the management of critical resources in real time. This presentation will showcase concrete cases where technology and human collaboration are transforming urban life.",
         "time": "15:00 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Marco Cosío",
+                "position": "Vicepresidente Infraestructura Inteligente ",
+                "position_en": "Vice President Smart Infrastructure ",
+                "company": "Siemens México, Centroamérica y el Caribe",
+                "bio": "Es Ingeniero Industrial, graduado en la Universidad las Américas Puebla. Cuenta con una amplia trayectoria de más de dos décadas en la industria eléctrica. Ha desempeñado diversos cargos directivos en Siemens como director de la unidad de negocio de mediano voltaje, así como CEO de Centro América de 2014 a 2019.Actualmente es el vicepresidente de Smart Infrastructure en Siemens México, Centroamérica y el Caribe cargo que asumió el 1 de marzo de 2019. Adicionalmente, desempeña el rol de Head of SI Buildings Siemens LCB Argentina, LC Brazil & LCB México.",
+                "bio_en": "He is an Industrial Engineer, graduated from the Universidad las Américas Puebla. He has an extensive career of more than two decades in the electrical industry. He has held various management positions at Siemens such as director of the medium voltage business unit, as well as CEO of Central America from 2014 to 2019. He is currently the Vice President of Smart Infrastructure at Siemens Mexico, Central America and the Caribbean, a position he assumed on March 1, 2019. Additionally, he serves as Head of SI Buildings Siemens LCB Argentina, LC Brazil & LCB Mexico.",
+                "image": "/img/speakers/Marco_Cosío.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "ITMujeres",
@@ -818,13 +980,13 @@ const stage_2_day_3: Program[] = [
         "speakers": [
             {
                 "id": "1",
-                "name": "Hugo Isaak - Moderador",
-                "position": "Miembro del Grupo Global de Expertos en Smart Cities",
-                "position_en": "Member of the Global Experts Group on Smart Cities",
-                "company": "ONU-Hábitat",
-                "bio": "El Dr. Hugo Isaak es un líder reconocido en ciudades inteligentes y desarrollo urbano sostenible. Su formación académica incluye un doctorado en Administración Pública por la Universidad Anáhuac y la Universidad de París-Sorbona, con especialización en Urbanismo, Medio Ambiente, Economía, Desarrollo Sostenible e Inteligencia Artificial.<br><br>Experiencia Profesional: El Dr. Isaak ha desempeñado roles clave en el sector público y privado, incluyendo su nombramiento en el Grupo Global de Expertos de Smart Cities de la ONU-Hábitat, donde lidera las Guías para el Desarrollo de Ciudades Inteligentes centradas en las personas. Es fundador y CEO de 'Neurabitat', un proyecto que utiliza inteligencia artificial y análisis de datos para mejorar la interacción entre las ciudades y sus habitantes.<br><br>En la Secretaría de Relaciones Exteriores (SRE), fue Coordinador Internacional General Urbano y autor del proyecto ICI (Interconectando Ciudades Inteligentes), contribuyendo a políticas públicas sostenibles. Destacan sus negociaciones para extender el mandato de México como Presidente de la Asamblea de la ONU-Hábitat hasta 2025 y la asignación y próxima celebración del Día Mundial del Hábitat en Querétaro. <br><br><br><br>Visión y Futuro: El Dr. Isaak está comprometido con la creación de ciudades más inteligentes y sostenibles. Su visión incluye Centros de Innovación de la Ciudad Inteligente y Agencias de Transformación Digital en México y LATAM, integrando tecnologías emergentes para beneficiar a todos los ciudadanos y promover la sostenibilidad. <br><br>En resumen, el Dr. Hugo Isaak es una figura influyente con una trayectoria ejemplar y una visión clara hacia un futuro más sostenible e inclusivo.",
-                "bio_en": "Dr. Hugo Isaak is a recognized leader in smart cities and sustainable urban development. His academic background includes a PhD in Public Administration from the University of Anáhuac and the University of Paris-Sorbonne, with specialization in Urbanism, Environment, Economy, Sustainable Development and Artificial Intelligence.<br><br>Professional Experience: Dr. Isaak has played key roles in the public and private sectors, including his appointment to UN-Habitat’s Global Expert Group on Smart Cities, where he leads the people-centred Guides for the Development of Smart Cities. He is the founder and CEO of 'Neurabitat', a project that uses artificial intelligence and data analysis to improve interaction between cities and their inhabitants.<br><br>In the Foreign Relations Secretariat (SRE), he was the Urban General International Coordinator and author of the ICI project (Interconnecting Smart Cities), contributing to sustainable public policies. They highlight their negotiations to extend the mandate of Mexico as President of the UN AssemblyHabitat until 2025 and the allocation and upcoming celebration of World Habitat Day in Querétaro. <br><br>Vision and Future: Dr. Isaak is committed to creating smarter, more sustainable cities. His vision includes Smart City Innovation Centers and Digital Transformation Agencies in Mexico and LATAM, Integrating emerging technologies to benefit all citizens and promote sustainability. <br><br>In short, Dr. Hugo Isaak is an influential figure with an exemplary track record and a clear vision for a more sustainable and inclusive future.",
-                "image": "/img/speakers/Hugo_Isaak.jpeg",
+                "name": "Jorge Carlos Obregón - Moderador",
+                "position": "Director Comercial",
+                "position_en": "Commercial Director",
+                "company": "Grupo Ecovo",
+                "bio": "Originario de Leon, Gto. Ingeniero Industrial y maestro en administracion de empresas por el ITESM. Emprendedor. Fundó GRUPO ECOVO, la empresa en la cual actualmente se desarrolla como director comercial desde el año 2008, teniendo un crecimiento importante en el area de energia renovables a nivel nacional con sus propias marcas como ECOVO, VITA ENERGY y AUTOVOLT, esta ultima ofreciendo soluciones en electromovilidad sustentable. Se ha desempañado como consejero en varios consejos ciudadanos dentro de Coparmex, Canaco, y de carácter gubernamental como en Desarrollo Urbano y en el Sistema Integral de Aseo Publico de la ciudad de Leon, Gto.",
+                "bio_en": "Originally from Leon, Gto. Industrial Engineer and Master in Business Administration from ITESM. Entrepreneur. He founded GRUPO ECOVO, the company in which he currently serves as commercial director since 2008, having significant growth in the area of renewable energy at the national level with its own brands such as ECOVO, VITA ENERGY and AUTOVOLT, the latter offering solutions in sustainable electromobility. He has served as a counselor on several citizen councils within Coparmex, Canaco, and of a governmental nature such as Urban Development and the Integral Public Cleaning System of the city of Leon, Gto.",
+                "image": "/img/speakers/Jorge_Carlos_Obregón.webp",
                 "email": "",
                 "phone": "",
                 "moderador": true
@@ -832,8 +994,8 @@ const stage_2_day_3: Program[] = [
             {
                 "id": "2",
                 "name": "Rodrigo Salcedo",
-                "position": "Presidente",
-                "position_en": "President",
+                "position": "Asociación Gremial de Vehículos Eléctricos de Chile ",
+                "position_en": "Association Gremial de Vehículos Eléctricos de Chile ",
                 "company": "Asociación Gremial de Vehículos Eléctricos de Chile (AVEC)",
                 "bio": "Rodrigo Salcedo Campino es Ingeniero Comercial con una trayectoria en la industria logística y energética de Chile, especializándose en sistemas de transporte eléctrico y movilidad sostenible. <br><br>Es presidente de la Asociación Gremial de Vehículos Eléctricos de Chile (AVEC), donde impulsa políticas públicas y difusión del uso de vehículos eléctricos en el país. Es directivo en la Asociación Latinoamericana de Movilidad Sostenible (ALAMOS). <br><br>Ha sido expositor en foros y congresos internacionales - como Tomorrow\.Mobility Barcelona y Smart City Expo en Barcelona - sobre electromovilidad y conectividad eléctrica en América Latina. <br><br>Con participación activa en comisiones legislativas nacionales y mesas técnicas, ha colaborado en iniciativas clave como la Ley de Electromovilidad y la estrategia regulatoria vigente en Chile.",
                 "bio_en": "Rodrigo Salcedo Campino is a Commercial Engineer with a background in the logistics and energy industry in Chile, specializing in electric transport systems and sustainable mobility. <br><br>He is president of the Association Gremial de Vehículos Eléctricos de Chile (AVEC), where he promotes public policies and dissemination of the use of electric vehicles in the country. Director of the Latin American Association for Sustainable Mobility (ALAMOS). <br><br>He has been an exhibitor in international forums and congresses - such as Tomorrow . Mobility Barcelona and Smart City Expo in Barcelona - on electromobility and electrical connectivity in Latin America. <br><br>With active participation in national legislative committees and technical tables, has collaborated on key initiatives such as the Electromobility Law and the current regulatory strategy in Chile.",
@@ -851,7 +1013,34 @@ const stage_2_day_3: Program[] = [
         "description_en": "Join a journey through time that reveals the evolution of automation in Mexico. From analog systems to the most advanced digital solutions, discover how innovation has marked the industrial history of the country and how your vision and talent can help write the next chapter.",
         "time": "13:20 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Juan Alberto López",
+                "position": "Business Developer",
+                "position_en": "Business Developer",
+                "company": "Schneider Electric",
+                "bio": "Juan Alberto López Pérez es Business Development Manager para Medium Voltage Primary Distribution en Schneider Electric. Ingeniero Eléctrico con más 16 años de experiencia con equipos de Media Tensión en las áreas de Ingeniería y desarrollo de negocio.",
+                "bio_en": "Juan Alberto López Pérez is Business Development Manager for Medium Voltage Primary Distribution at Schneider Electric. Electrical Engineer with more than 16 years of experience with Medium Voltage equipment in the areas of Engineering and business development.",
+                "image": "/img/speakers/Juan_Alberto_López.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Omar Zarate",
+                "position": "Systems Engineer",
+                "position_en": "Systems Engineer",
+                "company": "Schneider Electric",
+                "bio": "Omar Zarate. Ingeniero en Control y Automatización por el IPN, certificado en ATD y DCCA, con especialización en diseño de Centros de Datos. Ha participado en proyectos para Data Centers Hyperscale en México y CAM. Su enfoque combina conocimientos técnicos con colaboración multidisciplinaria, buscando que la ingeniería tenga un impacto positivo en la sociedad.",
+                "bio_en": "Omar Zarate. Control and Automation Engineer from IPN, certified in ATD and DCCA, with a specialization in Data Center design. He has participated in projects for Hyperscale Data Centers in Mexico and CAM. His approach combines technical knowledge with multidisciplinary collaboration, seeking to ensure that engineering has a positive impact on society.",
+                "image": "/img/speakers/Omar_Zarate.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },        
+        ]
     },
     {
         "title": "",
