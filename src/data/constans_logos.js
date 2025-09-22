@@ -309,11 +309,11 @@ const alliesStrategic = [
     link: "https://www.elgranbajionetwork.com/",
   },
   {
-    src: " /cuatrocero.webp",
+    src: " /img/4alianza.webp",
     width: 200,
     height: 106,
     alt: "Cuatro Cero",
-    link: "https://cuatro-cero.com.mx/",
+    link: "#",
   },
  
 ];
