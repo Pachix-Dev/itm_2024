@@ -308,7 +308,14 @@ const alliesStrategic = [
     alt: "Amiti",
     link: "https://www.elgranbajionetwork.com/",
   },
-  
+  {
+    src: " /cuatrocero.webp",
+    width: 200,
+    height: 106,
+    alt: "Cuatro Cero",
+    link: "https://cuatro-cero.com.mx/",
+  },
+ 
 ];
 
 const media_1 = [
