@@ -279,7 +279,7 @@ const stage_1_day_2: Program[] = [
             {
                 "id": "2",
                 "name": "Irving Salgado",
-                "position": "Business Depeloper",
+                "position": "Business Developer",
                 "position_en": "Sales Specialists Manager en Siemens Digital Industries",
                 "company": "Schneider Electric",
                 "bio": "Irving Salgado Ingeniero en Control y Automatización con amplia experiencia en BMS, enfocado en el ahorro energético y la optimización de sistemas HVAC, iluminación e hidráulicos. Actualmente es Building Automation Business Developer para Schneider Electric, promoviendo la automatización y eficiencia energética. Tiene experiencia en control de acceso, CCTV, detección de incendios y monitoreo de energía, y ha supervisado equipos y proyectos.",
@@ -292,7 +292,7 @@ const stage_1_day_2: Program[] = [
             {
                 "id": "3",
                 "name": "Abigail Carrillo",
-                "position": "Business Depeloper",
+                "position": "Business Developer",
                 "position_en": "Sales Specialists Manager en Siemens Digital Industries",
                 "company": "Schneider Electric",
                 "bio": "Abigail Carrillo Ingeniera mecánica por la Escuela Superior de Ingeniería Mecánica y Eléctrica del Instituto Politécnico Nacional, con estudios en automatización industrial en la Universidad Tecnológica de Troyes, Francia. Actualmente es desarrolladora de negocios de equipos de medición de potencia, software de control, monitoreo y eficiencia energética para Schneider Electric México.",
