@@ -7,6 +7,8 @@ import Layout from "../../layouts/Layout.astro";
 
 changeLanguage("en");
 
+const lang = i18next.language;
+const base = i18next.language === "es" ? "" : `/${lang}`;
 // Usa el Record<string, string> para que puedas usar el t() sin problemas en React con TypeScript
 const translate = t("program", { returnObjects: true }) as Record<string, string>;
 ---
@@ -20,10 +22,50 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
     playsinline
     src='/videos/video_itm_programa.mp4'></video>
   <main class='mx-5 md:mx-16 lg:mx-32 pb-5 my-20'>
-    <h1 class='text-left text-[#E42128] text-5xl font-extrabold py-5'>
-      {t('program.title')}
-    </h1>
-    <p class='italic mb-5 text-lg'>* {t('program.changes')}</p>
+    <!-- Header Section -->
+    <div
+      class='flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8'
+    >
+      <div class='flex-1'>
+        <h1
+          class='text-left text-[#E42128] text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight mb-4 uppercase'
+        >
+          {t('program.title')}
+        </h1>
+        <p class='italic text-lg md:text-xl text-gray-300 mb-6 lg:mb-0'>
+          * {t('program.changes')}
+        </p>
+      </div>
+
+      <!-- Botón de registro mejorado -->
+      <div class='flex-shrink-0'>
+        <a
+          href={`${base}/registro`}
+          class='register-btn group inline-flex items-center justify-center px-8 py-4 text-lg md:text-xl font-bold text-white bg-gradient-to-r from-[#E42128] to-[#CF1363] rounded-full shadow-2xl hover:shadow-[0_0_30px_rgba(228,33,40,0.6)] transform hover:scale-105 transition-all duration-300 ease-out relative overflow-hidden'
+        >
+          <span class='relative z-10 flex items-center gap-2'>
+            {t('register.button_register')}
+            <svg
+              class='w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300'
+              fill='none'
+              stroke='currentColor'
+              viewBox='0 0 24 24'
+            >
+              <path
+                stroke-linecap='round'
+                stroke-linejoin='round'
+                stroke-width='2'
+                d='M13 7l5 5m0 0l-5 5m5-5H6'></path>
+            </svg>
+          </span>
+          <div
+            class='absolute inset-0 bg-gradient-to-r from-[#CF1363] to-[#E42128] opacity-0 group-hover:opacity-100 transition-opacity duration-300'
+          >
+          </div>
+        </a>
+      </div>
+    </div>
+
     <section>
       <h3 class='text-3xl pb-3'>{t('program.stages')}</h3>
       <div class='md:ml-5'>
