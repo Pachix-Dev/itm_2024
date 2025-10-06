@@ -2298,7 +2298,7 @@ export const directory = [
   {
     id: 99,
     name: "FINTENDER MEXICO ",
-    logo: "/img/fintender.webp",
+    logo: "/img/fintender_azul.webp",
     width: 120,
     stand_number: "B10",
     contact: "Pablo Escalona",
