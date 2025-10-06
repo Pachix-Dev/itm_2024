@@ -101,22 +101,22 @@ const stage_1_day_1: Program[] = [
     },
     {
 
-        "title": "Telcel",
-        "title_en": "Telcel",
-        "description": "",
-        "description_en": "",
+        "title": "IoT y gestión inteligente en sectores clave de México",
+        "title_en": "IoT and intelligent management in key sectors of Mexico",
+        "description": "Casos de uso donde IoT, telemetría y monitoreo en tiempo real están ayudando a empresas mexicanas a optimizar operaciones y reducir costos.",
+        "description_en": "Use cases where IoT, telemetry and real-time monitoring are helping Mexican companies optimize operations and reduce costs.",
         "time": "14:40 hrs",
         "duration": "35 min",
         "speakers": [
             {
                 "id": "1",
-                "name": "Alejandro Gutiérrez Olvera",
-                "position": "Subdirector de MKT CX Empresarial y Medios",
-                "position_en": "Deputy Director of MKT CX Business and Media",
+                "name": "Leonardo Borjas",
+                "position": "Líder de Innovación y Soluciones Tecnológicas",
+                "position_en": "Innovation and Technology Solutions Leader",
                 "company": "Telcel",
-                "bio": "Alejandro ha construido una sólida trayectoria en América Latina y el Caribe angloparlante, ocupando cargos directivos en marketing, ventas, operaciones y desarrollo de negocios, con un historial comprobado de resultados. Actualmente impulsa la transformación de Telcel hacia una empresa digital, integrando su experiencia en productos de consumo y tecnología para ofrecer un enfoque holístico al cliente. Es Ingeniero Mecánico y Eléctrico con especialidad en Ingeniería Industrial por la Universidad Panamericana, y cuenta con dos maestrías en Administración de Empresas: Finanzas en la Universidad Anáhuac y Negociaciones Internacionales en Thunderbird School of Global Management. Es socio fundador y consejero en Prestigos, reconocida por Wayra de Telefónica. Ha participado en paneles sobre marketing digital como IMS Immersion Day, Twitter for Leaders y Headways Leaders Lectures.",
-                "bio_en": "Alejandro has built a solid career in Latin America and English-speaking Caribbean, holding leadership positions in marketing, sales, operations and business development, with a proven track record of results. He is currently driving Telcel's transformation into a digital company, integrating his experience in consumer products and technology to offer a holistic approach to the customer. He is a Mechanical and Electrical Engineer with a specialty in Industrial Engineering from Universidad Panamericana, and has two master's degrees in Business Administration: Finance from Universidad Anáhuac and International Negotiations from Thunderbird School of Global Management. He is a founding partner and advisor at Prestigos, recognized by Wayra from Telefónica. He has participated in panels on digital marketing such as IMS Immersion Day, Twitter for Leaders and Headways Leaders Lectures.",
-                "image": "/img/speakers/AlejandroGutiérrezOlvera.webp",
+                "bio": "Leonardo Borjas es Ingeniero en Comunicaciones y Electrónica por el IPN, con estudios de posgrado en Gestión de la Innovación Tecnológica por la Universidad Iberoamericana. Actualmente se desempeña como Líder de Innovación y Soluciones Tecnológicas, donde impulsa la creación de productos tecnológicos que generan valor real para los clientes. Con más de 9 años de experiencia en el sector, Leonardo combina su formación técnica con una visión estratégica centrada en la innovación y el diseño de soluciones, ha participado en proyectos clave que fortalecen la oferta de servicios digitales de la compañía. Su enfoque consultivo y su capacidad para conectar tecnología con propósito lo convierten en un referente en el desarrollo de soluciones móviles en México.",
+                "bio_en": "Leonardo Borjas is a Communications and Electronics Engineer from IPN, with postgraduate studies in Technological Innovation Management from Universidad Iberoamericana. He currently serves as Innovation and Technology Solutions Leader, where he drives the creation of technological products that generate real value for customers. With over 9 years of experience in the sector, Leonardo combines his technical training with a strategic vision focused on innovation and solution design, he has participated in key projects that strengthen the company's digital service offering. His consultative approach and ability to connect technology with purpose make him a benchmark in the development of mobile solutions in Mexico.",
+                "image": "/img/speakers/Leonardo_Borjas.webp",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -124,13 +124,28 @@ const stage_1_day_1: Program[] = [
         ]
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Los Drones no reemplazan pero equilibran capacidades",
+        "title_en": "Drones do not replace but balance capabilities",
         "description": "",
         "description_en": "",
         "time": "15:20 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Gustavo Emiliano Fauez",
+                "position": "CEO",
+                "position_en": "CEO",
+                "company": "Roca Defense & Systems",
+                "bio": "Gustavo Emiliano Fauez, empresario Argentino, con empresas en México, Argentina,  Australia, Irlanda y USA, Ex Militar, Infante de Marina Argentino, Veterano Casco Azul en la MINUSTAH (Misión de las Naciones Unidas para la Estabilización en Haití) 2006-7, CEO y  fundador de Roca Defense & Systems, que es un Holding de empresas en Argentina, México y USA, dedicado a la investigación y desarrollo de software y hardware para la integración de  vehículos no tripulados, programas de capacitación y productos complementarios, inherentes a necesidades de Defensa, agroindustria, protección civil, seguridad industrial, búsqueda y rescate, etc",
+                "bio_en": "Gustavo Emiliano Fauez, Argentine businessman, with companies in Mexico, Argentina, Australia, Ireland and USA, Ex Military, Argentine Marine Infantryman, Blue Helmet Veteran in MINUSTAH (United Nations Stabilization Mission in Haiti) 2006-7, CEO and founder of Roca Defense & Systems, which is a Holding of companies in Argentina, Mexico and USA, dedicated to research and development of software and hardware for the integration of unmanned vehicles, training programs and complementary products, inherent to the needs of Defense, agro-industry, civil protection, industrial safety, search and rescue, etc",
+                "image": "/img/speakers/Gustavo_Emiliano_Fauez.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            
+        ]
     },
     {
         "title": "Mitsubishi",
@@ -176,11 +191,51 @@ const stage_1_day_1: Program[] = [
     {
         "title": "Presentación de la guía de aplicación – Potenciando la innovación 5G: Casos de uso y recomendaciones de aplicación industrial en México Transformation",
         "title_en": "Presentation of the application guide - Empowering 5G innovation: Use cases and recommendations for industrial application in Mexico Transformation",
-        "description": "Presentar recomendaciones y buenas prácticas identificadas en la nueva guía 5G sobre aplicación industrial y generar un diálogo abierto entre representantes del sector público, privado, académico y sociedad civil sobre la aplicación de 5G en sectores industriales. Para hacer un llamado a la acción a distintos sectores del ecosistema digital y fomentar una implementación efectiva y colaborativa de esta tecnología. ",
-        "description_en": "Present recommendations and best practices identified in the new 5G guide on industrial application and generate an open dialogue between representatives of the public, private, academic and civil society sectors on the application of 5G in industrial sectors. To call for action to different sectors of the digital ecosystem and promote effective and collaborative implementation of this technology.",
+        "description": "En el marco de la Industrial Transformation Mexico (ITM), el secretariado del Diálogo Digital México–Alemania presentará la nueva guía de recomendaciones sobre la aplicación industrial de 5G. El objetivo es compartir buenas prácticas, impulsar un diálogo abierto entre sectores público, privado, académico y sociedad civil, y hacer un llamado a la acción para una implementación efectiva y colaborativa de esta tecnología. El panel abordará las oportunidades y desafíos del 5G para la industria, tomando como referencia experiencias internacionales, como Alemania, y su potencial para aumentar la productividad, eficiencia y competitividad de las empresas. Asimismo, se discutirán las actualizaciones e implicaciones de la nueva Ley de Telecomunicaciones y Radiodifusión en México, y los pasos necesarios para consolidar el desarrollo de esta tecnología. ",
+        "description_en": "As part of the Industrial Transformation Mexico (ITM), the Secretariat of the Mexico-Germany Digital Dialogue will present the new guide of recommendations on the industrial application of 5G. The objective is to share best practices, promote an open dialogue between the public, private, academic and civil society sectors, and call for action for an effective and collaborative implementation of this technology. The panel will address the opportunities and challenges of 5G for industry, taking as a reference international experiences, such as Germany, and its potential to increase productivity, efficiency and competitiveness of companies. In addition, updates and implications of the new Telecommunications and Broadcasting Law in Mexico will be discussed, as well as the necessary steps to consolidate the development of this technology.",
         "time": "18:10 hrs",
         "duration": "35 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Andrea Carreón - Moderadora",
+                "position": "Asesora Técnica ",
+                "position_en": "Technical Advisor",
+                "company": "GIZ México",
+                "bio": "Andrea Carreón es licenciada en Relaciones Internacionales por el Tecnológico de Monterrey. Cuenta con experiencia en proyectos de diálogo multiactor y ha colaborado con distintas entidades del sector público, privado y sociedad civil. Actualmente, es Asesora Técnica para el Secretariado del Diálogo Digital entre México y Alemania, proyecto global implementado por encargo del Ministerio Federal de Asuntos Digitales y Modernización del Estado del Gobierno de Alemania.",
+                "bio_en": "Andrea Carreón holds a degree in International Relations from the Tecnológico de Monterrey. She has experience in multi-stakeholder dialogue projects and has collaborated with various entities from the public, private, and civil society sectors. Currently, she is a Technical Advisor for the Secretariat of the Digital Dialogue between Mexico and Germany, a global project implemented on behalf of the Federal Ministry of Digital and Economic Affairs of the German Government.",
+                "image": "/img/speakers/andreaCarreon.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Guillermo Ortega",
+                "position": " ",
+                "position_en": "",
+                "company": "NTT Data",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/default.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "3",
+                "name": "Tania Villa",
+                "position": " ",
+                "position_en": "",
+                "company": "Agencia de Transformación Digital y Telecomunicaciones",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/default.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
 ]
 
@@ -247,13 +302,40 @@ const stage_1_day_2: Program[] = [
         ]
     },
     {
-        "title": "Roue",
-        "title_en": "Roue",
-        "description": "",
-        "description_en": "",
+        "title": "Del dato a la acción: cómo un Industrial SOC protege las operaciones críticas",
+        "title_en": "From Data to Action: How an Industrial SOC Protects Critical Operations",
+        "description": "Un Industrial Security Operations Center (Industrial SOC) se ha consolidado como el corazón de la ciberseguridad industrial. Su función principal es ofrecer una visión unificada de las operaciones, asegurando visibilidad sobre activos y procesos críticos. Esto permite la detección temprana de amenazas, la gestión proactiva de vulnerabilidades y la correlación de eventos para anticiparse a incidentes que comprometan la continuidad del negocio. Más allá de la tecnología, el Industrial SOC representa la convergencia entre procesos, personas y herramientas que transforman datos en inteligencia accionable. Así, se convierte en un habilitador esencial de resiliencia, confiabilidad y eficiencia en entornos industriales digitalizados.",
+        "description_en": "An Industrial Security Operations Center (Industrial SOC) has established itself as the heart of industrial cybersecurity. Its main function is to provide a unified view of operations, ensuring visibility over critical assets and processes. This allows for early threat detection, proactive vulnerability management, and event correlation to anticipate incidents that compromise business continuity. Beyond technology, the Industrial SOC represents the convergence between processes, people, and tools that transform data into actionable intelligence. Thus, it becomes an essential enabler of resilience, reliability, and efficiency in digitized industrial environments.",
         "time": "12:50 hrs",
         "duration": "35 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Enrique Poceros",
+                "position": "CTO",
+                "position_en": "CTO",
+                "company": "Roue ",
+                "bio": "Enrique Poceros es experto en ciberseguridad para entornos industriales y se desempeña como Chief Technology Officer de Roue Consultores. Su experiencia incluye el diseño e integración de soluciones complejas, así como la definición de estándares de seguridad en sectores altamente críticos como energía, manufactura y oil & gas. Con más de una década de trayectoria, ha impulsado proyectos que integran innovación tecnológica y resiliencia cibernética, posicionándolo como referente en México y Latinoamérica en la protección de infraestructuras críticas.",
+                "bio_en": "Enrique Poceros is an expert in cybersecurity for industrial environments and serves as Chief Technology Officer at Roue Consultores. His experience includes the design and integration of complex solutions, as well as the definition of security standards in highly critical sectors such as energy, manufacturing, and oil & gas. With over a decade of experience, he has driven projects that integrate technological innovation and cyber resilience, positioning him as a benchmark in Mexico and Latin America in the protection of critical infrastructures.",
+                "image": "/img/speakers/Enrique_Poceros.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Alexei Pinal",
+                "position": "OT Cybersecurity Sales Leader ",
+                "position_en": "OT Cybersecurity Sales Leader ",
+                "company": "Claroty ",
+                "bio": "Alexei Pinal, Vicepresidente de Ciberseguridad para LATAM en Claroty, cuenta con amplia experiencia en la protección de sistemas industriales y tecnologías emergentes (OT, IoT, IoMT). Reconocido como growth strategist y angel investor, conecta la seguridad con la estrategia empresarial, fortaleciendo la confianza digital y la continuidad operativa en organizaciones de alto impacto.",
+                "bio_en": "Alexei Pinal, Vice President of Cybersecurity for LATAM at Claroty, has extensive experience in protecting industrial systems and emerging technologies (OT, IoT, IoMT). Recognized as a growth strategist and angel investor, he connects security with business strategy, strengthening digital trust and operational continuity in high-impact organizations.",
+                "image": "/img/speakers/default.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            }
+        ]
     },
     {
         "title": "Del Reto a la Solución: Cómo la Automatización Revoluciona el Negocio ",
@@ -305,21 +387,21 @@ const stage_1_day_2: Program[] = [
         ]
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "La fábrica impulsada por la IA: fusión de robótica, visión y seguridad para operaciones autónomas ",
+        "title_en": "The AI-Driven Factory: Merging Robotics, Vision, and Security for Autonomous Operations",
         "description": "",
         "description_en": "",
-        "time": "14:20 hrs",
+        "time": "14:30 hrs",
         "duration": "35 min",
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Clarios",
+        "title_en": "Clarios",
         "description": "",
         "description_en": "",
-        "time": "15:00 hrs",
-        "duration": "35 min",
+        "time": "15:10 hrs",
+        "duration": "45 min",
         "speakers": []
     },
     {
@@ -341,7 +423,7 @@ const stage_1_day_2: Program[] = [
         "speakers": [
             {
                 "id": "1",
-                "name": "Lilia de Diego Correa - Moderador",
+                "name": "Lilia de Diego Correa - Moderadora",
                 "position": "Asesora Técnica",
                 "position_en": "Technical Advisor",
                 "company": "Cooperación Técnica Alemana",
@@ -381,11 +463,11 @@ const stage_1_day_2: Program[] = [
         ]
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Value Engineering & Compressed Air System Auditing",
+        "title_en": "Value Engineering & Compressed Air System Auditing",
         "description": "",
         "description_en": "",
-        "time": "17:00 hrs",
+        "time": "16:50 hrs",
         "duration": "35 min",
         "speakers": []
     },
@@ -413,12 +495,12 @@ const stage_1_day_2: Program[] = [
         ]
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Kearney",
+        "title_en": "Kearney",
         "description": "",
         "description_en": "",
-        "time": "18:30 hrs",
-        "duration": "30 min",
+        "time": "18:20 hrs",
+        "duration": "35 min",
         "speakers": []
     },
 ]
@@ -481,48 +563,35 @@ const stage_1_day_3: Program[] = [
          ]
     },
     {
-        "title": "Digitalizando con Impacto: Eficiencia, Conectividad y Ciberseguridad ",
-        "title_en": "Digitizing with Impact: Efficiency, Connectivity and Cybersecurity",
-        "description": "En un mundo cada vez más conectado, la digitalización es la clave del éxito. Pero, ¿cómo garantizar la seguridad? Este panel revelará cómo las soluciones digitales de Schneider Electric no solo optimizan la eficiencia operativa, sino que también protegen tu negocio de los desafíos de la ciberseguridad, asegurando un crecimiento confiable y escalable.",
-        "description_en": "In an increasingly connected world, digitization is the key to success. But how to ensure security? This panel will reveal how Schneider Electric's digital solutions not only optimize operational efficiency but also protect your business from cybersecurity challenges, ensuring reliable and scalable growth.",
+        "title": "Del Aula a la Industria: El Viaje del Talento que Transforma",
+        "title_en": "Del Aula a la Industria: El Viaje del Talento que Transforma",
+        "description": "¿Sueñas con hacer un impacto real en el mundo? Descubre cómo tu talento puede transformar la industria. Conoce historias inspiradoras de quienes han hecho la transición del aula al mundo laboral para convertirse en líderes que están definiendo el futuro.",
+        "description_en": "Do you dream of making a real impact in the world? Discover how your talent can transform the industry. Hear inspiring stories from those who have made the transition from classroom to workplace to become leaders who are shaping the future.",
         "time": "13:40 hrs",
         "duration": "45 min",
         "speakers": [
             {
                 "id": "1",
-                "name": "Roger Roa",
-                "position": "Cybersecurity Business Consultant Lead",
-                "position_en": "Cybersecurity Business Consultant Lead",
+                "name": "Mónica Zavaleta",
+                "position": "Offer Category Manager Service",
+                "position_en": "Offer Category Manager Service",
                 "company": "Schneider Electric",
-                "bio": "Roger Roa Ingeniero Eléctrico por parte de la Universidad de loa Andes, lidera la consultoría de ciberseguridad en Schneider Electric, guiando a clientes en la protección de sus infraestructuras críticas mediante soluciones digitales seguras y alineadas con estándares internacionales. Su enfoque estratégico y técnico permite identificar riesgos, diseñar arquitecturas seguras y fortalecer la resiliencia operativa en entornos industriales.",
-                "bio_en": "Roger Roa, Electrical Engineer from the University of the Andes, leads cybersecurity consulting at Schneider Electric, guiding clients in protecting their critical infrastructures through secure digital solutions aligned with international standards. His strategic and technical approach allows him to identify risks, design secure architectures, and strengthen operational resilience in industrial environments.",
-                "image": "/img/speakers/Roger_Roa.webp",
+                "bio": "Mónica Zavaleta: Egresada de la Universidad Nacional Autónoma de México de la Ingeniera Eléctrica Electrónica, apasionada en el desarrollo de soluciones energéticas inteligentes, con más de 4 de experiencia en el sector de tecnología y servicios de energía. Actualmente se desempeña como Developer Manager for Secure Power Services en Schneider Electric México, donde impulsa la innovación y la transformación digital en servicios críticos de energía.",
+                "bio_en": "Mónica Zavaleta: Graduate of the National Autonomous University of Mexico in Electrical and Electronic Engineering, passionate about the development of intelligent energy solutions, with more than 4 years of experience in the technology and energy services sector. She currently serves as Developer Manager for Secure Power Services at Schneider Electric Mexico, where she drives innovation and digital transformation in critical energy services.",
+                "image": "/img/speakers/Mónica_Zavaleta.webp",
                 "email": "",
                 "phone": "",
                 "moderador": false
             },
             {
                 "id": "2",
-                "name": "Belem Castañeda",
-                "position": "Ofter Category Manager Services",
-                "position_en": "Ofter Category Manager Services",
+                "name": "Paulina Arellano",
+                "position": "Operational Offer Manager ",
+                "position_en": "Operational Offer Manager ",
                 "company": "Schneider Electric",
-                "bio": "Belem Castañeda Egresada de la carrera de Ingeniería Industrial del Instituto Politécnico Nacional, es responsable de gestionar y desarrollar el portafolio de servicios dentro de Schneider Electric, alineando las ofertas con las necesidades del mercado y la estrategia de negocio. Su enfoque combina análisis de mercado, innovación y colaboración con equipos comerciales para impulsar soluciones de alto valor para los clientes.",
-                "bio_en": "Belem Castañeda, a graduate of Industrial Engineering from the Instituto Politécnico Nacional, is responsible for managing and developing the service portfolio within Schneider Electric, aligning offerings with market needs and business strategy. Her approach combines market analysis, innovation, and collaboration with commercial teams to drive high-value solutions for clients.",
-                "image": "/img/speakers/Belem_Castañeda.webp",
-                "email": "",
-                "phone": "",
-                "moderador": false
-            },
-            {
-                "id": "3",
-                "name": "Sharon Álvarez",
-                "position": "Business Developer",
-                "position_en": "Business Developer",
-                "company": "Schneider Electric",
-                "bio": "Sharon Álvarez Ingeniera en Robótica Industrial por el Instituto Politécnico Nacional, con más de 11 años de experiencia dedicada a Infraestructura para Datacenter, con especialidad en sistemas de Aire Acondicionado de Precisión. Certificada en instalaciones de Sistemas de Aire Acondicionado Industrial por TECA y en Diseño de Centros de Datos por UPTIME y por ICREA ",
-                "bio_en": "Sharon Álvarez, Industrial Robotics Engineer from the Instituto Politécnico Nacional, with over 11 years of experience dedicated to Data Center Infrastructure, specializing in Precision Air Conditioning systems. Certified in Industrial Air Conditioning Systems installations by TECA and in Data Center Design by UPTIME and ICREA.",
-                "image": "/img/speakers/Sharon_Álvarez.webp",
+                "bio": "Paulina Arellano: Egresada de la licenciatura de Marketing y comunicación por parte del Tecnológico de Monterrey. Cuenta con experiencia en áreas como gestión de proyectos, análisis de mercado y desarrollo comercial. Actualmente se desempeña como Operational Offer Manager en Schneider Electric México, donde lidera la estrategia y ejecución de ofertas operativas para soluciones de energía segura y sostenible.",
+                "bio_en": "Paulina Arellano: Graduate of the Marketing and Communication degree from the Tecnológico de Monterrey. She has experience in areas such as project management, market analysis and business development. She currently serves as Operational Offer Manager at Schneider Electric Mexico, where she leads the strategy and execution of operational offers for secure and sustainable energy solutions.",
+                "image": "/img/speakers/Paulina_Arellano.webp",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -530,13 +599,27 @@ const stage_1_day_3: Program[] = [
         ]
     },
     {
-        "title": "",
-        "title_en": "",
-        "description": "",
-        "description_en": "",
+        "title": "MX- System: Automatización libre de gabinete de control",
+        "title_en": "MX- System: Control Cabinet Free Automation",
+        "description": "El MX-System de Beckhoff revoluciona la forma de automatizar máquinas al eliminar por completo los armarios de distribución. Con esta innovación, la ingeniería se vuelve más simple y ágil, optimizando tanto el diseño como la implementación del sistema. Entre sus principales beneficios destacan: •	Ahorro de espacio físico, con un diseño compacto y eficiente. •	Reducción en la longitud de los recorridos de cables, lo que mejora la instalación y el mantenimiento. •	Certificación global, cumpliendo con los estándares UL/CSA e IEC para un uso seguro y universal. •	Concepto plug-and-play, que permite la instalación incluso por personal no especializado. •	Herramientas de diagnóstico claras y precisas, que garantizan una operación confiable y eficiente.",
+        "description_en": "Beckhoff's MX-System revolutionizes the way machines are automated by completely eliminating distribution cabinets. With this innovation, engineering becomes simpler and more agile, optimizing both the design and implementation of the system. Its main benefits include: • Saving physical space, with a compact and efficient design. • Reduction in cable routing lengths, which improves installation and maintenance. • Global certification, complying with UL/CSA and IEC standards for safe and universal use. • Plug-and-play concept, allowing installation even by non-specialized personnel. • Clear and precise diagnostic tools, ensuring reliable and efficient operation.",
         "time": "14:30 hrs",
         "duration": "35 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Giovanni Muciño",
+                "position": "Ingeniero Especialista de producto – MX-System ",
+                "position_en": " Product Specialist Engineer – MX-System ",
+                "company": "Beckhoff Automation",
+                "bio": "Ingeniero Mecatrónico, egresado del Instituto Tecnológico de Tlalnepantla, con trayectoria en automatización y adopción de nuevas tecnologías. Ha colaborado en proyectos integrales de diseño y montaje de gabinetes de control, participando en todas las etapas, desde la concepción hasta la puesta en marcha en campo. Esta experiencia le ha brindado una visión global de los procesos industriales, permitiéndole optimizar costos, tiempos y garantizar soluciones confiables para cada aplicación. Con amplia experiencia en automatización en el sector aeroportuario, donde se ha desempeñado bajo los más altos estándares de calidad y seguridad. Su formación se ha enriquecido con especializaciones en Alemania, donde profundizó en control de movimiento PTP, programación avanzada, comunicaciones industriales e interfaces web para automatización.",
+                "bio_en": "Mechatronics Engineer, graduate of the Instituto Tecnológico de Tlalnepantla, with a background in automation and adoption of new technologies. He has collaborated on comprehensive projects for the design and assembly of control cabinets, participating in all stages, from conception to field commissioning. This experience has provided him with a global vision of industrial processes, allowing him to optimize costs, times, and ensure reliable solutions for each application. With extensive experience in automation in the airport sector, where he has worked under the highest standards of quality and safety. His training has been enriched with specializations in Germany, where he delved into PTP motion control, advanced programming, industrial communications, and web interfaces for automation.",
+                "image": "/img/speakers/Giovanni_Muciño.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "Manufactura inteligente: Tecnología, estrategia y talento para lograr una operación superproductiva",
@@ -635,7 +718,61 @@ const stage_2_day_1: Program[] = [
         "description_en": "Open a strategic conversation about how the convergence of technological innovation, sustainability, and generative artificial intelligence is redefining the industrial future and its impact on different sectors (public, private, local governments, and international cooperation), and how they can contribute to the sustainable economic development of economies like Mexico and Germany.",
         "time": "13:00 hrs",
         "duration": "60 min",
-        "speakers": []
+        "speakers": [
+            
+            {
+                "id": "1",
+                "name": "Andreas Müller",
+                "position": "Director General Adjunto de la Cámara Mexicano-Alemana de Comercio e Industria",
+                "position_en": "Deputy Director General of the Mexican-German Chamber of Commerce and Industry",
+                "company": "CAMEXA",
+                "bio": "Andreas Müller Sub-Director de la Cámara Mexicano Alemana de Comercio e Industria, CAMEXA desde Septiembre 2011. Desde agosto 2017 es presidente del Comité de Gestión por Competencias de Energías Renovables y Eficiencia Energética, y desde 2013 Vice-presidente del Comité de Gestión por Competencias de CAMEXA del CONOCER. Desde Enero 2021 funge como asesor estratégico a la Alianza para la Educación Dual de la Confederación Alemana de las Cámaras de Comercio e Industria (DIHK) que apoya al CCE, COPARMEX y el CONOCER en el escalamiento de la formación dual empresarial.Desde Febrero 2022 es Vicepresidente de la Comisión de México  4.0 de CONCAMIN para los temas de estandarización, ciberseguridad, sustentabilidad y formación dual.",
+                "bio_en": "Andreas Müller has been the Deputy Director of the Mexican-German Chamber of Commerce and Industry (CAMEXA) since September 2011. Since August 2017, he has been the president of the Competency Management Committee for Renewable Energies and Energy Efficiency, and since 2013, he has been the vice president of the Competency Management Committee of CAMEXA of CONOCER. Since January 2021, he has served as a strategic advisor to the Dual Education Alliance of the German Confederation of Chambers of Commerce and Industry (DIHK), which supports the CCE, COPARMEX, and CONOCER in scaling dual vocational training. Since February 2022, he has been the Vice President of the Mexico 4.0 Commission of CONCAMIN for issues of standardization, cybersecurity, sustainability, and dual training.",
+                "image": "/img/speakers/andreasmuller.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Elena Estavillo",
+                "position": "Fundadora y Directora General",
+                "position_en": "Founder and CEO",
+                "company": "Centro i",
+                "bio": "Elena Estavillo es fundadora y directora general de Centro-i para la Sociedad del Futuro, un think tank independiente que promueve un futuro tecnológico ético, responsable e inclusivo. Fue comisionada del organismo regulador mexicano de telecomunicaciones y radiodifusión (Instituto Federal de Telecomunicaciones, IFT), y es una experta reconocida a nivel mundial en ética de la inteligencia artificial, gobernanza digital e igualdad de género en la tecnología. Lideró la Evaluación de Preparación en IA de la UNESCO en México y ha formado parte del Grupo de Expertas de la CSW. Finalista del premio Woman in AI of the Year (2023), además de ser reconocida como ITU Gender Trendsetter. Es Harvard ALI Fellow 2023 y doctora en Economía por la Universidad de París.",
+                "bio_en": "Elena Estavillo is the founder and CEO of Centro-i for the Society of the Future, an independent think tank that promotes an ethical, responsible, and inclusive technological future. She was a commissioner of the Mexican telecommunications and broadcasting regulatory body (Federal Institute of Telecommunications, IFT) and is a globally recognized expert in artificial intelligence ethics, digital governance",
+                "image": "/img/speakers/Elena_Estavillo.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "3",
+                "name": "Ute Böttcher",
+                "position": "Directora Residente",
+                "position_en": "Resident Director",
+                "company": "GIZ México",
+                "bio": "Ute Boettcher se desempeña como Directora Residente de la GIZ México, donde lidera programas estratégicos que fomentan el desarrollo sostenible y la gobernanza democrática. Con 25 años de destacada trayectoria en la cooperación internacional y más de 20 años en funciones de liderazgo y gestión, su experiencia se centra en áreas críticas como medio ambiente, cambio climático, comercio y gobernanza. Ha dirigido proyectos clave a nivel global, incluyendo el fomento de normas ambientales en la industria textil en Bangladesh, la coordinación de iniciativas climáticas en Asia y África, y la asesoría al Ministerio de Medio Ambiente en Malí. Su habilidad para colaborar eficazmente con gobiernos, ONGs y el sector privado resalta su influencia y liderazgo en el ámbito internacional.",
+                "bio_en": "Ute Boettcher serves as the Resident Director of GIZ Mexico, where she leads strategic programs that promote sustainable development and democratic governance. With 25 years of distinguished experience in international cooperation and over 20 years in leadership and management roles, her expertise focuses on critical areas such as environment, climate change, trade, and governance. She has led key projects globally, including promoting environmental standards in the textile industry in Bangladesh, coordinating climate initiatives in Asia and Africa, and advising the Ministry of Environment in Mali. Her ability to collaborate effectively with governments, NGOs, and the private sector highlights her influence and leadership in the international arena.",
+                "image": "/img/speakers/ute_Boettcher_farbe.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "4",
+                "name": "Andrea Carreón - Moderadora",
+                "position": "Asesora Técnica ",
+                "position_en": "Technical Advisor",
+                "company": "GIZ México",
+                "bio": "Andrea Carreón es licenciada en Relaciones Internacionales por el Tecnológico de Monterrey. Cuenta con experiencia en proyectos de diálogo multiactor y ha colaborado con distintas entidades del sector público, privado y sociedad civil. Actualmente, es Asesora Técnica para el Secretariado del Diálogo Digital entre México y Alemania, proyecto global implementado por encargo del Ministerio Federal de Asuntos Digitales y Modernización del Estado del Gobierno de Alemania.",
+                "bio_en": "Andrea Carreón holds a degree in International Relations from the Tecnológico de Monterrey. She has experience in multi-stakeholder dialogue projects and has collaborated with various entities from the public, private, and civil society sectors. Currently, she is a Technical Advisor for the Secretariat of the Digital Dialogue between Mexico and Germany, a global project implemented on behalf of the Federal Ministry of Digital and Economic Affairs of the German Government.",
+                "image": "/img/speakers/andreaCarreon.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "Inauguración Cumbre de Desarrollo Industrial Sostenible",
@@ -766,7 +903,22 @@ const stage_2_day_1: Program[] = [
         "description_en": "",
         "time": "17:10 hrs",
         "duration": "5 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "4",
+                "name": "Bernd Rohde",
+                "position": "CEO and Member of the Board of Directors",
+                "position_en": "CEO and Member of the Board of Directors",
+                "company": "Italian German Exhibition Company",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/Bernd_Rohde.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            
+        ]
     },
     {
         "title": "Cadenas que Conectan el Futuro: Fortaleciendo la Movilidad Regional ",
@@ -818,6 +970,64 @@ const stage_2_day_1: Program[] = [
 
 const stage_2_day_2: Program[] = [
     {
+        "title": "Autodesk",
+        "title_en": "Autodesk",
+        "description": "",
+        "description_en": "",
+        "time": "11:20 hrs",
+        "duration": "45 min",
+        "speakers": []
+    },
+    {
+        "title": "Digitalizando con Impacto: Eficiencia, Conectividad y Ciberseguridad ",
+        "title_en": "Digitizing with Impact: Efficiency, Connectivity and Cybersecurity",
+        "description": "En un mundo cada vez más conectado, la digitalización es la clave del éxito. Pero, ¿cómo garantizar la seguridad? Este panel revelará cómo las soluciones digitales de Schneider Electric no solo optimizan la eficiencia operativa, sino que también protegen tu negocio de los desafíos de la ciberseguridad, asegurando un crecimiento confiable y escalable.",
+        "description_en": "In an increasingly connected world, digitization is the key to success. But how to ensure security? This panel will reveal how Schneider Electric's digital solutions not only optimize operational efficiency but also protect your business from cybersecurity challenges, ensuring reliable and scalable growth.",
+        "time": "12:10 hrs",
+        "duration": "45 min",
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Roger Roa",
+                "position": "Cybersecurity Business Consultant Lead",
+                "position_en": "Cybersecurity Business Consultant Lead",
+                "company": "Schneider Electric",
+                "bio": "Roger Roa Ingeniero Eléctrico por parte de la Universidad de loa Andes, lidera la consultoría de ciberseguridad en Schneider Electric, guiando a clientes en la protección de sus infraestructuras críticas mediante soluciones digitales seguras y alineadas con estándares internacionales. Su enfoque estratégico y técnico permite identificar riesgos, diseñar arquitecturas seguras y fortalecer la resiliencia operativa en entornos industriales.",
+                "bio_en": "Roger Roa, Electrical Engineer from the University of the Andes, leads cybersecurity consulting at Schneider Electric, guiding clients in protecting their critical infrastructures through secure digital solutions aligned with international standards. His strategic and technical approach allows him to identify risks, design secure architectures, and strengthen operational resilience in industrial environments.",
+                "image": "/img/speakers/Roger_Roa.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Belem Castañeda",
+                "position": "Ofter Category Manager Services",
+                "position_en": "Ofter Category Manager Services",
+                "company": "Schneider Electric",
+                "bio": "Belem Castañeda Egresada de la carrera de Ingeniería Industrial del Instituto Politécnico Nacional, es responsable de gestionar y desarrollar el portafolio de servicios dentro de Schneider Electric, alineando las ofertas con las necesidades del mercado y la estrategia de negocio. Su enfoque combina análisis de mercado, innovación y colaboración con equipos comerciales para impulsar soluciones de alto valor para los clientes.",
+                "bio_en": "Belem Castañeda, a graduate of Industrial Engineering from the Instituto Politécnico Nacional, is responsible for managing and developing the service portfolio within Schneider Electric, aligning offerings with market needs and business strategy. Her approach combines market analysis, innovation, and collaboration with commercial teams to drive high-value solutions for clients.",
+                "image": "/img/speakers/Belem_Castañeda.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "3",
+                "name": "Sharon Álvarez",
+                "position": "Business Developer",
+                "position_en": "Business Developer",
+                "company": "Schneider Electric",
+                "bio": "Sharon Álvarez Ingeniera en Robótica Industrial por el Instituto Politécnico Nacional, con más de 11 años de experiencia dedicada a Infraestructura para Datacenter, con especialidad en sistemas de Aire Acondicionado de Precisión. Certificada en instalaciones de Sistemas de Aire Acondicionado Industrial por TECA y en Diseño de Centros de Datos por UPTIME y por ICREA ",
+                "bio_en": "Sharon Álvarez, Industrial Robotics Engineer from the Instituto Politécnico Nacional, with over 11 years of experience dedicated to Data Center Infrastructure, specializing in Precision Air Conditioning systems. Certified in Industrial Air Conditioning Systems installations by TECA and in Data Center Design by UPTIME and ICREA.",
+                "image": "/img/speakers/Sharon_Álvarez.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
+    },
+    {
         "title": "",
         "title_en": "",
         "description": "",
@@ -826,42 +1036,7 @@ const stage_2_day_2: Program[] = [
         "duration": "45 min",
         "speakers": []
     },
-    {
-        "title": "Del Aula a la Industria: El Viaje del Talento que Transforma",
-        "title_en": "Del Aula a la Industria: El Viaje del Talento que Transforma",
-        "description": "¿Sueñas con hacer un impacto real en el mundo? Descubre cómo tu talento puede transformar la industria. Conoce historias inspiradoras de quienes han hecho la transición del aula al mundo laboral para convertirse en líderes que están definiendo el futuro.",
-        "description_en": "Do you dream of making a real impact in the world? Discover how your talent can transform the industry. Hear inspiring stories from those who have made the transition from classroom to workplace to become leaders who are shaping the future.",
-        "time": "12:10 hrs",
-        "duration": "45 min",
-        "speakers": [
-            {
-                "id": "1",
-                "name": "Mónica Zavaleta",
-                "position": "Offer Category Manager Service",
-                "position_en": "Offer Category Manager Service",
-                "company": "Schneider Electric",
-                "bio": "Mónica Zavaleta: Egresada de la Universidad Nacional Autónoma de México de la Ingeniera Eléctrica Electrónica, apasionada en el desarrollo de soluciones energéticas inteligentes, con más de 4 de experiencia en el sector de tecnología y servicios de energía. Actualmente se desempeña como Developer Manager for Secure Power Services en Schneider Electric México, donde impulsa la innovación y la transformación digital en servicios críticos de energía.",
-                "bio_en": "Mónica Zavaleta: Graduate of the National Autonomous University of Mexico in Electrical and Electronic Engineering, passionate about the development of intelligent energy solutions, with more than 4 years of experience in the technology and energy services sector. She currently serves as Developer Manager for Secure Power Services at Schneider Electric Mexico, where she drives innovation and digital transformation in critical energy services.",
-                "image": "/img/speakers/Mónica_Zavaleta.webp",
-                "email": "",
-                "phone": "",
-                "moderador": false
-            },
-            {
-                "id": "2",
-                "name": "Paulina Arellano",
-                "position": "Operational Offer Manager ",
-                "position_en": "Operational Offer Manager ",
-                "company": "Schneider Electric",
-                "bio": "Paulina Arellano: Egresada de la licenciatura de Marketing y comunicación por parte del Tecnológico de Monterrey. Cuenta con experiencia en áreas como gestión de proyectos, análisis de mercado y desarrollo comercial. Actualmente se desempeña como Operational Offer Manager en Schneider Electric México, donde lidera la estrategia y ejecución de ofertas operativas para soluciones de energía segura y sostenible.",
-                "bio_en": "Paulina Arellano: Graduate of the Marketing and Communication degree from the Tecnológico de Monterrey. She has experience in areas such as project management, market analysis and business development. She currently serves as Operational Offer Manager at Schneider Electric Mexico, where she leads the strategy and execution of operational offers for secure and sustainable energy solutions.",
-                "image": "/img/speakers/Paulina_Arellano.webp",
-                "email": "",
-                "phone": "",
-                "moderador": false
-            },
-        ]
-    },
+    
     {
         "title": "Mitsubishi",
         "title_en": "Mitsubishi",
@@ -872,8 +1047,8 @@ const stage_2_day_2: Program[] = [
         "speakers": []
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": " S&P Mobility",
+        "title_en": " S&P Mobility",
         "description": "",
         "description_en": "",
         "time": "13:50 hrs",
@@ -904,13 +1079,53 @@ const stage_2_day_2: Program[] = [
         ]
     },
     {
-        "title": "ITMujeres",
-        "title_en": "ITMujeres",
+        "title": "ITMujeres - Mujeres en las Fábricas del Futuro: dando forma a industrias inclusivas",
+        "title_en": "ITMujeres - Women in the Factories of the Future: Shaping Inclusive Industries",
         "description": "",
         "description_en": "",
         "time": "16:00 hrs",
         "duration": "60 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Azul Ogazón - Moderadora",
+                "position": "Deputy General Manager ",
+                "position_en": "Deputy General Manager",
+                "company": "Italian German Exhibition Company Mexico ",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/azul_ogazon.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Caroline Hoarau",
+                "position": "Directora de Industrial Transformation, Usuarios Finales y Cuentas Estratégicas para México y Centroamérica",
+                "position_en": "Director of Industrial Transformation, End Users and Strategic Accounts for Mexico and Central America",
+                "company": "Schneider Electric",
+                "bio": "Caroline cuenta con más de dieciséis años de experiencia profesional en el sector energético.  Actualmente funge como directora de Industrial Transformation, Usuarios Finales y Cuentas Estratégicas para México y Centroamérica, posición en la que es responsable de encabezar las operaciones comerciales de la división, orientada en la oferta de productos, soluciones y servicios enfocados en la aplicación de tecnología avanzada en procesos de manufactura. Caroline inició su relación laboral con Schneider Electric en 2010 como supervisora de compras, puesto en el que su principal responsabilidad consistía en fortalecer la base de proveedores, así como asegurar el reabastecimiento de la planta de Rojo Gomez y establecer un plan de acción de productividad en conjunto con la proveeduría.  Durante los siguientes cinco años se desempeñó en diferentes posiciones tanto a nivel operativo como comercial hasta que en 2017 fue nombrada gerente de Segmentos de Edificios Comerciales para apoyar y supervisar a los gerentes de cuentas clave que respaldan las industrias de Salud, Hotelería, Retail y Bienes Raíces con la finalidad de promover a nivel de los usuarios finales las soluciones más innovadoras para hacer más eficiente la operación de dichos edificios. Igualmente, funge como Champion de EcoStruxure, la plataforma del Internet de las Cosas de Schneider Electric y está a cargo del liderazgo de las cuentas estratégicas con la meta de empujar las ofertas digitales hacia dichas cuentas. Caroline cuenta con una maestría en gestión de empresas con una especialización en finanzas por parte de Audencia Nantes Ecole de Management, ubicada en Francia.",
+                "bio_en": "Caroline has over sixteen years of professional experience in the energy sector. She currently serves as Director of Industrial Transformation, End Users and Strategic Accounts for Mexico and Central America, a position in which she is responsible for leading the commercial operations of the division, focused on the offer of products, solutions and services focused on the application of advanced technology in manufacturing processes. Caroline began her working relationship with Schneider Electric in 2010 as a purchasing supervisor, a position in which her main responsibility was to strengthen the supplier base, as well as ensure the replenishment of the Rojo Gomez plant and establish a productivity action plan together with the supply. Over the next five years she served in different positions both at the operational and commercial level until in 2017 she was appointed manager of Commercial Building Segments to support and supervise key account managers who support the Health, Hospitality, Retail and Real Estate industries in order to promote the most innovative solutions at the end user level to make the operation of these buildings more efficient. She also serves as Champion of EcoStruxure, Schneider Electric's Internet of Things platform, and is in charge of leading strategic accounts with the goal of pushing digital offerings to those accounts. Caroline has a master's degree in business management with a specialization in finance from Audencia Nantes Ecole de Management, located in France.",
+                "image": "/img/speakers/Caroline_Hoarau.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "3",
+                "name": "Valeria Rivera",
+                "position": "Directora de Comunicación y Desarrollo de Negocio",
+                "position_en": "Director of Communication and Business Development",
+                "company": "Siemens México, Centroamérica y el Caribe ",
+                "bio": "Valeria cuenta con una amplia trayectoria profesional de más de 11 años, en los que ha desempeñado diversos cargos como Manager de Estrategia y Desarrollo de Negocio y Directora de Estrategia Corporativa. Es Administradora de Empresas, graduada en el Instituto Politécnico Nacional y cuenta con una Maestría en Comunicación Corporativa y Digital por la EAE Business School. Actualmente es Directora de Comunicación Corporativa y Desarrollo de Negocios para Siemens México, Centroamérica y el Caribe.",
+                "bio_en": "Valeria has a broad professional background of more than 11 years, during which she has held various positions such as Strategy and Business Development Manager and Director of Corporate Strategy. She is a Business Administrator, graduated from the National Polytechnic Institute, and has a Master's degree in Corporate and Digital Communication from EAE Business School. She is currently the Director of Corporate Communication and Business Development for Siemens Mexico, Central America and the Caribbean.",
+                "image": "/img/speakers/valeriarivera.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },    
+        ]
     },
     {
         "title": "ITMujeres",
@@ -996,10 +1211,36 @@ const stage_2_day_3: Program[] = [
                 "name": "Rodrigo Salcedo",
                 "position": "Asociación Gremial de Vehículos Eléctricos de Chile ",
                 "position_en": "Association Gremial de Vehículos Eléctricos de Chile ",
-                "company": "Asociación Gremial de Vehículos Eléctricos de Chile (AVEC)",
+                "company": "AVEC",
                 "bio": "Rodrigo Salcedo Campino es Ingeniero Comercial con una trayectoria en la industria logística y energética de Chile, especializándose en sistemas de transporte eléctrico y movilidad sostenible. <br><br>Es presidente de la Asociación Gremial de Vehículos Eléctricos de Chile (AVEC), donde impulsa políticas públicas y difusión del uso de vehículos eléctricos en el país. Es directivo en la Asociación Latinoamericana de Movilidad Sostenible (ALAMOS). <br><br>Ha sido expositor en foros y congresos internacionales - como Tomorrow\.Mobility Barcelona y Smart City Expo en Barcelona - sobre electromovilidad y conectividad eléctrica en América Latina. <br><br>Con participación activa en comisiones legislativas nacionales y mesas técnicas, ha colaborado en iniciativas clave como la Ley de Electromovilidad y la estrategia regulatoria vigente en Chile.",
                 "bio_en": "Rodrigo Salcedo Campino is a Commercial Engineer with a background in the logistics and energy industry in Chile, specializing in electric transport systems and sustainable mobility. <br><br>He is president of the Association Gremial de Vehículos Eléctricos de Chile (AVEC), where he promotes public policies and dissemination of the use of electric vehicles in the country. Director of the Latin American Association for Sustainable Mobility (ALAMOS). <br><br>He has been an exhibitor in international forums and congresses - such as Tomorrow . Mobility Barcelona and Smart City Expo in Barcelona - on electromobility and electrical connectivity in Latin America. <br><br>With active participation in national legislative committees and technical tables, has collaborated on key initiatives such as the Electromobility Law and the current regulatory strategy in Chile.",
                 "image": "/img/speakers/Rodrigo_Salcedo.png",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "3",
+                "name": "Ekaterina Fedotova",
+                "position": "Directora Comercial",
+                "position_en": "Commercial Director",
+                "company": "ENHO Energy Home",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/Ekaterina_Fedotova.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "4",
+                "name": "Diana Ávalos",
+                "position": "Directora General ",
+                "position_en": "General Director",
+                "company": "Asociación Mexicana de Impulso al Vehículo Eléctrico",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/default.webp",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -1107,6 +1348,19 @@ const stage_2_day_3: Program[] = [
                 "bio": "Especialista senior con 20 años de experiencia en cambio climático, sostenibilidad corporativa, economía circular, transición energética y descarbonización. Ha trabajado en mitigación y cuantificación de Gases de Efecto Invernadero (GEI), sistemas MRV y M&E, energías renovables, eficiencia energética, estrategias LT-LEDS, bioseguridad, gestión de riesgos, residuos, género y producción agroalimentaria sostenible. Académica en la UNAM y el Tecnológico de Monterrey, ha colaborado con diversas instituciones nacionales e internacionales del sector público y privado, como SENER, SEMARNAT, SHCP, FIRA, INECC, EPA, GIZ, FAO, BID, Banco Mundial, CONCAMIN y COPARMEX. Su experiencia se centra en el desarrollo e implementación de políticas y proyectos que promueven un desarrollo sostenible y bajas emisiones de carbono, integrando enfoques técnicos, ambientales y sociales.",
                 "bio_en": "Senior specialist with 20 years of experience in climate change, corporate sustainability, circular economy, energy transition and decarbonization. She has worked on mitigation and quantification of Greenhouse Gases (GHG), MRV and M&E systems, renewable energies, energy efficiency, LT-LEDS strategies, biosecurity, risk management",
                 "image": "/img/speakers/Miriam_Macías.jpeg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "5",
+                "name": "Felix Steinberg",
+                "position": "Project Director",
+                "position_en": "Project Director",
+                "company": "CATAL1.5T - Latin America Platform",
+                "bio": "Felix Steinberg dirige la plataforma CATAL1.5T en América Latina, un acelerador de startups de ClimateTech. En la GIZ impulsa mecanismos financieros innovadores y ecosistemas sostenibles para la innovación climática",
+                "bio_en": "Felix Steinberg leads the CATAL1.5T platform in Latin America, a ClimateTech startup accelerator. At GIZ, he promotes innovative financial mechanisms and sustainable ecosystems for climate innovation.",
+                "image": "/img/speakers/Felix_Steinberg.webp",
                 "email": "",
                 "phone": "",
                 "moderador": false

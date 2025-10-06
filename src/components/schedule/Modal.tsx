@@ -65,7 +65,7 @@ const Modal = ({ isOpen, onClose, speaker, language }: ModalProps) => {
             alt={speaker.name}
             className="sm:object-cover lg:w-[400px] md:w-[300px]  rounded-xl shadow-md"
           />
-          <div className="justify-center text-center sm:text-left overflow-scroll max-h-[600px] p-5">
+          <div className="justify-center text-center sm:text-left overflow-scroll w-full p-5">
             <div className="square_red_2 top-0 bg-gradient-to-t from-[#e10725] to-[#e40966] z-10 pl-3 mb-4 pb-3">
               {speaker.company !== "" && (
                 <div className="text-center bold w-fit bg-custom-orange text-white text-xs md:text-sm px-3 py-1 rounded-full shadow-lg outline-white">
@@ -85,7 +85,7 @@ const Modal = ({ isOpen, onClose, speaker, language }: ModalProps) => {
                 dangerouslySetInnerHTML={{ __html: safeHtml }}
               ></p>
             ) : (
-              "La descripción aún no está disponible. ¡Mantente al tanto, pronto la publicaremos!"
+              <></>
             )}
 
             {newBio.length > 700 && (

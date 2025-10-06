@@ -117,21 +117,19 @@ const ProgramItem: React.FC<Props> = ({ item, translate, language }) => {
                     item.description_en
                   )
                 ) : language === "es" ? (
-                  <p>
-                    La descripción aún no está disponible. ¡Mantente al tanto,
-                    pronto la publicaremos!
-                  </p>
+                  <>
+                    
+                  </>
                 ) : (
-                  <p>
-                    The description is not available yet. Stay tuned, it will be
-                    published soon!
-                  </p>
+                  <>
+                    
+                  </>
                 )}
               </p>
 
               {item.speakers.length > 0 && (
                 <>
-                  <p className="mt-2 font-extrabold">{translate.panelists}</p>
+                  <p className="mt-2 font-extrabold">Speakers</p>
                   <ul className="mt-2 ms-2 gap-2 grid lg:grid-cols-3 md:grid-cols-2">
                     {item.speakers.map((speaker) => (
                       <li key={speaker.id} className="mt-2">
