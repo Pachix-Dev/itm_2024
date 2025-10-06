@@ -2305,7 +2305,7 @@ export const directory = [
     position: "",
     phone: "+52 (442) 252 0323",
     email: "pescalona@grupofintender.com",
-    webpage: "https://www.grupofintender",
+    webpage: "https://grupofintender.com",
     address: "Av. Ejercito Republicano 119-1 int D; Carretas, Qro Qro.",
     cp: "76050",
     city: "Querétaro ",
