@@ -1,0 +1,201 @@
+---
+import i18next from 'i18next';
+
+const lang = i18next.language
+const base = i18next.language === 'es' ? '' : `/${lang}`
+
+const keynotes = [
+  {
+    name: "Denisse Navarro",
+    position: "Oficial Nacional y Representante Adjunta",
+    company: "Organización de las Naciones Unidas para el Desarrollo Industrial",
+    image: "/img/speakers/Denisse_Navarro_UNIDO.jpeg"
+  },
+  {
+    name: "Andreas Müller",
+    position: "Director Adjunto",
+    company: "Cámara Mexicano-Alemana de Comercio e Industria (CAMEXA)",
+    image: "/img/speakers/andreasmuller.webp"
+  },
+  {
+    name: "Nanghelly Silva",
+    position: "Presidenta de la Comisión de Innovación y Desarrollo",
+    company: "Consejo Coordinador Empresarial",
+    image: "/img/speakers/Nanghelly_Silva_Anzaldúa_CCE.jpg"
+  },
+  {
+    name: "Alejandro Preinfalk",
+    position: "Presidente & CEO",
+    company: "Siemens México, Centroamérica y el Caribe",
+    image: "/img/speakers/alejandro_preinfalk.webp"
+  },
+  {
+    name: "Hans Blomeier",
+    position: "Representante en México",
+    company: "Konrad Adenauer Foundation",
+    image: "/img/speakers/hans_blomeier.webp"
+  },
+  
+  {
+    name: "Jeff Burnstein",
+    position: "Presidente",
+    company: "Association for Advancing Automation",
+    image: "/img/speakers/jeff_burnstein.webp"
+  },
+  {
+    name: "Francisco González",
+    position: "Presidente Ejecutivo",
+    company: "Industria Nacional de Autopartes",
+    image: "/img/speakers/francisco_gonzalez_diaz_new.webp"
+  },
+  {
+    name: "Akitake Kato",
+    position: "Presidente",
+    company: "MISUMI México",
+    image: "/img/speakers/Akitake_Kato.webp"
+  }
+];
+---
+
+<section class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-gray-900 to-black">
+  <div class="max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
+        Keynote <span class="text-gradient bg-gradient-to-r from-[#E42128] to-[#CF1363] bg-clip-text text-transparent">Speakers</span>
+      </h2>
+      <div class="w-32 h-1 bg-gradient-to-r from-[#E42128] to-[#CF1363] mx-auto rounded-full"></div>
+      <p class="text-gray-300 text-lg md:text-xl mt-6 max-w-3xl mx-auto">
+        {lang === 'es' ? 'Líderes visionarios que están transformando la industria y definiendo el futuro de la tecnología' : 'Visionary leaders who are transforming the industry and defining the future of technology'}
+      </p>
+    </div>
+
+    <!-- Speakers Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+      {keynotes.map((speaker, index) => (
+        <div 
+          class="keynote-card group relative bg-gradient-to-br from-gray-800/50 to-gray-900/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-[#E42128]/50 transition-all duration-500 hover:transform hover:scale-105"
+          style={`animation-delay: ${index * 0.1}s`}
+        >
+          <!-- Background Glow Effect -->
+          <div class="absolute inset-0 bg-gradient-to-br from-[#E42128]/5 to-[#CF1363]/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          
+          <!-- Content -->
+          <div class="relative z-10">
+            <!-- Image Container -->
+            <div class="relative mb-6">
+              <div class="w-24 h-24 md:w-28 md:h-28 mx-auto rounded-full overflow-hidden border-4 border-gray-600 group-hover:border-[#E42128] transition-colors duration-300 shadow-xl">
+                <img 
+                  src={speaker.image} 
+                  alt={speaker.name}
+                  class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+              <!-- Status Indicator -->
+              <div class="absolute -bottom-1 -right-1 w-6 h-6 bg-gradient-to-r from-[#E42128] to-[#CF1363] rounded-full border-4 border-gray-800 flex items-center justify-center">
+                <div class="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+              </div>
+            </div>
+
+            <!-- Speaker Info -->
+            <div class="text-center space-y-3">
+              <!-- Name -->
+              <h3 class="text-xl md:text-2xl font-bold text-white group-hover:text-[#E42128] transition-colors duration-300">
+                {speaker.name}
+              </h3>
+              
+              <!-- Position -->
+              <p class="text-[#E42128] font-semibold text-sm md:text-base">
+                {speaker.position}
+              </p>
+              
+              <!-- Company -->
+              <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+                {speaker.company}
+              </p>
+            </div>
+
+            <!-- Decorative Elements -->
+            <div class="absolute top-4 right-4 w-8 h-8 border-2 border-[#E42128]/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div class="w-full h-full border-2 border-[#CF1363]/40 rounded-full animate-spin-slow"></div>
+            </div>
+          </div>
+          
+          <!-- Hover Effect Line -->
+          <div class="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-[#E42128] to-[#CF1363] group-hover:w-full transition-all duration-500 rounded-b-2xl"></div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Call to Action -->
+    <a href={`${base}/programa-2025`} class="mx-auto flex justify-center mt-16 hover:scale-105 transition-transform duration-300">
+      <div class="inline-flex items-center gap-4 bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-full px-8 py-4 border border-gray-700/50">
+        <div class="flex -space-x-2">
+          {keynotes.slice(0, 4).map((speaker) => (
+            <img 
+              src={speaker.image} 
+              alt={speaker.name}
+              class="w-8 h-8 rounded-full border-2 border-gray-700 object-cover object-top"
+            />
+          ))}
+          <div class="w-8 h-8 rounded-full bg-gradient-to-r from-[#E42128] to-[#CF1363] border-2 border-gray-700 flex items-center justify-center text-white text-xs font-bold">
+            +{keynotes.length - 4}
+          </div>
+        </div>
+        <span class="text-gray-300 font-medium">
+          {lang === 'es' ? 'Y muchos líderes más te esperan en ITM 2025' : 'And many more leaders are waiting for you at ITM 2025'}
+        </span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<style>
+  .keynote-card {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 3s linear infinite;
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #E42128 0%, #CF1363 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .keynote-card {
+      padding: 1.5rem;
+    }
+  }
+
+  /* Hover effects for better performance */
+  @media (hover: hover) {
+    .keynote-card:hover {
+      box-shadow: 0 25px 50px -12px rgba(228, 33, 40, 0.25);
+    }
+  }
+</style>

@@ -99,13 +99,11 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
     class='mt-20 container mx-auto py-5 px-4 grid md:grid-cols-4 gap-10 backdrop-blur-sm bg-white/10 rounded-xl uppercase'
   >
     <a
-      href={i18next.language === 'es'
-        ? '/files/ITM-FACTSHEET-ESP-V4-2025_compressed.pdf'
-        : '/files/ITM-FACTSHEET-ENG-V4-2025_compressed.pdf'}
+      href={`${base}/programa-2025`}
       target='_blank'
       class='text-white bg-[#484848] hover:bg-white hover:text-black font-bold flex justify-center gap-5 py-5 rounded-xl'
     >
-      {t('menu.exhibitors_4')}
+      {t('menu.visitors_5')}
       <svg
         xmlns='http://www.w3.org/2000/svg'
         fill='none'

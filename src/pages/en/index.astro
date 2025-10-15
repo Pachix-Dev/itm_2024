@@ -7,6 +7,7 @@ import Layout from "@/layouts/Layout.astro";
 import Events from "@/components/home/Events.astro";
 import { events } from "../../data/constans_events";
 import Buyers from "@/components/home/Buyers.astro";
+import Keynotes from "@/components/home/Keynotes.astro";
 
 changeLanguage("en");
 
@@ -24,6 +25,7 @@ const base = i18next.language === "es" ? "" : `/${lang}`;
       class='w-full h-full'
     />
     <FreeRegister />
+    <Keynotes />
     <section class='bg-white'>
       <div class='grid lg:flex items-center'>
         <img

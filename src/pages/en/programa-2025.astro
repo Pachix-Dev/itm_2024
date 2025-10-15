@@ -9,121 +9,323 @@ changeLanguage("en");
 
 const lang = i18next.language;
 const base = i18next.language === "es" ? "" : `/${lang}`;
-// Usa el Record<string, string> para que puedas usar el t() sin problemas en React con TypeScript
 const translate = t("program", { returnObjects: true }) as Record<string, string>;
 ---
 
 <Layout title={`ITM | ${t('program.title')}`}>
+  <!-- Background Video -->
   <video
     class='fixed top-0 left-0 w-full h-full object-cover -z-10'
     autoplay
     loop
     muted
     playsinline
-    src='/videos/video_itm_programa.mp4'></video>
-  <main class='mx-5 md:mx-16 lg:mx-32 pb-5 my-20'>
-    <!-- Header Section -->
-    <div
-      class='flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-8'
-    >
-      <div class='flex-1'>
-        <h1
-          class='text-left text-[#E42128] text-4xl md:text-5xl xl:text-6xl font-extrabold leading-tight mb-4 uppercase'
-        >
-          {t('program.title')}
-        </h1>
-        <p class='italic text-lg md:text-xl text-gray-300 mb-6 lg:mb-0'>
-          * {t('program.changes')}
-        </p>
-      </div>
+    src='/videos/video_itm_programa.mp4'
+  >
+  </video>
 
-      <!-- Botón de registro mejorado -->
-      <div class='flex-shrink-0'>
-        <a
-          href={`${base}/registro`}
-          class='register-btn group inline-flex items-center justify-center px-8 py-4 text-lg md:text-xl font-bold text-white bg-gradient-to-r from-[#E42128] to-[#CF1363] rounded-full shadow-2xl hover:shadow-[0_0_30px_rgba(228,33,40,0.6)] transform hover:scale-105 transition-all duration-300 ease-out relative overflow-hidden'
-        >
-          <span class='relative z-10 flex items-center gap-2'>
-            {t('register.button_register')}
-            <svg
-              class='w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300'
-              fill='none'
-              stroke='currentColor'
-              viewBox='0 0 24 24'
+  <!-- Dark Overlay for Better Readability -->
+  <div class='fixed top-0 left-0 w-full h-full bg-black/40 -z-9'></div>
+
+  <main class='relative z-10 min-h-screen'>
+    <!-- Hero Section -->
+    <section class='px-5 md:px-16 lg:px-32 pt-20 pb-12'>
+      <div class='max-w-7xl mx-auto'>
+        <!-- Header -->
+        <div class='text-center mb-12 lg:mb-16'>
+          <h1
+            class='text-5xl md:text-6xl xl:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#E42128] via-[#CF1363] to-[#E42128] uppercase leading-tight mb-6 animate-fade-in'
+          >
+            {t('program.title')}
+          </h1>
+          <p
+            class='text-xl md:text-2xl text-gray-300 font-light mb-8 max-w-3xl mx-auto'
+          >
+            * {t('program.changes')}
+          </p>
+
+          <!-- CTA Button -->
+          <div class='mb-12'>
+            <a
+              href={`${base}/registro`}
+              class='cta-button group inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-white bg-gradient-to-r from-[#E42128] to-[#CF1363] rounded-full shadow-2xl hover:shadow-[0_0_40px_rgba(228,33,40,0.7)] transform hover:scale-105 transition-all duration-500 ease-out relative overflow-hidden border-2 border-transparent hover:border-white/20'
             >
-              <path
-                stroke-linecap='round'
-                stroke-linejoin='round'
-                stroke-width='2'
-                d='M13 7l5 5m0 0l-5 5m5-5H6'></path>
-            </svg>
-          </span>
-          <div
-            class='absolute inset-0 bg-gradient-to-r from-[#CF1363] to-[#E42128] opacity-0 group-hover:opacity-100 transition-opacity duration-300'
-          >
+              <span class='relative z-10 flex items-center gap-3'>
+                {t('register.button_register')}
+                <svg
+                  class='w-6 h-6 transform group-hover:translate-x-2 transition-transform duration-300'
+                  fill='none'
+                  stroke='currentColor'
+                  viewBox='0 0 24 24'
+                >
+                  <path
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                    stroke-width='2.5'
+                    d='M13 7l5 5m0 0l-5 5m5-5H6'></path>
+                </svg>
+              </span>
+              <div
+                class='absolute inset-0 bg-gradient-to-r from-[#CF1363] to-[#E42128] opacity-0 group-hover:opacity-100 transition-opacity duration-500'
+              >
+              </div>
+              <!-- Ripple effect -->
+              <div
+                class='absolute inset-0 rounded-full bg-white/10 scale-0 group-hover:scale-150 transition-transform duration-700'
+              >
+              </div>
+            </a>
           </div>
-        </a>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <section>
-      <h3 class='text-3xl pb-3'>{t('program.stages')}</h3>
-      <div class='md:ml-5'>
-        <Button id='stage-2'>Leaders of Tomorrow Arena</Button>
-        <Button id='stage-1'>Transformation Area</Button>
-      </div>
-      <div
-        class='w-full bg-gradient-to-br from-[#E42128] to-[#CF1363] h-[1px] mt-1 mb-3 rounded-sm'
-      >
-      </div>
-      <div class='md:ml-5 *:w-full md:*:w-fit'>
-        <Button id='day-1'
-          >{t('program.day')} 1<br />{t('program.day_1')}, 11 {
-            t('program.month')
-          }</Button
+    <!-- Program Navigation -->
+    <section class='px-5 md:px-16 lg:px-32 pb-8'>
+      <div class='max-w-7xl mx-auto'>
+        <!-- Glass Container -->
+        <div
+          class='bg-white/5 backdrop-blur-lg rounded-3xl border border-white/10 p-8 md:p-12 shadow-2xl'
         >
-        <Button id='day-2'
-          >{t('program.day')} 2<br />{t('program.day_2')}, 12 {
-            t('program.month')
-          }</Button
-        >
-        <Button id='day-3'
-          >{t('program.day')} 3<br />{t('program.day_3')}, 13 {
-            t('program.month')
-          }</Button
-        >
+          <!-- Section Title -->
+          <div class='text-center mb-10'>
+            <h2 class='text-3xl md:text-4xl font-bold text-white mb-4'>
+              {t('program.stages')}
+            </h2>
+            <div
+              class='w-24 h-1 bg-gradient-to-r from-[#E42128] to-[#CF1363] mx-auto rounded-full'
+            >
+            </div>
+          </div>
+
+          <!-- Stage Selector -->
+          <div class='mb-8'>
+            <h3
+              class='text-xl font-semibold text-gray-200 mb-4 text-center md:text-left'
+            >
+              Escenarios
+            </h3>
+            <div
+              class='flex flex-col md:flex-row gap-4 justify-center md:justify-start'
+            >
+              <Button id='stage-2' class='stage-btn'>
+                <div class='flex items-center gap-3'>
+                  <div class='w-3 h-3 bg-[#E42128] rounded-full'></div>
+                  <span>Leaders of Tomorrow Arena</span>
+                </div>
+              </Button>
+              <Button id='stage-1' class='stage-btn'>
+                <div class='flex items-center gap-3'>
+                  <div class='w-3 h-3 bg-[#CF1363] rounded-full'></div>
+                  <span>Transformation Area</span>
+                </div>
+              </Button>
+            </div>
+          </div>
+
+          <!-- Elegant Divider -->
+          <div class='relative mb-8'>
+            <div
+              class='w-full h-px bg-gradient-to-r from-transparent via-[#E42128]/50 to-transparent'
+            >
+            </div>
+            <div class='absolute inset-0 flex justify-center'>
+              <div
+                class='w-4 h-4 bg-gradient-to-r from-[#E42128] to-[#CF1363] rounded-full transform -translate-y-2 shadow-lg'
+              >
+              </div>
+            </div>
+          </div>
+
+          <!-- Day Selector -->
+          <div>
+            <h3
+              class='text-xl font-semibold text-gray-200 mb-4 text-center md:text-left'
+            >
+              Días del Evento
+            </h3>
+            <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
+              <Button id='day-1' class='day-btn'>
+                <div class='text-center'>
+                  <div class='text-2xl font-bold text/white mb-1'>
+                    {t('program.day')} 1
+                  </div>
+                  <div class='text-sm text-gray-300'>{t('program.day_1')}</div>
+                  <div class='text-sm text-gray-400'>
+                    11 {t('program.month')}
+                  </div>
+                </div>
+              </Button>
+              <Button id='day-2' class='day-btn'>
+                <div class='text-center'>
+                  <div class='text-2xl font-bold text/white mb-1'>
+                    {t('program.day')} 2
+                  </div>
+                  <div class='text-sm text-gray-300'>{t('program.day_2')}</div>
+                  <div class='text-sm text-gray-400'>
+                    12 {t('program.month')}
+                  </div>
+                </div>
+              </Button>
+              <Button id='day-3' class='day-btn'>
+                <div class='text-center'>
+                  <div class='text-2xl font-bold text/white mb-1'>
+                    {t('program.day')} 3
+                  </div>
+                  <div class='text-sm text-gray-300'>{t('program.day_3')}</div>
+                  <div class='text-sm text-gray-400'>
+                    13 {t('program.month')}
+                  </div>
+                </div>
+              </Button>
+            </div>
+          </div>
+        </div>
       </div>
-      {
-        programs.map((program) => (
-          <section
-            class='mt-5 hidden'
-            id={`program-${program.stage}-${program.day}`}
-          >
-            {program.conferences.map((item) => (
-              <ConferenceITM
-                item={item}
-                translate={translate}
-                language={i18next.language}
-                client:only
-              />
-            ))}
-          </section>
-        ))
-      }
+    </section>
+
+    <!-- Program Content -->
+    <section class='px-5 md:px-16 lg:px-32 pb-20'>
+      <div class='max-w-7xl mx-auto'>
+        {
+          programs.map((program) => (
+            <div
+              class='hidden program-content'
+              id={`program-${program.stage}-${program.day}`}
+            >
+              <div class='bg-white/5 backdrop-blur-lg rounded-3xl border border-white/10 p-6 md:p-10 shadow-2xl'>
+                <div class='space-y-6'>
+                  {program.conferences.map((item, index) => (
+                    <div
+                      class='conference-item'
+                      style={`animation-delay: ${index * 0.1}s`}
+                    >
+                      <ConferenceITM
+                        item={item}
+                        translate={translate}
+                        language={i18next.language}
+                        client:only
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
     </section>
   </main>
 </Layout>
+
 <style>
   body {
     background-color: black;
     color: white;
+    overflow-x: hidden;
+  }
+
+  /* Animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-out;
+  }
+
+  .conference-item {
+    animation: slide-up 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  /* Enhanced Button Styles */
+  .cta-button {
+    background-size: 200% 200%;
+    animation: gradient-shift 4s ease infinite;
+    box-shadow:
+      0 10px 40px rgba(228, 33, 40, 0.3),
+      0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Glass morphism effects */
+  .bg-white\/5 {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #e42128, #cf1363);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #cf1363, #e42128);
+  }
+
+  /* Responsive improvements */
+  @media (max-width: 768px) {
+    .cta-button {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+
+  /* Smooth transitions for program content */
+  .program-content {
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .program-content:not(.hidden) {
+    animation: slide-up 0.8s ease-out;
   }
 </style>
 
 <script is:inline data-astro-rerun>
-  //inicializa parámetros por default
   let currentStage = '2'
   let currentDay = '1'
+
+  // Initialize default selections
   document
     .getElementById('stage-2')
     ?.firstElementChild?.classList.add('bg-opacity-0')
@@ -132,14 +334,21 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
     ?.firstElementChild?.classList.add('bg-opacity-0')
 
   const updateView = () => {
-    //oculta todos los elementos del programa
-    document
-      .querySelectorAll('[id^="program-"]')
-      .forEach((item) => item.classList.add('hidden'))
-    //solo muestra el seleccionado
+    // Hide all program sections with fade out
+    document.querySelectorAll('[id^="program-"]').forEach((item) => {
+      item.style.opacity = '0'
+      setTimeout(() => item.classList.add('hidden'), 200)
+    })
+
+    // Show selected program with fade in
     const id = `program-${currentStage}-${currentDay}`
     const target = document.getElementById(id)
-    if (target) target.classList.remove('hidden')
+    if (target) {
+      setTimeout(() => {
+        target.classList.remove('hidden')
+        target.style.opacity = '1'
+      }, 250)
+    }
   }
 
   document.addEventListener('astro:page-load', () => {
@@ -147,26 +356,31 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
     const dayButtons = document.querySelectorAll('button[id^="day-"]')
 
     stageButtons.forEach((btn) => {
-      //al stage clickeado se agrega la opacidad del fondo a 0
       btn.addEventListener('click', () => {
         currentStage = btn.id.split('-')[1]
+
+        // Reset all stage buttons
         document
           .getElementById('stage-1')
           ?.firstElementChild?.classList.remove('bg-opacity-0')
         document
           .getElementById('stage-2')
           ?.firstElementChild?.classList.remove('bg-opacity-0')
+
+        // Activate selected button
         document
           .getElementById(`stage-${currentStage}`)
           ?.firstElementChild?.classList.add('bg-opacity-0')
+
         updateView()
       })
     })
 
     dayButtons.forEach((btn) => {
-      //al día clickeado se agrega la opacidad del fondo a 0
       btn.addEventListener('click', () => {
         currentDay = btn.id.split('-')[1]
+
+        // Reset all day buttons
         document
           .getElementById('day-1')
           ?.firstElementChild?.classList.remove('bg-opacity-0')
@@ -176,13 +390,30 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
         document
           .getElementById('day-3')
           ?.firstElementChild?.classList.remove('bg-opacity-0')
+
+        // Activate selected button
         document
           .getElementById(`day-${currentDay}`)
           ?.firstElementChild?.classList.add('bg-opacity-0')
+
         updateView()
       })
     })
 
+    // Initialize view
     updateView()
+
+    // Add intersection observer for animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running'
+        }
+      })
+    })
+
+    document.querySelectorAll('.conference-item').forEach((item) => {
+      observer.observe(item)
+    })
   })
 </script>
