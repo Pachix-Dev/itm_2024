@@ -465,11 +465,25 @@ const stage_1_day_2: Program[] = [
     {
         "title": "Value Engineering & Compressed Air System Auditing",
         "title_en": "Value Engineering & Compressed Air System Auditing",
-        "description": "",
-        "description_en": "",
+        "description": "En HTD, la Ingeniería de Valor es la base estratégica de nuestros proyectos, ya que permite maximizar el valor mediante el análisis funcional, la optimización y la implementación de soluciones que mejoran el desempeño, la eficiencia y la rentabilidad. En alianza con The Analysts, aplicamos estos principios a través de auditorías técnicas y económicas en sistemas de aire comprimido y gases industriales, para: reducir costos operativos, mejorar la eficiencia energética, aumentar la confiabilidad y cumplir objetivos ESG. Durante la conferencia, Josh Wamser, socio de The Analysts, mostrará cómo esta metodología genera resultados tangibles en ahorros y desempeño técnico, impulsando la eficiencia, sostenibilidad y valor económico que promueve HTD.",
+        "description_en": "At HTD, Value Engineering is the strategic foundation of our projects, as it allows us to maximize value through functional analysis, optimization, and the implementation of solutions that improve performance, efficiency, and profitability. In partnership with The Analysts, we apply these principles through technical and economic audits in compressed air systems and industrial gases, to: reduce operating costs, improve energy efficiency, increase reliability, and meet ESG objectives. During the conference, Josh Wamser, partner at The Analysts, will show how this methodology generates tangible results in savings and technical performance, driving efficiency, sustainability, and economic value promoted by HTD.",
         "time": "16:50 hrs",
         "duration": "35 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Josh Wamser",
+                "position": "Lead Auditor",
+                "position_en": "Lead Auditor",
+                "company": "HTD - The Analysts",
+                "bio": "Josh Wamser Lead Auditor – The Analysts Josh Wamser es un especialista con más de 20 años de experiencia en sistemas de aire comprimido, ingeniería y auditorías técnicas enfocadas en la optimización del desempeño, la eficiencia energética y la rentabilidad industrial. Como Lead Auditor en The Analysts, integra los principios de Ingeniería de Valor para evaluar y mejorar el rendimiento, el consumo energético y el retorno de inversión (ROI) en sistemas de aire y gas. Es fundador de Industrial Compressor Solutions, empresa dedicada a la consultoría, diseño y mantenimiento de sistemas industriales de aire comprimido. En alianza con HTD, promueve el uso de la Ingeniería de Valor como herramienta estratégica para reducir costos, mejorar la eficiencia y fomentar la sostenibilidad en las operaciones industriales. Ha colaborado con VPInstruments, Donaldson y es conferencista en eventos internacionales como CABP Expo y Reliability Summits.",
+                "bio_en": "Josh Wamser Lead Auditor – The Analysts Josh Wamser is a specialist with over 20 years of experience in compressed air systems, engineering, and technical audits focused on optimizing performance, energy efficiency, and industrial profitability. As Lead Auditor at The Analysts, he integrates Value Engineering principles to evaluate and improve performance, energy consumption, and return on investment (ROI) in air and gas systems. He is the founder of Industrial Compressor Solutions, a company dedicated to consulting, design, and maintenance of industrial compressed air systems. In partnership with HTD, he promotes the use of Value Engineering as a strategic tool to reduce costs, improve efficiency, and foster sustainability in industrial operations. He has collaborated with VPInstruments, Donaldson, and is a speaker at international events such as CABP Expo and Reliability Summits.",
+                "image": "/img/speakers/Josh_Wamser.png",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            }
+        ]
     },
     {
         "title": "De la idea a la máquina: cómo acelerar proyectos industriales con MISUMI",
