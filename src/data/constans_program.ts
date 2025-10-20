@@ -169,30 +169,7 @@ const stage_1_day_1: Program[] = [
             },
         ]
     },
-    {
-        "title": "Los Drones no reemplazan pero equilibran capacidades",
-        "title_en": "Drones do not replace but balance capabilities",
-        "description": "",
-        "description_en": "",
-        "time": "15:20 hrs",
-        "duration": "45 min",
-        "speakers": [
-            {
-                "id": "1",
-                "name": "Gustavo Emiliano Fauez",
-                "position": "CEO",
-                "position_en": "CEO",
-                "company": "Roca Defense & Systems",
-                "bio": "Gustavo Emiliano Fauez, empresario Argentino, con empresas en México, Argentina,  Australia, Irlanda y USA, Ex Militar, Infante de Marina Argentino, Veterano Casco Azul en la MINUSTAH (Misión de las Naciones Unidas para la Estabilización en Haití) 2006-7, CEO y  fundador de Roca Defense & Systems, que es un Holding de empresas en Argentina, México y USA, dedicado a la investigación y desarrollo de software y hardware para la integración de  vehículos no tripulados, programas de capacitación y productos complementarios, inherentes a necesidades de Defensa, agroindustria, protección civil, seguridad industrial, búsqueda y rescate, etc",
-                "bio_en": "Gustavo Emiliano Fauez, Argentine businessman, with companies in Mexico, Argentina, Australia, Ireland and USA, Ex Military, Argentine Marine Infantryman, Blue Helmet Veteran in MINUSTAH (United Nations Stabilization Mission in Haiti) 2006-7, CEO and founder of Roca Defense & Systems, which is a Holding of companies in Argentina, Mexico and USA, dedicated to research and development of software and hardware for the integration of unmanned vehicles, training programs and complementary products, inherent to the needs of Defense, agro-industry, civil protection, industrial safety, search and rescue, etc",
-                "image": "/img/speakers/Gustavo_Emiliano_Fauez.webp",
-                "email": "",
-                "phone": "",
-                "moderador": false
-            },
-            
-        ]
-    },
+   
     {
         "title": "Mitsubishi",
         "title_en": "Mitsubishi",
