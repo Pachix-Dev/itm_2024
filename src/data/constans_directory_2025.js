@@ -2801,7 +2801,7 @@ export const directory = [
     position: "",
     phone: "8112445578",
     email: "nestor.alvarado@ryasa.com.mx",
-    webpage: "https://www.ryasa.com.mx",
+    webpage: "http://www.ryasa.com.mx",
     address: "Av. Nogalar 107 Sur Col. Cuauhtemoc",
     cp: "66450",
     city: "SAN NICOLAS DE LOS GARZA",
