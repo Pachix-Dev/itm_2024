@@ -2231,8 +2231,8 @@ export const directory = [
   },
   {
     id: 96,
-    name: "ACV GROUP",
-    logo: "/img/ACV_Group.webp",
+    name: "COBION AUTOMATION",
+    logo: "/img/cobion.webp",
     width: 170,
     stand_number: "C12",
     contact: "Judith Villa",
