@@ -2580,7 +2580,7 @@ export const directory = [
   {
     id: 112,
     name: "NOKIA ",
-    logo: "/img/allectro.png",
+    logo: "/img/nokia.webp",
     width: 280,
     stand_number: "NA",
     contact: "Alfredo Ramos",
