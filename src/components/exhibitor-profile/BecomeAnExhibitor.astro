@@ -28,7 +28,9 @@ import RedButton from '../shared/RedButton.astro'
         Factsheet 2025
       </RedButton>
       <RedButton
-        href='/files/Floorplan-ITM-2025-14-10-2025-V5-0.pdf'
+        href={i18n.language === 'es'
+          ? '/plano-itm-2025/'
+          : '/en/plano-itm-2025/'}
         withIcon={true}
         openInNewTab={true}
       >
