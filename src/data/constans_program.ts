@@ -178,7 +178,17 @@ const stage_1_day_1: Program[] = [
         "time": "16:00 hrs",
         "duration": "35 min",
         "speakers": [
-            {
+            
+        ]
+    },
+    {
+        "title": "Centros de Datos - Garantizar la conectividad hacia, desde y entre de manera segura, escalable y eficiente",
+        "title_en": "Data Centers - Ensuring connectivity to, from and between securely, scalably and efficiently",
+        "description": "Nokia",
+        "description_en": "Nokia",
+        "time": "16:40 hrs",
+        "duration": "35 min",
+        "speakers": [{
                 id: "1",
                 name: "Alfredo Ramos ",
                 position: "Director de Desarrollo de Negocios IP",
@@ -203,17 +213,7 @@ const stage_1_day_1: Program[] = [
                 email: "",
                 phone: "",
                 moderador: true
-            },
-        ]
-    },
-    {
-        "title": "Centros de Datos - Garantizar la conectividad hacia, desde y entre de manera segura, escalable y eficiente",
-        "title_en": "Data Centers - Ensuring connectivity to, from and between securely, scalably and efficiently",
-        "description": "Nokia",
-        "description_en": "Nokia",
-        "time": "16:40 hrs",
-        "duration": "35 min",
-        "speakers": []
+            },]
     },
     {
         "title": "De la idea a la máquina: cómo acelerar proyectos industriales con MISUMI",
@@ -1393,7 +1393,7 @@ const stage_2_day_2: Program[] = [
         "description": "",
         "description_en": "",
         "time": "17:00 hrs",
-        "duration": "45 min",
+        "duration": "30 min",
         "speakers": [
             {
                 "id": "1",
@@ -1413,8 +1413,8 @@ const stage_2_day_2: Program[] = [
     {
         "title": "ITMujeres: Abrazando tu Historia: Mujeres Ingenieras que Redefinen el Futuro",
         "title_en": "ITMujeres: Embracing Your Story: Women Engineers Redefining the Future",
-        "description": "GE Aerospace Society of Women Engineers",
-        "description_en": "GE Aerospace Society of Women Engineers",
+        "description": "GE Aerospace / Society of Women Engineers",
+        "description_en": "GE Aerospace / Society of Women Engineers",
         "time": "17:30 hrs",
         "duration": "30 min",
         "speakers": []
@@ -1422,8 +1422,8 @@ const stage_2_day_2: Program[] = [
     {
         "title": "ITMujeres: Ecosistemas Inteligentes: Mujeres Liderando la Digitalización y la Innovación en la  Industria",
         "title_en": "ITMujeres: Intelligent Ecosystems: Women Leading Digitalization and Innovation in the Industry",
-        "description": "GE Aerospace Society of Women Engineers",
-        "description_en": "GE Aerospace Society of Women Engineers",
+        "description": "GE Aerospace / Society of Women Engineers",
+        "description_en": "GE Aerospace / Society of Women Engineers",
         "time": "18:00 hrs",
         "duration": "60 min",
         "speakers": [
