@@ -656,6 +656,7 @@
         "surname": "Surname",
         "placeholder_surname": "Enter your surname",
         "code_invitation": "Invitation code",
+        "optional": "(optional)",
         "placeholder_code_invitation": "Enter your invitation code (optinal)",
         "email": "Email",
         "placeholder_email": "Enter your email",

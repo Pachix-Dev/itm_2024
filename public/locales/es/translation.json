@@ -654,6 +654,7 @@
         "surname": "Apellido Materno",
         "placeholder_surname": "Ingresa tu apellido materno",
         "code_invitation": "Código de invitación",
+        "optional": "(opcional)",
         "placeholder_code_invitation": "Ingresa tu código de invitación (opcional)",
         "email": "CORREO ELECTRÓNICO",
         "placeholder_email": "Ingresa tu correo electrónico",

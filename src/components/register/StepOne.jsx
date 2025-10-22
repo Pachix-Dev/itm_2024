@@ -258,7 +258,12 @@ export function StepOne({ translates }) {
 
       <div className='grid grid-cols-2 gap-6'>
         <div>
-          <p className='mt-5 text-white'>{translates.code_invitation}</p>
+          <p className='mt-5 text-white'>
+            {translates.code_invitation}{' '}
+            <span className='text-red-600 font-bold'>
+              {translates.optional}
+            </span>
+          </p>
           <div className='relative mt-2 '>
             <input
               type='text'
@@ -398,7 +403,21 @@ export function StepOne({ translates }) {
             <PhoneInputWithCountry
               name='phone'
               control={control}
-              rules={{ required: true }}
+              rules={{
+                required: `${translates.requiered}`,
+                validate: (value) => {
+                  if (!value) {
+                    return `${translates.requiered}`
+                  }
+                  // Validación adicional para formato de teléfono
+                  if (value.length < 10) {
+                    return `${
+                      translates.phone_invalid || 'Número de teléfono inválido'
+                    }`
+                  }
+                  return true
+                },
+              }}
               defaultValue={phone}
               onChange={(e) => setPhone(e)}
               className='w-full rounded-lg border border-gray-200 ps-4 text-sm shadow-sm'

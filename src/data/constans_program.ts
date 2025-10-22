@@ -96,7 +96,7 @@ const stage_1_day_1: Program[] = [
             },
             {
                 "id": "2",
-                "name": "Juan José Rodríguez ",
+                "name": "Leonardo Fernández ",
                 "position": "Future Offer Manager ",
                 "position_en": "Future Offer Manager",
                 "company": "Schneider Electric",
@@ -171,19 +171,46 @@ const stage_1_day_1: Program[] = [
     },
    
     {
-        "title": "Mitsubishi",
-        "title_en": "Mitsubishi",
-        "description": "",
-        "description_en": "",
+        "title": "Digitalización en sistemas de distribución eléctrica",
+        "title_en": "Digitalization in Electric Distribution Systems",
+        "description": "Mitsubishi Electric",
+        "description_en": "Mitsubishi Electric",
         "time": "16:00 hrs",
         "duration": "35 min",
-        "speakers": []
+        "speakers": [
+            {
+                id: "1",
+                name: "Alfredo Ramos ",
+                position: "Director de Desarrollo de Negocios IP",
+                position_en: "Director of IP Business Development",
+                company: "Nokia",
+                bio: "",
+                bio_en: "",
+                image: "/img/speakers/default.webp",
+                email: "",
+                phone: "",
+                moderador: true
+            },
+            {
+                id: "2",
+                name: "Karla Beltrán",
+                position: "Directora de Preventas Redes Ópticas",
+                position_en: "Director of Optical Networks Pre-sales",
+                company: "Nokia",
+                bio: "",
+                bio_en: "",
+                image: "/img/speakers/default.webp",
+                email: "",
+                phone: "",
+                moderador: true
+            },
+        ]
     },
     {
-        "title": "",
-        "title_en": "",
-        "description": "",
-        "description_en": "",
+        "title": "Centros de Datos - Garantizar la conectividad hacia, desde y entre de manera segura, escalable y eficiente",
+        "title_en": "Data Centers - Ensuring connectivity to, from and between securely, scalably and efficiently",
+        "description": "Nokia",
+        "description_en": "Nokia",
         "time": "16:40 hrs",
         "duration": "35 min",
         "speakers": []
@@ -217,7 +244,7 @@ const stage_1_day_1: Program[] = [
         "description": "En el marco de la Industrial Transformation Mexico (ITM), el secretariado del Diálogo Digital México–Alemania presentará la nueva guía de recomendaciones sobre la aplicación industrial de 5G. El objetivo es compartir buenas prácticas, impulsar un diálogo abierto entre sectores público, privado, académico y sociedad civil, y hacer un llamado a la acción para una implementación efectiva y colaborativa de esta tecnología. El panel abordará las oportunidades y desafíos del 5G para la industria, tomando como referencia experiencias internacionales, como Alemania, y su potencial para aumentar la productividad, eficiencia y competitividad de las empresas. Asimismo, se discutirán las actualizaciones e implicaciones de la nueva Ley de Telecomunicaciones y Radiodifusión en México, y los pasos necesarios para consolidar el desarrollo de esta tecnología. ",
         "description_en": "As part of the Industrial Transformation Mexico (ITM), the Secretariat of the Mexico-Germany Digital Dialogue will present the new guide of recommendations on the industrial application of 5G. The objective is to share best practices, promote an open dialogue between the public, private, academic and civil society sectors, and call for action for an effective and collaborative implementation of this technology. The panel will address the opportunities and challenges of 5G for industry, taking as a reference international experiences, such as Germany, and its potential to increase productivity, efficiency and competitiveness of companies. In addition, updates and implications of the new Telecommunications and Broadcasting Law in Mexico will be discussed, as well as the necessary steps to consolidate the development of this technology.",
         "time": "18:10 hrs",
-        "duration": "35 min",
+        "duration": "50 min",
         "speakers": [
             {
                 "id": "1",
@@ -235,12 +262,12 @@ const stage_1_day_1: Program[] = [
             {
                 "id": "2",
                 "name": "Guillermo Ortega",
-                "position": " ",
-                "position_en": "",
+                "position": "Director de Innovación  ",
+                "position_en": "Innovation Director",
                 "company": "NTT Data",
-                "bio": "",
-                "bio_en": "",
-                "image": "/img/speakers/default.webp",
+                "bio": "Guillermo Ortega cuenta con más de 15 años como consultor estratégico en innovación y diseño estratégico en la consultora internacional NTT Data, donde hoy es director de innovación y lidera la práctica de consultoría de negocio en el sector telecomunicaciones. Ha trabajado en proyectos con entidades públicas y empresas globales y regionales en los sectores financiero, telecomunicaciones, energía, logística, turismo, alimentos y bebidas, y educación, y en distintas geografías como Chile, España, México y Perú. Es autor y co-autor de diversos libros y estudios sobre innovación industrial, digitalización de procesos, ecosistema emprendedor y evolución tecnológica que se han publicado de la mano de instituciones como el IPADE y la CAF. Participa en las comisiones de innovación del Consejo Coordinador Empresarial (CCE) y la Asociación Mexicana de la Industria de Tecnologías de Información (AMITI). Es Ingeniero en Tecnologías de Información y Telecomunicaciones, por la Universidad Anáhuac, tiene una Maestría en Administración de Negocios (MBA) por el Instituto de Empresa de Madrid, una Maestría en Seguridad Nacional por el Colegio de Defensa Nacional y certificaciones en innovación y tecnologías emergentes por Harvard, Singularity ",
+                "bio_en": "Guillermo Ortega has over 15 years as a strategic consultant in innovation and strategic design at the international consulting firm NTT Data, where he is currently the innovation director and leads the business consulting practice in the telecommunications sector. He has worked on projects with public entities and global and regional companies in the financial, telecommunications, energy, logistics, tourism, food and beverage, and education sectors, and in various geographies such as Chile, Spain, Mexico, and Peru. He is the author and co-author of several books and studies on industrial innovation, process digitization, entrepreneurial ecosystems, and technological evolution that have been published in collaboration with institutions such as IPADE and CAF. He participates in the innovation commissions of the Business Coordinating Council (CCE) and the Mexican Association of the Information Technology Industry (AMITI). He is an Engineer in Information Technologies and Telecommunications from Universidad Anáhuac, holds a Master's degree in Business Administration (MBA) from Instituto de Empresa de Madrid, a Master's degree in National Security from Colegio de Defensa Nacional, and certifications in innovation and emerging technologies from Harvard, Singularity",
+                "image": "/img/speakers/Guillermo_Ortega.jpeg",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -258,6 +285,32 @@ const stage_1_day_1: Program[] = [
                 "phone": "",
                 "moderador": false
             },
+            {
+                "id": "4",
+                "name": "Manuel Sandoval",
+                "position": "CEO / Director ",
+                "position_en": "CEO / Director",
+                "company": "Knoware México",
+                "bio": "Manuel Sandoval es CEO de Knoware México, cuenta con más de 30 años de experiencia en el desarrollo de sectores emergentes y empresas de base tecnológica en México. Su campo de especialización abarca una diversidad de industrias, como EdTech, Industria 4.0, Aeroespacial, Industrias Creativas, KPO, Biotecnología y Ciencias de la Vida. Entre sus logros, destacan la creación y el desarrollo de la Ciudad Creativa Digital en Guadalajara, el fortalecimiento de los Clústeres Aeroespacial y de Defensa en México y la participación en Puebla Capital Mundial del Diseño. Además, ha desempeñado un papel clave en la formulación de hojas de ruta tecnológicas, que sirven como estrategias nacionales para impulsar el progreso en sectores clave como la Industria 4.0, la industria aeroespacial, la fabricación avanzada, los dispositivos médicos y las industrias del diseño y la creatividad.",
+                "bio_en": "Manuel Sandoval is CEO of Knoware México, with over 30 years of experience in developing emerging sectors and technology-based companies in Mexico. His area of expertise spans a variety of industries, including EdTech, Industry 4.0, Aerospace, Creative Industries, KPO, Biotechnology, and Life Sciences. Among his achievements are the creation and development of the Digital Creative City in Guadalajara, the strengthening of the Aerospace and Defense Clusters in Mexico, and participation in Puebla World Design Capital. Additionally, he has played a key role in formulating technology roadmaps that serve as national strategies to drive progress in key sectors such as Industry 4.0, aerospace industry, advanced manufacturing, medical devices, and design and creative industries.",
+                "image": "/img/speakers/manuel_sandoval.jpg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "5",
+                "name": "Cindy Rayo",
+                "position": "Directora",
+                "position_en": "Director",
+                "company": "Asociación Interamericana de Empresas de Telecomunicaciones",
+                "bio": "Cindy Rayo Zapata cuenta con más de 18 años de experiencia en comercio internacional, telecomunicaciones, comercio digital, inversión y arbitraje de inversión. Fue negociadora y responsable de la implementación del TMEC para los temas de servicios, telecomunicaciones, comercio digital e inversión. Fue la responsable de establecer y coordinar el primer Grupo 5G y de ciberseguridad en el marco del Diálogo Económico de Alto Nivel entre México y Estados Unidos. Representó a México en la negociación y el diseño de reglas internacionales en temas relacionados con comercio electrónico, telecomunicaciones, pagos digitales, reglamentación nacional y protección y facilitación de inversiones. Participó en la negociación de múltiples tratados de libre comercio y acuerdos internacionales de inversión suscritos por México (TIPAT, TLCUEM, TMEC y APPRIs), en temas relacionados con comercio transfronterizo de servicios, comercio electrónico, telecomunicaciones, inversión, solución de controversias. Tiene una Maestría en Derecho Internacional Público por el Instituto Tecnológico de Estudios Superiores de Monterrey, es Licenciada en Relaciones Internacionales y Derecho por el ITAM. Desde 2023, se desempeña como Directora para México, Centroamérica y el Caribe de ASIET. ",
+                "bio_en": "Cindy Rayo Zapata has over 18 years of experience in international trade, telecommunications, digital trade, investment, and investment arbitration. She was a negotiator and responsible for the implementation of the USMCA for services, telecommunications, digital trade, and investment issues. She was responsible for establishing and coordinating the first 5G and cybersecurity Group within the framework of the High-Level Economic Dialogue between Mexico and the United States. She represented Mexico in the negotiation and design of international rules on issues related to e-commerce, telecommunications, digital payments, national regulation, and investment protection and facilitation. She participated in the negotiation of multiple free trade agreements and international investment agreements signed by Mexico (TIPAT, EU-Mexico FTA, USMCA, and APPRIs), on issues related to cross-border trade in services, e-commerce, telecommunications, investment, dispute resolution. She holds a Master's degree in Public International Law from the Monterrey Institute of Technology and Higher Education, and a Bachelor's degree in International Relations and Law from ITAM. Since 2023, she has served as Director for Mexico, Central America, and the Caribbean at ASIET.",
+                "image": "/img/speakers/Cindy_rayo.jpg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
         ]
     },
 ]
@@ -269,7 +322,7 @@ const stage_1_day_2: Program[] = [
         "title_en": "Industrial Vision Systems for Enhanced Automation",
         "description": "Descubre cómo Beckhoff Vision revoluciona la automatización industrial integrando visión, control, movimiento y PLC en una sola plataforma - Sin hardware ni software adicional: todo se sincroniza en tiempo real con los procesos de máquina - Soluciones escalables y de alto rendimiento: cámaras, óptica e iluminación industrial listas para cualquier entorno. - Integración total - elimina barreras entre visión y automatización, simplificando la ingeniería y operación - Procesos más precisos y ágiles: optimiza producción, calidad y eficiencia industrial - Innovación aplicada: habilita nuevas posibilidades para sistemas industriales avanzados - Con Beckhoff, la visión industrial se vuelve inteligente, unificada y potente.",
         "description_en": "Discover how Beckhoff Vision revolutionizes industrial automation by integrating vision, control, motion, and PLC into a single platform - No additional hardware or software: everything synchronizes in real time with machine processes - Scalable and high-performance solutions: cameras, optics, and industrial lighting ready for any environment. - Total integration - eliminates barriers between vision and automation, simplifying engineering and operation - More precise and agile processes: optimizes production, quality, and industrial efficiency - Applied innovation: enables new possibilities for advanced industrial systems - With Beckhoff, industrial vision becomes intelligent, unified, and powerful.",
-        "img": "/img/program/beckhoff.png",
+        "img": "",
         "time": "11:20 hrs",
         "duration": "35 min",
         "speakers": [
@@ -278,7 +331,7 @@ const stage_1_day_2: Program[] = [
                 "name": "Adrián Ismael Beas Mora ",
                 "position": "Ingeniero Especialista de Producto – I/O",
                 "position_en": "Engineer Product Specialist – I/O",
-                "company": "Beckhoff Automation SA de CV",
+                "company": "Beckhoff Automation",
                 "bio": "Egresado del Centro de Enseñanza Técnica Industrial (CETI), consolidó su formación en control, automatización e integración de sistemas. Ingeniero en Mecatrónica y Especialista de Producto en I/O en Beckhoff Automation, apasionado por llevar la automatización al siguiente nivel. Ha complementado su trayectoria con capacitaciones internacionales en España y Estados Unidos, especializándose en el amplio campo de los módulos I/O y los buses de campo. Su enfoque combina innovación tecnológica con experiencia práctica en entornos productivos. Ha participado en proyectos innovadores con importantes empresas del sector automotriz, implementando soluciones que integran procesamiento de imágenes, programación de algoritmos y tecnologías de control avanzado para lograr una producción más ágil y precisa.",
                 "bio_en": "A graduate of the Centro de Enseñanza Técnica Industrial (CETI), he consolidated his training in control, automation and systems integration. Engineer in Mechatronics and Product Specialist in I/O at Beckhoff Automation, passionate about taking automation to the next level. He has complemented his career with international training in Spain and the United States, specializing in the broad field of I/O modules and field buses. His approach combines technological innovation with practical experience in production environments. He has participated in innovative projects with major companies in the automotive sector, implementing solutions that integrate image processing, algorithm programming and advanced control technologies to achieve more agile and precise production.",
                 "image": "/img/speakers/Adrián_Beas.webp",
@@ -291,7 +344,7 @@ const stage_1_day_2: Program[] = [
                 "name": "Pablo Fernandez Olvera ",
                 "position": "Ingeniero Especialista de Producto – Visión",
                 "position_en": "Engineer Product Specialist – Vision",
-                "company": "Beckhoff Automation SA de CV",
+                "company": "Beckhoff Automation",
                 "bio": "Egresado de la ESIME Zacatenco del IPN como Ingeniero en Comunicaciones y Electrónica. Ha fortalecido su formación en tecnologías de visión industrial con capacitaciones internacionales en Alemania y España, especializándose en TwinCAT Vision, sistemas XTS y soluciones de automatización Beckhoff. Actualmente se desempeña como Especialista de Producto en Visión Industrial en Beckhoff Automation. Su enfoque combina innovación tecnológica con un sólido dominio en procesamiento de imágenes, control de movimiento y automatización avanzada. Impulsa en México la adopción de TwinCAT Vision y las soluciones de automatización de Beckhoff como un pilar estratégico en la transformación digital de la industria, ofreciendo a las empresas herramientas que marcan la diferencia en su camino hacia la fábrica inteligente.",
                 "bio_en": "A graduate of ESIME Zacatenco of the IPN as an Engineer in Communications and Electronics. He has strengthened his training in industrial vision technologies with international training in Germany and Spain, specializing in TwinCAT Vision, XTS systems and Beckhoff automation solutions. He currently serves as Product Specialist in Industrial Vision at Beckhoff Automation. His approach combines technological innovation with a solid mastery in image processing, motion control and advanced automation. He promotes in Mexico the adoption of TwinCAT Vision and Beckhoff's automation solutions as a strategic pillar in the digital transformation of the industry, offering companies tools that make a difference on their way to the smart factory.",
                 "image": "/img/speakers/Pablo_Fernández.webp",
@@ -311,7 +364,7 @@ const stage_1_day_2: Program[] = [
         "speakers": [
             {
                 "id": "1",
-                "name": "Gilberto Coxa",
+                "name": "Gilberto Coxca",
                 "position": "Sales Specialists Manager en Siemens Digital Industries",
                 "position_en": "Sales Specialists Manager en Siemens Digital Industries",
                 "company": "Siemens México, Centroamérica y el Caribe",
@@ -412,20 +465,48 @@ const stage_1_day_2: Program[] = [
     {
         "title": "La fábrica impulsada por la IA: fusión de robótica, visión y seguridad para operaciones autónomas ",
         "title_en": "The AI-Driven Factory: Merging Robotics, Vision, and Security for Autonomous Operations",
-        "description": "",
-        "description_en": "",
+        "description": "Las fábricas del futuro se definirán por la integración fluida de la robótica, la visión artificial y la toma de decisiones basada en IA. Esta charla explora cómo los robots móviles autónomos, los sistemas de visión inteligente y los modelos de aprendizaje automático convergen para ofrecer operaciones industriales flexibles, eficientes y seguras. A partir de implementaciones reales, examinamos cómo la IA permite la navegación adaptativa, el mantenimiento predictivo y la colaboración hombre-máquina, cumpliendo al mismo tiempo con estrictos estándares de seguridad. Los asistentes comprenderán las tecnologías, los desafíos y las mejores prácticas para la creación de fábricas verdaderamente autónomas, donde la inteligencia, la seguridad y la fiabilidad se integran en cada operación.",
+        "description_en": "The factories of the future will be defined by the seamless integration of robotics, artificial vision, and AI-based decision-making. This talk explores how autonomous mobile robots, intelligent vision systems, and machine learning models converge to deliver flexible, efficient, and secure industrial operations. Drawing from real-world implementations, we examine how AI enables adaptive navigation, predictive maintenance, and human-machine collaboration, while simultaneously meeting stringent safety standards. Attendees will gain insights into the technologies, challenges, and best practices for creating truly autonomous factories, where intelligence, safety, and reliability are integrated into every operation.",
         "time": "14:30 hrs",
         "duration": "35 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Naveen Arulselvan",
+                "position": "Chief Technology Officer",
+                "position_en": "Chief Technology Officer",
+                "company": "Ati Motors",
+                "bio": "El Dr. Naveen Arulselvan es Director de Tecnología de ATI (Ati Motors) y lidera la tecnología integral para robots móviles autónomos industriales, desde la percepción y navegación 3D-LiDAR hasta la orquestación y seguridad de flotas. Tiene una maestría y un doctorado en Ingeniería Eléctrica por la Universidad Northwestern y anteriormente trabajó en redes inalámbricas en Motorola y Altiostar (ahora parte de Rakuten); también ha sido profesor visitante en el Centro de Sistemas Ciberfísicos del IISc.",
+                "bio_en": "Dr. Naveen Arulselvan is Chief Technology Officer at ATI (Ati Motors) and leads end-to-end technology for industrial autonomous mobile robots, from 3D-LiDAR perception and navigation to fleet orchestration and safety. He holds a master's and a Ph.D. in Electrical Engineering from Northwestern University and previously worked on wireless networks at Motorola and Altiostar (now part of Rakuten); he has also been a visiting professor at the Cyber-Physical Systems Center at IISc.",
+                "image": "/img/speakers/Naveen_Headshot.png",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            }
+        ]
     },
     {
-        "title": "Clarios",
-        "title_en": "Clarios",
-        "description": "",
-        "description_en": "",
+        "title": "Movilidad, Energía y Sostenibilidad: Cómo las Baterías Impulsan la Industria del Futuro",
+        "title_en": "Mobility, Energy, and Sustainability: How Batteries Drive the Industry of the Future",
+        "description": "La industria automotriz está viviendo una transformación histórica: en los próximos diez años cambiará más que en el último siglo. La electromovilidad está acelerando la evolución en manufactura, baterías y experiencia del cliente, mientras el concepto de Software Defined Vehicle redefine cómo se diseñan, producen y conectan los vehículos. Este nuevo paradigma abre oportunidades de negocio en innovación de materiales, reciclabilidad y tecnologías digitales. Además, factores como el cambio climático, la presión geopolítica y regulatoria están impulsando esta transición, posicionando a las empresas innovadoras como líderes en el futuro de la movilidad sostenible.",
+        "description_en": "The automotive industry is undergoing a historic transformation: in the next ten years, it will change more than in the last century. Electromobility is accelerating evolution in manufacturing, batteries, and customer experience, while the concept of Software Defined Vehicle redefines how vehicles are designed, produced, and connected. This new paradigm opens business opportunities in materials innovation, recyclability, and digital technologies. Additionally, factors such as climate change, geopolitical and regulatory pressure are driving this transition, positioning innovative companies as leaders in the future of sustainable mobility.",
         "time": "15:10 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Vladimir García",
+                "position": "Lead-Acid battery materials expert North America",
+                "position_en": "Lead-Acid battery materials expert North America",
+                "company": "Clarios",
+                "bio": "Dr. Vladimir García Hernández es un reconocido especialista con una sólida trayectoria académica y profesional en el sector automotriz. Es Ingeniero Químico Industrial por la Universidad de las Américas Puebla (UDLA) y Doctor en Ciencia de Materiales por la Universidad Autónoma de Nuevo León (UANL). Su formación se complementa con un diplomado en mandos intermedios por ICAMI, fortaleciendo sus capacidades de liderazgo y gestión estratégica. Con más de dos décadas de experiencia, el Dr. García Hernández ha sido pieza clave en el desarrollo e innovación de materiales para baterías plomo-acido, colaborando estrechamente con universidades, centros de investigación, clientes y proveedores. Su participación en proyectos académicos de licenciatura y posgrado ha contribuido significativamente al avance tecnológico del sector, consolidando puentes entre la academia y la industria en el norte del país. Durante su estancia como expatriado en Glendale, Wisconsin, representando a Clarios, amplió su perspectiva global y red de colaboración, experiencia que hoy aplica como responsable del desarrollo de materiales para la región de Norteamérica. Su liderazgo ha sido fundamental en iniciativas de innovación dentro del Clúster Automotriz de Nuevo León, donde promueve activamente la competitividad y el progreso tecnológico de la industria. Apasionado por la excelencia y la innovación, el Dr. García Hernández es una figura influyente en el ecosistema automotriz de Norteamérica. Fuera del ámbito profesional, encuentra en la cocina un espacio de creatividad y conexión familiar, reflejo de su enfoque integral y humano.",
+                "bio_en": "Dr. Vladimir García Hernández is a renowned specialist with a solid academic and professional background in the automotive sector. He is an Industrial Chemical Engineer from the Universidad de las Américas Puebla (UDLA) and holds a PhD in Materials Science from the Universidad Autónoma de Nuevo León (UANL). His education is complemented by a diploma in middle management from ICAMI, strengthening his leadership and strategic management skills. With over two decades of experience, Dr. García Hernández has been a key player in the development and innovation of lead-acid battery materials, working closely with universities, research centers, clients, and suppliers. His involvement in undergraduate and postgraduate academic projects has significantly contributed to the technological advancement of the sector, building bridges between academia and industry in the northern part of the country. During his time as an expatriate in Glendale, Wisconsin, representing Clarios, he expanded his global perspective and collaboration network, experience that he now applies as head of materials development for the North America region. His leadership has been fundamental in innovation initiatives within the Nuevo León Automotive Cluster, where he actively promotes competitiveness and technological progress in the industry. Passionate about excellence and innovation, Dr. García Hernández is an influential figure in the North American automotive ecosystem. Outside of his professional field, he finds creativity and family connection in cooking, reflecting his comprehensive and human approach.",
+                "image": "/img/speakers/vladimir_garcia.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "",
@@ -532,26 +613,67 @@ const stage_1_day_2: Program[] = [
         ]
     },
     {
-        "title": "Kearney",
-        "title_en": "Kearney",
-        "description": "",
-        "description_en": "",
+        "title": "Adaptación de las empresas a los cambios en las cadenas de suministro",
+        "title_en": "Adapting Companies to Changes in Supply Chains",
+        "description": "Las cadenas de suministro siguen enfrentando retos importantes que empujan a las empresas a ajustar sus operaciones continuamente. Dinámicas macroeconómicas e industriales han hecho que existan distintos arquetipos sobre cómo los países están aprovechando la manufactura para desarrollarse e impulsar su sector productivo, Existen siete factores clave que se requieren como habilitadores del desarrollo manufacturero de forma efectiva,	Los impactos de dichos factores varían por empresa, industria y posición en la cadena de valor,	Presentaremos mejores prácticas privadas y públicas alrededor de estos factores para fomentar la adaptación de las empresas a los ajustes en las cadenas de valor",
+        "description_en": "Supply chains continue to face significant challenges that push companies to continuously adjust their operations. Macroeconomic and industrial dynamics have created different archetypes of how countries are leveraging manufacturing to develop and boost their productive sector. There are seven key factors required as enablers of effective manufacturing development. The impacts of these factors vary by company, industry, and position in the value chain. We will present private and public best practices around these factors to foster the adaptation of companies to adjustments in value chains.",
         "time": "18:20 hrs",
         "duration": "35 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Horacio Leal",
+                "position": "Principal",
+                "position_en": "Principal",
+                "company": "Kearney",
+                "bio": "Horacio es Principal en Kearney involucrado en la Práctica de Operaciones. Tiene 15 años de experiencia en consultoría de negocios, banca central y de desarrollo, política macroeconómica y de industria. Sus áreas de enfoque se centran en estrategia de Industria 4.0, procura, compras, gestión de proveedores y desarrollo económico. Ha atendido a clientes en México, Norteamérica, Europa, Sudamérica y Medio Oriente. Horacio ha participado en diversos esfuerzos de colaboración entre Kearney y el Foro Económico Mundial (WEF), desarrollando contenidos en temas de vanguardia, como metodologías de adopción de la 4IR a través de plataformas digitales y modelos de negocios afines, así como reconfiguración de las cadenas de valor. Horacio tiene un MBA del MIT, un MPA/ID de la Universidad de Harvard, y licenciaturas en Economía y Matemáticas Aplicada del ITAM.",
+                "bio_en": "Horacio is a Principal at Kearney involved in the Operations Practice. He has 15 years of experience in business consulting, central and development banking, macroeconomic and industry policy. His areas of focus are centered on Industry 4.0 strategy, procurement, purchasing, supplier management, and economic development. He has served clients in Mexico, North America, Europe, South America, and the Middle East. Horacio has participated in various collaborative efforts between Kearney and the World Economic Forum (WEF), developing content on cutting-edge topics such as methodologies for adopting the 4IR through digital platforms and related business models, as well as reconfiguring value chains. Horacio holds an MBA from MIT, an MPA/ID from Harvard University, and bachelor's degrees in Economics and Applied Mathematics from ITAM.",
+                "image": "/img/speakers/Horacio_Leal.jpg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
 ]
 
 const stage_1_day_3: Program[] = [
     {
 
-        "title": "",
-        "title_en": "",
-        "description": "",
-        "description_en": "",
+        "title": "De la Innovación al Impacto: Transformando la Manufactura con Autodesk",
+        "title_en": "From Innovation to Impact: Transforming Manufacturing with Autodesk",
+        "description": "La industria manufacturera enfrenta el reto de acelerar la innovación y optimizar procesos sin comprometer la calidad ni los costos. En esta sesión exploraremos cómo las soluciones de Autodesk —como Product Design & Manufacturing Collection, Inventor, Vault Professional y Fusion Manage permiten conectar diseño, ingeniería y producción en un flujo digital integrado. Mostraremos casos reales de empresas que han logrado reducir tiempos, mejorar la colaboración y prepararse para la Industria 4.0 mediante la adopción de tecnologías de simulación, automatización y gestión del ciclo de vida del producto (PLM).",
+        "description_en": "The manufacturing industry faces the challenge of accelerating innovation and optimizing processes without compromising quality or costs. In this session, we will explore how Autodesk solutions —such as Product Design & Manufacturing Collection, Inventor, Vault Professional, and Fusion Manage— enable the connection of design, engineering, and production in an integrated digital flow. We will showcase real cases of companies that have managed to reduce time, improve collaboration, and prepare for Industry 4.0 through the adoption of simulation, automation, and product lifecycle management (PLM) technologies.",
         "time": "11:20 hrs",
         "duration": "35 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "César Varela",
+                "position": "Territory Sales Representative",
+                "position_en": "Territory Sales Representative",
+                "company": "Autodesk",
+                "bio": "César Varela Vargas es Territory Sales Representative para el segmento de Design & Manufacturing en Autodesk, donde lidera estrategias de transformación digital y adopción tecnológica en la industria manufacturera. Ingeniero Informático con formación en gestión tecnológica, César ha trabajado con empresas de toda la región impulsando la adopción de herramientas para diseño, ingeniería y manufactura inteligente.",
+                "bio_en": "César Varela Vargas is a Territory Sales Representative for the Design & Manufacturing segment at Autodesk, where he leads digital transformation strategies and technology adoption in the manufacturing industry. An IT Engineer with training in technology management, César has worked with companies across the region promoting the adoption of tools for design, engineering, and smart manufacturing.",
+                "image": "/img/speakers/Cesar_Varela.JPG",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Oscar Acuña",
+                "position": "Technical Sales Specialist",
+                "position_en": "Technical Sales Specialist",
+                "company": "Autodesk",
+                "bio": "Oscar Acuña López es Technical Sales Specialist de Autodesk, con amplia experiencia en diseño mecánico, manufactura digital y automatización de procesos. Ingeniero Mecatrónico con especialización en manufactura avanzada, Oscar asesora a empresas en la implementación de flujos conectados de diseño, simulación y producción, integrando soluciones como Inventor, Fusion Manage y Vault Professional para lograr una manufactura más inteligente y competitiva.",
+                "bio_en": "Oscar Acuña López is a Technical Sales Specialist at Autodesk, with extensive experience in mechanical design, digital manufacturing, and process automation. A Mechatronics Engineer with a specialization in advanced manufacturing, Oscar advises companies on implementing connected design, simulation, and production workflows, integrating solutions such as Inventor, Fusion Manage, and Vault Professional to achieve smarter and more competitive manufacturing.",
+                "image": "/img/speakers/Oscar_Acuña.jpg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "Blindaje digital para la industria 4.0: el enfoque de Siemens en ciberseguridad",
@@ -570,6 +692,19 @@ const stage_1_day_3: Program[] = [
                 "bio": "Con sólida experiencia en atención a clientes industriales, Antonio Briseño se especializa en conectar a ingenieros e integradores con soluciones que impulsan sus proyectos. Su liderazgo está orientado a mostrar el valor de las plataformas digitales y el soporte local que distingue a la compañía. Convencido de que la velocidad, la precisión y la confiabilidad son factores decisivos para transformar ideas en resultados, su visión está enfocada en la eficiencia y la experiencia del usuario, su trabajo conecta la tecnología con las necesidades reales de la industria.",
                 "bio_en": "With solid experience in serving industrial clients, Antonio Briseño specializes in connecting engineers and integrators with solutions that drive their projects. His leadership is focused on showcasing the value of digital platforms and the local support that distinguishes the company. Convinced that speed, accuracy, and reliability are decisive factors in transforming ideas into results, his vision is focused on efficiency and user experience, his work connects technology with the real needs of the industry.",
                 "image": "/img/speakers/Melisa_Cuevas.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Oscar Colin ",
+                "position": "Global Cybersecurity Leader",
+                "position_en": "Global Cybersecurity Leader",
+                "company": "Siemens México, Centroamérica y el Caribe",
+                "bio": "Es ingeniero en Control y Automatización, graduado del Instituto Politécnico Nacional. Cuenta con un diplomado en habilidades gerenciales del ITAM y una certificación CCSO de SIEMENS. Oscar también obtuvo una maestría en Ciberseguridad del Tecnológico de Monterrey y ha realizado múltiples cursos de liderazgo y ventas profesionales. Con más de 15 años de experiencia en tecnología, ha liderado proyectos y equipos de trabajo exitosos durante 7 años. Su experiencia internacional abarca Alemania, Canadá, Estados Unidos y Latinoamérica.",
+                "bio_en": "He is a Control and Automation engineer, graduated from the Instituto Politécnico Nacional. He holds a diploma in managerial skills from ITAM and a CCSO certification from SIEMENS. Oscar also earned a master's degree in Cybersecurity from Tecnológico de Monterrey and has completed multiple courses in leadership and professional sales. With over 15 years of experience in technology, he has successfully led projects and work teams for 7 years. His international experience spans Germany, Canada, the United States, and Latin America.",
+                "image": "/img/speakers/Oscar_Colin.jpg",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -641,7 +776,7 @@ const stage_1_day_3: Program[] = [
         "description": "El MX-System de Beckhoff revoluciona la forma de automatizar máquinas al eliminar por completo los armarios de distribución. Con esta innovación, la ingeniería se vuelve más simple y ágil, optimizando tanto el diseño como la implementación del sistema. Entre sus principales beneficios destacan: •	Ahorro de espacio físico, con un diseño compacto y eficiente. •	Reducción en la longitud de los recorridos de cables, lo que mejora la instalación y el mantenimiento. •	Certificación global, cumpliendo con los estándares UL/CSA e IEC para un uso seguro y universal. •	Concepto plug-and-play, que permite la instalación incluso por personal no especializado. •	Herramientas de diagnóstico claras y precisas, que garantizan una operación confiable y eficiente.",
         "description_en": "Beckhoff's MX-System revolutionizes the way machines are automated by completely eliminating distribution cabinets. With this innovation, engineering becomes simpler and more agile, optimizing both the design and implementation of the system. Its main benefits include: • Saving physical space, with a compact and efficient design. • Reduction in cable routing lengths, which improves installation and maintenance. • Global certification, complying with UL/CSA and IEC standards for safe and universal use. • Plug-and-play concept, allowing installation even by non-specialized personnel. • Clear and precise diagnostic tools, ensuring reliable and efficient operation.",
         "time": "14:30 hrs",
-        "duration": "35 min",
+        "duration": "45 min",
         "speakers": [
             {
                 "id": "1",
@@ -664,7 +799,7 @@ const stage_1_day_3: Program[] = [
         "description": "En esta sesión revelaremos los principios que distinguen a las empresas altamente productivas, basándonos en hallazgos del estudio Cómo lograr lo posible, destacando datos locales de manufactura industrial. Exploraremos cómo tecnologías avanzadas —IA generativa, RPA y minería de procesos— están redefiniendo la manufactura moderna y compartiremos estrategias prácticas para convertir el piso de producción en una operación ágil, conectada y preparada para el futuro.",
         "description_en": "In this session, we will reveal the principles that distinguish highly productive companies, based on findings from the study How to Achieve the Possible, highlighting local data from industrial manufacturing. We will explore how advanced technologies — generative AI, RPA, and process mining — are redefining modern manufacturing and share practical strategies to turn the production floor into an agile, connected, and future-ready operation.",
         "time": "15:20 hrs",
-        "duration": "35 min",
+        "duration": "45 min",
         "speakers": [
             {
                 "id": "1",
@@ -816,13 +951,26 @@ const stage_2_day_1: Program[] = [
             },
             {
                 "id": "4",
-                "name": "Andrea Carreón - Moderadora",
-                "position": "Asesora Técnica ",
-                "position_en": "Technical Advisor",
+                "name": "Julia Unger - Moderadora",
+                "position": "Coordinadora del Clúster Gobernanza y Desarrollo Económico Sostenible",
+                "position_en": "Coordinator of the Governance and Sustainable Economic Development Cluster",
                 "company": "GIZ México",
-                "bio": "Andrea Carreón es licenciada en Relaciones Internacionales por el Tecnológico de Monterrey. Cuenta con experiencia en proyectos de diálogo multiactor y ha colaborado con distintas entidades del sector público, privado y sociedad civil. Actualmente, es Asesora Técnica para el Secretariado del Diálogo Digital entre México y Alemania, proyecto global implementado por encargo del Ministerio Federal de Asuntos Digitales y Modernización del Estado del Gobierno de Alemania.",
-                "bio_en": "Andrea Carreón holds a degree in International Relations from the Tecnológico de Monterrey. She has experience in multi-stakeholder dialogue projects and has collaborated with various entities from the public, private, and civil society sectors. Currently, she is a Technical Advisor for the Secretariat of the Digital Dialogue between Mexico and Germany, a global project implemented on behalf of the Federal Ministry of Digital and Economic Affairs of the German Government.",
-                "image": "/img/speakers/andreaCarreon.webp",
+                "bio": "Julia Unger, es licenciada en derecho por la Universidad de Humboldt de Berlín, titulada de jueza en Alemania y tiene una maestría en derecho internacional y europeo de la Universidad de Bremen y un Diplomado en Políticas de Desarrollo del Instituto Alemán de Desarrollo. Tiene más de 20 años de experiencia de colaborar en procesos de protección de derechos y desarrollo con la Cooperación Alemana – GIZ en diferentes países de América Latina, particularmente en Perú, Nicaragua, Ecuador y México. Por la GIZ estuvo a cargo del Programa de Fortalecimiento de la Federación Iberoamericana del Ombudsman (PROFIO) de 2013-2019. Actualmente es la Coordinadora del área de Paz y Cohesión Social de la GIZ en Ecuador y Responsable del Programa de Apoyo a Comunidades de Acogida de Refugiados y Migrantes en Zonas Fronterizas de Colombia, Ecuador y Perú SI-Frontera.",
+                "bio_en": "Julia Unger holds a law degree from Humboldt University in Berlin, is a qualified judge in Germany, and has a master's degree in international and European law from the University of Bremen, as well as a Diploma in Development Policies from the German Development Institute. She has over 20 years of experience collaborating on rights protection and development processes with German Cooperation – GIZ in various Latin American countries, particularly in Peru, Nicaragua, Ecuador, and Mexico. She was in charge of the Strengthening Program of the Ibero-American Ombudsman Federation (PROFIO) from 2013-2019. She is currently the Coordinator of the Peace and Social Cohesion area of GIZ in Ecuador and Responsible for the Support Program for Host Communities of Refugees and Migrants in Border Areas of Colombia, Ecuador, and Peru SI-Frontera.",
+                "image": "/img/speakers/juliaunger.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "5",
+                "name": "Volker Gutekunst",
+                "position": "Consejero Económico ",
+                "position_en": "Economic Advisor",
+                "company": "Embajada de Alemania en México",
+                "bio": "Volker Gutekunst es consejero económico de la Embajada de la República Federal de Alemania en México. Sirvió en el departamento de política industrial del Ministerio Federal de Economía, en la sección de asuntos generales de la Unión Europea en la Cancillería Federal, en la Cancillería del Estado de Renania del Norte-Westfalia y en la Oficina Federal de Estadística de Alemania. Estudió ciencias políticas e historia en Tübingen y Buenos Aires tanto como relaciones internacionales en Berlín y París.",
+                "bio_en": "Volker Gutekunst is the Economic Advisor at the Embassy of the Federal Republic of Germany in Mexico. He served in the industrial policy department of the Federal Ministry of Economics, in the general affairs section of the European Union at the Federal Chancellery, in the Chancellery of the State of North Rhine-Westphalia, and at the Federal Statistical Office of Germany. He studied political science and history in Tübingen and Buenos Aires as well as international relations in Berlin and Paris.",
+                "image": "/img/speakers/volker.jpg",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -849,8 +997,8 @@ const stage_2_day_1: Program[] = [
             {
                 "id": "2",
                 "name": "Hans Blomeier - Moderador",
-                "position": "Presidente en México",
-                "position_en": "President in Mexico",
+                "position": "Representante en México",
+                "position_en": "Representative in Mexico",
                 "company": "Konrad Adenauer Foundation",
                 "bio": "Hans Blomeier es ingeniero agrónomo de la Universidad de Kassel y ha sido el  representante de las oficinas de la Fundación Konrad Adenauer (KAS) en diversos países, entre ellos Perú, Argentina, Chile, Uruguay, además de Reino Unido y la República de Irlanda.<br><br> Ha sido jefe del departamento de América Latina en la oficina central de la KAS. El Ing. Blomeier es autor de numerosos artículos de análisis político, así como editor y co-autor de publicaciones (libros y revistas) de la KAS relacionados con la cooperación internacional, así como el desarrollo político y económico en los países a los que fue destinado. Actualmente es el representante de la KAS México desde mayo de 2018.",
                 "bio_en": "Hans Blomeier is an agricultural engineer at the University of Kassel and has represented the offices of the Konrad Adenauer Foundation (KAS) in several countries, including Peru, Argentina, Chile, Uruguay, as well as the United Kingdom and the Republic of Ireland. <br><br>He has been head of the Latin America department at KAS headquarters. Ing. Blomeier is the author of numerous political analysis articles, as well as editor and co-author of KAS publications (books and magazines) related to international cooperation as well as political and economic development in the countries where he was posted. Currently he is the representative of KAS Mexico since May 2018.",
@@ -861,13 +1009,13 @@ const stage_2_day_1: Program[] = [
             },
             {
                 "id": "1",
-                "name": "Takaaki Kuga",
-                "position": "Presidente",
-                "position_en": "President",
-                "company": "Cámara de Comercio e Industria Japonesa de México",
-                "bio": "Takaaki Kuga, actual Presidente de Toyota Motor México y de la Cámara Japonesa de Comercio en México, cuenta con más de 30 años de trayectoria internacional en la industria automotriz. Es licenciado en Economía Monetaria Internacional por la Universidad Sophia en Tokio y ha trabajado en Asia, América del Norte y América Latina. Inició su carrera en Mitsui & Co., destacándose en comercio exterior y logística, y más tarde en Bavaria S.A. en Colombia, donde también cursó un MBA.<br><br>En 2004 se integró a Toyota, liderando proyectos estratégicos en EE. UU., México y Japón, como la colaboración Toyota-Mazda en Salamanca. En México ha sido pieza clave en la consolidación operativa de Toyota, incluyendo el arranque de la planta en Guanajuato. Su visión global, liderazgo intercultural y profundo conocimiento del sector lo posicionan como una figura clave en el fortalecimiento de la industria automotriz y las relaciones bilaterales entre Japón y México.",
-                "bio_en": "Takaaki Kuga, current President of Toyota Motor Mexico and the Japanese Chamber of Commerce in Mexico, has more than 30 years of international experience in the automotive industry. He holds a degree in International Monetary Economics from Sophia University in Tokyo and has worked in Asia, North America and Latin America. He began his career at Mitsui & Co., excelling in foreign trade and logistics, and later at Bavaria S.A. in Colombia, where he also completed an MBA.<br><br>In 2004 he joined Toyota, leading strategic projects in the USA. Mexico and Japan, such as the Toyota-Mazda collaboration in Salamanca. In Mexico it has been a key part of the operational consolidation of Toyota, including the start-up of the plant in Guanajuato. His global vision, intercultural leadership and deep knowledge of the sector position him as a key figure in strengthening the automotive industry and bilateral relations between Japan and Mexico.",
-                "image": "/img/speakers/Taakaki_Kuga.jpg",
+                "name": "Satoshi Takehara",
+                "position": "Vicepresidente",
+                "position_en": "Vice President",
+                "company": "Cámara Japonesa de Comercio e Industria de México",
+                "bio": "Takaaki Kuga, actual Presidente de Toyota Motor México y de la Cámara Japonesa de Comercio en México, cuenta con más de 30 años de trayectoria internacional en la industria automotriz. Actual presidente de Mitsubishi de México y vicepresidente de la Cámara Japonesa de Comercio e Industria en México cuenta con más de 30 años de experiencia internacional en “Sogo Shosha”, una empresa dedicada al comercio e inversión general. Es licenciado en Administración de Empresas por la Universidad de Kioto. En 1992 se incorporó a Mitsubishi Corporation, donde destacó en comercio exterior e inversión, en los sectores de plantas industriales, maquinaria de construcción, automotriz, entre otros. También posee amplia experiencia en áreas corporativas como gestión de riesgos y recursos humanos. Su visión global, liderazgo intercultural y trayectoria internacional lo posicionan como una figura clave en el fortalecimiento de las relaciones bilaterales entre Japón y México.",
+                "bio_en": "Takaaki Kuga, current President of Toyota Motor Mexico and the Japanese Chamber of Commerce in Mexico, has over 30 years of international experience in the automotive industry. Currently president of Mitsubishi de México and vice president of the Japanese Chamber of Commerce and Industry in Mexico, he has more than 30 years of international experience in “Sogo Shosha,” a company dedicated to general trade and investment. He holds a degree in Business Administration from Kyoto University. In 1992, he joined Mitsubishi Corporation, where he excelled in foreign trade and investment in sectors such as industrial plants, construction machinery, automotive, among others. He also has extensive experience in corporate areas such as risk management and human resources. His global vision, intercultural leadership, and international career position him as a key figure in strengthening bilateral relations between Japan and Mexico.",
+                "image": "/img/speakers/satoshitakehara.jpg",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -901,7 +1049,7 @@ const stage_2_day_1: Program[] = [
                 "name": "Germán Bonilla Bermúdez - Moderador",
                 "position": "Coordinador",
                 "position_en": "Coordinator",
-                "company": "Asociación para el Desarrollo Industrial Sostenible Alianza Alemania-Pacífico (PAGSID)-un proyecto de cooperación de la Federación de Industrias Alemanas (BDI)",
+                "company": "Proyecto PAGSID - BDI",
                 "bio": "Maestro en Ciencias en Ingeniería de Sistemas de Producción por la RWTH Aachen University (Alemania) e Ingeniero Mecánico Administrador por el Tecnológico de Monterrey. Ha sido profesor en el Tecnológico de Monterrey y consultor para empresas extranjeras en proyectos de inversión en México y para PyMEs en proyectos de planeación estratégica, innovación, gestión de la tecnología e industria 4.0.<br><br> Cuenta con más de 10 años de experiencia en proyectos de cooperación internacional con enfoque en desarrollo sostenible, innovación y educación, siendo su área de especialización la cooperación económica y desarrollo entre Alemania y la Alianza del Pacífico. Actualmente es Coordinador del proyecto Asociación para el Desarrollo Industrial Sostenible Alemania - Alianza del Pacífico (PAGSID) de la Confederación de la Industria Alemana (BDI).",
                 "bio_en": "Master of Science in Production Systems Engineering from the RWTH Aachen University (Germany) and Managing Mechanical Engineer from the Tecnológico de Monterrey. He has been a professor at the Tecnológico de Monterrey and consultant for foreign companies in investment projects in Mexico and for SMEs in strategic planning, innovation, technology management and industry 4.0 projects. <br><br>He has more than 10 years of experience in international cooperation projects focusing on sustainable development, innovation and education, his area of expertise being economic and development cooperation between Germany and the Pacific Alliance. Currently project coordinator of the Association for Sustainable Industrial Development Germany - Pacific Alliance (PAGSID) of the Confederation of German Industry (BDI).", 
                 "image": "/img/speakers/german_bonilla_bermudez.webp",
@@ -909,19 +1057,19 @@ const stage_2_day_1: Program[] = [
                 "phone": "",
                 "moderador": true
             },         
-            /*{
+            {
                 "id": "2",
-                "name": "Oliver Hanisch ",
-                "position": "CEO",
-                "position_en": "CEO",
-                "company": "Campus Founders - Heilbronn",
-                "bio": "Oliver Hanisch es una figura prominente en el ecosistema de startups alemán, reconocido principalmente por su papel como CEO de Campus Founders gGmbH.<br><br>Hanisch es cofundador y director ejecutivo de Campus Founders, una organización dedicada a apoyar y fomentar el espíritu empresarial. Su experiencia se centra en liderazgo, recaudación de fondos, estrategia, ventas y relaciones con inversores. <br><br>Antes de Campus Founders, fundó Bed|n|Build, lo que demuestra su historial como emprendedor. Participa activamente como mentor en German Accelerator, brindando orientación a nuevas empresas. Es considerado un experto en startups y ecosistemas de startups, y es un orador solicitado en eventos como Heilbronn Slush'D.<br><br>Oliver Hanisch es un líder experimentado y un defensor del espíritu empresarial, con un historial comprobado de apoyo a las nuevas empresas y el fomento de la innovación.",
-                "bio_en": "Oliver Hanisch is a prominent figure in the German startup ecosystem, best known for his role as CEO of Campus Founders gGmbH. <br><br>Hanisch is co-founder and executive director of Campus Founders, an organization dedicated to supporting and fostering entrepreneurship. His expertise focuses on leadership, fundraising, strategy, sales and investor relations. <br><br>Prior to Campus Founders, he founded Bed|n|Build, proving his track record as an entrepreneur. Actively participates as a mentor in the German Accelerator, providing guidance to start-ups. He is considered an expert on startups and startup ecosystems, and is a sought-after speaker at events such as Heilbronn Slush’D.<br><br>Oliver Hanisch is an experienced leader and advocate of entrepreneurship, With a proven track record of supporting new businesses and fostering innovation.                ",
-                "image": "/img/speakers/Oliver_Hanisch.jpg",
+                "name": "Héctor Arturo Oropeza ",
+                "position": "Investigador Titular",
+                "position_en": "Senior Researcher",
+                "company": "Instituto de Investigaciones Jurídicas - UNAM",
+                "bio": "Doctor en Derecho por la Universidad Nacional Autónoma de México (UNAM). Investigador del Instituto de Investigaciones Jurídicas de la UNAM. Actual Presidente del Instituto para el Desarrollo Industrial y la Transformación Digital (INADI). H sido conferencista y profesor invitado en universidades y organismos de todo el mundo, entre ellos la Academia China de Ciencias Sociales, la Universidad Nacional de Derecho de Bangalore, la Universidad de Chuo, la Universidad Soongsil, la Universidad Autónoma de Lisboa, la Universidad de Montreal, la Universidad de Johannesburgo, la SEGIB, la OEA, la ALADI y la CEPAL. Es autor y coordinador de más de 40 libros sobre políticas para el desarrollo industrial integral, políticas para la transformación digital, entre los cuales destacan: “Inteligencia Artificial. Hacia una nueva era en la historia de la Humanidad”, “Hacia una nueva visión para el Desarrollo Industrial Digital en México”",
+                "bio_en": "Doctor of Law from the National Autonomous University of Mexico (UNAM). Researcher at the Institute of Legal Research of UNAM. Current President of the Institute for Industrial Development and Digital Transformation (INADI). He has been a speaker and guest professor at universities and organizations around the world, including the Chinese Academy of Social Sciences, the National Law University of Bangalore, Chuo University, Soongsil University, the Autonomous University of Lisbon, the University of Montreal, the University of Johannesburg, SEGIB, OAS, ALADI and ECLAC. He is author and coordinator of more than 40 books on policies for comprehensive industrial development, policies for digital transformation, among which stand out: “Artificial Intelligence. Towards a new era in the history of Humanity”, “Towards a new vision for Digital Industrial Development in Mexico”",
+                "image": "/img/speakers/hector_arturo.jpeg",
                 "email": "",
                 "phone": "",
                 "moderador": false
-            },*/
+            },
             {
                 "id": "3",
                 "name": "Nanghelly Silva Anzaldúa ",
@@ -975,27 +1123,28 @@ const stage_2_day_1: Program[] = [
             
         ]
     },
-    {
-        "title": "Cadenas que Conectan el Futuro: Fortaleciendo la Movilidad Regional ",
-        "title_en": "Chains that Connect the Future: Strengthening Regional Mobility",
-        "description": "En un contexto global de disrupciones y oportunidades como el nearshoring, Norteamérica enfrenta el reto de consolidarse como un bloque competitivo en movilidad. Esta conferencia aborda cómo el desarrollo de proveedores, la integración efectiva de la cadena de suministro y la colaboración trinacional son claves para fortalecer la autonomía industrial. A través de iniciativas como el PDP INA–IFC, México se posiciona como motor del cambio, impulsando innovación, talento y sostenibilidad desde la base productiva. La Industria Nacional de Autopartes propone una visión regional donde los proveedores locales son protagonistas del futuro automotriz.",
-        "description_en": "In a global context shaped by disruption and nearshoring opportunities, North America must strengthen its position as a competitive mobility hub. This keynote explores how supplier development, integrated value chains, and trinational collaboration are key to achieving industrial resilience. Through initiatives like the INA–IFC Supplier Development Program, Mexico is emerging as a driver of innovation, sustainability, and talent. Representing over 700 manufacturing plants, INA presents a regional vision where local suppliers are not just part of the value chain—they are central to shaping the future of the North American automotive industry.",
-        "time": "17:30 hrs",
+   {
+        "title": "Perspectivas actuales y futuras en baterías para la movilidad eléctrica",
+        "title_en": "Current and Future Perspectives on Batteries for Electric Mobility",
+        "description": "La movilidad evoluciona constantemente, y las baterías de litio son fundamentales para la electrificación de la propulsión. Esta ponencia analizará el presente y futuro de las baterías en vehículos ligeros, abordando su evolución tecnológica y las cadenas de valor a nivel global. La información a presentar proviene de las bases de datos de S&P Global Mobility, que ofrecen datos valiosos y actualizados sobre las tendencias y actores del mercado, permitiendo una comprensión profunda de su impacto en la industria automotriz y sectores adyacentes.",
+        "description_en": "Mobility is constantly evolving, and lithium batteries are fundamental to the electrification of propulsion. This presentation will analyze the present and future of batteries in light vehicles, addressing their technological evolution and value chains at a global level. The information to be presented comes from S&P Global Mobility databases, which provide valuable and up-to-date data on market trends and players, allowing for a deep understanding of their impact on the automotive industry and adjacent sectors.",
+        "time": "17:25 hrs",
         "duration": "45 min",
         "speakers": [
             {
                 "id": "1",
-                "name": "Francisco González",
-                "position": "Presidente Ejecutivo",
-                "position_en": "Executive President",
-                "company": "INA",
-                "bio": "Francisco N. González Díaz es Presidente Ejecutivo de la Industria Nacional de Autopartes, A.C., donde representa a más de 700 plantas manufactureras en México. Tiene más de 20 años de experiencia promoviendo a México y su industria. Ha sido Director General de Bancomext y ProMéxico, así como Embajador de México en Alemania. En el ámbito privado, participa como empresario en los sectores salud, comercio exterior, turismo y finanzas. Es licenciado en Administración de Empresas por el ITAM y cuenta con una maestría en Administración por el Tecnológico de Monterrey.",
-                "bio_en": "Francisco N. González Díaz is the Executive President of the National Auto Parts Industry, A.C., where he represents more than 700 manufacturing plants in Mexico. He has more than 20 years of experience promoting Mexico and its industry. He has been General Director of Bancomext and ProMéxico, as well as Ambassador of Mexico in Germany. In the private sector, he participates as an entrepreneur in the health, foreign trade, tourism and finance sectors. He has a degree in Business Administration from ITAM and a master's degree in Administration from the Tecnológico de Monterrey.",
-                "image": "/img/speakers/francisco_gonzalez_diaz_new.webp",
+                "name": "Hugo Cruz",
+                "position": "Analista Senior",
+                "position_en": "Senior Analyst",
+                "company": "S&P Global Mobility",
+                "bio": "Hugo Cruz es un Analista Senior en S&P Global Mobility, donde trabaja en el equipo de Baterías. El investiga las estrategias de electrificación de los fabricantes de automóviles, las tendencias en tecnología de baterías y sus cadenas de suministro, desde la extracción de minerales hasta su instalación en vehículos eléctricos. Con 15 años de experiencia en los sectores automotriz, energía y electrónica, Hugo ha ocupado cargos en ingeniería, investigación, emprendimiento y políticas públicas. Tiene un Maestría en Ciencias en Energía Sustentable por la Universidad de Delft (Países Bajos) y una Ingeniería en Electrónica por la UNAM (México), así como certificaciones en finanzas, análisis de datos y gestión de proyectos (PMP).",
+                "bio_en": "Hugo Cruz is a Senior Analyst at S&P Global Mobility, where he works on the Batteries team. He researches automakers' electrification strategies, battery technology trends, and their supply chains, from mineral extraction to installation in electric vehicles. With 15 years of experience in the automotive, energy, and electronics sectors, Hugo has held roles in engineering, research, entrepreneurship, and public policy. He holds a Master of Science in Sustainable Energy from Delft University (Netherlands) and a degree in Electronics Engineering from UNAM (Mexico), as well as certifications in finance, data analysis, and project management (PMP).",
+                "image": "/img/speakers/hugo_cruz.png",
                 "email": "",
                 "phone": "",
                 "moderador": false
             },
+            
         ]
     },
     {
@@ -1025,13 +1174,40 @@ const stage_2_day_1: Program[] = [
 
 const stage_2_day_2: Program[] = [
     {
-        "title": "Autodesk",
-        "title_en": "Autodesk",
-        "description": "",
-        "description_en": "",
+        "title": "Navegando el futuro de la manufactura: Aprovechando la madurez digital y la IA para obtener una ventaja competitiva",
+        "title_en": "Navigating the Future of Manufacturing: Leveraging Digital Maturity and AI for Competitive Advantage",
+        "description": "En su empresa, su objetivo es crear mejores productos, vender más y aumentar la rentabilidad. Sin embargo, el caos, la incertidumbre y la IA añaden presión. Las fuerzas externas actúan como barreras en el sector manufacturero. Los líderes deben seguir las tendencias para dirigir sus organizaciones eficazmente. La escasez global de talento, con más de 5 millones de puestos vacantes, las interrupciones en la cadena de suministro y la volatilidad macroeconómica plantean desafíos. Sin embargo, convertir las debilidades en fortalezas y conectar los procesos fallidos, al tiempo que se aprovecha la IA, puede ofrecer una ventaja competitiva. En esta sesión, compartiremos por qué su organización necesita alcanzar una mayor madurez digital y le proporcionaremos el plan para empezar.",
+        "description_en": "In your company, your goal is to create better products, sell more, and increase profitability. However, chaos, uncertainty, and AI add pressure. External forces act as barriers in the manufacturing sector. Leaders must follow trends to effectively lead their organizations. The global talent shortage, with over 5 million vacancies, supply chain disruptions, and macroeconomic volatility pose challenges. However, turning weaknesses into strengths and connecting failed processes while leveraging AI can offer a competitive advantage. In this session, we will share why your organization needs to achieve greater digital maturity and provide you with the plan to get started.",
         "time": "11:20 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Bassanio Peters",
+                "position": "Sr. Market Development Mgr",
+                "position_en": "Sr. Market Development Mgr",
+                "company": "Autodesk",
+                "bio": "Bassanio Peters es Gerente Senior de Desarrollo de Mercado y líder global para el negocio de Datos y Procesos en Autodesk. Bassanio es un líder innovador con más de 15 años de experiencia en la elaboración de estrategias y ejecución en la industria de la ingeniería y la fabricación.",
+                "bio_en": "Bassanio Peters is a Senior Market Development Manager and global leader for the Data and Process business at Autodesk. Bassanio is an innovative leader with over 15 years of experience in strategy development and execution in the engineering and manufacturing industry.",
+                "image": "/img/speakers/bassanio_peters.jpeg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Abraham Pineda",
+                "position": "Technical Sales Specialist",
+                "position_en": "Technical Sales Specialist",
+                "company": "Autodesk",
+                "bio": "Abraham Pineda Especialista en Diseño y Fabricación de Productos en Autodesk. Ayuda a los equipos de nivel C a transformar y desarrollar procesos, automatizar flujos de trabajo y acelerar la innovación. Experto en PLM, PDM, CAD y CAM. Apasionado por resolver lo imposible con tecnología.",
+                "bio_en": "Abraham Pineda is a Product Design and Manufacturing Specialist at Autodesk. He helps C-level teams transform and develop processes, automate workflows, and accelerate innovation. Expert in PLM, PDM, CAD, and CAM. Passionate about solving the impossible with technology.",
+                "image": "/img/speakers/abraham_pineda.jpg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "Digitalizando con Impacto: Eficiencia, Conectividad y Ciberseguridad ",
@@ -1083,32 +1259,61 @@ const stage_2_day_2: Program[] = [
         ]
     },
     {
-        "title": "",
-        "title_en": "",
-        "description": "",
-        "description_en": "",
-        "time": "11:20 hrs",
+        "title": "La piedra angular de la industria está en la educación ",
+        "title_en": "The Cornerstone of Industry is in Education",
+        "description": "Mitsubishi Electric",
+        "description_en": "Mitsubishi Electric",
+        "time": "13:00 hrs",
         "duration": "45 min",
         "speakers": []
     },
     
     {
-        "title": "Mitsubishi",
-        "title_en": "Mitsubishi",
-        "description": "",
-        "description_en": "",
-        "time": "13:00 hrs",
-        "duration": "45 min",
-        "speakers": []
-    },
-    {
-        "title": " S&P Mobility",
-        "title_en": " S&P Mobility",
-        "description": "",
-        "description_en": "",
+        "title": "Transformación inteligente: Ciberseguridad como ventaja competitiva en la Industria 4.0",
+        "title_en": "Intelligent Transformation: Cybersecurity as a Competitive Advantage in Industry 4.0",
+        "description": "La Ciberseguridad Industrial ya no es solo una medida defensiva: es un habilitador clave de la innovación en la era de la Industria 4.0. Esta conferencia explora cómo una estrategia robusta de Seguridad ICS/OT permite a las organizaciones manufactureras adoptar tecnologías emergentes, mejorar la resiliencia operativa y acelerar la transformación digital. Se abordarán casos reales, marcos normativos relevantes y recomendaciones prácticas para integrar la ciberseguridad como parte del diseño de procesos industriales inteligentes. Dirigida a líderes de manufactura, esta charla ofrece una visión estratégica sobre cómo la protección es parte de la innovación.",
+        "description_en": "Industrial Cybersecurity is no longer just a defensive measure: it is a key enabler of innovation in the Industry 4.0 era. This presentation explores how a robust ICS/OT Security strategy enables manufacturing organizations to adopt emerging technologies, enhance operational resilience, and accelerate digital transformation. Real cases, relevant regulatory frameworks, and practical recommendations for integrating cybersecurity as part of the design of intelligent industrial processes will be addressed. Aimed at manufacturing leaders, this talk offers a strategic vision on how protection is part of innovation.",
         "time": "13:50 hrs",
-        "duration": "60 min",
-        "speakers": []
+        "duration": "30 min",
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Alessandro Galvao do Vale",
+                "position": "Coordinador CoE Seguridad IoT/OT",
+                "position_en": "IoT/OT Security CoE Coordinator",
+                "company": "SCITUM TELMEX",
+                "bio": "Licenciado en Administración por la UFRJ, actualmente coordina el Centro de Excelencia en Seguridad IoT/OT en Scitum, liderando estrategias para proteger entornos industriales. Con más de 28 años de experiencia internacional en tecnología, ha colaborado con empresas globales en múltiples sectores. Es CISSP, miembro de ISA y especialista en Ciberseguridad Industrial, integrando marcos como ISA/IEC 62443, NIST SP800-82 e ISO/IEC 27019. Su enfoque une visión técnica y de negocio, identificando el impacto de la ciberseguridad en la operación y competitividad. Ha sido ponente en eventos de alto nivel en México y Latinoamérica y promueve la adopción de buenas prácticas, el desarrollo de capacidades locales y la expansión de servicios especializados en Seguridad IoT/OT desde Scitum.",
+                "bio_en": "Bachelor in Administration from UFRJ, he currently coordinates the IoT/OT Security Center of Excellence at Scitum, leading strategies to protect industrial environments. With over 28 years of international experience in technology, he has collaborated with global companies across multiple sectors. He is CISSP, a member of ISA and a specialist in Industrial Cybersecurity, integrating frameworks such as ISA/IEC 62443, NIST SP800-82 and ISO/IEC 27019. His approach combines technical and business vision, identifying the impact of cybersecurity on operation and competitiveness. He has been a speaker at high-level events in Mexico and Latin America and promotes the adoption of best practices, the development of local capabilities and the expansion of specialized services in IoT/OT Security from Scitum.",
+                "image": "/img/speakers/default.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
+    },
+    
+     {
+        "title": "Cadenas que Conectan el Futuro: Fortaleciendo la Movilidad Regional ",
+        "title_en": "Chains that Connect the Future: Strengthening Regional Mobility",
+        "description": "En un contexto global de disrupciones y oportunidades como el nearshoring, Norteamérica enfrenta el reto de consolidarse como un bloque competitivo en movilidad. Esta conferencia aborda cómo el desarrollo de proveedores, la integración efectiva de la cadena de suministro y la colaboración trinacional son claves para fortalecer la autonomía industrial. A través de iniciativas como el PDP INA–IFC, México se posiciona como motor del cambio, impulsando innovación, talento y sostenibilidad desde la base productiva. La Industria Nacional de Autopartes propone una visión regional donde los proveedores locales son protagonistas del futuro automotriz.",
+        "description_en": "In a global context shaped by disruption and nearshoring opportunities, North America must strengthen its position as a competitive mobility hub. This keynote explores how supplier development, integrated value chains, and trinational collaboration are key to achieving industrial resilience. Through initiatives like the INA–IFC Supplier Development Program, Mexico is emerging as a driver of innovation, sustainability, and talent. Representing over 700 manufacturing plants, INA presents a regional vision where local suppliers are not just part of the value chain—they are central to shaping the future of the North American automotive industry.",
+        "time": "17:30 hrs",
+        "duration": "45 min",
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Francisco González",
+                "position": "Presidente Ejecutivo",
+                "position_en": "Executive President",
+                "company": "Industria Nacional de Autopartes",
+                "bio": "Francisco N. González Díaz es Presidente Ejecutivo de la Industria Nacional de Autopartes, A.C., donde representa a más de 700 plantas manufactureras en México. Tiene más de 20 años de experiencia promoviendo a México y su industria. Ha sido Director General de Bancomext y ProMéxico, así como Embajador de México en Alemania. En el ámbito privado, participa como empresario en los sectores salud, comercio exterior, turismo y finanzas. Es licenciado en Administración de Empresas por el ITAM y cuenta con una maestría en Administración por el Tecnológico de Monterrey.",
+                "bio_en": "Francisco N. González Díaz is the Executive President of the National Auto Parts Industry, A.C., where he represents more than 700 manufacturing plants in Mexico. He has more than 20 years of experience promoting Mexico and its industry. He has been General Director of Bancomext and ProMéxico, as well as Ambassador of Mexico in Germany. In the private sector, he participates as an entrepreneur in the health, foreign trade, tourism and finance sectors. He has a degree in Business Administration from ITAM and a master's degree in Administration from the Tecnológico de Monterrey.",
+                "image": "/img/speakers/francisco_gonzalez_diaz_new.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "Inteligencia Urbana: datos simples, soluciones sofisticadas",
@@ -1183,60 +1388,148 @@ const stage_2_day_2: Program[] = [
         ]
     },
     {
-        "title": "ITMujeres",
-        "title_en": "ITMujeres",
+        "title": "ITMujeres: Más Allá de la Resiliencia: Descubre el Poder de la Antifragilidad para Crecer Sin Límites",
+        "title_en": "ITMujeres: Beyond Resilience: Discover the Power of Antifragility to Grow Without Limits",
         "description": "",
         "description_en": "",
         "time": "17:00 hrs",
         "duration": "45 min",
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Claudia Guerrero",
+                "position": "Líder de Producto de Tecnología de Servicios para Clientes",
+                "position_en": "Customer Services Technology Product Leader",
+                "company": "GE Aerospace / Society of Women Engineers",
+                "bio": "Claudia Guerrero es una profesional con 18 años de experiencia en GE Aerospace, donde ha destacado en diversos roles como líder de equipos, soporte al cliente, integración de sistemas y diseño. Desde que se unió a GE en 2007, ha ocupado posiciones clave, incluyendo Líder de Módulos de Sistemas CFM & CF34, Gerente de Subsección CF34, y Líder de Contratos Técnicos de Servicios. Su trayectoria refleja un compromiso constante con la excelencia y la innovación. Claudia es Embajadora de Society of Women Engineers en México y presidenta de la filial de Querétaro, promoviendo la inclusión y el empoderamiento de mujeres en STEM. Con habilidades de liderazgo, certificación e integración de sistemas, es un modelo a seguir para ingenieras en ascenso. Claudia es madre de dos hijos, apasionada por el triatlón, el senderismo y el mar. Es ingeniera en Mecatrónica por el ITESM y cuenta con estudios en Ingeniería Automotriz en Italia y Alemania, actualmente está cursando su maestría en Ingeniería Aeronáutica.",
+                "bio_en": "Claudia Guerrero is a professional with 18 years of experience at GE Aerospace, where she has excelled in various roles such as team leader, customer support, systems integration, and design. Since joining GE in 2007, she has held key positions, including CFM & CF34 Systems Module Leader, CF34 Subsection Manager, and Technical Services Contracts Leader. Her career reflects a consistent commitment to excellence and innovation. Claudia is an Ambassador of",
+                "image": "/img/speakers/Claudia_Guerrero.jpg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
+    },
+    {
+        "title": "ITMujeres: Abrazando tu Historia: Mujeres Ingenieras que Redefinen el Futuro",
+        "title_en": "ITMujeres: Embracing Your Story: Women Engineers Redefining the Future",
+        "description": "GE Aerospace Society of Women Engineers",
+        "description_en": "GE Aerospace Society of Women Engineers",
+        "time": "17:30 hrs",
+        "duration": "30 min",
         "speakers": []
     },
     {
-        "title": "ITMujeres - A3",
-        "title_en": "A3 - ITMujeres",
-        "description": "",
-        "description_en": "",
+        "title": "ITMujeres: Ecosistemas Inteligentes: Mujeres Liderando la Digitalización y la Innovación en la  Industria",
+        "title_en": "ITMujeres: Intelligent Ecosystems: Women Leading Digitalization and Innovation in the Industry",
+        "description": "GE Aerospace Society of Women Engineers",
+        "description_en": "GE Aerospace Society of Women Engineers",
         "time": "18:00 hrs",
         "duration": "60 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Fernando Ibarra",
+                "position": "Presidente",
+                "position_en": "President",
+                "company": "Alianza 4 Cero",
+                "bio": "Fernando Ibarra cuenta con más de 30 años de experiencia en roles de creciente responsabilidad en las industrias de inyección de plástico, mecanizado y estampado, abarcando sectores automotriz, dispositivos médicos, electrodomésticos y electrónicos. Ha liderado la dirección estratégica de diversas empresas a través de planificación de negocios, análisis de mercado y clientes, y modelado financiero. A lo largo de su carrera, ha ocupado cargos como Director General, Vicepresidente de Operaciones, Vicepresidente de Desarrollo Estratégico y Gerente General. Actualmente es Presidente del Clúster Industria 4.0 de San Luis Potosí, Director de la Cámara de Comercio e Industria Alemana-Mexicana en México y Vicepresidente del comité de PYMES y Cadenas de Valor de CONCAMIN México 4.0. También se desempeña como Asesor Senior de la Secretaría de Desarrollo Económico del Estado de San Luis Potosí y ha sido miembro del consejo directivo del Clúster Automotriz de San Luis Potosí. Cuenta con experiencia internacional en países como Estados Unidos, China, Corea, Canadá, República Dominicana y Colombia. Es Ingeniero en Producción Industrial y posee certificación Master Black Belt en Six Sigma.",
+                "bio_en": "Fernando Ibarra has over 30 years of experience in roles of increasing responsibility in the plastic injection, machining, and stamping industries, covering automotive, medical devices, appliances, and electronics sectors. He has led the strategic direction of various companies through business planning, market and customer analysis, and financial modeling. Throughout his career, he has held positions such as General Director, Vice President of Operations, Vice President of Strategic Development, and General Manager. He is currently President of the Industry 4.0 Cluster of San Luis Potosí, Director of the German-Mexican Chamber of Commerce and Industry in Mexico, and Vice President of the SME and Value Chains committee of CONCAMIN Mexico 4.0. He also serves as Senior Advisor to the Secretariat of Economic Development of the State of San Luis Potosí and has been a member of the board of directors of the Automotive Cluster of San Luis Potosí. He has international experience in countries such as the United States, China, Korea, Canada, the Dominican Republic, and Colombia. He is an Industrial Production Engineer and holds a Master Black Belt certification in Six Sigma.",
+                "image": "/img/speakers/Fernando_Ibarra.jpg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Leslie Alonso",
+                "position": "Head of IT Region Américas",
+                "position_en": "Head of IT Region Américas",
+                "company": "Draexlmaier Group",
+                "bio": "Leslie Alonso Ferro Ing. Industrial por el instituto Nacional de México con MBA en curso del tecnológico de Monterrey, más de 21 años de experiencia en logística, ventas y tecnologías de la información para empresas como Cemex, Nestlé, Valeo, Bosch Americas y Bosch Stuttgart en Alemania. Actualmente ocupa la posición de CIO para la región de Américas para la empresa alemana Draexlmaier de giro automotriz premium. es catedrática universitaria de materias como equipos de alto desempeño, preside además el comité de CIOS para el clúster automotriz Alianza 4.0 en San Luis Potosí y es parte honoraria de la fundación Mariposas de acero para fomentar carreras STEM en las mujeres. Triatleta, trotamundos, amante de la lectura, el vino y el café. Madre de 2 hijos de 23 y 20 años que son su equipo de alto desempeño más exitoso.",
+                "bio_en": "Leslie Alonso Ferro Industrial Engineer from the National Institute of Mexico with an MBA in progress from the Monterrey Institute of Technology, more than 21 years of experience in logistics, sales, and information technologies for companies such as Cemex, Nestlé, Valeo, Bosch Americas, and Bosch Stuttgart in Germany. She currently holds the position of CIO for the Americas region for the German premium automotive company Draexlmaier. She is a university professor of subjects such as high-performance teams, also chairs the CIO committee for the Alianza 4.0 automotive cluster in San Luis Potosí and is an honorary member of the Mariposas de acero foundation to promote STEM careers",
+                "image": "/img/speakers/leslie_alfonso.png",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "3",
+                "name": "Sofía Escoto ",
+                "position": "Data Science Specialist ",
+                "position_en": "Data Science Specialist ",
+                "company": "Bayer de Mexico",
+                "bio": "FieldView CX & Product Manager para FieldView México, con 20 años de experiencia aplicando tecnología y análisis espacial para impulsar estrategias innovadoras, sostenibles y rentables. En Bayer lidero un equipo multidisciplinario que transforma la agricultura de precisión en México, promoviendo una cultura digital centrada en el agricultor y en la gestión inteligente de recursos. Bióloga por la Facultad de Ciencias y maestra en Ciencias, ambos títulos emitidos por la UNAM. Me he especializado en el análisis geoespacial aplicado a la gestión y evaluación de riego medioambiental, en programas impartidos por la UNAM, CentroGEO de CONACyT y MIT. Mi trayectoria profesional inició en 2005 como capturista, evolucionando a analista de datos biológicos y de riesgo ambiental en la Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO). En 2013, me incorporé a Monsanto México como Coordinadora de Sistemas de Información Geográfica (SIG), donde desarrollé el sistema que respalda los permisos de liberación de semillas biotecnológicas para el norte de Latinoamérica. He liderado la creación de GEODaaS (Geodata as a Service), un servicio innovador de gestión y análisis de información geoespacial que transforma datos en valor estratégico, facilitando la toma de decisiones para equipos internos y agricultores. Como Especialista en Ciencia de Datos para Bayer, fui responsable de la implementación de la plataforma de agricultura digital FieldView en su etapa precomercial en México (2019-2024), sentando las bases para su adopción y lanzamiento comercial en el 2024 Como CX & Product Manager en FieldView México, diseño la estrategia y evolución del producto digital para responder a las necesidades de la agricultura en el país, impulsando la adopción tecnológica en el sector. Lidero la optimización del customer journey local, alineado con la estrategia global, y coordino la integración con equipos comerciales para ofrecer soluciones innovadoras que generen valor y maximicen la satisfacción del cliente, al tiempo que fortalecemos el posicionamiento y valor de los productos de Bayer.",
+                "bio_en": "FieldView CX & Product Manager for FieldView Mexico, with 20 years of experience applying technology and spatial analysis to drive innovative, sustainable, and profitable strategies. At Bayer, I lead a multidisciplinary team that transforms precision agriculture in Mexico, promoting a digital culture focused on the farmer and intelligent resource management. I am a Biologist from the Faculty of Sciences and hold a Master's degree in Sciences, both degrees issued by UNAM. I have specialized in geospatial analysis applied to environmental irrigation management and evaluation, in programs offered by UNAM, CentroGEO of CONACyT, and MIT. My professional career began in 2005 as a data entry clerk, evolving into a biological data and environmental risk analyst at the National Commission for the Knowledge and Use of Biodiversity (CONABIO). In 2013, I joined Monsanto Mexico as Geographic Information Systems (GIS) Coordinator, where I developed the system that supports the release permits for biotech seeds for northern Latin America. I have led the creation of GEODaaS (Geodata as a Service), an innovative service for managing and analyzing geospatial information that transforms data into strategic value, facilitating decision-making for internal teams and farmers. As a Data Science Specialist for Bayer, I was responsible for implementing the FieldView digital agriculture platform during its pre-commercial phase in Mexico (2019-2024), laying the groundwork for its adoption and commercial launch in 2024. As CX & Product Manager at FieldView Mexico, I design the strategy and evolution of the digital product to respond to the needs of agriculture in the country, driving technological adoption in the sector. I lead the optimization of the local customer journey, aligned with the global strategy, and coordinate integration with commercial teams to offer innovative solutions that generate value and maximize customer satisfaction while strengthening Bayer's product positioning and value.",
+                "image": "/img/speakers/sofia_escoto.png",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
 ]
 
 const stage_2_day_3: Program[] = [
     {
-        "title": "Beckhoff",
-        "title_en": "Beckhoff",
+        "title": "Cero error humano  -  Redes para centros de datos confiables y seguras",
+        "title_en": "Zero human error - Networks for reliable and secure data centers",
         "description": "",
         "description_en": "",
-        "img": "/img/program/beckhoff.png",
-        "time": "11:20 hrs",
-        "duration": "45 min",
+        "img": "",
+        "time": "11:10 hrs",
+        "duration": "30 min",
         "speakers": [
-            /*{
+            {
                 "id": "1",
-                "name": "Pablo Fernandes ",
-                "position": "Especialista de producto",
-                "position_en": " Product Specialist",
-                "company": "Beckhoff",
+                "name": "Alfredo Ramos  ",
+                "position": "Director de Desarrollo de Negocios IP",
+                "position_en": "Director of IP Business Development",
+                "company": "Nokia",
                 "bio": "",
                 "bio_en": "",
                 "image": "/img/speakers/default.webp",
                 "email": "",
                 "phone": "",
                 "moderador": false
-            }, {
+            }, 
+            {
                 "id": "2",
-                "name": "Adrián Beas ",
-                "position": "Especialista de producto",
-                "position_en": " Product Specialist",
-                "company": "Beckhoff",
+                "name": "Karla Beltrán  ",
+                "position": "Directora de Preventas Redes Ópticas",
+                "position_en": "Director of Optical Networks Pre-sales",
+                "company": "Nokia",
                 "bio": "",
                 "bio_en": "",
                 "image": "/img/speakers/default.webp",
                 "email": "",
                 "phone": "",
                 "moderador": false
-            },*/
+            },
+        ]
+    },
+    {
+        "title": "Telemetría Industrial y la expansión de la superficie de ataque",
+        "title_en": "Industrial Telemetry and the Expansion of the Attack Surface",
+        "description": "Fortinet",
+        "description_en": "Fortinet",
+        "img": "",
+        "time": "11:45 hrs",
+        "duration": "30 min",
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Jade Tamayo",
+                "position": "Operational Technology Business Development Manager",
+                "position_en": "Operational Technology Business Development Manager",
+                "company": "Fortinet",
+                "bio": "Jade Tamayo es miembro del equipo especializado en Tecnologías Operativas de Fortinet. Egresada de la Universidad Nacional Autonomá de México, con más de 6 años en consultoría en seguridad para Infraestructuras Críticas y ciberseguridad. Ha colaborado con entidades gubernamentales, privadas para diseño de estrategias de ciberseguridad, gestión de proyectos y análisis de riesgo. ",
+                "bio_en": "Jade Tamayo is a member of Fortinet's Operational Technologies specialized team. A graduate of the National Autonomous University of Mexico, with more than 6 years in security consulting for Critical Infrastructures and cybersecurity. She has collaborated with government entities, private sector for the design of cybersecurity strategies, project management, and risk analysis.",
+                "image": "/img/speakers/default.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            }, 
         ]
     },
     {
@@ -1264,9 +1557,9 @@ const stage_2_day_3: Program[] = [
             {
                 "id": "2",
                 "name": "Rodrigo Salcedo",
-                "position": "Asociación Gremial de Vehículos Eléctricos de Chile ",
-                "position_en": "Association Gremial de Vehículos Eléctricos de Chile ",
-                "company": "AVEC",
+                "position": "Presidente ",
+                "position_en": "President",
+                "company": "Asociación Gremial de Vehículos Eléctricos de Chile ",
                 "bio": "Rodrigo Salcedo Campino es Ingeniero Comercial con una trayectoria en la industria logística y energética de Chile, especializándose en sistemas de transporte eléctrico y movilidad sostenible. <br><br>Es presidente de la Asociación Gremial de Vehículos Eléctricos de Chile (AVEC), donde impulsa políticas públicas y difusión del uso de vehículos eléctricos en el país. Es directivo en la Asociación Latinoamericana de Movilidad Sostenible (ALAMOS). <br><br>Ha sido expositor en foros y congresos internacionales - como Tomorrow\.Mobility Barcelona y Smart City Expo en Barcelona - sobre electromovilidad y conectividad eléctrica en América Latina. <br><br>Con participación activa en comisiones legislativas nacionales y mesas técnicas, ha colaborado en iniciativas clave como la Ley de Electromovilidad y la estrategia regulatoria vigente en Chile.",
                 "bio_en": "Rodrigo Salcedo Campino is a Commercial Engineer with a background in the logistics and energy industry in Chile, specializing in electric transport systems and sustainable mobility. <br><br>He is president of the Association Gremial de Vehículos Eléctricos de Chile (AVEC), where he promotes public policies and dissemination of the use of electric vehicles in the country. Director of the Latin American Association for Sustainable Mobility (ALAMOS). <br><br>He has been an exhibitor in international forums and congresses - such as Tomorrow . Mobility Barcelona and Smart City Expo in Barcelona - on electromobility and electrical connectivity in Latin America. <br><br>With active participation in national legislative committees and technical tables, has collaborated on key initiatives such as the Electromobility Law and the current regulatory strategy in Chile.",
                 "image": "/img/speakers/Rodrigo_Salcedo.png",
@@ -1295,7 +1588,7 @@ const stage_2_day_3: Program[] = [
                 "company": "Asociación Mexicana de Impulso al Vehículo Eléctrico",
                 "bio": "",
                 "bio_en": "",
-                "image": "/img/speakers/default.webp",
+                "image": "/img/speakers/diana_avalos.jpg",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -1339,13 +1632,40 @@ const stage_2_day_3: Program[] = [
         ]
     },
     {
-        "title": "",
-        "title_en": "",
+        "title": "Del residuo al recurso: cómo escalar el reciclaje de baterías en América Latina",
+        "title_en": "From Waste to Resource: How to Scale Battery Recycling in Latin America",
         "description": "",
         "description_en": "",
         "time": "14:10 hrs",
         "duration": "45 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Alejandro Oseguera",
+                "position": "CEO and Business Development",
+                "position_en": "CEO and Business Development",
+                "company": "ENHO Energy Home",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/default.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Vladimir García",
+                "position": "Lead-Acid battery materials expert North America",
+                "position_en": "Lead-Acid battery materials expert North America",
+                "company": "Clarios",
+                "bio": "Dr. Vladimir García Hernández es un reconocido especialista con una sólida trayectoria académica y profesional en el sector automotriz. Es Ingeniero Químico Industrial por la Universidad de las Américas Puebla (UDLA) y Doctor en Ciencia de Materiales por la Universidad Autónoma de Nuevo León (UANL). Su formación se complementa con un diplomado en mandos intermedios por ICAMI, fortaleciendo sus capacidades de liderazgo y gestión estratégica. Con más de dos décadas de experiencia, el Dr. García Hernández ha sido pieza clave en el desarrollo e innovación de materiales para baterías plomo-acido, colaborando estrechamente con universidades, centros de investigación, clientes y proveedores. Su participación en proyectos académicos de licenciatura y posgrado ha contribuido significativamente al avance tecnológico del sector, consolidando puentes entre la academia y la industria en el norte del país. Durante su estancia como expatriado en Glendale, Wisconsin, representando a Clarios, amplió su perspectiva global y red de colaboración, experiencia que hoy aplica como responsable del desarrollo de materiales para la región de Norteamérica. Su liderazgo ha sido fundamental en iniciativas de innovación dentro del Clúster Automotriz de Nuevo León, donde promueve activamente la competitividad y el progreso tecnológico de la industria. Apasionado por la excelencia y la innovación, el Dr. García Hernández es una figura influyente en el ecosistema automotriz de Norteamérica. Fuera del ámbito profesional, encuentra en la cocina un espacio de creatividad y conexión familiar, reflejo de su enfoque integral y humano.",
+                "bio_en": "Dr. Vladimir García Hernández is a renowned specialist with a solid academic and professional background in the automotive sector. He is an Industrial Chemical Engineer from the Universidad de las Américas Puebla (UDLA) and holds a PhD in Materials Science from the Universidad Autónoma de Nuevo León (UANL). His education is complemented by a diploma in middle management from ICAMI, strengthening his leadership and strategic management skills. With over two decades of experience, Dr. García Hernández has been a key player in the development and innovation of lead-acid battery materials, working closely with universities, research centers, clients, and suppliers. His involvement in undergraduate and postgraduate academic projects has significantly contributed to the technological advancement of the sector, building bridges between academia and industry in the northern part of the country. During his time as an expatriate in Glendale, Wisconsin, representing Clarios, he expanded his global perspective and collaboration network, experience that he now applies as head of materials development for the North America region. His leadership has been fundamental in innovation initiatives within the Nuevo León Automotive Cluster, where he actively promotes competitiveness and technological progress in the industry. Passionate about excellence and innovation, Dr. García Hernández is an influential figure in the North American automotive ecosystem. Outside of his professional field, he finds creativity and family connection in cooking, reflecting his comprehensive and human approach.",
+                "image": "/img/speakers/vladimir_garcia.webp",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "Inteligente, sostenible, circular: la tecnología como facilitadora de la economía circular",

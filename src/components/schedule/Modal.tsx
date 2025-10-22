@@ -31,11 +31,11 @@ const Modal = ({ isOpen, onClose, speaker, language }: ModalProps) => {
   const newBio = bioLang.length > 700 ? bioLang.slice(0, 700) + "..." : bioLang;
   const safeHtml = vermas ? bioLang ?? "" : newBio ?? "";
   return (
-    <div className="fixed inset-0 z-[200] flex items-center justify-center bg-gray-900 bg-opacity-60 p-4">
+    <div className="fixed inset-0 z-[300] flex items-center justify-center bg-gray-900 bg-opacity-60 p-4">
       <div
         className="bg-gradient-to-t from-[#000014] to-[#0a3dff] p-6 md:p-8 lg:pt-4 rounded-3xl shadow-xl 
                         w-full max-w-full  lg:max-w-7xl 
-                        overflow-y-auto max-h-screen"
+                        overflow-y-auto max-h-screen z-[301] relative"
       >
         <div className="flex justify-end mb-4">
           <button
