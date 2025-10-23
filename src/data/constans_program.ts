@@ -874,7 +874,7 @@ const stage_2_day_1: Program[] = [
         "title_en": "ITM 2025 Opening",
         "description": "",
         "description_en": "",
-        "time": "11:00 hrs",
+        "time": "11:30 hrs",
         "duration": "60 min",
         "speakers": []
     },
