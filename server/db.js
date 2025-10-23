@@ -440,8 +440,9 @@ export class RegisterModel {
     'hector.fanghanel35@anahuac.mx',
     'juan.olivaca@anahuac.mx'
     ];
+    const connection = await mysql.createConnection(config);
 
-      try {
+    try {
       // Crear placeholders para la consulta
       const placeholders = emails.map(() => '?').join(',');
       
