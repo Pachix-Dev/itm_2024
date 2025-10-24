@@ -6,7 +6,7 @@ import 'react-phone-number-input/style.css'
 import './Form.css'
 import { useEffect, useState } from 'react'
 
-export function StepOne({ translates }) {
+export function StepOne({ translates, currentLanguage }) {
   const [showPrivacyModal, setShowPrivacyModal] = useState(true)
   const [privacyAccepted, setPrivacyAccepted] = useState(false)
 
@@ -60,7 +60,9 @@ export function StepOne({ translates }) {
   const handleRejectPrivacy = () => {
     // Opcional: redirigir a otra página o mostrar mensaje
     alert(
-      'Es necesario aceptar el aviso de privacidad para continuar con el registro.'
+      currentLanguage === 'es'
+        ? 'Es necesario aceptar el aviso de privacidad para continuar con el registro.'
+        : 'It is necessary to accept the privacy notice to continue with the registration.'
     )
   }
 
@@ -74,11 +76,14 @@ export function StepOne({ translates }) {
               <div className='flex items-center justify-between'>
                 <div>
                   <h2 className='text-2xl font-bold mb-2'>
-                    Aviso de Privacidad
+                    {currentLanguage === 'es'
+                      ? 'Aviso de Privacidad'
+                      : 'Privacy Notice'}
                   </h2>
                   <p className='text-white/90'>
-                    Por favor, lee y acepta nuestro aviso de privacidad para
-                    continuar
+                    {currentLanguage === 'es'
+                      ? 'Por favor, lee y acepta nuestro aviso de privacidad para continuar'
+                      : 'Please read and accept our privacy notice to continue'}
                   </p>
                 </div>
                 <div className='w-12 h-12 bg-white/20 rounded-full flex items-center justify-center'>
@@ -103,7 +108,11 @@ export function StepOne({ translates }) {
             <div className='p-6 overflow-y-auto max-h-[60vh]'>
               <div className='prose max-w-none text-gray-700'>
                 <iframe
-                  src='https://igeco.mx/aviso-de-privacidad/'
+                  src={
+                    currentLanguage === 'es'
+                      ? 'https://igeco.mx/aviso-de-privacidad/'
+                      : 'https://igeco.mx/en/aviso-de-privacidad/'
+                  }
                   className='w-full h-[400px] border-0 rounded-lg'
                   title='Aviso de Privacidad'
                 />
@@ -111,7 +120,9 @@ export function StepOne({ translates }) {
                 {/* Enlace directo como alternativa */}
                 <div className='mt-4 p-4 bg-gray-50 rounded-lg'>
                   <p className='text-sm text-gray-600 mb-2'>
-                    Si no puedes ver el contenido, puedes acceder directamente:
+                    {currentLanguage === 'es'
+                      ? 'Si no puedes ver el contenido, puedes acceder directamente:'
+                      : 'If you cannot see the content, you can access it directly:'}
                   </p>
                   <a
                     href='https://igeco.mx/aviso-de-privacidad/'
@@ -119,7 +130,9 @@ export function StepOne({ translates }) {
                     rel='noopener noreferrer'
                     className='inline-flex items-center gap-2 text-[#E42128] hover:text-[#CF1363] font-medium'
                   >
-                    Ver Aviso de Privacidad
+                    {currentLanguage === 'es'
+                      ? 'Ver Aviso de Privacidad'
+                      : 'View Privacy Notice'}
                     <svg
                       className='w-4 h-4'
                       fill='none'
@@ -145,7 +158,7 @@ export function StepOne({ translates }) {
                   onClick={handleRejectPrivacy}
                   className='px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:bg-gray-100 hover:border-gray-400 transition-all duration-200'
                 >
-                  No Acepto
+                  {currentLanguage === 'es' ? 'No Acepto' : 'I Do Not Accept'}
                 </button>
                 <button
                   onClick={handleAcceptPrivacy}
@@ -164,12 +177,15 @@ export function StepOne({ translates }) {
                       d='M5 13l4 4L19 7'
                     />
                   </svg>
-                  Acepto el Aviso de Privacidad
+                  {currentLanguage === 'es'
+                    ? 'Acepto el Aviso de Privacidad'
+                    : 'I Accept the Privacy Notice'}
                 </button>
               </div>
               <p className='text-xs text-gray-500 mt-3 text-center'>
-                Al hacer clic en "Acepto", confirmas que has leído y aceptas
-                nuestro aviso de privacidad
+                {currentLanguage === 'es'
+                  ? 'Al hacer clic en "Acepto", confirmas que has leído y aceptas nuestro aviso de privacidad'
+                  : 'By clicking "I Accept", you confirm that you have read and accept our privacy notice'}
               </p>
             </div>
           </div>
@@ -196,11 +212,14 @@ export function StepOne({ translates }) {
               </svg>
             </div>
             <h3 className='text-lg font-semibold text-gray-900 mb-2'>
-              Acepta el Aviso de Privacidad
+              {currentLanguage === 'es'
+                ? 'Acepta el Aviso de Privacidad'
+                : 'Accept the Privacy Notice'}
             </h3>
             <p className='text-gray-600 text-sm'>
-              Para continuar con tu registro, es necesario que aceptes nuestro
-              aviso de privacidad.
+              {currentLanguage === 'es'
+                ? 'Al hacer clic en "Acepto", confirmas que has leído y aceptas nuestro aviso de privacidad'
+                : 'By clicking "I Accept", you confirm that you have read and accept our privacy notice'}
             </p>
           </div>
         </div>

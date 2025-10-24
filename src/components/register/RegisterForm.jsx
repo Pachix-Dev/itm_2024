@@ -13,7 +13,9 @@ export function RegisterForm({ translates, currentLanguage }) {
     <section className='py-5'>
       <Stepper translates={translates} />
       <form className='mx-auto'>
-        {step === 0 && <StepOne translates={translates} />}
+        {step === 0 && (
+          <StepOne translates={translates} currentLanguage={currentLanguage} />
+        )}
         {step === 1 && <StepTwo translates={translates} />}
         {step === 2 && (
           <StepThree
