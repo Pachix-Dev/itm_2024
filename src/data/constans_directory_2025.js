@@ -1190,7 +1190,7 @@ export const directory = [
   },
   {
     id: 51,
-    name: "Phoenix Contact",
+    name: "SIEMENS",
     logo: "/exhibitors/siemens.webp",
     width: 160,
     stand_number: "F10",
