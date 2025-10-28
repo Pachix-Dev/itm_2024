@@ -42,7 +42,7 @@ const speakers = [
         name: "Kato Akitake",
         position: "PRESIDENTE",
         company: "MISUMI México",
-        email: "akitake.q9tm.kato@misumi.co.jp",
+        email: "akato@misumimx.com",
         description: "Akitake Kato, presidente de MISUMI México, es un ejecutivo con una sólida trayectoria internacional. Posee un MBA del Babson College y un MPA de la Universidad de Harvard, especializándose en negocios internacionales y geopolítica respectivamente. Con experiencia en consultoría en McKinsey y en desarrollo empresarial internacional en NEC y MISUMI, destaca por su liderazgo en áreas directivas, desarrollo de negocios, ventas y marketing. Su habilidad para abrir nuevos mercados y su enfoque estratégico fortalecen la posición de MISUMI en la región.",
         description_en: "Akitake Kato, President of MISUMI Mexico, is an executive with a strong international background. He holds an MBA from Babson College and a MPA from Harvard University, specializing in international business and geopolitics respectively. As a former management consultant at McKinsey and with international business development experience at NEC and MISUMI, he has a proven track record of leadership in management, business development, sales and marketing. His ability to develop new markets and strategic approach strengthens MISUMI's position in the region.",
         image: "/img/speakers/kato.webp",
