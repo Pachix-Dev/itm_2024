@@ -55,7 +55,7 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
               //   item={item}
               //   key={program.stage + '-' + program.day + '-' + key}
               // />
-              <ConferenceITM 
+              <ConferenceITM
                 item={item}
                 translate={translate}
                 language={i18next.language}
@@ -173,5 +173,5 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
     })
   }
 
-  document.addEventListener('astro:page-load', main);
+  document.addEventListener('astro:page-load', main)
 </script>

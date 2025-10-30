@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from "../schedule/Modal.jsx";
+import Modal from "../schedule/Modal";
 
 interface Speaker {
   id?: string;
@@ -46,130 +46,152 @@ const ProgramItem: React.FC<Props> = ({ item, translate, language }) => {
     setSelectedSpeaker(null);
   };
 
-  return (
-    <article>
-      {item.title ? (
-        <>
-          <div className="flex sm:flex-row flex-col border-b-2 border-b-red-500 from-[#E42128] to-[#CF1363] mt-1">
-            <div className="sm:w-full w-full my-4">
-              <div className="flex flex-row space-x-5 my-4 items-center">
-                {item.img ? (
-                  <div className="w-24 h-24 shrink-0">
-                    <img
-                      src={item.img}
-                      alt="logo"
-                      className="w-24 h-24 rounded-full bg-white object-cover"
-                    />
-                  </div>
-                ) : null}
-                <div className="gap-2 ">
-                  <p className="lg:text-3xl md:text-3xl text-xl font-bold text-primary-500">
-                    {language === "en" ? item.title_en : item.title}
-                  </p>
-                  {/* Svg del horario y la duración */}
-                  <div className="text-lg text-white flex flex-row space-x-5 my-4">
-                    <div className="flex flex-row items-center gap-2">
-                      {/* Reloj */}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="25"
-                        height="25"
-                        viewBox="0 0 24 24"
-                      >
-                        <g
-                          fill="none"
-                          stroke="#ffffff"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                        >
-                          <circle cx="12" cy="12" r="10" />
-                          <path d="M12 6v6l4 2" />
-                        </g>
-                      </svg>
-                      {item.time}
-                    </div>
+  if (!item.title) return null;
 
-                    <div className="flex flex-row items-center gap-2">
-                      {/* Duración */}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill="#ffffff"
-                          d="M11.39 8C13.542 6.635 15 4.012 15 1c0-.339-.019-.672-.054-1H1.055a9.155 9.155 0 0 0-.054 1c0 3.012 1.457 5.635 3.609 7c-2.152 1.365-3.609 3.988-3.609 7c0 .339.019.672.054 1h13.891c.036-.328.054-.661.054-1c0-3.012-1.457-5.635-3.609-7zM2.5 15c0-2.921 1.253-5.397 3.5-6.214V7.214C3.753 6.397 2.5 3.92 2.5 1h11c0 2.921-1.253 5.397-3.5 6.214v1.572c2.247.817 3.5 3.294 3.5 6.214zm7.182-4.538C8.562 9.827 8.501 9.003 8.5 8.503V7.499c0-.5.059-1.327 1.184-1.963c.602-.349 1.122-.88 1.516-1.537H4.8c.395.657.916 1.188 1.518 1.538c1.12.635 1.181 1.459 1.182 1.959V8.5c0 .5-.059 1.327-1.184 1.963c-1.135.659-1.98 1.964-2.236 3.537h7.839c-.256-1.574-1.102-2.879-2.238-3.538z"
-                        />
-                      </svg>
-                      {item.duration}
-                    </div>
-                  </div>
+  return (
+    <>
+      <article className="bg-gradient-to-br from-gray-900/80 to-gray-800/60 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-[#E42128]/30 transition-all duration-300">
+        <div className="space-y-6">
+          {/* Header Section */}
+          <div className="flex flex-col sm:flex-row gap-6 items-start">
+            {item.img && (
+              <div className="flex-shrink-0">
+                <img
+                  src={item.img}
+                  alt="Conference logo"
+                  className="w-24 h-24 rounded-full bg-white object-cover shadow-lg border-2 border-gray-600"
+                />
+              </div>
+            )}
+            
+            <div className="flex-1 space-y-4">
+              {/* Title */}
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#E42128] to-[#CF1363]">
+                {language === "en" ? item.title_en : item.title}
+              </h2>
+              
+              {/* Time and Duration */}
+              <div className="flex flex-wrap gap-6 text-gray-300">
+                <div className="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5 text-[#E42128]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span className="font-medium">{item.time}</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-5 h-5 text-[#CF1363]"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                  </svg>
+                  <span className="font-medium">{item.duration}</span>
                 </div>
               </div>
-
-              <p className="text-lg text-white text-justify hidden md:block">
-                {item.description ? (
-                  language === "es" ? (
-                    item.description
-                  ) : (
-                    item.description_en
-                  )
-                ) : language === "es" ? (
-                  <>
-                    
-                  </>
-                ) : (
-                  <>
-                    
-                  </>
-                )}
-              </p>
-
-              {item.speakers.length > 0 && (
-                <>
-                  <p className="mt-2 font-extrabold">Speakers</p>
-                  <ul className="mt-2 ms-2 gap-2 grid lg:grid-cols-3 md:grid-cols-2">
-                    {item.speakers.map((speaker) => (
-                      <li key={speaker.id} className="mt-2">
-                        <div className="flex items-center gap-2">
-                          <img
-                            className="w-16 h-16 rounded-full object-cover object-top"
-                            onClick={() => handleOpenModal(speaker)}
-                            src={speaker.image}
-                            alt={speaker.name}
-                          />
-                          <p>
-                            <span className="font-bold">{speaker.name}</span>
-                            <br></br>
-                            <span>
-                              {language === "es"
-                                ? speaker.position
-                                : speaker.position_en}
-                            </span>
-                            <br></br>
-                            <span className="italic">{speaker.company}</span>
-                          </p>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                  {selectedSpeaker && (
-                    <Modal
-                      isOpen={isModalOpen}
-                      onClose={handleCloseModal}
-                      speaker={selectedSpeaker}
-                      language={language}
-                    />
-                  )}
-                </>
-              )}
             </div>
           </div>
-        </>
-      ) : null}
-    </article>
+
+          {/* Description */}
+          {item.description && (
+            <div className="prose prose-invert max-w-none">
+              <p className="text-gray-300 text-justify leading-relaxed">
+                {language === "es" ? item.description : item.description_en}
+              </p>
+            </div>
+          )}
+
+          {/* Speakers Section */}
+          {item.speakers.length > 0 && (
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <svg
+                  className="w-5 h-5 text-[#E42128]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+                <h3 className="text-xl font-bold text-white">Speakers</h3>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {item.speakers.map((speaker) => (
+                  <div
+                    key={speaker.id}
+                    onClick={() => handleOpenModal(speaker)}
+                    className="group flex items-center gap-3 p-3 rounded-xl bg-gray-800/50 hover:bg-gray-700/50 cursor-pointer transition-all duration-300 hover:scale-105 border border-gray-700 hover:border-[#E42128]/50"
+                  >
+                    <div className="relative flex-shrink-0">
+                      <img
+                        className="w-16 h-16 rounded-full object-cover object-top ring-2 ring-gray-600 group-hover:ring-[#E42128] transition-all duration-300"
+                        src={speaker.image}
+                        alt={speaker.name}
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.src = '/img/placeholder-speaker.jpg';
+                        }}
+                      />
+                      
+                    </div>
+                    
+                    <div className="flex-1 min-w-0">
+                      <p className="font-bold text-white text-sm group-hover:text-[#E42128] transition-colors duration-300 truncate">
+                        {speaker.name}
+                      </p>
+                      <p className="text-gray-400 text-xs leading-tight">
+                        {language === "es" ? speaker.position : speaker.position_en}
+                      </p>
+                      {speaker.company && (
+                        <p className="text-gray-500 text-xs italic truncate">
+                          {speaker.company}
+                        </p>
+                      )}
+                    </div>
+                    
+                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <svg className="w-4 h-4 text-[#E42128]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </article>
+
+      {/* Modal */}
+      {selectedSpeaker && (
+        <Modal
+          isOpen={isModalOpen}
+          onClose={handleCloseModal}
+          speaker={selectedSpeaker}
+          language={language}
+        />
+      )}
+    </>
   );
 };
 
