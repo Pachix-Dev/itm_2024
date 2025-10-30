@@ -196,7 +196,7 @@ const stage_1_day_1: Program[] = [
                 company: "Nokia",
                 bio: "",
                 bio_en: "",
-                image: "/img/speakers/default.webp",
+                image: "/img/speakers/Alfredo_Ramos.png",
                 email: "",
                 phone: "",
                 moderador: true
@@ -209,7 +209,7 @@ const stage_1_day_1: Program[] = [
                 company: "Nokia",
                 bio: "",
                 bio_en: "",
-                image: "/img/speakers/default.webp",
+                image: "/img/speakers/Karla_Beltrán_Nokia.jpg",
                 email: "",
                 phone: "",
                 moderador: true
@@ -1284,7 +1284,7 @@ const stage_2_day_2: Program[] = [
                 "company": "SCITUM TELMEX",
                 "bio": "Licenciado en Administración por la UFRJ, actualmente coordina el Centro de Excelencia en Seguridad IoT/OT en Scitum, liderando estrategias para proteger entornos industriales. Con más de 28 años de experiencia internacional en tecnología, ha colaborado con empresas globales en múltiples sectores. Es CISSP, miembro de ISA y especialista en Ciberseguridad Industrial, integrando marcos como ISA/IEC 62443, NIST SP800-82 e ISO/IEC 27019. Su enfoque une visión técnica y de negocio, identificando el impacto de la ciberseguridad en la operación y competitividad. Ha sido ponente en eventos de alto nivel en México y Latinoamérica y promueve la adopción de buenas prácticas, el desarrollo de capacidades locales y la expansión de servicios especializados en Seguridad IoT/OT desde Scitum.",
                 "bio_en": "Bachelor in Administration from UFRJ, he currently coordinates the IoT/OT Security Center of Excellence at Scitum, leading strategies to protect industrial environments. With over 28 years of international experience in technology, he has collaborated with global companies across multiple sectors. He is CISSP, a member of ISA and a specialist in Industrial Cybersecurity, integrating frameworks such as ISA/IEC 62443, NIST SP800-82 and ISO/IEC 27019. His approach combines technical and business vision, identifying the impact of cybersecurity on operation and competitiveness. He has been a speaker at high-level events in Mexico and Latin America and promotes the adoption of best practices, the development of local capabilities and the expansion of specialized services in IoT/OT Security from Scitum.",
-                "image": "/img/speakers/default.webp",
+                "image": "/img/speakers/Alessandro_Galvao.png",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -1402,7 +1402,7 @@ const stage_2_day_2: Program[] = [
                 "position_en": "Customer Services Technology Product Leader",
                 "company": "GE Aerospace / Society of Women Engineers",
                 "bio": "Claudia Guerrero es una profesional con 18 años de experiencia en GE Aerospace, donde ha destacado en diversos roles como líder de equipos, soporte al cliente, integración de sistemas y diseño. Desde que se unió a GE en 2007, ha ocupado posiciones clave, incluyendo Líder de Módulos de Sistemas CFM & CF34, Gerente de Subsección CF34, y Líder de Contratos Técnicos de Servicios. Su trayectoria refleja un compromiso constante con la excelencia y la innovación. Claudia es Embajadora de Society of Women Engineers en México y presidenta de la filial de Querétaro, promoviendo la inclusión y el empoderamiento de mujeres en STEM. Con habilidades de liderazgo, certificación e integración de sistemas, es un modelo a seguir para ingenieras en ascenso. Claudia es madre de dos hijos, apasionada por el triatlón, el senderismo y el mar. Es ingeniera en Mecatrónica por el ITESM y cuenta con estudios en Ingeniería Automotriz en Italia y Alemania, actualmente está cursando su maestría en Ingeniería Aeronáutica.",
-                "bio_en": "Claudia Guerrero is a professional with 18 years of experience at GE Aerospace, where she has excelled in various roles such as team leader, customer support, systems integration, and design. Since joining GE in 2007, she has held key positions, including CFM & CF34 Systems Module Leader, CF34 Subsection Manager, and Technical Services Contracts Leader. Her career reflects a consistent commitment to excellence and innovation. Claudia is an Ambassador of",
+                "bio_en": "Claudia Guerrero is a professional with 18 years of experience at GE Aerospace, where she has excelled in various roles such as team leader, customer support, systems integration, and design. Since joining GE in 2007, she has held key positions, including CFM & CF34 Systems Module Leader, CF34 Subsection Manager, and Technical Services Contracts Leader. Her career reflects a consistent commitment to excellence and innovation. ",
                 "image": "/img/speakers/Claudia_Guerrero.jpg",
                 "email": "",
                 "phone": "",
@@ -1417,7 +1417,60 @@ const stage_2_day_2: Program[] = [
         "description_en": "GE Aerospace / Society of Women Engineers",
         "time": "17:30 hrs",
         "duration": "30 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Montserrat Ramírez",
+                "position": "Gerente Senior de Investigación y Desarrollo",
+                "position_en": "Senior Manager of Research and Development",
+                "company": "PepsiCo",
+                "bio": "Montserrat Ramirez Costa es Gerente Senior de Investigación y Desarrollo en PepsiCo, con más de 20 años de experiencia liderando estrategias de innovación en la industria de alimentos y bebidas. Su formación como Licenciada en Tecnología de Alimentos por la Universidad Iberoamericana y su Maestría en Mercadotecnia por el Tecnológico de Monterrey le han permitido integrar ciencia, negocio y tendencias de consumo en soluciones de alto impacto.",
+                "bio_en": "Montserrat Ramirez Costa is a Senior Manager of Research and Development at PepsiCo, with over 20 years of experience leading innovation strategies in the food and beverage industry. Her background as a Bachelor of Food Technology from Universidad Iberoamericana and her Master's degree in Marketing from Tecnológico de Monterrey have enabled her to integrate science, business, and consumer trends into high-impact solutions.",
+                "image": "/img/speakers/Montserrat_Ramirez.jpeg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Claudia Guerrero",
+                "position": "Líder de Producto de Tecnología de Servicios para Clientes",
+                "position_en": "Customer Services Technology Product Leader",
+                "company": "GE Aerospace / Society of Women Engineers",
+                "bio": "Claudia Guerrero es una profesional con 18 años de experiencia en GE Aerospace, donde ha destacado en diversos roles como líder de equipos, soporte al cliente, integración de sistemas y diseño. Desde que se unió a GE en 2007, ha ocupado posiciones clave, incluyendo Líder de Módulos de Sistemas CFM & CF34, Gerente de Subsección CF34, y Líder de Contratos Técnicos de Servicios. Su trayectoria refleja un compromiso constante con la excelencia y la innovación. Claudia es Embajadora de Society of Women Engineers en México y presidenta de la filial de Querétaro, promoviendo la inclusión y el empoderamiento de mujeres en STEM. Con habilidades de liderazgo, certificación e integración de sistemas, es un modelo a seguir para ingenieras en ascenso. Claudia es madre de dos hijos, apasionada por el triatlón, el senderismo y el mar. Es ingeniera en Mecatrónica por el ITESM y cuenta con estudios en Ingeniería Automotriz en Italia y Alemania, actualmente está cursando su maestría en Ingeniería Aeronáutica.",
+                "bio_en": "Claudia Guerrero is a professional with 18 years of experience at GE Aerospace, where she has excelled in various roles such as team leader, customer support, systems integration, and design. Since joining GE in 2007, she has held key positions, including CFM & CF34 Systems Module Leader, CF34 Subsection Manager, and Technical Services Contracts Leader. Her career reflects a consistent commitment to excellence and innovation.",
+                "image": "/img/speakers/Claudia_Guerrero.jpg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "3",
+                "name": "Maya Gacela González",
+                "position": "Embajadora / Directora de Divulgación",
+                "position_en": "Ambassador / Outreach Director",
+                "company": "Society of Women Engineers Affiliate Querétaro",
+                "bio": "Originaria de Chiapas, la curiosidad incansable de Maya por desentrañar cómo funcionan las cosas la llevó al riguroso campo de la ingeniería, culminando sus estudios en Ingeniería Mecánica en el Instituto Politécnico Nacional (ESIME Azcapotzalco). Su carrera es un testimonio de resiliencia y excelencia. A pesar de los desafíos inherentes a ser mujer en un sector históricamente masculino, Maya ha ascendido hasta convertirse en Líder Técnica en el equipo de tecnologías avanzadas de GE Aerospace, una de las compañías aeroespaciales más importantes del mundo. Su filosofía de liderazgo se basa en el poder de la colaboración. Está convencida de que los avances más complejos y disruptivos solo se logran a través de equipos de alto rendimiento que son, por naturaleza, diversos e inclusivos.",
+                "bio_en": "Hailing from Chiapas, Maya's relentless curiosity to unravel how things work led her to the rigorous field of engineering, culminating in her studies in Mechanical Engineering at the Instituto Politécnico Nacional (ESIME Azcapotzalco). Her career is a testament to resilience and excellence. Despite the challenges inherent in being a woman in a historically male-dominated sector, Maya has risen to become a Technical Leader in the advanced technologies team at GE Aerospace, one of the world's leading aerospace companies. Her leadership philosophy is based on the power of collaboration. She is convinced that the most complex and disruptive advances are only achieved through high-performance teams that are, by nature, diverse and inclusive.",
+                "image": "/img/speakers/Maya_Gacela.jpeg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "4",
+                "name": "Claudia Rodríguez - Moderadora",
+                "position": "Executive Director of Tech Automation Exhibitions MX",
+                "position_en": "Executive Director of Tech Automation Exhibitions MX",
+                "company": "IGECO",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/Claudia_Rodríguez.jpeg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+        ]
     },
     {
         "title": "ITMujeres: Ecosistemas Inteligentes: Mujeres Liderando la Digitalización y la Innovación en la  Industria",
@@ -1488,7 +1541,7 @@ const stage_2_day_3: Program[] = [
                 "company": "Nokia",
                 "bio": "",
                 "bio_en": "",
-                "image": "/img/speakers/default.webp",
+                "image": "/img/speakers/Alfredo_Ramos.png",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -1501,7 +1554,7 @@ const stage_2_day_3: Program[] = [
                 "company": "Nokia",
                 "bio": "",
                 "bio_en": "",
-                "image": "/img/speakers/default.webp",
+                "image": "/img/speakers/Karla_Beltrán_Nokia.jpg",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -1525,7 +1578,7 @@ const stage_2_day_3: Program[] = [
                 "company": "Fortinet",
                 "bio": "Jade Tamayo es miembro del equipo especializado en Tecnologías Operativas de Fortinet. Egresada de la Universidad Nacional Autonomá de México, con más de 6 años en consultoría en seguridad para Infraestructuras Críticas y ciberseguridad. Ha colaborado con entidades gubernamentales, privadas para diseño de estrategias de ciberseguridad, gestión de proyectos y análisis de riesgo. ",
                 "bio_en": "Jade Tamayo is a member of Fortinet's Operational Technologies specialized team. A graduate of the National Autonomous University of Mexico, with more than 6 years in security consulting for Critical Infrastructures and cybersecurity. She has collaborated with government entities, private sector for the design of cybersecurity strategies, project management, and risk analysis.",
-                "image": "/img/speakers/default.webp",
+                "image": "/img/speakers/Jade_Tamayo- Fortinet.png",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -1636,8 +1689,8 @@ const stage_2_day_3: Program[] = [
         "title_en": "From Waste to Resource: How to Scale Battery Recycling in Latin America",
         "description": "",
         "description_en": "",
-        "time": "14:10 hrs",
-        "duration": "45 min",
+        "time": "14:15 hrs",
+        "duration": "40 min",
         "speakers": [
             {
                 "id": "1",

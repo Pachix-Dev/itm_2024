@@ -135,7 +135,7 @@ const ProgramItem: React.FC<Props> = ({ item, translate, language }) => {
                       <li key={speaker.id} className="mt-2">
                         <div className="flex items-center gap-2">
                           <img
-                            className="w-16 h-16 rounded-full object-cover"
+                            className="w-16 h-16 rounded-full object-cover object-top"
                             onClick={() => handleOpenModal(speaker)}
                             src={speaker.image}
                             alt={speaker.name}
