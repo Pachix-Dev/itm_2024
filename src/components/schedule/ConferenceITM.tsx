@@ -109,7 +109,7 @@ const ProgramItem: React.FC<Props> = ({ item, translate, language }) => {
                 </div>
               </div>
 
-              <p className="text-lg text-white text-justify">
+              <p className="text-lg text-white text-justify hidden md:block">
                 {item.description ? (
                   language === "es" ? (
                     item.description
