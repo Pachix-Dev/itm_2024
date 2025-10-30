@@ -108,7 +108,7 @@ const ProgramItem: React.FC<Props> = ({ item, translate, language }) => {
 
           {/* Description */}
           {item.description && (
-            <div className="prose prose-invert max-w-none">
+            <div className="prose prose-invert max-w-none hidden md:block">
               <p className="text-gray-300 text-justify leading-relaxed">
                 {language === "es" ? item.description : item.description_en}
               </p>

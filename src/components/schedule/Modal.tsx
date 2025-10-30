@@ -136,17 +136,12 @@ const Modal = ({ isOpen, onClose, speaker, language }: ModalProps) => {
               <img
                 src={speaker.image}
                 alt={speaker.name}
-                className="relative w-full aspect-[3/4] object-cover rounded-2xl shadow-xl border-2 border-gray-700 group-hover:border-[#E42128]/50 transition-all duration-500"
+                className="relative mx-auto w-1/2 md:w-full aspect-[3/4] object-cover rounded-2xl shadow-xl border-2 border-gray-700 group-hover:border-[#E42128]/50 transition-all duration-500"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.src = '/img/placeholder-speaker.jpg';
                 }}
-              />
-              {speaker.moderador && (
-                <div className="absolute top-4 left-4 bg-[#E42128] text-white text-xs px-3 py-1 rounded-full font-semibold shadow-lg">
-                  Moderador
-                </div>
-              )}
+              />              
             </div>
           </div>
 

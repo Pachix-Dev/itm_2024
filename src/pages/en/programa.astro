@@ -7,7 +7,6 @@ import Layout from "../../layouts/Layout.astro";
 
 changeLanguage("en");
 
-// Usa el Record<string, string> para que puedas usar el t() sin problemas en React con TypeScript
 const translate = t("program", { returnObjects: true }) as Record<string, string>;
 ---
 
@@ -27,22 +26,22 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
         class='w-full bg-gradient-to-br from-[#E42128] to-[#CF1363] h-[1px] mt-1 mb-3 rounded-sm'
       >
       </div>
-      <div class='md:ml-5 *:w-full md:*:w-fit'>
-        <Button id='day-1'
-          >{t('program.day')} 1<br />{t('program.day_1')}, 11 {
+      <div class='md:ml-5 day-buttons'>
+        <Button id='day-1'>
+          {t('program.day')} 1<br />{t('program.day_1')}, 11 {
             t('program.month')
-          }</Button
-        >
-        <Button id='day-2'
-          >{t('program.day')} 2<br />{t('program.day_2')}, 12 {
+          }
+        </Button>
+        <Button id='day-2'>
+          {t('program.day')} 2<br />{t('program.day_2')}, 12 {
             t('program.month')
-          }</Button
-        >
-        <Button id='day-3'
-          >{t('program.day')} 3<br />{t('program.day_3')}, 13 {
+          }
+        </Button>
+        <Button id='day-3'>
+          {t('program.day')} 3<br />{t('program.day_3')}, 13 {
             t('program.month')
-          }</Button
-        >
+          }
+        </Button>
       </div>
       {
         programs.map((program) => (
@@ -51,15 +50,11 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
             id={`program-${program.stage}-${program.day}`}
           >
             {program.conferences.map((item, key) => (
-              // <ConferenceItm
-              //   item={item}
-              //   key={program.stage + '-' + program.day + '-' + key}
-              // />
               <ConferenceITM
                 item={item}
                 translate={translate}
                 language={i18next.language}
-                client:only
+                client:load
               />
             ))}
           </section>
@@ -68,12 +63,48 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
     </section>
   </main>
 </Layout>
+
 <style>
   body {
     background-color: #111827;
     color: white;
   }
+
+  .day-buttons > * {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .day-buttons > * {
+      width: fit-content;
+    }
+  }
 </style>
+
+<style is:global>
+  .modal-overlay {
+    z-index: 999999 !important;
+    position: fixed !important;
+    backdrop-filter: blur(8px) !important;
+  }
+
+  .modal-content {
+    z-index: 1000000 !important;
+    position: relative !important;
+  }
+
+  @keyframes modalFadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95) translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+</style>
+
 <script>
   const state = {
     stage: 1,
@@ -84,51 +115,66 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
   function showProgram(stage: number, day: number) {
     if (state.stage === stage && state.day === day) return
 
-    let programElement
-    programElement = document.getElementById(
+    // Ocultar programa actual
+    const currentProgram = document.getElementById(
       `program-${state.stage}-${state.day}`
     )
-    if (programElement !== null) {
-      programElement.style.display = 'none'
-    }
-    programElement = document.getElementById(`program-${stage}-${day}`)
-    if (programElement !== null) {
-      programElement.style.display = 'block'
+    if (currentProgram) {
+      currentProgram.style.display = 'none'
     }
 
+    // Mostrar nuevo programa
+    const newProgram = document.getElementById(`program-${stage}-${day}`)
+    if (newProgram) {
+      newProgram.style.display = 'block'
+    }
+
+    // Actualizar URL
     url.searchParams.set('stage', stage.toString())
     url.searchParams.set('day', day.toString())
     window.history.pushState({}, '', url)
 
+    // Actualizar state
     state.stage = stage
     state.day = day
   }
 
   function changeOpacityStageBts(stage: number) {
-    document
-      .getElementById('stage-1')
-      ?.firstElementChild?.classList.remove('bg-opacity-0')
-    document
-      .getElementById('stage-2')
-      ?.firstElementChild?.classList.remove('bg-opacity-0')
-    document
-      .getElementById(`stage-${stage}`)
-      ?.firstElementChild?.classList.add('bg-opacity-0')
+    // Remover clase activa de todos los botones de stage
+    const stageButtons = ['stage-1', 'stage-2']
+    stageButtons.forEach((id) => {
+      const button = document.getElementById(id)
+      const firstChild = button?.firstElementChild
+      if (firstChild && firstChild.classList.contains('bg-opacity-0')) {
+        firstChild.classList.remove('bg-opacity-0')
+      }
+    })
+
+    // Agregar clase activa al botón seleccionado
+    const activeButton = document.getElementById(`stage-${stage}`)
+    const activeChild = activeButton?.firstElementChild
+    if (activeChild) {
+      activeChild.classList.add('bg-opacity-0')
+    }
   }
 
   function changeOpacityDayBts(day: number) {
-    document
-      .getElementById('day-1')
-      ?.firstElementChild?.classList.remove('bg-opacity-0')
-    document
-      .getElementById('day-2')
-      ?.firstElementChild?.classList.remove('bg-opacity-0')
-    document
-      .getElementById('day-3')
-      ?.firstElementChild?.classList.remove('bg-opacity-0')
-    document
-      .getElementById(`day-${day}`)
-      ?.firstElementChild?.classList.add('bg-opacity-0')
+    // Remover clase activa de todos los botones de día
+    const dayButtons = ['day-1', 'day-2', 'day-3']
+    dayButtons.forEach((id) => {
+      const button = document.getElementById(id)
+      const firstChild = button?.firstElementChild
+      if (firstChild && firstChild.classList.contains('bg-opacity-0')) {
+        firstChild.classList.remove('bg-opacity-0')
+      }
+    })
+
+    // Agregar clase activa al botón seleccionado
+    const activeButton = document.getElementById(`day-${day}`)
+    const activeChild = activeButton?.firstElementChild
+    if (activeChild) {
+      activeChild.classList.add('bg-opacity-0')
+    }
   }
 
   function initProgram() {
@@ -138,40 +184,63 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
     state.stage = stage
     state.day = day
 
+    // Mostrar programa inicial
     const programElement = document.getElementById(`program-${stage}-${day}`)
     if (programElement) {
       programElement.style.display = 'block'
     }
 
+    // Configurar botones activos
     changeOpacityStageBts(stage)
     changeOpacityDayBts(day)
   }
 
-  function main() {
-    initProgram()
+  function addEventListeners() {
+    // Event listeners para botones de stage
+    const stage1Btn = document.getElementById('stage-1')
+    const stage2Btn = document.getElementById('stage-2')
 
-    document.getElementById('stage-1')?.addEventListener('click', (e) => {
+    stage1Btn?.addEventListener('click', () => {
       changeOpacityStageBts(1)
       showProgram(1, state.day)
     })
-    document.getElementById('stage-2')?.addEventListener('click', (e) => {
+
+    stage2Btn?.addEventListener('click', () => {
       changeOpacityStageBts(2)
       showProgram(2, state.day)
     })
 
-    document.getElementById('day-1')?.addEventListener('click', (e) => {
+    // Event listeners para botones de día
+    const day1Btn = document.getElementById('day-1')
+    const day2Btn = document.getElementById('day-2')
+    const day3Btn = document.getElementById('day-3')
+
+    day1Btn?.addEventListener('click', () => {
       changeOpacityDayBts(1)
       showProgram(state.stage, 1)
     })
-    document.getElementById('day-2')?.addEventListener('click', (e) => {
+
+    day2Btn?.addEventListener('click', () => {
       changeOpacityDayBts(2)
       showProgram(state.stage, 2)
     })
-    document.getElementById('day-3')?.addEventListener('click', (e) => {
+
+    day3Btn?.addEventListener('click', () => {
       changeOpacityDayBts(3)
       showProgram(state.stage, 3)
     })
   }
 
+  function main() {
+    try {
+      initProgram()
+      addEventListeners()
+    } catch (error) {
+      console.error('Error initializing program:', error)
+    }
+  }
+
+  // Usar tanto astro:page-load como DOMContentLoaded para mayor compatibilidad
+  document.addEventListener('DOMContentLoaded', main)
   document.addEventListener('astro:page-load', main)
 </script>
