@@ -92,7 +92,7 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
           </td>
           <td style="padding:20px;" align="center">
             <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
-              <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/files/Floorplan-ITM-2025-16-05-2025-V4-0.pdf" target="_blank">
+              <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/plano-itm-2025/" target="_blank">
                 ITM 2025 FLOOR PLAN 
               </a>
             </p>         
