@@ -406,7 +406,7 @@ const stage_1_day_2: Program[] = [
                 "company": "Claroty ",
                 "bio": "Alexei Pinal, Vicepresidente de Ciberseguridad para LATAM en Claroty, cuenta con amplia experiencia en la protección de sistemas industriales y tecnologías emergentes (OT, IoT, IoMT). Reconocido como growth strategist y angel investor, conecta la seguridad con la estrategia empresarial, fortaleciendo la confianza digital y la continuidad operativa en organizaciones de alto impacto.",
                 "bio_en": "Alexei Pinal, Vice President of Cybersecurity for LATAM at Claroty, has extensive experience in protecting industrial systems and emerging technologies (OT, IoT, IoMT). Recognized as a growth strategist and angel investor, he connects security with business strategy, strengthening digital trust and operational continuity in high-impact organizations.",
-                "image": "/img/speakers/default.webp",
+                "image": "/img/speakers/alexei_pinal.png",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -1060,9 +1060,9 @@ const stage_2_day_1: Program[] = [
             {
                 "id": "2",
                 "name": "Héctor Arturo Oropeza ",
-                "position": "Investigador Titular",
-                "position_en": "Senior Researcher",
-                "company": "Instituto de Investigaciones Jurídicas - UNAM",
+                "position": "Presidente - Investigador Titular",
+                "position_en": "President - Senior Researcher",
+                "company": "Instituto para el Desarrollo Industrial y la Transformación Digital - Instituto de Investigaciones Jurídicas UNAM",
                 "bio": "Doctor en Derecho por la Universidad Nacional Autónoma de México (UNAM). Investigador del Instituto de Investigaciones Jurídicas de la UNAM. Actual Presidente del Instituto para el Desarrollo Industrial y la Transformación Digital (INADI). H sido conferencista y profesor invitado en universidades y organismos de todo el mundo, entre ellos la Academia China de Ciencias Sociales, la Universidad Nacional de Derecho de Bangalore, la Universidad de Chuo, la Universidad Soongsil, la Universidad Autónoma de Lisboa, la Universidad de Montreal, la Universidad de Johannesburgo, la SEGIB, la OEA, la ALADI y la CEPAL. Es autor y coordinador de más de 40 libros sobre políticas para el desarrollo industrial integral, políticas para la transformación digital, entre los cuales destacan: “Inteligencia Artificial. Hacia una nueva era en la historia de la Humanidad”, “Hacia una nueva visión para el Desarrollo Industrial Digital en México”",
                 "bio_en": "Doctor of Law from the National Autonomous University of Mexico (UNAM). Researcher at the Institute of Legal Research of UNAM. Current President of the Institute for Industrial Development and Digital Transformation (INADI). He has been a speaker and guest professor at universities and organizations around the world, including the Chinese Academy of Social Sciences, the National Law University of Bangalore, Chuo University, Soongsil University, the Autonomous University of Lisbon, the University of Montreal, the University of Johannesburg, SEGIB, OAS, ALADI and ECLAC. He is author and coordinator of more than 40 books on policies for comprehensive industrial development, policies for digital transformation, among which stand out: “Artificial Intelligence. Towards a new era in the history of Humanity”, “Towards a new vision for Digital Industrial Development in Mexico”",
                 "image": "/img/speakers/hector_arturo.jpeg",
@@ -1360,6 +1360,19 @@ const stage_2_day_2: Program[] = [
                 "moderador": false
             },
             {
+                "id": "4",
+                "name": "Bárbara Botello",
+                "position": "Directora de Plan de Marca Nacional y Políticas de Marcas Nacionales ",
+                "position_en": "Director of National Brand Plan and National Brand Policies ",
+                "company": "Secretaría de Economía",
+                "bio": "María Bárbara Botello Santibáñez es una destacada abogada, académica y política mexicana con una trayectoria de más de tres décadas en el ámbito jurídico y de servicio público. Ha desarrollado una sólida trayectoria política, desempeñándose en diversos cargos de elección popular y dirección partidista. Su carrera inició como Regidora del Municipio de León (1998-2000), para posteriormente ser Diputada Local en la LX Legislatura del Congreso de Guanajuato (2006-2009) y Diputada Federal en la LXIII Legislatura (2015-2018), donde fue Vicecoordinadora en la Cámara de Diputados. En 2012, hizo historia al convertirse en la primera mujer en presidir el Municipio de León, una ciudad tradicionalmente gobernada por el PAN y considerada un bastión del conservadurismo en México. Desde esta posición, impulsó políticas de desarrollo urbano, seguridad y bienestar social. Durante su gestión, también presidió la Conferencia Nacional de Municipios de México (CONAMM), organismo que representa a los alcaldes del país, y fue Líder de la Federación Nacional de Municipios de México (FENAMM), fortaleciendo el papel de los municipios en el desarrollo nacional. A lo largo de su carrera, Bárbara Botello ha demostrado un fuerte compromiso con la promoción del desarrollo económico, la justicia social y la representación de las mujeres en la vida pública.  Actualmente, continúa su labor en el ámbito empresarial y gubernamental, desempeñándose como Directora de Plan de Marca Nacional y Políticas de Marcas Nacionales en la Secretaría de Economía, desde donde impulsa la iniciativa *Hecho en México*, con el objetivo de fortalecer la industria y el comercio de productos nacionales. Su legado como jurista, servidora pública y líder política la ha consolidado como una de las figuras más influyentes en la vida pública de Guanajuato y México, con una visión enfocada en la transformación y el progreso del país.",
+                "bio_en": "María Bárbara Botello Santibáñez is a prominent Mexican lawyer, academic, and politician with a career spanning over three decades in the legal and public service fields. She has built a solid political career, serving in various elected positions and party leadership roles. Her career began as a Councilor of the Municipality of León (1998-2000), later serving as a Local Deputy in the LX Legislature of the Congress of Guanajuato (2006-2009) and as a Federal Deputy in the LXIII Legislature (2015-2018), where she was Vice-Coordinator in the Chamber of Deputies. In 2012, she made history by becoming the first woman to preside over the Municipality of León, a city traditionally governed by the PAN and considered a bastion of conservatism in Mexico. From this position, she promoted policies for urban development, security, and social welfare. During her tenure, she also chaired the National Conference of Municipalities of Mexico (CONAMM), an organization representing the country's mayors, and was Leader of the National Federation of Municipalities of Mexico (FENAMM), strengthening the role of municipalities in national development. Throughout her career, Bárbara Botello has shown a strong commitment to promoting economic development, social justice, and the representation of women in public life. Currently, she continues her work in the business and governmental fields, serving as Director of National Brand Plan and National Brand Policies at the Ministry of Economy, where she promotes the *Made in Mexico* initiative, aiming to strengthen the industry and trade of national products. Her legacy as a jurist, public servant, and political leader has established her as one of the most influential figures in the public life of Guanajuato and Mexico, with a vision focused on the country's transformation and progress.",
+                "image": "/img/speakers/Barbarabotello.jpeg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            }, 
+            {
                 "id": "2",
                 "name": "Caroline Hoarau",
                 "position": "Directora de Industrial Transformation, Usuarios Finales y Cuentas Estratégicas para México y Centroamérica",
@@ -1384,7 +1397,8 @@ const stage_2_day_2: Program[] = [
                 "email": "",
                 "phone": "",
                 "moderador": false
-            },    
+            },  
+               
         ]
     },
     {
@@ -1446,13 +1460,13 @@ const stage_2_day_2: Program[] = [
             },
             {
                 "id": "3",
-                "name": "Maya Gacela González",
-                "position": "Embajadora / Directora de Divulgación",
-                "position_en": "Ambassador / Outreach Director",
-                "company": "Society of Women Engineers Affiliate Querétaro",
-                "bio": "Originaria de Chiapas, la curiosidad incansable de Maya por desentrañar cómo funcionan las cosas la llevó al riguroso campo de la ingeniería, culminando sus estudios en Ingeniería Mecánica en el Instituto Politécnico Nacional (ESIME Azcapotzalco). Su carrera es un testimonio de resiliencia y excelencia. A pesar de los desafíos inherentes a ser mujer en un sector históricamente masculino, Maya ha ascendido hasta convertirse en Líder Técnica en el equipo de tecnologías avanzadas de GE Aerospace, una de las compañías aeroespaciales más importantes del mundo. Su filosofía de liderazgo se basa en el poder de la colaboración. Está convencida de que los avances más complejos y disruptivos solo se logran a través de equipos de alto rendimiento que son, por naturaleza, diversos e inclusivos.",
-                "bio_en": "Hailing from Chiapas, Maya's relentless curiosity to unravel how things work led her to the rigorous field of engineering, culminating in her studies in Mechanical Engineering at the Instituto Politécnico Nacional (ESIME Azcapotzalco). Her career is a testament to resilience and excellence. Despite the challenges inherent in being a woman in a historically male-dominated sector, Maya has risen to become a Technical Leader in the advanced technologies team at GE Aerospace, one of the world's leading aerospace companies. Her leadership philosophy is based on the power of collaboration. She is convinced that the most complex and disruptive advances are only achieved through high-performance teams that are, by nature, diverse and inclusive.",
-                "image": "/img/speakers/Maya_Gacela.jpeg",
+                "name": "Daniela Espino",
+                "position": "Líder Lean y de Operaciones para Motores Aeroderivados",
+                "position_en": "Lean and Operations Leader for Aeroderivative Engines",
+                "company": "GE Aerospace",
+                "bio": "Ingeniera en Mecatrónica egresada del Tecnológico de Monterrey, cuenta con más de 17 años de experiencia en la industria aeroespacial, desempeñando diferentes roles en empresas globales como GE Aerospace y Safran Aircraft Engines A lo largo de su trayectoria, Daniela ha liderado equipos en diseño mecánico y manufactura, consolidando una visión integral de los procesos de ingeniería y desarrollo de producto. Su experiencia abarca desde el proceso de diseño de componentes hasta la optimización de procesos productivos, siempre con un enfoque en la innovación, la calidad y la mejora continua. Actualmente se desempeña como Líder Lean y de Operaciones para motores aeroderivados en GE Aerospace, donde impulsa el trabajo colaborativo, las actividades oprerativas y la mejora continua entre equipos multidisciplinarios. Además de sus responsabilidades laborales, Daniela es líder del ERG Pride Alliance en GE Aerospace en Querétaro, desde donde promueve iniciativas que fortalecen la visibilidad y los derechos de la comunidad LGBTIQ+ en el ámbito laboral. pasionada por el desarrollo de las mujeres en STEM, Daniela forma parte de la Society of Women Engineers (SWE) Querétaro, donde contribuye a inspirar, acompañar y abrir espacios para que más mujeres se desarrollen en carreras científicas y tecnológicas.",
+                "bio_en": "A Mechatronics Engineer graduated from Tecnológico de Monterrey, she has over 17 years of experience in the aerospace industry, holding various roles in global companies such as GE Aerospace and Safran Aircraft Engines. Throughout her career, Daniela has led teams in mechanical design and manufacturing, consolidating a comprehensive vision of engineering processes and product development. Her experience ranges from the component design process to the optimization of production processes, always with a focus on innovation, quality, and continuous improvement. She currently serves as Lean and Operations Leader for aeroderivative engines at GE Aerospace, where she promotes collaborative work, operational activities, and continuous improvement among multidisciplinary teams. In addition to her work responsibilities, Daniela is the leader of the Pride Alliance ERG at GE Aerospace in Querétaro, where she promotes initiatives that strengthen the visibility and rights of the LGBTIQ+ community in the workplace. Passionate about the development of women in STEM, Daniela is part of the Society of Women Engineers (SWE) Querétaro, where she contributes to inspiring, supporting, and creating spaces for more women to develop in scientific and technological careers.",
+                "image": "/img/speakers/Daniela_Espino.jpeg",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -1589,8 +1603,7 @@ const stage_2_day_3: Program[] = [
         "title": "Panorama Internacional de la Movilidad Eléctrica: Caminos hacia la Descarbonización",
         "title_en": "International Electric Mobility Panorama: Paths to Carbon Neutralization",
         "description": "El panel reunirá a especialistas internacionales para reflexionar sobre enfoques, retos y avances en la implementación de la movilidad eléctrica. La conversación abordará temas estratégicos como políticas públicas, esquemas de colaboración público-privada, incentivos, infraestructura de carga y experiencias prácticas.",
-        "description_en": "The panel will bring together international specialists to reflect on approaches, challenges and advances in the implementation of electric mobility. The conversation will address strategic issues such as public policies, public-private collaboration schemes, incentives, charging infrastructure and practical experiences.",
-        "img": "/img/program/amof.png",
+        "description_en": "The panel will bring together international specialists to reflect on approaches, challenges and advances in the implementation of electric mobility. The conversation will address strategic issues such as public policies, public-private collaboration schemes, incentives, charging infrastructure and practical experiences.",        
         "time": "12:15 hrs",
         "duration": "60 min",
         "speakers": [
@@ -1687,17 +1700,17 @@ const stage_2_day_3: Program[] = [
     {
         "title": "Del residuo al recurso: cómo escalar el reciclaje de baterías en América Latina",
         "title_en": "From Waste to Resource: How to Scale Battery Recycling in Latin America",
-        "description": "",
-        "description_en": "",
+        "description": "La transición hacia la movilidad eléctrica trae consigo un nuevo reto: el manejo seguro y eficiente del final de vida de las baterías. En este panel, especialistas de la industria, explorarán el estado actual y las soluciones para convertir baterías en insumos valiosos dentro de una economía circular. Discutiremos avances tecnológicos, modelos de recolección y logística específicos para distintos territorios, y los incentivos regulatorios y de mercado necesarios para construir cadenas de valor locales. También abordaremos casos prácticos y oportunidades de inversión para desarrollar capacidad de reciclaje en México y la región",
+        "description_en": "The transition to electric mobility brings with it a new challenge: the safe and efficient management of end-of-life batteries. In this panel, industry specialists will explore the current state and solutions to turn batteries into valuable inputs within a circular economy. We will discuss technological advances, collection and logistics models specific to different territories, and the regulatory and market incentives needed to build local value chains. We will also address practical cases and investment opportunities to develop recycling capacity in Mexico and the region.",
         "time": "14:15 hrs",
         "duration": "40 min",
         "speakers": [
             {
-                "id": "1",
-                "name": "Alejandro Oseguera",
-                "position": "CEO and Business Development",
-                "position_en": "CEO and Business Development",
-                "company": "ENHO Energy Home",
+                "id": "3",
+                "name": "Eduardo Arredondo - Moderador",
+                "position": "Associate Founder",
+                "position_en": "Associate Founder",
+                "company": "Hyvel",
                 "bio": "",
                 "bio_en": "",
                 "image": "/img/speakers/default.webp",
@@ -1706,10 +1719,23 @@ const stage_2_day_3: Program[] = [
                 "moderador": false
             },
             {
+                "id": "1",
+                "name": "Alejandro Oseguera",
+                "position": "CEO and Business Development",
+                "position_en": "CEO and Business Development",
+                "company": "ENHO Energy Home",
+                "bio": "Fundador y CEO de ENHO (Energy Home) Líder en infraestructura de carga +150kw/hr para vehículos eléctricos en México Nacido en 1988, es un emprendedor mexicano con alma de inventor. Hijo de arquitectos, creció rodeado de creatividad, visión empresarial y una sensibilidad profunda hacia la arquitectura y diseño. Estudió Diseño Industrial en CDMX en la Universidad Iberoamericana y se especializó en Arquitectura con estudios en el Politécnico de Milán, Italia, e Innovación and Design Thinking en CEDIM, Mty. En 2012 fundó su primera empresa, Grupo Autor, lo que más adelante se convirtió en Obras de Autor, posicionándose como referente nacional en la construcción de agencias automotrices para firmas como Nissan, Peugeot, Chevrolet, Ford, GWM, BYD, Geely y Changan. Su experiencia lo llevó a fundar Energy Home (ENHO), una empresa que nació instalando cargadores en distribuidores automotrices para autos eléctricos, y evolucionó hacia el desarrollo de infraestructura nacional de carga, siendo un puente para iniciar colaboraciones entre grupos automotrices, empresarios y gobierno, con el firme objetivo de contribuir a que México cumpla con los compromisos internacionales en la reducción de emisiones de CO2. con los compromisos internacionales en la reducción de emisiones de CO2. ENHO es hoy una empresa pionera con el único modelo de negocio escalable, circular y centrado en ofrecer una solución definitiva a la infraestructura de carga con un plan de expansión para cubrir las capitales del territorio nacional, los principales corredores carreteros, así como todos los pueblos mágicos. Su principal diferenciador es el diseño e instalación de infraestructura de carga con supercargadores de 150 kWh en adelante, integrados con un software de gestión energética inteligente en colaboración con el líder en tecnología Huawei. Además, ha creado los ENHO Hubs, estaciones de carga que combinan funcionalidad con experiencia: espacios con cafetería, coworking y áreas de exhibición de productos de movilidad eléctrica, diseñados para ofrecer una experiencia de carga segura, cómoda y productiva —una sala de espera con servicios adaptada a las necesidades del mercado mexicano. Alejandro es CEO, fundador y director general, y lidera un equipo sólido con visión global. Lo acompañan Ekaterina Fedotova, directora comercial experta en relaciones México-China, y José Manuel Aldrete Audiffred, director operativo con trayectoria técnica de alto nivel. Se define como un líder inspirador, honesto y transformador. Quienes lo rodean creen en sus ideas porque las hace realidad. Cree en México, en la industria privada, en las nuevas generaciones y en construir un país más sostenible y más justo. Su lema es claro: “Los sueños no solo se piensan, se construyen”.",
+                "bio_en": "Founder and CEO of ENHO (Energy Home) Leader in +150kw/hr charging infrastructure for electric vehicles in Mexico Born in 1988, he is a Mexican entrepreneur with the soul of an inventor. Son of architects, he grew up surrounded by creativity, business vision, and a deep sensitivity towards architecture and design. He studied Industrial Design in CDMX at the Universidad Iberoamericana and specialized in Architecture with studies at the Politecnico di Milano, Italy, and Innovation and Design Thinking at CEDIM, Mty. In 2012 he founded his first company, Grupo Autor, which later became Obras de Autor, positioning itself as a national reference in the construction of automotive agencies for firms such as Nissan, Peugeot, Chevrolet, Ford, GWM, BYD, Geely, and Changan. His experience led him to found Energy Home (ENHO), a company that started by installing chargers in automotive dealerships for electric cars and evolved into the development of national charging infrastructure, being a bridge to initiate collaborations between automotive groups, entrepreneurs, and government, with the firm objective of contributing to Mexico meeting international commitments in CO2 emissions reduction. with international commitments in CO2 emissions reduction. ENHO is now a pioneering company with the only scalable, circular business model focused on offering a definitive solution to charging infrastructure with an expansion plan to cover the capitals of the national territory, the main highway corridors, as well as all magical towns. Its main differentiator is the design and installation of charging infrastructure with superchargers from 150 kWh onwards, integrated with intelligent energy management software in collaboration with technology leader Huawei. In addition, it has created ENHO Hubs, charging stations that combine functionality with experience: spaces with coffee shops, coworking areas, and exhibition areas for electric mobility products, designed to offer a safe, comfortable, and productive charging experience —a waiting room with services adapted to the needs of the Mexican market. Alejandro is CEO, founder, and general director, leading a solid team with a global vision. He is accompanied by Ekaterina Fedotova, commercial director expert in Mexico-China relations, and José Manuel Aldrete Audiffred, operations director with high-level technical trajectory. He defines himself as an inspiring, honest, and transformative leader. Those around him believe in his ideas because he makes them a reality. He believes in Mexico, in private industry, in new generations, and in building a more sustainable and fairer country. His motto is clear: “Dreams are not only thought, they are built.”",
+                "image": "/img/speakers/alejandrooseguera.png",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
                 "id": "2",
                 "name": "Vladimir García",
-                "position": "Lead-Acid battery materials expert North America",
-                "position_en": "Lead-Acid battery materials expert North America",
+                "position": "Lead-Acid Battery Materials Expert North America",
+                "position_en": "Lead-Acid Battery Materials Expert North America",
                 "company": "Clarios",
                 "bio": "Dr. Vladimir García Hernández es un reconocido especialista con una sólida trayectoria académica y profesional en el sector automotriz. Es Ingeniero Químico Industrial por la Universidad de las Américas Puebla (UDLA) y Doctor en Ciencia de Materiales por la Universidad Autónoma de Nuevo León (UANL). Su formación se complementa con un diplomado en mandos intermedios por ICAMI, fortaleciendo sus capacidades de liderazgo y gestión estratégica. Con más de dos décadas de experiencia, el Dr. García Hernández ha sido pieza clave en el desarrollo e innovación de materiales para baterías plomo-acido, colaborando estrechamente con universidades, centros de investigación, clientes y proveedores. Su participación en proyectos académicos de licenciatura y posgrado ha contribuido significativamente al avance tecnológico del sector, consolidando puentes entre la academia y la industria en el norte del país. Durante su estancia como expatriado en Glendale, Wisconsin, representando a Clarios, amplió su perspectiva global y red de colaboración, experiencia que hoy aplica como responsable del desarrollo de materiales para la región de Norteamérica. Su liderazgo ha sido fundamental en iniciativas de innovación dentro del Clúster Automotriz de Nuevo León, donde promueve activamente la competitividad y el progreso tecnológico de la industria. Apasionado por la excelencia y la innovación, el Dr. García Hernández es una figura influyente en el ecosistema automotriz de Norteamérica. Fuera del ámbito profesional, encuentra en la cocina un espacio de creatividad y conexión familiar, reflejo de su enfoque integral y humano.",
                 "bio_en": "Dr. Vladimir García Hernández is a renowned specialist with a solid academic and professional background in the automotive sector. He is an Industrial Chemical Engineer from the Universidad de las Américas Puebla (UDLA) and holds a PhD in Materials Science from the Universidad Autónoma de Nuevo León (UANL). His education is complemented by a diploma in middle management from ICAMI, strengthening his leadership and strategic management skills. With over two decades of experience, Dr. García Hernández has been a key player in the development and innovation of lead-acid battery materials, working closely with universities, research centers, clients, and suppliers. His involvement in undergraduate and postgraduate academic projects has significantly contributed to the technological advancement of the sector, building bridges between academia and industry in the northern part of the country. During his time as an expatriate in Glendale, Wisconsin, representing Clarios, he expanded his global perspective and collaboration network, experience that he now applies as head of materials development for the North America region. His leadership has been fundamental in innovation initiatives within the Nuevo León Automotive Cluster, where he actively promotes competitiveness and technological progress in the industry. Passionate about excellence and innovation, Dr. García Hernández is an influential figure in the North American automotive ecosystem. Outside of his professional field, he finds creativity and family connection in cooking, reflecting his comprehensive and human approach.",
@@ -1718,6 +1744,7 @@ const stage_2_day_3: Program[] = [
                 "phone": "",
                 "moderador": false
             },
+            
         ]
     },
     {

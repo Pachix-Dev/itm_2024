@@ -309,12 +309,27 @@ const alliesStrategic = [
     link: "https://www.elgranbajionetwork.com/",
   },
   {
-    src: " /img/4alianza.webp",
+    src: "/img/4alianza.webp",
     width: 200,
     height: 106,
     alt: "Cuatro Cero",
     link: "#",
   },
+  {
+    src: "/img/ANPSU.png",
+    width: 200,
+    height: 106,
+    alt: "anampsa",
+    link: "#",
+  },
+  {
+    src: "/img/Asociacion_IOT.png",
+    width: 200,
+    height: 106,
+    alt: "anampsa",
+    link: "#",
+  },
+  
  
 ];
 
