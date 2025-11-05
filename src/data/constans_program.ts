@@ -25,6 +25,29 @@ interface Program {
 //Transformation Area
 const stage_1_day_1: Program[] = [
     {
+        title: "Trimble CenterPoint RTX: Revolucionando el Mapeo y la Navegación de Precisión para Drones ",
+        title_en: "From the Field to the Digital Twin: A Single Pix4D Ecosystem",
+        description: "Esta sesión se centra en la Cartografía de Alta Precisión y Eficiencia para Drones, impulsada por la tecnología Trimble CenterPoint RTX. La clave reside en la combinación de la APX RTX GNSS/Inercial (con IN-Fusion+ y calibración SmartCal) y el post-procesado Applanix POSPac UAV PP-RTX 2. Esta solución ofrece precisión centimétrica a nivel global, operando en un Datum Global Consistente y cumpliendo con la Fiabilidad Certificada ASIL-B. El sistema asegura ultra robustez y resultados sin artefactos, eliminando la necesidad de infraestructura terrestre. Finalizaremos con una revisión de casos prácticos que demuestran la precisión y eficiencia del PP-RTX 2 en proyectos LiDAR e hiperspectrales.",
+        description_en: " This session focuses on High-Precision and Efficient Mapping for Drones, powered by Trimble CenterPoint RTX technology. The key lies in the combination of APX RTX GNSS/Inertial (with IN-Fusion+ and SmartCal calibration) and post-processing with Applanix POSPac UAV PP-RTX 2. This solution offers centimeter-level accuracy globally, operating on a Consistent Global Datum and meeting ASIL-B Certified Reliability. The system ensures ultra robustness and artifact-free results, eliminating the need for ground infrastructure. We will conclude with a review of practical cases demonstrating the accuracy and efficiency of PP-RTX 2 in LiDAR and hyperspectral projects.",
+        time: "11:30 hrs",
+        duration: "40 min",
+        speakers: [
+            {
+                id: "1",
+                name: "Jesús Ruíz",
+                position: "Gerente de Desarrollo de Negocios  - Airborne",
+                position_en: "Business Development Manager - Airborne",
+                company: "Trimble Applanix",
+                bio: "Pionero en la introducción del posicionamiento preciso para la cartografía y navegación profesional con drones. En Trimble Applanix, lidero el crecimiento de la tecnología de posicionamiento para mercados aéreos en Europa y Latinoamérica. Impulso activamente su adopción en sectores clave como agricultura, servicios públicos, teledetección y construcción. Mi enfoque está en hacer realidad la cartografía y navegación fidedigna con drones. Cientos de empresas confían en Trimble Applanix para generar datos geoespaciales de alta fiabilidad que transforman la forma en que entendemos y gestionamos nuestro",
+                bio_en: "Pioneer in introducing precise positioning for professional mapping and navigation with drones. At Trimble Applanix, I lead the growth of positioning technology for aerial markets in Europe and Latin America. I actively drive its adoption in key sectors such as agriculture, utilities, remote sensing, and construction. My focus is on making reliable mapping and navigation with drones a reality. Hundreds of companies trust Trimble Applanix to generate highly reliable geospatial data that transforms how we understand and manage our world.",
+                image: "/img/speakers/jesus_ruiz.jpeg",
+                email: "",
+                phone: "",
+                moderador: true
+            },
+        ]
+    },
+    {
         title: "Del terreno al gemelo digital: un solo ecosistema Pix4D ",
         title_en: "From the Field to the Digital Twin: A Single Pix4D Ecosystem",
         description: "En un mundo donde la precisión y la eficiencia son clave, Pix4D ofrece un ecosistema completo que conecta cada etapa del flujo de trabajo: desde la captura de datos con drones o cámaras, hasta la creación de gemelos digitales precisos listos para análisis, colaboración y toma de decisiones. Con una suite de soluciones integradas, Pix4D permite transformar imágenes en información geoespacial confiable, optimizando procesos en topografía, construcción, agricultura, minería y más. Todo dentro de un solo ecosistema que garantiza continuidad, calidad y resultados medibles.",
@@ -423,13 +446,13 @@ const stage_1_day_2: Program[] = [
         "speakers": [
             {
                 "id": "1",
-                "name": "Mayra Gaxiola",
-                "position": "Business Developer Manager",
-                "position_en": "Sales Specialists Manager en Siemens Digital Industries",
+                "name": "Andrey Martinez",
+                "position": "Offer Manager",
+                "position_en": "Offer Manager",
                 "company": "Schneider Electric",
-                "bio": "Mayra Gaxiola Ingeniero Industrial y de Sistemas por parte del Tecnológico de Monterrey cuenta con una sólida experiencia en desarrollo de negocios, transformación digital y soluciones inteligentes para la industria. En su rol como Industrial Automation Business Developer Manager en Schneider Electric México, lidera la identificación de oportunidades estratégicas, la creación de propuestas de valor y la implementación de soluciones tecnológicas que optimizan la eficiencia operativa de sus clientes",
-                "bio_en": "Mayra Gaxiola, Industrial and Systems Engineer from Tecnológico de Monterrey, has solid experience in business development, digital transformation, and smart solutions for the industry. In her role as Industrial Automation Business Developer Manager at Schneider Electric Mexico, she leads the identification of strategic opportunities, the creation of value propositions, and the implementation of technological solutions that optimize the operational efficiency of her clients.",
-                "image": "/img/speakers/Mayra_Gaxiola.webp",
+                "bio": "Egresado del Instituto Politécnico Nacional, desempeña un rol estratégico clave en la gestión de productos y soluciones dentro del portafolio de Schneider Electric como offer manager, liderando la estrategia de productos y soluciones enfocado en gestionar el ciclo de vida de las ofertas, desde su conceptualización hasta su posicionamiento en el mercado, asegurando que respondan a las necesidades reales de los clientes.",
+                "bio_en": "A graduate of the Instituto Politécnico Nacional, he plays a key strategic role in product and solution management within Schneider Electric's portfolio as an offer manager, leading the product and solution strategy focused on managing the life cycle of offers, from their conceptualization to their market positioning, ensuring they respond to the real needs of customers.",
+                "image": "/img/speakers/Andrey_Martinez.jfif",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -757,13 +780,13 @@ const stage_1_day_3: Program[] = [
             },
             {
                 "id": "2",
-                "name": "Paulina Arellano",
-                "position": "Operational Offer Manager ",
-                "position_en": "Operational Offer Manager ",
+                "name": "Arianna González",
+                "position": "Recurring Services Manager",
+                "position_en": "Recurring Services Manager",
                 "company": "Schneider Electric",
-                "bio": "Paulina Arellano: Egresada de la licenciatura de Marketing y comunicación por parte del Tecnológico de Monterrey. Cuenta con experiencia en áreas como gestión de proyectos, análisis de mercado y desarrollo comercial. Actualmente se desempeña como Operational Offer Manager en Schneider Electric México, donde lidera la estrategia y ejecución de ofertas operativas para soluciones de energía segura y sostenible.",
-                "bio_en": "Paulina Arellano: Graduate of the Marketing and Communication degree from the Tecnológico de Monterrey. She has experience in areas such as project management, market analysis and business development. She currently serves as Operational Offer Manager at Schneider Electric Mexico, where she leads the strategy and execution of operational offers for secure and sustainable energy solutions.",
-                "image": "/img/speakers/Paulina_Arellano.webp",
+                "bio": "Arianna González: Egresada de la licenciatura de Biotecnología por parte de la Universidad Estatal de Arkansas. Actualmente trabaja como Recurring Services Manager, después de haber liderado la experiencia del cliente como Customer Success Manager, donde gestionó el soporte, contratos y proyectos con un enfoque en la satisfacción y lealtad del cliente. También participó en el Programa de Desarrollo, ocupando puestos clave como Digital Services Strategy, Inside Sales Representative, Tender Engineer y Business Developer, adquiriendo experiencia en ventas, negociación, desarrollo de ofertas, planificación empresarial y estrategias digitales.",
+                "bio_en": "Arianna Gonzalez is a professional with a strong academic background in Biotechnology, holding a Bachelor of Science degree from Arkansas State University. She currently works as Recurring Services Manager, after previously leading customer experience as Customer Success Manager, where she managed support, contracts, and projects with a focus on satisfaction and loyalty. She also participated in the Development Program, holding key positions such as Digital Services Strategy, Inside Sales Representative, Tender Engineer, and Business Developer, gaining experience in sales, negotiation, offer development, business planning, and digital strategies.",
+                "image": "/img/speakers/Arianna_Gonzalez.jpg",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -1219,26 +1242,26 @@ const stage_2_day_2: Program[] = [
         "speakers": [
             {
                 "id": "1",
-                "name": "Roger Roa",
-                "position": "Cybersecurity Business Consultant Lead",
-                "position_en": "Cybersecurity Business Consultant Lead",
+                "name": "Roberto Tepoz",
+                "position": "System & Architecture Senior Engineer",
+                "position_en": "System & Architecture Senior Engineer",
                 "company": "Schneider Electric",
-                "bio": "Roger Roa Ingeniero Eléctrico por parte de la Universidad de loa Andes, lidera la consultoría de ciberseguridad en Schneider Electric, guiando a clientes en la protección de sus infraestructuras críticas mediante soluciones digitales seguras y alineadas con estándares internacionales. Su enfoque estratégico y técnico permite identificar riesgos, diseñar arquitecturas seguras y fortalecer la resiliencia operativa en entornos industriales.",
-                "bio_en": "Roger Roa, Electrical Engineer from the University of the Andes, leads cybersecurity consulting at Schneider Electric, guiding clients in protecting their critical infrastructures through secure digital solutions aligned with international standards. His strategic and technical approach allows him to identify risks, design secure architectures, and strengthen operational resilience in industrial environments.",
-                "image": "/img/speakers/Roger_Roa.webp",
+                "bio": "Ingeniero Mecánico Eléctrico graduado del Instituto Tecnológico y de Estudios Superiores de Monterrey con un Master en Industria 4.0 y Automatización de Procesos por la Universidad Politécnica de Catalunya. Cuenta con certificaciones de Green Belt Six Sigma, Cyberseguridad - ISA, Telecomunicaciones",
+                "bio_en": "Ingeniero Mecánico Eléctrico graduado del Instituto Tecnológico y de Estudios Superiores de Monterrey con un Master en Industria 4.0 y Automatización de Procesos por la Universidad Politécnica de Catalunya. Cuenta con certificaciones de Green Belt Six Sigma, Cyberseguridad - ISA, Telecomunicaciones",
+                "image": "/img/speakers/default.webp",
                 "email": "",
                 "phone": "",
                 "moderador": false
             },
             {
                 "id": "2",
-                "name": "Belem Castañeda",
-                "position": "Ofter Category Manager Services",
+                "name": "Erandi Bañuelos",
+                "position": "Offer Category Manager Services",
                 "position_en": "Ofter Category Manager Services",
                 "company": "Schneider Electric",
-                "bio": "Belem Castañeda Egresada de la carrera de Ingeniería Industrial del Instituto Politécnico Nacional, es responsable de gestionar y desarrollar el portafolio de servicios dentro de Schneider Electric, alineando las ofertas con las necesidades del mercado y la estrategia de negocio. Su enfoque combina análisis de mercado, innovación y colaboración con equipos comerciales para impulsar soluciones de alto valor para los clientes.",
-                "bio_en": "Belem Castañeda, a graduate of Industrial Engineering from the Instituto Politécnico Nacional, is responsible for managing and developing the service portfolio within Schneider Electric, aligning offerings with market needs and business strategy. Her approach combines market analysis, innovation, and collaboration with commercial teams to drive high-value solutions for clients.",
-                "image": "/img/speakers/Belem_Castañeda.webp",
+                "bio": "Egresada de la universidad nacional autónoma de Mexico, con más de una década de experiencia en ventas, ingeniería y gestión de servicios. Actualmente se desempeña como Category Manager de Power Services en Schneider Electric, donde ha liderado estrategias comerciales y relaciones con clientes clave. Su carrera incluye roles como especialista en ventas de campo y representante de servicios, consolidando su experiencia en soluciones eléctricas. ",
+                "bio_en": "Graduate of the National Autonomous University of Mexico, with over a decade of experience in sales, engineering, and service management. She currently serves as Power Services Category Manager at Schneider Electric, where she has led commercial strategies and key customer relationships. Her career includes roles as a field sales specialist and service representative, consolidating her expertise in electrical solutions.",
+                "image": "/img/speakers/ErandiBañuelos.jfif",
                 "email": "",
                 "phone": "",
                 "moderador": false
@@ -1359,7 +1382,7 @@ const stage_2_day_2: Program[] = [
                 "phone": "",
                 "moderador": false
             },
-            {
+            /*{
                 "id": "4",
                 "name": "Bárbara Botello",
                 "position": "Directora de Plan de Marca Nacional y Políticas de Marcas Nacionales ",
@@ -1371,16 +1394,16 @@ const stage_2_day_2: Program[] = [
                 "email": "",
                 "phone": "",
                 "moderador": false
-            }, 
+            },*/ 
             {
                 "id": "2",
-                "name": "Caroline Hoarau",
-                "position": "Directora de Industrial Transformation, Usuarios Finales y Cuentas Estratégicas para México y Centroamérica",
-                "position_en": "Director of Industrial Transformation, End Users and Strategic Accounts for Mexico and Central America",
-                "company": "Schneider Electric",
-                "bio": "Caroline cuenta con más de dieciséis años de experiencia profesional en el sector energético.  Actualmente funge como directora de Industrial Transformation, Usuarios Finales y Cuentas Estratégicas para México y Centroamérica, posición en la que es responsable de encabezar las operaciones comerciales de la división, orientada en la oferta de productos, soluciones y servicios enfocados en la aplicación de tecnología avanzada en procesos de manufactura. Caroline inició su relación laboral con Schneider Electric en 2010 como supervisora de compras, puesto en el que su principal responsabilidad consistía en fortalecer la base de proveedores, así como asegurar el reabastecimiento de la planta de Rojo Gomez y establecer un plan de acción de productividad en conjunto con la proveeduría.  Durante los siguientes cinco años se desempeñó en diferentes posiciones tanto a nivel operativo como comercial hasta que en 2017 fue nombrada gerente de Segmentos de Edificios Comerciales para apoyar y supervisar a los gerentes de cuentas clave que respaldan las industrias de Salud, Hotelería, Retail y Bienes Raíces con la finalidad de promover a nivel de los usuarios finales las soluciones más innovadoras para hacer más eficiente la operación de dichos edificios. Igualmente, funge como Champion de EcoStruxure, la plataforma del Internet de las Cosas de Schneider Electric y está a cargo del liderazgo de las cuentas estratégicas con la meta de empujar las ofertas digitales hacia dichas cuentas. Caroline cuenta con una maestría en gestión de empresas con una especialización en finanzas por parte de Audencia Nantes Ecole de Management, ubicada en Francia.",
-                "bio_en": "Caroline has over sixteen years of professional experience in the energy sector. She currently serves as Director of Industrial Transformation, End Users and Strategic Accounts for Mexico and Central America, a position in which she is responsible for leading the commercial operations of the division, focused on the offer of products, solutions and services focused on the application of advanced technology in manufacturing processes. Caroline began her working relationship with Schneider Electric in 2010 as a purchasing supervisor, a position in which her main responsibility was to strengthen the supplier base, as well as ensure the replenishment of the Rojo Gomez plant and establish a productivity action plan together with the supply. Over the next five years she served in different positions both at the operational and commercial level until in 2017 she was appointed manager of Commercial Building Segments to support and supervise key account managers who support the Health, Hospitality, Retail and Real Estate industries in order to promote the most innovative solutions at the end user level to make the operation of these buildings more efficient. She also serves as Champion of EcoStruxure, Schneider Electric's Internet of Things platform, and is in charge of leading strategic accounts with the goal of pushing digital offerings to those accounts. Caroline has a master's degree in business management with a specialization in finance from Audencia Nantes Ecole de Management, located in France.",
-                "image": "/img/speakers/Caroline_Hoarau.webp",
+                "name": "Daniela Rivas",
+                "position": "Vicepresidenta",
+                "position_en": "Vice President ",
+                "company": "Power Products & Power Systems para México y Centroamérica ",
+                "bio": "Daniela Rivas de la Llata es Licenciada en Relaciones Internacionales por la Universidad de las Américas, Puebla (UDLAP), con una especialidad en Negociación Internacional. Actualmente, se desempeña como Vicepresidenta de la unidad de negocios de Power Products & Power Systems para México y Centroamérica en Schneider Electric, consolidando así una destacada carrera profesional en el sector eléctrico. Forma parte del Staff Ejecutivo en Schneider Electric, reportando directamente a la Presidencia y Dirección General del país. Con 17 años de experiencia, Daniela ha desarrollado su carrera en áreas de logística, planeación, Project Management, Desarrollo de negocios, y Desarrollo de Canales, trabajando en compañías globales como Bombardier Aerospace y Bombardier Transportation antes de unirse a Schneider Electric. En los 9 años que lleva en Schneider Electric, ha ocupado cargos relevantes que le han permitido estar en contacto con socios comerciales y clientes finales, identificando desafíos y oportunidades para la organización que hoy representa. Anteriormente, se desempeñó como Directora de Administración de Canales y Operaciones de Ventas para México y Centroamérica. La participación de las mujeres en el sector eléctrico es crucial para lograr un desarrollo sostenible y equitativo. A pesar de representar el 48% de la fuerza laboral mundial, las mujeres solo representan el 22% en el sector del petróleo y gas, y el 32% en energías renovables en México, la participación de las mujeres en el sector energético es del 25%, mientras que en el sector eléctrico es del 17% en Schneider Electric, el 49.5% de las personas que laboran son mujeres, gracias a políticas de equidad, diversidad e inclusión que se han implementado durante mucho tiempo como Vicepresidenta de la Unidad de Negocios de Power Products & Power Systems, Daniela tiene la oportunidad de seguir impulsando a las generaciones futuras, promoviendo la inclusión femenina en roles estratégicos y de toma de decisiones dentro de la industria. Su verdadero propósito es construir, influir y compartir todo lo que ha aprendido, teniendo un compromiso sólido con otras mujeres de su generación y las que vienen detrás de ella. Trabajar en empresas cuyo objetivo es mejorar la calidad de vida de las personas y cuidar del medio ambiente inspira su misión en la vida.",
+                "bio_en": "Daniela Rivas de la Llata holds a degree in International Relations from Universidad de las Américas, Puebla (UDLAP), with a specialization in International Negotiation. She currently serves as Vice President of the Power Products & Power Systems business unit for Mexico and Central America at Schneider Electric, thus consolidating an outstanding professional career in the electrical sector. She is part of the Executive Staff at Schneider Electric, reporting directly to the Presidency and General Management of the country. With 17 years of experience, Daniela has developed her career in areas of logistics, planning, Project Management, Business Development, and Channel Development, working in global companies such as Bombardier Aerospace and Bombardier Transportation before joining Schneider Electric. In the 9 years she has been at Schneider Electric, she has held relevant positions that have allowed her to be in contact with business partners and end customers, identifying challenges and opportunities for the organization she represents today. Previously, she served as Director of Channel Management and Sales Operations for Mexico and Central America. Women's participation in the electrical sector is crucial to achieving sustainable and equitable development. Despite representing 48% of the global workforce, women only represent 22% in the oil and gas sector, and 32% in renewable energy in Mexico, women's participation in the energy sector is 25%, while in the electrical sector it is 17% at Schneider Electric, 49.5% of the people who work are women, thanks to equity, diversity and inclusion policies that have been implemented for a long time as Vice President of the Power Products & Power Systems Business Unit, Daniela has the opportunity to continue driving future generations, promoting female inclusion in strategic and decision-making roles within the industry. Her true purpose is to build, influence and share everything she has learned, having a solid commitment to other women of her generation and those who come after her. Working in companies whose objective is to improve people's quality of life and care for the environment inspires her mission in life",
+                "image": "/img/speakers/Daniela_Rivas.jpg",
                 "email": "",
                 "phone": "",
                 "moderador": false
