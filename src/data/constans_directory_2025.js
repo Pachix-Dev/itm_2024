@@ -3339,7 +3339,7 @@ export const directory = [
     description_en:"Sustainable Industrial Energy Company",
     
   },
-  {
+  /*{
     id: 150,
     name: "FACULTAD DE INGENIERÍA, UNAM",
     logo: "/img/escudo_fi_color.png",
@@ -3357,7 +3357,7 @@ export const directory = [
     country: "México",
     description:"INSTITUCIÓN EDUCATIVA DE EDUCACIÓN SUPERIOR PÚBLICA CON 15 CARRERAS DE INGENIERÍA (MECATRÓNICA, MECÁNICA, AEROESPACIAL, INDUSTRIAL, ETC.) Se realiza investigación en Electromovilidad, diseño mecánico y avances en mecatrónica.",
     description_en:"PUBLIC INSTITUTION OF HIGHER EDUCATION WITH 15 ENGINEERING DEGREE PROGRAMS (MECHATRONICS, MECHANICAL, AEROSPACE, INDUSTRIAL, ETC.) Research is conducted in Electromobility, mechanical design, and advances in mechatronics.",    
-  },
+  },*/
   {
     id: 151,
     name: "Integritas",
