@@ -21,6 +21,7 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
     muted
     playsinline
     src='/videos/video_itm_programa.mp4'
+    preload='metadata'
   >
   </video>
 
@@ -34,7 +35,7 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
         <!-- Header -->
         <div class='text-center mb-12 lg:mb-16'>
           <h1
-            class='text-5xl md:text-6xl xl:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#E42128] via-[#CF1363] to-[#E42128] uppercase leading-tight mb-6 animate-fade-in'
+            class='text-5xl md:text-6xl xl:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#E42128] via-[#CF1363] to-[#E42128] uppercase leading-tight mb-6'
           >
             {t('program.title')}
           </h1>
@@ -51,7 +52,7 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
             <!-- Register Button -->
             <a
               href={`${base}/registro`}
-              class='cta-button group inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-white bg-gradient-to-r from-[#E42128] to-[#CF1363] rounded-full shadow-2xl hover:shadow-[0_0_40px_rgba(228,33,40,0.7)] transform hover:scale-105 transition-all duration-500 ease-out relative overflow-hidden border-2 border-transparent hover:border-white/20'
+              class='cta-button group inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-white bg-gradient-to-r from-[#E42128] to-[#CF1363] rounded-full shadow-2xl hover:shadow-[0_0_40px_rgba(228,33,40,0.7)] transform hover:scale-105 transition-all duration-300 ease-out relative overflow-hidden border-2 border-transparent hover:border-white/20'
             >
               <span class='relative z-10 flex items-center gap-3'>
                 {t('register.button_register')}
@@ -68,14 +69,6 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
                     d='M13 7l5 5m0 0l-5 5m5-5H6'></path>
                 </svg>
               </span>
-              <div
-                class='absolute inset-0 bg-gradient-to-r from-[#CF1363] to-[#E42128] opacity-0 group-hover:opacity-100 transition-opacity duration-500'
-              >
-              </div>
-              <div
-                class='absolute inset-0 rounded-full bg-white/10 scale-0 group-hover:scale-150 transition-transform duration-700'
-              >
-              </div>
             </a>
           </div>
           <!-- Download Buttons -->
@@ -90,7 +83,7 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
             >
               <span class='relative z-10 flex items-center gap-2'>
                 <svg
-                  class='w-5 h-5 transform group-hover:scale-110 transition-transform duration-300'
+                  class='w-5 h-5'
                   fill='none'
                   stroke='currentColor'
                   viewBox='0 0 24 24'
@@ -104,10 +97,6 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
                 </svg>
                 Leaders of Tomorrow
               </span>
-              <div
-                class='absolute inset-0 bg-gradient-to-r from-[#E42128]/20 to-[#CF1363]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full'
-              >
-              </div>
             </a>
 
             <!-- Transformation Program Download -->
@@ -120,7 +109,7 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
             >
               <span class='relative z-10 flex items-center gap-2'>
                 <svg
-                  class='w-5 h-5 transform group-hover:scale-110 transition-transform duration-300'
+                  class='w-5 h-5'
                   fill='none'
                   stroke='currentColor'
                   viewBox='0 0 24 24'
@@ -134,10 +123,6 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
                 </svg>
                 Transformation Area
               </span>
-              <div
-                class='absolute inset-0 bg-gradient-to-r from-[#CF1363]/20 to-[#E42128]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full'
-              >
-              </div>
             </a>
           </div>
         </div>
@@ -211,7 +196,7 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
             <div class='grid grid-cols-1 md:grid-cols-3 gap-4'>
               <Button id='day-1' class='day-btn'>
                 <div class='text-center'>
-                  <div class='text-2xl font-bold text/white mb-1'>
+                  <div class='text-2xl font-bold text-white mb-1'>
                     {t('program.day')} 1
                   </div>
                   <div class='text-sm text-gray-300'>{t('program.day_1')}</div>
@@ -222,7 +207,7 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
               </Button>
               <Button id='day-2' class='day-btn'>
                 <div class='text-center'>
-                  <div class='text-2xl font-bold text/white mb-1'>
+                  <div class='text-2xl font-bold text-white mb-1'>
                     {t('program.day')} 2
                   </div>
                   <div class='text-sm text-gray-300'>{t('program.day_2')}</div>
@@ -233,7 +218,7 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
               </Button>
               <Button id='day-3' class='day-btn'>
                 <div class='text-center'>
-                  <div class='text-2xl font-bold text/white mb-1'>
+                  <div class='text-2xl font-bold text-white mb-1'>
                     {t('program.day')} 3
                   </div>
                   <div class='text-sm text-gray-300'>{t('program.day_3')}</div>
@@ -259,16 +244,13 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
             >
               <div class='bg-white/5 backdrop-blur-lg rounded-3xl border border-white/10 p-6 md:p-10 shadow-2xl'>
                 <div class='space-y-6'>
-                  {program.conferences.map((item, index) => (
-                    <div
-                      class='conference-item'
-                      style={`animation-delay: ${index * 0.1}s`}
-                    >
+                  {program.conferences.map((item) => (
+                    <div class='conference-item'>
                       <ConferenceITM
                         item={item}
                         translate={translate}
                         language={i18next.language}
-                        client:only
+                        client:load
                       />
                     </div>
                   ))}
@@ -289,42 +271,8 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
     overflow-x: hidden;
   }
 
-  /* Animations */
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes slide-up {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .animate-fade-in {
-    animation: fade-in 1s ease-out;
-  }
-
-  .conference-item {
-    animation: slide-up 0.6s ease-out forwards;
-    opacity: 0;
-  }
-
   /* Enhanced Button Styles */
   .cta-button {
-    background-size: 200% 200%;
-    animation: gradient-shift 4s ease infinite;
     box-shadow:
       0 10px 40px rgba(228, 33, 40, 0.3),
       0 0 0 1px rgba(255, 255, 255, 0.1) inset;
@@ -342,18 +290,6 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
     box-shadow:
       0 12px 40px rgba(228, 33, 40, 0.2),
       0 0 0 1px rgba(228, 33, 40, 0.3) inset;
-  }
-
-  @keyframes gradient-shift {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
   }
 
   /* Glass morphism effects */
@@ -395,132 +331,143 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
 
   /* Smooth transitions for program content */
   .program-content {
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .program-content:not(.hidden) {
-    animation: slide-up 0.8s ease-out;
-  }
-
-  /* Download button pulse animation */
-  @keyframes pulse-download {
-    0% {
-      box-shadow: 0 0 0 0 rgba(228, 33, 40, 0.4);
-    }
-    70% {
-      box-shadow: 0 0 0 10px rgba(228, 33, 40, 0);
-    }
-    100% {
-      box-shadow: 0 0 0 0 rgba(228, 33, 40, 0);
-    }
-  }
-
-  .download-btn:active {
-    animation: pulse-download 0.8s ease-out;
+    transition: opacity 0.3s ease;
   }
 </style>
 
 <script is:inline data-astro-rerun>
+  // Variables globales
   let currentStage = '2'
   let currentDay = '1'
+  let isInitialized = false
 
-  // Initialize default selections
-  document
-    .getElementById('stage-2')
-    ?.firstElementChild?.classList.add('bg-opacity-0')
-  document
-    .getElementById('day-1')
-    ?.firstElementChild?.classList.add('bg-opacity-0')
+  // Función para mostrar/ocultar contenido del programa
+  function updateView() {
+    try {
+      // Ocultar todas las secciones del programa
+      const allPrograms = document.querySelectorAll('[id^="program-"]')
+      allPrograms.forEach((program) => {
+        if (program) {
+          program.classList.add('hidden')
+        }
+      })
 
-  const updateView = () => {
-    // Hide all program sections with fade out
-    document.querySelectorAll('[id^="program-"]').forEach((item) => {
-      item.style.opacity = '0'
-      setTimeout(() => item.classList.add('hidden'), 200)
-    })
+      // Mostrar la sección seleccionada
+      const targetId = `program-${currentStage}-${currentDay}`
+      const targetProgram = document.getElementById(targetId)
 
-    // Show selected program with fade in
-    const id = `program-${currentStage}-${currentDay}`
-    const target = document.getElementById(id)
-    if (target) {
-      setTimeout(() => {
-        target.classList.remove('hidden')
-        target.style.opacity = '1'
-      }, 250)
+      if (targetProgram) {
+        targetProgram.classList.remove('hidden')
+      }
+    } catch (error) {
+      console.error('Error updating view:', error)
     }
   }
 
-  document.addEventListener('astro:page-load', () => {
-    const stageButtons = document.querySelectorAll('button[id^="stage-"]')
-    const dayButtons = document.querySelectorAll('button[id^="day-"]')
-
-    stageButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        currentStage = btn.id.split('-')[1]
-
-        // Reset all stage buttons
-        document
-          .getElementById('stage-1')
-          ?.firstElementChild?.classList.remove('bg-opacity-0')
-        document
-          .getElementById('stage-2')
-          ?.firstElementChild?.classList.remove('bg-opacity-0')
-
-        // Activate selected button
-        document
-          .getElementById(`stage-${currentStage}`)
-          ?.firstElementChild?.classList.add('bg-opacity-0')
-
-        updateView()
-      })
-    })
-
-    dayButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        currentDay = btn.id.split('-')[1]
-
-        // Reset all day buttons
-        document
-          .getElementById('day-1')
-          ?.firstElementChild?.classList.remove('bg-opacity-0')
-        document
-          .getElementById('day-2')
-          ?.firstElementChild?.classList.remove('bg-opacity-0')
-        document
-          .getElementById('day-3')
-          ?.firstElementChild?.classList.remove('bg-opacity-0')
-
-        // Activate selected button
-        document
-          .getElementById(`day-${currentDay}`)
-          ?.firstElementChild?.classList.add('bg-opacity-0')
-
-        updateView()
-      })
-    })
-
-    // Initialize view
-    updateView()
-
-    // Add intersection observer for animations
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.style.animationPlayState = 'running'
+  // Función para actualizar botones de stage
+  function updateStageButtons(activeStage) {
+    try {
+      // Remover clase activa de todos los botones
+      const stageButtons = ['stage-1', 'stage-2']
+      stageButtons.forEach((stageId) => {
+        const button = document.getElementById(stageId)
+        const firstChild = button?.firstElementChild
+        if (firstChild) {
+          firstChild.classList.remove('bg-opacity-0')
         }
       })
-    })
 
-    document.querySelectorAll('.conference-item').forEach((item) => {
-      observer.observe(item)
-    })
+      // Agregar clase activa al botón seleccionado
+      const activeButton = document.getElementById(`stage-${activeStage}`)
+      const activeChild = activeButton?.firstElementChild
+      if (activeChild) {
+        activeChild.classList.add('bg-opacity-0')
+      }
+    } catch (error) {
+      console.error('Error updating stage buttons:', error)
+    }
+  }
 
-    // Download tracking (opcional)
-    document.querySelectorAll('.download-btn').forEach((btn) => {
-      btn.addEventListener('click', (e) => {
-        // Opcional: agregar analytics tracking
-        console.log('Descargando programa:', e.currentTarget.href)
+  // Función para actualizar botones de día
+  function updateDayButtons(activeDay) {
+    try {
+      // Remover clase activa de todos los botones
+      const dayButtons = ['day-1', 'day-2', 'day-3']
+      dayButtons.forEach((dayId) => {
+        const button = document.getElementById(dayId)
+        const firstChild = button?.firstElementChild
+        if (firstChild) {
+          firstChild.classList.remove('bg-opacity-0')
+        }
       })
-    })
+
+      // Agregar clase activa al botón seleccionado
+      const activeButton = document.getElementById(`day-${activeDay}`)
+      const activeChild = activeButton?.firstElementChild
+      if (activeChild) {
+        activeChild.classList.add('bg-opacity-0')
+      }
+    } catch (error) {
+      console.error('Error updating day buttons:', error)
+    }
+  }
+
+  // Función de inicialización simplificada
+  function initializeProgram() {
+    if (isInitialized) return
+
+    try {
+      // Configurar botones iniciales
+      updateStageButtons(currentStage)
+      updateDayButtons(currentDay)
+
+      // Mostrar vista inicial
+      updateView()
+
+      // Event listeners para botones de stage
+      const stageButtons = document.querySelectorAll('button[id^="stage-"]')
+      stageButtons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+          e.preventDefault()
+          const newStage = button.id.split('-')[1]
+          if (newStage && newStage !== currentStage) {
+            currentStage = newStage
+            updateStageButtons(currentStage)
+            updateView()
+          }
+        })
+      })
+
+      // Event listeners para botones de día
+      const dayButtons = document.querySelectorAll('button[id^="day-"]')
+      dayButtons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+          e.preventDefault()
+          const newDay = button.id.split('-')[1]
+          if (newDay && newDay !== currentDay) {
+            currentDay = newDay
+            updateDayButtons(currentDay)
+            updateView()
+          }
+        })
+      })
+
+      isInitialized = true
+    } catch (error) {
+      console.error('Error during initialization:', error)
+    }
+  }
+
+  // Inicialización simplificada
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeProgram)
+  } else {
+    initializeProgram()
+  }
+
+  // Para navegación SPA de Astro
+  document.addEventListener('astro:page-load', () => {
+    isInitialized = false
+    initializeProgram()
   })
 </script>

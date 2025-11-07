@@ -1,18 +1,15 @@
 ---
-import programs from '../data/constans_program.ts'
-import Button from '../components/schedule/Button.astro'
-import ConferenceITM from '../components/schedule/ConferenceITM.tsx'
-import i18next, { t, changeLanguage } from 'i18next'
-import Layout from '../layouts/Layout.astro'
+import programs from "../data/constans_program.ts";
+import Button from "../components/schedule/Button.astro";
+import ConferenceITM from "../components/schedule/ConferenceITM.tsx";
+import i18next, { t, changeLanguage } from "i18next";
+import Layout from "../layouts/Layout.astro";
 
-changeLanguage('es')
+changeLanguage("es");
 
-const lang = i18next.language
-const base = i18next.language === 'es' ? '' : `/${lang}`
-const translate = t('program', { returnObjects: true }) as Record<
-  string,
-  string
->
+const lang = i18next.language;
+const base = i18next.language === "es" ? "" : `/${lang}`;
+const translate = t("program", { returnObjects: true }) as Record<string, string>;
 ---
 
 <Layout title={`ITM | ${t('program.title')}`}>
