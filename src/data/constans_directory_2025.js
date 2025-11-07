@@ -3401,7 +3401,7 @@ export const directory = [
     name: "VACUUM INSTRUMENTS CORPORATION",
     logo: "/img/vaccuminstruments.png",
     width: 200,
-    stand_number: "NA",
+    stand_number: "D28",
     contact: "Lucero Villegas",
     position: "+52 442 244 9755",
     phone: "+554531 6319",

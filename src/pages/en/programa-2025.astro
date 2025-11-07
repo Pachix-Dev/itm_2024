@@ -82,7 +82,9 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
           <div class='flex flex-col sm:flex-row gap-4 justify-center'>
             <!-- Leaders Program Download -->
             <a
-              href='/files/Programa-de-Conferencias-Leaders-of-Tomorrow-Arena-v3_compressed.pdf'
+              href={i18next.language === 'en'
+                ? '/files/Programa-de-Conferencias-Leaders-of-Tomorrow-Arena-eng-v4_compressed.pdf'
+                : '/files/Programa-de-Conferencias-Leaders-of-Tomorrow-Arena-v4_compressed.pdf'}
               target='_blank'
               class='download-btn group inline-flex items-center justify-center px-6 py-3 text-lg font-semibold text-white bg-white/10 backdrop-blur-md rounded-full border border-white/20 hover:bg-white/20 hover:border-[#E42128]/50 transform hover:scale-105 transition-all duration-300 relative overflow-hidden'
             >
@@ -110,7 +112,9 @@ const translate = t("program", { returnObjects: true }) as Record<string, string
 
             <!-- Transformation Program Download -->
             <a
-              href='/files/Programa-de-Conferencias-Tranformation-Area-v3_compressed.pdf'
+              href={i18next.language === 'en'
+                ? '/files/Programa-de-Conferencias-Tranformation-Area-eng-v4_compressed.pdf'
+                : '/files/Programa-de-Conferencias-Tranformation-Area-v4_compressed.pdf'}
               target='_blank'
               class='download-btn group inline-flex items-center justify-center px-6 py-3 text-lg font-semibold text-white bg-white/10 backdrop-blur-md rounded-full border border-white/20 hover:bg-white/20 hover:border-[#CF1363]/50 transform hover:scale-105 transition-all duration-300 relative overflow-hidden'
             >

@@ -30,7 +30,7 @@ const stage_1_day_1: Program[] = [
         description: "Esta sesión se centra en la Cartografía de Alta Precisión y Eficiencia para Drones, impulsada por la tecnología Trimble CenterPoint RTX. La clave reside en la combinación de la APX RTX GNSS/Inercial (con IN-Fusion+ y calibración SmartCal) y el post-procesado Applanix POSPac UAV PP-RTX 2. Esta solución ofrece precisión centimétrica a nivel global, operando en un Datum Global Consistente y cumpliendo con la Fiabilidad Certificada ASIL-B. El sistema asegura ultra robustez y resultados sin artefactos, eliminando la necesidad de infraestructura terrestre. Finalizaremos con una revisión de casos prácticos que demuestran la precisión y eficiencia del PP-RTX 2 en proyectos LiDAR e hiperspectrales.",
         description_en: " This session focuses on High-Precision and Efficient Mapping for Drones, powered by Trimble CenterPoint RTX technology. The key lies in the combination of APX RTX GNSS/Inertial (with IN-Fusion+ and SmartCal calibration) and post-processing with Applanix POSPac UAV PP-RTX 2. This solution offers centimeter-level accuracy globally, operating on a Consistent Global Datum and meeting ASIL-B Certified Reliability. The system ensures ultra robustness and artifact-free results, eliminating the need for ground infrastructure. We will conclude with a review of practical cases demonstrating the accuracy and efficiency of PP-RTX 2 in LiDAR and hyperspectral projects.",
         time: "11:30 hrs",
-        duration: "40 min",
+        duration: "20 min",
         speakers: [
             {
                 id: "1",
@@ -41,6 +41,29 @@ const stage_1_day_1: Program[] = [
                 bio: "Pionero en la introducción del posicionamiento preciso para la cartografía y navegación profesional con drones. En Trimble Applanix, lidero el crecimiento de la tecnología de posicionamiento para mercados aéreos en Europa y Latinoamérica. Impulso activamente su adopción en sectores clave como agricultura, servicios públicos, teledetección y construcción. Mi enfoque está en hacer realidad la cartografía y navegación fidedigna con drones. Cientos de empresas confían en Trimble Applanix para generar datos geoespaciales de alta fiabilidad que transforman la forma en que entendemos y gestionamos nuestro",
                 bio_en: "Pioneer in introducing precise positioning for professional mapping and navigation with drones. At Trimble Applanix, I lead the growth of positioning technology for aerial markets in Europe and Latin America. I actively drive its adoption in key sectors such as agriculture, utilities, remote sensing, and construction. My focus is on making reliable mapping and navigation with drones a reality. Hundreds of companies trust Trimble Applanix to generate highly reliable geospatial data that transforms how we understand and manage our world.",
                 image: "/img/speakers/jesus_ruiz.jpeg",
+                email: "",
+                phone: "",
+                moderador: true
+            },
+        ]
+    },
+    {
+        title: "Fundamentos de la tecnología hiperespectral. Caso de éxito en Latinoamérica",
+        title_en: "From the Field to the Digital Twin: A Single Pix4D Ecosystem",
+        description: "Los sensores hiperespectrales producen imágenes en la que cada pixel contiene la firma espectral del objeto en la escena, esto es, la intensidad con la que se refleja la luz en cada longitud de onda. Dado que esta firma espectral se ve influenciada por las propiedades químicas de los objetos, la tecnología hiperespectral permite, por lo tanto, extraer información química de una escena de manera remota y no invasiva. Cuando un sensor hiperespectral de estas características, se combina con un sistema de medición y análisis inercial (como las tarjetas APX y el software Pospac UAV de Applanix, respectivamente), se posibilita un amplio abanico de aplicaciones en numerosos sectores: medioambiente, minería, oil and gas, civil, defensa, etc. En la presente ponencia conoceremos los fundamentos de la tecnología hiperespectral, así como varios casos éxitos llevados a cabo en Latinoamérica.",
+        description_en: " This session focuses on High-Precision and Efficient Mapping for Drones, powered by Trimble CenterPoint RTX technology. The key lies in the combination of APX RTX GNSS/Inertial (with IN-Fusion+ and SmartCal calibration) and post-processing with Applanix POSPac UAV PP-RTX 2. This solution offers centimeter-level accuracy globally, operating on a Consistent Global Datum and meeting ASIL-B Certified Reliability. The system ensures ultra robustness and artifact-free results, eliminating the need for ground infrastructure. We will conclude with a review of practical cases demonstrating the accuracy and efficiency of PP-RTX 2 in LiDAR and hyperspectral projects.",
+        time: "11:50 hrs",
+        duration: "20 min",
+        speakers: [
+            {
+                id: "1",
+                name: "Juan Manuel González",
+                position: "CEO",
+                position_en: "CEO",
+                company: "Black Square SAS",
+                bio: "Juan Manuel González Otero es máster en Ingeniería Aeronáutica por la Universidad Politécnica de Madrid, así como co-fundador y CEO de la empresa Black Square SAS. Con una amplia trayectoria de más de 10 años liderando un equipo de ingeniería altamente cualificado, ha tenido la oportunidad de participar en proyectos que han sido pioneros en el uso de la tecnología hiperespectral en Latinoamérica.",
+                bio_en: "Juan Manuel González Otero holds a master's degree in Aeronautical Engineering from the Polytechnic University of Madrid, as well as being co-founder and CEO of Black Square SAS. With an extensive career of over 10 years leading a highly qualified engineering team, he has had the opportunity to participate in projects that have been pioneers in the use of hyperspectral technology in Latin America.",
+                image: "/img/speakers/Juan_Manuel_Gonzalez.jpg",
                 email: "",
                 phone: "",
                 moderador: true
@@ -1007,7 +1030,34 @@ const stage_2_day_1: Program[] = [
         "description_en": "",
         "time": "14:15 hrs",
         "duration": "30 min",
-        "speakers": []
+        "speakers": [
+            {
+                "id": "1",
+                "name": "Excmo. Dr. Clemens von Goetze",
+                "position": "Embajador",
+                "position_en": "Ambassador",
+                "company": "República Federal de Alemania en México ",
+                "bio": "",
+                "bio_en": "",
+                "image": "/img/speakers/Clemens_von_Goetze.jpg",
+                "email": "",
+                "phone": "",
+                "moderador": false
+            },
+            {
+                "id": "2",
+                "name": "Hans Blomeier - Moderador",
+                "position": "Representante en México",
+                "position_en": "Representative in Mexico",
+                "company": "Konrad Adenauer Foundation",
+                "bio": "Hans Blomeier es ingeniero agrónomo de la Universidad de Kassel y ha sido el  representante de las oficinas de la Fundación Konrad Adenauer (KAS) en diversos países, entre ellos Perú, Argentina, Chile, Uruguay, además de Reino Unido y la República de Irlanda.<br><br> Ha sido jefe del departamento de América Latina en la oficina central de la KAS. El Ing. Blomeier es autor de numerosos artículos de análisis político, así como editor y co-autor de publicaciones (libros y revistas) de la KAS relacionados con la cooperación internacional, así como el desarrollo político y económico en los países a los que fue destinado. Actualmente es el representante de la KAS México desde mayo de 2018.",
+                "bio_en": "Hans Blomeier is an agricultural engineer at the University of Kassel and has represented the offices of the Konrad Adenauer Foundation (KAS) in several countries, including Peru, Argentina, Chile, Uruguay, as well as the United Kingdom and the Republic of Ireland. <br><br>He has been head of the Latin America department at KAS headquarters. Ing. Blomeier is the author of numerous political analysis articles, as well as editor and co-author of KAS publications (books and magazines) related to international cooperation as well as political and economic development in the countries where he was posted. Currently he is the representative of KAS Mexico since May 2018.",
+                "image": "/img/speakers/hans_blomeier.webp",
+                "email": "",
+                "phone": "",
+                "moderador": true
+            },
+        ]
     },
     {
         "title": "Cumbre de Desarrollo Industrial Sostenible: Panel: Geopolítica y resiliencia de las cadenas de valor: diversificando los vínculos comerciales globales",
@@ -1382,19 +1432,19 @@ const stage_2_day_2: Program[] = [
                 "phone": "",
                 "moderador": false
             },
-            /*{
+            {
                 "id": "4",
-                "name": "Bárbara Botello",
-                "position": "Directora de Plan de Marca Nacional y Políticas de Marcas Nacionales ",
-                "position_en": "Director of National Brand Plan and National Brand Policies ",
-                "company": "Secretaría de Economía",
-                "bio": "María Bárbara Botello Santibáñez es una destacada abogada, académica y política mexicana con una trayectoria de más de tres décadas en el ámbito jurídico y de servicio público. Ha desarrollado una sólida trayectoria política, desempeñándose en diversos cargos de elección popular y dirección partidista. Su carrera inició como Regidora del Municipio de León (1998-2000), para posteriormente ser Diputada Local en la LX Legislatura del Congreso de Guanajuato (2006-2009) y Diputada Federal en la LXIII Legislatura (2015-2018), donde fue Vicecoordinadora en la Cámara de Diputados. En 2012, hizo historia al convertirse en la primera mujer en presidir el Municipio de León, una ciudad tradicionalmente gobernada por el PAN y considerada un bastión del conservadurismo en México. Desde esta posición, impulsó políticas de desarrollo urbano, seguridad y bienestar social. Durante su gestión, también presidió la Conferencia Nacional de Municipios de México (CONAMM), organismo que representa a los alcaldes del país, y fue Líder de la Federación Nacional de Municipios de México (FENAMM), fortaleciendo el papel de los municipios en el desarrollo nacional. A lo largo de su carrera, Bárbara Botello ha demostrado un fuerte compromiso con la promoción del desarrollo económico, la justicia social y la representación de las mujeres en la vida pública.  Actualmente, continúa su labor en el ámbito empresarial y gubernamental, desempeñándose como Directora de Plan de Marca Nacional y Políticas de Marcas Nacionales en la Secretaría de Economía, desde donde impulsa la iniciativa *Hecho en México*, con el objetivo de fortalecer la industria y el comercio de productos nacionales. Su legado como jurista, servidora pública y líder política la ha consolidado como una de las figuras más influyentes en la vida pública de Guanajuato y México, con una visión enfocada en la transformación y el progreso del país.",
-                "bio_en": "María Bárbara Botello Santibáñez is a prominent Mexican lawyer, academic, and politician with a career spanning over three decades in the legal and public service fields. She has built a solid political career, serving in various elected positions and party leadership roles. Her career began as a Councilor of the Municipality of León (1998-2000), later serving as a Local Deputy in the LX Legislature of the Congress of Guanajuato (2006-2009) and as a Federal Deputy in the LXIII Legislature (2015-2018), where she was Vice-Coordinator in the Chamber of Deputies. In 2012, she made history by becoming the first woman to preside over the Municipality of León, a city traditionally governed by the PAN and considered a bastion of conservatism in Mexico. From this position, she promoted policies for urban development, security, and social welfare. During her tenure, she also chaired the National Conference of Municipalities of Mexico (CONAMM), an organization representing the country's mayors, and was Leader of the National Federation of Municipalities of Mexico (FENAMM), strengthening the role of municipalities in national development. Throughout her career, Bárbara Botello has shown a strong commitment to promoting economic development, social justice, and the representation of women in public life. Currently, she continues her work in the business and governmental fields, serving as Director of National Brand Plan and National Brand Policies at the Ministry of Economy, where she promotes the *Made in Mexico* initiative, aiming to strengthen the industry and trade of national products. Her legacy as a jurist, public servant, and political leader has established her as one of the most influential figures in the public life of Guanajuato and Mexico, with a vision focused on the country's transformation and progress.",
-                "image": "/img/speakers/Barbarabotello.jpeg",
+                "name": "María De Haas Matamoros",
+                "position": "Directora General",
+                "position_en": "General Director",
+                "company": "Oficinas del Secretario en la Secretaría de Economía",
+                "bio": "María Araceli De Haas Matamoros es licenciada en Derecho por la Universidad del Valle de México, maestra en Asuntos Internacionales con la especialidad en Política y Seguridad Internacional por la Universidad Anáhuac y Doctorante en Administración Pública por la Universidad Anáhuac. Cuenta con el Programa para Altos Ejecutivos por Harvard Kennedy School de Washington, Estados Unidos, así como los diplomados en: Innovación Tecnológica en el Siglo XXI por el Tecnológico de Monterrey, en Relaciones Internacionales y Diplomacia Mexicana por el Instituto Matías Romero, en Técnica Parlamentaria en el Centro de Investigación y Docencia Económicas y más de 50 cursos, talleres y seminarios. Con respecto a su experiencia profesional en el servicio público, actualmente es Directora General en las Oficinas del Secretario en la Secretaría de Economía. Anteriormente asumió los cargos de: Directora General de Relaciones Institucionales y Programas Sociales en el Grupo Aeroportuario de la Ciudad de México de la Secretaría de Marina; Directora General de Asuntos Especiales en la Secretaría de Relaciones Exteriores; Directora de Área en la Secretaría de Relaciones Exteriores; Secretaria Técnica de una Comisión Bicameral en el Congreso de la Unión, en la LXIV (64) Legislatura y asesora parlamentaria, en el Congreso de la Unión, LXIV (64) Legislatura.",
+                "bio_en": "María Araceli De Haas Matamoros holds a degree in Law from the Universidad del Valle de México, a master's degree in International Affairs with a specialization in International Politics and Security from the Universidad Anáhuac, and is a Doctorate candidate in Public Administration from the Universidad Anáhuac. She has completed the Executive Program for Senior Executives at Harvard Kennedy School in Washington, United States, as well as diplomas in: Technological Innovation in the 21st Century from Tecnológico de Monterrey, International Relations and Mexican Diplomacy from Instituto Matías Romero, Parliamentary Technique at the Center for Research and Teaching in Economics, and more than 50 courses, workshops, and seminars. Regarding her professional experience in public service, she is currently the General Director in the Offices of the Secretary at the Ministry of Economy. Previously, she held positions such as: General Director of Institutional Relations and Social Programs at the Mexico City Airport Group of the Ministry of the Navy; General Director of Special Affairs at the Ministry of Foreign Affairs; Area Director at the Ministry of Foreign Affairs; Technical Secretary of a Bicameral Commission in the Congress of the Union during the LXIV (64th) Legislature, and parliamentary advisor in the Congress of the Union, LXIV (64th) Legislature.",
+                "image": "/img/speakers/Mariia_De_Haas_Matamoros.jpg",
                 "email": "",
                 "phone": "",
                 "moderador": false
-            },*/ 
+            },
             {
                 "id": "2",
                 "name": "Daniela Rivas",
@@ -1645,13 +1695,13 @@ const stage_2_day_3: Program[] = [
             },
             {
                 "id": "2",
-                "name": "Rodrigo Salcedo",
-                "position": "Presidente ",
-                "position_en": "President",
-                "company": "Asociación Gremial de Vehículos Eléctricos de Chile ",
-                "bio": "Rodrigo Salcedo Campino es Ingeniero Comercial con una trayectoria en la industria logística y energética de Chile, especializándose en sistemas de transporte eléctrico y movilidad sostenible. <br><br>Es presidente de la Asociación Gremial de Vehículos Eléctricos de Chile (AVEC), donde impulsa políticas públicas y difusión del uso de vehículos eléctricos en el país. Es directivo en la Asociación Latinoamericana de Movilidad Sostenible (ALAMOS). <br><br>Ha sido expositor en foros y congresos internacionales - como Tomorrow\.Mobility Barcelona y Smart City Expo en Barcelona - sobre electromovilidad y conectividad eléctrica en América Latina. <br><br>Con participación activa en comisiones legislativas nacionales y mesas técnicas, ha colaborado en iniciativas clave como la Ley de Electromovilidad y la estrategia regulatoria vigente en Chile.",
-                "bio_en": "Rodrigo Salcedo Campino is a Commercial Engineer with a background in the logistics and energy industry in Chile, specializing in electric transport systems and sustainable mobility. <br><br>He is president of the Association Gremial de Vehículos Eléctricos de Chile (AVEC), where he promotes public policies and dissemination of the use of electric vehicles in the country. Director of the Latin American Association for Sustainable Mobility (ALAMOS). <br><br>He has been an exhibitor in international forums and congresses - such as Tomorrow . Mobility Barcelona and Smart City Expo in Barcelona - on electromobility and electrical connectivity in Latin America. <br><br>With active participation in national legislative committees and technical tables, has collaborated on key initiatives such as the Electromobility Law and the current regulatory strategy in Chile.",
-                "image": "/img/speakers/Rodrigo_Salcedo.png",
+                "name": "Javier Arribas Quintana",
+                "position": "Ministro Consejero",
+                "position_en": "Counselor Minister",
+                "company": "Delegación de la Unión Europea en México ",
+                "bio": "Javier Arribas Quintana se desempeña en la Delegación de la Unión Europea en México como Ministro Consejero para la sostenibilidad y la transición energética. Javier ha estado trabajando en la Comisión Europea desde 1993. Recientemente, Javier trabajó como experto senior en la Dirección General de Medio Ambiente (DG ENV) donde cubrió temas relacionados con el comercio y la sostenibilidad, las relaciones con América Latina, la cooperación con el Programa de Medio Ambiente de Naciones Unidas (PNUMA) y la Asamblea de las Naciones Unidas para el Medio Ambiente (UNEA). Javier también ha sido miembro del board del Grupo de Trabajo Conjunto sobre Comercio y Medio Ambiente de la OCDE (JWPTE). En puestos anteriores, cubrió una serie de cuestiones relacionadas con el comercio, los servicios, el mercado interior y el medio ambiente. Se desempeñó como Consejero Financiero de la UE en la Delegación de la UE en China (Beijing) de 2007 a 2012, donde cubrió temas de regulación financiera y acceso al mercado, mercados de capital, banca, seguros y contratación pública. Entre el 2008 y 2018 ha sido ponente ocasional en la Universidad de Zhejiang (Hangzhou) y en el Instituto de Empresa Business School (Shanghai). Desde 2021, Javier también da conferencias sobre temas relacionados con la agenda verde europea y el Global Gateway en el Centre International de Formation Européenne (CIFE). Es Licenciado en Ciencias Políticas (por la Universidad Complutense de Madrid) y Derecho (por la UNED) y Máster en Estudios Europeos (por la Universidad Católica de Lovaina, UCL, 1992; y el Colegio de Europa, 1993). Habla español, inglés, francés e italiano.",
+                "bio_en": "Javier Arribas Quintana is serving at the Delegation of the European Union in Mexico, as Minister Counsellor for sustainability and the energy transition. Javier has been working at the European Commission since 1993. Most recently, he was a Senior Expert at the Directorate-General for the Environment (DG ENV) where he covered issues related to trade and sustainability, relations with Latino America, cooperation with the UN Environment Programme (UNEP) and the UN Environment Assembly (UNEA). Javier was also EU’s bureau member of the OECD Joint Working Party on Trade and Environment. In previous positions, he covered a number of trade, services, internal market and environment related issues. He served as the EU Financial Counsellor at the EU Delegation in China (Beijing) from 2007 to 2012, where he covered financial regulatory and market access issues, capital markets, banking, insurance and public procurement. From 2008 to 2018 he has been occasional lecturer at Zhejiang University (Hangzhou) and at Instituto de Empresa Business School (Shanghai). Since 2021, Javier has been also lecturing on green agenda and global gateway related issues at the Centre International de Formation Européenne (CIFE). He holds University degrees on Political Sciences (Universidad Complutense, Madrid) and Law (UNED) and Master degrees in European Studies (from the Catholic University of Louvain, UCL, 1992; and the College of Europe, 1993). He is fluent in Spanish, English, French and Italian.",
+                "image": "/img/speakers/Javier_Arribas.png",
                 "email": "",
                 "phone": "",
                 "moderador": false
