@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import { RegisterModel } from "./db.js";
 import { email_template } from "./TemplateEmail.js";
 import { email_template_eng } from "./TemplateEmailEng.js";
+import {email_template_student} from "./TemplateEmail_student.js";
 import { generatePDF_freePass, generatePDF_freePass_student, generatePDFInvoice } from "./generatePdf.js";
 import { Resend } from "resend";
 
@@ -362,6 +363,39 @@ async function sendEmail(data, pdfAtch = null, paypal_id_transaction = null) {
   }
 }
 
+async function sendEmailStudent(data, pdfAtch = null, paypal_id_transaction = null) {
+  try {
+    const emailContent = await email_template_student({ ...data })       
+        
+    await resend.emails.send({
+      from: "ITM 2025 <noreply@industrialtransformation.mx>",
+      to: data.email,
+      subject: "Recordatorio de registro estudiante ITM 2025",
+      html: emailContent,
+      attachments: [
+        {
+          filename: `${paypal_id_transaction}.pdf`,
+          path: `https://industrialtransformation.mx/invoices/${paypal_id_transaction}.pdf`,
+          content_type: "application/pdf",
+        },
+      ],
+    });
+
+    return {
+      status: true,
+      message:
+        "Gracias por registrarte, te hemos enviado un correo de confirmación a tu bandeja de entrada...",
+    };
+  } catch (err) {
+    console.log(err);
+    return {
+      status: false,
+      message:
+        "No pudimos enviarte el correo de confirmación de tu registro, por favor descarga tu registro en este pagina y presentalo hasta el dia del evento...",
+    };
+  }
+}
+
 app.get("/get-postalcode/:cp", async (req, res) => {
   const { cp } = req.params;
   const response = await RegisterModel.get_postal_code({ cp });
@@ -398,8 +432,8 @@ app.post("/bulk-send", async (req, res) => {
       const user = users[i];
 
       try {
-        const pdfAtch = await generatePDF_freePass(user, user.uuid);
-        await sendEmail(user, pdfAtch, user.uuid);
+        const pdfAtch = await generatePDF_freePass_student(user, user.uuid);
+        await sendEmailStudent(user, pdfAtch, user.uuid);
 
         console.log(`✅ Enviado a: ${user.email}`);
       } catch (err) {
