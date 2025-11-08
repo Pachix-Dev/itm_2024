@@ -432,7 +432,7 @@ app.post("/bulk-send", async (req, res) => {
       const user = users[i];
 
       try {
-        const pdfAtch = await generatePDF_freePass_student(user, user.uuid);
+        const pdfAtch = await generatePDF_freePass_student(user, user.id, user.uuid);
         await sendEmailStudent(user, pdfAtch, user.uuid);
 
         console.log(`✅ Enviado a: ${user.email}`);

@@ -405,28 +405,7 @@ export class RegisterModel {
           id AS user_id,
           users.*
         FROM users
-        WHERE created_at >= '2025-09-18' 
-        AND (
-          company LIKE '%Benemérita Universidad Autónoma de Puebla%' OR
-          company LIKE '%BUAP%' OR
-          company LIKE '%CBT%' OR
-          company LIKE '%CBTIS%' OR
-          company LIKE '%CETIS%' OR
-          company LIKE '%CONALEP%' OR
-          company LIKE '%ESTUDIANTE%' OR
-          company LIKE '%INSTITUTO%' OR
-          company LIKE '%UVM%' OR
-          company LIKE '%UTL%' OR
-          company LIKE '%UP JR%' OR
-          company LIKE '%UNAM%' OR
-          company LIKE '%UNIEM%' OR
-          company LIKE '%UCI%' OR
-          company LIKE '%UAEH%' OR
-          company LIKE '%TECNOLÓGICO DE ESTUDIOS%' OR
-          company LIKE '%TECNOLÓGICO DE MONTERREY%' OR
-          company LIKE '%ITESM%' OR
-          company LIKE '%IUEM%'
-        )
+        WHERE industry ='SECTOR EDUCATIVO'               
       `);
       
       return rows;
