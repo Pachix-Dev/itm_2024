@@ -1,17 +1,10 @@
 ---
-import Layout from '../../layouts/Layout.astro'
-import Gallery from '../../components/shared/Gallery.jsx'
-import { t, changeLanguage } from 'i18next'
-import {
-  startupPitch2024,
-  itmujeres2024,
-  mtech2024,
-  octoker2024,
-  gallery2024,
-  galleryConferencias2024,
-} from '../../data/constans_gallery_by_year.js'
+import Layout from "../../layouts/Layout.astro";
+import Gallery from "../../components/shared/Gallery.jsx";
+import { t, changeLanguage } from "i18next";
+import { startupPitch2024, itmujeres2024, mtech2024, octoker2024, gallery2024, galleryConferencias2024, } from "../../data/constans_gallery_by_year.js";
 
-changeLanguage('es')
+changeLanguage("es");
 ---
 
 <Layout title={`ITM 2024 | ${t('menu.media_hub_2')} ITM 2019}`}>

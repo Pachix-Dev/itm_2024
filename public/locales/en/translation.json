@@ -92,7 +92,7 @@
         "leyend": "Registration with cost from October 9th $300 MXN",
         "registro_itm_2023": "Register",
         "dateEvent": "Tuesday, Wednesday from 11:00 am to 7:00 pm <br /> Thursday from 11:00 am to 5:00 pm",
-        "date_text_cost": "Registration is open and has a cost of $300 pesos including VAT.",
+        "date_text_cost": "has a cost of $300 pesos including VAT.",
         "highlights_ITM2022": "Industrial Transformation Mexico 2023",
         "description": "<strong>Industrial Transformation Mexico</strong> celebrated its sixth edition as the leading trade show for digital transformation in Latin America, successfully reaffirming our conviction to help Mexico move towards the adoption of the digital and technological agenda, as well as the generation of 4.0 knowledge to move towards more efficient, flexible and sustainable production models.<br /><br /> Once again this year, ITM served as a platform to open diverse spaces for collaboration between the leading exponents of <strong>4.0 technologies</strong> and key players in the global industry.",
         "bullet_1": "EXHIBITORS",
@@ -195,7 +195,8 @@
         "text_19": "Edition",
         "text_20": "SEE COMPLETE GALLERY",
         "exhibitor_confirmed": "EXHIBITORS CONFIRMED",
-        "prensa": "If you are a member of the press, please send a request to the following e-mail address:"
+        "prensa": "If you are a member of the press, please send a request to the following e-mail address:",
+        "register_finish": "Online registration has ended, you can register on site,"
     },
     "aboutPage": {
         "title": "ABOUT US ITM",

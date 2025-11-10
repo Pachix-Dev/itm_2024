@@ -20,16 +20,11 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
         {t('home.titleITM')}
       </p>
       <div data-aos='fade-down' data-aos-duration='1000'>
-        <p class='font-extrabold text-white text-3xl'>
-          {t('home.titleCounter')}
-        </p>
         {/*<p class='text-white text-xl' set:html={t('home.dateEvent')} />*/}
         <p class='mt-5 text-white text-xl pe-5'>
           * {t('home.credential')}
         </p>
-        <p class='mt-5 text-white text-xl pe-5'>
-          * {t('home.date_text_cost')}
-        </p>
+
         <p class='mt-5 text-white text-xl pe-5'>
           * {t('home.media_member')}
           <a href='mailto:dulce.amador@igeco.mx' class='text-blue-700 font-bold'
@@ -73,7 +68,17 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
         minutos={t('home.minutes')}
         segundos={t('home.seconds')}
       />
-      <div class='container mx-auto py-5 px-4 flex justify-center'>
+      <div class='container mx-auto py-5 px-4'>
+        <p class='mt-5 text-white text-xl pe-5'>
+          * {t('home.register_finish')}
+          {t('home.date_text_cost')}
+        </p>
+        <p class='mt-5 font-extrabold text-white text-2xl text-center'>
+          {t('home.titleCounter')}
+        </p>
+        <p class='text-white text-xl pe-5 text-center'>CENTRO BANAMEX, CDMX</p>
+        {
+          /*
         <a
           href={`${base}/registro`}
           class='card p-5 hover:scale-105 ease-in-out duration-300'
@@ -83,8 +88,7 @@ const base = i18next.language === 'es' ? '' : `/${lang}`
           >
         </a>
 
-        {
-          /*
+        
         <p class='text-white text-center text-2xl font-bold'>
           {t('home.proximo')}
         </p>
