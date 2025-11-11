@@ -1435,9 +1435,9 @@ const stage_2_day_2: Program[] = [
             {
                 "id": "4",
                 "name": "María De Haas Matamoros",
-                "position": "Directora General",
+                "position": "Directora General de Coordinación Tecnica en la Oficina del Secretario ",
                 "position_en": "General Director",
-                "company": "Oficinas del Secretario en la Secretaría de Economía",
+                "company": "Secretaría de Economía",
                 "bio": "María Araceli De Haas Matamoros es licenciada en Derecho por la Universidad del Valle de México, maestra en Asuntos Internacionales con la especialidad en Política y Seguridad Internacional por la Universidad Anáhuac y Doctorante en Administración Pública por la Universidad Anáhuac. Cuenta con el Programa para Altos Ejecutivos por Harvard Kennedy School de Washington, Estados Unidos, así como los diplomados en: Innovación Tecnológica en el Siglo XXI por el Tecnológico de Monterrey, en Relaciones Internacionales y Diplomacia Mexicana por el Instituto Matías Romero, en Técnica Parlamentaria en el Centro de Investigación y Docencia Económicas y más de 50 cursos, talleres y seminarios. Con respecto a su experiencia profesional en el servicio público, actualmente es Directora General en las Oficinas del Secretario en la Secretaría de Economía. Anteriormente asumió los cargos de: Directora General de Relaciones Institucionales y Programas Sociales en el Grupo Aeroportuario de la Ciudad de México de la Secretaría de Marina; Directora General de Asuntos Especiales en la Secretaría de Relaciones Exteriores; Directora de Área en la Secretaría de Relaciones Exteriores; Secretaria Técnica de una Comisión Bicameral en el Congreso de la Unión, en la LXIV (64) Legislatura y asesora parlamentaria, en el Congreso de la Unión, LXIV (64) Legislatura.",
                 "bio_en": "María Araceli De Haas Matamoros holds a degree in Law from the Universidad del Valle de México, a master's degree in International Affairs with a specialization in International Politics and Security from the Universidad Anáhuac, and is a Doctorate candidate in Public Administration from the Universidad Anáhuac. She has completed the Executive Program for Senior Executives at Harvard Kennedy School in Washington, United States, as well as diplomas in: Technological Innovation in the 21st Century from Tecnológico de Monterrey, International Relations and Mexican Diplomacy from Instituto Matías Romero, Parliamentary Technique at the Center for Research and Teaching in Economics, and more than 50 courses, workshops, and seminars. Regarding her professional experience in public service, she is currently the General Director in the Offices of the Secretary at the Ministry of Economy. Previously, she held positions such as: General Director of Institutional Relations and Social Programs at the Mexico City Airport Group of the Ministry of the Navy; General Director of Special Affairs at the Ministry of Foreign Affairs; Area Director at the Ministry of Foreign Affairs; Technical Secretary of a Bicameral Commission in the Congress of the Union during the LXIV (64th) Legislature, and parliamentary advisor in the Congress of the Union, LXIV (64th) Legislature.",
                 "image": "/img/speakers/Mariia_De_Haas_Matamoros.jpg",
@@ -1786,7 +1786,7 @@ const stage_2_day_3: Program[] = [
                 "company": "Hyvel",
                 "bio": "",
                 "bio_en": "",
-                "image": "/img/speakers/default.webp",
+                "image": "/img/speakers/Eduardo_Arredondo.jpg",
                 "email": "",
                 "phone": "",
                 "moderador": false
