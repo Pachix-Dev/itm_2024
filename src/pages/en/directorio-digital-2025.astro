@@ -3,6 +3,7 @@ import Layout from "@/layouts/Layout.astro";
 import i18next, { changeLanguage, t } from "i18next";
 import { CheckoutEmail } from "@/components/directorio-digital/CheckoutEmail.jsx";
 import { Meteors } from "../../components/magicui/meteors.jsx";
+import { SearchExihibitor } from "@/components/shared/SearchExihibitor";
 
 changeLanguage("en");
 
@@ -32,11 +33,7 @@ const translations = t("directory", { returnObjects: true });
     <section
       class='container mx-auto px-4 py-10 relative md:grid md:grid-flow-col gap-10'
     >
-      <CheckoutEmail
-        currentLanguage={currentLanguage}
-        translates={translations}
-        client:only
-      />
+      <SearchExihibitor client:load language={currentLanguage} />
       <!-- <div class="relative w-96">
         <div class="sticky top-0">
           <a href="https://www.se.com/mx/es/" target="_blank">
