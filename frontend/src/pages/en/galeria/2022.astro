@@ -7,12 +7,14 @@ import { gallery2022 } from "../../../data/constans_gallery_by_year.js";
 changeLanguage("en");
 ---
 
-<Layout title={`ITM 2024 | ${t("menu.media_hub_2")} ITM 2022}`}>
-    <h1 class="font-bold text-5xl text-center text-red-600 pt-10 uppercase" >{t('menu.itm2022')}</h1>
-    <Gallery
-        images={gallery2022}
-        galleryID={`gallery-2022`}
-        client:only="react"
-        class="px-4 lg:px-20"
-    />
+<Layout title={`ITM 2024 | ${t('menu.media_hub_2')} ITM 2022}`}>
+  <h1 class='font-bold text-5xl text-center text-red-600 pt-10 uppercase'>
+    {t('menu.itm2022')}
+  </h1>
+  <Gallery
+    images={gallery2022}
+    galleryID={`gallery-2022`}
+    client:only='react'
+    class='px-4 lg:px-20'
+  />
 </Layout>

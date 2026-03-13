@@ -6,7 +6,7 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
     <tbody>
         <tr>
           <td colspan="2" align="center">
-            <img src="https://industrialtransformation.mx/header-ITM-register-eng.jpg" alt="logo" width="550">               
+            <img src="https://industrialtransformation.mx/kv_itm_2025_eng_vf.webp" alt="logo" width="550">               
           </td>
         </tr>        
         <tr>
@@ -15,7 +15,7 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
               WELCOME, ${name} ${paternSurname} ${maternSurname}.<BR /> YOUR REGISTRATION WAS SUCCESSFUL.
             </h2>
             <h2 style='text-align: center;'>
-              THANK YOU FOR BEING PART OF <span style="color:#E94568;font-weight:bold;">INDUSTRIAL TRANSFORMATION MEXICO 2024, </span>PRODUCTS AND SOLUTIONS FOR THE SMART FACTORY.
+              THANK YOU FOR BEING PART OF <span style="color:#E94568;font-weight:bold;">INDUSTRIAL TRANSFORMATION MEXICO 2025, </span>THE HOME OF THE NORTH AMERICAN INDUSTRY OF THE FUTURE.
             </h2>
             <div style="text-align: justify;font-size:22px;">
               Discover the latest trends, innovations, insights, tools and technologies brought to you by global leaders in <strong>Automation, Smart Factory and Digital Logistics Solutions,</strong> that are transforming the future of the industry.                    
@@ -23,34 +23,36 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
             <div style="text-align:center;padding:20px;margin-top:25px;">
               <p style="background: #E42128;padding:20px;border-radius:20px;margin:20px;width:fit-content;margin:auto;">
                 <a style="text-decoration:none; color: white;font-weight:bold;" href="https://industrialtransformation.mx/programa" target='_blank'>                 
-                  SEE THE PROGRAM OF EVENTS PARALLEL TO ITM 2024
+                  SEE THE PROGRAM OF EVENTS PARALLEL TO ITM 2025
                 </a>
               <p>
               <p style="margin-top:40px;margin-bottom: 40px;">
-                We look forward to seeing you at the sixth edition of <strong>INDUSTRIAL TRANSFORMATION MEXICO from October 9 to 11, Poliforum, Leon, Guanajuato.</strong>
+                We look forward to seeing you at the sixth edition of <strong>INDUSTRIAL TRANSFORMATION MEXICO from November 11 - 13, CENTRO BANAMEX, CDMX.</strong>
               </p>
               <div style="background: #E42128;color:white;width:fit-content;border-radius: 20px;padding:20px;margin:auto;position:relative;">
                
                <p><strong>SCHEDULES:</strong></p>
-               <p>Wednesday 9 and Thursday 10 from 11:00 am - 7:00 pm hrs.</p>
-               <p>Friday 11 from 11:00 am - 5:00 pm hrs</p>
+               <p>Tuesday 11:00 am – 19:00 hrs<br />
+                  Wednesday 11:00 am – 19:00 hrs<br />
+                  Thursday 11:00 am – 17:00 hrs
+                </p>              
               </div>
             </div>               
             <p style="font-weight:bold;font-size:20px;text-align: center;">ADD TO CALENDAR</p>
             <div style="text-align:center;padding:20px;margin: 20px;">
-              <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;margin:20px;text-decoration:none;" href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20241009T170000Z%2F20241012T010000Z&details=Industrial%20Transformation%20Mexico%20es%20un%20evento%20interesante%20e%20inclusivo%20en%20el%20que%20los%20actores%20clave%20y%20los%20grupos%20objetivo%20se%20re%C3%BAnen%20para%20crear%20redes%20y%20oportunidades%20de%20intercambio%20de%20conocimientos%20para%20el%20%C3%A9xito%20empresarial.%0A&location=Poliforum%2C%20Le%C3%B3n&text=INDUSTRIAL%20TRANSFORMATION%20MEXICO%202024"
+              <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;margin:20px;text-decoration:none;" href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20251111T170000Z%2F20251114T010000Z&details=THANK%20YOU%20FOR%20BEING%20PART%20OF%20INDUSTRIAL%20TRANSFORMATION%20MEXICO%202025%2C%20%20THE%20HOME%20OF%20THE%20NORTH%20AMERICAN%20INDUSTRY%20OF%20THE%20FUTURE.&location=CENTRO%20BANAMEX%2C%20CDMX&text=INDUSTRIAL%20TRANSFORMATION%20MEXICO%202025"
               target="_blank">                        
                 Google
               </a>                           
             </div>
             <div style="text-align:center;padding:20px;margin: 20px;">
-                 <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;text-decoration:none;" href="https://outlook.live.com/calendar/0/action/compose?allday=false&body=Industrial%20Transformation%20Mexico%20es%20un%20evento%20interesante%20e%20inclusivo%20en%20el%20que%20los%20actores%20clave%20y%20los%20grupos%20objetivo%20se%20re%C3%BAnen%20para%20crear%20redes%20y%20oportunidades%20de%20intercambio%20de%20conocimientos%20para%20el%20%C3%A9xito%20empresarial.%0A&enddt=2024-10-11T19%3A00%3A00&location=Poliforum%2C%20Le%C3%B3n&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2024-10-09T11%3A00%3A00&subject=INDUSTRIAL%20TRANSFORMATION%20MEXICO%202024
+                 <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;text-decoration:none;" href="https://outlook.live.com/calendar/0/action/compose?allday=false&body=THANK%20YOU%20FOR%20BEING%20PART%20OF%20INDUSTRIAL%20TRANSFORMATION%20MEXICO%202025%2C%20%20THE%20HOME%20OF%20THE%20NORTH%20AMERICAN%20INDUSTRY%20OF%20THE%20FUTURE.&enddt=2025-11-13T19%3A00%3A00&location=CENTRO%20BANAMEX%2C%20CDMX&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2025-11-11T11%3A00%3A00&subject=INDUSTRIAL%20TRANSFORMATION%20MEXICO%202025"
               target="_blank">                       
                 Outlook
               </a>
             </div>                   
             <div style="text-align:center;padding:20px;margin: 20px;">
-              <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;margin:20px;text-decoration:none;" href="https://calendar.yahoo.com/?desc=Industrial%2520Transformation%2520Mexico%2520es%2520un%2520evento%2520interesante%2520e%2520inclusivo%2520en%2520el%2520que%2520los%2520actores%2520clave%2520y%2520los%2520grupos%2520objetivo%2520se%2520re%25C3%25BAnen%2520para%2520crear%2520redes%2520y%2520oportunidades%2520de%2520intercambio%2520de%2520conocimientos%2520para%2520el%2520%25C3%25A9xito%2520empresarial.%250A&dur=false&et=20241012T010000Z&in_loc=Poliforum%2C+Le%C3%B3n&st=20241009T170000Z&title=INDUSTRIAL%2520TRANSFORMATION%2520MEXICO%25202024&v=60"
+              <a style="background: rgb(18,172,255);background: linear-gradient(90deg, rgba(18,172,255,1) 0%, rgba(10,61,255,1) 100%);color:white;padding:20px;border-radius:20px;margin:20px;text-decoration:none;" href="https://calendar.yahoo.com/?desc=THANK%2520YOU%2520FOR%2520BEING%2520PART%2520OF%2520INDUSTRIAL%2520TRANSFORMATION%2520MEXICO%25202025%252C%2520%2520THE%2520HOME%2520OF%2520THE%2520NORTH%2520AMERICAN%2520INDUSTRY%2520OF%2520THE%2520FUTURE.&dur=false&et=20251114T010000Z&in_loc=CENTRO+BANAMEX%2C+CDMX&st=20251111T170000Z&title=INDUSTRIAL%2520TRANSFORMATION%2520MEXICO%25202025&v=60"
               target="_blank">
                 
               <i>Y!</i> Yahoo!
@@ -83,27 +85,20 @@ const email_template_eng = async ({ name, paternSurname, maternSurname}) => {
         <tr>
           <td style="padding:20px;" align="center">
             <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
-              <a style="text-decoration:none;color:white;">
+              <a style="text-decoration:none;color:white;" href="https://igeco.mx/" target="_blank">
                 FIND OUT ABOUT ALL OUR EVENTS
               </a>
             </p>          
           </td>
           <td style="padding:20px;" align="center">
             <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
-              <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/files/Floorplan_ITM_2024_31.05.2023.pdf" target="_blank">
-                ITM 2024 FLOOR PLAN 
+              <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/plano-itm-2025/" target="_blank">
+                ITM 2025 FLOOR PLAN 
               </a>
             </p>         
           </td>
         </tr> 
-        <tr>
-          <td style="padding:20px;" align="center">
-           <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
-            <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/hotels" target="_blank">
-              BOOK HERE YOUR LODGING<br /> WITH PREFERENTIAL RATES
-            </a>
-           </p>           
-          </td>
+        <tr>          
           <td style="padding:20px;" align="center">
             <p style="background: #E42128;width:fit-content;border-radius: 20px;padding:20px;margin:auto;">
               <a style="text-decoration:none;color:white;" href="https://industrialtransformation.mx/registro" target="_blank">

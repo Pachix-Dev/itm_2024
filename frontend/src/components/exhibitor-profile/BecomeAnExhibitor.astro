@@ -7,10 +7,10 @@ import RedButton from '../shared/RedButton.astro'
 ---
 
 <section
-  class='bg-black bg-cover bg-center bg-no-repeat bg-fixed text-white px-5 md:px-10 lg:px-20 py-10 grid md:grid-cols-3 gap-20'
+  class='bg-black bg-cover bg-center bg-no-repeat bg-fixed text-white px-5 md:px-10 lg:px-20 py-10 grid md:grid-cols-2 gap-20'
 >
-  <div class='col-span-2'>
-    <p>INDUSTRIAL TRANSFORMATION MEXICO 2024</p>
+  <div>
+    <p>INDUSTRIAL TRANSFORMATION MEXICO</p>
     <div class='my-3 square_blue w-full font-bold text-2xl md:text-6xl px-4'>
       {t('profile.subtitle')}
     </div>
@@ -20,22 +20,24 @@ import RedButton from '../shared/RedButton.astro'
     >
       <RedButton
         href={i18n.language === 'en'
-          ? '/files/Factsheet_ITM_ENG_v2_120124.pdf'
-          : '/files/Factsheet_ITM_2024_AC_ESP_VF_08-03-2024.pdf'}
+          ? '/files/ITM-FACTSHEET-ENG-V2-2025_compressed.pdf'
+          : '/files/ITM-FACTSHEET-ESP-V2-2025_compressed.pdf'}
         withIcon={true}
         openInNewTab={true}
       >
-        Factsheet 2024
+        Factsheet 2025
       </RedButton>
       <RedButton
-        href='/files/Floorplan_ITM_2024_04.10.2024.pdf'
+        href={i18n.language === 'es'
+          ? '/plano-itm-2025/'
+          : '/en/plano-itm-2025/'}
         withIcon={true}
         openInNewTab={true}
       >
         {t('menu.exhibitors_5')}
       </RedButton>
       <RedButton
-        href='/files/ITM2024-SpaceAgreement-ED-jun.pdf'
+        href='/files/ITM2025-SpaceAgreement.pdf'
         withIcon={true}
         openInNewTab={true}
       >
@@ -46,9 +48,13 @@ import RedButton from '../shared/RedButton.astro'
       </RedButton>
     </ul>
   </div>
-  <div class='p-12 bg-[url(/img/bg_videoExpositor.webp)] bg-cover bg-no-repeat'>
+  <div
+    class='p-12 bg-[url(/img/bg_videoExpositor.webp)] bg-cover bg-no-repeat my-auto'
+  >
     <video
-      src='/videos/ITM_2023_exhibitor.mp4'
+      src={i18n.language === 'es'
+        ? '/videos/itm_resumen_2024.mp4'
+        : '/videos/itm_resumen_2024_eng.mp4'}
       autoplay
       loop
       muted

@@ -32,7 +32,8 @@ const stage_1_day_1=[
                 "image": "/img/speakers/alfredo_rodríguez.webp",
                 "moderador": true
             }
-        ]
+        ],
+        "boletin": '/files/boletin-prensa-mesa-1-First-Global-Business-Summit.pdf'
     },
     {
         "title": "Traslado a Inauguración",
@@ -132,7 +133,8 @@ const stage_1_day_1=[
             "image": "/img/speakers/arturo_oropeza.webp",
             "moderador": true
             }
-        ]
+        ],
+       "boletin": '/files/boletin-prensa-mesa-2-First-Global-Business-Summit.pdf'
     },
     {
         "title": "COMIDA LIBRE",
@@ -189,7 +191,8 @@ const stage_1_day_1=[
                 "image": "/img/speakers/manuel_perez_cardenas.webp",
                 "moderador": true
             },
-        ]
+        ],
+        "boletin": '/files/boletin-prensa-mesa-3-First-Global-Business-Summit.pdf'
     },       
     {
         "title": "MESA 4:<br /> LA INDUSTRIA AEROESPACIAL MEXICANA: Expansión extraordinaria de una industria de frontera tecnológica.<br /> <span class='font-normal text-white'> Oportunidades para la empresa mexicana</span>",
@@ -233,7 +236,8 @@ const stage_1_day_1=[
                 "moderador": true
 
             }
-        ]
+        ],
+        "boletin": '/files/boletin-prensa-mesa-4-First-Global-Business-Summit.pdf'
     },
     {
         "title": "NETWORKING",
@@ -287,7 +291,8 @@ const statge_1_day_2=[
                 "image": "/img/speakers/francisco_gonzalez_diaz_new.webp",
                 "moderador": true
             }
-        ]
+        ],
+        "boletin": '/files/boletin-prensa-mesa-5-First-Global-Business-Summit.pdf'
     },
     {
         "title": "MESA 6:<br /> SUSTENTABILIDAD Y RESPONSABILIDAD SOCIAL EMPRESARIAL:<br /> <span class='font-normal text-white'>Metas 2030-2050</span>",
@@ -329,7 +334,8 @@ const statge_1_day_2=[
                 "image": "/img/speakers/robertonovoa.webp",
                 "moderador": true
             }
-        ]
+        ],
+        "boletin": '/files/boletin-prensa-mesa-6-First-Global-Business-Summit.pdf'
     },
     {
         "title": "VISITA A ITM (guiada o libre) / COMIDA LIBRE",
@@ -380,7 +386,8 @@ const statge_1_day_2=[
                 "moderador": true
             }
 
-        ]
+        ],
+        "boletin": '/files/boletin-prensa-mesa-7-First-Global-Business-Summit.pdf'
     },
     {
         "title": "<strong class='text-white'><u>PANEL DOS : </u></strong><br />CAPACIDADES ACTUALES DE MÉXICO APLICABLES AL SECTOR ESPACIAL",

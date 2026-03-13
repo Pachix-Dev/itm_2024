@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { directory } from '../../data/constans_directory'
+import { directory } from '../../data/constans_directory_2025.js'
 
 export function SearchExihibitor({ language }) {
   const [searchTerm, setSearchTerm] = useState(directory || [])
@@ -23,13 +23,13 @@ export function SearchExihibitor({ language }) {
         placeholder='Search exhibitor'
         onChange={(e) => searchResults(e.target.value)}
       />
-      <a href='https://www.telcel.com/empresas' target='_blank'>
+      {/* <a href='https://www.telcel.com/empresas' target='_blank'>
         <img
           src='/img/telcel_empresas_itm_2.webp'
           alt='Schneider'
           class='mt-5 w-96'
         />
-      </a>
+      </a> */}
       {searchTerm.length > 0 &&
         searchTerm.map((item, index) => (
           <div
@@ -47,7 +47,7 @@ export function SearchExihibitor({ language }) {
             <div className='md:col-span-2'>
               <span className='ms-[-10px] font-bold'>{item.stand_number}</span>
               <h2 className='text-2xl font-bold'>{item.name}</h2>
-              <p className='text-lg mt-2'>
+              <p className='text-lg mt-2 text-justify'>
                 {language === 'es' ? item.description : item.description_en}
               </p>
               <div className='mt-2 text-lg flex items-center gap-1'>
@@ -75,7 +75,7 @@ export function SearchExihibitor({ language }) {
             </div>
 
             <div>
-              <p className='font-bold text-lg'>{item.contact}</p>
+              {/*<p className='font-bold text-lg'>{item.contact}</p>
               <p className='italic'>{item.position}</p>
               <p className='text-lg flex items-center gap-2'>
                 <svg
@@ -114,9 +114,11 @@ export function SearchExihibitor({ language }) {
                 </svg>
                 {item.email}
               </a>
+              */}
               <a
-                href={`mailto:${item.webpage}`}
+                href={`${item.webpage}`}
                 className='text-lg flex items-center gap-2 hover:text-red-600'
+                target="_blank"
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -134,10 +136,11 @@ export function SearchExihibitor({ language }) {
                 </svg>
                 {item.webpage}
               </a>
-              <div className='mt-2 flex gap-2'>
+              <div className='mt-2 flex gap-4'>
                 {item?.facebook && (
                   <a
                     href={item.facebook}
+                    target="_blank"
                     className='text-lg flex items-center gap-2 *:hover:fill-red-600'
                   >
                     <svg
@@ -154,6 +157,7 @@ export function SearchExihibitor({ language }) {
                 {item?.instagram && (
                   <a
                     href={item.instagram}
+                    target="_blank"
                     className='text-lg flex items-center gap-2 *:hover:fill-red-600'
                   >
                     <svg
@@ -170,6 +174,7 @@ export function SearchExihibitor({ language }) {
                 {item?.linkedIn && (
                   <a
                     href={item.linkedIn}
+                    target="_blank"
                     className='text-lg flex items-center gap-2 *:hover:fill-red-600'
                   >
                     <svg
@@ -186,6 +191,7 @@ export function SearchExihibitor({ language }) {
                 {item?.x && (
                   <a
                     href={item.x}
+                    target="_blank"
                     className='text-lg flex items-center gap-2 *:hover:fill-red-600'
                   >
                     <svg
@@ -202,6 +208,7 @@ export function SearchExihibitor({ language }) {
                 {item?.youtube && (
                   <a
                     href={item.youtube}
+                    target="_blank"
                     className='text-lg flex items-center gap-2 *:hover:fill-red-600'
                   >
                     <svg

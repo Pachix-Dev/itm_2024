@@ -15,6 +15,11 @@
     "start": "npm run start -w backend"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "concurrently": "^9.1.2"
+=======
+    "axios": "^1.7.2",    
+    "xlsx": "^0.18.5"
+>>>>>>> 0691992e267d29c9fb58e34d47fe97f34891873c
   }
 }

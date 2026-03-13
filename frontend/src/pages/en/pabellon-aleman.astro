@@ -6,19 +6,43 @@ import RedButton from "../../components/shared/RedButton.astro";
 changeLanguage("en");
 ---
 
-<Layout title={`ITM 2024 | ${t('menu.exhibitors_12')}`}>
-  <main class="min-h-screen flex flex-col justify-center items-center gap-12 bg-cover bg-no-repeat bg-center">  
-    <h1 class="text-white text-4xl font-bold text-center" >{t('germanPavilion.title-exhibitor')}</h1>
-    <div class="flex flex-wrap gap-5 px-5 justify-center">
-      <RedButton href="/files/Fact%20Sheet%20German%20Pavilion_DE.pdf" withIcon={false} className="text-2xl font-semibold *:p-5" openInNewTab={true}>Factsheet DE</RedButton>
-      <RedButton href="/files/Fact%20Sheet%20German%20Pavilion_EN.pdf" withIcon={false} className="text-2xl font-semibold *:p-5" openInNewTab={true}>Factsheet ENG</RedButton>
-      <RedButton href="/files/ITM2024-German%20Pavilion_Contract.pdf" withIcon={false} className="text-2xl font-semibold *:p-5" openInNewTab={true}>{t('germanPavilion.agreement')}</RedButton>
+<Layout title={`ITM 2025 | ${t('menu.exhibitors_12')}`}>
+  <main
+    class='min-h-screen flex flex-col justify-center items-center gap-12 bg-cover bg-no-repeat bg-center'
+  >
+    <h1 class='text-white text-4xl font-bold text-center'>
+      {t('germanPavilion.title-exhibitor')}
+    </h1>
+    <div class='flex flex-wrap gap-5 px-5 justify-center'>
+      <RedButton
+        href='/files/Fact%20Sheet%20German%20Pavilion_DE.pdf'
+        withIcon={false}
+        className='text-2xl font-semibold *:p-5'
+        openInNewTab={true}>Factsheet DE</RedButton
+      >
+      <RedButton
+        href='/files/Fact%20Sheet%20German%20Pavilion_EN.pdf'
+        withIcon={false}
+        className='text-2xl font-semibold *:p-5'
+        openInNewTab={true}>Factsheet ENG</RedButton
+      >
+      <RedButton
+        href='/files/ITM2024-German%20Pavilion_Contract.pdf'
+        withIcon={false}
+        className='text-2xl font-semibold *:p-5'
+        openInNewTab={true}>{t('germanPavilion.agreement')}</RedButton
+      >
     </div>
   </main>
 </Layout>
 
 <style>
   main {
-    background-image: repeating-linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/img/stand_render_itm.webp');
+    background-image: repeating-linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url('/img/stand_render_itm.webp');
   }
 </style>

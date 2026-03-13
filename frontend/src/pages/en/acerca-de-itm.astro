@@ -5,16 +5,32 @@ import Layout from "../../layouts/Layout.astro";
 changeLanguage("en");
 ---
 
-<Layout title={`ITM 2024 | ${t('menu.about_1')}`}>
+<Layout title={`ITM 2025 | ${t('menu.about_1')}`}>
   <main>
-    <h1 class="text-center text-3xl md:text-4xl font-bold text-[#e00d1b] py-8 md:py-12">{t('aboutPage.title')}</h1>
-    <section class="bg-[#f8f8f8] flex"> 
-      <div class="invisible md:visible w-1/2 bg-cover bg-fixed bg-center bg-no-repeat bg-[url('/img/bgabout_1.jpg')]"></div>
-      <p class="p-10 lg:p-20 text-justify md:w-1/2" set:html={t('aboutPage.description_1')}></p>
+    <h1
+      class='text-center text-3xl md:text-4xl font-bold text-[#e00d1b] py-8 md:py-12'
+    >
+      {t('aboutPage.title')}
+    </h1>
+    <section class='bg-[#f8f8f8] flex'>
+      <div
+        class="invisible md:visible w-1/2 bg-cover bg-fixed bg-center bg-no-repeat bg-[url('/img/bgabout_1.jpg')]"
+      >
+      </div>
+      <p
+        class='p-10 lg:p-20 text-justify md:w-1/2'
+        set:html={t('aboutPage.description_1')}
+      />
     </section>
-    <section class="bg-[#f8f8f8] flex">
-      <p class="p-10 text-justify md:w-1/2" set:html={t('aboutPage.description_2')}></p>
-      <div class="invisible md:visible w-1/2 bg-cover bg-fixed bg-center bg-no-repeat bg-[url('/img/bgabout_2.jpg')]"></div>
+    <section class='bg-[#f8f8f8] flex'>
+      <p
+        class='p-10 text-justify md:w-1/2'
+        set:html={t('aboutPage.description_2')}
+      />
+      <div
+        class="invisible md:visible w-1/2 bg-cover bg-fixed bg-center bg-no-repeat bg-[url('/img/bgabout_2.jpg')]"
+      >
+      </div>
     </section>
   </main>
 </Layout>

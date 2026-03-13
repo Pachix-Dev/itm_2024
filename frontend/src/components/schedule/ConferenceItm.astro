@@ -1,5 +1,5 @@
 ---
-import i18next from 'i18next'
+import i18next, { t } from 'i18next'
 
 interface Speaker {
   id?: string
@@ -59,7 +59,7 @@ const { item, key } = Astro.props as Props
       item.speakers.length === 0 ? (
         ''
       ) : (
-        <p class="mt-2 font-extrabold">Panelistas: </p>
+        <p class="mt-2 font-extrabold">{t("program.panelists")}</p>
 
         <ul class="mt-2 ms-2 gap-2 grid grid-cols-2">
           {item.speakers.map((speaker) => (

@@ -1,8 +1,9 @@
 import { useRegisterForm } from '../../store/register-form'
 
 import { StepOne } from './StepOne'
-import { StepThree } from './StepThree'
 import { StepTwo } from './StepTwo'
+import { StepThree } from './StepThree'
+import { StepFour } from './SetpFour'
 import { Stepper } from './Stepper'
 
 export function RegisterForm({ translates, currentLanguage }) {
@@ -12,7 +13,9 @@ export function RegisterForm({ translates, currentLanguage }) {
     <section className='py-5'>
       <Stepper translates={translates} />
       <form className='mx-auto'>
-        {step === 0 && <StepOne translates={translates} />}
+        {step === 0 && (
+          <StepOne translates={translates} currentLanguage={currentLanguage} />
+        )}
         {step === 1 && <StepTwo translates={translates} />}
         {step === 2 && (
           <StepThree
@@ -20,6 +23,9 @@ export function RegisterForm({ translates, currentLanguage }) {
             currentLanguage={currentLanguage}
           />
         )}
+        {/*step === 3 && (
+          <StepFour translates={translates} currentLanguage={currentLanguage} />
+        )*/}
       </form>
     </section>
   )

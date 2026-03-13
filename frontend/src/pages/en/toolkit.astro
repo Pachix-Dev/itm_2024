@@ -1,0 +1,23 @@
+---
+import i18n, { t, changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import { toolkitES, toolkitEN } from "../../data/constans_toolkit";
+import { ToolkitItm } from "../../components/shared/ToolkitItm.jsx";
+
+changeLanguage("en");
+---
+
+<Layout title={`ITM 2025 | Toolkit`}>
+  <section class='py-5 container mx-auto px-4'>
+    <h1 class='text-center text-[#E8001E] font-bold text-3xl'>
+      {t('toolkit.title')}
+    </h1>
+
+    <ToolkitItm
+      images={i18n.language === 'es' ? toolkitES : toolkitEN}
+      galleryID='gallery'
+      client:only='react'
+      class='py-20'
+    />
+  </section>
+</Layout>

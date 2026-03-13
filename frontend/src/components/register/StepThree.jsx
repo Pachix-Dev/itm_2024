@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form'
 import { useRegisterForm } from '../../store/register-form'
-import { useState } from 'react'
 import { MultiSelect } from 'react-multi-select-component'
+import { useState } from 'react'
 
 export function StepThree({ translates, currentLanguage }) {
   const {
@@ -37,14 +37,13 @@ export function StepThree({ translates, currentLanguage }) {
     setLevelInfluence,
     setWannaBeExhibitor,
     setAlreadyVisited,
+    incrementStep,
+    decrementStep,
+    setUser_id,
+    clear,
     setCompleteRegister,
     setInvoiceDownToLoad,
-    decrementStep,
-    clear,
   } = useRegisterForm()
-
-  const [message, setMessage] = useState('')
-  const [processing, setProcessing] = useState(false)
 
   const options = [
     { label: 'Expo Manufactura', value: 'Expo Manufactura' },
@@ -61,9 +60,12 @@ export function StepThree({ translates, currentLanguage }) {
     { label: 'Expo Eléctrica', value: 'Expo Eléctrica' },
     { label: 'Meximold', value: 'Meximold' },
     { label: 'Fitma', value: 'Fitma' },
-    { label: 'ITMS', value: 'ITMS' },
+    { label: 'IMTS', value: 'IMTS' },
     { label: 'Hannover Messe (Alemania)', value: 'Hannover Messe (Alemania)' },
   ]
+
+  const [message, setMessage] = useState('')
+  const [processing, setProcessing] = useState(false)
 
   const {
     register,
@@ -71,10 +73,11 @@ export function StepThree({ translates, currentLanguage }) {
     formState: { errors },
   } = useForm({})
 
-  const urlbase = 'https://industrialtransformation.mx/server/'
-  //const urlbase = 'http://localhost:3010/'
+  const urlbase = import.meta.env.DEV
+    ? 'http://localhost:3010/'
+    : 'https://industrialtransformation.mx/server/'
 
-  const handleRegister = async () => {
+  async function saveUser() {
     setProcessing(true)
     const response = await fetch(urlbase + 'free-register', {
       method: 'POST',
@@ -91,7 +94,6 @@ export function StepThree({ translates, currentLanguage }) {
         genre,
         nacionality,
         code_invitation,
-
         company,
         industry,
         position,
@@ -105,7 +107,6 @@ export function StepThree({ translates, currentLanguage }) {
         postalCode,
         webPage,
         phoneCompany,
-
         eventKnowledge,
         productInterest,
         levelInfluence,
@@ -114,22 +115,33 @@ export function StepThree({ translates, currentLanguage }) {
         currentLanguage,
       }),
     })
-    const orderData = await response.json()
-    if (orderData.status) {
-      clear()
-      setCompleteRegister(true)
-      setInvoiceDownToLoad(orderData?.invoice)
-      currentLanguage === 'es'
-        ? (window.location.href = '/gracias-por-registrarte')
-        : (window.location.href = '/en/gracias-por-registrarte')
+    const json = await response.json()
+    console.log(json)
+    /*if (json.status) {
+      setProcessing(false)
+      setUser_id(json.insertId)
+      incrementStep()
     } else {
       setProcessing(false)
-      setMessage(orderData?.message)
+      setMessage(json.message)
+    }*/
+
+    if (json.status) {
+      clear()
+      setCompleteRegister(true)
+      setInvoiceDownToLoad(json?.invoice)
+      currentLanguage === 'es'
+        ? (window.location.href = '/gracias-por-tu-compra')
+        : (window.location.href = '/en/gracias-por-tu-compra')
+    } else {
+      setProcessing(false)
+      setMessage(json?.message)
       setTimeout(() => {
         setMessage('')
       }, 5000)
     }
   }
+
   return (
     <>
       <div className='grid md:grid-cols-2 gap-6 mt-5'>
@@ -146,14 +158,16 @@ export function StepThree({ translates, currentLanguage }) {
             className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black uppercase'
           >
             <option value=''>{translates.select_option}</option>
-            <option value='ESPECTACULAR'>{translates.spectacular}</option>
-            <option value='PAGINA WEB'>{translates.website}</option>
-            <option value='CORREO ELÉCTRONICO/MAILING'>MAILING</option>
             <option value='FACEBOOK'>FACEBOOK</option>
+            <option value='INSTAGRAM'>INSTAGRAM</option>
+            <option value='WHATSAPP'>WHATSAPP</option>
+            <option value='CORREO ELECTRÓNICO'>{translates.email}</option>
+            <option value='TIKTOK'>TIKTOK</option>
+
+            <option value='PAGINA WEB'>{translates.website}</option>
             <option value='TWITTER'>TWITTER</option>
             <option value='LINKEDIN'>LINKEDIN</option>
-            <option value='INSTAGRAM'>INSTAGRAM</option>
-            <option value='CORREO ELECTRÓNICO'>{translates.email}</option>
+
             <option value='INVITADO POR EXPOSITOR'>
               {translates.guest_by_exhibitor}
             </option>
@@ -161,7 +175,7 @@ export function StepThree({ translates, currentLanguage }) {
             <option value='TELEVISIÓN'>{translates.television}</option>
             <option value='PRENSA'>{translates.press}</option>
             <option value='ANUNCIO EN REVISTA'>{translates.magazine_ad}</option>
-            <option value='TELEMARKETING'>TELEMARKETING</option>
+            <option value='ESPECTACULAR'>{translates.spectacular}</option>
           </select>
           {errors.eventKnowledge && (
             <p className='text-[#ffe200] font-light'>
@@ -263,35 +277,6 @@ export function StepThree({ translates, currentLanguage }) {
             className='mt-2 w-full text-sm text-white *:text-black uppercase'
             hasSelectAll={false}
           />
-          {/*<select
-            {...register('alreadyVisited', {
-              onChange: (e) => setAlreadyVisited(e.target.value),
-            })}
-            defaultValue={alreadyVisited}
-            className='mt-2 w-full rounded-lg bg-transparent border border-gray-200 p-4 pe-12 text-sm text-white *:text-black'
-          >
-            <option value=''>{translates.select_option}</option>
-            <option value='Expo Manufactura'>Expo Manufactura</option>
-            <option value='Expomaq'>Expomaq</option>
-            <option value='Fabtech'>Fabtech</option>
-            <option value='Tecma'>Tecma</option>
-            <option value='The Logistics World'>The Logistics World</option>
-            <option value='Automate'>Automate</option>
-            <option value='Expo Logística y Transporte'>
-              Expo Logística y Transporte
-            </option>
-            <option value='Expo Pack'>Expo Pack</option>
-            <option value='Expo Eléctrica'>Expo Eléctrica</option>
-            <option value='Meximold'>Meximold</option>
-            <option value='Fitma'>Fitma</option>
-            <option value='Fitma'>ITMS </option>
-            <option value='Fitma'>Hannover Messe (Alemania)</option>
-          </select>
-          {errors.alreadyVisited && (
-            <p className='text-[#ffe200] font-light'>
-              {errors.alreadyVisited.message}
-            </p>
-          )}*/}
         </div>
       </div>
       <div className='flex justify-between'>
@@ -316,17 +301,17 @@ export function StepThree({ translates, currentLanguage }) {
           {translates.back}
         </button>
         <button
-          className='px-3 py-2 bg-[#E42128] hover:bg-red-700 font-bold rounded-2xl text-white  mt-5 flex gap-2'
-          onClick={handleSubmit(handleRegister)}
+          className='px-3 py-2 bg-[#E42128] hover:bg-red-700 rounded-2xl text-white font-bold mt-5 flex gap-2'
+          onClick={handleSubmit(saveUser)}
         >
-          {translates.finish}
+          {translates.continue}
         </button>
       </div>
       {message && (
         <p className='mt-5 text-red-600 font-bold text-center'>{message}</p>
       )}
       {processing && (
-        <div className='absolute top-0 left-0 bg-gray-400 bg-opacity-85 z-[999] w-full h-full px-4'>
+        <div className='fixed top-0 left-0 bg-gray-400 bg-opacity-85 z-[999] w-full h-full px-4'>
           <div role='status' className='grid place-items-center w-full h-full'>
             <p className='text-center flex gap-2'>
               <svg
