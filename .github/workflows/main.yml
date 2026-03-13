@@ -15,7 +15,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
+        run: npm run build -w frontend
 
       - name: deploy frontend to server
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
@@ -23,7 +23,7 @@ jobs:
           username: '${{ secrets.SFTP_USERNAME }}'
           server: '${{ secrets.SERVER }}'
           port: '${{ secrets.SSH_PORT }}'
-          local_path: './dist/*'
+          local_path: './frontend/dist/*'
           remote_path: '/home/industrialtransf/public_html/'
           sftp_only: true
           password: '${{ secrets.SFTP_PASSWORD }}'
@@ -34,7 +34,7 @@ jobs:
           username: '${{ secrets.SFTP_USERNAME }}'
           server: '${{ secrets.SERVER }}'
           port: '${{ secrets.SSH_PORT }}'
-          local_path: './server'
+          local_path: './backend'
           remote_path: '/home/industrialtransf/public_html/'
           sftp_only: true
           password: '${{ secrets.SFTP_PASSWORD }}'

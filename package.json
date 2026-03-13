@@ -1,50 +1,20 @@
 {
-  "name": "itm_2024",
-  "type": "module",
-  "version": "0.0.1",
+  "name": "itm_2024_monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "scripts": {
-    "i18n": "npx astro-i18next generate",
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "generateProgram": "node ./scripts/generateProgram.js"
-  },
-  "dependencies": {
-    "@appnest/masonry-layout": "^2.2.3",
-    "@astrojs/check": "^0.4.1",
-    "@astrojs/react": "^3.0.6",
-    "@astrojs/sitemap": "^3.1.6",
-    "@astrojs/tailwind": "^5.1.0",
-    "@justinribeiro/lite-youtube": "^1.5.0",
-    "@paypal/react-paypal-js": "^8.3.0",
-    "@types/canvas-confetti": "^1.6.4",
-    "18n": "^0.0.1",
-    "astro": "^4.3.3",
-    "astro-i18next": "^1.0.0-beta.21",
-    "astro-navbar": "^2.3.2",
-    "canvas-confetti": "^1.9.3",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
-    "framer-motion": "^11.3.27",
-    "intersection-observer": "^0.12.2",
-    "lucide-react": "^0.427.0",
-    "photoswipe": "^5.4.3",
-    "react": "^18.3.1",
-    "react-animated-cursor": "^2.11.2",
-    "react-dom": "^18.3.1",
-    "react-hook-form": "^7.51.4",
-    "react-multi-select-component": "^4.3.4",
-    "react-phone-number-input": "^3.4.3",
-    "tailwind-merge": "^2.5.2",
-    "tailwindcss": "^3.4.3",
-    "tailwindcss-animate": "^1.0.7",
-    "typescript": "^5.4.5",
-    "zustand": "^4.5.2"
+    "dev": "concurrently -k -n FRONTEND,BACKEND -c cyan,green \"npm run dev -w frontend\" \"npm run dev -w backend\"",
+    "dev:frontend": "npm run dev -w frontend",
+    "dev:backend": "npm run dev -w backend",
+    "build": "npm run build -w frontend",
+    "preview": "npm run preview -w frontend",
+    "start": "npm run start -w backend"
   },
   "devDependencies": {
-    "axios": "^1.7.2",
-    "xlsx": "^0.18.5"
+    "concurrently": "^9.1.2"
   }
 }
