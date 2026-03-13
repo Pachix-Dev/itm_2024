@@ -1,0 +1,30 @@
+---
+import { t } from 'i18next'
+---
+
+<section class='bg-gray-100 py-16'>
+  <div class='container mx-auto px-4'>
+    <h2 class='text-2xl md:text-4xl font-bold mb-6'>
+      {t('itzamna.evaluation')}
+    </h2>
+    <p class='text-base md:text-lg mb-6'>{t('itzamna.evaluation_desc')}</p>
+
+    <ul class='list-disc pl-6 space-y-2 text-base md:text-lg'>
+      <li>{t('itzamna.evaluation_1')}</li>
+      <li>{t('itzamna.evaluation_2')}</li>
+      <li>{t('itzamna.evaluation_3')}</li>
+      <li>{t('itzamna.evaluation_4')}</li>
+      <li>{t('itzamna.evaluation_5')}</li>
+    </ul>
+
+    <div class='mt-10 p-5 rounded-lg border border-gray-200 bg-white'>
+      <h3 class='font-semibold text-lg mb-2'>{t('itzamna.committee')}</h3>
+      <p>{t('itzamna.committee_desc')}</p>
+    </div>
+
+    <div class='mt-4 p-5 rounded-lg border border-gray-200 bg-white'>
+      <h3 class='font-semibold text-lg mb-2'>{t('itzamna.finalists')}</h3>
+      <p>{t('itzamna.finalists_desc')}</p>
+    </div>
+  </div>
+</section>
